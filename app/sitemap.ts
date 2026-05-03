@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/features/ai-reports`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/class-insights`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/parent-emails`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/classdojo-alternative`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPosts,
     { url: `${base}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
