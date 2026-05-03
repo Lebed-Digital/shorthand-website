@@ -582,6 +582,14 @@ export default function Home() {
                 <h2 className="creator-heading">A Message from the Creator</h2>
               </div>
             </div>
+            {/* FOUNDER VIDEO — when ready:
+                 1. Drop creator-intro.mp4 into /public
+                 2. Replace this comment with:
+                 <div style={{ margin: '1.25rem 0', borderRadius: '14px', overflow: 'hidden', maxWidth: '560px' }}>
+                   <video src="/creator-intro.mp4" controls playsInline poster="/creator.jpg"
+                     style={{ width: '100%', display: 'block', borderRadius: '14px' }} />
+                 </div>
+            */}
             <p className="creator-body" style={{ fontWeight: 600, fontSize: '1.05rem', color: 'var(--text)' }}>
               I didn&apos;t build this app to give you more work. I built it because I was tired of
               drowning in paperwork while trying to keep my head above water.
