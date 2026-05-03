@@ -251,12 +251,12 @@ export default function Home() {
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
-            <h1>Stop behavior from spiraling.<br /><em>Keep parents in the loop.</em></h1>
+            <h1>Stop behavior from spiraling.<br /><em>Parents in the loop in seconds.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds — built by a teacher, for teachers.
             </p>
             <p className="hero-sub">
-              The moment a student starts acting up, parents need to know — not after detention, not in a report card, but right then. Tap a note. AI drafts a message. Parents know before small problems become big ones.
+              The moment something happens, tap a note. ShortHand drafts the parent message for you, so communication happens the same day, not a week later when you finally find the time to write it.
             </p>
             <div className="hero-ctas">
               <motion.a
@@ -340,7 +340,7 @@ export default function Home() {
         <div className="section-inner" ref={featuresRef}>
           <div className="features-header">
             <div className="section-label">What it does</div>
-            <h2 className="section-heading">The classroom management tools<br /><em>teachers actually need.</em></h2>
+            <h2 className="section-heading">One app for notes, parent communication,<br /><em>and everything in between.</em></h2>
             <p className="section-sub">Built around the problems teachers actually face every day — not the ones app developers imagine.</p>
           </div>
           <div className="features-grid">
@@ -859,6 +859,18 @@ export default function Home() {
             </Link>
             <Link href="/blog/digital-tools-for-recording-student-incidents" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Digital Tools for Recording Student Incidents and Progress</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/how-to-simplify-parent-communication" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Simplify Parent Communication as a Teacher</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/best-apps-for-teacher-parent-communication-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Best Apps for Teacher-Parent Communication in 2026</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/teacher-burnout-solutions-that-actually-work" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Teacher Burnout Solutions That Actually Work</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
           </div>
