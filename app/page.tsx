@@ -816,9 +816,9 @@ export default function Home() {
           <div ref={ctaRef} className="cta-layout">
             <div className="cta-text">
               <div className="section-label">Get started</div>
-              <h2 className="cta-heading">Free to download.<br />No sign-up required.</h2>
+              <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
               <p className="cta-sub">
-                ShortHand is completely free. Install it on any device and start using it in minutes.
+                ShortHand is completely free. Open it on any device and start using it in minutes — nothing to install from an app store.
               </p>
               <div className="cta-btns">
                 <motion.a
