@@ -292,18 +292,15 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-demo-wrap">
-            <div className="hero-phone-mockup">
-              <video
-                src="/add-note-new.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="hero-demo-video"
-                ref={(el) => { if (el) el.playbackRate = 0.75; }}
+            <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)' }}>
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/-e3WOQt_lP0?enablejsapi=1"
+                title="Why I built ShortHand"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ width: '100%', height: '100%', border: 0, display: 'block' }}
               />
             </div>
-            <p className="hero-demo-caption">Voice-to-text note in under 5 seconds · slowed for clarity</p>
           </div>
         </div>
         <div className="hero-scroll">
@@ -581,15 +578,6 @@ export default function Home() {
                 <div className="creator-eyebrow">BUILT BY A TEACHER. FOR TEACHERS.</div>
                 <h2 className="creator-heading">A Message from the Creator</h2>
               </div>
-            </div>
-            <div style={{ margin: '1.25rem 0', borderRadius: '14px', overflow: 'hidden', maxWidth: '315px', aspectRatio: '9/16', position: 'relative' }}>
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/-e3WOQt_lP0?enablejsapi=1"
-                title="Why I built ShortHand"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ width: '100%', height: '100%', border: 0, display: 'block', borderRadius: '14px' }}
-              />
             </div>
             <p className="creator-body" style={{ fontWeight: 600, fontSize: '1.05rem', color: 'var(--text)' }}>
               I didn&apos;t build this app to give you more work. I built it because I was tired of
