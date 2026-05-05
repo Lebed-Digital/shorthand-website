@@ -58,7 +58,7 @@ export default function ParentCommunicationLogPage() {
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
-            src="https://www.youtube-nocookie.com/embed/2U0MZjwbHSE?enablejsapi=1"
+            src="https://www.youtube-nocookie.com/embed/Bu9T_mvpj8o?enablejsapi=1"
             title="Parent Communication Log walkthrough"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
