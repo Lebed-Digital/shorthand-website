@@ -623,7 +623,7 @@ export default function Home() {
             {[
               {
                 q: 'Is student data safe?',
-                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no surveillance, no sharing with third parties. Just your notes, locked to your account.',
+                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no surveillance, no sharing with third parties. AI processing is handled by providers who are contractually prohibited from training on your data. Just your notes, locked to your account.',
               },
               {
                 q: 'Will this add to my workload?',
