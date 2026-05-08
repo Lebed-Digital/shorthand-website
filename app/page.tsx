@@ -622,6 +622,22 @@ export default function Home() {
             <h2 className="section-heading" style={{ marginBottom: '2.5rem' }}>ShortHand FAQ: <em>Everything you need to know.</em></h2>
             {[
               {
+                q: 'Is student data safe?',
+                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no surveillance, no sharing with third parties. Just your notes, locked to your account.',
+              },
+              {
+                q: 'Will this add to my workload?',
+                a: 'No. If you can send a text, you can use ShortHand. Logging a note takes about 2 seconds. It saves you hours of drafting emails, writing IEP updates, and trying to remember what happened three weeks ago.',
+              },
+              {
+                q: 'Do I need to spend hours setting this up?',
+                a: 'No. You can import your roster from Google Classroom or a spreadsheet in minutes. There is no manual to read. Just open the app and start logging.',
+              },
+              {
+                q: 'Can my whole grade level or school use this?',
+                a: 'Absolutely. ShortHand makes grade-level collaboration and transition meetings much smoother. If your principal has questions about privacy or implementation, have them reach out directly.',
+              },
+              {
                 q: 'What is ShortHand?',
                 a: 'ShortHand is a behavior tracking app built for K-12 teachers. It lets you log student notes in under 5 seconds using voice or text, track behavior patterns over time, generate AI-written progress reports, and send parent messages instantly.',
               },
@@ -631,15 +647,15 @@ export default function Home() {
               },
               {
                 q: 'How does ShortHand help with parent communication?',
-                a: 'After you log a behavior note, ShortHand\'s AI drafts a parent-ready message in seconds. You review it, make any tweaks, and send — no staring at a blank email. It also keeps a full communication log for IEP meetings.',
+                a: 'After you log a behavior note, ShortHand\'s AI drafts a parent-ready message in seconds. You review it, make any tweaks, and send. No staring at a blank email. It also keeps a full communication log for IEP meetings.',
               },
               {
                 q: 'Can ShortHand help me spot behavior patterns?',
-                a: 'Yes. ShortHand tracks behavior over 4 to 52 weeks and shows visual trend charts for each student. Smart badges highlight who\'s improving and who needs attention — so you\'re not relying on memory.',
+                a: 'Yes. ShortHand tracks behavior over 4 to 52 weeks and shows visual trend charts for each student. Smart badges highlight who\'s improving and who needs attention, so you\'re not relying on memory.',
               },
               {
                 q: 'Does ShortHand alert me if I haven\'t checked in on a student?',
-                a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 8 or more days, amber at 5–7 days, and green if you\'ve logged recently. No student quietly slips through the cracks.',
+                a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 8 or more days, amber at 5 to 7 days, and green if you\'ve logged recently. No student quietly slips through the cracks.',
               },
               {
                 q: 'Is ShortHand free to use?',
