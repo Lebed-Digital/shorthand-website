@@ -1,0 +1,105 @@
+---
+title: "Report Card Comments for Behavior: Preschool and Pre-K Examples"
+subtitle: "Age-appropriate language for the hardest comments you will write all year."
+date: "2026-05-10"
+author: "Gregory Lebed"
+excerpt: "Writing report card comments for preschool behavior is different from K-8. Here are age-appropriate examples for sharing, turn-taking, emotional regulation, and more."
+---
+
+Writing report card comments behavior for preschool is a unique challenge. You are not grading math tests.
+
+You are grading developmental milestones. Preschool parents are incredibly sensitive.
+
+This is often their first school experience. They are highly attached to their young children.
+
+If you use K-8 language on a Pre-K student, you will cause panic. You need positive behavior comments preschool parents can actually understand.
+
+I have taught for over 20 years. I know that preschool report card examples require a delicate touch.
+
+You have to be honest but gentle. Here is how to write report card comments behavior for preschool without crushing a parent.
+
+## Why report card comments behavior for preschool are different
+
+A third grader refusing to share is a discipline issue. A three-year-old refusing to share is a developmental stage.
+
+You cannot use the same language for both. Preschool teachers must focus on growth and skill acquisition.
+
+Every negative action is simply a skill they have not mastered yet. This reframe changes everything.
+
+It turns a complaint into a goal. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
+
+## K-8 Language vs. Preschool-Appropriate Language
+
+You have to translate traditional school language into early childhood terms. Here is how to soften your social emotional comments preschool style.
+
+| K-8 Behavior Language | Preschool-Appropriate Language |
+| :--- | :--- |
+| "Refuses to share." | "Is still developing turn-taking skills." |
+| "Throws tantrums when angry." | "Is learning to use words to express big feelings." |
+| "Will not follow directions." | "Benefits from visual cues to follow classroom routines." |
+| "Hits other children." | "Is practicing gentle touches with friends." |
+| "Cannot sit still." | "Is very active and learning to participate in circle time." |
+
+## Examples of report card comments behavior for preschool
+
+Here are categorized copy-paste examples you can use right now. For more ideas, you can also view our general [report card comments for behavior](/blog/report-card-comments-for-behavior) guide.
+
+### Sharing and turn-taking
+
+Sharing is incredibly hard for young children. It is completely normal for them to struggle.
+
+"Leo is working hard on taking turns with the classroom toys. He is learning to trade items with his friends."
+
+"Mia enjoys parallel play. She is beginning to share building blocks during center time."
+
+### Emotional regulation
+
+Big feelings are part of the daily routine. You must document how they handle those emotions.
+
+"Sam is learning to take deep breaths when he feels frustrated. He is making progress identifying his emotions."
+
+"Ava relies on teacher support to calm down. She is practicing using her words instead of crying."
+
+### Following directions
+
+Following two-step directions is a massive milestone. Not every child hits it at the same time.
+
+"Jackson does a wonderful job following simple routines. He is working on following two-step instructions."
+
+"Chloe needs frequent reminders during transitions. She benefits from warnings before activities end."
+
+### Social interaction with peers
+
+Making friends is the most important part of early childhood. This is a critical area to assess.
+
+"Noah loves playing alongside his classmates. He is practicing asking friends to join his games."
+
+"Emma is a kind friend. She is learning how to resolve minor conflicts during free play."
+
+### Separation and transitions
+
+Saying goodbye to mom or dad is terrifying. We have to document that progress gently.
+
+"Liam is having an easier time separating in the morning. He settles into his morning work quickly."
+
+"Olivia still needs a hug at drop-off. She is becoming more confident entering the classroom."
+
+### Areas needing growth
+
+Sometimes you have to address difficult behaviour directly. Note the British spelling.
+
+"Ethan is working on keeping a safe body when he is angry. We are practicing safe hands every day."
+
+"Sophia requires support to stay engaged during story time. She is learning to be a good listener."
+
+## Save time on your preschool comments
+
+Writing these comments takes hours. It is even harder when you cannot remember specific examples.
+
+That is why I created ShortHand. You can log developmental milestones and incidents as they happen.
+
+When you sit down to write your report cards, all your data is ready. You can easily generate honest, professional comments.
+
+Make report card time easier on yourself. Try ShortHand today at [app.getshorthandapp.com](https://app.getshorthandapp.com).
+
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
