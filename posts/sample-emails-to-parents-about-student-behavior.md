@@ -175,4 +175,8 @@ The templates above are useful. But the real unlock is having the documentation 
 
 ---
 
+**Want all 10 templates in one place?** Download the free PDF: [10 Ready-to-Send Behavior Emails for Teachers](/Ready_to_Send_Behavior_Emails.pdf)
+
+---
+
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

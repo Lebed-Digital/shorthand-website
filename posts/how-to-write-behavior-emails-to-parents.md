@@ -182,4 +182,6 @@ The easier it is to do, the more often it will happen. And that is what makes th
 
 ---
 
+**Want all 10 templates in one place?** Download the free PDF: [10 Ready-to-Send Behavior Emails for Teachers](/Ready_to_Send_Behavior_Emails.pdf)
+
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
