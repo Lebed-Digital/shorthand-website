@@ -106,3 +106,5 @@ The most common reason teachers stop using a communication log: it feels like ex
 A parent communication log is one of those tools where the upfront effort is low and the payoff is disproportionately high. You don't need a perfect system. You just need something you'll actually use.
 
 [ShortHand](https://getshorthandapp.com) keeps this built into your daily workflow — free to try, no setup required.
+
+*Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*

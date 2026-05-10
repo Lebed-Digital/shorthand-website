@@ -882,8 +882,8 @@ export default function Home() {
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Best Apps for Teacher-Parent Communication in 2026</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
-            <Link href="/blog/teacher-burnout-solutions-that-actually-work" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Teacher Burnout Solutions That Actually Work</div>
+            <Link href="/blog/parent-phone-call-script" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>The Ultimate Parent Phone Call Script for Teachers</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
           </div>
