@@ -139,3 +139,7 @@ You're not building a legal case. You're building enough of a picture to help a 
 A quick note three times a week beats a detailed binder you abandon in October. Pick the simplest system that you'll actually use, and start there.
 
 If you want to see how ShortHand handles the logging-to-parent-communication piece, you can try it free at getshorthandapp.com. It was built specifically for this, capturing behavior notes fast enough to actually use during a school day.
+
+---
+
+*Related reading: [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom) | [The Student Behavior Log for Teachers](/blog/student-behavior-log-for-teachers) | [How to Redirect Student Behavior Without Stopping the Whole Class](/blog/how-to-redirect-student-behavior)*

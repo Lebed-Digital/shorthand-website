@@ -1,0 +1,71 @@
+---
+title: "The Student Behavior Log: What to Track, How to Track It, and Why It Actually Matters"
+subtitle: "If it is not written down, it did not happen."
+date: "2026-05-16"
+author: "Gregory Lebed"
+excerpt: "A simple student behavior log is your best defense at meetings. Learn exactly what to track, what to leave out, and how to protect yourself."
+---
+
+We have all been there. You are sitting in a parent-teacher conference. The parent is looking at you. The principal is looking at you. You are trying to explain that a student has been struggling with their behavior for weeks.
+
+The parent leans forward. They ask for specifics. They want to know exactly what happened, when it happened, and what you did about it. They might even imply that you are treating their child unfairly.
+
+You freeze. You know the behavior is a problem. You feel it in your bones. But when you try to pull the exact dates and times out of your exhausted brain, nothing comes up. You remember the child threw a pencil, but was it Tuesday or Wednesday? You remember they refused to work, but was it during math or science? You end up sounding vague. You say things like he is always off task or she never listens.
+
+That is the exact moment you lose the room. The parent gets defensive. The principal looks concerned. You realize you need a student behavior log.
+
+I have been teaching third grade for over two decades. If there is one golden rule in education, it is this. If it is not written down, it did not happen. A memory is not a data point. A feeling is not evidence. You have to have a record.
+
+Keeping a log sounds like just one more chore to add to your endless list. It does not have to be a giant spreadsheet. It just has to be consistent. Here is what you actually need to know about keeping a record that works.
+
+## What a Behavior Log Actually Is
+
+A student behavior log is simply a running record of significant events. It is a tool to protect you. It is also a tool to help the student.
+
+When you track behavior over time, you stop reacting emotionally. You start seeing the matrix. You realize that a student only acts out on Tuesdays and Thursdays. Then you remember they have physical education on those days. Suddenly, the behavior makes sense. You can actually address the root cause instead of just punishing the symptom.
+
+Your log does not need to be a novel. It should be a brief, objective record of what occurred in the classroom.
+
+## What You Should Write Down
+
+The most important rule of any log is to stick to the observable facts. Imagine a video camera was recording the room. What would the camera see? What would the camera hear? That is what you write down.
+
+If a student gets angry and flips their desk, you do not write that the student was furious and out of control. You write that the student stood up, placed their hands under the desk, and pushed it over.
+
+You need to include the date and the exact time. The time is critical for finding patterns. You also need to include the antecedent. What happened right before the behavior? Did you hand out a math test? Did another student bump into them?
+
+Finally, document your response. What did you do? Did you offer a break? Did you redirect them? Did you call the office? This shows that you are actively trying to support the student, not just complain about them.
+
+## What You Should Never Write Down
+
+A behavior log is a legal document. It can be subpoenaed. It can be requested by parents at any time. You must write every entry as if the parent will read it tomorrow.
+
+Never write down your emotions. Never write that you are frustrated or at your wits end.
+
+Never use labels. Do not call a student lazy. Do not call them defiant. Do not call them a bully. Those are subjective interpretations.
+
+I once saw a teacher write that a student was acting like a monster. I had to gently remind her that unless the student grew fangs and started howling at the moon, she needed to change her wording. I asked her what kind of monster, because if it was a mummy, we should wrap up the meeting. She did not laugh. My humor is often wasted on adults. Stick to the facts. The facts are undeniable. A judge or an administrator cannot argue with a time and a specific action.
+
+## When You Should Log the Behavior
+
+You have to log the event immediately. Do not wait until the end of the day. Do not wait until Friday afternoon.
+
+Teaching is a high-speed environment. You make hundreds of decisions an hour. If a disruption happens at nine in the morning, the details will be completely erased from your memory by lunchtime. You will forget what triggered it. You will forget exactly what you said in response.
+
+Find a system that allows you to jot down notes the second the situation is resolved. If you wait, you will end up guessing. Guessing defeats the entire purpose of keeping data. I used to keep a clipboard on my desk. Every time I walked across the room to write something down, the kids knew exactly what I was doing. It caused more anxiety and more disruptions. You need a system that is discreet. You need to be able to log it without making a grand announcement to the entire classroom.
+
+## Using the Log at Meetings
+
+When you have a detailed log, everything changes.
+
+You walk into that parent-teacher conference with confidence. When the parent asks for specifics, you do not freeze. You open your records. You can say that on October fourth at ten in the morning, the student tore up their assignment when asked to transition to reading. You can say it happened again on October seventh.
+
+It takes the emotion out of the conversation. You are no longer attacking their child. You are simply presenting the data. Parents respect data. Administrators respect data. It completely shifts the dynamic from a defensive argument to a collaborative problem-solving session.
+
+You cannot manage what you do not measure. A good log measures the reality of your classroom.
+
+ShortHand is the behavior log built into your phone, no spreadsheet required. You can document the facts in seconds and have the data ready for your next meeting. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
+
+---
+
+*Related reading: [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers) | [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom)*
