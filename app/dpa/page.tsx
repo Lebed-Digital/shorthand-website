@@ -113,7 +113,7 @@ export default function DpaPage() {
             <div className="privacy-title">Subprocessors</div>
             <div className="privacy-desc">
               ShortHand uses the following subprocessors to deliver the service. Each has been evaluated for FERPA compliance:<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Supabase</strong> — database and authentication. Data stored in AWS us-east-1. SOC 2 Type II certified.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Supabase</strong> — database and authentication. Data stored in AWS us-east-1 (Virginia, USA). SOC 2 Type II certified. Schools in provinces with data residency requirements (such as British Columbia or Nova Scotia) should contact us to discuss options before signing up.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Groq</strong> — AI language model processing for report generation. Groq does not use customer data to train models and offers a DPA. Data is not retained after the API response.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Vercel</strong> — application hosting. SOC 2 Type II certified.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Google</strong> — optional Google Classroom integration only. Used solely to import class rosters when the teacher explicitly connects their account.
@@ -127,6 +127,19 @@ export default function DpaPage() {
               ShortHand acknowledges that Student Data shared by a School may be subject to FERPA (20 U.S.C. § 1232g).<br /><br />
               ShortHand agrees to use Student Data only for the purposes for which it was disclosed — providing classroom management services to Authorized Users — and for no other purpose.<br /><br />
               ShortHand will not re-disclose Student Data to any party other than the School or its Authorized Users without prior written consent from the School.
+            </div>
+          </div>
+
+          <div className="privacy-card">
+            <div className="privacy-icon">🍁</div>
+            <div className="privacy-title">Canadian Teachers (PIPEDA)</div>
+            <div className="privacy-desc">
+              ShortHand is used by teachers across Canada. Canadian privacy law (PIPEDA and provincial equivalents such as BC's FIPPA and Quebec's Law 25) imposes stricter requirements than US federal law in some areas.<br /><br />
+              Key points for Canadian schools:<br /><br />
+              • <strong style={{ color: 'var(--text)' }}>Data location:</strong> Student data is stored on US servers (AWS us-east-1). Schools in provinces with strict data residency rules should review this with their IT department before using ShortHand. Contact us to discuss options.<br /><br />
+              • <strong style={{ color: 'var(--text)' }}>AI processing:</strong> When AI features are used, notes are sent to Groq (a US-based provider) for processing and are not retained after the response is returned. No student PII is used to train AI models.<br /><br />
+              • <strong style={{ color: 'var(--text)' }}>Data minimization:</strong> ShortHand collects only the information a teacher actively enters. Nothing is collected passively beyond what is necessary to operate the service.<br /><br />
+              Questions about Canadian compliance? Email <a href="mailto:gregorylebed@gmail.com" style={{ color: 'var(--accent)' }}>gregorylebed@gmail.com</a>.
             </div>
           </div>
 

@@ -138,7 +138,8 @@ export default function PrivacyPage() {
             <div className="privacy-title">For Schools & Districts</div>
             <div className="privacy-desc">
               Need a Data Processing Agreement (DPA) for district approval?{' '}
-              <Link href="/dpa" style={{ color: 'var(--accent)' }}>View our DPA →</Link>
+              <Link href="/dpa" style={{ color: 'var(--accent)' }}>View our DPA →</Link><br /><br />
+              <strong style={{ color: 'var(--text)' }}>Canadian teachers:</strong> Our DPA includes a section addressing PIPEDA and provincial privacy laws (BC FIPPA, Quebec Law 25). Data is stored on US servers — schools with data residency requirements should <a href="mailto:gregorylebed@gmail.com" style={{ color: 'var(--accent)' }}>contact us</a> before signing up.
             </div>
           </div>
 
