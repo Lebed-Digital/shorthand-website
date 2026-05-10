@@ -1,9 +1,9 @@
 ---
-title: "Best Behavior Tracking Apps for Teachers in 2026"
+title: "Best Behavior Tracking Apps for Teachers in 2026 (Ranked by a Real Teacher)"
 subtitle: "Five apps compared — so you can stop using sticky notes and a prayer."
 date: "2026-04-27"
 author: "Gregory Lebed"
-excerpt: "Looking for the best behavior tracking apps for teachers in 2026? Here's an honest comparison of five popular options — what each one does well, where it falls short, and which one actually fits into a real elementary school day."
+excerpt: "Most behavior tracking apps were built for administrators, not teachers. Here's an honest comparison of the five best options in 2026 — what each one actually does in a real classroom, and which one is worth your time."
 ---
 
 There are roughly four stages of teacher behavior tracking. Stage one: mental notes. Stage two: sticky notes. Stage three: a behavior tracking sheet you update every three weeks. Stage four: an actual app. (Stage five is being asked at an IEP meeting to produce documentation from October and realizing you're still in stage two.)
