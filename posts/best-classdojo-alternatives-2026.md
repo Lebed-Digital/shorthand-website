@@ -1,9 +1,9 @@
 ---
-title: "Best ClassDojo Alternatives for Teachers in 2026"
+title: "Leaving ClassDojo? What Teachers Are Actually Switching To in 2026"
 subtitle: "A straight list of what actually works, depending on what you need."
 date: "2026-05-01"
 author: "Gregory Lebed"
-excerpt: "Done with ClassDojo but not sure what to switch to? Here are the best alternatives in 2026, ranked honestly by a teacher who has tried most of them. Spoiler: the right answer depends on what you actually need it for."
+excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest breakdown of what's actually worth switching to, based on what's frustrating you about Dojo."
 ---
 
 ClassDojo is the most widely used classroom app in the world. It's also the most searched for alternatives. That's not a contradiction. It just means ClassDojo works well for some teachers and not at all for others, and the teachers it doesn't work for are increasingly vocal about it.
