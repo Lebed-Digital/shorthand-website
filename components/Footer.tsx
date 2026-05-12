@@ -10,7 +10,7 @@ export default function Footer() {
         gregorylebed@gmail.com
       </a>
       <div className="footer-copy">
-        © 2026 ShortHand. All rights reserved. ·{' '}
+        © 2026 Lebed Digital LLC. All rights reserved. ·{' '}
         <Link href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Privacy Policy
         </Link>{' '}
