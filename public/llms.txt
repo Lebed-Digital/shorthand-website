@@ -1,5 +1,5 @@
 # ShortHand
-> A Progressive Web App built by a K-12 teacher to help educators track student behavior, log parent communications, generate AI parent emails, and create student reports — in seconds, not hours.
+> A tool built by a teacher for fast behavior tracking that turns classroom notes into parent-ready messages — in seconds.
 
 ## About
 ShortHand was created by Gregory Lebed, a former RBT and 3rd grade teacher, to solve the daily paperwork burden teachers face. It runs in the browser on any device with no app store download required. ShortHand is built specifically for classroom teachers — not administrators, not district IT — and is designed to be usable mid-lesson without interrupting instruction.
