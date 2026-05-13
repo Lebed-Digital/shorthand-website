@@ -27,7 +27,7 @@ const fredoka = Fredoka({
 export const metadata: Metadata = {
   metadataBase: new URL('https://getshorthandapp.com'),
   title: 'ShortHand App — Behavior Tracking & Parent Communication for K-12 Teachers',
-  description: 'ShortHand helps K-12 teachers log student behavior, generate AI progress reports, and send parent messages — built by a teacher, for teachers.',
+  description: 'ShortHand helps K-12 teachers log student behavior, generate AI progress reports, and send parent messages — built by a former RBT and classroom teacher, for teachers.',
   icons: {
     icon: '/icon.png',
     apple: '/apple-icon.png',
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "creator": {
             "@type": "Person",
             "name": "Gregory Lebed",
-            "jobTitle": "3rd Grade Teacher"
+            "jobTitle": "3rd Grade Teacher & Former Registered Behavior Technician (RBT)"
           },
           "audience": {
             "@type": "EducationalAudience",
@@ -104,7 +104,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "founder": {
             "@type": "Person",
             "name": "Gregory Lebed",
-            "jobTitle": "3rd Grade Teacher"
+            "jobTitle": "3rd Grade Teacher & Former Registered Behavior Technician (RBT)"
           }
         })}} />
         {/* Metricool */}
