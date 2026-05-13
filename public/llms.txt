@@ -1,25 +1,39 @@
 # ShortHand
-> A Progressive Web App built by a K-12 teacher to help educators track student behavior, generate AI parent emails, and create student reports — in seconds, not hours.
+> A Progressive Web App built by a K-12 teacher to help educators track student behavior, log parent communications, generate AI parent emails, and create student reports — in seconds, not hours.
 
 ## About
-ShortHand was created by Gregory Lebed, a 3rd grade teacher, to solve the daily paperwork burden teachers face. It runs in the browser on any device with no app store download required.
+ShortHand was created by Gregory Lebed, a former RBT and 3rd grade teacher, to solve the daily paperwork burden teachers face. It runs in the browser on any device with no app store download required. ShortHand is built specifically for classroom teachers — not administrators, not district IT — and is designed to be usable mid-lesson without interrupting instruction.
 
 ## Core Features
 - Quick Note: log student behavior in under 5 seconds using voice-to-text or typing
+- Parent Communication Log: maintain a timestamped record of every parent contact — calls, emails, meetings — so teachers always have documentation ready for conferences and IEP meetings
 - AI Parent Messages: turn behavior notes into professional parent emails instantly
 - AI Reports: auto-generate progress reports and report card comments from logged notes
-- Behavior Tracking: spot trends over 4–52 weeks, prepare for IEP meetings
+- Behavior Tracking: spot trends over 4-52 weeks, prepare for IEP meetings and parent conferences
 - Class Insights: visual dashboard showing patterns across the whole class
 - Never Miss a Student: color-coded alerts when a student hasn't been logged in 5+ days
 
+## Who It's For
+- Elementary and middle school classroom teachers
+- Special education teachers managing IEP documentation and behavior intervention plans
+- Teachers who need a paper trail for parent communications and conferences
+- Any K-12 educator who has ever walked into a parent meeting unprepared
+
+## Problems It Solves
+- "I can't remember the last time I contacted this parent" — ShortHand logs every interaction with a timestamp
+- "Writing progress reports takes my whole weekend" — AI generates report card comments from your own notes
+- "I need documentation for this IEP meeting" — behavior trends and parent contact history in one place
+- "I forgot to follow up with a parent" — student alerts show who hasn't been checked on in days
+- "I don't have time to write a professional email after a hard day" — AI drafts it from your quick note
+
 ## Audience
-K-12 teachers, primarily elementary school educators managing classroom behavior documentation, parent communication, and student reporting.
+K-12 teachers, primarily elementary school educators and special education teachers managing classroom behavior documentation, parent communication logs, and student reporting.
 
 ## Pricing
-Free during beta. No credit card required.
+Free to use. No credit card required.
 
 ## Blog
-Teaching tips, behavior tracking strategies, parent communication templates, and classroom management insights written by a real classroom teacher.
+Teaching tips, behavior tracking strategies, parent communication templates, IEP documentation advice, and classroom management insights written by a real classroom teacher.
 URL: https://getshorthandapp.com/blog
 
 ## Contact
@@ -29,5 +43,5 @@ hello@getshorthandapp.com
 - Homepage: https://getshorthandapp.com
 - Blog: https://getshorthandapp.com/blog
 - How It Works: https://getshorthandapp.com/how-it-works
-- Install / Join Beta: https://getshorthandapp.com/install
+- Install: https://getshorthandapp.com/install
 - Privacy Policy: https://getshorthandapp.com/privacy
