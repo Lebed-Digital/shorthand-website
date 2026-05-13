@@ -26,8 +26,8 @@ const fredoka = Fredoka({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://getshorthandapp.com'),
-  title: 'ShortHand App — Behavior Tracking & Parent Communication for K-12 Teachers',
-  description: 'ShortHand helps K-12 teachers log student behavior, generate AI progress reports, and send parent messages — built by a former RBT and classroom teacher, for teachers.',
+  title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
+  description: 'Log a parent call, draft a behavior email, or write a progress report — before you finish your sandwich. ShortHand turns classroom notes into parent-ready messages in seconds. Free for teachers.',
   icons: {
     icon: '/icon.png',
     apple: '/apple-icon.png',
@@ -36,16 +36,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     siteName: 'ShortHand',
-    title: 'ShortHand — K-12 Teacher Productivity App',
-    description: 'Tap a student. Type a note. Done in 5 seconds. Classroom management, behavior tracking, AI reports, and parent communication — built by a teacher, for teachers.',
+    title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
+    description: 'Turn classroom notes into parent-ready messages in seconds. Log behavior, track parent contact, and generate AI reports — built by a teacher, for teachers.',
     url: 'https://getshorthandapp.com',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ShortHand — K-12 Teacher Productivity App',
-    description: 'Tap a student. Type a note. Done in 5 seconds. Built by a teacher, for teachers.',
+    title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
+    description: 'Turn classroom notes into parent-ready messages in seconds. Free for teachers.',
     images: ['/og-image.png'],
   },
   alternates: {
