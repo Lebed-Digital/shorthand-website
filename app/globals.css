@@ -18,6 +18,13 @@
   --font-display: system-ui, sans-serif;
   --font-body: system-ui, sans-serif;
   --radius: 16px;
+
+  /* ShortHand brand colors */
+  --brand-coral:   #FF5A5F;
+  --brand-green:   #19C37D;
+  --brand-orange:  #F7A600;
+  --brand-blue:    #3B82F6;
+  --brand-lavender:#C084FC;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -229,10 +236,10 @@ nav {
 }
 
 .hero-demo-nudge {
-  margin-top: 16px; font-size: 0.88rem; color: var(--text-muted, #94a3b8);
+  margin-top: 16px; font-size: 1rem; color: var(--accent, #a78bfa);
 }
 .hero-demo-nudge a {
-  color: var(--accent, #a78bfa); text-decoration: none; font-weight: 500;
+  color: var(--accent, #a78bfa); text-decoration: none; font-weight: 600;
 }
 .hero-demo-nudge a:hover { text-decoration: underline; }
 
