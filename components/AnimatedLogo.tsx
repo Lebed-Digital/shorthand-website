@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const LETTERS = ['S','h','o','r','t','H','a','n','d'];
-const COLORS  = ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'];
+const COLORS  = ['#FF5A5F','#19C37D','#F7A600','#3B82F6','#C084FC','#FF5A5F','#19C37D','#F7A600','#3B82F6'];
 
 export default function AnimatedLogo() {
   return (
