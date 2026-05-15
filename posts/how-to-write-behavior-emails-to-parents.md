@@ -32,6 +32,17 @@ Most of the time, you are not trying to report a problem. You are trying to keep
 
 Instead of approaching it as "I have to tell them what went wrong," try "I want to share what I am seeing and keep us on the same page." That mindset alone will change your tone, and parents can feel the difference.
 
+## Quick Reference: Do's and Don'ts
+
+| Instead of this... | Write this instead |
+|---|---|
+| "He was disruptive today" | "Required 3 verbal redirects during independent math at 9:40 AM" |
+| "She's been having a hard time" | "Struggled with transitions from math to reading 4 of the last 5 days" |
+| "He doesn't listen" | "Did not follow first or second verbal prompt; completed task after third" |
+| "Things are getting worse" | "Incidents increased from 1x/week in September to 3-4x/week in October" |
+| "I handled it" | "Offered a movement break; student returned to task within 2 minutes" |
+| "She's doing better" | "Completed all transitions independently for 3 consecutive days this week" |
+
 ## Keep It Specific and Objective
 
 One of the biggest mistakes is being too vague. Saying a student was "having a hard day" does not give parents much to work with. It also leaves room for confusion and defensiveness.

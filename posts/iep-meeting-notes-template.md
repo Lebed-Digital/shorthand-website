@@ -66,6 +66,15 @@ If you are unsure how to fill out the concerns section without sounding overly n
 
 Taking the notes is only step one. A template is useless if it just sits in a folder collecting dust. You must actively use your notes to drive the follow up process. If you need help managing all the steps surrounding the meeting, review our comprehensive [IEP meeting checklist for teachers](/blog/iep-meeting-checklist-for-teachers).
 
+| Timeframe | Action | Who |
+|---|---|---|
+| Same day | Review notes, clarify shorthand | You |
+| Within 24 hours | Email parents a summary of action items | You |
+| Within 1 week | Implement new accommodations in class | You |
+| Within 2 weeks | Check in with case manager on progress | You + case manager |
+| Ongoing | Log behavior data tied to IEP goals | You |
+| Before next meeting | Pull logs and trend data to share | You |
+
 ### Review and Clarify
 
 Take five minutes at the end of the day to read through your notes. Fix any illegible handwriting and flesh out any shorthand abbreviations you used. Make sure the action items are crystal clear.

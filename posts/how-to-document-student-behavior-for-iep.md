@@ -20,6 +20,13 @@ A lot of teachers dread IEP meetings because they feel underprepared. The case m
 
 The good news is that the IEP team doesn't need you to be a behavior analyst. They need you to be a classroom teacher who has been paying attention and writing things down. Here are the four things that actually matter.
 
+| What to Document | Weak Example | Strong Example |
+|---|---|---|
+| **Frequency** | "He's disruptive a lot" | "Needed verbal prompts on 4 of the last 5 Mondays" |
+| **Context** | "During class" | "During transitions from math to specials" |
+| **Response** | "I dealt with it" | "Offered a movement break — behavior stopped within 2 min" |
+| **Trend** | "It's been getting worse" | "Increased since October, improved after seating change" |
+
 ### 1. Frequency
 
 Not "a lot." Use "3 times during math" or "4 out of 5 transitions."
