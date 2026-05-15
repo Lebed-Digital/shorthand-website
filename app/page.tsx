@@ -866,20 +866,20 @@ export default function Home() {
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Document Parent Contact as a Teacher (So You're Always Covered)</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
+            <Link href="/blog/how-to-document-parent-contact-for-iep" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Document Parent Contact for IEP Students (What the Law Actually Requires)</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/what-to-do-when-parents-dont-respond-to-calls" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>What to Do When Parents Don't Respond to Your Calls or Emails</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
             <Link href="/blog/what-to-do-when-parent-says-you-never-called" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>What to Do When a Parent Says You Never Called Them</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
             <Link href="/blog/best-parent-communication-apps-for-documentation-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>The Best Parent Communication Apps for Teachers in 2026 (Ranked by What Actually Matters)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/why-teachers-are-switching-from-classdojo-to-shorthand" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Why Teachers Are Switching from ClassDojo in 2026</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/how-to-simplify-parent-communication" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Simplify Parent Communication as a Teacher</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
             <Link href="/blog/parent-phone-call-script" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
