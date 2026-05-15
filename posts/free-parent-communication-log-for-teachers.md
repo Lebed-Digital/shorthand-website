@@ -107,4 +107,4 @@ A parent communication log is one of those tools where the upfront effort is low
 
 [ShortHand](https://getshorthandapp.com) keeps this built into your daily workflow — free to try, no setup required.
 
-*Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+*Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script) | [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called)*

@@ -862,24 +862,24 @@ export default function Home() {
         <div style={{ maxWidth: '860px', margin: '0 auto' }}>
           <div className="section-label" style={{ marginBottom: '1rem' }}>From the Blog</div>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
+            <Link href="/blog/how-to-document-parent-contact-as-a-teacher" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Document Parent Contact as a Teacher (So You're Always Covered)</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/what-to-do-when-parent-says-you-never-called" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>What to Do When a Parent Says You Never Called Them</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
+            <Link href="/blog/best-parent-communication-apps-for-documentation-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
+              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>The Best Parent Communication Apps for Teachers in 2026 (Ranked by What Actually Matters)</div>
+              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
+            </Link>
             <Link href="/blog/why-teachers-are-switching-from-classdojo-to-shorthand" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Why Teachers Are Switching from ClassDojo in 2026</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
-            <Link href="/blog/student-progress-report-comments-for-teachers" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Student Progress Report Comments for Teachers</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/digital-tools-for-recording-student-incidents" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Digital Tools for Recording Student Incidents and Progress</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
             <Link href="/blog/how-to-simplify-parent-communication" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
               <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Simplify Parent Communication as a Teacher</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/best-apps-for-teacher-parent-communication-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Best Apps for Teacher-Parent Communication in 2026</div>
               <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
             </Link>
             <Link href="/blog/parent-phone-call-script" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
