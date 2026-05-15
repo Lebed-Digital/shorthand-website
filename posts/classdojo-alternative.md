@@ -73,6 +73,22 @@ ShortHand logs are timestamped, categorized by behavioral theme, and exportable.
 
 I built this feature specifically because I was tired of being the least-prepared person in the room during IEP meetings. Not because I hadn't been watching, but because I hadn't been documenting in a format that translated to the table.
 
+## What Features Do ClassDojo Alternatives Offer That ClassDojo Does Not?
+
+This is the question teachers search for most, so here is a direct answer.
+
+The features that ClassDojo alternatives tend to add fall into three categories:
+
+**Private, timestamped documentation.** ClassDojo records points and messages, but not a behavioral timeline you can hand to an administrator or use in an IEP meeting. Alternatives built for older students log notes with timestamps, behavioral categories, and exportable history. The record exists in a format that holds up in a professional context.
+
+**Faster in-class logging.** ClassDojo requires navigating to a student profile, selecting a point type, and confirming. In a live classroom, that is 60 to 90 seconds you do not have. Alternatives like ShortHand are built around under-10-second logging, with voice-to-text support so you never have to stop moving.
+
+**AI-assisted parent communication.** ClassDojo has a messaging feature, but writing the message is still manual. ShortHand pulls from your logged notes and drafts a parent message in your voice, which you review and send. The communication is also logged automatically so you have a record of every contact.
+
+**No public behavior display.** ClassDojo was built around visible point boards and class displays. For middle and high school students, being called out in front of peers backfires. Alternatives built for older grades keep all feedback private between teacher, student, and family.
+
+**Data that travels.** At the end of the year, ClassDojo data stays in ClassDojo. Alternatives with export features let you hand a behavioral summary to a next-year teacher, a counselor, or a specialist in a format they can actually use.
+
 ## Which One Is Right for You
 
 **Stay with ClassDojo if:**
