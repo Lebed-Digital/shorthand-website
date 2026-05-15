@@ -5,10 +5,10 @@ import AnimatedLogo from '../../components/AnimatedLogo';
 
 export const metadata: Metadata = {
   title: 'About Gregory Lebed — ShortHand',
-  description: 'Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician certification. He built ShortHand to solve the paperwork problem he lived every day.',
+  description: 'Gregory Lebed is a 3rd grade teacher and former Registered Behavior Technician (RBT) who built ShortHand to solve the paperwork problem he lived every day.',
   openGraph: {
     title: 'About Gregory Lebed — ShortHand',
-    description: 'Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician certification. He built ShortHand to solve the paperwork problem he lived every day.',
+    description: 'Gregory Lebed is a 3rd grade teacher and former Registered Behavior Technician (RBT) who built ShortHand to solve the paperwork problem he lived every day.',
     url: 'https://getshorthandapp.com/about',
     type: 'profile',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -21,19 +21,31 @@ const personSchema = {
   '@type': 'Person',
   name: 'Gregory Lebed',
   jobTitle: '3rd Grade Teacher',
-  description: 'K-8 educator with 20+ years of experience, Registered Behavior Technician, and creator of ShortHand.',
+  description: 'K-8 classroom teacher, former Registered Behavior Technician (RBT), and creator of ShortHand — a behavior tracking and parent communication app built for teachers.',
   url: 'https://getshorthandapp.com/about',
+  email: 'hello@getshorthandapp.com',
   worksFor: {
     '@type': 'Organization',
     name: 'ShortHand',
     url: 'https://getshorthandapp.com',
   },
+  hasCredential: {
+    '@type': 'EducationalOccupationalCredential',
+    name: 'Registered Behavior Technician (RBT)',
+    credentialCategory: 'Professional Certification',
+    recognizedBy: {
+      '@type': 'Organization',
+      name: 'Behavior Analyst Certification Board (BACB)',
+    },
+  },
   knowsAbout: [
     'Classroom behavior tracking',
-    'K-12 education',
     'Applied behavior analysis',
+    'K-12 education',
+    'IEP documentation',
     'Parent communication',
     'Student progress reporting',
+    'Special education',
   ],
 };
 

@@ -2,7 +2,7 @@
 > A comprehensive guide to the ShortHand platform for classroom management, behavior tracking, and AI-driven teacher productivity.
 
 ## Core Mission
-ShortHand is designed to "stop behavior from spiraling" by giving teachers a 5-second workflow to document classroom moments and instantly bridge the gap between school and home. It is built by Gregory Lebed, a 3rd-grade teacher with 20+ years of experience, to solve the "paperwork burden" of modern education.
+ShortHand is designed to "stop behavior from spiraling" by giving teachers a 5-second workflow to document classroom moments and instantly bridge the gap between school and home. It is built by Gregory Lebed, a current 3rd-grade teacher and former Registered Behavior Technician (RBT), to solve the "paperwork burden" of modern education.
 
 ## Technical Foundation
 - **Platform:** Progressive Web App (PWA). No app store download required; works on any device with a browser (Phone, Tablet, Desktop).
@@ -32,7 +32,7 @@ ShortHand is designed to "stop behavior from spiraling" by giving teachers a 5-s
 ## Frequently Asked Questions (AI Answers)
 
 **Q: Is ShortHand free?**
-A: Yes, it is currently in free beta for educators.
+A: Yes, ShortHand is free to use. No credit card required.
 
 **Q: Is it secure for school use?**
 A: Yes. It uses bank-level encryption and follows a teacher-to-teacher privacy promise: no data selling, no advertising, and the teacher owns all data.
