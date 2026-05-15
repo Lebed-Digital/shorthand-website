@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician certification. He built ShortHand to solve the paperwork problem he lived every day.',
     url: 'https://getshorthandapp.com/about',
     type: 'profile',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
   alternates: { canonical: 'https://getshorthandapp.com/about' },
 };
@@ -103,13 +103,13 @@ export default function AboutPage() {
 
         <div style={{ lineHeight: 1.75, color: 'var(--text)', fontSize: '1.05rem' }}>
           <p style={{ marginBottom: '1.25rem' }}>
-            I&apos;ve been teaching K-8 for over twenty years. In that time I&apos;ve sat through more IEP meetings, written more parent emails, and filled out more behavior logs than I can count. And for most of that time, I did it the hard way — sticky notes, spreadsheets, mental gymnastics at the end of a long day trying to remember what happened with which student.
+            I&apos;ve been teaching K-8 for over twenty years. In that time I&apos;ve sat through more IEP meetings, written more parent emails, and filled out more behavior logs than I can count. And for most of that time, I did it the hard way: sticky notes, spreadsheets, mental gymnastics at the end of a long day trying to remember what happened with which student.
           </p>
           <p style={{ marginBottom: '1.25rem' }}>
-            I&apos;m also a Registered Behavior Technician (RBT). That training changed how I see behavior — not as something to punish, but as communication. It made me a better teacher, but it also made me more aware of how much data we lose when documentation is slow or painful. If logging a note takes two minutes, you stop doing it. And when you stop doing it, you lose the pattern. You lose the story.
+            I&apos;m also a Registered Behavior Technician (RBT). That training changed how I see behavior. Not as something to punish, but as communication. It made me a better teacher, but it also made me more aware of how much data we lose when documentation is slow or painful. If logging a note takes two minutes, you stop doing it. And when you stop doing it, you lose the pattern. You lose the story.
           </p>
           <p style={{ marginBottom: '1.25rem' }}>
-            I built ShortHand because I couldn&apos;t find a tool that worked the way a real classroom works. Every app I tried was either built for administrators or designed by people who hadn&apos;t been in front of 25 third-graders on a Tuesday afternoon. I needed something I could actually use — fast, quiet, one-handed — while also teaching.
+            I built ShortHand because I couldn&apos;t find a tool that worked the way a real classroom works. Every app I tried was either built for administrators or designed by people who hadn&apos;t been in front of 25 third-graders on a Tuesday afternoon. I needed something I could actually use while also teaching: fast, quiet, one-handed.
           </p>
           <p style={{ marginBottom: '2rem' }}>
             So I built it myself. ShortHand is the tool I wish I&apos;d had twenty years ago. I&apos;m still a full-time teacher. I still use it every day. Every feature in this app came from a real problem I or another teacher actually faced.

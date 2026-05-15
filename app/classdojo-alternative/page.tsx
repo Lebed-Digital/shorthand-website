@@ -5,14 +5,14 @@ import TrackedLink from '../../components/TrackedLink';
 
 export const metadata: Metadata = {
   title: 'ClassDojo Alternative for Middle & High School Teachers — ShortHand',
-  description: 'Looking for a ClassDojo alternative? ShortHand is built for older students — private behavior notes, parent communication logs, and no public point systems.',
+  description: 'Looking for a ClassDojo alternative? ShortHand is built for older students: private behavior notes, parent communication logs, and no public point systems.',
   alternates: { canonical: 'https://getshorthandapp.com/classdojo-alternative' },
   openGraph: {
     title: 'ClassDojo Alternative for Middle & High School Teachers — ShortHand',
-    description: 'Looking for a ClassDojo alternative? ShortHand is built for older students — private behavior notes, parent communication logs, and no public point systems.',
+    description: 'Looking for a ClassDojo alternative? ShortHand is built for older students: private behavior notes, parent communication logs, and no public point systems.',
     url: 'https://getshorthandapp.com/classdojo-alternative',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -22,7 +22,7 @@ const rows = [
   { feature: 'Parent updates', dojo: 'Social-media style feed', sh: '2-click professional message, logged automatically' },
   { feature: 'Documentation', dojo: 'Basic activity log', sh: 'Timestamped notes, IEP flags, exportable history' },
   { feature: 'Mood tracking', dojo: 'None', sh: 'Daily student check-ins with trend view' },
-  { feature: 'Admin-ready paper trail', dojo: 'No', sh: 'Yes — every contact logged with date and outcome' },
+  { feature: 'Admin-ready paper trail', dojo: 'No', sh: 'Yes. Every contact logged with date and outcome.' },
   { feature: 'AI summaries', dojo: 'No', sh: 'One-tap behavior summary per student' },
   { feature: 'Cost', dojo: 'Free (with ads/upsells)', sh: 'Free to start, no ads' },
 ];

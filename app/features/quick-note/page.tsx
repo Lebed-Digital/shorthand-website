@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.',
     url: 'https://getshorthandapp.com/features/quick-note',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -54,20 +54,20 @@ export default function QuickNotePage() {
         <span className="detail-icon">✏️</span>
         <h1 className="detail-title">Quick <em>Note</em></h1>
         <p className="detail-desc">
-          Tap a student&apos;s name, speak or type what you observed, and you&apos;re done —
-          in under 5 seconds. No menus to navigate, no forms to fill out.
+          Tap a student&apos;s name, speak or type what you observed, and you&apos;re done in
+          under 5 seconds. No menus to navigate, no forms to fill out.
           Every note is timestamped and stored automatically, building a picture of
           each student over time.
         </p>
         <p className="detail-desc">
-          Student photos appear right in the suggestions dropdown, so you&apos;re always sure you&apos;re logging the right kid — especially helpful in larger classes or when you&apos;re moving fast.
+          Student photos appear right in the suggestions dropdown, so you&apos;re always sure you&apos;re logging the right kid, especially helpful in larger classes or when you&apos;re moving fast.
         </p>
         <p className="detail-desc">
           Voice-to-text lets you log hands-free while you&apos;re still moving around the room.
-          Smart Shorthand lets you set custom abbreviations that expand instantly —
-          so &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
+          Smart Shorthand lets you set custom abbreviations that expand instantly.
+          So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
           The AI reads your note and auto-tags it with behavior categories like
-          Kindness, Participation, or Growth — no manual sorting required.
+          Kindness, Participation, or Growth, with no manual sorting required.
         </p>
         <p className="detail-desc">
           The faster it is to log, the more you&apos;ll actually do it.

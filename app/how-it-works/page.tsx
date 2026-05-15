@@ -38,7 +38,7 @@ export default function HowItWorksPage() {
         <div className="section-label">See It In Action</div>
         <h1 className="install-title">How ShortHand<br /><em>Works</em></h1>
         <p className="install-sub">
-          Watch these quick walkthroughs to see ShortHand in action — setup to first note in under 2 minutes.
+          Watch these quick walkthroughs to see ShortHand in action. Setup to first note in under 2 minutes.
         </p>
       </div>
 
@@ -57,7 +57,7 @@ export default function HowItWorksPage() {
             </div>
             <div>
               <div style={{ fontWeight: 600, color: 'var(--text)', fontSize: '1rem', marginBottom: '0.3rem' }}>Getting Started</div>
-              <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>Create your account, add your students, and start logging behavior notes — all in a couple of minutes.</p>
+              <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>Create your account, add your students, and start logging behavior notes, all in a couple of minutes.</p>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ export default function HowItWorksPage() {
             </div>
             <div>
               <div style={{ fontWeight: 600, color: 'var(--text)', fontSize: '1rem', marginBottom: '0.3rem' }}>Sending a Note Home</div>
-              <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>Write a quick note to a family and send it as an email — directly from the app, in seconds.</p>
+              <p style={{ color: 'var(--text-dim)', fontSize: '0.9rem', lineHeight: 1.5, margin: 0 }}>Write a quick note to a family and send it as an email, directly from the app, in seconds.</p>
             </div>
           </div>
 

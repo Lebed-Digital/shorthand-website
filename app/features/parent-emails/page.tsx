@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Log every parent call, email, and meeting. One tap exports the full communication history for IEP meetings. AI drafts messages from your notes.',
     url: 'https://getshorthandapp.com/features/parent-emails',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -42,7 +42,7 @@ export default function ParentCommunicationPage() {
         <span className="detail-icon">✉️</span>
         <h1 className="detail-title">Parent <em>Communication</em></h1>
         <p className="detail-desc">
-          Every phone call, email, meeting, and ParentSquare message — logged in one place,
+          Every phone call, email, meeting, and ParentSquare message logged in one place,
           timestamped, and organized by student. No more searching through sent emails or
           trying to remember when you last reached out.
         </p>
@@ -54,12 +54,12 @@ export default function ParentCommunicationPage() {
         <p className="detail-desc">
           Mark entries as IEP-related or urgent. Set follow-up reminders with overdue
           warnings. When an IEP meeting comes up, hit <strong>IEP Copy</strong> and the app
-          exports the full communication history — formatted and ready to paste into official
+          exports the full communication history, formatted and ready to paste into official
           documents. No scrambling. No &quot;I think I emailed them in October.&quot;
         </p>
         <p className="detail-desc">
           Need to reach out but don&apos;t know how to start? ShortHand drafts a clear,
-          professional message directly from your notes — you review it, adjust the tone,
+          professional message directly from your notes. You review it, adjust the tone,
           and send.
         </p>
 

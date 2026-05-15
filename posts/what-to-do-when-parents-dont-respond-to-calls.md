@@ -46,7 +46,7 @@ There is no federal law dictating how many times you must call before escalating
 
 My rule: three documented attempts across different methods before looping in an administrator or school counselor.
 
-Call on Monday and leave a voicemail — that is one. Send an email on Wednesday — that is two. Call again on Friday with no answer — that is three. At this point the ball is firmly in the school's court. You have done your job as the classroom teacher.
+Call on Monday and leave a voicemail, that is one. Send an email on Wednesday, that is two. Call again on Friday with no answer, that is three. At this point the ball is firmly in the school's court. You have done your job as the classroom teacher.
 
 ---
 
@@ -68,7 +68,7 @@ Eventually that silent parent will show up. It usually happens after report card
 
 This is where your documentation habit pays off entirely.
 
-You do not argue. You simply pull up your log. You calmly show them the six contact attempts you made over three weeks — the exact dates and times, the voicemails, the emails. That conversation ends immediately. The anger deflates. The focus returns to helping the student.
+You do not argue. You simply pull up your log. You calmly show them the six contact attempts you made over three weeks: the exact dates and times, the voicemails, the emails. That conversation ends immediately. The anger deflates. The focus returns to helping the student.
 
 ---
 

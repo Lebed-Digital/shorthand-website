@@ -4,7 +4,7 @@ import FreeToolClient from './FreeToolClient';
 export const metadata: Metadata = {
   title: 'Free Report Card Comment Generator for Teachers',
   description:
-    'Generate polished report card comments in 10 seconds. Pick strengths, struggles, and behavior — get a personalized comment instantly. Free, no sign-up required.',
+    'Generate polished report card comments in 10 seconds. Pick strengths, struggles, and behavior, and get a personalized comment instantly. Free, no sign-up required.',
   alternates: { canonical: 'https://getshorthandapp.com/free-tool' },
   openGraph: {
     title: 'Free Report Card Comment Generator for Teachers',

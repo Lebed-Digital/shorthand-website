@@ -27,7 +27,7 @@ const fredoka = Fredoka({
 export const metadata: Metadata = {
   metadataBase: new URL('https://getshorthandapp.com'),
   title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
-  description: 'Log a parent call, draft a behavior email, or write a progress report — before you finish your sandwich. ShortHand turns classroom notes into parent-ready messages in seconds. Free for teachers.',
+  description: 'Log a parent call, draft a behavior email, or write a progress report before you finish your sandwich. ShortHand turns classroom notes into parent-ready messages in seconds. Free for teachers.',
   icons: {
     icon: '/icon.png',
     apple: '/apple-icon.png',
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'ShortHand',
     title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
-    description: 'Turn classroom notes into parent-ready messages in seconds. Log behavior, track parent contact, and generate AI reports — built by a teacher, for teachers.',
+    description: 'Turn classroom notes into parent-ready messages in seconds. Log behavior, track parent contact, and generate AI reports. Built by a teacher, for teachers.',
     url: 'https://getshorthandapp.com',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
     locale: 'en_US',
   },
   twitter: {

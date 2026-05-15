@@ -28,7 +28,7 @@ export async function POST(req: Request): Promise<Response> {
           {
             role: 'system',
             content:
-              'You are a helpful assistant that writes concise, warm, specific report card comments for elementary school teachers. Output only the comment text — no intro, no labels, no quotes.',
+              'You are a helpful assistant that writes concise, warm, specific report card comments for elementary school teachers. Output only the comment text. No intro, no labels, no quotes.',
           },
           { role: 'user', content: prompt },
         ],

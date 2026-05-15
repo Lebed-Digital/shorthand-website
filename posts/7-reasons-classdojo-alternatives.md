@@ -3,7 +3,7 @@ title: "7 Reasons You're Googling \"ClassDojo Alternatives\" (From a 3rd Grade T
 subtitle: "If you've ever typed 'ClassDojo alternatives' at 7 PM on a Tuesday, you're not alone."
 date: "2026-04-08"
 author: "Gregory Lebed"
-excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are switching — and what actually works instead, from a 3rd grade teacher with 20+ years in K-8 classrooms."
+excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are switching, and what actually works instead, from a 3rd grade teacher with 20+ years in K-8 classrooms."
 ---
 
 If you've ever found yourself staring at a search bar typing "ClassDojo alternatives" at 7:00 PM on a Tuesday, you aren't doing anything wrong. You're just dealing with the same reality I was:

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Color-coded status rings and automatic alerts so no student quietly slips through the cracks. Built for K-12 teachers.',
     url: 'https://getshorthandapp.com/features/behavior-tracking',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -42,14 +42,14 @@ export default function NeverMissPage() {
         <span className="detail-icon">🔴</span>
         <h1 className="detail-title">Never Miss <em>a Student</em></h1>
         <p className="detail-desc">
-          Every teacher has a mental list of students they check in on regularly —
+          Every teacher has a mental list of students they check in on regularly,
           and a few others who quietly go weeks without a real conversation.
           ShortHand makes that invisible problem visible.
         </p>
         <p className="detail-desc">
           Every student card on your roster glows <strong>Green</strong> if you logged today,
           <strong> Amber</strong> if it&apos;s been 5–7 days, and <strong> Red</strong> if it&apos;s been
-          8 or more. The dashboard flags anyone you haven&apos;t documented in over 5 days —
+          8 or more. The dashboard flags anyone you haven&apos;t documented in over 5 days,
           automatically, every time you open the app.
         </p>
         <p className="detail-desc">
@@ -60,7 +60,7 @@ export default function NeverMissPage() {
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
             src="https://www.youtube-nocookie.com/embed/kYyhSYiQ4GY?enablejsapi=1"
-            title="Never Miss a Student — ShortHand"
+            title="Never Miss a Student: ShortHand"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />

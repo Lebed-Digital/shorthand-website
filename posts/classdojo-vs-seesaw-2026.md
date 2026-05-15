@@ -1,9 +1,9 @@
 ---
 title: "ClassDojo vs Seesaw: Which One Is Actually Better for Teachers in 2026?"
-subtitle: "An honest comparison — and why a lot of teachers end up choosing neither."
+subtitle: "An honest comparison, and why a lot of teachers end up choosing neither."
 date: "2026-05-05"
 author: "Gregory Lebed"
-excerpt: "ClassDojo and Seesaw each do one thing well and several things poorly. Here's an honest side-by-side for 2026 — plus what teachers are switching to when neither one fits."
+excerpt: "ClassDojo and Seesaw each do one thing well and several things poorly. Here's an honest side-by-side for 2026, plus what teachers are switching to when neither one fits."
 ---
 
 # ClassDojo vs Seesaw: Which One Is Actually Better for Teachers in 2026?

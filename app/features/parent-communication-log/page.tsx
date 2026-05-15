@@ -5,14 +5,14 @@ import TrackedLink from '../../../components/TrackedLink';
 
 export const metadata: Metadata = {
   title: 'Parent Communication Log — ShortHand',
-  description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready — so if admin asks, you\'re covered.',
+  description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready, so if admin asks, you\'re covered.',
   alternates: { canonical: 'https://getshorthandapp.com/features/parent-communication-log' },
   openGraph: {
     title: 'Parent Communication Log — ShortHand',
-    description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready — so if admin asks, you\'re covered.',
+    description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready, so if admin asks, you\'re covered.',
     url: 'https://getshorthandapp.com/features/parent-communication-log',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -41,7 +41,7 @@ export default function ParentCommunicationLogPage() {
         <span className="detail-icon">📋</span>
         <h1 className="detail-title">Parent Communication <em>Log</em></h1>
         <p className="detail-desc">
-          Every phone call, email, and meeting — logged in seconds, timestamped, and
+          Every phone call, email, and meeting logged in seconds, timestamped, and
           organized by student. No more searching through sent emails or trying to
           remember when you last reached out.
         </p>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Track student attendance fast. See patterns over time and catch chronic absenteeism before it becomes a bigger problem.',
     url: 'https://getshorthandapp.com/features/attendance',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand — Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -42,7 +42,7 @@ export default function AttendancePage() {
         <h1 className="detail-title">Attendance <em>Tracking</em></h1>
         <p className="detail-desc">
           Take attendance in seconds and build a running record for every student.
-          No paper, no separate system — it lives right alongside your notes and
+          No paper, no separate system. It lives right alongside your notes and
           communication logs in ShortHand.
         </p>
         <p className="detail-desc">
@@ -51,7 +51,7 @@ export default function AttendancePage() {
           with a clear record.
         </p>
         <p className="detail-desc">
-          When it&apos;s all in one place, following up is easy — and nothing falls
+          When it&apos;s all in one place, following up is easy and nothing falls
           through the cracks.
         </p>
 

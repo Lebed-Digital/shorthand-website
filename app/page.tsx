@@ -15,10 +15,10 @@ const GlobeCanvas = dynamic(() => import('../components/GlobeCanvas'), { ssr: fa
 const features = [
   { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, speak or type a note, done in under 5 seconds. Student photos appear right in the suggestions so you\'re always logging the right kid. Voice-to-text, auto-tagging, and smart shortcuts built in.' },
   { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 8+ days. Automatic alerts so no one quietly slips through the cracks.' },
-  { slug: 'parent-emails',          Icon: Mail,           title: 'AI Parent Messages',       desc: 'Log a behavior note. Tap "draft message." AI writes it instantly — ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
-  { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out — or what was said. A paper trail that protects you and keeps parents accountable.' },
+  { slug: 'parent-emails',          Icon: Mail,           title: 'AI Parent Messages',       desc: 'Log a behavior note. Tap "draft message." AI writes it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
+  { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out, or what was said. A paper trail that protects you and keeps parents accountable.' },
   { slug: 'ai-reports',             Icon: ClipboardList,  title: 'AI Reports',               desc: 'Turn months of raw notes into polished, parent-ready progress reports in seconds. Quick Note, Standard, or Detailed.' },
-  { slug: 'class-insights',    Icon: BarChart2,     title: 'Progress & Insights',   desc: 'View behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention — at a glance.' },
+  { slug: 'class-insights',    Icon: BarChart2,     title: 'Progress & Insights',   desc: 'View behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.' },
 ];
 
 const btnTap   = { scale: 0.96 };
@@ -254,7 +254,7 @@ export default function Home() {
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
             <h1>Stop behavior from spiraling.<br /><em>Parents in the loop in seconds.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
-              ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds — built by a teacher, for teachers.
+              ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
             <p className="hero-sub">
               The moment something happens, tap a note. ShortHand drafts the parent message for you, so communication happens the same day, not a week later when you finally find the time to write it.
@@ -288,7 +288,7 @@ export default function Home() {
                 rel="nofollow"
                 onClick={() => (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'cta_click', { event_category: 'engagement', event_label: 'hero_try_demo' })}
               >
-                Try a live demo — no sign-up, opens instantly →
+                Try a live demo. No sign-up, opens instantly →
               </a>
             </p>
           </div>
@@ -339,7 +339,7 @@ export default function Home() {
           <div className="features-header">
             <div className="section-label">What it does</div>
             <h2 className="section-heading">One app for notes, parent communication,<br /><em>and everything in between.</em></h2>
-            <p className="section-sub">Built around the problems teachers actually face every day — not the ones app developers imagine.</p>
+            <p className="section-sub">Built around the problems teachers actually face every day, not the ones app developers imagine.</p>
           </div>
           <div className="features-grid">
             {features.map((f) => (
@@ -354,7 +354,7 @@ export default function Home() {
                       <div className="qn-note-row">
                         <div className="qn-avatar" style={{ borderColor: '#22c55e', boxShadow: '0 0 8px rgba(34,197,94,0.5)' }}>MR</div>
                         <div className="qn-bubble">
-                          <span className="qn-tag">#behavior</span> Stayed on task entire period — big improvement
+                          <span className="qn-tag">#behavior</span> Stayed on task entire period. Big improvement!
                           <div className="qn-meta">🎤 voice · just now</div>
                         </div>
                       </div>
@@ -553,7 +553,7 @@ export default function Home() {
             <div className="after-card">
               <div className="ba-label">After</div>
               {[
-                'Tap, speak, saved — in 5 seconds',
+                'Tap, speak, saved. In 5 seconds.',
                 'Full communication log, ready for IEPs',
                 'Reports generated while you drink coffee',
                 'Red ring alerts you before anyone slips through',
@@ -644,7 +644,7 @@ export default function Home() {
               },
               {
                 q: 'Do I need to download anything?',
-                a: 'No. ShortHand is a Progressive Web App (PWA) — it works in your browser on any device. You can add it to your home screen for a native app feel, but there\'s nothing to download from an app store.',
+                a: 'No. ShortHand is a Progressive Web App (PWA). It works in your browser on any device. You can add it to your home screen for a native app feel, but there\'s nothing to download from an app store.',
               },
               {
                 q: 'How does ShortHand help with parent communication?',
@@ -716,14 +716,14 @@ export default function Home() {
             <div className="section-label">There&apos;s More Inside</div>
             <h2 className="section-heading">The six features above are just<br /><em>the beginning.</em></h2>
             <p className="coming-soon-body">
-              Once you&apos;re in, you&apos;ll find tools that go even deeper — built from real classroom
+              Once you&apos;re in, you&apos;ll find tools that go even deeper, built from real classroom
               experience, for the moments that actually matter.
             </p>
             <div className="coming-soon-grid">
               <div className="coming-soon-card">
                 <div className="coming-soon-card-icon">🎯</div>
                 <div className="coming-soon-card-title">Student Goal Tracking</div>
-                <p className="coming-soon-card-desc">Set AI-suggested goals for individual students and track their growth — from Planted to Bloomed, with every step documented.</p>
+                <p className="coming-soon-card-desc">Set AI-suggested goals for individual students and track their growth from Planted to Bloomed, with every step documented.</p>
               </div>
               <div className="coming-soon-card">
                 <div className="coming-soon-card-icon">🔍</div>
@@ -733,18 +733,18 @@ export default function Home() {
               <div className="coming-soon-card">
                 <div className="coming-soon-card-icon">🧠</div>
                 <div className="coming-soon-card-title">SEL Micro-Lessons</div>
-                <p className="coming-soon-card-desc">AI generates Social-Emotional Learning plans tailored to the behavior patterns in your specific class — ready to drop into any spare five minutes.</p>
+                <p className="coming-soon-card-desc">AI generates Social-Emotional Learning plans tailored to the behavior patterns in your specific class, ready to drop into any spare five minutes.</p>
               </div>
               <div className="coming-soon-card">
                 <div className="coming-soon-card-icon">🔄</div>
                 <div className="coming-soon-card-title">Specials Rotation</div>
-                <p className="coming-soon-card-desc">Upload your school&apos;s rotation schedule and ShortHand always knows what&apos;s today — Art, Gym, Music and more, right on your home screen.</p>
+                <p className="coming-soon-card-desc">Upload your school&apos;s rotation schedule and ShortHand always knows what&apos;s today: Art, Gym, Music and more, right on your home screen.</p>
               </div>
             </div>
             <div className="email-form-wrap">
               <p className="email-form-label">Want to hear when new tools are ready? I&apos;ll only reach out when something worth your time is available.</p>
               {submitted ? (
-                <p className="email-submitted">✓ You&apos;re on the list — I&apos;ll be in touch!</p>
+                <p className="email-submitted">✓ You&apos;re on the list. I&apos;ll be in touch!</p>
               ) : (
                 <form className="email-form" onSubmit={handleEmailSubmit}>
                   <input
@@ -803,7 +803,7 @@ export default function Home() {
           <p className="section-sub">You're trusting me with notes about real kids. Here's exactly how I protect that.</p>
           <div className="privacy-grid">
             {[
-              { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center — the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
+              { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center, the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
               { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
               { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
               { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy." },
@@ -832,7 +832,7 @@ export default function Home() {
               <div className="section-label">Get started</div>
               <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
               <p className="cta-sub">
-                ShortHand is completely free. Open it on any device and start using it in minutes — nothing to install from an app store.
+                ShortHand is completely free. Open it on any device and start using it in minutes. Nothing to install from an app store.
               </p>
               <div className="cta-btns">
                 <motion.a
@@ -856,7 +856,7 @@ export default function Home() {
 
       {/* SEO / crawler keywords — education technology classification */}
       <section style={{ display: 'none' }} aria-hidden="true">
-        <p>ShortHand is an education technology application designed to improve teacher productivity and student progress tracking. Built for K–12 educators, ShortHand supports pedagogy, classroom management, behavior documentation, parent communication, and data-driven instruction. This tool helps teachers track student growth, generate progress reports, and maintain organized records — all in support of positive educational outcomes. ShortHand is a legitimate SaaS product for schools, districts, and individual educators seeking teacher productivity tools and classroom management software.</p>
+        <p>ShortHand is an education technology application designed to improve teacher productivity and student progress tracking. Built for K–12 educators, ShortHand supports pedagogy, classroom management, behavior documentation, parent communication, and data-driven instruction. This tool helps teachers track student growth, generate progress reports, and maintain organized records in support of positive educational outcomes. ShortHand is a legitimate SaaS product for schools, districts, and individual educators seeking teacher productivity tools and classroom management software.</p>
       </section>
       {/* Blog links — internal linking for SEO */}
       <section style={{ padding: '3rem 1.5rem', borderTop: '1px solid rgba(255,255,255,0.06)' }}>

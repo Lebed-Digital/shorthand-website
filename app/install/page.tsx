@@ -13,25 +13,25 @@ const steps: Record<Tab, { icon: string; text: string }[]> = {
     { icon: '📤', text: 'Tap the Share button at the bottom of the screen (the box with an arrow pointing up)' },
     { icon: '➕', text: 'Scroll down and tap "Add to Home Screen"' },
     { icon: '✏️', text: 'Name it "ShortHand" and tap Add' },
-    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app — tap to open!' },
+    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app. Tap to open!' },
   ],
   Android: [
     { icon: '🌐', text: 'Tap the "Open App" button at the top of this page to open ShortHand in Chrome' },
     { icon: '⋮', text: 'Tap the three-dot menu in the top-right corner' },
     { icon: '➕', text: 'Tap "Add to Home screen"' },
     { icon: '✏️', text: 'Name it "ShortHand" and tap Add' },
-    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app — tap to open!' },
+    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app. Tap to open!' },
   ],
   Desktop: [
     { icon: '🌐', text: 'Click the "Open App" button at the top of this page to open ShortHand in your browser' },
     { icon: '⬇️', text: 'Look for the install icon in the address bar (a computer with a down arrow), then click it' },
     { icon: '➕', text: 'Click "Install" in the prompt that appears' },
-    { icon: '🎉', text: 'ShortHand opens as its own window and appears in your taskbar or dock — no browser needed!' },
+    { icon: '🎉', text: 'ShortHand opens as its own window and appears in your taskbar or dock. No browser needed!' },
   ],
 };
 
 const notes: Record<Tab, string> = {
-  iPhone: 'Must use Safari — Chrome on iPhone does not support Add to Home Screen.',
+  iPhone: 'Must use Safari. Chrome on iPhone does not support Add to Home Screen.',
   Android: 'Works best in Chrome. Some Android devices may show "Install app" instead of "Add to Home screen".',
   Desktop: 'Works in Chrome and Edge. Firefox does not support PWA install.',
 };
@@ -62,7 +62,7 @@ export default function InstallPage() {
         <div className="section-label">Free · No App Store · Any Device</div>
         <h1 className="install-title">Add ShortHand<br />to Your <em>Home Screen</em></h1>
         <p className="install-sub">
-          ShortHand is a web app — nothing to download. Follow the steps below
+          ShortHand is a web app. Nothing to download. Follow the steps below
           for your device and it will live on your home screen just like a regular app.
         </p>
       </div>

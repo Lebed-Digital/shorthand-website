@@ -82,7 +82,7 @@ export default function DpaPage() {
               • <strong style={{ color: 'var(--text)' }}>Implement appropriate security measures</strong> including encryption at rest (AES-256), encryption in transit (TLS), and row-level access controls.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Notify the School</strong> within 72 hours of becoming aware of a data breach affecting Student Data.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Delete or return Student Data</strong> upon request or termination of the agreement within 30 days.<br /><br />
-              • <strong style={{ color: 'var(--text)' }}>Allow audit rights</strong> — provide documentation upon reasonable request to demonstrate compliance with this agreement.
+              • <strong style={{ color: 'var(--text)' }}>Allow audit rights:</strong> provide documentation upon reasonable request to demonstrate compliance with this agreement.
             </div>
           </div>
 
@@ -113,10 +113,10 @@ export default function DpaPage() {
             <div className="privacy-title">Subprocessors</div>
             <div className="privacy-desc">
               ShortHand uses the following subprocessors to deliver the service. Each has been evaluated for FERPA compliance:<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Supabase</strong> — database and authentication. Data stored in AWS us-east-1 (Virginia, USA). SOC 2 Type II certified. Schools in provinces with data residency requirements (such as British Columbia or Nova Scotia) should contact us to discuss options before signing up.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Groq</strong> — AI language model processing for report generation. Groq does not use customer data to train models and offers a DPA. Data is not retained after the API response.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Vercel</strong> — application hosting. SOC 2 Type II certified.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Google</strong> — optional Google Classroom integration only. Used solely to import class rosters when the teacher explicitly connects their account.
+              <strong style={{ color: 'var(--text)' }}>Supabase:</strong> database and authentication. Data stored in AWS us-east-1 (Virginia, USA). SOC 2 Type II certified. Schools in provinces with data residency requirements (such as British Columbia or Nova Scotia) should contact us to discuss options before signing up.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Groq:</strong> AI language model processing for report generation. Groq does not use customer data to train models and offers a DPA. Data is not retained after the API response.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Vercel:</strong> application hosting. SOC 2 Type II certified.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Google:</strong> optional Google Classroom integration only. Used solely to import class rosters when the teacher explicitly connects their account.
             </div>
           </div>
 
@@ -125,7 +125,7 @@ export default function DpaPage() {
             <div className="privacy-title">FERPA Compliance</div>
             <div className="privacy-desc">
               ShortHand acknowledges that Student Data shared by a School may be subject to FERPA (20 U.S.C. § 1232g).<br /><br />
-              ShortHand agrees to use Student Data only for the purposes for which it was disclosed — providing classroom management services to Authorized Users — and for no other purpose.<br /><br />
+              ShortHand agrees to use Student Data only for the purposes for which it was disclosed (providing classroom management services to Authorized Users) and for no other purpose.<br /><br />
               ShortHand will not re-disclose Student Data to any party other than the School or its Authorized Users without prior written consent from the School.
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function DpaPage() {
             <div className="privacy-icon">8️⃣</div>
             <div className="privacy-title">COPPA Compliance</div>
             <div className="privacy-desc">
-              ShortHand is a teacher-facing tool. Teachers — not students — create accounts and enter data.<br /><br />
+              ShortHand is a teacher-facing tool. Teachers, not students, create accounts and enter data.<br /><br />
               Students do not create accounts, log in, or directly interact with ShortHand.<br /><br />
               ShortHand does not knowingly collect personal information directly from children under 13. Any student information in the system was entered by a teacher on behalf of the School.
             </div>

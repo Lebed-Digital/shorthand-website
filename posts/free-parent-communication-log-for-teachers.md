@@ -6,9 +6,9 @@ author: "Gregory Lebed"
 excerpt: "A free parent communication log keeps you covered at conferences, IEP meetings, and those 'I never got a call' moments. Here's what to track and how to do it without adding to your workload."
 ---
 
-A parent calls your room after school. "Nobody ever told me about this." You're almost certain you called three weeks ago — but you can't prove it, and honestly, you can't even remember what you said. (If only there were a word for a log of communications with parents. Somebody should invent that.)
+A parent calls your room after school. "Nobody ever told me about this." You're almost certain you called three weeks ago, but you can't prove it, and honestly, you can't even remember what you said. (If only there were a word for a log of communications with parents. Somebody should invent that.)
 
-That moment — the one where you're scrambling to remember a conversation from October — is exactly what a parent communication log is for.
+That moment, the one where you're scrambling to remember a conversation from October, is exactly what a parent communication log is for.
 
 Here's everything you need to track parent contact without adding an hour to your week.
 
@@ -16,7 +16,7 @@ Here's everything you need to track parent contact without adding an hour to you
 
 ## What Is a Parent Communication Log?
 
-A parent communication log is a simple record of every time you contact a parent or guardian — phone calls, emails, notes home, in-person conversations at pickup. Each entry captures the basics: who you contacted, when, why, and what was decided.
+A parent communication log is a simple record of every time you contact a parent or guardian: phone calls, emails, notes home, in-person conversations at pickup. Each entry captures the basics: who you contacted, when, why, and what was decided.
 
 That's it. It doesn't need to be fancy. It just needs to exist.
 
@@ -28,11 +28,11 @@ Teachers who log parent contact consistently are almost always the ones who feel
 
 A good parent communication log entry answers five questions:
 
-- **Date and time** — when did the contact happen?
-- **Student name** — whose parent are we talking about?
-- **Contact method** — call, email, note home, in-person?
-- **Who you reached** — parent, guardian, voicemail, no answer?
-- **Summary** — what was discussed, what was decided, any follow-up needed?
+- **Date and time:** when did the contact happen?
+- **Student name:** whose parent are we talking about?
+- **Contact method:** call, email, note home, in-person?
+- **Who you reached:** parent, guardian, voicemail, no answer?
+- **Summary:** what was discussed, what was decided, any follow-up needed?
 
 You don't need paragraphs. Two or three sentences is enough. The goal is to jog your memory three months from now, not write a novel.
 
@@ -44,7 +44,7 @@ One field most teachers skip but shouldn't: **follow-up**. If you told a parent 
 
 If you prefer paper, a simple table with those five columns is all you need. Print one sheet per student and keep them in a binder, or use one sheet per week for your whole class.
 
-[Open the free printable log →](https://getshorthandapp.com/tools/parent-communication-log) — fill it in online and print, or print blank and fill by hand. No email required, no sign-up.
+[Open the free printable log →](https://getshorthandapp.com/tools/parent-communication-log) Fill it in online and print, or print blank and fill by hand. No email required, no sign-up.
 
 If you want a digital option, a spreadsheet works fine too. One row per contact, one tab per class.
 
@@ -54,9 +54,9 @@ If you want a digital option, a spreadsheet works fine too. One row per contact,
 
 If you're already logging behavior notes, mood check-ins, or parent contacts in [ShortHand](https://getshorthandapp.com), your communication log builds itself.
 
-Every time you tag a note as a parent contact, it's timestamped, tied to the student, and stored — no separate log needed. When a parent says "I never heard about this," you can pull up the exact date and what was said in about ten seconds.
+Every time you tag a note as a parent contact, it's timestamped, tied to the student, and stored. No separate log needed. When a parent says "I never heard about this," you can pull up the exact date and what was said in about ten seconds.
 
-ShortHand is free to try and works on your phone, so you can log a call in the parking lot before you even get back to your room. That's when it actually gets recorded — not "later tonight" (which means never).
+ShortHand is free to try and works on your phone, so you can log a call in the parking lot before you even get back to your room. That's when it actually gets recorded, not "later tonight" (which means never).
 
 ---
 
@@ -80,10 +80,10 @@ Most teachers start logging because admin asks them to. They keep logging becaus
 
 A few situations where a communication log has saved teachers:
 
-- **IEP meetings** — documentation of parent notification and outreach is a legal requirement under IDEA. If you can't show it, it didn't happen.
-- **Behavioral escalations** — when a situation reaches the principal's office, a log showing weeks of proactive outreach changes the conversation entirely.
-- **"Nobody told me" moments** — the parent who insists they never heard about the grade, the detention, the incident. A date-stamped log entry ends that conversation.
-- **Your own peace of mind** — not having to guess whether you followed up is surprisingly calming.
+- **IEP meetings:** documentation of parent notification and outreach is a legal requirement under IDEA. If you can't show it, it didn't happen.
+- **Behavioral escalations:** when a situation reaches the principal's office, a log showing weeks of proactive outreach changes the conversation entirely.
+- **"Nobody told me" moments:** the parent who insists they never heard about the grade, the detention, the incident. A date-stamped log entry ends that conversation.
+- **Your own peace of mind:** not having to guess whether you followed up is surprisingly calming.
 
 You're not logging to cover yourself. You're logging because it makes every conversation with parents go better when you know exactly what's already been said.
 
@@ -105,6 +105,6 @@ The most common reason teachers stop using a communication log: it feels like ex
 
 A parent communication log is one of those tools where the upfront effort is low and the payoff is disproportionately high. You don't need a perfect system. You just need something you'll actually use.
 
-[ShortHand](https://getshorthandapp.com) keeps this built into your daily workflow — free to try, no setup required.
+[ShortHand](https://getshorthandapp.com) keeps this built into your daily workflow. Free to try, no setup required.
 
 *Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script) | [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called)*

@@ -92,7 +92,7 @@ When you have a parent meeting three months from now, you will not remember what
 
 Do this while the adrenaline is still fading. Do not wait until tomorrow morning. By tomorrow morning, you will have graded thirty math tests, tied four pairs of shoes, and broken up an argument over a blue dry erase marker. The details of the call will be gone.
 
-ShortHand lets you log the call in about ten seconds while you are still at your desk — date, who you spoke to, what was agreed — tied to each student automatically. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
+ShortHand lets you log the call in about ten seconds while you are still at your desk: date, who you spoke to, what was agreed, tied to each student automatically. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
 
 ---
 

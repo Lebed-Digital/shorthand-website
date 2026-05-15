@@ -6,7 +6,7 @@ import Link from 'next/link';
 const COLUMNS = ['Date', 'Student Name', 'Method', 'Reached?', 'Summary / Notes', 'Follow-up?'];
 const METHOD_OPTIONS = ['Call', 'Email', 'Note Home', 'In Person', 'Text'];
 const REACHED_OPTIONS = ['Yes', 'Voicemail', 'No Answer'];
-const FOLLOWUP_OPTIONS = ['None', 'Yes — see notes'];
+const FOLLOWUP_OPTIONS = ['None', 'Yes, see notes'];
 
 const EMPTY_ROW = { date: '', student: '', method: '', reached: '', summary: '', followup: '' };
 
@@ -98,7 +98,7 @@ export default function ParentLogClient() {
           <div>
             <Link href="/" className="text-sm text-teal-600 hover:underline mb-1 block">← ShortHand</Link>
             <h1 className="text-2xl font-bold text-gray-900">Free Parent Communication Log</h1>
-            <p className="text-gray-500 text-sm mt-1">Fill it in here, then print — or print blank and fill by hand.</p>
+            <p className="text-gray-500 text-sm mt-1">Fill it in here and print, or print blank and fill by hand.</p>
           </div>
           <div className="flex gap-3">
             <button
@@ -182,10 +182,10 @@ export default function ParentLogClient() {
               <Link href="https://getshorthandapp.com" className="text-teal-600 hover:underline">
                 Try ShortHand free
               </Link>{' '}
-              — log behavior notes, mood check-ins, and parent contacts from your phone.
+. Log behavior notes, mood check-ins, and parent contacts from your phone.
             </span>
             <span className="hidden print:inline">
-              Try ShortHand free at getshorthandapp.com — log behavior notes, mood check-ins, and parent contacts from your phone.
+              Try ShortHand free at getshorthandapp.com. Log behavior notes, mood check-ins, and parent contacts from your phone.
             </span>
           </p>
         </div>
@@ -196,7 +196,7 @@ export default function ParentLogClient() {
         <div className="bg-teal-50 border border-teal-100 rounded-2xl p-8 text-center">
           <h2 className="text-xl font-bold text-gray-900 mb-2">Want this to happen automatically?</h2>
           <p className="text-gray-600 mb-5 max-w-md mx-auto text-sm">
-            ShortHand logs every parent contact you make — timestamped, tied to the student, searchable. No separate spreadsheet. No trying to remember what you said in October.
+            ShortHand logs every parent contact you make: timestamped, tied to the student, searchable. No separate spreadsheet. No trying to remember what you said in October.
           </p>
           <a
             href="https://getshorthandapp.com"

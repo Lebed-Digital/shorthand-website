@@ -65,7 +65,7 @@ export default function TermsPage() {
         </ul>
 
         <h2>6. Intellectual Property</h2>
-        <p>All content, features, and functionality of ShortHand — including but not limited to software, text, graphics, and design — are owned by ShortHand and protected by applicable intellectual property laws.</p>
+        <p>All content, features, and functionality of ShortHand (including but not limited to software, text, graphics, and design) are owned by ShortHand and protected by applicable intellectual property laws.</p>
 
         <h2>7. Disclaimer of Warranties</h2>
         <p>ShortHand is provided "as is" without warranties of any kind, either express or implied. We do not warrant that the App will be error-free or uninterrupted.</p>

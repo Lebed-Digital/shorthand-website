@@ -94,7 +94,7 @@ const LENGTH_INSTRUCTIONS: Record<string, string> = {
 
 const TONE_INSTRUCTIONS: Record<string, string> = {
   casual:
-    'Write in a warm, conversational tone — like a teacher talking directly to a family. Friendly, personal, and approachable. Use everyday language a parent would naturally use. Avoid formal or academic vocabulary like "aptitude," "demonstrate," or "consistently exhibits."',
+    'Write in a warm, conversational tone, like a teacher talking directly to a family. Friendly, personal, and approachable. Use everyday language a parent would naturally use. Avoid formal or academic vocabulary like "aptitude," "demonstrate," or "consistently exhibits."',
   academic:
     'Write in a formal, professional tone suitable for official school records. Precise, measured, and objective.',
 };
@@ -111,7 +111,7 @@ function buildPrompt(name: string, selected: Set<string>, extra: string, length:
     struggles.length ? `Areas for growth: ${struggles.join(', ')}.` : '',
     behavior.length ? `Social and behavior observations: ${behavior.join(', ')}.` : '',
     extra.trim() ? `Additional context from the teacher: ${extra.trim()}.` : '',
-    'Only mention what is explicitly listed — do not invent or assume specific skills, behaviors, or details that were not provided. If math is listed as a strength, say the student does well in math — do not guess whether it is number sense, problem solving, or anything else. Never use em dashes (—) under any circumstances.',
+    'Only mention what is explicitly listed. Do not invent or assume specific skills, behaviors, or details that were not provided. If math is listed as a strength, say the student does well in math. Do not guess whether it is number sense, problem solving, or anything else. Never use em dashes under any circumstances.',
   ];
   return parts.filter(Boolean).join(' ');
 }
@@ -183,8 +183,8 @@ export default function FreeToolClient() {
     try {
       const instructions = refineInstructions.trim()
         ? `Teacher instructions: ${refineInstructions.trim()}`
-        : 'Make it sound more natural and human — less generic.';
-      const prompt = `Here is a report card comment: "${result}"\n\nRewrite it based on these instructions: ${instructions}\n\nKeep the same student name (if any) and same length. Never use em dashes (—) under any circumstances.`;
+        : 'Make it sound more natural and human. Less generic.';
+      const prompt = `Here is a report card comment: "${result}"\n\nRewrite it based on these instructions: ${instructions}\n\nKeep the same student name (if any) and same length. Never use em dashes under any circumstances.`;
       setResult(await callApi(prompt));
     } catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
