@@ -1,20 +1,31 @@
 ---
-title: "Report Card Comments for Behavior: 100+ Examples You Can Use Today"
-subtitle: "Stop staring at a blank cursor. Here are the comments that actually hold up."
+title: "Report Card Comments for Behavior: 120+ Examples You Can Use Today"
+subtitle: "Stop staring at a blank cursor. Here are the behavior comments that actually hold up."
 date: "2026-04-26"
 author: "Gregory Lebed"
-excerpt: "Writing behavior comments is the hardest part of report cards. Here are 100+ real examples organized by situation - copy them, adapt them, and get it done."
+excerpt: "Writing behavior report card comments is the hardest part of the job. Here are 120+ real examples organized by situation - strong behavior, ongoing concerns, impulsivity, focus, IEPs, and students with behavior problems. Copy them, adapt them, and get it done."
 ---
 
 It's report card season. You have 25 students, a stack of notes that made perfect sense in October and now mean nothing, and a blinking cursor waiting for something that doesn't sound like it was written by a legal department.
 
 I've been there. Every teacher has.
 
-The hardest comments to write are always the behavior ones. Academic progress is relatively easy to describe. But behavior? You're trying to be honest without being harsh, specific without singling a kid out, and professional without losing the parent in EdSpeak.
+The hardest report card comments to write are always the behavior ones. Academic progress is relatively easy to describe. But behavior? You're trying to be honest without being harsh, specific without singling a kid out, and professional without losing the parent in EdSpeak.
 
-Here's what I've learned: the best behavior comments are short, factual, and forward-looking. They tell the parent what you see, not what you feel. And they always end with a next step or a positive.
+Here's what I've learned: the best behavior comments for report cards are short, factual, and forward-looking. They tell the parent what you see, not what you feel. And they always end with a next step or a positive.
 
-Below are 100+ examples organized by situation. Copy them, adapt them, make them yours.
+Below are 120+ examples organized by situation. Copy them, adapt them, make them yours.
+
+**Jump to a section:**
+- [When behavior is strong](#when-behavior-is-strong)
+- [When behavior is improving](#when-behavior-is-improving)
+- [When there are ongoing concerns](#when-there-are-ongoing-concerns-honest-but-constructive)
+- [For students with behavior problems](#for-students-with-behavior-problems)
+- [For impulsivity and self-regulation](#for-impulsivity-and-self-regulation)
+- [For attention and focus](#for-attention-and-focus)
+- [For social interactions and peer relationships](#for-social-interactions-and-peer-relationships)
+- [For students with IEPs or behavior plans](#for-students-with-ieps-or-behavior-plans)
+- [Rules I follow](#a-few-rules-i-follow-when-writing-behavior-comments)
 
 ---
 
@@ -60,6 +71,25 @@ Below are 100+ examples organized by situation. Copy them, adapt them, make them
 - "[Name] sometimes struggles to [behavior]. We are using [strategy] to support them and will continue to monitor progress."
 - "[Name] is working on [behavior] and I am committed to supporting them. Family reinforcement at home goes a long way."
 - "This term has had some bumps. I believe [Name] has the ability to turn it around and I am here to help."
+
+---
+
+## For students with behavior problems
+
+These are the hardest comments to write. You have a student with real, ongoing behavior concerns and you need to say something honest without it reading like a referral or a verdict. The key is to describe what you observe, name the support in place, and leave the door open.
+
+- "[Name] has experienced some significant behavioral challenges this term. We are working closely together to support their growth and build the skills they need."
+- "[Name] is receiving additional support to address ongoing behavior concerns. Progress is being made and we will continue to monitor closely."
+- "[Name] has had a difficult term in terms of behavior. We have strategies in place and I remain committed to helping them succeed."
+- "[Name] continues to struggle with [specific behavior]. We are addressing this with consistent supports and appreciate the family's partnership."
+- "Behavior has been a significant area of focus for [Name] this term. With continued effort and support, I believe they can make meaningful progress."
+- "[Name] has had challenges that have impacted their learning and the learning of those around them. We are working together to address this."
+- "[Name] is working through some behavioral difficulties. I am in regular contact with the family and we are aligned on next steps."
+- "[Name] benefits from a high level of structure and support. We are continuing to refine our approach to help them be successful."
+- "This has been a challenging term for [Name] behaviorally. I am committed to supporting them and will be reaching out to discuss a plan going forward."
+- "There have been repeated incidents this term involving [behavior]. We are taking this seriously and working with [Name] and their family on a path forward."
+
+**A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. That is exactly the situation that led me to build ShortHand.
 
 ---
 
@@ -136,6 +166,27 @@ It makes these comments faster to write, more specific, and a lot easier to defe
 Good behavior comments are honest, specific, and constructive. Use the examples above as a starting point, but adapt them to the real kid in front of you. Parents can tell when a comment was written for their child versus pulled from a template.
 
 If you want to make next term's report cards easier, start logging behavior notes now. Even one sentence per student per week adds up to something you can actually use.
+
+---
+
+---
+
+## Frequently asked questions about behavior report card comments
+
+**What should I write for behavior on a report card?**
+Focus on what you can observe and document. Describe the behavior pattern, not the child's character. Be honest about concerns, name any supports in place, and end with something forward-looking. Avoid vague phrases like "needs improvement" with nothing behind them.
+
+**How do you write a positive behavior comment?**
+Be specific about what the student actually does well. "Models expected behavior for peers" and "handles redirection gracefully" are more useful to a parent than "has great behavior." Specific observations also hold up better if a parent ever questions them.
+
+**How do you write a behavior comment for a difficult student?**
+Describe the behavior, not the child. "Has difficulty staying on task during independent work" is accurate and professional. "Is difficult" is not. Always include what is being done to support the student and invite the family into the conversation.
+
+**What are good behavior comments for report cards?**
+Good behavior comments are short, specific, and constructive. They describe something observable, acknowledge where the student is in their development, and point toward what comes next. The examples in this post are a starting point, but the best comments are always adapted to the real student in front of you.
+
+**Can I use AI to write report card behavior comments?**
+Yes. The [free report card comment generator](/free-tool) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
 
 ---
 
