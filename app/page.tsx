@@ -219,14 +219,14 @@ export default function Home() {
           </div>
           <div className="nav-right">
             <motion.a
-              href="/install"
+              href="https://app.getshorthandapp.com"
               className="btn-primary"
               whileHover={btnHover}
               whileTap={btnTap}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              onClick={(e) => trackCta('nav_get_shorthand', '/install', e)}
+              onClick={(e) => trackCta('nav_get_shorthand', 'https://app.getshorthandapp.com', e)}
             >
-              Join the Beta
+              Open ShortHand →
             </motion.a>
             <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -240,7 +240,7 @@ export default function Home() {
             <a href="/blog" className="nav-mobile-link">Blog</a>
             <a href="/privacy" className="nav-mobile-link">🔒 Privacy</a>
             <a href="/terms" className="nav-mobile-link">Terms</a>
-            <a href="/install" className="nav-mobile-link nav-mobile-cta">Join the Beta →</a>
+            <a href="https://app.getshorthandapp.com" className="nav-mobile-link nav-mobile-cta">Open ShortHand →</a>
           </div>
         )}
       </nav>
@@ -260,14 +260,14 @@ export default function Home() {
             </p>
             <div className="hero-ctas">
               <motion.a
-                href="/install"
+                href="https://app.getshorthandapp.com"
                 className="btn-primary"
                 whileHover={btnHover}
                 whileTap={btnTap}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_get_shorthand', '/install', e)}
+                onClick={(e) => trackCta('hero_get_shorthand', 'https://app.getshorthandapp.com', e)}
               >
-                Join the Beta →
+                Open ShortHand →
               </motion.a>
               <motion.a
                 href="/how-it-works"
@@ -840,9 +840,9 @@ export default function Home() {
                   whileHover={btnHover}
                   whileTap={btnTap}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  onClick={(e) => trackCta('cta_get_shorthand', '/install', e)}
+                  onClick={(e) => trackCta('cta_get_shorthand', 'https://app.getshorthandapp.com', e)}
                 >
-                  Join the Beta →
+                  Open ShortHand →
                 </motion.a>
               </div>
             </div>
