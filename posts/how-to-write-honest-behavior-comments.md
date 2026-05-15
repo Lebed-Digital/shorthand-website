@@ -89,6 +89,6 @@ It lets you track specific incidents with a few taps. When report card time come
 
 You never have to guess. Try it out and save your sanity this grading period.
 
-Get started at [app.getshorthandapp.com](https://app.getshorthandapp.com).
+Get started at [app.getshorthandapp.com](https://app.getshorthandapp.com). Or try the [free report card comment generator](/free-tool) to draft a comment right now, no sign-up needed.
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

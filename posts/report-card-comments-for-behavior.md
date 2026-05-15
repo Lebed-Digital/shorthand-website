@@ -139,4 +139,4 @@ If you want to make next term's report cards easier, start logging behavior note
 
 ---
 
-*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](/install)*
+*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](/install) · Or use the [free report card comment generator](/free-tool) to draft comments in seconds.*

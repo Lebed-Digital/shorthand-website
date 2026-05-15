@@ -100,6 +100,6 @@ That is why I created ShortHand. You can log developmental milestones and incide
 
 When you sit down to write your report cards, all your data is ready. You can easily generate honest, professional comments.
 
-Make report card time easier on yourself. Try ShortHand today at [app.getshorthandapp.com](https://app.getshorthandapp.com).
+Make report card time easier on yourself. Try ShortHand today at [app.getshorthandapp.com](https://app.getshorthandapp.com). Or use the [free report card comment generator](/free-tool) to draft comments instantly, no sign-up needed.
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
