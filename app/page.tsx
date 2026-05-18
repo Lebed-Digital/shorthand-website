@@ -10,7 +10,6 @@ import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
-const GlobeCanvas = dynamic(() => import('../components/GlobeCanvas'), { ssr: false });
 
 const features = [
   { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, speak or type a note, done in under 5 seconds. Student photos appear right in the suggestions so you\'re always logging the right kid. Voice-to-text, auto-tagging, and smart shortcuts built in.' },
@@ -845,9 +844,6 @@ export default function Home() {
                   Open ShortHand →
                 </motion.a>
               </div>
-            </div>
-            <div className="cta-globe">
-              <GlobeCanvas />
             </div>
           </div>
         </div>
