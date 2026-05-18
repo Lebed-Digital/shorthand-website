@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Install ShortHand — Join the Beta',
-  description: 'Install ShortHand on any device in seconds. No app store needed. Join the free beta and start logging student behavior, generating AI reports, and saving hours every week.',
+  title: 'Set Up ShortHand in 2 Minutes — Free for Teachers',
+  description: 'Add ShortHand to your home screen in 2 minutes. No app store, no IT ticket. Free behavior tracking, AI parent notes, and documentation for teachers.',
   openGraph: {
-    title: 'Install ShortHand — Join the Beta',
-    description: 'Install ShortHand on any device in seconds. No app store needed. Join the free beta and start logging student behavior, generating AI reports, and saving hours every week.',
+    title: 'Set Up ShortHand in 2 Minutes — Free for Teachers',
+    description: 'Add ShortHand to your home screen in 2 minutes. No app store, no IT ticket. Free behavior tracking, AI parent notes, and documentation for teachers.',
     url: 'https://getshorthandapp.com/install',
     type: 'website',
   },

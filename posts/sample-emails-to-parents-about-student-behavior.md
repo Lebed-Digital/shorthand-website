@@ -1,9 +1,9 @@
 ---
-title: "5 Behavior Email Templates That Won't Ruin Your Night"
+title: "5 Sample Emails to Parents About Student Behavior (Copy-Paste Ready)"
 subtitle: "Copy-paste scripts for the emails teachers write over and over"
 date: "2026-04-15"
 author: "Gregory Lebed"
-excerpt: "It's 3:45 PM. You're exhausted and you need to email a parent about their kid's behavior - but you can't find the words. Here are five copy-paste templates that make it faster."
+excerpt: "Copy-paste behavior email templates for teachers. Five ready-to-send scripts for the parent emails you write over and over, without spending your evening staring at a blank screen."
 ---
 
 It is 3:45 PM. You are exhausted, your coffee is a cold memory, and you are staring at a blinking cursor. You need to tell a parent that their kid had a rough day, but you are too peopled out to find the right words.
