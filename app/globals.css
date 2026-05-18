@@ -152,6 +152,7 @@ nav {
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
   white-space: nowrap;
 }
+.btn-primary--lg { padding: 16px 40px; font-size: 1.1rem; }
 .btn-primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 32px rgba(249,115,22,0.35);
@@ -802,7 +803,7 @@ section { position: relative; z-index: 1; }
 }
 .cta-sub { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); margin-bottom: 40px; line-height: 1.8; }
 .cta-fine { margin-top: 18px; font-size: 0.75rem; color: var(--text-faint); }
-.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
 
 /* FOOTER */
 footer {

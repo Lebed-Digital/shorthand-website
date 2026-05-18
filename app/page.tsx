@@ -835,7 +835,7 @@ export default function Home() {
               <div className="cta-btns">
                 <motion.a
                   href="/install"
-                  className="btn-primary"
+                  className="btn-primary btn-primary--lg"
                   whileHover={btnHover}
                   whileTap={btnTap}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
