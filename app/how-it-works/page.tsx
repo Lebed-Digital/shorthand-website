@@ -18,7 +18,6 @@ export default function HowItWorksPage() {
         <div className="nav-inner">
           <div className="nav-left">
             <AnimatedLogo />
-            <span className="nav-badge">Built by a Teacher</span>
           </div>
           <motion.a
             href="/install"

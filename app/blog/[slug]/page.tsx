@@ -69,7 +69,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div className="nav-inner">
           <div className="nav-left">
             <AnimatedLogo />
-            <span className="nav-badge">Built by a Teacher</span>
           </div>
           <div className="nav-links">
             <Link href="/#features" className="nav-link">Features</Link>

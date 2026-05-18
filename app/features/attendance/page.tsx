@@ -29,7 +29,6 @@ export default function AttendancePage() {
         <div className="nav-inner">
           <div className="nav-left">
             <AnimatedLogo />
-            <span className="nav-badge">Built by a Teacher</span>
           </div>
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_attendance">Get ShortHand</TrackedLink>
         </div>
