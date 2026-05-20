@@ -1,7 +1,7 @@
 ---
 title: "What to Do When a Parent Says You Never Called Them"
 subtitle: "Stay calm. Don't argue. And start logging everything starting today."
-date: "2026-05-14"
+date: "2026-05-01"
 author: "Gregory Lebed"
 excerpt: "When a parent claims a teacher never called about their child's behavior or grades, here's exactly what to do in the moment and how to make sure it never happens again."
 ---

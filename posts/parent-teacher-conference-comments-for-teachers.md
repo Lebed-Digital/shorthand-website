@@ -1,7 +1,7 @@
 ---
 title: "Parent Teacher Conference Comments: What to Say About Every Type of Student"
 subtitle: "Finding the right words for the quiet kid, the struggling kid, and everyone in between."
-date: "2026-05-27"
+date: "2026-05-11"
 author: "Gregory Lebed"
 excerpt: "Looking for honest parent teacher conference comments? Here is exactly what to say about the struggling kid, the high achiever, and everyone in between."
 ---

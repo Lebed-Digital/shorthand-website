@@ -1,7 +1,7 @@
 ---
 title: "Student Progress Report Comments for Teachers (+ How AI Makes Them Faster)"
 subtitle: "What to write, how to write it, and why your daily logs are the secret weapon you're not using."
-date: "2026-05-02"
+date: "2026-04-16"
 author: "Gregory Lebed"
 excerpt: "Writing student progress report comments doesn't have to start from a blank page. Here are examples organized by situation, plus how AI-generated comments based on your own classroom logs can cut the work in half."
 ---

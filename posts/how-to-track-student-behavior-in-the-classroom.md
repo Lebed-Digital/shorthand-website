@@ -1,7 +1,7 @@
 ---
 title: "How to Track Student Behavior in the Classroom (Without Extra Paperwork)"
 subtitle: "The systems that actually work when you have 24 other things happening."
-date: "2026-04-27"
+date: "2026-04-23"
 author: "Gregory Lebed"
 excerpt: "Most behavior tracking systems sound great in August and get abandoned by October. Here's how to build a system that actually holds up during a real school day."
 ---

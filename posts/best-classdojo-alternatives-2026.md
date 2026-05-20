@@ -1,7 +1,7 @@
 ---
 title: "Best ClassDojo Alternatives in 2026 (Ranked by Real Teachers)"
 subtitle: "A straight list of what actually works, depending on what you need."
-date: "2026-05-01"
+date: "2026-04-20"
 author: "Gregory Lebed"
 excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest ranking of the best ClassDojo alternatives in 2026, based on what's actually frustrating you about Dojo."
 ---

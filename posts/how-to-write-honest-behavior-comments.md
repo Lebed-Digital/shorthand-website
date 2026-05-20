@@ -1,7 +1,7 @@
 ---
 title: "How to Write Honest Behavior Comments Without Sounding Negative"
 subtitle: "The diplomatic language teachers actually need at report card time."
-date: "2026-05-10"
+date: "2026-03-24"
 author: "Gregory Lebed"
 excerpt: "Writing honest report card comments for behavior is hard. You want to tell the truth without starting a war. Here are the exact phrases that work."
 ---

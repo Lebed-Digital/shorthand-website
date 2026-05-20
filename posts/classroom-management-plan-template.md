@@ -1,6 +1,6 @@
 ---
 title: "The Classroom Management Plan Template You Will Actually Use"
-date: "2026-05-12"
+date: "2026-03-16"
 author: "Gregory Lebed"
 excerpt: "A classroom management plan looks great on paper, but it means nothing if you cannot enforce it. Here is a practical template and the system you need to keep it alive all year."
 tags: ["Classroom Management", "Teacher Tips", "Free Templates"]

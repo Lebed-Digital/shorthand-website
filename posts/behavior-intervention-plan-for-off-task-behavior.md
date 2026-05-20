@@ -1,6 +1,6 @@
 ---
 title: "Surviving a Behavior Intervention Plan for Off-Task Behavior"
-date: "2026-05-12"
+date: "2026-03-17"
 author: "Gregory Lebed"
 excerpt: "Most behavior plans are written for extreme disruptions. Here is how a general education teacher handles the quiet, constant battle of a student who simply refuses to work."
 tags: ["Behavior Intervention Plan", "Classroom Management"]

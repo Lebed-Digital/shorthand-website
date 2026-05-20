@@ -1,7 +1,7 @@
 ---
 title: "How to Prepare for a Parent Teacher Conference (So You Are Not Winging It)"
 subtitle: "Documentation is your best protection."
-date: "2026-05-24"
+date: "2026-05-10"
 author: "Gregory Lebed"
 excerpt: "Learn how to prepare for a parent teacher conference. Stop winging it and start bringing the right documentation to protect yourself and your students."
 ---

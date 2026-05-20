@@ -1,7 +1,7 @@
 ---
 title: "The Best Parent Communication Apps for Teachers in 2026 (Ranked by What Actually Matters)"
 subtitle: "Most of these apps are great for announcements. Only one actually protects you when a parent says 'nobody ever called me.'"
-date: "2026-05-14"
+date: "2026-05-02"
 author: "Gregory Lebed"
 excerpt: "Looking for the best parent teacher communication apps in 2026? Here's an honest ranking based on documentation, privacy, and what holds up when an angry parent claims they were never contacted."
 ---

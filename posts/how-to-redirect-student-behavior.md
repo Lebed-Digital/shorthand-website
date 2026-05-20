@@ -1,7 +1,7 @@
 ---
 title: "How to Redirect Student Behavior Without Stopping the Whole Class"
 subtitle: "Keep teaching while handling the distractions."
-date: "2026-05-19"
+date: "2026-05-08"
 author: "Gregory Lebed"
 excerpt: "Wondering how to redirect student behavior without pausing your entire lesson? Try these subtle, practical strategies that real teachers use every day."
 ---

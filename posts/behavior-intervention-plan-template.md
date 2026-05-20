@@ -1,6 +1,6 @@
 ---
 title: "The Behavior Intervention Plan Template That Actually Works"
-date: "2026-05-12"
+date: "2026-03-19"
 author: "Gregory Lebed"
 excerpt: "A behavior intervention plan looks incredibly professional on paper. But without the right daily documentation system, it is just another binder gathering dust on your desk."
 tags: ["Behavior Intervention Plan", "Teacher Tips", "Free Templates"]

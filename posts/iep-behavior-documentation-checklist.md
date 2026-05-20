@@ -1,7 +1,7 @@
 ---
 title: "IEP Behavior Documentation Checklist: What to Bring to the Annual Review"
 subtitle: "Stop showing up underprepared. Here is exactly what the IEP team needs from you."
-date: "2026-05-10"
+date: "2026-03-27"
 author: "Gregory Lebed"
 excerpt: "IEP behavior documentation can feel overwhelming. This checklist tells general ed teachers exactly what to collect, how to organize it, and what to say in the meeting."
 ---

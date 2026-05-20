@@ -1,7 +1,7 @@
 ---
 title: "How to Document Parent Contact for IEP Students (What the Law Actually Requires)"
 subtitle: "IDEA doesn't just suggest you keep parents informed. It requires it. Here's what that looks like in practice."
-date: "2026-05-14"
+date: "2026-05-03"
 author: "Gregory Lebed"
 excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and why it matters legally."
 ---

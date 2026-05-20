@@ -1,7 +1,7 @@
 ---
 title: "How to Politely Tell a Parent Their Child Is Misbehaving: 5 Phrases to Drop"
 subtitle: "Drop the vague teacher-speak and start using objective data."
-date: "2026-05-09"
+date: "2026-03-31"
 author: "Gregory Lebed"
 excerpt: "Wondering how to politely tell a parent their child is misbehaving? Stop using vague teacher-speak. Try these 5 professional phrase swaps instead."
 ---

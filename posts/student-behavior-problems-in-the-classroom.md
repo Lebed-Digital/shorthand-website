@@ -1,7 +1,7 @@
 ---
 title: "Student Behavior Problems in the Classroom: What's Actually Going On (And What to Do About It)"
 subtitle: "Looking past the bad choices to find the real triggers."
-date: "2026-05-12"
+date: "2026-03-23"
 author: "Gregory Lebed"
 excerpt: "Dealing with student behavior problems can exhaust any teacher. Learn the common triggers behind classroom disruptions and practical ways to solve them."
 ---

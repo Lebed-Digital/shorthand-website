@@ -1,6 +1,6 @@
 ---
 title: "The Only Teacher Documentation Log Template You Actually Need"
-date: "2026-05-12"
+date: "2026-03-18"
 author: "Gregory Lebed"
 excerpt: "A free, practical teacher documentation template that cuts out the fluff, plus the exact strategy you need to make logging a daily habit instead of a chore."
 tags: ["Teacher Documentation", "Free Templates", "Classroom Organization"]

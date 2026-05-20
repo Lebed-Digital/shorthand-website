@@ -1,7 +1,7 @@
 ---
 title: "How to Document Parent Contact as a Teacher (So You're Always Covered)"
 subtitle: "Because 'I'm pretty sure I called' is not going to hold up in a parent conference."
-date: "2026-05-14"
+date: "2026-05-04"
 author: "Gregory Lebed"
 excerpt: "Learn how to document parent contact as a teacher so you always have proof when a parent claims they were never contacted about a grade, behavior incident, or IEP concern."
 ---

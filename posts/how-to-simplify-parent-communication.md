@@ -1,7 +1,7 @@
 ---
 title: "How to Simplify Parent Communication Without Going Crazy"
 subtitle: "We all want to talk to parents more, but finding the time is a completely different story."
-date: "2026-05-06"
+date: "2026-04-12"
 author: "Gregory Lebed"
 excerpt: "I used to stare at a blank email screen at 4:00 PM and just sigh. Here is how I finally stopped feeling overwhelmed every time I needed to message a family."
 ---

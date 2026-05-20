@@ -1,7 +1,7 @@
 ---
 title: "The Ultimate Parent Phone Call Script for Teachers"
 subtitle: "How to survive the dread, make the call, and actually get results."
-date: "2026-05-09"
+date: "2026-04-01"
 author: "Gregory Lebed"
 excerpt: "Looking for a reliable parent phone call script? Learn exactly what to say for positive and behavior calls, and how to stop dreading the dial tone."
 ---

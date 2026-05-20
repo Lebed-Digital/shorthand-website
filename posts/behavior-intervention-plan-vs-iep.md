@@ -1,6 +1,6 @@
 ---
 title: "Decoding the Alphabet Soup: Behavior Intervention Plan vs. IEP"
-date: "2026-05-12"
+date: "2026-03-20"
 author: "Gregory Lebed"
 excerpt: "If you feel completely lost in special education acronyms, you are not alone. Here is the practical difference between a BIP, an IEP, and an FBA, and exactly where you fit in."
 tags: ["Behavior Intervention Plan", "Special Education", "Teacher Tips"]

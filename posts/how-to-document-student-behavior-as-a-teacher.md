@@ -1,6 +1,6 @@
 ---
 title: "How to Document Student Behavior Without Losing Your Mind"
-date: "2026-05-12"
+date: "2026-04-30"
 author: "Gregory Lebed"
 excerpt: "Every teacher knows the dread of sitting in a parent meeting with zero written proof of a student's behavior. Here is the exact system you need to protect yourself and your classroom."
 tags: ["Teacher Documentation", "Classroom Management", "Teacher Tips"]

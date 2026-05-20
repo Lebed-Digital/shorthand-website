@@ -1,7 +1,7 @@
 ---
 title: "The Student Behavior Log: What to Track, How to Track It, and Why It Actually Matters"
 subtitle: "If it is not written down, it did not happen."
-date: "2026-05-16"
+date: "2026-05-07"
 author: "Gregory Lebed"
 excerpt: "A simple student behavior log is your best defense at meetings. Learn exactly what to track, what to leave out, and how to protect yourself."
 ---

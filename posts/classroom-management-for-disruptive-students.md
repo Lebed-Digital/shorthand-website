@@ -1,6 +1,6 @@
 ---
 title: "Classroom Management for Disruptive Students: What Actually Works"
-date: "2026-05-12"
+date: "2026-04-28"
 author: "Gregory Lebed"
 excerpt: "When traditional classroom management strategies fail, you need a system that protects your peace of mind and builds an undeniable record of student behavior."
 tags: ["Classroom Management", "Teacher Tips"]

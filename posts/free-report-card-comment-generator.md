@@ -1,7 +1,7 @@
 ---
 title: "Free Report Card Comment Generator for Teachers (No Sign-Up)"
 subtitle: "Stop starting from scratch. Pick what you see, get a comment in 10 seconds."
-date: "2026-05-15"
+date: "2026-05-06"
 author: "Gregory Lebed"
 excerpt: "A free AI tool that generates personalized report card comments in seconds. Pick strengths, areas for growth, and behavior from a list and get a comment ready to copy. No account, no login."
 ---

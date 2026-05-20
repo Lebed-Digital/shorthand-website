@@ -1,7 +1,7 @@
 ---
 title: "IEP Meeting Notes Template for Teachers (Free + Simple)"
 subtitle: "The meeting is just the beginning. Your notes are what make the plan stick."
-date: "2026-05-10"
+date: "2026-03-26"
 author: "Gregory Lebed"
 excerpt: "Use this free and simple iep meeting notes template to perfectly track action items, document accommodations, and easily follow up with parents after."
 ---

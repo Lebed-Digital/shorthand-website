@@ -1,7 +1,7 @@
 ---
 title: "ShortHand vs Bloomz: Which App Is Right for Your Classroom?"
 subtitle: "One is a class communication hub. The other is built for the teacher who needs a paper trail."
-date: "2026-05-01"
+date: "2026-04-19"
 author: "Gregory Lebed"
 excerpt: "Bloomz and ShortHand both handle parent communication and behavior tracking, but they're built for very different problems. Here's an honest comparison to help you pick the right one."
 ---
