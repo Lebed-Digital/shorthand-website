@@ -4,6 +4,15 @@ subtitle: "Most of these apps are great for announcements. Only one actually pro
 date: "2026-05-02"
 author: "Gregory Lebed"
 excerpt: "Looking for the best parent teacher communication apps in 2026? Here's an honest ranking based on documentation, privacy, and what holds up when an angry parent claims they were never contacted."
+faq:
+  - q: "What is the best parent communication app for teacher documentation in 2026?"
+    a: "For documentation that protects you in a parent dispute or IEP meeting, the best option is ShortHand. It logs every parent contact with a timestamp and ties it to a specific student, so you can pull up a complete contact history in seconds. ClassDojo, Remind, and Seesaw are better for broadcast communication but don't give you a reliable per-student contact record."
+  - q: "Which parent communication apps let teachers message without giving out their personal phone number?"
+    a: "ClassDojo, Remind, Bloomz, and ShortHand all mask your personal phone number. With Remind, messages go through the app and parents only see your Remind contact. ClassDojo messages are app-to-app. None of these tools expose your personal number, which is one of the main reasons teachers use them over texting parents directly."
+  - q: "Do parent communication apps work if parents don't have smartphones?"
+    a: "Remind is the most accessible option for families without smartphones because it can send messages as plain SMS text messages without requiring app installation. ClassDojo and Seesaw require parents to install apps and create accounts, which is a real barrier in some communities. ShortHand is focused on the teacher's documentation record rather than the delivery channel, so it works alongside whatever method you already use to reach families."
+  - q: "Can a parent communication app replace email for teacher-parent contact?"
+    a: "For quick updates and positive notes home, yes. For anything that needs a paper trail — behavior documentation, formal notifications, special education communication — email is still more defensible because it's universal and timestamped in both parties' inboxes. The best approach is to use an app like ShortHand to log your contacts regardless of whether you reached out by email, phone, or app message."
 ---
 
 You are sitting in an IEP meeting. A parent looks across the table and says they were never contacted about their child failing math. They claim they had no idea there was a problem. You know you sent messages. You tried to reach out. But as you scramble to find proof on your phone, you realize your classroom app only shows a messy feed of announcements and deleted notifications. You look disorganized. You look unprepared.

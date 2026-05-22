@@ -4,6 +4,15 @@ subtitle: "What actually works in a real classroom, without a school license or 
 date: "2026-04-18"
 author: "Gregory Lebed"
 excerpt: "Tested by a real teacher: the best behavior management apps for 2026, ranked. No school license required. Covers tracking, logging, and parent communication in one place."
+faq:
+  - q: "What is the best behavior management app for teachers in 2026?"
+    a: "The best behavior management app depends on your grade level and main need. ClassDojo works well for K-2 whole-class culture. ShortHand is the strongest option for teachers who need per-student behavior logs, parent contact records, and documentation that holds up at IEP meetings. Seesaw is best for portfolio documentation rather than behavior tracking."
+  - q: "Do behavior management apps require a school license?"
+    a: "Most of the best options for individual teachers do not require a school license. ClassDojo, ShortHand, Seesaw, and Remind all offer free tiers for individual classroom use. School or district licenses unlock features like admin dashboards and school-wide reporting, but they are not required to get value as a classroom teacher."
+  - q: "What behavior tracking app works best for IEP documentation?"
+    a: "For IEP documentation, you need an app that produces a timestamped, per-student record of behaviors and parent contacts. ClassDojo's points system doesn't meet this standard. ShortHand is built specifically for this: each note is dated, tied to a specific student, and paired with a parent communication log. That combination is what administrators and special ed teams actually need to see."
+  - q: "Can one app handle both behavior tracking and parent communication?"
+    a: "Yes, but most apps do one well and the other poorly. ClassDojo handles parent communication well but behavior documentation is shallow. ShortHand combines per-student behavior notes with a parent contact log in a single timeline per student, which means you don't have to cross-reference two apps when a parent questions what you reported."
 ---
 
 Behavior management is one of those phrases that means something different to every teacher. To an admin, it might mean PBIS charts and intervention tiers. To a classroom teacher, it usually means: remember what happened with this kid, communicate with the parent before it gets worse, and have something to show at the meeting.

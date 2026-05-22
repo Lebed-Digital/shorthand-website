@@ -4,6 +4,15 @@ date: "2026-03-18"
 author: "Gregory Lebed"
 excerpt: "A free, practical teacher documentation template that cuts out the fluff, plus the exact strategy you need to make logging a daily habit instead of a chore."
 tags: ["Teacher Documentation", "Free Templates", "Classroom Organization"]
+faq:
+  - q: "What should a teacher documentation log include?"
+    a: "A teacher documentation log should include at minimum: date and time of the incident, the student's name, a factual description of what happened, what action you took, and whether you contacted the parent (and how). Keeping it factual and specific is more important than using a fancy format. A simple table in a digital doc or a sticky note with those five fields beats an elaborate binder you stop using by October."
+  - q: "How do teachers keep documentation logs organized?"
+    a: "The most sustainable approach is to keep one log per student rather than one log per day. That way, when you need to pull a history for an IEP meeting or a parent conference, everything is already sorted. Digital tools like ShortHand do this automatically. Paper logs can be organized the same way with a section per student in a binder or a separate index card per student."
+  - q: "Is a Google Doc good enough for teacher documentation?"
+    a: "A Google Doc works, but it has two limitations: it's easy to forget to update during a busy day, and it's hard to pull up a clean per-student history when you're in a meeting. Many teachers start with a Google Doc or spreadsheet and then switch to a dedicated app once they realize they need to search by student name quickly. Either approach beats relying on memory."
+  - q: "Do I need to document minor student behaviors or just major incidents?"
+    a: "Document patterns, not just crises. A single minor incident usually isn't worth noting, but if the same student is late three times a week or disrupts transitions every day, those repeated small behaviors become important when you need to justify an intervention or referral. A quick one-line entry per occurrence takes ten seconds and becomes a powerful pattern over time."
 ---
 
 We have all been down the Pinterest rabbit hole. You search for teacher organization ideas and find hundreds of beautifully designed, color-coded documentation binders. They have cute fonts. They have floral borders. They look absolutely perfect for about three days.

@@ -4,6 +4,15 @@ subtitle: "Why teachers are ditching the paper trail, and what actually works in
 date: "2026-04-17"
 author: "Gregory Lebed"
 excerpt: "Still logging student incidents on paper or a tracking sheet? Here's an honest look at digital tools for recording student incidents and progress: what works, what's overkill, and what I actually use in my classroom."
+faq:
+  - q: "What is the best digital tool for recording student incidents?"
+    a: "The best tool for recording student incidents is one you'll actually use during a live classroom. That means it needs to be fast: open the app, tap a student, type a note, done in under 15 seconds. ShortHand is built for exactly this use case and logs the timestamp automatically. Google Forms, spreadsheets, and most behavior apps require too many taps to be practical mid-lesson."
+  - q: "How do teachers record student incidents without disrupting the class?"
+    a: "The key is having the tool open and ready before anything happens. Teachers who are successful at consistent logging keep their phone or tablet on their desk during transitions, not buried in a bag. Apps that require login, navigation, or more than three taps per entry tend to get abandoned. A tool like ShortHand is designed to log from the home screen in one tap."
+  - q: "Do student incident records need to be shared with administrators?"
+    a: "That depends on your school's policy and the severity of the incident. For minor classroom incidents you're monitoring over time, your personal log is typically for your own use and parent communication. Formal incidents that require office referrals, suspensions, or special education documentation usually need to go into your school's official system. A personal log supplements that record, it doesn't replace it."
+  - q: "Can I use the same app to track both incidents and parent contacts?"
+    a: "Yes, and this is actually the most efficient setup. When an incident and a parent call are logged in the same place and tied to the same student, you have a complete picture without cross-referencing. ShortHand combines behavior notes and parent contact logs in a single per-student timeline. Most behavior apps track one without the other, which creates gaps in your documentation."
 ---
 
 For most of my teaching career, my student incident log was a spiral notebook with my own shorthand scrawled in the margins. (Hence the name of the app I eventually built, but more on that later.)

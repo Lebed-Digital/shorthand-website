@@ -4,6 +4,15 @@ subtitle: "Because you have enough to do without fighting with a complicated app
 date: "2026-04-11"
 author: "Gregory Lebed"
 excerpt: "Tested by a real teacher: the best parent communication apps for 2026, ranked honestly. Which ones actually save time and which ones just add to your to-do list."
+faq:
+  - q: "What is the best app for teacher-parent communication in 2026?"
+    a: "The best app depends on your primary need. For whole-class announcements and culture-building, ClassDojo is the most widely used. For private, documented conversations with individual parents, ShortHand is the strongest option because it logs every contact with a timestamp and ties it to the specific student. For simple text-style messaging without requiring parents to download an app, Remind is the easiest to start."
+  - q: "Do parents need to download an app to receive teacher messages?"
+    a: "It depends on the tool. ClassDojo and Seesaw both require parents to create accounts and download apps, which is a major adoption barrier in many communities. Remind can send messages via SMS without app installation. ShortHand focuses on the teacher's side of the record, logging what was communicated rather than replacing the communication channel."
+  - q: "What teacher communication app works without a school license?"
+    a: "ClassDojo, Remind, ShortHand, and Seesaw all work for individual teachers without a school or district license. You can sign up and use them in your classroom today without going through IT or an administrator. Bloomz and some enterprise tools require school-level setup."
+  - q: "Which parent communication app is best for avoiding 'I was never contacted' disputes?"
+    a: "For protecting yourself when a parent claims they were never reached, you need an app that creates a timestamped, searchable contact log per student. ClassDojo and most announcement-style apps don't provide this. ShortHand is built for exactly this situation: every parent contact is logged with a date, time, and notes, so you can pull up the full history for any student in seconds."
 ---
 
 ## The Search for the Perfect Tool

@@ -4,6 +4,15 @@ subtitle: "A straight list of what actually works, depending on what you need."
 date: "2026-04-20"
 author: "Gregory Lebed"
 excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest ranking of the best ClassDojo alternatives in 2026, based on what's actually frustrating you about Dojo."
+faq:
+  - q: "What is the best ClassDojo alternative for upper elementary teachers?"
+    a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that points don't create a real paper trail for IEP meetings or parent disputes."
+  - q: "Is there a free ClassDojo alternative?"
+    a: "Yes. Remind is free and handles parent messaging without requiring parents to create accounts. Seesaw has a free tier for individual teachers. ShortHand offers a free plan for individual classroom use. Most ClassDojo alternatives are free at the individual teacher level — costs typically kick in at the school or district level."
+  - q: "What ClassDojo alternative is best for behavior documentation?"
+    a: "If you need behavior documentation that actually holds up at an IEP meeting or parent conference, you need a tool that logs timestamped notes per student with parent contact records attached. ClassDojo points screenshots don't provide that. ShortHand is built specifically for this use case, letting teachers log behavior notes and parent contacts in seconds."
+  - q: "Why are teachers leaving ClassDojo in 2026?"
+    a: "The most common reasons teachers cite for leaving ClassDojo are: the gamification stops working by 3rd grade, the app has become bloated with premium upsells, documentation is weak for professional use, and parents in some communities don't engage with the platform. Teachers with older students or higher documentation needs are the most likely to switch."
 ---
 
 ClassDojo is the most widely used classroom app in the world. It's also the most searched for alternatives. That's not a contradiction. It just means ClassDojo works well for some teachers and not at all for others, and the teachers it doesn't work for are increasingly vocal about it.
