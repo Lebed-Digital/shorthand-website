@@ -78,6 +78,18 @@ Tally is mobile-first and shows one question at a time. It's faster to build tha
 
 **How I actually use it:** Beginning-of-year family surveys, permission questions, reading log check-ins, and anything where I want a high response rate.
 
+## The 5 Apps at a Glance
+
+| App | Best for | Free? |
+|---|---|---|
+| Canva for Education | Slides, visuals, newsletters | Yes (education version) |
+| NotebookLM | Curriculum research, lesson prep | Yes |
+| Curipod | Quick interactive lessons | Yes |
+| ShortHand | Behavior logging, parent communication | Yes |
+| Tally | Parent forms with high response rates | Yes |
+
+If you're specifically looking at behavior tracking tools, here's my full breakdown of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
+
 ## The Strategy: Build a Small Stack and Actually Use It
 
 Don't try to adopt every tool on this list at once. The teachers who waste the most time on ed-tech are the ones who are constantly trying new things and never building fluency with any of them.

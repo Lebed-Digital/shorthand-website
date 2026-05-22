@@ -90,6 +90,19 @@ Apps like ShortHand let you tap a student's name, select a behavior from a pre-b
 
 Best for: teachers who want the speed of a tally sheet with the searchability of a spreadsheet.
 
+If you want a side-by-side look at what's available, here's a full comparison of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
+
+## Methods at a Glance
+
+| Method | Setup required | Works mid-lesson? | Searchable later? | Free? |
+|---|---|---|---|---|
+| Tally sheets | None | Yes | No | Yes |
+| Sticky notes on seating chart | None | Yes | No | Yes |
+| Google Forms | Moderate | Hard | Yes | Yes |
+| Interval recording | None | Requires timer | No | Yes |
+| ABC logs | Low | No | Depends | Yes |
+| Behavior app (e.g. ShortHand) | Low | Yes | Yes | Yes |
+
 ---
 
 ## What to Actually Track (Keep It Simple)

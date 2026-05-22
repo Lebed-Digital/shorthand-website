@@ -115,3 +115,5 @@ If you're a SPED teacher doing formal behavioral assessment, BehaviorSnap is wor
 If you're a general education teacher who wants to actually manage behavior, document parent contact, and walk into a meeting with a real record, [ShortHand](https://getshorthandapp.com) is the one built for how classroom days actually work.
 
 Download it, set up your class, and use it today. No approval needed.
+
+Looking specifically at tracking tools? Here's the full breakdown: [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).

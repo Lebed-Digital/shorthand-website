@@ -100,6 +100,15 @@ Instead of saying "he's been struggling lately," you can say "I've noticed over 
 
 That is a completely different conversation, whether you're talking to a parent, a support staff member, or an administrator. It's specific, it's objective, and it builds trust. People respond differently when they can see that you've been paying attention.
 
+## Tracking Methods at a Glance
+
+| Method | Speed | Searchable? | Works mid-lesson? |
+|---|---|---|---|
+| Paper notes / sticky notes | Fast | No | Yes |
+| Spreadsheet | Slow | Yes | No |
+| Google Forms | Medium | Yes | Hard |
+| Behavior app (e.g. ShortHand) | Very fast | Yes | Yes |
+
 ## The Tool That Made This Actually Work for Me
 
 After trying paper notes, spreadsheets, and a few apps, I realized something: if the system isn't built for speed, it won't last.
@@ -107,6 +116,8 @@ After trying paper notes, spreadsheets, and a few apps, I realized something: if
 I wrote about [some ClassDojo alternatives I tested](/blog/classdojo-alternative) and why none of them quite fit. What I needed was something faster than thought -- something that captured the note before the moment was gone.
 
 That's why I built ShortHand. It lets me log behavior in seconds using voice or text, automatically organizes and tags entries, tracks patterns over time, and generates reports without extra work at the end. It doesn't add anything new to my plate. It just makes something I already have to do a lot easier.
+
+If you're comparing options, here's a full breakdown of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
 
 ## If Your Current System Isn't Working
 
