@@ -4,6 +4,15 @@ subtitle: "Copy-paste scripts for the emails teachers write over and over"
 date: "2026-04-15"
 author: "Gregory Lebed"
 excerpt: "Copy-paste behavior email templates for teachers. Five ready-to-send scripts for the parent emails you write over and over, without spending your evening staring at a blank screen."
+faq:
+  - q: "What should I write in a behavior email to parents?"
+    a: "Keep it specific, objective, and brief. Describe what happened and when, mention what you're already doing to support the student, and invite the parent to respond. Avoid vague phrases like 'having a hard time' - instead write something like 'had difficulty during the transition from math to reading on three occasions this week.' Specific language is more useful to the parent and more defensible if the situation escalates."
+  - q: "How do you write a professional email to parents about behavior?"
+    a: "Use this structure: a brief warm opening, a specific description of the behavior (what, when, where), the context around it, what you're already doing to support the student, and an invitation for the parent to respond. Keep it under 150 words. Calm, factual language works better than emotional language even when the situation is frustrating."
+  - q: "When should you email vs. call a parent about behavior?"
+    a: "Call when the situation is emotional, escalating, or likely to be misunderstood in writing. Email when you want a paper trail, are sharing a pattern over time, or are following up after a verbal conversation. After any phone call about behavior, send a brief summary email within 24 hours to document what was discussed and agreed upon."
+  - q: "How do you email a parent about bad behavior without causing conflict?"
+    a: "Focus on the behavior, not the child's character. Use observable language ('had difficulty staying on task') rather than judgments ('was difficult'). Include what you're doing to help and frame it as a partnership. Starting with a positive or neutral opener before naming the concern also reduces defensiveness."
 ---
 
 It is 3:45 PM. You are exhausted, your coffee is a cold memory, and you are staring at a blinking cursor. You need to tell a parent that their kid had a rough day, but you are too peopled out to find the right words.

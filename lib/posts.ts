@@ -14,6 +14,7 @@ export interface PostMeta {
   date: string;
   author: string;
   excerpt: string;
+  faq?: { q: string; a: string }[];
 }
 
 export interface Post extends PostMeta {

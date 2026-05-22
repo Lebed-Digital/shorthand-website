@@ -4,6 +4,15 @@ subtitle: "Stop staring at a blank cursor. Here are the behavior comments that a
 date: "2026-04-26"
 author: "Gregory Lebed"
 excerpt: "Writing behavior report card comments is the hardest part of the job. Here are 120+ real examples organized by situation - strong behavior, ongoing concerns, impulsivity, focus, IEPs, and students with behavior problems. Copy them, adapt them, and get it done."
+faq:
+  - q: "What should I write for behavior on a report card?"
+    a: "Focus on what you can observe and document. Describe the behavior pattern, not the child's character. Be honest about concerns, name any supports in place, and end with something forward-looking. Avoid vague phrases like 'needs improvement' with nothing behind them."
+  - q: "How do you write a positive behavior comment for a report card?"
+    a: "Be specific about what the student actually does well. 'Models expected behavior for peers' and 'handles redirection gracefully' are more useful to a parent than 'has great behavior.' Specific observations also hold up better if a parent ever questions them."
+  - q: "How do you write a behavior comment for a difficult student?"
+    a: "Describe the behavior, not the child. 'Has difficulty staying on task during independent work' is accurate and professional. Always include what is being done to support the student and invite the family into the conversation."
+  - q: "Can I use AI to write report card behavior comments?"
+    a: "Yes. The free report card comment generator at getshorthandapp.com/free-tool lets you pick strengths, areas for growth, and behavior observations and generates a polished comment in seconds. No sign-up required."
 ---
 
 It's report card season. You have 25 students, a stack of notes that made perfect sense in October and now mean nothing, and a blinking cursor waiting for something that doesn't sound like it was written by a legal department.

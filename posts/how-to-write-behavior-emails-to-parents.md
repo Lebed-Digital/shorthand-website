@@ -4,6 +4,15 @@ subtitle: "A simple structure that makes parent communication faster and less st
 date: "2026-03-22"
 author: "Gregory Lebed"
 excerpt: "Copy-paste templates and a simple 3-part structure for writing behavior emails to parents, so you spend less time staring at a blank screen and more time actually hitting send."
+faq:
+  - q: "How do you write a behavior email to parents?"
+    a: "Use this structure: brief warm opening, specific description of the behavior (what, when, where), context around it, what you're already doing to support the student, and an invitation for the parent to respond. Keep it under 150 words and use observable language rather than judgments."
+  - q: "What should you not say in a behavior email to parents?"
+    a: "Avoid vague language like 'he was disruptive' or 'she's been having a hard time.' Don't use language that sounds like a verdict on the child's character. Avoid emotional or accusatory phrasing. Stick to what you observed, when it happened, and what you're doing about it."
+  - q: "How do you tell a parent their child has behavior problems without causing conflict?"
+    a: "Frame it as sharing observations, not reporting problems. Use specific, neutral language about what happened. Include what you're already doing to support the student. End with an invitation for the parent to share their perspective. Parents respond better when they feel like partners, not defendants."
+  - q: "Should you email or call parents about behavior issues?"
+    a: "Call when the situation is serious, emotional, or likely to escalate. Email when you want a paper trail or are sharing a pattern over time. After any phone call about behavior, always send a brief follow-up email summarizing what was discussed and agreed upon."
 ---
 
 Writing behavior emails to parents can feel harder than it should be.

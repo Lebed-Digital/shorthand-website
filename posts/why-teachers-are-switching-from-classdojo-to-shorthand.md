@@ -4,6 +4,15 @@ subtitle: "It's not you. It's the points."
 date: "2026-04-21"
 author: "Gregory Lebed"
 excerpt: "ClassDojo's points stop working by 3rd grade, and they were never built for IEP documentation. Here are the 5 real reasons teachers are switching in 2026, and what they're using instead."
+faq:
+  - q: "Why are teachers switching from ClassDojo to ShortHand?"
+    a: "The main reasons are that ClassDojo's points system stops motivating older students, it doesn't produce IEP-ready documentation, and behavior data can't be easily exported or searched. ShortHand is built for documentation and parent communication rather than student engagement, which is what many teachers need by 3rd grade and above."
+  - q: "Is ShortHand better than ClassDojo?"
+    a: "It depends on what you need. ClassDojo is better for elementary classroom culture, parent photo updates, and student engagement through gamification. ShortHand is better for behavior documentation, parent contact logs, and IEP-ready records. They serve different purposes."
+  - q: "What is a good ClassDojo alternative for documentation?"
+    a: "ShortHand is the strongest ClassDojo alternative for teachers who need actual documentation. It logs behavior in under 10 seconds, timestamps parent contact automatically, and generates reports from your notes. Unlike ClassDojo, it doesn't require parents to download an app."
+  - q: "Does ShortHand require school approval or an IT ticket?"
+    a: "No. ShortHand is a Progressive Web App that works on any phone, tablet, or Chromebook without going through an app store or IT department. You can set up your class and start logging the same day."
 ---
 
 Let me be honest with you: ClassDojo didn't fail you. You just outgrew it.

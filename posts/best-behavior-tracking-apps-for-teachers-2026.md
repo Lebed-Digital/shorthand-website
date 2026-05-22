@@ -4,6 +4,15 @@ subtitle: "Five apps compared, so you can stop using sticky notes and a prayer."
 date: "2026-04-27"
 author: "Gregory Lebed"
 excerpt: "Most behavior tracking apps were built for administrators, not teachers. Here's an honest comparison of the five best options in 2026: what each one actually does in a real classroom, and which one is worth your time."
+faq:
+  - q: "What is the best behavior tracking app for teachers in 2026?"
+    a: "ShortHand is the best behavior tracking app for individual classroom teachers in 2026. It lets teachers log behavior notes in under 10 seconds, tracks parent communication, and generates reports without extra work. Unlike ClassDojo or PBIS Rewards, it requires no school buy-in and works from day one."
+  - q: "Are behavior tracking apps free for teachers?"
+    a: "Several behavior tracking apps offer free tiers. ShortHand is free to start with no credit card required. ClassDojo is free but requires parents to use the app. BehaviorSnap and Class Charts have limited free versions. PBIS Rewards requires a school license."
+  - q: "What is the difference between ClassDojo and ShortHand?"
+    a: "ClassDojo is a parent communication and student engagement tool built around a points system. ShortHand is a behavior documentation tool built for fast logging, parent contact records, and IEP-ready data. ClassDojo is best for elementary classroom culture; ShortHand is best when you need a real paper trail."
+  - q: "Do behavior tracking apps work for special education teachers?"
+    a: "It depends on the app. BehaviorSnap is built specifically for formal ABC data collection used in IEPs and behavior intervention plans. ShortHand works well for general education teachers who serve students with IEPs and need timestamped notes and parent contact logs. PBIS Rewards requires a school-wide rollout."
 ---
 
 There are roughly four stages of teacher behavior tracking. Stage one: mental notes. Stage two: sticky notes. Stage three: a behavior tracking sheet you update every three weeks. Stage four: an actual app. (Stage five is being asked at an IEP meeting to produce documentation from October and realizing you're still in stage two.)

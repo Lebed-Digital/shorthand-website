@@ -57,9 +57,20 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     "mainEntityOfPage": `https://getshorthandapp.com/blog/${slug}`
   };
 
+  const faqSchema = post.faq && post.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": post.faq.map((item: { q: string; a: string }) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": { "@type": "Answer", "text": item.a }
+    }))
+  } : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       <div className="glow-field" aria-hidden>
         <span className="g1" /><span className="g2" /><span className="g3" />
         <span className="g4" /><span className="g5" />
