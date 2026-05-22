@@ -65,13 +65,13 @@ export default function TermsPage() {
         </ul>
 
         <h2>6. Intellectual Property</h2>
-        <p>All content, features, and functionality of ShortHand (including but not limited to software, text, graphics, and design) are owned by ShortHand and protected by applicable intellectual property laws.</p>
+        <p>All content, features, and functionality of ShortHand (including but not limited to software, text, graphics, and design) are owned by Lebed Digital LLC and protected by applicable intellectual property laws.</p>
 
         <h2>7. Disclaimer of Warranties</h2>
         <p>ShortHand is provided "as is" without warranties of any kind, either express or implied. We do not warrant that the App will be error-free or uninterrupted.</p>
 
         <h2>8. Limitation of Liability</h2>
-        <p>To the maximum extent permitted by law, ShortHand shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+        <p>To the maximum extent permitted by law, Lebed Digital LLC shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
 
         <h2>9. Changes to Terms</h2>
         <p>We may update these Terms from time to time. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>
