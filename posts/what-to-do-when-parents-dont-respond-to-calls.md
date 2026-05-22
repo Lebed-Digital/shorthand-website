@@ -4,6 +4,15 @@ subtitle: "You tried. They didn't pick up. Here's what to do next and why loggin
 date: "2026-05-05"
 author: "Gregory Lebed"
 excerpt: "When parents don't respond to teacher calls or emails, most teachers give up too soon and stop documenting. Here is exactly what to do when parents go silent and how to protect yourself when they finally show up angry."
+faq:
+  - q: "What should a teacher do when a parent doesn't respond to calls or emails?"
+    a: "Keep reaching out and document every attempt. Log the date, time, method, and outcome of each contact try. After three unanswered attempts, loop in your administrator or counselor so the lack of response is on record. When the parent eventually does respond and claims they were never contacted, you have a timestamped log that shows exactly when and how you tried."
+  - q: "How many times should a teacher try to contact a parent before giving up?"
+    a: "Don't give up, but after three unanswered attempts, escalate to your school counselor or administrator so the outreach is no longer just on you. Document every attempt regardless: date, time, method (call, email, app message), and result (no answer, left voicemail, bounced email). That log is your protection if the parent later claims you never reached out."
+  - q: "How do teachers protect themselves when parents claim they were never contacted?"
+    a: "The only real protection is a timestamped contact log. If you called Tuesday at 4:15 PM and left a voicemail, write that down immediately. If you sent an email Wednesday morning, keep the sent receipt. Apps like ShortHand let you log parent contacts in seconds with the date and notes attached to the specific student. That record becomes your evidence when a parent disputes your outreach at a meeting."
+  - q: "Can a teacher get in trouble if a parent claims they were never notified about a problem?"
+    a: "It depends on the situation, but teachers with no documentation are in a much weaker position. If you have a log of three phone attempts, two emails, and a note sent home, that demonstrates due diligence. Without records, it becomes your word against the parent's. For students with IEPs or behavior plans, parent notification requirements are often formal obligations, making documentation even more critical."
 ---
 
 You have called three times. You left two voicemails. You sent a detailed email on Tuesday. Nothing. Absolute silence. Meanwhile, the student is continuing to struggle in your classroom, their behavior is escalating, and you are feeling completely isolated. You start wondering if you are doing something wrong. You might even consider just giving up and moving on. Figuring out what to do when parents don't respond to teacher calls is one of the most frustrating parts of this profession.

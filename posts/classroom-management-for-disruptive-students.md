@@ -4,6 +4,15 @@ date: "2026-04-28"
 author: "Gregory Lebed"
 excerpt: "When traditional classroom management strategies fail, you need a system that protects your peace of mind and builds an undeniable record of student behavior."
 tags: ["Classroom Management", "Teacher Tips"]
+faq:
+  - q: "What is the most effective classroom management strategy for chronically disruptive students?"
+    a: "For chronic disruption, the single most effective thing most teachers aren't doing is consistent documentation. Relationship-building and positive reinforcement are valuable, but they only work if the student's team can see the full pattern. A daily behavior log gives you the evidence to escalate to a support plan, IEP review, or parent intervention instead of managing the same crisis indefinitely."
+  - q: "What do you do when nothing works for a disruptive student?"
+    a: "When strategies stop working, the next step is building a documented case for additional support: a behavior intervention plan, a special education evaluation, or a change in placement. None of those conversations can happen without evidence. Log every incident with a date, time, and specific description. 30 days of consistent documentation is what moves a student from 'difficult' to 'getting help.'"
+  - q: "How do you manage a disruptive student without disrupting the rest of the class?"
+    a: "Predictability is the key tool here. Disruptive students often escalate when responses are inconsistent. A clear, pre-communicated consequence ladder (the same response every time, delivered calmly) removes the power struggle. Equally important: have a quick logging method ready so documenting the incident doesn't interrupt your teaching rhythm for the other students."
+  - q: "When should a disruptive student be referred to administration?"
+    a: "Refer when the behavior creates a safety risk, when you've exhausted your classroom strategies and documented the attempts, or when you suspect an unmet need that requires an evaluation. Administrators respond better to referrals with a documented history. Showing up with three weeks of timestamped behavior logs is far more effective than a verbal complaint on a hard day."
 ---
 
 Every teacher knows the student. They are the one who tests every single boundary before the morning bell has even stopped ringing. They talk over you when you are giving directions. They instigate arguments with peers during group work. They refuse to open their textbook. You have tried the sticker charts, the positive reinforcement, the preferred seating, and the private conversations in the hallway. Nothing seems to make a lasting difference.

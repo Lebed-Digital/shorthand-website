@@ -4,6 +4,15 @@ subtitle: "The follow-up phase is where most IEPs fall apart. Here is how to get
 date: "2026-03-30"
 author: "Gregory Lebed"
 excerpt: "This comprehensive iep meeting checklist for teachers covers exactly what to prepare before, track during, and do after the meeting to support students."
+faq:
+  - q: "What should a general education teacher bring to an IEP meeting?"
+    a: "Bring recent work samples, any behavior logs or incident documentation you've kept, a list of specific academic and behavioral observations from the classroom, and notes on which accommodations are working and which aren't. If you've been using a digital tool like ShortHand to track the student, pull a summary of recent notes so you have specifics rather than impressions."
+  - q: "What does a general education teacher say at an IEP meeting?"
+    a: "Your role is to represent the student's experience in your classroom specifically: what the student can do independently, where they struggle, how they respond to the current accommodations, and what you've observed about their social interactions. Speak in observable, factual terms. Avoid vague statements like 'they struggle' and instead say 'they require redirection approximately three times per math block.'"
+  - q: "What happens after an IEP meeting for classroom teachers?"
+    a: "After the meeting, review any updated accommodations and add them to your lesson planning workflow. Log the meeting date and any commitments you made. Send a brief follow-up email to the case manager confirming what you agreed to do. Then document how accommodations are being implemented over the following weeks, so you have evidence at the next review that the plan was actually followed in your classroom."
+  - q: "How often do IEP meetings happen and does a teacher have to attend every one?"
+    a: "IEPs are reviewed at least annually, with progress updates typically every quarter. As the general education teacher, you are a required member of the IEP team and should attend annual reviews. For shorter check-ins or amendment meetings, requirements vary by school and state. When in doubt, ask the case manager what your attendance obligation is for each type of meeting."
 ---
 
 IEP meetings can feel like a high stakes performance. You sit in a small room with parents, school administrators, and special education teachers. Everyone is looking directly at you for the general education perspective. It is a lot of pressure. Being meticulously prepared is the only way to keep your stress levels manageable and ensure the student gets the support they actually need.

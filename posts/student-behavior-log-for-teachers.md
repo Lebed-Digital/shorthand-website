@@ -4,6 +4,15 @@ subtitle: "If it is not written down, it did not happen."
 date: "2026-05-07"
 author: "Gregory Lebed"
 excerpt: "A simple student behavior log is your best defense at meetings. Learn exactly what to track, what to leave out, and how to protect yourself."
+faq:
+  - q: "What should a student behavior log include?"
+    a: "A student behavior log should include the date and time, a factual description of what happened (no opinions, just observable actions), what you did in response, and whether you contacted a parent. Those five fields are enough. Anything more becomes a burden you stop filling out. Consistency over completeness: a one-line entry every day beats a detailed entry once a week."
+  - q: "How do teachers keep a behavior log without disrupting the class?"
+    a: "The fastest method is a phone-based app that lets you tap a student name and type a quick note in under 15 seconds. Apps like ShortHand are built for exactly this: you log during transitions, not mid-lesson. If you're using paper, keep a clipboard on your desk with a pre-printed sheet per student so you never have to search for the right page."
+  - q: "Is a student behavior log confidential?"
+    a: "Your personal classroom log is a professional document, not a public record. It should not be shared with other students or parents of other students. However, it can and should be shared at IEP meetings, parent conferences, and with administrators when escalating a concern. Keep it factual and professional at all times since anything you write could be read by a parent or administrator."
+  - q: "How long should teachers keep student behavior logs?"
+    a: "A general guideline is to keep records for the current school year plus one additional year. For students with IEPs or active behavior interventions, check with your school's special education coordinator, as documentation retention requirements are often longer. Digital logs are easier to archive and search than paper, which is another reason to move away from notebooks."
 ---
 
 We have all been there. You are sitting in a parent-teacher conference. The parent is looking at you. The principal is looking at you. You are trying to explain that a student has been struggling with their behavior for weeks.

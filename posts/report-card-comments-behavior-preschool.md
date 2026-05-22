@@ -4,6 +4,15 @@ subtitle: "Age-appropriate language for the hardest comments you will write all 
 date: "2026-03-29"
 author: "Gregory Lebed"
 excerpt: "Writing report card comments for preschool behavior is different from K-8. Here are age-appropriate examples for sharing, turn-taking, emotional regulation, and more."
+faq:
+  - q: "How do you write report card comments for preschool behavior?"
+    a: "Focus on observable developmental milestones, not comparisons to other students. Use strength-based language that names what the child is working on rather than what they can't do. Instead of 'has difficulty sharing,' write 'is developing turn-taking skills with peer support.' Preschool parents are often first-time school parents, so your language sets the tone for how they understand their child's development."
+  - q: "What are good behavior comments for Pre-K report cards?"
+    a: "Good preschool behavior comments are specific, developmental, and forward-looking. Examples: 'Shows growing ability to manage frustration during transitions,' 'Is developing confidence in group settings,' 'Demonstrates strong empathy toward peers during unstructured play.' Avoid vague phrases like 'needs improvement' without context, as parents of preschoolers often interpret these as alarming rather than normal developmental notes."
+  - q: "How do you write a negative behavior comment on a preschool report card without alarming parents?"
+    a: "Frame the comment around development, not deficits. Instead of 'is aggressive with peers,' write 'is learning to use words to express big feelings, with consistent adult support.' If the behavior is significant enough to note formally, pair it with a specific next step: what the classroom is doing to support the child and what parents can reinforce at home. Never put a concern in a report card that parents are hearing for the first time."
+  - q: "What behavior skills are typically assessed on a preschool report card?"
+    a: "Common preschool behavior domains include: following classroom routines, taking turns and sharing, managing transitions, listening and following directions, regulating emotions, and interacting positively with peers. These are assessed as developmental continuums, not pass/fail grades. Most preschool report cards use language like 'emerging,' 'developing,' or 'demonstrating consistently' rather than letter grades."
 ---
 
 Writing report card comments behavior for preschool is a unique challenge. You are not grading math tests.

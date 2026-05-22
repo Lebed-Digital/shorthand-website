@@ -4,6 +4,15 @@ subtitle: "The meeting is just the beginning. Your notes are what make the plan 
 date: "2026-03-26"
 author: "Gregory Lebed"
 excerpt: "Use this free and simple iep meeting notes template to perfectly track action items, document accommodations, and easily follow up with parents after."
+faq:
+  - q: "What should a teacher include in IEP meeting notes?"
+    a: "Your IEP meeting notes should capture: the date and attendees, any changes made to the student's goals or accommodations, specific action items assigned to you, parent concerns that were raised, and any follow-up dates or deadlines. The official case manager takes summary notes, but those often miss details that affect your day-to-day instruction. Your personal notes fill that gap."
+  - q: "Do general education teachers need to take their own notes at IEP meetings?"
+    a: "Yes. The official IEP document is a broad summary. It often doesn't capture the nuances of what was said, what parents are concerned about, or what you personally agreed to do. Your own notes give you a record that reflects your classroom perspective and protect you if a parent later claims accommodations weren't being followed."
+  - q: "How do I organize IEP notes for multiple students?"
+    a: "The most practical approach is one document or section per student. A shared folder (Google Drive or similar) with a subfolder per student keeps everything findable at a moment's notice. Apps like ShortHand also let you attach notes to individual student profiles, so your IEP follow-up tasks live alongside your daily behavior and parent contact logs for that student."
+  - q: "What do I do with IEP meeting notes after the meeting?"
+    a: "Within 24 hours, review your notes and add any action items to your task list. Send a brief follow-up email to the case manager confirming anything you committed to doing. File the notes somewhere you can retrieve them quickly if a parent disputes what was agreed. The notes are useless if you can't find them six weeks later."
 ---
 
 Attending an IEP meeting requires a massive amount of mental energy. You are listening to specialists, answering parent questions, and trying to represent your classroom accurately. With so much information flying around the table, it is incredibly easy to forget the specific details the moment you walk out the door.
