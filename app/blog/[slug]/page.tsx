@@ -40,8 +40,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
-    "datePublished": post.date,
-    "dateModified": post.date,
+    "datePublished": `${post.date}T00:00:00+00:00`,
+    "dateModified": `${post.date}T00:00:00+00:00`,
     "author": {
       "@type": "Person",
       "name": "Gregory Lebed",
