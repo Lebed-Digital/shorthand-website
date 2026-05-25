@@ -250,12 +250,12 @@ export default function Home() {
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
-            <h1>Stop behavior from spiraling.<br /><em>Parents in the loop in seconds.</em></h1>
+            <h1>Document everything.<br /><em>Forget nothing.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
             <p className="hero-sub">
-              The moment something happens, tap a note. ShortHand drafts the parent message for you, so communication happens the same day, not a week later when you finally find the time to write it.
+              Every teacher has had a parent say "you never told me that." ShortHand gives you a timestamped record of every note, every email, every conversation. When that moment comes, you open your phone and show them.
             </p>
             <div className="hero-ctas">
               <motion.a
