@@ -255,7 +255,7 @@ export default function Home() {
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
             <p className="hero-sub">
-              Every teacher has had a parent say "you never told me that." ShortHand gives you a timestamped record of every note, every email, every conversation. When that moment comes, you open your phone and show them.
+              Every teacher has had a parent say "you never told me that." ShortHand keeps you organized, prepared, and ready, with a complete record of every note, email, and conversation, right when you need it.
             </p>
             <div className="hero-ctas">
               <motion.a
