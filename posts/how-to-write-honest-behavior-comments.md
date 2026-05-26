@@ -49,7 +49,7 @@ You can also check out our full list of [report card comments for behavior](/blo
 
 ### Attention and Focus
 
-Writing about attention requires care. You do not want to sound like you are diagnosing ADHD.
+Writing about attention requires care. You do not want to sound like you are diagnosing ADHD. For a full list of copy-paste examples organized by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems).
 
 "Leo requires frequent redirection to stay on task. He is working on sustaining focus for fifteen minutes at a time."
 

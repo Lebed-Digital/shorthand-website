@@ -100,6 +100,8 @@ These are the hardest comments to write. You have a student with real, ongoing b
 
 **A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. That is exactly the situation that led me to build ShortHand.
 
+If you need comments organized specifically by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems) for 50+ examples broken down by attention, impulsivity, emotional regulation, and more.
+
 ---
 
 ## For impulsivity and self-regulation
