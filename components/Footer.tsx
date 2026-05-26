@@ -21,7 +21,11 @@ export default function Footer() {
         ·{' '}
         <Link href="/install" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Add to Home Screen
-        </Link>
+        </Link>{' '}
+        ·{' '}
+        <a href="https://pulseacademic.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          Pulse Academic
+        </a>
       </div>
     </footer>
   );
