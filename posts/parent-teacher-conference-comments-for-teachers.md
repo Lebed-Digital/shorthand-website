@@ -75,3 +75,5 @@ ShortHand keeps notes on each student so when conference season comes around, yo
 ---
 
 *Related reading: [What to Say at a Parent Teacher Conference](/blog/what-to-say-at-parent-teacher-conference) | [How to Prepare for a Parent Teacher Conference](/blog/how-to-prepare-for-parent-teacher-conference) | [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

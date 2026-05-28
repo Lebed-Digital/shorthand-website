@@ -70,3 +70,7 @@ This final step is absolutely critical for building a long term partnership. Sen
 This is where having the right communication tool makes a massive difference in your workload. Instead of digging through a cluttered email inbox or trying to catch busy parents on the phone during your prep period, use [ShortHand](https://getshorthandapp.com). You can log your private follow up notes and send a quick, documented message directly to the parents in under a minute. ShortHand keeps a permanent, timestamped record of the communication. This protects you, keeps everyone on the same page, and ensures the agreed upon plan is actually executed.
 
 Treat the follow up phase with the exact same importance as your initial preparation. Keep this checklist handy for your next meeting, and watch how much more effective your parent partnerships become.
+
+---
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

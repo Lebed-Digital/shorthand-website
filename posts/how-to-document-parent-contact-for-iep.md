@@ -71,3 +71,5 @@ Stop risking your career on a disorganized paper trail. [Try ShortHand free at g
 ---
 
 *Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called) | [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

@@ -92,3 +92,5 @@ Stop letting unanswered calls stress you out. Turn that frustration into a bulle
 ---
 
 *Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called) | [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

@@ -71,3 +71,7 @@ We highly recommend using a structured format to keep track of these details. Yo
 Once you have your notes, you need to send a quick follow up message to the parents. This is where [ShortHand](https://getshorthandapp.com) becomes an absolute lifesaver. Instead of typing out a long email or playing phone tag, you can use ShortHand to quickly log the agreed upon next steps and send a direct message to the parents. ShortHand keeps a secure, organized record of your parent communication, ensuring everyone remains accountable for the student's success.
 
 By using these scripts and keeping your communication focused on solutions, you can turn a stressful IEP meeting into a highly productive collaboration.
+
+---
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

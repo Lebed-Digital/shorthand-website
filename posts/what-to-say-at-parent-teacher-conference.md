@@ -81,3 +81,5 @@ ShortHand gives you the documented notes to back up everything you say in that r
 ---
 
 *Related reading: [How to Prepare for a Parent Teacher Conference](/blog/how-to-prepare-for-parent-teacher-conference) | [Parent Teacher Conference Comments for Every Type of Student](/blog/parent-teacher-conference-comments-for-teachers) | [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

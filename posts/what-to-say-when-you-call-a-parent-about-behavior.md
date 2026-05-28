@@ -117,3 +117,5 @@ If the behavior continues and eventually leads to a bigger meeting, that call lo
 ShortHand has a parent contact log built in so you can add a quick note right after you hang up, without opening a spreadsheet or digging through your email. It takes about 10 seconds. Small habit, big protection.
 
 *Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

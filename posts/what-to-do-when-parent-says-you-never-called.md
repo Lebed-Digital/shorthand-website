@@ -77,3 +77,5 @@ The next time a parent says you never called, you open your log. That is the who
 ---
 
 *Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

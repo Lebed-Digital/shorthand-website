@@ -69,3 +69,5 @@ ShortHand keeps the running log you need so conference prep takes minutes instea
 ---
 
 *Related reading: [What to Say at a Parent Teacher Conference](/blog/what-to-say-at-parent-teacher-conference) | [Parent Teacher Conference Comments for Every Type of Student](/blog/parent-teacher-conference-comments-for-teachers) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

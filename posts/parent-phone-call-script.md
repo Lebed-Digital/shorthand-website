@@ -97,3 +97,5 @@ ShortHand lets you log the call in about ten seconds while you are still at your
 ---
 
 *Related reading: [What to Say When You Call a Parent About Behavior](/blog/what-to-say-when-you-call-a-parent-about-behavior) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

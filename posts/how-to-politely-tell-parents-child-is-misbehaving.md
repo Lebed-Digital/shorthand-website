@@ -107,3 +107,7 @@ Then, when you are ready, the app's AI uses those facts to draft a perfectly pol
 Start sending better emails without the stress. Try it out at [app.getshorthandapp.com](https://app.getshorthandapp.com).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+
+---
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

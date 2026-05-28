@@ -81,3 +81,5 @@ Stop relying on sticky notes and memory. [Try ShortHand free at getshorthandapp.
 ---
 
 *Related reading: [The Only Teacher Documentation Log Template You Actually Need](/blog/teacher-documentation-log-template) | [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script)*
+
+*Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*
