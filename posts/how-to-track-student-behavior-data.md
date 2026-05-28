@@ -132,3 +132,6 @@ The easier your system is to use, the more consistent you'll be. And consistency
 ---
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

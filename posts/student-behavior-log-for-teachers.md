@@ -78,3 +78,6 @@ ShortHand is the behavior log built into your phone, no spreadsheet required. Yo
 ---
 
 *Related reading: [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers) | [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom)*
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

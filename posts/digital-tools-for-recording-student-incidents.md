@@ -119,3 +119,6 @@ If you want to try ShortHand, it takes about five minutes to set up your class a
 ---
 
 *Related reading: [Best Behavior Tracking Apps for Teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026)*
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

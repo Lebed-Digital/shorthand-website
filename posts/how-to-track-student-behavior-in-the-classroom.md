@@ -156,3 +156,6 @@ If you want to see how ShortHand handles the logging-to-parent-communication pie
 ---
 
 *Related reading: [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom) | [The Student Behavior Log for Teachers](/blog/student-behavior-log-for-teachers) | [How to Redirect Student Behavior Without Stopping the Whole Class](/blog/how-to-redirect-student-behavior)*
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

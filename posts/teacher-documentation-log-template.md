@@ -76,3 +76,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Teacher Documentation Forms vs. Apps: What Actually Works](/blog/teacher-documentation-forms-vs-apps)
 - [Student Behavior Log for Teachers: What to Track and Why](/blog/student-behavior-log-for-teachers)
 - [How to Track Student Behavior Data](/blog/how-to-track-student-behavior-data)
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

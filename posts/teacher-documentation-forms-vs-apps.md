@@ -87,3 +87,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [The Only Teacher Documentation Log Template You Actually Need](/blog/teacher-documentation-log-template)
 - [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist)
 - [How to Track Student Behavior Data](/blog/how-to-track-student-behavior-data)
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

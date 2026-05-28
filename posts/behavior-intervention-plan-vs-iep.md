@@ -73,3 +73,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Behavior Intervention Plan for Off-Task Behavior](/blog/behavior-intervention-plan-for-off-task-behavior)
 - [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist)
 - [IEP Meeting Checklist for Teachers](/blog/iep-meeting-checklist-for-teachers)
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

@@ -83,3 +83,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Behavior Intervention Plan vs. IEP: What's the Difference](/blog/behavior-intervention-plan-vs-iep)
 - [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist)
 - [Teacher Documentation Log Template](/blog/teacher-documentation-log-template)
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

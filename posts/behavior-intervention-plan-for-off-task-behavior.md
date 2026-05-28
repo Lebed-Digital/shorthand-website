@@ -77,3 +77,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Behavior Intervention Plan vs. IEP: What's the Difference](/blog/behavior-intervention-plan-vs-iep)
 - [Classroom Management for Disruptive Students](/blog/classroom-management-for-disruptive-students)
 - [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher)
+
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*
