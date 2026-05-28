@@ -68,3 +68,6 @@ Teachers shouldn't have to be the bridge between broken data systems. That's wha
 ---
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He teaches 3rd grade math and science in New Jersey.*
+
+
+*Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

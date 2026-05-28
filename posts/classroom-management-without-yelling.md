@@ -65,3 +65,6 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Classroom Management Plan Template](/blog/classroom-management-plan-template)
 - [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher)
 - [Teacher Documentation Log Template](/blog/teacher-documentation-log-template)
+
+
+*Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

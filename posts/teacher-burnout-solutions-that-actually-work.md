@@ -70,3 +70,6 @@ By finding tools that actually work for our specific workflow, we can stop stari
 If you are ready to stop drowning in communication tasks, grab ShortHand from the [install page](/install). It works seamlessly on your phone or laptop with no app store required. You can also read more about my classroom management strategies over on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
+
+
+*Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

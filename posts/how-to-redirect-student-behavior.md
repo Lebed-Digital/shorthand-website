@@ -71,3 +71,6 @@ ShortHand lets you log what happened right after you redirect, while it is still
 ---
 
 *Related reading: [Student Behavior Problems in the Classroom](/blog/student-behavior-problems-in-the-classroom) | [The Student Behavior Log for Teachers](/blog/student-behavior-log-for-teachers) | [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom)*
+
+
+*Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*
