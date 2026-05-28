@@ -46,7 +46,7 @@ export default function DpaPage() {
           <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)' }}>Need a signed DPA?</div>
             <p style={{ color: 'var(--text-dim)', lineHeight: 1.6, margin: 0 }}>
-              Email us at <a href="mailto:gregorylebed@gmail.com" style={{ color: 'var(--accent)' }}>gregorylebed@gmail.com</a> with your district name and we'll
+              Email us at <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>hello@getshorthandapp.com</a> with your district name and we'll
               return a countersigned copy within 2 business days. The full agreement terms are below.
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function DpaPage() {
               • <strong style={{ color: 'var(--text)' }}>Data location:</strong> Student data is stored on US servers (AWS us-east-1). Schools in provinces with strict data residency rules should review this with their IT department before using ShortHand. Contact us to discuss options.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>AI processing:</strong> When AI features are used, notes are sent to Groq (a US-based provider) for processing and are not retained after the response is returned. No student PII is used to train AI models.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Data minimization:</strong> ShortHand collects only the information a teacher actively enters. Nothing is collected passively beyond what is necessary to operate the service.<br /><br />
-              Questions about Canadian compliance? Email <a href="mailto:gregorylebed@gmail.com" style={{ color: 'var(--accent)' }}>gregorylebed@gmail.com</a>.
+              Questions about Canadian compliance? Email <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>hello@getshorthandapp.com</a>.
             </div>
           </div>
 
@@ -168,7 +168,7 @@ export default function DpaPage() {
             <div className="privacy-title">Contact</div>
             <div className="privacy-desc">
               To request a countersigned DPA, report a concern, or ask questions about this agreement:<br /><br />
-              <a href="mailto:gregorylebed@gmail.com" style={{ color: 'var(--accent)' }}>gregorylebed@gmail.com</a><br /><br />
+              <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>hello@getshorthandapp.com</a><br /><br />
               ShortHand / Lebed Digital LLC
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function DpaPage() {
       <footer>
         <div className="footer-logo">ShortHand</div>
         <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:gregorylebed@gmail.com" className="footer-email">gregorylebed@gmail.com</a>
+        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
         <div className="footer-copy">© 2026 ShortHand. All rights reserved.</div>
       </footer>
     </>
