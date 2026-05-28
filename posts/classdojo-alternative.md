@@ -115,4 +115,16 @@ No avatars. No monster haircuts. Just documentation that holds up when you need 
 
 ---
 
+## Related comparisons and guides
+
+- [7 Reasons You're Googling ClassDojo Alternatives](/blog/7-reasons-classdojo-alternatives)
+- [Best ClassDojo Alternatives in 2026](/blog/best-classdojo-alternatives-2026)
+- [ClassDojo vs Seesaw: Which One Is Actually Worth It?](/blog/classdojo-vs-seesaw-2026)
+- [Why Teachers Are Switching from ClassDojo to ShortHand](/blog/why-teachers-are-switching-from-classdojo-to-shorthand)
+- [ShortHand vs Bloomz](/blog/shorthand-vs-bloomz)
+- [Best Behavior Management Apps for Teachers in 2026](/blog/best-behavior-management-apps-for-teachers-2026)
+- [Best Behavior Tracking Apps for Teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026)
+
+---
+
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to solve the documentation problems he faced in his own classroom.*

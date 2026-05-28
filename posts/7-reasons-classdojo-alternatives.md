@@ -89,3 +89,6 @@ It isn't a ClassDojo replacement in the sense of trying to do everything ClassDo
 ---
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to solve the documentation problems he faced in his own classroom.*
+
+
+*Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

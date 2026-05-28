@@ -104,3 +104,6 @@ That's not a problem. That's just Tuesday.
 ---
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand because nothing else fit what he actually needed in a real classroom.*
+
+
+*Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

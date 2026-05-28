@@ -126,3 +126,6 @@ If you're a general education teacher who wants to actually manage behavior, doc
 Download it, set up your class, and use it today. No approval needed.
 
 Looking specifically at tracking tools? Here's the full breakdown: [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
+
+
+*Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

@@ -141,3 +141,6 @@ No setup, no IT ticket, no waiting for someone else to decide. Just download it 
 ---
 
 *Related reading: [Digital Tools for Recording Student Incidents and Progress](/blog/digital-tools-for-recording-student-incidents)*
+
+
+*Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

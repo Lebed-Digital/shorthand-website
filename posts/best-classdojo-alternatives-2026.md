@@ -124,3 +124,6 @@ If you want a full communication hub to replace everything ClassDojo does, Bloom
 Everything else on this list is built for a different primary use case and is worth considering only if that use case fits your situation.
 
 [Try ShortHand free](https://getshorthandapp.com) and have it set up before the end of the day.
+
+
+*Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*
