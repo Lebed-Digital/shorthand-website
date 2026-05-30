@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
       { source: '/(.*)', headers: securityHeaders },
     ];
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/5-behavior-management-apps-for-teachers',
+        destination: '/blog/best-behavior-management-apps-for-teachers-2026',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
