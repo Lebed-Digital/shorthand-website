@@ -113,6 +113,37 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
 
+        {post.faq && post.faq.length > 0 && (
+          <div style={{ marginTop: '3rem' }}>
+            <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem' }}>Frequently Asked Questions</h2>
+            {post.faq.map((item: { q: string; a: string }, i: number) => (
+              <details key={i} style={{
+                marginBottom: '0.75rem',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: '10px',
+                overflow: 'hidden',
+              }}>
+                <summary style={{
+                  padding: '1rem 1.25rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  background: 'rgba(255,255,255,0.03)',
+                  listStyle: 'none',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                }}>
+                  {item.q}
+                  <span style={{ fontSize: '1.2rem', marginLeft: '0.5rem', flexShrink: 0 }}>+</span>
+                </summary>
+                <div style={{ padding: '1rem 1.25rem', color: 'var(--text-dim)', lineHeight: 1.6 }}>
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        )}
+
         <div style={{
           marginTop: '3rem',
           padding: '1.75rem',

@@ -71,7 +71,7 @@ For example, instead of saying "Tyler is always disruptive in math," you can loo
 
 This level of detail helps the team identify the root cause of the behavior, such as transition fatigue, and leads to much more effective interventions.
 
-If you need to prepare for those difficult conversations with families, check out our list of [5 sample emails to parents about student behavior](/blog/5-sample-emails-to-parents-about-student-behavior) to structure your outreach.
+If you need to prepare for those difficult conversations with families, check out our list of [5 sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior) to structure your outreach.
 
 ## ShortHand: The Behavior Log That Fits Your Day
 
