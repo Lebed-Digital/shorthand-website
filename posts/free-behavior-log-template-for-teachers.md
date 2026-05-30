@@ -16,6 +16,8 @@ Historically, this meant carrying around a wooden clipboard, which usually ended
 
 Having a structured, consistent template is critical.
 
+![ShortHand quick note screen showing a teacher logging a student behavior incident in seconds](/mockup-quicknote.webp)
+
 Below, you will find a free behavior log template for teachers that you can copy, paste, and print. I have included both a detailed version based on behavior-science principles and a simpler version designed for busy primary teachers.
 
 ## Why You Need a Structured Behavior Log
