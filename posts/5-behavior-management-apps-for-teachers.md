@@ -21,7 +21,7 @@ However, the right tool can make your life a lot easier. It can save you hours o
 
 The trick is knowing what you actually need.
 
-![ShortHand student grid showing behavior tracking across a full classroom roster](/mockup-grid.webp)
+![A teacher holding a tablet in a classroom reviewing behavior management apps](/teacher-with-tablet.png)
 
 Below is an honest, practical review of five popular behavior management apps. I have categorized them by what they do best, including point systems, parent communication, and individual documentation.
 
