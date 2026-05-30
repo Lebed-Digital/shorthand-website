@@ -31,7 +31,17 @@ Are you looking to motivate primary students with a fun reward system? Do you ne
 
 If you are just starting to organize your data collection, it is often best to begin with a paper system first. You can check out our [free behavior log template for teachers](/blog/free-behavior-log-template-for-teachers) to get a feel for what details are worth tracking.
 
-Once you know your goals, you can choose a tool that fits. Here is a breakdown of five options.
+Once you know your goals, you can choose a tool that fits. Here is a quick comparison, followed by a full breakdown of each option.
+
+## Quick Comparison
+
+| App | Best For | Requires School Buy-In | Student-Facing | Behavior Documentation |
+|---|---|---|---|---|
+| ClassDojo | Elementary culture and points | No | Yes | Basic |
+| Remind | Parent messaging | No | No | None |
+| PBIS Rewards | School-wide frameworks | Yes | Yes | Basic |
+| LiveSchool | Middle/high token economies | Yes | Yes | Moderate |
+| ShortHand | Private teacher documentation | No | No | Full |
 
 ## 5 Behavior Management Apps for Teachers
 
