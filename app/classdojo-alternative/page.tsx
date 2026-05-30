@@ -4,11 +4,11 @@ import AnimatedLogo from '../../components/AnimatedLogo';
 import TrackedLink from '../../components/TrackedLink';
 
 export const metadata: Metadata = {
-  title: 'ClassDojo Alternative for Middle & High School Teachers — ShortHand',
+  title: 'ClassDojo Alternative for Middle & High School Teachers | ShortHand',
   description: 'Looking for a ClassDojo alternative? ShortHand is built for older students: private behavior notes, parent communication logs, and no public point systems.',
   alternates: { canonical: 'https://getshorthandapp.com/classdojo-alternative' },
   openGraph: {
-    title: 'ClassDojo Alternative for Middle & High School Teachers — ShortHand',
+    title: 'ClassDojo Alternative for Middle & High School Teachers | ShortHand',
     description: 'Looking for a ClassDojo alternative? ShortHand is built for older students: private behavior notes, parent communication logs, and no public point systems.',
     url: 'https://getshorthandapp.com/classdojo-alternative',
     type: 'website',

@@ -4,11 +4,11 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 
 export const metadata: Metadata = {
-  title: 'Attendance — ShortHand',
+  title: 'Attendance | ShortHand',
   description: 'Track student attendance fast. See patterns over time and catch chronic absenteeism before it becomes a bigger problem.',
   alternates: { canonical: 'https://getshorthandapp.com/features/attendance' },
   openGraph: {
-    title: 'Attendance — ShortHand',
+    title: 'Attendance | ShortHand',
     description: 'Track student attendance fast. See patterns over time and catch chronic absenteeism before it becomes a bigger problem.',
     url: 'https://getshorthandapp.com/features/attendance',
     type: 'website',

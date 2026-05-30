@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — ShortHand',
+  title: 'Terms of Service | ShortHand',
   description: 'Terms of Service for ShortHand, the teacher productivity app for classroom management, student progress tracking, and parent communication.',
 };
 

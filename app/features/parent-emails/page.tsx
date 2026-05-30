@@ -5,11 +5,11 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'Parent Communication — ShortHand',
+  title: 'Parent Communication | ShortHand',
   description: 'Log every parent call, email, and meeting. One tap exports the full communication history for IEP meetings. AI drafts messages from your notes.',
   alternates: { canonical: 'https://getshorthandapp.com/features/parent-emails' },
   openGraph: {
-    title: 'Parent Communication — ShortHand',
+    title: 'Parent Communication | ShortHand',
     description: 'Log every parent call, email, and meeting. One tap exports the full communication history for IEP meetings. AI drafts messages from your notes.',
     url: 'https://getshorthandapp.com/features/parent-emails',
     type: 'website',

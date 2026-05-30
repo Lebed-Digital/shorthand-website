@@ -83,6 +83,7 @@ If you want to skip the binder entirely, ShortHand logs it for you in seconds. [
 - [Teacher Documentation Forms vs. Apps: What Actually Works](/blog/teacher-documentation-forms-vs-apps)
 - [How to Document Student Behavior for IEP Meetings](/blog/how-to-document-student-behavior-for-iep)
 - [Student Behavior Log for Teachers: What to Track and Why](/blog/student-behavior-log-for-teachers)
+- [Report Card Comments for Behavior: 120+ Examples](/blog/report-card-comments-for-behavior)
 
 
 *Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

@@ -5,11 +5,11 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'AI Reports — ShortHand',
+  title: 'AI Reports | ShortHand',
   description: 'Turn months of raw classroom notes into polished, parent-ready progress reports in seconds. Your voice, your observations, with the hard part done for you.',
   alternates: { canonical: 'https://getshorthandapp.com/features/ai-reports' },
   openGraph: {
-    title: 'AI Reports — ShortHand',
+    title: 'AI Reports | ShortHand',
     description: 'Turn months of raw classroom notes into polished, parent-ready progress reports in seconds. Your voice, your observations, with the hard part done for you.',
     url: 'https://getshorthandapp.com/features/ai-reports',
     type: 'website',

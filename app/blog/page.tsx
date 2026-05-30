@@ -4,10 +4,10 @@ import AnimatedLogo from '../../components/AnimatedLogo';
 import { getAllPosts } from '../../lib/posts';
 
 export const metadata: Metadata = {
-  title: 'Blog — ShortHand',
+  title: 'Blog | ShortHand',
   description: 'Teaching tips, classroom management strategies, and honest stories from a K-12 teacher who built his own productivity app.',
   openGraph: {
-    title: 'Blog — ShortHand',
+    title: 'Blog | ShortHand',
     description: 'Teaching tips, classroom management strategies, and honest stories from a K-12 teacher who built his own productivity app.',
     url: 'https://getshorthandapp.com/blog',
     type: 'website',

@@ -100,7 +100,7 @@ These are the hardest comments to write. You have a student with real, ongoing b
 - "This has been a challenging term for [Name] behaviorally. I am committed to supporting them and will be reaching out to discuss a plan going forward."
 - "There have been repeated incidents this term involving [behavior]. We are taking this seriously and working with [Name] and their family on a path forward."
 
-**A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. That is exactly the situation that led me to build ShortHand.
+**A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. See [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) for the system that makes this sustainable. That is exactly the situation that led me to build ShortHand.
 
 If you need comments organized specifically by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems) for 50+ examples broken down by attention, impulsivity, emotional regulation, and more.
 

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Data Processing Agreement — ShortHand',
+  title: 'Data Processing Agreement | ShortHand',
   description: 'ShortHand Data Processing Agreement for schools and districts.',
 };
 

@@ -4,11 +4,11 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 
 export const metadata: Metadata = {
-  title: 'Parent Communication Log — ShortHand',
+  title: 'Parent Communication Log | ShortHand',
   description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready, so if admin asks, you\'re covered.',
   alternates: { canonical: 'https://getshorthandapp.com/features/parent-communication-log' },
   openGraph: {
-    title: 'Parent Communication Log — ShortHand',
+    title: 'Parent Communication Log | ShortHand',
     description: 'Log every parent call, email, and meeting in seconds. Your full communication history is always ready, so if admin asks, you\'re covered.',
     url: 'https://getshorthandapp.com/features/parent-communication-log',
     type: 'website',

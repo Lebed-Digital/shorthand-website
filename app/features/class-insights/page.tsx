@@ -5,11 +5,11 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'Progress & Insights — ShortHand',
+  title: 'Progress & Insights | ShortHand',
   description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
   alternates: { canonical: 'https://getshorthandapp.com/features/class-insights' },
   openGraph: {
-    title: 'Progress & Insights — ShortHand',
+    title: 'Progress & Insights | ShortHand',
     description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
     url: 'https://getshorthandapp.com/features/class-insights',
     type: 'website',

@@ -14,10 +14,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const meta = posts.find((p) => p.slug === slug);
   if (!meta) return {};
   return {
-    title: `${meta.title} — ShortHand Blog`,
+    title: `${meta.title} | ShortHand Blog`,
     description: meta.excerpt,
     openGraph: {
-      title: `${meta.title} — ShortHand Blog`,
+      title: `${meta.title} | ShortHand Blog`,
       description: meta.excerpt,
       url: `https://getshorthandapp.com/blog/${slug}`,
       type: 'article',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy — ShortHand',
+  title: 'Privacy Policy | ShortHand',
   description: 'How ShortHand collects, uses, and protects your data.',
 };
 

@@ -6,11 +6,11 @@ import FeatureNav from '../../../components/FeatureNav';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Quick Note — ShortHand',
+  title: 'Quick Note | ShortHand',
   description: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.',
   alternates: { canonical: 'https://getshorthandapp.com/features/quick-note' },
   openGraph: {
-    title: 'Quick Note — ShortHand',
+    title: 'Quick Note | ShortHand',
     description: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.',
     url: 'https://getshorthandapp.com/features/quick-note',
     type: 'website',

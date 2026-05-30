@@ -5,11 +5,11 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'Never Miss a Student — ShortHand',
+  title: 'Never Miss a Student | ShortHand',
   description: 'Color-coded status rings and automatic alerts so no student quietly slips through the cracks. Built for K-12 teachers.',
   alternates: { canonical: 'https://getshorthandapp.com/features/behavior-tracking' },
   openGraph: {
-    title: 'Never Miss a Student — ShortHand',
+    title: 'Never Miss a Student | ShortHand',
     description: 'Color-coded status rings and automatic alerts so no student quietly slips through the cracks. Built for K-12 teachers.',
     url: 'https://getshorthandapp.com/features/behavior-tracking',
     type: 'website',

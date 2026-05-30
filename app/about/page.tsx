@@ -4,10 +4,10 @@ import Link from 'next/link';
 import AnimatedLogo from '../../components/AnimatedLogo';
 
 export const metadata: Metadata = {
-  title: 'About Gregory Lebed — ShortHand',
+  title: 'About Gregory Lebed | ShortHand',
   description: 'Gregory Lebed is a 3rd grade teacher and former Registered Behavior Technician (RBT) who built ShortHand to solve the paperwork problem he lived every day.',
   openGraph: {
-    title: 'About Gregory Lebed — ShortHand',
+    title: 'About Gregory Lebed | ShortHand',
     description: 'Gregory Lebed is a 3rd grade teacher and former Registered Behavior Technician (RBT) who built ShortHand to solve the paperwork problem he lived every day.',
     url: 'https://getshorthandapp.com/about',
     type: 'profile',
