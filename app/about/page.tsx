@@ -95,7 +95,7 @@ export default function AboutPage() {
               Gregory Lebed
             </h1>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-              {['20+ Years K–8 Experience', 'Certified RBT', 'Active 3rd Grade Teacher'].map(badge => (
+              {['20+ Years K–8 Experience', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
                 <span key={badge} style={{
                   background: 'rgba(167,139,250,0.12)',
                   border: '1px solid rgba(167,139,250,0.3)',

@@ -583,7 +583,7 @@ export default function Home() {
               drowning in paperwork while trying to keep my head above water.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', margin: '1rem 0 1.25rem' }}>
-              {['20+ Years K–8 Experience', 'Certified RBT', 'Active 3rd Grade Teacher'].map(badge => (
+              {['20+ Years K–8 Experience', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
                 <span key={badge} style={{
                   background: 'rgba(167,139,250,0.12)',
                   border: '1px solid rgba(167,139,250,0.3)',
