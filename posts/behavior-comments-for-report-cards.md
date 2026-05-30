@@ -1,7 +1,7 @@
 ---
 title: "Behavior Comments for Report Cards: 80+ Examples Organized by Situation"
 subtitle: "The comments you actually need, written the way a teacher would write them."
-date: "2026-05-30T00:00:00+00:00"
+date: "2026-05-30"
 author: "Gregory Lebed"
 excerpt: "Writing behavior comments for report cards is one of the hardest parts of the job. Here are 80+ examples organized by situation, plus the formula that keeps you professional without watering down the truth."
 faq:
