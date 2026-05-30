@@ -21,6 +21,8 @@ If we handle these conversations poorly, they can quickly turn into verbal sparr
 
 But these conversations do not have to be battles.
 
+![A teacher calmly speaking on the phone at her desk with a classroom in the background](/teacher-parent-phone-call.png)
+
 With over twenty years in K-8 classrooms and a background as a Registered Behavior Technician, I have had thousands of these discussions. I have learned that the key to success is shifting your approach from an adversary to a teammate.
 
 Below is my step-by-step guide on how to talk to parents about student behavior in a way that builds partnerships instead of walls.

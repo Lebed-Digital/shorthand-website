@@ -12,6 +12,8 @@ But when the parent asks for specific examples, your mind goes blank. You stamme
 
 Learning how to document student behavior is not something they teach you in your education program. They teach you theories about classroom management. They do not teach you how to build a waterproof paper trail while simultaneously teaching thirty-two middle schoolers how to find the area of a circle.
 
+![A teacher taking notes on a tablet while observing students working in an elementary classroom](/teacher-documenting-behavior.png)
+
 This is a practical guide written by a real teacher. We are going to cover exactly what to write down, when to write it, and why the systems you are currently trying to use are probably setting you up for failure.
 
 ## Why Most Teachers Wait Too Long to Document
