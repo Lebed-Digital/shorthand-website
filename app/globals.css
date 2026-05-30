@@ -1045,6 +1045,14 @@ footer {
   background: rgba(255,255,255,0.02);
 }
 
+.blog-content img {
+  max-width: 320px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+}
+
 .blog-card-link { text-decoration: none; display: block; }
 .blog-card {
   background: rgba(255,255,255,0.04);
