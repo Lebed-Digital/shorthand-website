@@ -44,13 +44,13 @@ function Row({
       </td>
       <td className={cell}>
         <select className={select} value={row.method} onChange={(e) => onChange(index, 'method', e.target.value)}>
-          <option value="">—</option>
+          <option value="">-</option>
           {METHOD_OPTIONS.map((o) => <option key={o}>{o}</option>)}
         </select>
       </td>
       <td className={cell}>
         <select className={select} value={row.reached} onChange={(e) => onChange(index, 'reached', e.target.value)}>
-          <option value="">—</option>
+          <option value="">-</option>
           {REACHED_OPTIONS.map((o) => <option key={o}>{o}</option>)}
         </select>
       </td>
@@ -65,7 +65,7 @@ function Row({
       </td>
       <td className={cell}>
         <select className={select} value={row.followup} onChange={(e) => onChange(index, 'followup', e.target.value)}>
-          <option value="">—</option>
+          <option value="">-</option>
           {FOLLOWUP_OPTIONS.map((o) => <option key={o}>{o}</option>)}
         </select>
       </td>

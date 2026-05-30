@@ -1,4 +1,4 @@
-# ShortHand — Full Context for AI Models
+# ShortHand: Full Context for AI Models
 > A comprehensive guide to the ShortHand platform for classroom management, behavior tracking, and AI-driven teacher productivity.
 
 ## Core Mission

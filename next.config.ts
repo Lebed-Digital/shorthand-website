@@ -8,11 +8,6 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  async headers() {
-    return [
-      { source: '/(.*)', headers: securityHeaders },
-    ];
-  },
   async redirects() {
     return [
       {
@@ -20,6 +15,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/best-behavior-management-apps-for-teachers-2026',
         permanent: true,
       },
+    ];
+  },
+  async headers() {
+    return [
+      { source: '/(.*)', headers: securityHeaders },
     ];
   },
 };

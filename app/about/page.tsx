@@ -21,7 +21,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Gregory Lebed',
   jobTitle: '3rd Grade Teacher',
-  description: 'K-8 classroom teacher, former Registered Behavior Technician (RBT), and creator of ShortHand — a behavior tracking and parent communication app built for teachers.',
+  description: 'K-8 classroom teacher, former Registered Behavior Technician (RBT), and creator of ShortHand, a behavior tracking and parent communication app built for teachers.',
   url: 'https://getshorthandapp.com/about',
   email: 'hello@getshorthandapp.com',
   worksFor: {
