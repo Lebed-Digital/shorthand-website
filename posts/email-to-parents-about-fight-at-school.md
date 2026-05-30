@@ -1,7 +1,7 @@
 ---
 title: "Email to Parents About Fight at School: Guidelines and Templates"
 subtitle: "How to handle high-stakes safety incidents with professional, documentation-ready communication."
-date: "2026-06-01"
+date: "2026-05-14"
 author: "Gregory Lebed"
 excerpt: "Drafting an email to parents about fight at school is stressful. Read our call-first advice and get templates to document conversations professionally."
 ---

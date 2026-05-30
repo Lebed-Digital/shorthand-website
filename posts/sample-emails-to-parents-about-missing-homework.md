@@ -1,7 +1,7 @@
 ---
 title: "5 Sample Emails to Parents About Missing Homework"
 subtitle: "Empathetic, copy-and-paste templates that get students back on track without starting a family feud."
-date: "2026-05-30"
+date: "2026-05-12"
 author: "Gregory Lebed"
 excerpt: "Looking for sample emails to parents about missing homework? Try these 5 copy-paste templates that build partnerships and get assignments turned in."
 ---
