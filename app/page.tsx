@@ -291,14 +291,33 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-demo-wrap">
-            <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)' }}>
-              <iframe
-                src="https://www.youtube-nocookie.com/embed/-e3WOQt_lP0?enablejsapi=1"
-                title="Why I built ShortHand"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                style={{ width: '100%', height: '100%', border: 0, display: 'block' }}
-              />
+            <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', background: '#000', cursor: 'pointer' }}
+              onClick={() => {
+                const el = document.getElementById('yt-hero');
+                if (el) el.outerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/-e3WOQt_lP0?autoplay=1&enablejsapi=1" title="Why I built ShortHand" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>';
+              }}
+            >
+              <div id="yt-hero" style={{ position: 'relative', width: '100%', height: '100%' }}>
+                <img
+                  src="https://i.ytimg.com/vi/-e3WOQt_lP0/hqdefault.jpg"
+                  alt="Why I built ShortHand — watch the video"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                />
+                <div style={{
+                  position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'rgba(0,0,0,0.25)',
+                }}>
+                  <div style={{
+                    width: 64, height: 64, borderRadius: '50%', background: 'rgba(255,255,255,0.95)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
+                  }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <polygon points="9,7 19,12 9,17" fill="#111" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
