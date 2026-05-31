@@ -58,7 +58,7 @@ export default function NeverMissPage() {
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
-            src="https://www.youtube-nocookie.com/embed/kYyhSYiQ4GY?enablejsapi=1"
+            src="https://www.youtube-nocookie.com/embed/Jz0eLxgUPFA?enablejsapi=1"
             title="Never Miss a Student: ShortHand"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
