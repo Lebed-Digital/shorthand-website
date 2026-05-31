@@ -1027,6 +1027,15 @@ footer {
   margin: 2rem 0;
   font-size: 0.95rem;
 }
+.blog-content .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 2rem 0;
+}
+.blog-content .table-wrapper table {
+  margin: 0;
+  min-width: 480px;
+}
 .blog-content th {
   background: rgba(167,139,250,0.1);
   color: var(--text);

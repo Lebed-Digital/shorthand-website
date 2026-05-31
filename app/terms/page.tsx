@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Terms of Service | ShortHand',
   description: 'Terms of Service for ShortHand, the teacher productivity app for classroom management, student progress tracking, and parent communication.',
+  alternates: { canonical: 'https://getshorthandapp.com/terms' },
 };
 
 export default function TermsPage() {

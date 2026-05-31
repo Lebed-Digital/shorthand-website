@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Privacy Policy | ShortHand',
   description: 'How ShortHand collects, uses, and protects your data.',
+  alternates: { canonical: 'https://getshorthandapp.com/privacy' },
 };
 
 export default function PrivacyPage() {

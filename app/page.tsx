@@ -849,10 +849,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEO / crawler keywords — education technology classification */}
-      <section style={{ display: 'none' }} aria-hidden="true">
-        <p>ShortHand is an education technology application designed to improve teacher productivity and student progress tracking. Built for K–12 educators, ShortHand supports pedagogy, classroom management, behavior documentation, parent communication, and data-driven instruction. This tool helps teachers track student growth, generate progress reports, and maintain organized records in support of positive educational outcomes. ShortHand is a legitimate SaaS product for schools, districts, and individual educators seeking teacher productivity tools and classroom management software.</p>
-      </section>
       {/* Blog links — internal linking for SEO */}
       <section style={{ padding: '3rem 1.5rem', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
         <div style={{ maxWidth: '860px', margin: '0 auto' }}>

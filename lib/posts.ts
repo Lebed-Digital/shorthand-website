@@ -37,5 +37,8 @@ export async function getPost(slug: string): Promise<Post> {
   const raw = fs.readFileSync(path.join(postsDir, `${slug}.md`), 'utf8');
   const { data, content } = matter(raw);
   const processed = await remark().use(remarkGfm).use(html).process(content);
-  return { slug, ...data, contentHtml: processed.toString() } as Post;
+  const contentHtml = processed.toString()
+    .replace(/<table>/g, '<div class="table-wrapper"><table>')
+    .replace(/<\/table>/g, '</table></div>');
+  return { slug, ...data, contentHtml } as Post;
 }

@@ -4,6 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Data Processing Agreement | ShortHand',
   description: 'ShortHand Data Processing Agreement for schools and districts.',
+  alternates: { canonical: 'https://getshorthandapp.com/dpa' },
 };
 
 export default function DpaPage() {
