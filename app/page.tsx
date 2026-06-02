@@ -355,8 +355,8 @@ export default function Home() {
         <div className="section-inner" ref={featuresRef}>
           <div className="features-header">
             <div className="section-label">What it does</div>
-            <h2 className="section-heading">One app for notes, parent communication,<br /><em>and everything in between.</em></h2>
-            <p className="section-sub">Built around the problems teachers actually face every day, not the ones app developers imagine.</p>
+            <h2 className="section-heading">Remember what happened.<br /><em>When it matters most.</em></h2>
+            <p className="section-sub">Keep behavior notes, parent communication, and student documentation in one place, so you're ready when parents, administrators, or IEP teams need answers.</p>
           </div>
           <div className="features-grid">
             {features.map((f) => (
