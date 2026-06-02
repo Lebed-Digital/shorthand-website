@@ -77,6 +77,13 @@ export default function ResourcesPage() {
             >
               {resource.label} →
             </a>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
+              {['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'].map((signal) => (
+                <span key={signal} style={{ fontSize: 12, color: '#475569', display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span style={{ color: resource.accent, fontWeight: 700 }}>✓</span> {signal}
+                </span>
+              ))}
+            </div>
           </div>
         ))}
 
