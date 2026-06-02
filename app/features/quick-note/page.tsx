@@ -64,8 +64,8 @@ export default function QuickNotePage() {
           Voice-to-text lets you log hands-free while you&apos;re still moving around the room.
           Smart Shorthand lets you set custom abbreviations that expand instantly.
           So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
-          The AI reads your note and auto-tags it with behavior categories like
-          Kindness, Participation, or Growth, with no manual sorting required.
+          Your notes are automatically organized into categories like Kindness, Participation,
+          and Growth, so you can spot patterns without any extra work.
         </p>
         <p className="detail-desc">
           The faster it is to log, the more you&apos;ll actually do it.
