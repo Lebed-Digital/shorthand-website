@@ -40,7 +40,7 @@ export default function NeverMissPage() {
         </p>
         <p className="detail-desc">
           Every student card on your roster glows <strong>Green</strong> if you logged today,
-          <strong> Amber</strong> if it&apos;s been 5–7 days, and <strong>Red</strong> if it&apos;s been
+          {' '}<strong>Amber</strong> if it&apos;s been 5–7 days, and <strong>Red</strong> if it&apos;s been
           8 or more. The dashboard flags anyone you haven&apos;t documented in over 5 days,
           automatically, every time you open the app.
         </p>

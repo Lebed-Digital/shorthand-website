@@ -45,7 +45,7 @@ export default function ParentCommunicationPage() {
         </p>
         <p className="detail-desc">
           Mark entries as IEP-related or urgent. Set follow-up reminders with overdue
-          warnings. When an IEP meeting comes up, hit <strong>IEP Copy</strong> and the app
+          warnings. When an IEP meeting comes up, hit <strong>IEP Copy</strong>{' '}and the app
           exports the full communication history, formatted and ready to paste into official
           documents. No scrambling. No &quot;I think I emailed them in October.&quot;
         </p>

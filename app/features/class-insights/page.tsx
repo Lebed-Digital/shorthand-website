@@ -40,7 +40,7 @@ export default function ProgressInsightsPage() {
         <p className="detail-desc">
           Dynamic behavior charts let you zoom out to 4 weeks, 8 weeks, a semester, or
           the full year. Smart trend badges tell you at a glance whether a student is
-          <strong> Trending Up</strong>, <strong>Needs Attention</strong>, or <strong>Stable</strong>,
+          <strong>Trending Up</strong>, <strong>Needs Attention</strong>, or <strong>Stable</strong>,
           compared to the previous period, not just last week.
         </p>
         <p className="detail-desc">
