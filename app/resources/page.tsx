@@ -33,6 +33,16 @@ const resources = [
     bg: '#f0fdfa',
     tag: 'Printable PDF',
   },
+  {
+    title: 'Classroom Behavior Documentation Log',
+    description:
+      'Keep a clear record of behavior incidents, interventions, and outcomes. Everything you need when a parent asks "Why didn\'t anyone tell me?"',
+    file: '/Classroom Behavior Documentation Log.pdf',
+    label: 'Download Free PDF',
+    accent: '#7c3aed',
+    bg: '#f5f3ff',
+    tag: 'Printable PDF',
+  },
 ];
 
 export default function ResourcesPage() {
@@ -89,7 +99,7 @@ export default function ResourcesPage() {
 
         <div style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: 24, marginTop: 8, border: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', margin: '0 0 6px' }}>More free resources coming soon.</p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', margin: 0 }}>Follow along at <span style={{ color: '#34d399' }}>@getshorthand_app</span> on Instagram.</p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', margin: 0 }}>Follow along at <a href="https://www.instagram.com/getshorthand_app" target="_blank" rel="noopener noreferrer" style={{ color: '#34d399', textDecoration: 'none' }}>@getshorthand_app</a> on Instagram.</p>
         </div>
 
         <div style={{ background: 'rgba(13,148,136,0.15)', borderRadius: 16, padding: 24, marginTop: 12, border: '1px solid rgba(13,148,136,0.3)', textAlign: 'center' }}>
