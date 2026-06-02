@@ -499,7 +499,7 @@ export default function Home() {
               <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#2dd4bf', marginBottom: '0.5rem' }}>Free · No sign-up · Works instantly</div>
               <h2 style={{ fontSize: '1.6rem', fontWeight: 700, color: 'var(--text)', margin: '0 0 0.5rem', lineHeight: 1.25 }}>Report Card Comment Generator</h2>
               <p style={{ color: 'var(--text-dim)', margin: 0, fontSize: '0.97rem', maxWidth: '480px', lineHeight: 1.6 }}>
-                Pick what&apos;s true for a student, hit generate, and get a polished comment in 10 seconds. Casual or academic tone. No account needed.
+                Select a few traits, click generate, and get a polished report card comment in seconds.
               </p>
             </div>
             <motion.a
