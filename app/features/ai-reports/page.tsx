@@ -36,13 +36,18 @@ export default function AIReportsPage() {
         <p className="detail-desc">
           Report writing used to eat entire Sunday evenings. With ShortHand, your notes
           become the source material and ShortHand does the drafting. Select a student, pick a
-          format (Quick Note, Standard, or Detailed), and in seconds you have a polished,
+          format (Quick Note or Detailed), and in seconds you have a polished,
           professional write-up ready to review and send.
         </p>
         <p className="detail-desc">
           It works only from what you actually logged. Your observations, your language,
           with just the hard part done for you. Not happy with the first draft? Tell it to adjust
           the tone, shorten it, or shift the focus. It rewrites on the spot until it sounds right.
+        </p>
+        <p className="detail-desc">
+          Once the report looks right, you can log it directly to the parent communication
+          record with one tap. So you have proof it was shared with the family, right
+          alongside your notes and call history.
         </p>
         <p className="detail-desc">
           Your voice. Your observations. No more Sunday paperwork.
