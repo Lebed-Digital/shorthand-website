@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/classdojo-alternative`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/free-tool`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/tools/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPosts,
     { url: `${base}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
