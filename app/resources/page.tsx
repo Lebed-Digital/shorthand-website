@@ -43,6 +43,26 @@ const resources = [
     bg: '#f5f3ff',
     tag: 'Printable PDF',
   },
+  {
+    title: 'Student Behavior Pattern Tracker',
+    description:
+      'By Friday you\'ve forgotten what Monday looked like. This weekly grid helps you spot patterns before the meeting, not during it.',
+    file: '/Student Behavior Pattern Tracker.pdf',
+    label: 'Download Free PDF',
+    accent: '#b45309',
+    bg: '#fffbeb',
+    tag: 'Printable PDF',
+  },
+  {
+    title: 'Parent-Teacher Conference Notes',
+    description:
+      'Walk into every conference prepared. Walk out with a clear record of what was said, agreed to, and what happens next.',
+    file: '/Parent-Teacher Conference Notes.pdf',
+    label: 'Download Free PDF',
+    accent: '#0369a1',
+    bg: '#f0f9ff',
+    tag: 'Printable PDF',
+  },
 ];
 
 export default function ResourcesPage() {
