@@ -165,4 +165,6 @@ If you are doing this from memory right now, that is fine. Finish the report car
 
 If you are still staring at a blank text box, the free [Report Card Comment Generator](https://getshorthandapp.com/free-tool) at getshorthandapp.com/free-tool lets you select the behaviors you are observing and generates a professional, balanced comment in seconds. No account required. It is not a replacement for your judgment, but it is a very good starting point when the words are not coming.
 
+If you need more examples beyond the 80 above, [Report Card Comments for Behavior: 120+ Examples You Can Use Today](/blog/report-card-comments-for-behavior) covers additional situations including IEP students, impulsivity, social skills, and the students who are improving but not there yet.
+
 Use the examples above to adapt what it gives you, and get this off your plate tonight.

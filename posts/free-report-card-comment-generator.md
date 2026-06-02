@@ -78,7 +78,7 @@ ShortHand is the version of this built into a real documentation system. You log
 
 If you're doing this all from memory right now, that's the piece worth changing. One note per student per week adds up to a lot by the end of a term.
 
-If you need ready-to-copy examples while you work through the generator, [Behavior Comments for Report Cards](/blog/behavior-comments-for-report-cards) has 80+ organized by situation.
+If you need ready-to-copy examples while you work through the generator, [Report Card Comments for Behavior: 120+ Examples](/blog/report-card-comments-for-behavior) has examples organized by situation — strong behavior, improvement, ongoing concerns, IEP students, and the hardest-to-write cases. [Behavior Comments for Report Cards](/blog/behavior-comments-for-report-cards) has 80+ more organized by behavior type.
 
 ---
 
