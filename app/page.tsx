@@ -294,12 +294,12 @@ export default function Home() {
             <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', background: '#000', cursor: 'pointer' }}
               onClick={() => {
                 const el = document.getElementById('yt-hero');
-                if (el) el.outerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/-e3WOQt_lP0?autoplay=1&enablejsapi=1" title="Why I built ShortHand" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>';
+                if (el) el.outerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/iFa7HfdG54w?autoplay=1&enablejsapi=1" title="Why I built ShortHand" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:0;display:block;"></iframe>';
               }}
             >
               <div id="yt-hero" style={{ position: 'relative', width: '100%', height: '100%' }}>
                 <img
-                  src="https://i.ytimg.com/vi/-e3WOQt_lP0/hqdefault.jpg"
+                  src="https://i.ytimg.com/vi/iFa7HfdG54w/hqdefault.jpg"
                   alt="Why I built ShortHand — watch the video"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
