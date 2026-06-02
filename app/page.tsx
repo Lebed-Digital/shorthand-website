@@ -12,7 +12,7 @@ import Footer from '../components/Footer';
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
 const features = [
-  { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, speak or type a note, done in under 5 seconds. Student photos appear right in the suggestions so you\'re always logging the right kid. Voice-to-text, auto-tagging, and smart shortcuts built in.' },
+  { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.' },
   { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 8+ days. Automatic alerts so no one quietly slips through the cracks.' },
   { slug: 'parent-emails',          Icon: Mail,           title: 'AI Parent Messages',       desc: 'Log a behavior note. Tap "draft message." AI writes it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
   { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out, or what was said. A paper trail that protects you and keeps parents accountable.' },

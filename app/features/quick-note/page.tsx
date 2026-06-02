@@ -59,9 +59,6 @@ export default function QuickNotePage() {
           each student over time.
         </p>
         <p className="detail-desc">
-          Student photos appear right in the suggestions dropdown, so you&apos;re always sure you&apos;re logging the right kid, especially helpful in larger classes or when you&apos;re moving fast.
-        </p>
-        <p className="detail-desc">
           Voice-to-text lets you log hands-free while you&apos;re still moving around the room.
           Smart Shorthand lets you set custom abbreviations that expand instantly.
           So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
