@@ -54,6 +54,12 @@ export default function ParentCommunicationPage() {
           professional message directly from your notes. You review it, adjust the tone,
           and send.
         </p>
+        <p className="detail-desc">
+          Dreading the phone call? Tap <strong>Prep Call Script</strong>{' '}and ShortHand
+          generates a short, conversational talking points list based on that student&apos;s
+          notes. What to lead with, what to mention, how to frame it. You show up to the
+          call prepared instead of winging it.
+        </p>
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
