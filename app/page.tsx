@@ -14,7 +14,7 @@ const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: fals
 const features = [
   { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, tap a behavior tag, hit save. Done in under 5 seconds. No forms, no menus. Voice-to-text and smart shortcuts built in.' },
   { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 8+ days. Automatic alerts so no one quietly slips through the cracks.' },
-  { slug: 'parent-emails',          Icon: Mail,           title: 'AI Parent Messages',       desc: 'Log a behavior note. Tap "draft message." AI writes it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
+  { slug: 'parent-emails',          Icon: Mail,           title: 'AI Parent Messages',       desc: 'Log a behavior note. Tap "draft message." ShortHand drafts it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
   { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out, or what was said. A paper trail that protects you and keeps parents accountable.' },
   { slug: 'ai-reports',             Icon: ClipboardList,  title: 'AI Reports',               desc: 'Turn months of raw notes into polished, parent-ready progress reports in seconds. Quick Note, Standard, or Detailed.' },
   { slug: 'class-insights',    Icon: BarChart2,     title: 'Progress & Insights',   desc: 'View behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.' },
@@ -657,7 +657,7 @@ export default function Home() {
               },
               {
                 q: 'What is ShortHand?',
-                a: 'ShortHand is a behavior tracking app built for K-12 teachers. It lets you log student notes in under 5 seconds using voice or text, track behavior patterns over time, generate AI-written progress reports, and send parent messages instantly.',
+                a: 'ShortHand is a behavior tracking app built for K-12 teachers. It lets you log student notes in under 5 seconds using voice or text, track behavior patterns over time, generate polished progress reports in seconds, and send parent messages instantly.',
               },
               {
                 q: 'Do I need to download anything?',
@@ -665,7 +665,7 @@ export default function Home() {
               },
               {
                 q: 'How does ShortHand help with parent communication?',
-                a: 'After you log a behavior note, ShortHand\'s AI drafts a parent-ready message in seconds. You review it, make any tweaks, and send. No staring at a blank email. It also keeps a full communication log for IEP meetings.',
+                a: 'After you log a behavior note, ShortHand drafts a parent-ready message in seconds. You review it, make any tweaks, and send. No staring at a blank email. It also keeps a full communication log for IEP meetings.',
               },
               {
                 q: 'Can ShortHand help me spot behavior patterns?',
@@ -824,7 +824,7 @@ export default function Home() {
               { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
               { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
               { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy." },
-              { icon: '🤖', title: 'AI with Boundaries', desc: 'The AI only sees your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
+              { icon: '🔐', title: 'Smart and Private', desc: 'ShortHand only reads your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
             ].map((item) => (
               <div key={item.title} className="privacy-card">
                 <div className="privacy-icon">{item.icon}</div>

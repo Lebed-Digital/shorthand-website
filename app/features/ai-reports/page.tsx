@@ -42,12 +42,12 @@ export default function AIReportsPage() {
         <h1 className="detail-title">AI <em>Reports</em></h1>
         <p className="detail-desc">
           Report writing used to eat entire Sunday evenings. With ShortHand, your notes
-          become the source material and AI does the drafting. Select a student, pick a
+          become the source material and ShortHand does the drafting. Select a student, pick a
           format (Quick Note, Standard, or Detailed), and in seconds you have a polished,
           professional write-up ready to review and send.
         </p>
         <p className="detail-desc">
-          The AI works only from what you actually logged. Your observations, your language,
+          It works only from what you actually logged. Your observations, your language,
           with just the hard part done for you. Not happy with the first draft? Tell it to adjust
           the tone, shorten it, or shift the focus. It rewrites on the spot until it sounds right.
         </p>
