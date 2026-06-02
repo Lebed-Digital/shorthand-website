@@ -32,7 +32,6 @@ export default function NeverMissPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <span className="detail-icon">🔴</span>
         <h1 className="detail-title">Never Miss <em>a Student</em></h1>
         <p className="detail-desc">
           Every teacher has a mental list of students they check in on regularly,

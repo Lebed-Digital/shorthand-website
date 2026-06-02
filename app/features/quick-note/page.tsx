@@ -32,12 +32,6 @@ export default function QuickNotePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
-      <div className="glow-field" aria-hidden>
-        <span className="g1" /><span className="g2" /><span className="g3" />
-        <span className="g4" />
-        <span className="g5" />
-      </div>
-
       <nav>
         <div className="nav-inner">
           <div className="nav-left">
@@ -50,7 +44,6 @@ export default function QuickNotePage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <span className="detail-icon">✏️</span>
         <h1 className="detail-title">Quick <em>Note</em></h1>
         <p className="detail-desc">
           Tap a student&apos;s name, speak or type what you observed, and you&apos;re done in

@@ -19,12 +19,6 @@ export const metadata: Metadata = {
 export default function AttendancePage() {
   return (
     <>
-      <div className="glow-field" aria-hidden>
-        <span className="g1" /><span className="g2" /><span className="g3" />
-        <span className="g4" />
-        <span className="g5" />
-      </div>
-
       <nav>
         <div className="nav-inner">
           <div className="nav-left">
@@ -37,7 +31,6 @@ export default function AttendancePage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <span className="detail-icon">📅</span>
         <h1 className="detail-title">Attendance <em>Tracking</em></h1>
         <p className="detail-desc">
           Take attendance in seconds and build a running record for every student.
