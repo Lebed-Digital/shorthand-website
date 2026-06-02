@@ -26,7 +26,7 @@ const resources = [
   {
     title: 'Parent Contact Documentation Log',
     description:
-      'Track every call, email, and note home in one place. One page per week. Print it, fill it by hand, and keep it in your binder.',
+      'Never walk into a conference wondering when you last contacted home. Track calls, emails, outcomes, and follow-ups in one place.',
     file: '/Parent Contact Documentation Log.pdf',
     label: 'Download Free PDF',
     accent: '#0d9488',
@@ -88,7 +88,7 @@ export default function ResourcesPage() {
         <div style={{ background: 'rgba(13,148,136,0.15)', borderRadius: 16, padding: 24, marginTop: 12, border: '1px solid rgba(13,148,136,0.3)', textAlign: 'center' }}>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 8px' }}>Want this built into your daily routine?</h2>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', margin: '0 0 16px', lineHeight: 1.6 }}>
-            ShortHand logs every parent contact automatically: timestamped, tied to the student, searchable. No separate binder, no trying to remember what you said in October.
+            ShortHand automatically logs parent contacts, behavior notes, and follow-ups in one searchable timeline. No binders. No spreadsheets. No trying to remember what happened three months ago.
           </p>
           <a
             href="https://app.getshorthandapp.com"
