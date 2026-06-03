@@ -34,17 +34,13 @@ export default function ParentCommunicationPage() {
       <div className="detail-hero">
         <h1 className="detail-title">Parent Emails, <em>Ready to Send</em></h1>
         <p className="detail-desc">
-          Turn behavior notes into parent-ready messages in seconds. Log what happened during the day, and ShortHand uses those notes to generate a quick note home or a detailed report, ready to email, copy, or print.
+          Turn behavior notes into parent-ready messages in seconds.
         </p>
         <p className="detail-desc">
-          No staring at a blank email after a long day. ShortHand writes the message for you: clear, professional, and based on exactly what you observed. You review it, make any adjustments, and send.
-        </p>
-
-        <p className="detail-desc">
-          ShortHand even fills in the parent email address, subject line, and body of the email automatically. All you have to do is hit send.
+          Log what happened during the day. ShortHand turns those notes into a professional parent email that's ready to review and send. Parent email address, subject line, and message body: all filled in automatically.
         </p>
         <p className="detail-desc">
-          Need something more formal? Generate a full written report from the same notes, formatted and ready to attach to an IEP document or share with admin. No rewriting. No starting from scratch.
+          Need something more formal? Generate a detailed behavior report from the same notes in one click.
         </p>
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
