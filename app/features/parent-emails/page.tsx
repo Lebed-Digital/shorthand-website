@@ -5,12 +5,12 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'Parent Communication | ShortHand',
-  description: 'Log every parent call, email, and meeting. One tap exports the full communication history for IEP meetings. ShortHand drafts parent messages from your notes in seconds.',
+  title: 'AI Parent Emails | ShortHand',
+  description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand drafts the message, fills in the subject line, and even adds the parent email address. You just hit send.',
   alternates: { canonical: 'https://getshorthandapp.com/features/parent-emails' },
   openGraph: {
-    title: 'Parent Communication | ShortHand',
-    description: 'Log every parent call, email, and meeting. One tap exports the full communication history for IEP meetings. ShortHand drafts parent messages from your notes in seconds.',
+    title: 'AI Parent Emails | ShortHand',
+    description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand drafts the message, fills in the subject line, and even adds the parent email address. You just hit send.',
     url: 'https://getshorthandapp.com/features/parent-emails',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -32,39 +32,24 @@ export default function ParentCommunicationPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <h1 className="detail-title">Parent <em>Communication</em></h1>
+        <h1 className="detail-title">Parent <em>Emails</em></h1>
         <p className="detail-desc">
-          Every phone call, email, meeting, and ParentSquare message logged in one place,
-          timestamped, and organized by student. No more searching through sent emails or
-          trying to remember when you last reached out.
+          Turn behavior notes into parent-ready messages in seconds. Log what happened during the day, and ShortHand uses those notes to generate a quick note home or a detailed report, ready to email, copy, or print.
         </p>
         <p className="detail-desc">
-          If admin ever questions whether you contacted a family, you pull up the log and
-          show them exactly what happened, when it happened, and what was discussed.
-          Your paper trail is always ready.
+          No staring at a blank email after a long day. ShortHand writes the message for you: clear, professional, and based on exactly what you observed. You review it, make any adjustments, and send.
         </p>
         <p className="detail-desc">
-          Mark entries as IEP-related or urgent. Set follow-up reminders with overdue
-          warnings. When an IEP meeting comes up, hit <strong>IEP Copy</strong>{' '}and the app
-          exports the full communication history, formatted and ready to paste into official
-          documents. No scrambling. No &quot;I think I emailed them in October.&quot;
+          ShortHand even fills in the parent email address, subject line, and body of the email automatically. All you have to do is hit send.
         </p>
         <p className="detail-desc">
-          Need to reach out but don&apos;t know how to start? ShortHand drafts a clear,
-          professional message directly from your notes. You review it, adjust the tone,
-          and send.
-        </p>
-        <p className="detail-desc">
-          Dreading the phone call? Tap <strong>Prep Call Script</strong>{' '}and ShortHand
-          generates a short, conversational talking points list based on that student&apos;s
-          notes. What to lead with, what to mention, how to frame it. You show up to the
-          call prepared instead of winging it.
+          Need something more formal? Generate a full written report from the same notes, formatted and ready to attach to an IEP document or share with admin. No rewriting. No starting from scratch.
         </p>
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
-            src="https://www.youtube-nocookie.com/embed/gu48yZX-res?enablejsapi=1"
-            title="Parent Communication walkthrough"
+            src="https://www.youtube-nocookie.com/embed/-XqwrCCw60M?enablejsapi=1"
+            title="AI parent email generation walkthrough"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           />
