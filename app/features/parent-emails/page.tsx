@@ -5,12 +5,12 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 
 export const metadata: Metadata = {
-  title: 'AI Parent Emails | ShortHand',
-  description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand drafts the message, fills in the subject line, and even adds the parent email address. You just hit send.',
+  title: 'Ready-to-Send Parent Emails | ShortHand',
+  description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand writes the message, fills in the subject line, and even adds the parent email address. You just hit send.',
   alternates: { canonical: 'https://getshorthandapp.com/features/parent-emails' },
   openGraph: {
-    title: 'AI Parent Emails | ShortHand',
-    description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand drafts the message, fills in the subject line, and even adds the parent email address. You just hit send.',
+    title: 'Ready-to-Send Parent Emails | ShortHand',
+    description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand writes the message, fills in the subject line, and even adds the parent email address. You just hit send.',
     url: 'https://getshorthandapp.com/features/parent-emails',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -32,13 +32,14 @@ export default function ParentCommunicationPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <h1 className="detail-title">Parent <em>Emails</em></h1>
+        <h1 className="detail-title">Parent Emails, <em>Ready to Send</em></h1>
         <p className="detail-desc">
           Turn behavior notes into parent-ready messages in seconds. Log what happened during the day, and ShortHand uses those notes to generate a quick note home or a detailed report, ready to email, copy, or print.
         </p>
         <p className="detail-desc">
           No staring at a blank email after a long day. ShortHand writes the message for you: clear, professional, and based on exactly what you observed. You review it, make any adjustments, and send.
         </p>
+
         <p className="detail-desc">
           ShortHand even fills in the parent email address, subject line, and body of the email automatically. All you have to do is hit send.
         </p>
