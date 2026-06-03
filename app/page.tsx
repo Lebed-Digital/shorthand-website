@@ -213,8 +213,8 @@ export default function Home() {
             <a href="/how-it-works" className="nav-link">How It Works</a>
             <a href="/blog" className="nav-link">Blog</a>
             <a href="/free-tool" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Free Tool</a>
+            <a href="/resources" className="nav-link">Resources</a>
             <a href="/privacy" className="nav-link" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>🔒 Privacy</a>
-            <a href="/terms" className="nav-link">Terms</a>
           </div>
           <div className="nav-right">
             <motion.a
@@ -250,7 +250,7 @@ export default function Home() {
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
-            <h1>Document everything.<br /><em>Forget nothing.</em></h1>
+            <h1>Remember what happened.<br /><em>Even on Friday.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
