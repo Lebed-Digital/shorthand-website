@@ -364,7 +364,7 @@ export default function Home() {
                 transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
                 <Link href={`/features/${f.slug}`} className="feature-card">
                   <div className="card-icon"><f.Icon size={26} strokeWidth={1.75} /></div>
-                  <div className="card-title">{f.title}</div>
+                  <div className="card-title" style={f.slug === 'parent-emails' ? { textAlign: 'center' } : undefined}>{f.title}</div>
                   <p className="card-desc">{f.desc}</p>
                   {f.slug === 'quick-note' && (
                     <div className="card-mini-demo">
