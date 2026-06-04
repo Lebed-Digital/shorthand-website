@@ -13,7 +13,7 @@ const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: fals
 
 const features = [
   { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, tap a behavior tag, hit save. Done in under 5 seconds. No forms, no menus. Voice-to-text and smart shortcuts built in.' },
-  { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 8+ days. Automatic alerts so no one quietly slips through the cracks.' },
+  { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 16+ days. Automatic alerts so no one quietly slips through the cracks.' },
   { slug: 'parent-emails',          Icon: Mail,           title: 'No More Staring at a Blank Email',       desc: 'Log a behavior note. Tap "draft message." ShortHand drafts it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
   { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out, or what was said. A paper trail that protects you and keeps parents accountable.' },
   { slug: 'ai-reports',             Icon: ClipboardList,  title: 'AI Reports',               desc: 'Turn months of raw notes into polished, parent-ready progress reports in seconds. Quick Note, Standard, or Detailed.' },
@@ -383,8 +383,8 @@ export default function Home() {
                       {[
                         { initials: 'AJ', color: '#22c55e', glow: 'rgba(34,197,94,0.5)', label: 'Logged today' },
                         { initials: 'MR', color: '#22c55e', glow: 'rgba(34,197,94,0.5)', label: '3 days ago' },
-                        { initials: 'SF', color: '#f97316', glow: 'rgba(249,115,22,0.6)', label: '9 days ago' },
-                        { initials: 'TK', color: '#ef4444', glow: 'rgba(239,68,68,0.65)', label: '14 days ago', pulse: true },
+                        { initials: 'SF', color: '#fbbf24', glow: 'rgba(251,191,36,0.6)', label: '12 days ago' },
+                        { initials: 'TK', color: '#ef4444', glow: 'rgba(239,68,68,0.65)', label: '18 days ago', pulse: true },
                       ].map((s) => (
                         <div key={s.initials} className="status-ring-item">
                           <div className="status-ring-avatar" style={{
@@ -673,7 +673,7 @@ export default function Home() {
               },
               {
                 q: 'Does ShortHand alert me if I haven\'t checked in on a student?',
-                a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 8 or more days, amber at 5 to 7 days, and green if you\'ve logged recently. No student quietly slips through the cracks.',
+                a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 16 or more days, amber at 9 to 15 days, and green if you\'ve logged in the last 8 days. No student quietly slips through the cracks.',
               },
               {
                 q: 'Is ShortHand free to use?',

@@ -39,10 +39,9 @@ export default function NeverMissPage() {
           ShortHand makes that invisible problem visible.
         </p>
         <p className="detail-desc">
-          Every student card on your roster glows <strong>Green</strong> if you logged today,
-          {' '}<strong>Amber</strong> if it&apos;s been 5–7 days, and <strong>Red</strong> if it&apos;s been
-          8 or more. The dashboard flags anyone you haven&apos;t documented in over 5 days,
-          automatically, every time you open the app.
+          Every student card on your roster glows <strong>Green</strong> if you&apos;ve logged in the last 8 days,
+          {' '}<strong>Amber</strong> if it&apos;s been 9–15 days, and <strong>Red</strong> if it&apos;s been
+          16 or more. The dashboard flags anyone who needs attention automatically, every time you open the app.
         </p>
         <p className="detail-desc">
           You don&apos;t have to remember who needs attention. The app tells you.
@@ -51,7 +50,7 @@ export default function NeverMissPage() {
 
         <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
           <iframe
-            src="https://www.youtube-nocookie.com/embed/Jz0eLxgUPFA?enablejsapi=1"
+            src="https://www.youtube-nocookie.com/embed/tg4oiw9Q_js?enablejsapi=1"
             title="Never Miss a Student: ShortHand"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
