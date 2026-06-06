@@ -295,8 +295,11 @@ export default function Home() {
                 poster="/hero-video-poster.jpg"
                 preload="none"
                 playsInline
-                controls
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', cursor: 'pointer' }}
+                onClick={(e) => {
+                  const v = e.currentTarget;
+                  v.paused ? v.play() : v.pause();
+                }}
               />
             </div>
           </div>
