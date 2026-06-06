@@ -37,7 +37,9 @@ yarn-error.log*
 .vercel
 
 # large media files
-# public/*.mp4
+public/*.mp4
+public/*.pdf
+excalidraw.log
 
 # typescript
 *.tsbuildinfo
