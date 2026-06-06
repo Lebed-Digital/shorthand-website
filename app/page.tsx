@@ -255,12 +255,12 @@ export default function Home() {
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
             <div className="hero-chips">
-              <span className="hero-chip">Log behavior in seconds</span>
-              <span className="hero-chip">Draft parent messages</span>
-              <span className="hero-chip">IEP-ready history</span>
+              <span className="hero-chip">You saw it. Save it fast.</span>
+              <span className="hero-chip">You called. Keep the record.</span>
+              <span className="hero-chip">They ask later. You&apos;re ready.</span>
             </div>
             <p className="hero-sub">
-              ShortHand helps teachers capture quick classroom notes, turn them into parent-ready messages, and keep a clear record for conferences, IEPs, and admin questions.
+              ShortHand gives busy teachers one place to log behavior notes, parent calls, emails, and follow-ups in seconds, so conferences, IEPs, and admin questions do not depend on memory.
             </p>
             <div className="hero-ctas">
               <motion.a
