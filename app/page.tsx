@@ -250,23 +250,28 @@ export default function Home() {
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
-            <h1>Remember what happened.<br /><em>Even on Friday.</em></h1>
+            <h1>5-second notes.<br /><em>Ready when parents ask.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
+            <div className="hero-chips">
+              <span className="hero-chip">Log behavior in seconds</span>
+              <span className="hero-chip">Draft parent messages</span>
+              <span className="hero-chip">IEP-ready history</span>
+            </div>
             <p className="hero-sub">
-              Every teacher has had a parent say "you never told me that." ShortHand keeps you organized, prepared, and ready, with a complete record of every note, email, and conversation, right when you need it.
+              ShortHand helps teachers capture quick classroom notes, turn them into parent-ready messages, and keep a clear record for conferences, IEPs, and admin questions.
             </p>
             <div className="hero-ctas">
               <motion.a
-                href="https://app.getshorthandapp.com"
+                href="https://app.getshorthandapp.com?demo=true"
                 className="btn-primary"
                 whileHover={btnHover}
                 whileTap={btnTap}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_get_shorthand', 'https://app.getshorthandapp.com', e)}
+                onClick={(e) => trackCta('hero_try_free_demo', 'https://app.getshorthandapp.com?demo=true', e)}
               >
-                Open ShortHand →
+                Try the Free Demo →
               </motion.a>
               <motion.a
                 href="/how-it-works"
@@ -280,14 +285,7 @@ export default function Home() {
               </motion.a>
             </div>
             <p className="hero-demo-nudge">
-              Curious?{' '}
-              <a
-                href="https://app.getshorthandapp.com?demo=true"
-                rel="nofollow"
-                onClick={() => (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'cta_click', { event_category: 'engagement', event_label: 'hero_try_demo' })}
-              >
-                Try a live demo. No sign-up, opens instantly →
-              </a>
+              No sign-up. No app store. Opens instantly.
             </p>
           </div>
           <div className="hero-demo-wrap">

@@ -201,6 +201,20 @@ nav {
   font-weight: 300; line-height: 1.8; max-width: 540px; margin: 0 auto 44px;
   opacity: 0; animation: fadeUp 0.8s 0.4s ease forwards;
 }
+.hero-chips {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 20px;
+  opacity: 0; animation: fadeUp 0.8s 0.38s ease forwards;
+}
+.hero-chip {
+  font-size: 0.8rem; font-weight: 600; letter-spacing: 0.03em;
+  color: var(--accent, #a78bfa);
+  background: rgba(167,139,250,0.1);
+  border: 1px solid rgba(167,139,250,0.28);
+  border-radius: 999px;
+  padding: 4px 12px;
+  white-space: nowrap;
+}
 .hero-ctas {
   display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
   opacity: 0; animation: fadeUp 0.8s 0.55s ease forwards;
@@ -215,6 +229,7 @@ nav {
 }
 .hero-content--left { flex: 1; min-width: 0; text-align: left; }
 .hero-content--left .hero-eyebrow { justify-content: flex-start; }
+.hero-content--left .hero-chips { justify-content: flex-start; }
 .hero-content--left .hero-sub { margin: 0 0 44px; max-width: 480px; }
 .hero-content--left .hero-ctas { justify-content: flex-start; }
 .hero-demo-wrap {
@@ -990,6 +1005,7 @@ footer {
   .hero-split-inner { flex-direction: column; gap: 40px; padding: 0 16px; }
   .hero-content--left { text-align: center; }
   .hero-content--left .hero-eyebrow { justify-content: center; }
+  .hero-content--left .hero-chips { justify-content: center; }
   .hero-content--left .hero-sub { margin: 0 auto 44px; }
   .hero-content--left .hero-ctas { justify-content: center; }
   .hero-phone-mockup { width: 260px; }
