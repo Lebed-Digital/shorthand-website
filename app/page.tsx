@@ -34,6 +34,7 @@ export default function Home() {
   const [email, setEmail]         = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen]   = useState(false);
+  const [videoPlaying, setVideoPlaying] = useState(false);
 
   function trackCta(label: string, url: string, e?: React.MouseEvent) {
     e?.preventDefault();
@@ -298,9 +299,27 @@ export default function Home() {
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', cursor: 'pointer' }}
                 onClick={(e) => {
                   const v = e.currentTarget;
-                  v.paused ? v.play() : v.pause();
+                  if (v.paused) { v.play(); setVideoPlaying(true); }
+                  else { v.pause(); setVideoPlaying(false); }
                 }}
+                onEnded={() => setVideoPlaying(false)}
               />
+              {!videoPlaying && (
+                <div style={{
+                  position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'rgba(0,0,0,0.25)', cursor: 'pointer', pointerEvents: 'none',
+                }}>
+                  <div style={{
+                    width: 64, height: 64, borderRadius: '50%', background: 'rgba(255,255,255,0.95)',
+                    display: 'flex', alignItems: 'center', justifyContent: 'center',
+                    boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
+                  }}>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <polygon points="9,7 19,12 9,17" fill="#111" />
+                    </svg>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
