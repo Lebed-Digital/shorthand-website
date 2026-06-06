@@ -293,7 +293,7 @@ export default function Home() {
             <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', background: '#000' }}>
               {videoActive ? (
                 <iframe
-                  src="https://www.youtube-nocookie.com/embed/iFa7HfdG54w?autoplay=1&enablejsapi=1"
+                  src="https://www.youtube-nocookie.com/embed/iFa7HfdG54w?autoplay=1&playsinline=1&rel=0"
                   title="Why I built ShortHand"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
