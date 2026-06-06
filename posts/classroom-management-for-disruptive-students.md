@@ -69,7 +69,7 @@ This is exactly why you need a system that fits in your pocket. ShortHand lets y
 
 Dealing with disruptive students is emotionally draining. But when you have a system that tracks the patterns and backs up your interventions, you regain your control. You stop feeling helpless and start feeling prepared.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://getshorthandapp.com)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
 
 ---
 

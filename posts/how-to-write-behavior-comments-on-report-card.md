@@ -67,7 +67,7 @@ The ultimate shield against a difficult parent meeting is having a paper trail t
 
 When you have hard data, your report card comment becomes the summary of an ongoing conversation rather than a nasty surprise. You are no longer guessing or speaking from frustration. You are simply stating the patterns that have already been documented and shared.
 
-This exact need for painless tracking is why I use ShortHand. I needed a quick, mobile-friendly way to log classroom incidents and student behaviors in the middle of a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](https://getshorthandapp.com) and start building the exact documentation you need so that your next round of report card comments for behavior are completely bulletproof.
+This exact need for painless tracking is why I use ShortHand. I needed a quick, mobile-friendly way to log classroom incidents and student behaviors in the middle of a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](/install) and start building the exact documentation you need so that your next round of report card comments for behavior are completely bulletproof.
 
 ## Professional Does Not Mean Dishonest
 

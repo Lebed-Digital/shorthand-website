@@ -72,7 +72,7 @@ The ShortHand app automatically creates timestamped entries for every parent con
 
 The next time a parent says you never called, you open your log. That is the whole game.
 
-[Try ShortHand free at getshorthandapp.com](https://getshorthandapp.com) and stop working without a safety net.
+[Try ShortHand free at getshorthandapp.com](/install) and stop working without a safety net.
 
 ---
 

@@ -78,7 +78,7 @@ Paper forms served us well for decades. But as the demands of teaching grow, our
 
 If you're deciding which app to switch to, here's a full comparison of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://getshorthandapp.com)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
 
 ---
 

@@ -87,7 +87,7 @@ You do not need school buy-in. You do not need a district training session. You 
 
 If your main concern is broadcasting announcements, Remind is fine. If you want student portfolios, use Seesaw. But if your biggest concern is protecting yourself when a parent disputes your outreach, there is only one tool built for that.
 
-[Try ShortHand free at getshorthandapp.com](https://getshorthandapp.com) and start building a real paper trail today.
+[Try ShortHand free at getshorthandapp.com](/install) and start building a real paper trail today.
 
 ---
 

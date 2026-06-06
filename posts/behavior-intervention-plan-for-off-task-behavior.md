@@ -68,7 +68,7 @@ ShortHand builds a timestamped database of off-task behavior without you ever pi
 
 Managing off-task behavior is a marathon, not a sprint. Protect your energy, simplify your interventions, and let a digital tool handle the heavy lifting of your documentation.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://getshorthandapp.com)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
 
 ---
 

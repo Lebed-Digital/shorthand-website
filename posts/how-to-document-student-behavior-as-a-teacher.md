@@ -74,7 +74,7 @@ This is why many teachers are moving away from paper logs entirely. You need to 
 
 You have to protect your time and your sanity. Build a habit of immediate, factual documentation. It will change the way you manage your classroom and give you ultimate peace of mind during parent meetings.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://getshorthandapp.com)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
 
 ---
 
