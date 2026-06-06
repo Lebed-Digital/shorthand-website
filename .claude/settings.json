@@ -1,0 +1,44 @@
+{
+  "permissions": {
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "c:\\projects\\shorthand-video"
+    ],
+    "allow": [
+      "Bash(git *)",
+      "Bash(npm run:*)",
+      "Bash(npm --version)",
+      "Bash(npm list:*)",
+      "Bash(powershell:*)",
+      "Bash(powershell *)",
+      "WebSearch(*)",
+      "WebFetch(*)",
+      "Skill(update-config)",
+      "Skill(update-config:*)",
+      "mcp__claude_ai_Vercel__list_teams",
+      "mcp__claude_ai_Vercel__list_projects",
+      "mcp__claude_ai_Vercel__get_project",
+      "mcp__claude_ai_Vercel__deploy_to_vercel",
+      "mcp__claude_ai_Vercel__get_deployment_build_logs",
+      "mcp__claude_ai_Vercel__get_runtime_logs",
+      "mcp__claude_ai_Vercel__list_deployments",
+      "mcp__claude_ai_Supabase__list_projects",
+      "mcp__claude_ai_Supabase__list_tables",
+      "mcp__claude_ai_Supabase__execute_sql",
+      "mcp__claude_ai_Supabase__apply_migration",
+      "mcp__claude_ai_Supabase__get_logs",
+      "mcp__gsc-server__gsc_top_queries",
+      "mcp__gsc-server__gsc_list_sites",
+      "mcp__gsc-server__gsc_page_performance",
+      "mcp__gsc-server__gsc_query_for_page",
+      "mcp__youtube__getVideoDetails",
+      "mcp__youtube__getChannelStatistics",
+      "mcp__youtube__getTranscripts",
+      "mcp__youtube__searchVideos"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(git push -f*)"
+    ]
+  }
+}
