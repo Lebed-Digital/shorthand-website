@@ -328,6 +328,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* INTENT STRIP */}
+      <section style={{ padding: '0 0 60px' }}>
+        <div className="section-inner">
+          <p style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: '1.25rem' }}>
+            What brings you here?
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.875rem', maxWidth: '860px', margin: '0 auto' }}>
+            {[
+              { emoji: '✉️', label: 'I need parent email help', href: '/features/parent-emails' },
+              { emoji: '🔄', label: "I'm replacing ClassDojo", href: '/classdojo-alternative' },
+              { emoji: '📋', label: 'I need behavior documentation', href: '/features/behavior-tracking' },
+              { emoji: '📊', label: 'I need a report card tool', href: '/free-tool' },
+            ].map(({ emoji, label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.75rem',
+                  padding: '1rem 1.25rem',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(255,255,255,0.09)',
+                  background: 'rgba(255,255,255,0.03)',
+                  textDecoration: 'none',
+                  color: 'var(--text)',
+                  fontSize: '0.9rem',
+                  fontWeight: 500,
+                  lineHeight: 1.4,
+                  transition: 'border-color 0.2s, background 0.2s',
+                }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(249,115,22,0.4)';
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.06)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.09)';
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)';
+                }}
+              >
+                <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{emoji}</span>
+                <span>{label}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SHOWCASE — phones fan out on scroll */}
       <section className="showcase-section">
         <div className="section-inner">
