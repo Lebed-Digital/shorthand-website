@@ -297,7 +297,7 @@ export default function Home() {
             >
               <div id="yt-hero" style={{ position: 'relative', width: '100%', height: '100%' }}>
                 <img
-                  src="https://i.ytimg.com/vi/iFa7HfdG54w/hqdefault.jpg"
+                  src="https://i.ytimg.com/vi/iFa7HfdG54w/maxresdefault.jpg"
                   alt="Why I built ShortHand — watch the video"
                   style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
