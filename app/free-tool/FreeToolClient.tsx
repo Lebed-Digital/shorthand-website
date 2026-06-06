@@ -344,9 +344,18 @@ export default function FreeToolClient() {
                 New
               </button>
             </div>
-            <div style={{ marginTop: 16, padding: '12px 16px', background: '#f8fafc', border: '1px solid #e2e8f0', borderRadius: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap' }}>
-              <p style={{ fontSize: 12.5, color: '#64748b', margin: 0, lineHeight: 1.4 }}>Want to generate these automatically throughout the year based on your daily notes?</p>
-              <Link href="/" style={{ flexShrink: 0, fontSize: 12.5, fontWeight: 700, color: '#0d9488', textDecoration: 'none', whiteSpace: 'nowrap' }}>Check out ShortHand →</Link>
+            <div style={{ marginTop: 20, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid rgba(167,139,250,0.25)' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: 8 }}>Want this for every student, all year?</div>
+              <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 14px', lineHeight: 1.6 }}>
+                ShortHand lets you log quick notes on students throughout the year, then turn those notes into polished reports in one tap. No more starting from scratch each term.
+              </p>
+              <Link
+                href="/install"
+                style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
+              >
+                Try ShortHand free →
+              </Link>
+              <span style={{ display: 'inline-block', marginLeft: 12, fontSize: 12, color: '#64748b' }}>No app store. Opens instantly.</span>
             </div>
           </div>
         )}
