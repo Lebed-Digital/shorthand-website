@@ -99,7 +99,7 @@ That is why I created ShortHand. It tracks frequency, duration, and ABC data aut
 
 You just tap a button when an incident occurs. When it is time for the IEP meeting, you export a professional data report instantly.
 
-Stop stressing over data collection. Get ready for your next IEP meeting at [app.getshorthandapp.com](https://app.getshorthandapp.com).
+Stop stressing over data collection. Get ready for your next IEP meeting at [Try ShortHand free →](/install).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 

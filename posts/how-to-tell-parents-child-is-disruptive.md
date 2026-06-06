@@ -91,7 +91,7 @@ That is why I created ShortHand. You log the specific disruption in the app in t
 
 It takes the stress out of parent communication. You can see how it works and [install the app](/install) today. 
 
-Try it out. Your mental health will thank you. Get started at [app.getshorthandapp.com](https://app.getshorthandapp.com).
+Try it out. Your mental health will thank you. Get started at [Try ShortHand free →](/install).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 

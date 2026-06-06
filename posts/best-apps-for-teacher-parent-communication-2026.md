@@ -55,7 +55,7 @@ But for private, teacher-to-parent communication regarding behavior or academic 
 ## ShortHand: Built for the Teacher Workflow
 This brings me to my current favorite tool in the rotation. ShortHand is fundamentally different because it was not built to be a social network or a portfolio. It was built specifically around the note-to-parent-message workflow that actual teachers use.
 
-You do not need school buy-in to start using it. You do not need to sit through a district training session. You just go to getshorthandapp.com and start immediately.
+You do not need school buy-in to start using it. You do not need to sit through a district training session. You just go to [getshorthandapp.com](/install) and start immediately.
 
 Instead of navigating complex menus, you simply tap a student's name. You leave a quick voice note about what just happened. The app uses pre-set tags to organize everything automatically. It handles the documentation instantly, getting the thought out of your brain so you can get back to teaching.
 

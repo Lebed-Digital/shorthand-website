@@ -79,7 +79,7 @@ You log a phone call, summarize the conversation in two sentences, and save it. 
 
 That is the only thing that matters in that moment. The receipts speak for themselves.
 
-You do not need school buy-in. You do not need a district training session. You go to getshorthandapp.com and start immediately. It is free for individual teachers.
+You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](/install) and start immediately. It is free for individual teachers.
 
 ---
 

@@ -60,7 +60,7 @@ This is the exact reason I started using ShortHand in my own classroom. It does 
 
 ShortHand is a free app built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and dictate a quick note. The app handles the logging securely.
 
-More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at getshorthandapp.com.
+More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at [getshorthandapp.com](/install).
 
 ## Reclaiming Your Afternoon
 We cannot change the entire education system overnight. The demands are not going to magically decrease. But we can absolutely change how we manage our own classrooms.
