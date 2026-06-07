@@ -6,7 +6,7 @@ author: "Gregory Lebed"
 excerpt: "Copy-paste behavior email templates for teachers. Five ready-to-send scripts for the parent emails you write over and over, without spending your evening staring at a blank screen."
 faq:
   - q: "What should I write in a behavior email to parents?"
-    a: "Keep it specific, objective, and brief. Describe what happened and when, mention what you're already doing to support the student, and invite the parent to respond. Avoid vague phrases like 'having a hard time' - instead write something like 'had difficulty during the transition from math to reading on three occasions this week.' Specific language is more useful to the parent and more defensible if the situation escalates."
+    a: "Keep it specific, objective, and brief. Describe what happened and when, mention what you're already doing to support the student, and invite the parent to respond. Avoid vague phrases like 'having a hard time' - instead write something like 'had difficulty during the transition from math to reading on three occasions this week.' Specific language is more useful to the parent and easier to reference if the situation needs a follow-up meeting."
   - q: "How do you write a professional email to parents about behavior?"
     a: "Use this structure: a brief warm opening, a specific description of the behavior (what, when, where), the context around it, what you're already doing to support the student, and an invitation for the parent to respond. Keep it under 150 words. Calm, factual language works better than emotional language even when the situation is frustrating."
   - q: "When should you email vs. call a parent about behavior?"
@@ -31,7 +31,7 @@ Before the templates - a quick word on why this communication is worth doing wel
 
 Parent emails about behavior aren't just administrative tasks. They're relationship investments. A teacher who reaches out proactively (before things escalate) builds the kind of trust that makes hard conversations much easier later. A parent who hears from you only when things are bad will be defensive. A parent who hears from you regularly - wins and losses - becomes a partner.
 
-The other thing: written communication creates a record. If a behavior escalates, if there's ever a dispute about what was documented, if you're sitting in an IEP meeting six months from now - you want a paper trail. These emails are your documentation as much as they are communication.
+The other thing: written communication creates a record. If a behavior escalates, if you're sitting in an IEP meeting six months from now, if anyone asks what was communicated and when - you have it. These emails are your documentation as much as they are communication.
 
 ## When to Email vs. Call
 
@@ -39,7 +39,7 @@ Quick note before the templates.
 
 If it is something emotional, escalating, or likely to be misunderstood, call. Tone matters too much in those situations and email can make things worse. If a student had a significant outburst, made a threat, or was involved in something that could embarrass the family - call first, then follow up in writing.
 
-But for patterns, updates, and anything you want a paper trail on, a behavior email to parents works well. That is where having a solid template ready to go really saves time.
+But for patterns, updates, and anything you want a written record of, a behavior email to parents works well. That is where having a solid template ready to go really saves time.
 
 ---
 
@@ -106,7 +106,7 @@ Some conversations shouldn't happen over email. If a student's behavior involves
 
 ---
 
-## Template 4: The Paper Trail Follow-Up
+## Template 4: The Written Follow-Up
 
 **Use this immediately after a phone call or meeting. Crucial for documentation.**
 
@@ -181,7 +181,7 @@ The templates above are useful. But the real unlock is having the documentation 
 | Student had a good day / moment | Template 1: Positive Builder |
 | Pattern emerging, first contact | Template 2: Data-Driven Concern |
 | Situation needs a real conversation | Template 3: Meeting Request |
-| After any phone call or meeting | Template 4: Paper Trail Follow-Up |
+| After any phone call or meeting | Template 4: Written Follow-Up |
 | Student on a behavior plan | Template 5: Weekly Pulse Check |
 
 ---

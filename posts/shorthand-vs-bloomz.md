@@ -1,18 +1,18 @@
 ---
 title: "ShortHand vs Bloomz: Which App Is Right for Your Classroom?"
-subtitle: "One is a class communication hub. The other is built for the teacher who needs a paper trail."
+subtitle: "One is a class communication hub. The other is built for per-student documentation."
 date: "2026-04-19"
 author: "Gregory Lebed"
 excerpt: "Bloomz and ShortHand both handle parent communication and behavior tracking, but they're built for very different problems. Here's an honest comparison to help you pick the right one."
 faq:
   - q: "What is the difference between ShortHand and Bloomz?"
-    a: "Bloomz is a whole-class communication platform: announcements, calendars, volunteer sign-ups, portfolios. ShortHand is a per-student documentation tool: behavior notes, parent contact logs, and AI-generated emails tied to individual students. Bloomz is built for broadcasting to the group. ShortHand is built for building a paper trail on specific students."
+    a: "Bloomz is a whole-class communication platform: announcements, calendars, volunteer sign-ups, portfolios. ShortHand is a per-student documentation tool: behavior notes, parent contact logs, and AI-generated emails tied to individual students. Bloomz is built for broadcasting to the group. ShortHand is built for keeping a detailed record on specific students."
   - q: "Is Bloomz free for teachers?"
     a: "Bloomz offers a free tier for individual teachers, but many of its features require a school or district subscription. Parent communication, messaging, and advanced tracking features are often gated behind paid plans. ShortHand is free for individual classroom use with no school license required."
   - q: "Does Bloomz have behavior tracking?"
     a: "Bloomz includes basic behavior tracking, but it is not its core strength. The behavior features are lightweight compared to dedicated documentation tools. Teachers who need timestamped, per-student behavior logs with parent contact records attached typically find Bloomz insufficient for that specific use case and use a dedicated tool like ShortHand instead."
   - q: "Which app is better for IEP documentation, ShortHand or Bloomz?"
-    a: "ShortHand is the stronger choice for IEP documentation. It logs behavior notes and parent contacts in a per-student timeline with timestamps, which is the format that holds up at IEP meetings and parent disputes. Bloomz does not produce that kind of individual student record. If your primary goal is having documentation ready for a meeting, ShortHand is built for that problem."
+    a: "ShortHand is the stronger choice for IEP documentation. It logs behavior notes and parent contacts in a per-student timeline with timestamps, which is exactly what you need at IEP meetings and parent conferences. Bloomz does not produce that kind of individual student record. If your primary goal is having documentation ready for a meeting, ShortHand is built for that problem."
 ---
 
 Bloomz and ShortHand overlap on paper: both log behavior, both connect teachers to parents. But they're built around completely different assumptions about what the job actually is.

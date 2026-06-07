@@ -24,7 +24,7 @@ Before you touch your keyboard, pick up the phone. Even if you only leave a voic
 
 During the call, keep your tone calm, objective, and supportive. Describe what occurred using neutral, observable facts rather than emotional labels. For example, say "physical contact" or "altercation" rather than "attack."
 
-Once you have spoken to the parents, you need to document the discussion. Written records protect you, the school, and the student. They prevent misunderstandings about consequences, safety plans, or next steps.
+Once you have spoken to the parents, you need to document the discussion. Written records give the school, the family, and the student a shared reference point. They prevent misunderstandings about consequences, safety plans, or next steps.
 
 If you need reference templates for other serious behaviors that do not involve physical violence, check out our guide on [5 Sample Emails to Parents About Student Behavior](/blog/sample-emails-to-parents-about-student-behavior).
 
@@ -111,7 +111,7 @@ Best,
 
 ## Keeping a Secure, Time-Stamped Incident Log
 
-High-stakes incidents like physical fights require meticulous documentation. If a parent disputes a consequence or if district leadership asks for a timeline of events, you cannot rely on memory. You need a reliable, time-stamped history of the incident, the antecedents, and every single parent contact.
+High-stakes incidents like physical fights require meticulous documentation. If district leadership asks for a timeline of events, or if a parent has questions about what was communicated and when, you cannot rely on memory. You need a reliable, time-stamped history of the incident, the antecedents, and every parent contact.
 
 For other behavioral issues that might lead up to these events, having a template plan is vital. You can reference our article on [5 sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior) to see how to document earlier warning signs.
 

@@ -10,7 +10,7 @@ faq:
   - q: "What should you write in a behavior log entry?"
     a: "Three things: the trigger (what was the student doing right before the behavior), the behavior itself in observable language (what they actually did), and your response (what you did about it). Avoid opinions and adjectives. Write 'refused to open notebook for ten minutes' instead of 'had a bad attitude.' Specific, factual entries are useful at meetings. Vague entries are not."
   - q: "How does behavior log data help at IEP meetings?"
-    a: "It shifts the conversation from opinion to record. Instead of saying 'Tyler is always disruptive in math,' you can say 'Tyler has refused math tasks on four separate Tuesdays over the last three weeks, always around 10:30 AM.' That level of specificity helps the IEP team identify root causes and design better interventions. Data is your shield and your bridge in those rooms."
+    a: "It shifts the conversation from opinion to record. Instead of saying 'Tyler is always disruptive in math,' you can say 'Tyler has refused math tasks on four separate Tuesdays over the last three weeks, always around 10:30 AM.' That level of specificity helps the IEP team identify root causes and design better interventions. Data is what moves those conversations forward."
 ---
 
 If you have been teaching for more than a week, you have probably downloaded a student behavior log for teachers. You printed it out, put it in a nice shiny binder, and promised yourself that this would be the year you documented everything.
@@ -63,7 +63,7 @@ This simple filter keeps your log clean and prevents you from spending your enti
 
 ## How the Data Helps at IEP Meetings and Conferences
 
-Why do we do this? Because when you walk into an IEP meeting or a parent conference, data is your shield and your bridge.
+Why do we do this? Because when you walk into an IEP meeting or a parent conference, data is what anchors the conversation.
 
 If a parent is defensive or disagrees with your account of their child's behavior, having a chronological list of dates, times, and observable behaviors changes the conversation. You are no longer sharing your opinion, you are sharing the record.
 

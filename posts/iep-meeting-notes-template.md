@@ -8,7 +8,7 @@ faq:
   - q: "What should a teacher include in IEP meeting notes?"
     a: "Your IEP meeting notes should capture: the date and attendees, any changes made to the student's goals or accommodations, specific action items assigned to you, parent concerns that were raised, and any follow-up dates or deadlines. The official case manager takes summary notes, but those often miss details that affect your day-to-day instruction. Your personal notes fill that gap."
   - q: "Do general education teachers need to take their own notes at IEP meetings?"
-    a: "Yes. The official IEP document is a broad summary. It often doesn't capture the nuances of what was said, what parents are concerned about, or what you personally agreed to do. Your own notes give you a record that reflects your classroom perspective and protect you if a parent later claims accommodations weren't being followed."
+    a: "Yes. The official IEP document is a broad summary. It often doesn't capture the nuances of what was said, what parents are concerned about, or what you personally agreed to do. Your own notes give you a record that reflects your classroom perspective and keep everyone aligned if a parent later questions whether accommodations were being followed."
   - q: "How do I organize IEP notes for multiple students?"
     a: "The most practical approach is one document or section per student. A shared folder (Google Drive or similar) with a subfolder per student keeps everything findable at a moment's notice. Apps like ShortHand also let you attach notes to individual student profiles, so your IEP follow-up tasks live alongside your daily behavior and parent contact logs for that student."
   - q: "What do I do with IEP meeting notes after the meeting?"
@@ -17,15 +17,15 @@ faq:
 
 Attending an IEP meeting requires a massive amount of mental energy. You are listening to specialists, answering parent questions, and trying to represent your classroom accurately. With so much information flying around the table, it is incredibly easy to forget the specific details the moment you walk out the door.
 
-Relying on your memory is a massive mistake. You need a reliable system for documenting exactly what was discussed and decided. This free iep meeting notes template provides a simple, foolproof structure to keep you organized, protect you legally, and ensure the student actually receives the promised support.
+Relying on your memory is a massive mistake. You need a reliable system for documenting exactly what was discussed and decided. This free iep meeting notes template provides a simple, foolproof structure to keep you organized, stay aligned with the team, and ensure the student actually receives the promised support.
 
 ## Why Taking Your Own Notes is Non-Negotiable
 
 You might assume the special education case manager is taking official notes, so you do not need to bother. This is a dangerous assumption. The official notes are often broad summaries. As the general education teacher, you need to know exactly how the meeting impacts your daily instruction.
 
-### Accountability and Protection
+### Accountability and Follow-Through
 
-If a parent questions whether you are implementing an agreed upon accommodation three months later, you need a written record proving you are following the plan. Your notes are your professional protection.
+If a parent questions whether you are implementing an agreed upon accommodation three months later, you need a written record showing exactly what the team decided and what you committed to. Your notes are what keep the plan on track.
 
 ### Continuity of Care
 

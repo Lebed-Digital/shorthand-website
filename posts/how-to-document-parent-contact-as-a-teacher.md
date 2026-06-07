@@ -22,7 +22,7 @@ Memory alone is not going to save you. Teachers make thousands of micro-decision
 
 Expecting your brain to perfectly recall a five-minute phone call from a month ago is unreasonable. (My brain occasionally forgets where I put my coffee mug while I am currently holding it.)
 
-Vague notes are equally useless. A sticky note on your desk that says "called Mom" will not hold up in a meeting with an administrator. A random entry in your planner that just says "behavior issue" gives you zero context. You need a rock-solid paper trail.
+Vague notes are equally useless. A sticky note on your desk that says "called Mom" tells you nothing in a meeting with an administrator. A random entry in your planner that just says "behavior issue" gives you zero context. You need a complete, searchable contact record.
 
 ---
 
@@ -32,7 +32,7 @@ You do not need to write a novel. You need specific data points. Every single ti
 
 **Date and time.** Every entry needs a timestamp. When a parent says they were at work and could not answer, you want to show that you called at 4:15 PM, well after their shift ended. Exact times remove ambiguity and show precision.
 
-**Method of contact.** Did you call? Send an email? Pull them aside at dismissal? Write it down. A phone call carries a different weight than a classroom app message. If things escalate to a formal disciplinary hearing, the school will want to know exactly how you reached out.
+**Method of contact.** Did you call? Send an email? Pull them aside at dismissal? Write it down. A phone call carries a different weight than a classroom app message. If things escalate to a formal meeting, everyone involved will want to know exactly how you reached out.
 
 **Who you reached.** Did you speak to mom? Did dad pick up? Did you get voicemail? Did it ring ten times with no answer? If mom claims she never heard from you but your log shows you spoke to dad twice, that changes the entire narrative.
 
