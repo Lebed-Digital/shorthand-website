@@ -2,6 +2,8 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
+import FeatureNav from '../../../components/FeatureNav';
+import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Parent Communication Log | ShortHand',
@@ -60,18 +62,14 @@ export default function ParentCommunicationLogPage() {
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
 
+      <FeatureNav current="parent-communication-log" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
         <p className="detail-cta-sub">Free to start. Works on any device.</p>
         <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_parent-communication-log">Get Started Free →</TrackedLink>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved.</div>
-      </footer>
+      <Footer />
     </>
   );
 }
