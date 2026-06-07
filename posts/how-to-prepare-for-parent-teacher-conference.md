@@ -1,9 +1,9 @@
 ---
 title: "How to Prepare for a Parent Teacher Conference (So You Are Not Winging It)"
-subtitle: "Documentation is your best protection."
+subtitle: "Walk in with organized notes and you will not be winging it."
 date: "2026-05-10"
 author: "Gregory Lebed"
-excerpt: "Learn how to prepare for a parent teacher conference. Stop winging it and start bringing the right documentation to protect yourself and your students."
+excerpt: "Learn how to prepare for a parent teacher conference. Stop winging it and start bringing the right documentation so every meeting is organized and productive."
 ---
 
 We all know the feeling. The school day has finally ended. You are exhausted. You look at your schedule and realize you have a parent meeting in exactly ten minutes.

@@ -1,6 +1,6 @@
 ---
 title: "What to Do When a Parent Says You Never Called Them"
-subtitle: "Stay calm. Don't argue. And start logging everything starting today."
+subtitle: "Stay calm, redirect to the student, and offer to check your records. Here's exactly what to do."
 date: "2026-05-01"
 author: "Gregory Lebed"
 excerpt: "When a parent claims a teacher never called about their child's behavior or grades, here's exactly what to do in the moment and how to make sure it never happens again."
@@ -40,11 +40,11 @@ If you do have documentation, now is the time to open it calmly and show the dat
 
 ## What This Moment Is Really Telling You
 
-If you felt a spike of panic when the parent made their claim, that panic is telling you something important. It means you do not trust your own records.
+If you felt a spike of panic when the parent made their claim, that panic is telling you something. It means you do not have a system you can rely on.
 
-You need a documentation system. You needed it before this conversation happened.
+You need a documentation system. Ideally, you had it before this conversation.
 
-Relying on memory to track hundreds of parent interactions across a school year is not a strategy. It is a gamble. If you cannot open a log and point to a specific date, time, and summary, you are operating without a safety net every single day.
+Relying on memory to track hundreds of parent interactions across a school year is not a strategy. If you cannot open a log and point to a specific date, time, and summary, you are reconstructing your history from scratch every time it matters.
 
 ---
 
@@ -56,7 +56,7 @@ Starting today, every contact attempt gets recorded. Not just the successful one
 
 **Log the calls that do not go through.** If you call and no one answers, write it down. If you leave a voicemail, write it down. If you send an email and hear nothing back, write that down too.
 
-A log showing three unanswered calls is a complete defense when a parent claims you never tried. You cannot make someone pick up the phone. You can prove you dialed the number.
+A log showing three unanswered calls gives you a clear, factual account when a parent claims you never tried. You cannot make someone pick up the phone. You can show a timeline of when you dialed.
 
 Keep emotion out of the entries entirely. Do not write "mom was rude." Write "mother stated she disagreed with the consequence." Objective facts only. Your future self, sitting in an IEP meeting three months from now, will thank you.
 
@@ -72,7 +72,7 @@ The ShortHand app automatically creates timestamped entries for every parent con
 
 The next time a parent says you never called, you open your log. That is the whole game.
 
-[Try ShortHand free at getshorthandapp.com](/install) and stop working without a safety net.
+[Try ShortHand free at getshorthandapp.com](/install) and stop rebuilding your communication history from memory.
 
 ---
 

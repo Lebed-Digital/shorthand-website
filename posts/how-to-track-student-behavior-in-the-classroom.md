@@ -147,7 +147,7 @@ Bring those patterns to your next parent meeting or IEP. "I've noticed Marcus te
 
 ## The Goal Isn't a Perfect Log
 
-You're not building a legal case. You're building enough of a picture to help a kid, and to protect yourself when questions come up.
+You're building enough of a picture to help a kid, and to answer clearly when questions come up.
 
 A quick note three times a week beats a detailed binder you abandon in October. Pick the simplest system that you'll actually use, and start there.
 

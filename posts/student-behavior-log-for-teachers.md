@@ -1,12 +1,12 @@
 ---
 title: "The Student Behavior Log: What to Track, How to Track It, and Why It Actually Matters"
-subtitle: "If it is not written down, it did not happen."
+subtitle: "What to track, how to track it, and why consistent records change every meeting."
 date: "2026-05-07"
 author: "Gregory Lebed"
-excerpt: "A simple student behavior log is your best defense at meetings. Learn exactly what to track, what to leave out, and how to protect yourself."
+excerpt: "A simple student behavior log gives you the organized record you need at every meeting. Learn exactly what to track, what to leave out, and how to build a consistent system."
 faq:
   - q: "What should a student behavior log include?"
-    a: "A student behavior log should include the date and time, a factual description of what happened (no opinions, just observable actions), what you did in response, and whether you contacted a parent. Those five fields are enough. Anything more becomes a burden you stop filling out. Consistency over completeness: a one-line entry every day beats a detailed entry once a week."
+    a: "A student behavior log should include the date and time, a factual description of what happened (no opinions, just observable actions), what you did in response, and whether you contacted a parent. Four fields are enough. Anything more becomes a burden you stop filling out. Consistency over completeness: a one-line entry every day beats a detailed entry once a week."
   - q: "How do teachers keep a behavior log without disrupting the class?"
     a: "The fastest method is a phone-based app that lets you tap a student name and type a quick note in under 15 seconds. Apps like ShortHand are built for exactly this: you log during transitions, not mid-lesson. If you're using paper, keep a clipboard on your desk with a pre-printed sheet per student so you never have to search for the right page."
   - q: "Is a student behavior log confidential?"
@@ -29,7 +29,7 @@ Keeping a log sounds like just one more chore to add to your endless list. It do
 
 ## What a Behavior Log Actually Is
 
-A student behavior log is simply a running record of significant events. It is a tool to protect you. It is also a tool to help the student.
+A student behavior log is simply a running record of significant events. It helps you, and it helps the student.
 
 When you track behavior over time, you stop reacting emotionally. You start seeing the matrix. You realize that a student only acts out on Tuesdays and Thursdays. Then you remember they have physical education on those days. Suddenly, the behavior makes sense. You can actually address the root cause instead of just punishing the symptom.
 
@@ -47,7 +47,7 @@ Finally, document your response. What did you do? Did you offer a break? Did you
 
 ## What You Should Never Write Down
 
-A behavior log is a legal document. It can be subpoenaed. It can be requested by parents at any time. You must write every entry as if the parent will read it tomorrow.
+A behavior log is a professional document. Parents can request to see it. Administrators may ask for it. Write every entry as if the parent will read it tomorrow.
 
 Never write down your emotions. Never write that you are frustrated or at your wits end.
 

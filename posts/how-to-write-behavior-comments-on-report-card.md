@@ -63,14 +63,14 @@ For 50+ copy-paste examples organized by behavior type, see [Report Card Comment
 
 ## How to Write Behaviour Comments When There Has Been Real Documentation
 
-The ultimate shield against a difficult parent meeting is having a paper trail that matches your report card comments on behaviour. A parent cannot easily claim that you are exaggerating a behavioral issue if you can pull up a clean, timestamped record of the exact dates and times the behavior occurred over the last nine weeks.
+When your report card comments match an ongoing record of documented observations, parent meetings go differently. A parent can see that the comment is not a judgment made in one bad week. It is the summary of a pattern that was tracked, noted, and in many cases already communicated to the family.
 
-When you have hard data, your report card comment becomes the summary of an ongoing conversation rather than a nasty surprise. You are no longer guessing or speaking from frustration. You are simply stating the patterns that have already been documented and shared.
+When you have that record, your report card comment becomes the closing chapter of an ongoing conversation, not a surprise. You are no longer speaking from memory or frustration. You are reflecting what was already observed and documented.
 
-This exact need for painless tracking is why I use ShortHand. I needed a quick, mobile-friendly way to log classroom incidents and student behaviors in the middle of a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](/install) and start building the exact documentation you need so that your next round of report card comments for behavior are completely bulletproof.
+This exact need for fast, organized tracking is why I use ShortHand. I needed a mobile-friendly way to log classroom incidents during a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](/install) and have the documentation you need ready well before report card season.
 
 ## Professional Does Not Mean Dishonest
 
-Changing your phrasing from blunt to professional does not mean you are lying or sugarcoating reality. It just means you are acting as the clinical expert in the room. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you protect yourself from complaints while actually helping the student move forward.
+Changing your phrasing from blunt to professional does not mean you are lying or sugarcoating reality. It just means you are acting as the clinical expert in the room. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you reduce defensiveness from families and actually help the student move forward.
 
 If you want ready-to-use language that already follows this formula, [Report Card Comments for Behavior: 120+ Examples You Can Use Today](/blog/report-card-comments-for-behavior) has comments organized by situation — strong behavior, ongoing concerns, IEP students, impulsivity, and more. Copy them directly or use them as a starting point.

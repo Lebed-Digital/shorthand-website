@@ -2,7 +2,7 @@
 title: "How to Document Student Behavior Without Losing Your Mind"
 date: "2026-04-30"
 author: "Gregory Lebed"
-excerpt: "Every teacher knows the dread of sitting in a parent meeting with zero written proof of a student's behavior. Here is the exact system you need to protect yourself and your classroom."
+excerpt: "Every teacher knows the dread of sitting in a parent meeting with no organized record of a student's behavior. Here is the exact system you need to walk in prepared."
 tags: ["Teacher Documentation", "Classroom Management", "Teacher Tips"]
 ---
 
@@ -10,7 +10,7 @@ If you have been teaching for more than a week, you already know the feeling. Yo
 
 But when the parent asks for specific examples, your mind goes blank. You stammer out something vague about them being off-task. The parent crosses their arms. You look like you are exaggerating. In that moment, you realize the hardest truth of teaching. If it is not written down, it simply did not happen.
 
-Learning how to document student behavior is not something they teach you in your education program. They teach you theories about classroom management. They do not teach you how to build a waterproof paper trail while simultaneously teaching thirty-two middle schoolers how to find the area of a circle.
+Learning how to document student behavior is not something they teach you in your education program. They teach you theories about classroom management. They do not teach you how to keep a clear, organized behavior record while simultaneously teaching thirty-two middle schoolers how to find the area of a circle.
 
 ![A teacher taking notes on a tablet while observing students working in an elementary classroom](/teacher-documenting-behavior.png)
 
@@ -34,9 +34,9 @@ When you have to refer a student to the office or call a parent, a single incide
 
 ## The "Same Day" Rule for Behavior Logs
 
-If you want your documentation to actually protect you, you must follow the same day rule. You cannot log behavior on Friday that happened on Monday. Memory degrades incredibly fast when you process interactions with over a hundred students a day.
+If you want your documentation to actually be useful, you must follow the same day rule. You cannot log behavior on Friday that happened on Monday. Memory degrades fast when you process interactions with over a hundred students a day.
 
-If you wait days to write something down, your documentation becomes legally and professionally flimsy. A parent or administrator can easily poke holes in your story if your notes are vague or clearly written after the fact. You need to write it down on the exact same day it happens.
+If you wait days to write something down, your notes lose their specificity. Details blur. A parent or administrator asking about a specific incident will get a vague answer because you no longer remember the exact sequence. Write it down on the same day it happens.
 
 This sounds exhausting, but it does not have to be. The trick is to stop writing essays and start writing bullet points. You do not need to write a novel about how the incident made you feel. You just need the core facts logged before you leave the building.
 
@@ -56,7 +56,7 @@ When a parent reads the first example, they might argue about your definition of
 
 ### Stick to the Facts, Leave Out Your Feelings
 
-Your behavior log is a professional document. It could be subpoenaed in a legal case. It will definitely be read by your principal. Keep your emotions completely out of it.
+Your behavior log is a professional document. It may be read by your principal or shared at an IEP meeting. Keep your emotions completely out of it.
 
 Avoid words like angry, aggressive, malicious, or lazy. These are judgments. Instead, describe the physical actions that led you to those conclusions. Instead of saying a student was aggressive, say they slammed their fists on the desk and stood up abruptly. Let the reader draw their own conclusions from the undeniable facts you present.
 

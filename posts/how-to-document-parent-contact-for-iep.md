@@ -1,18 +1,18 @@
 ---
-title: "How to Document Parent Contact for IEP Students (What the Law Actually Requires)"
-subtitle: "IDEA doesn't just suggest you keep parents informed. It requires it. Here's what that looks like in practice."
+title: "How to Document Parent Contact for IEP Students (What IDEA Expects From You)"
+subtitle: "IDEA requires meaningful parent involvement, not just occasional updates. Here's what that looks like day to day."
 date: "2026-05-03"
 author: "Gregory Lebed"
-excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and why it matters legally."
+excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and how to stay organized."
 ---
 
-Parent communication for students with Individualized Education Programs is not an optional best practice. It is a strict federal legal requirement under the Individuals with Disabilities Education Act. If you are a classroom teacher who cannot produce clear records of your outreach, you are not just unprepared for a parent conference. You are potentially exposing your entire school district to a severe compliance violation. Knowing exactly how to document parent contact for IEP students is a non-negotiable part of this job.
+Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. If you are a classroom teacher who cannot produce clear records of your outreach, you are not just unprepared for a parent conference. You are missing the organized foundation that IEP teams depend on to make good decisions for the student. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
 
 I have spent over twenty years in K-8 classrooms. Before that, I worked as a Registered Behavior Technician. I have sat through more contentious, legally complex IEP meetings than I care to remember.
 
 During my time as an RBT, I saw exactly what happens when teacher documentation is incomplete. A parent advocate or a lawyer sits at the table. They ask to see the contact logs regarding a spike in behaviors or a drop in grades. The room gets very quiet because the general education teacher assumed the special education case manager was handling everything. The district scrambles. It is an incredibly uncomfortable position to be in.
 
-You need to protect yourself and your teaching license. Here is what the law actually requires and how to handle your own documentation without losing your mind.
+Here is what IDEA expects and how to handle your own documentation without losing your mind.
 
 ---
 
@@ -34,7 +34,7 @@ It is not.
 
 Case managers carry massive caseloads. They are managing legal paperwork, coordinating related services, and tracking overall progress. They cannot be the sole point of contact for every single academic issue in your specific classroom.
 
-If a parent asks why their child failed your quarter three math benchmark, the case manager is not going to have those specific details. If you cannot show that you personally reached out to the family to discuss the missing assignments or the failing grades, you are liable. You are the teacher of record for that class. You have your own documentation obligations.
+If a parent asks why their child failed your quarter three math benchmark, the case manager is not going to have those specific details. You are the teacher of record for that class. Your own records are what fill in that picture. Keeping your own communication log is part of doing that job well.
 
 ---
 
@@ -66,7 +66,7 @@ Managing this level of documentation on sticky notes or a messy spreadsheet is a
 
 The ShortHand app automatically timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a complete, searchable record of your outreach in seconds. You look professional, organized, and completely compliant.
 
-Stop risking your career on a disorganized paper trail. [Try ShortHand free at getshorthandapp.com](/install) and go into your next IEP meeting with confidence.
+Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](/install) and go into your next annual review with a complete, organized record.
 
 ---
 

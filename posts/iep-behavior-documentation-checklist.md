@@ -8,7 +8,7 @@ excerpt: "IEP behavior documentation can feel overwhelming. This checklist tells
 
 IEP behavior documentation is incredibly overwhelming for general ed teachers. You are already drowning in grading and lesson plans.
 
-Now you have to provide legal data for an annual review. It is terrifying.
+Now you have to pull together data for an annual review. It can feel like a lot.
 
 I have taught 3rd grade for over 20 years. I also hold an RBT certification.
 
@@ -20,13 +20,13 @@ They bring feelings instead of facts. Here is exactly what you need to bring to 
 
 The IEP team does not want your opinion. They want your data.
 
-The special education teacher cannot write IEP behavior goals examples without baseline data. The school psychologist cannot recommend services without proof.
+The special education teacher cannot write IEP behavior goals without baseline data. The school psychologist cannot recommend services without something to work from.
 
-You are the classroom teacher. You are the primary source of that proof.
+You are the classroom teacher. You are the primary source of that classroom-level data.
 
-If you show up without IEP behavior documentation, you are failing the student. You are also leaving yourself legally vulnerable.
+If you show up without IEP behavior documentation, the team has to work from incomplete information. That is not good for the student, and it is not a great position for you either.
 
-You must protect yourself by bringing hard evidence.
+Come prepared with organized evidence.
 
 ## The 5 things to document before every annual review
 
@@ -48,13 +48,13 @@ Fifth, you need parent communication records. When did you notify them?
 
 Here is exactly what you need to collect.
 
-| Documentation Type | What It Proves | How to Collect It |
+| Documentation Type | What It Shows | How to Collect It |
 | :--- | :--- | :--- |
-| Frequency Tally | How often the action occurs | Tally marks on a sticky note or app |
-| ABC Data Sheet | The function of the action | Note the antecedent, behavior, and consequence |
-| Duration Log | How much instructional time is lost | Start a stopwatch when the event begins |
-| Intervention Record | That you attempted tier 1 supports | Write down accommodations and results |
-| Communication Log | That the parent was informed | Save all emails and phone call notes |
+| Frequency Tally | How often the behavior occurs | Tally marks on a sticky note or app |
+| ABC Data Sheet | The pattern around the behavior | Note the antecedent, behavior, and consequence |
+| Duration Log | How long events typically last | Start a stopwatch when the event begins |
+| Intervention Record | What supports you tried and how they went | Write down accommodations and results |
+| Communication Log | Your outreach to the family | Save all emails and phone call notes |
 
 ## How to organize your IEP behavior documentation
 

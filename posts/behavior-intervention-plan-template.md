@@ -62,9 +62,9 @@ The traditional method for tracking a BIP is a clipboard with a tally sheet. The
 
 This works for exactly three days. On the fourth day, you leave the clipboard on your desk while you are helping a student in the back of the room. The behavior happens, and you cannot get to the clipboard. By the end of the week, you are just guessing at the numbers before the bell rings. A paper tracking system is completely incompatible with active teaching.
 
-### How Daily Logs Become Undeniable Evidence
+### Why Context Matters More Than Tally Marks
 
-To protect yourself and to actually help the student, you have to transition away from paper tallies. You need a system that captures the context of the behavior. A tally mark does not tell the team that the student only threw the pencil after you asked them to read aloud. Context is everything when adjusting a behavior plan.
+To actually help the student, you have to transition away from paper tallies. You need a system that captures the context of the behavior. A tally mark does not tell the team that the student only threw the pencil after you asked them to read aloud. Context is everything when adjusting a behavior plan.
 
 ## Making Data Collection Automatic
 

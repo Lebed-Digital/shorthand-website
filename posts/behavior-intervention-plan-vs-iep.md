@@ -16,7 +16,7 @@ We are going to demystify the alphabet soup. We are going to break down exactly 
 
 ## Demystifying Special Education Acronyms
 
-The confusion stems from the fact that these documents frequently overlap. A student might have all three. A student might have only one. If you do not understand how they connect, you cannot properly support the student or protect your own teaching license.
+The confusion stems from the fact that these documents frequently overlap. A student might have all three. A student might have only one. If you do not understand how they connect, you cannot properly support the student or contribute meaningfully to the team.
 
 ### Why Teachers Feel Left in the Dark
 
@@ -46,9 +46,9 @@ The easiest way to understand the difference is scope. The IEP covers the entire
 
 Not every misbehaving student gets a BIP or an IEP. If a student occasionally talks out of turn or forgets their homework, they just need your standard classroom management plan. A BIP is reserved for chronic, severe behaviors that actively prevent the student or their peers from learning.
 
-### When the Plan Requires Legal Backing
+### When the Plan Is Part of the IEP
 
-A BIP can exist entirely on its own for a general education student who needs behavioral support. However, very often, the BIP lives inside the IEP. When a BIP is attached to an IEP, it becomes federal law. You cannot simply decide that the BIP is not working and try something else. You must follow the interventions exactly as written, or you are violating the student's civil rights.
+A BIP can exist entirely on its own for a general education student who needs behavioral support. However, very often, the BIP lives inside the IEP. When a BIP is part of an IEP, it carries federal weight. You cannot simply decide the BIP is not working and try something else on your own. Changes go through the team. Following the plan as written is how you protect the student's consistency and support the decisions the team made together.
 
 ## The General Education Teacher's Secret Weapon
 
