@@ -27,7 +27,7 @@ One of the biggest mistakes teachers make is emailing parents the very first tim
 
 On the flip side, waiting until report card season is a disaster. If a parent finds out their child has ten missing assignments only when they open the report card, they will be furious. And they have every right to be.
 
-The sweet spot is the rule of three. If a student misses three homework assignments in a two-week period, or fails to turn in a major project by the due date, it is time to write an email. This rule of three demonstrates a developing pattern of behavior rather than a one-time slip. It gives the parent enough notice to help correct the course before the student's grade drops too far to recover.
+The sweet spot is the rule of three. If a student misses three homework assignments in a two-week period, or fails to turn in a major project by the due date, it is time to write an email. This rule of three demonstrates a developing pattern of behavior rather than a one-time slip. It gives the parent enough notice to help correct the course before the student's grade drops too far to recover. If the missing work is also accompanied by low assessment scores, you may be looking at an academic concern as well. That conversation requires a different approach, which you can read about in [how to email parents about academic concerns](https://getshorthandapp.com/posts/how-to-email-parents-about-academic-concerns).
 
 ### Objective Language: The Former RBT Approach
 
@@ -95,6 +95,8 @@ Best,
 
 [Your Name]
 
+If the pattern escalates and you end up needing a face-to-face meeting, [how to prepare for a parent-teacher conference](https://getshorthandapp.com/posts/how-to-prepare-for-parent-teacher-conference) walks through how to bring your documentation into that room without the meeting going sideways.
+
 #### Template 3: The Completely Checked Out Student (shutting down in class, missing everything)
 
 Subject: Academic concern: [Student Name]'s progress and missing work
@@ -117,4 +119,4 @@ Sincerely,
 
 [Your Name]
 
-Writing these emails is one of the most draining parts of the job. That is why I built ShortHand. As a former teacher, I wanted a tool that would take the friction out of parent communication. With ShortHand, you can log notes and draft professional, objective parent emails in seconds. It runs right in your browser, helping you get home on time. Check it out at [getshorthandapp.com](https://getshorthandapp.com/install).
+Once you send that first email, document it. Add it to a [free parent communication log](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers) with the date, the student's name, and what you sent. If the missing work pattern continues and you end up in a parent meeting or an IEP conversation, that log is evidence that you reached out early and often. For a broader set of email templates covering more than just missing work, the [free parent email templates for teachers](https://getshorthandapp.com/posts/free-parent-email-templates-for-teachers) page has copy-paste options for behavior, progress updates, and conference requests.

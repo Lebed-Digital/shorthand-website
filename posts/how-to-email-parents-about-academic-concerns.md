@@ -39,7 +39,7 @@ This objective description makes the problem concrete and undeniable. When acade
 
 When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. Most parents are exhausted after work and are not trained educators.
 
-Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it.
+Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it. If missing homework is part of the academic picture, you may also want to send a separate [email about missing assignments](https://getshorthandapp.com/posts/sample-emails-to-parents-about-missing-homework) that covers the work gap specifically, so the academic concern email stays focused on skills rather than habits.
 
 ### 2 Copy-Paste Academic Concern Templates
 
@@ -77,7 +77,7 @@ I am reaching out to discuss [Student Name]'s academic progress in math and to s
 
 [Student Name] has shown great effort in class, but they are currently performing significantly below grade level in math. On our unit assessments for fractions, [Student Name] scored a 45%, and they are struggling to complete grade-level tasks independently.
 
-I want to ensure [Student Name] has the support they need to be successful. I would like to schedule a 15-minute meeting this week so we can look at some of their work samples together and create a collaborative support plan.
+I want to ensure [Student Name] has the support they need to be successful. I would like to schedule a 15-minute meeting this week so we can look at some of their work samples together and create a collaborative support plan. If you want to read more about what to actually say once you are in that meeting, [what to say at a parent-teacher conference](https://getshorthandapp.com/posts/what-to-say-at-parent-teacher-conference) covers how to present concerns and next steps without the conversation going off the rails.
 
 Here are a few times I am available:
 
@@ -91,4 +91,4 @@ Thank you for your partnership,
 
 [Your Name]
 
-Writing these emails requires careful thought and a lot of emotional energy. That is why I built ShortHand. It is designed to take the weight off your shoulders by helping teachers log notes and draft parent emails in seconds. You can quickly generate professional, data-backed updates that keep parents informed without spending your entire evening staring at a blinking cursor. Try it out at [getshorthandapp.com](https://getshorthandapp.com/install) and save your prep time for planning.
+If the first email leads to a meeting request, use [how to prepare for a parent-teacher conference](https://getshorthandapp.com/posts/how-to-prepare-for-parent-teacher-conference) to walk into that room with your data organized and a plan in hand. And start logging every email you send in a [parent communication log](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers). If the concern escalates to an IEP conversation or a difficult phone call, that documentation record is what shows the school you flagged the issue early and communicated consistently.

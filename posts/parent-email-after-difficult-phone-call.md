@@ -27,7 +27,7 @@ A written follow-up sent within an hour of the call establishes a contemporaneou
 
 ### What to Include in Your Follow-Up
 
-Your follow-up email must be a concise, objective summary of the conversation. Do not write a transcript. Stick to the facts:
+Your follow-up email must be a concise, objective summary of the conversation. Do not write a transcript. Stick to the facts. If the call ended with a request for an in-person meeting, read [how to prepare for a parent-teacher conference](https://getshorthandapp.com/posts/how-to-prepare-for-parent-teacher-conference) before that meeting so you walk in with documentation already organized.
 
 1. State the date, time, and purpose of the call.
 2. Outline the main points discussed. Keep it neutral. Use phrases like, "We discussed [Student Name]'s difficulty during recess," or "You shared your concerns regarding the homework load."
@@ -89,4 +89,4 @@ Sincerely,
 
 [Your Name]
 
-Writing these summaries when your adrenaline is pumping is incredibly hard. That is why I built ShortHand. It helps teachers log notes and draft parent emails in seconds, even after the most stressful interactions. You can quickly generate a professional, objective summary of any call without having to wrestle with finding the right words when you are exhausted. Try it today at [getshorthandapp.com](https://getshorthandapp.com/install).
+Before you close this tab, start logging these calls somewhere permanent. A [free parent communication log](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers) gives you a timestamped record of every call, email, and meeting in one place. When a parent later claims you never called, or an administrator asks what steps you took, you pull up the log. That is the documentation that saves you. If you are also dealing with academic struggles connected to the behavior issues that sparked the call, [how to email parents about academic concerns](https://getshorthandapp.com/posts/how-to-email-parents-about-academic-concerns) walks through how to frame that follow-up conversation without putting parents on the defensive.
