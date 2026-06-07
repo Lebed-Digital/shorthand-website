@@ -152,7 +152,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           borderRadius: '16px',
           textAlign: 'center',
         }}>
-          <p style={{ marginBottom: '1rem', color: 'var(--text-dim)' }}>Ready to stop drowning in paperwork?</p>
+          <p style={{ marginBottom: '1rem', color: 'var(--text-dim)' }}>Stop trying to remember everything.</p>
           <Link href="/install" className="btn-primary" style={{ display: 'inline-block' }}>
             Try ShortHand Free →
           </Link>
