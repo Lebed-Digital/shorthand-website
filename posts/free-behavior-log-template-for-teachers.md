@@ -51,7 +51,7 @@ To get the most out of this template, here is a quick guide on what to write in 
 * **Behavior Observed:** Focus on objective, observable actions. Write "screamed and pushed chair" rather than "was angry."
 * **Antecedent:** What was happening right before the behavior? Was it a peer interaction, a transition, or a difficult task?
 * **Consequence:** What was the immediate result of the behavior? Did the student get out of the task, receive adult attention, or lose a privilege?
-* **Parent Contact:** Document when and how you contacted the family. Having a clear paper trail is vital if issues continue.
+* **Parent Contact:** Document when and how you contacted the family. Having a clear contact record is important if issues continue.
 
 If the behavior is related to work completion, you can use our guide on [sample emails to parents about missing homework](/blog/sample-emails-to-parents-about-missing-homework) to structure your parent contact notes and email copy.
 

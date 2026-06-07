@@ -1,12 +1,12 @@
 ---
 title: "The Teacher's Complete Guide to Documenting Student Behavior"
-subtitle: "What to track, how to track it, and why it protects you"
+subtitle: "What to track, how to track it, and why it matters"
 date: "2026-05-27"
 author: "Gregory Lebed"
 excerpt: "A practical guide to documenting student behavior in the classroom: behavior logs, IEP records, intervention plans, tracking systems, and the documentation habits that protect teachers when things escalate."
 faq:
   - q: "Why is documenting student behavior important for teachers?"
-    a: "Documentation protects you when a parent questions what happened, supports IEP meetings with evidence, and helps you identify patterns you would otherwise miss. A behavior log with dates and specific observations is far more credible than memory alone when a situation escalates."
+    a: "Documentation gives you something concrete when a parent questions what happened, supports IEP meetings with evidence, and helps you identify patterns you would otherwise miss. A behavior log with dates and specific observations is far more useful than memory alone when a situation escalates."
   - q: "What should teachers include in a student behavior log?"
     a: "Record the date, time, setting, what the behavior looked like (specific and observable, not vague), what happened before and after, and any intervention you used. Brief is fine. A two-sentence entry made the same day is worth more than a detailed account written a week later."
   - q: "How do teachers document behavior for IEP purposes?"
@@ -21,7 +21,7 @@ Most teacher preparation programs cover behavior management strategies. Very few
 
 What happens when the intervention is not working and you need to show the team what you have tried. What happens when a parent says their child would never do that. What happens when an IEP meeting arrives and you are expected to present behavioral data you have not been systematically collecting.
 
-Documentation is the part of behavior management that nobody teaches, and it is the part that protects you.
+Documentation is the part of behavior management that nobody teaches, and it is the part that holds everything else together.
 
 This guide covers the full picture: daily behavior logs, tracking systems, intervention plans, IEP documentation, and the habits that make all of it sustainable.
 
@@ -33,7 +33,7 @@ Teachers spend enormous energy finding the right intervention for a difficult be
 
 That is backwards.
 
-The documentation is what lets you know if the intervention is actually working. It is what you bring to a parent meeting when they question your account of events. It is what a special education team needs to write a meaningful IEP goal. It is what covers you legally if a situation escalates.
+The documentation is what lets you know if the intervention is actually working. It is what you bring to a parent meeting when they have questions about what happened. It is what a special education team needs to write a meaningful IEP goal. It is what gives you a clear record if a situation escalates.
 
 A behavior management strategy without documentation is just a hope. Documentation turns it into evidence.
 

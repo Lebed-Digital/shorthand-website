@@ -2,7 +2,7 @@
 title: "Classroom Management for Disruptive Students: What Actually Works"
 date: "2026-04-28"
 author: "Gregory Lebed"
-excerpt: "When traditional classroom management strategies fail, you need a system that protects your peace of mind and builds an undeniable record of student behavior."
+excerpt: "When traditional classroom management strategies fail, you need a system that keeps you organized and builds a clear record of student behavior."
 tags: ["Classroom Management", "Teacher Tips"]
 faq:
   - q: "What is the most effective classroom management strategy for chronically disruptive students?"
@@ -39,7 +39,7 @@ This is a harsh truth that every veteran teacher eventually learns. If you verba
 
 When you finally reach your breaking point and call a parent or refer the student to administration, they will ask you for proof. If you just say that the student is always talking, the parent can easily argue that their child is just social. If you say the student is defiant, the principal will ask for specific examples. Your verbal redirects evaporate into thin air the moment you say them.
 
-You must transition from verbal warnings to written logs. This is the only way to build a history that protects you at the IEP table or in a difficult parent meeting. When you have a tool like ShortHand in your pocket, you can quietly log the exact quote a student says right after it happens. It takes twenty seconds, and it gives you absolute proof when a parent asks for evidence.
+You must transition from verbal warnings to written logs. This is the only way to build a history you can actually use at the IEP table or in a difficult parent meeting. When you have a tool like ShortHand in your pocket, you can quietly log the exact quote a student says right after it happens. It takes twenty seconds, and it gives you a clear, timestamped record when a parent asks what happened.
 
 ## Strategies That Actually Work in a Full Room
 

@@ -14,7 +14,7 @@ That is why I have a strict rule for serious behavioral incidents: call first, e
 
 You should never send an initial notification about a physical fight over email. Written words lack tone, warmth, and empathy. A parent reading a cold email about their child getting into a fight will often panic or become defensive.
 
-Instead, pick up the phone to deliver the news and discuss the immediate steps. Once the phone conversation is complete, you can use email to establish a clear, professional paper trail of what was discussed.
+Instead, pick up the phone to deliver the news and discuss the immediate steps. Once the phone conversation is complete, you can use email to create a clear, written record of what was discussed.
 
 Below are guidelines and templates to help you write follow-up emails after a physical altercation.
 

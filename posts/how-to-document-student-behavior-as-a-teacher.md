@@ -72,7 +72,7 @@ The reason teachers hate documentation is that it feels like a massive chore at 
 
 This is why many teachers are moving away from paper logs entirely. You need to be able to log a behavior in under thirty seconds while walking down the hallway. ShortHand is built exactly for this. Pull out your phone, select the student, type the quote they just said, and save it. It takes seconds. There is no binder to carry. There is no paper to lose.
 
-You have to protect your time and your sanity. Build a habit of immediate, factual documentation. It will change the way you manage your classroom and give you ultimate peace of mind during parent meetings.
+Build a habit of immediate, factual documentation. It will change the way you manage your classroom and make parent meetings significantly easier.
 
 If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
 

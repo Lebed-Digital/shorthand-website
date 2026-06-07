@@ -74,7 +74,7 @@ When they agree, the meeting is over. You have successfully run the conference.
 
 You can say all the right things, but words fade. A parent might remember the conversation completely differently two weeks later. They might say you never brought up the missing assignments.
 
-You have to have notes to back up what was discussed. If you do not have a record, you have no protection.
+You have to have notes to back up what was discussed. If you do not have a record, you are relying on memory, and so is the parent.
 
 ShortHand gives you the documented notes to back up everything you say in that room. You can log the parent communication the second they walk out the door. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
 

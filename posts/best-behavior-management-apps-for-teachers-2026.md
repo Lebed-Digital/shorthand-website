@@ -39,7 +39,7 @@ ClassDojo built its reputation on the points system. Award points for positive b
 
 The limitation: ClassDojo is designed for visibility, not documentation. There's no easy way to pull a behavior history for a specific student and present it at a meeting. Parents have to actively use the app for communication to work, which varies enormously by school community.
 
-**Where it falls short:** When you need a paper trail, not just a point total.
+**Where it falls short:** When you need a searchable contact history, not just a point total.
 
 ---
 

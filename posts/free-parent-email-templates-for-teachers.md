@@ -132,11 +132,11 @@ Some situations need a real voice, in real time. Significant behaviors, emotiona
 
 ---
 
-## Template 6: The Post-Call Paper Trail
+## Template 6: The Post-Call Written Follow-Up
 
 **Send this within 24 hours of any phone call or in-person meeting. This one is underused and important.**
 
-After a verbal conversation about a student, send a brief summary email. It protects you. It creates a shared record. It holds both sides accountable to whatever was agreed. If the situation ever escalates, you want to show that you communicated clearly and established a plan.
+After a verbal conversation about a student, send a brief summary email. It creates a shared record. It holds both sides accountable to whatever was agreed. If the situation ever comes up again, you have a clear written summary of what was discussed and what the plan was.
 
 *(This is the email equivalent of measuring twice before cutting. Takes two minutes. Saves a lot of problems.)*
 

@@ -10,7 +10,7 @@ faq:
   - q: "How do you write behavior comments for report cards without upsetting parents?"
     a: "Use observable language, not character labels. 'Student frequently calls out during direct instruction' lands better than 'Student is disruptive.' Pair every concern with what is being done to address it. And never put a concern on a report card that a parent is reading for the first time — they should have already heard it from you."
   - q: "What should behavior comments on a report card include?"
-    a: "Every behavior comment should have three parts: what the behavior looks like (specific and observable), when or how often it occurs, and what growth or support is in place. This protects you professionally and gives families something actionable to work with."
+    a: "Every behavior comment should have three parts: what the behavior looks like (specific and observable), when or how often it occurs, and what growth or support is in place. This gives families something concrete and actionable to work with."
   - q: "Can I use AI to write report card behavior comments?"
     a: "Yes. Tools like the free Report Card Comment Generator at getshorthandapp.com/free-tool let you select behaviors you are observing and instantly produce a professional, balanced comment. It takes about ten seconds per student and does not require a sign-up."
 ---

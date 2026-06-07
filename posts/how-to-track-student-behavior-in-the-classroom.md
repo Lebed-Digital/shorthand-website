@@ -8,7 +8,7 @@ excerpt: "Most behavior tracking systems sound great in August and get abandoned
 
 You became a teacher to teach, not to spend your Sunday nights writing down everything Tyler did on Tuesday. (Why did you do it on Tuesday, Tyler?)
 
-But here's the thing: tracking student behavior matters. It protects you in meetings. It helps struggling kids get the support they actually need. And when a parent swears their child "never does that at home," having documented notes is the difference between a productive conversation and a frustrating one.
+But here's the thing: tracking student behavior matters. It helps struggling kids get the support they actually need. And when a parent swears their child "never does that at home," having documented notes is the difference between a productive conversation and a frustrating one.
 
 The problem isn't that teachers don't want to track behavior. It's that most systems are too slow, too complicated, or just not built for the pace of a real classroom.
 
@@ -28,7 +28,7 @@ When you track consistently, you start to notice things like:
 
 Those patterns are invisible if you're only writing things down after a blowup. Consistent tracking gives you data you can actually use, for IEP meetings, parent conferences, referrals, or just adjusting your own schedule.
 
-It also protects you. Teachers get questioned all the time: "Why wasn't I told about this sooner?" A log with dates and specific observations answers that question before it becomes a problem.
+It also keeps you organized when questions come up. "Why wasn't I told about this sooner?" is a lot easier to answer when you have a log with dates and specific observations.
 
 ---
 

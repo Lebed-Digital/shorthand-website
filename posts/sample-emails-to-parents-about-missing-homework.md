@@ -46,7 +46,7 @@ To make the email effective, you must include four specific pieces of informatio
 3. The absolute deadline for turning in the work. Be clear about whether you accept late work for full credit, partial credit, or no credit.
 4. A concrete action step. Tell the parent exactly what they need to do tonight to help.
 
-Keep track of every email in your [free parent communication log for teachers](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers) so you have a solid paper trail of your outreach. This documentation is crucial if you need to escalate the issue later.
+Keep track of every email in your [free parent communication log for teachers](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers) so you have a clear contact history. That record matters if you need to escalate the issue later.
 
 ### 3 Copy-Paste Templates for Missing Homework
 

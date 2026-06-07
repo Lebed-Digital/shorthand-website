@@ -6,7 +6,7 @@ author: "Gregory Lebed"
 excerpt: "A practical guide to every kind of parent communication teachers dread: behavior emails, difficult phone calls, IEP meetings, parent-teacher conferences, and what to do when parents don't respond or push back."
 faq:
   - q: "How should teachers communicate with parents about behavior problems?"
-    a: "Use specific, observable language instead of judgments. Describe what happened, when, and what you are already doing to support the student. Keep the tone factual and collaborative, not accusatory. Follow up any phone call with a brief written summary within 24 hours to create a paper trail."
+    a: "Use specific, observable language instead of judgments. Describe what happened, when, and what you are already doing to support the student. Keep the tone factual and collaborative, not accusatory. Follow up any phone call with a brief written summary within 24 hours to create a shared written record."
   - q: "What do you say when a parent says you never called?"
     a: "This is exactly why documentation matters. If you logged your communication attempts, you can calmly reference dates and methods. If you did not document it, this is the moment to start. Going forward, record every call attempt, email, and in-person conversation with the date, what was discussed, and what was agreed upon."
   - q: "How do teachers document parent communication?"
@@ -51,7 +51,7 @@ The challenge is that most teachers have not been given a script. You pick up th
 
 Before you dial, [How to Politely Tell Parents Their Child Is Misbehaving](/blog/how-to-politely-tell-parents-child-is-misbehaving) covers the specific phrases to use (and the ones to avoid) when the conversation gets uncomfortable.
 
-After the call, send a brief written summary within 24 hours. This creates a paper trail and reduces the chance of "I never heard about this" coming up later.
+After the call, send a brief written summary within 24 hours. It creates a shared record and reduces the chance of "I never heard about this" coming up later.
 
 ---
 
@@ -61,7 +61,7 @@ You have called twice. Emailed three times. Nothing.
 
 This is more common than it should be, and it puts teachers in a difficult position, especially when the student's behavior is escalating or an IEP meeting is approaching.
 
-[What to Do When Parents Don't Respond to Calls or Emails](/blog/what-to-do-when-parents-dont-respond-to-calls) covers the specific steps to take and how to document your attempts in a way that protects you.
+[What to Do When Parents Don't Respond to Calls or Emails](/blog/what-to-do-when-parents-dont-respond-to-calls) covers the specific steps to take and how to document your attempts clearly.
 
 The short version: document every attempt with a date and method, try multiple channels, and loop in your administrator after three documented attempts with no response. You cannot force a parent to engage, but you can prove you tried.
 
@@ -75,7 +75,7 @@ The problem is almost always documentation. If you cannot show a log with dates 
 
 [What to Do When a Parent Says You Never Called](/blog/what-to-do-when-parent-says-you-never-called) walks through how to handle the moment when it happens and how to build a documentation habit that prevents it from happening again.
 
-The related issue is the paper trail itself. [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) explains what to record, how often, and what format actually holds up when things escalate.
+The related issue is the contact record itself. [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) explains what to record, how often, and what format actually holds up when things escalate.
 
 A free template to get started: [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers).
 

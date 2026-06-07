@@ -12,7 +12,7 @@ faq:
   - q: "How do you tell a parent their child has behavior problems without causing conflict?"
     a: "Frame it as sharing observations, not reporting problems. Use specific, neutral language about what happened. Include what you're already doing to support the student. End with an invitation for the parent to share their perspective. Parents respond better when they feel like partners, not defendants."
   - q: "Should you email or call parents about behavior issues?"
-    a: "Call when the situation is serious, emotional, or likely to escalate. Email when you want a paper trail or are sharing a pattern over time. After any phone call about behavior, always send a brief follow-up email summarizing what was discussed and agreed upon."
+    a: "Call when the situation is serious, emotional, or likely to escalate. Email when you want a written record or are sharing a pattern over time. After any phone call about behavior, always send a brief follow-up email summarizing what was discussed and agreed upon."
 ---
 
 Writing behavior emails to parents can feel harder than it should be.
@@ -64,7 +64,7 @@ For example:
 
 That gives a clear picture without sounding harsh or emotional. You don't need a long explanation. You just need a clear one.
 
-Specific and objective also protects you. If a parent later disputes the communication, "needed several reminders to begin independent reading at 9:40 AM" is a lot harder to argue with than "was distracted."
+Specific and objective also keeps the conversation grounded. If the details ever come up again, "needed several reminders to begin independent reading at 9:40 AM" gives everyone a clear reference point, where "was distracted" leaves room for interpretation.
 
 ## Add Context Without Making Excuses
 

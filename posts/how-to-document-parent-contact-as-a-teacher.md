@@ -64,7 +64,7 @@ Instead of scrambling or getting defensive, you calmly open your log. You turn y
 
 The parent looks at the screen. The anger deflates. The conversation pivots from "why did you not tell me" to "how do we fix this." The confrontation is over in thirty seconds.
 
-That is the power of a good log. It protects your peace and keeps the focus on the student.
+That is the power of a good log. It keeps the conversation grounded and keeps the focus on the student.
 
 ---
 

@@ -10,7 +10,7 @@ faq:
   - q: "Are behavior tracking apps free for teachers?"
     a: "Several behavior tracking apps offer free tiers. ShortHand is free to start with no credit card required. ClassDojo is free but requires parents to use the app. BehaviorSnap and Class Charts have limited free versions. PBIS Rewards requires a school license."
   - q: "What is the difference between ClassDojo and ShortHand?"
-    a: "ClassDojo is a parent communication and student engagement tool built around a points system. ShortHand is a behavior documentation tool built for fast logging, parent contact records, and IEP-ready data. ClassDojo is best for elementary classroom culture; ShortHand is best when you need a real paper trail."
+    a: "ClassDojo is a parent communication and student engagement tool built around a points system. ShortHand is a behavior documentation tool built for fast logging, parent contact records, and IEP-ready data. ClassDojo is best for elementary classroom culture; ShortHand is best when you need a complete, searchable contact record."
   - q: "Do behavior tracking apps work for special education teachers?"
     a: "It depends on the app. BehaviorSnap is built specifically for formal ABC data collection used in IEPs and behavior intervention plans. ShortHand works well for general education teachers who serve students with IEPs and need timestamped notes and parent contact logs. PBIS Rewards requires a school-wide rollout."
 ---
@@ -55,7 +55,7 @@ Where it breaks down: ClassDojo isn't really a *documentation* tool. It's a comm
 
 It also requires parents to opt in and engage with the app, which works great in some school communities and barely at all in others.
 
-**The gap:** Great for daily classroom culture, not great for building a paper trail.
+**The gap:** Great for daily classroom culture, not great for building a searchable behavior record.
 
 ---
 

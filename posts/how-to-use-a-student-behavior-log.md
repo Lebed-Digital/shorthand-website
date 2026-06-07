@@ -35,7 +35,7 @@ Instead, establish specific logging check-ins. I recommend three times a day:
 - **During independent work time:** Use this quiet time to record observations while students are working.
 - **At the end of the day:** Spend five minutes summarizing any major behavioral concerns before you head home.
 
-By bundling your documentation into these short windows, you protect your instructional time and build a sustainable habit.
+By bundling your documentation into these short windows, you keep your instructional time intact and build a sustainable habit.
 
 If you are looking for a physical format to start this routine, you can download our [free behavior log template for teachers](/blog/free-behavior-log-template-for-teachers) to keep on your desk.
 
@@ -81,6 +81,6 @@ This is why we built ShortHand.
 
 ShortHand is a digital student behavior log designed to fit into the cracks of your school day. You can log behaviors, track accommodations, and document parent contacts in just a few taps on any device.
 
-ShortHand organizes your notes into a clean, searchable timeline automatically. When IEP meetings or parent conferences arrive, you do not have to search through folders or notes. You have a professional, complete record ready to share, allowing you to advocate for your students and protect your own time.
+ShortHand organizes your notes into a clean, searchable timeline automatically. When IEP meetings or parent conferences arrive, you do not have to search through folders or notes. You have a professional, complete record ready to share, so you can focus on the conversation instead of the paperwork.
 
 Try ShortHand today and simplify your classroom tracking.

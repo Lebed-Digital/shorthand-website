@@ -10,7 +10,7 @@ faq:
   - q: "How do you write a professional email to parents about behavior?"
     a: "Use this structure: a brief warm opening, a specific description of the behavior (what, when, where), the context around it, what you're already doing to support the student, and an invitation for the parent to respond. Keep it under 150 words. Calm, factual language works better than emotional language even when the situation is frustrating."
   - q: "When should you email vs. call a parent about behavior?"
-    a: "Call when the situation is emotional, escalating, or likely to be misunderstood in writing. Email when you want a paper trail, are sharing a pattern over time, or are following up after a verbal conversation. After any phone call about behavior, send a brief summary email within 24 hours to document what was discussed and agreed upon."
+    a: "Call when the situation is emotional, escalating, or likely to be misunderstood in writing. Email when you want a written record, are sharing a pattern over time, or are following up after a verbal conversation. After any phone call about behavior, send a brief summary email within 24 hours to document what was discussed and agreed upon."
   - q: "How do you email a parent about bad behavior without causing conflict?"
     a: "Focus on the behavior, not the child's character. Use observable language ('had difficulty staying on task') rather than judgments ('was difficult'). Include what you're doing to help and frame it as a partnership. Starting with a positive or neutral opener before naming the concern also reduces defensiveness."
 ---
@@ -110,7 +110,7 @@ Some conversations shouldn't happen over email. If a student's behavior involves
 
 **Use this immediately after a phone call or meeting. Crucial for documentation.**
 
-This is the most underused template on the list. After any verbal conversation about a student's behavior, send a brief summary email within 24 hours. This protects you, creates a shared record, and holds both parties accountable to what was agreed.
+This is the most underused template on the list. After any verbal conversation about a student's behavior, send a brief summary email within 24 hours. It creates a shared record and holds both parties accountable to what was agreed.
 
 **Subject:** Summary of our conversation regarding [Student Name]
 

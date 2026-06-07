@@ -10,7 +10,7 @@ faq:
   - q: "How do you write a classroom management plan that actually works?"
     a: "Keep it simple enough to execute under pressure. If you cannot follow your consequence ladder during a lesson while 25 other students are watching, it is too complicated. Pair your plan with a quick logging habit so you have evidence of patterns when you need to escalate to a parent or administrator."
   - q: "Do new teachers need a classroom management plan?"
-    a: "Yes, and it matters more in your first three years than at any other point. Without a plan, you make inconsistent decisions under stress, which students notice immediately. A written plan also protects you if a parent questions how you handled a situation."
+    a: "Yes, and it matters more in your first three years than at any other point. Without a plan, you make inconsistent decisions under stress, which students notice immediately. A written plan also gives you something concrete to point to if a parent questions how you handled a situation."
   - q: "How is a classroom management plan different from a behavior intervention plan?"
     a: "A classroom management plan applies to your whole class: the rules, expectations, and consequences that govern everyone. A behavior intervention plan (BIP) is an individualized document for a specific student, usually tied to a special education evaluation or an IEP. Most teachers need both: a class-wide plan for the group and individual documentation for students with persistent patterns."
   - q: "What is a good classroom management plan example?"
@@ -202,7 +202,7 @@ Yes. Both templates are suitable for demonstrating your classroom management phi
 
 **Do I need to share my plan with parents?**
 
-It is strongly recommended. Sending home a signed copy in the first week creates shared accountability and protects you if a parent later questions how you handled a situation. It also signals that you take classroom management seriously.
+It is strongly recommended. Sending home a signed copy in the first week creates shared accountability and gives everyone a clear reference point if questions come up later. It also signals that you take classroom management seriously.
 
 **What if a student has an IEP or behavior plan?**
 

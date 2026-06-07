@@ -87,7 +87,7 @@ Having the conversation is only the first step. What you do immediately after th
 
 As soon as you hang up, you must document the conversation. Record the date, the time, the parent's response, and any agreements you made.
 
-If you agreed to check in weekly or to try a specific classroom accommodation, write it down. Having a clear record protects you, helps track if the intervention is working, and ensures everyone is on the same page for future meetings.
+If you agreed to check in weekly or to try a specific classroom accommodation, write it down. Having a clear record helps track if the intervention is working and ensures everyone is on the same page for future meetings.
 
 If you need to follow up in writing to summarize the call, you can reference our guide on [5 sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior) to write a professional follow-up note in minutes.
 

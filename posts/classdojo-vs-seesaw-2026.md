@@ -6,7 +6,7 @@ author: "Gregory Lebed"
 excerpt: "Both apps have changed a lot. Here's an honest side-by-side based on real teacher feedback, plus what teachers are actually switching to when neither one fits."
 faq:
   - q: "Is ClassDojo better than Seesaw for behavior tracking?"
-    a: "ClassDojo is better for behavior tracking because it has a dedicated points-based system that parents see in real time. Seesaw focuses on student portfolios and has very limited behavior tracking. If behavior documentation is your main need, neither is ideal — teachers who need a proper paper trail typically use a dedicated tool like ShortHand."
+    a: "ClassDojo is better for behavior tracking because it has a dedicated points-based system that parents see in real time. Seesaw focuses on student portfolios and has very limited behavior tracking. If behavior documentation is your main need, neither is ideal — teachers who need a complete, searchable contact record typically use a dedicated tool like ShortHand."
   - q: "Can I use both ClassDojo and Seesaw at the same time?"
     a: "Technically yes, but most teachers who try it end up burning out on notifications and parent confusion. Parents get frustrated managing two apps. A better approach is to pick the one that matches your primary need: Seesaw for portfolio-style learning documentation, ClassDojo for whole-class culture and points."
   - q: "Does Seesaw have a free plan in 2026?"
