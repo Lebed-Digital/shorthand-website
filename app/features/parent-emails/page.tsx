@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Ready-to-Send Parent Emails | ShortHand',
@@ -62,12 +63,7 @@ export default function ParentCommunicationPage() {
         <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_parent-emails">Get Started Free →</TrackedLink>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved.</div>
-      </footer>
+      <Footer />
     </>
   );
 }
