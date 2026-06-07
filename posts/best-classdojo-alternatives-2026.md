@@ -6,7 +6,7 @@ author: "Gregory Lebed"
 excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest ranking of the best ClassDojo alternatives in 2026, based on what's actually frustrating you about Dojo."
 faq:
   - q: "What is the best ClassDojo alternative for upper elementary teachers?"
-    a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that points don't create a real paper trail for IEP meetings or parent disputes."
+    a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that points don't create a real documentation record for IEP meetings or parent conferences."
   - q: "Is there a free ClassDojo alternative?"
     a: "Yes. Remind is free and handles parent messaging without requiring parents to create accounts. Seesaw has a free tier for individual teachers. ShortHand offers a free plan for individual classroom use. Most ClassDojo alternatives are free at the individual teacher level — costs typically kick in at the school or district level."
   - q: "What ClassDojo alternative is best for behavior documentation?"
@@ -27,7 +27,7 @@ The reasons tend to cluster into a few categories:
 
 **Grade level.** The avatar and points system works well in K-2. By 3rd or 4th grade, the gamification stops landing. Your most complex students checked out of their monster avatar in October. (Somewhere out there a ClassDojo character is still waiting for points that are never coming.)
 
-**Documentation.** ClassDojo wasn't built for professional record-keeping. Points aren't a paper trail. When you need to show a behavioral pattern at an IEP meeting, a screenshot of colored bubbles won't hold up.
+**Documentation.** ClassDojo wasn't built for professional record-keeping. Points aren't a documentation record. When you need to show a behavioral pattern at an IEP meeting, a screenshot of colored bubbles won't give you what you need.
 
 **Parent dependency.** ClassDojo's communication features only work if parents download the app and actually use it. In some communities that happens. In others, you spend the year sending updates into a void.
 
