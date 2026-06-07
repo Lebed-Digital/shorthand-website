@@ -338,7 +338,7 @@ export default function Home() {
             {[
               { emoji: '✉️', label: 'I need parent email help', href: '/features/parent-emails' },
               { emoji: '🔄', label: "I'm replacing ClassDojo", href: '/classdojo-alternative' },
-              { emoji: '📋', label: 'I need behavior documentation', href: '/features/behavior-tracking' },
+              { emoji: '📋', label: 'I need behavior documentation', href: '/features/quick-note' },
               { emoji: '📊', label: 'I need a report card tool', href: '/free-tool' },
             ].map(({ emoji, label, href }) => (
               <Link
