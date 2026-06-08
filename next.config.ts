@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/best-behavior-management-apps-for-teachers-2026',
         permanent: true,
       },
+      {
+        source: '/features/attendance',
+        destination: '/',
+        permanent: true,
+      },
     ];
   },
   async headers() {

@@ -23,7 +23,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/features/class-insights`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/parent-emails`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/attendance`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/classdojo-alternative`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/free-tool`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/tools/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
