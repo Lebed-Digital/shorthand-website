@@ -55,7 +55,7 @@ export default function AIReportsPage() {
           Your voice. Your observations. No more Sunday paperwork.
         </p>
 
-        <FeatureVideo videoId="VsuP_59xxT0" title="AI Reports walkthrough" start={21} />
+        <FeatureVideo videoId="VsuP_59xxT0" title="AI Reports walkthrough" start={21} hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

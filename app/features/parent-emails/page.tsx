@@ -45,7 +45,7 @@ export default function ParentCommunicationPage() {
           Need something more formal? Generate a detailed behavior report from the same notes in one click.
         </p>
 
-        <FeatureVideo videoId="-XqwrCCw60M" title="AI parent email generation walkthrough" />
+        <FeatureVideo videoId="-XqwrCCw60M" title="AI parent email generation walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

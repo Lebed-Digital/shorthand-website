@@ -50,7 +50,7 @@ export default function NeverMissPage() {
         </p>
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
 
-        <FeatureVideo videoId="tg4oiw9Q_js" title="Never Miss a Student: ShortHand" />
+        <FeatureVideo videoId="tg4oiw9Q_js" title="Never Miss a Student: ShortHand" hideControls />
       </div>
 
       <FeatureNav current="behavior-tracking" />

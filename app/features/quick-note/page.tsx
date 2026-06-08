@@ -65,7 +65,7 @@ export default function QuickNotePage() {
           The faster it is to log, the more you&apos;ll actually do it.
         </p>
 
-        <FeatureVideo videoId="lZkyGdULBtM" title="Quick Note walkthrough" />
+        <FeatureVideo videoId="lZkyGdULBtM" title="Quick Note walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

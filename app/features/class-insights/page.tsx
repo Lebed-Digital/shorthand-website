@@ -51,7 +51,7 @@ export default function ProgressInsightsPage() {
         </p>
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
 
-        <FeatureVideo videoId="LpHWRvwh31k" title="Progress and Insights: ShortHand" />
+        <FeatureVideo videoId="LpHWRvwh31k" title="Progress and Insights: ShortHand" hideControls />
       </div>
 
       <FeatureNav current="class-insights" />
