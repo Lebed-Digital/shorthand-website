@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -49,14 +50,7 @@ export default function NeverMissPage() {
         </p>
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
 
-        <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/tg4oiw9Q_js?enablejsapi=1"
-            title="Never Miss a Student: ShortHand"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <FeatureVideo videoId="tg4oiw9Q_js" title="Never Miss a Student: ShortHand" />
       </div>
 
       <FeatureNav current="behavior-tracking" />

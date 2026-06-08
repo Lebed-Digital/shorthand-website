@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -50,14 +51,7 @@ export default function ProgressInsightsPage() {
         </p>
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
 
-        <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/LpHWRvwh31k?enablejsapi=1"
-            title="Progress and Insights: ShortHand"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <FeatureVideo videoId="LpHWRvwh31k" title="Progress and Insights: ShortHand" />
       </div>
 
       <FeatureNav current="class-insights" />

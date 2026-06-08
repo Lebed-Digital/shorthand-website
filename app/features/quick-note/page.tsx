@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -64,14 +65,7 @@ export default function QuickNotePage() {
           The faster it is to log, the more you&apos;ll actually do it.
         </p>
 
-        <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/lZkyGdULBtM?enablejsapi=1"
-            title="Quick Note walkthrough"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <FeatureVideo videoId="lZkyGdULBtM" title="Quick Note walkthrough" />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

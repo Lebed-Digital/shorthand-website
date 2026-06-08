@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -54,14 +55,7 @@ export default function AIReportsPage() {
           Your voice. Your observations. No more Sunday paperwork.
         </p>
 
-        <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/VsuP_59xxT0?enablejsapi=1&start=21"
-            title="AI Reports walkthrough"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <FeatureVideo videoId="VsuP_59xxT0" title="AI Reports walkthrough" start={21} />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

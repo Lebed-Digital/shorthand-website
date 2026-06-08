@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -44,14 +45,7 @@ export default function ParentCommunicationPage() {
           Need something more formal? Generate a detailed behavior report from the same notes in one click.
         </p>
 
-        <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/-XqwrCCw60M?enablejsapi=1"
-            title="AI parent email generation walkthrough"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+        <FeatureVideo videoId="-XqwrCCw60M" title="AI parent email generation walkthrough" />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
