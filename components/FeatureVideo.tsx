@@ -6,13 +6,14 @@ interface FeatureVideoProps {
   videoId: string;
   title: string;
   start?: number;
+  hideControls?: boolean;
 }
 
-export default function FeatureVideo({ videoId, title, start }: FeatureVideoProps) {
+export default function FeatureVideo({ videoId, title, start, hideControls }: FeatureVideoProps) {
   const [playing, setPlaying] = useState(false);
 
   const thumbUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-  const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${start ? `&start=${start}` : ''}`;
+  const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${hideControls ? '&controls=0' : ''}${start ? `&start=${start}` : ''}`;
 
   return (
     <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
