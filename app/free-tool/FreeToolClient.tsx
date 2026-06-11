@@ -365,7 +365,7 @@ export default function FreeToolClient() {
 
         <div style={{ textAlign: 'center', marginTop: 32 }}>
           <p style={{ fontSize: 13, color: '#cbd5e1', marginBottom: 4 }}>Built by a teacher, for teachers.</p>
-          <p style={{ fontSize: 14, color: '#e2e8f0', fontWeight: 600, marginBottom: 12, lineHeight: 1.5 }}>This generator helps you write report cards. ShortHand helps you remember what to write.</p>
+          <p style={{ fontSize: 14, color: '#e2e8f0', fontWeight: 600, marginBottom: 12, lineHeight: 1.8 }}>This generator helps you write report cards.<br />ShortHand helps you remember what to write.</p>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.25)' }}>
             See how ShortHand works →
           </Link>
