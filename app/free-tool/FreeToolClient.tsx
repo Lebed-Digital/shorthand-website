@@ -220,8 +220,11 @@ export default function FreeToolClient() {
           <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
             Report Card Comment Generator
           </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
             Free · No sign-up · Ready in 10 seconds
+          </p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
+            Here from the videos? The jokes are fake. These comments are real.
           </p>
         </div>
       </div>
@@ -361,9 +364,10 @@ export default function FreeToolClient() {
         )}
 
         <div style={{ textAlign: 'center', marginTop: 32 }}>
-          <p style={{ fontSize: 13, color: '#94a3b8', marginBottom: 12 }}>Built by a teacher, for teachers.</p>
+          <p style={{ fontSize: 13, color: '#94a3b8', marginBottom: 4 }}>Built by a teacher, for teachers.</p>
+          <p style={{ fontSize: 13, color: '#64748b', marginBottom: 12 }}>Report cards are easier when you have been documenting all year.</p>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.08)', color: '#e2e8f0', fontWeight: 600, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.12)' }}>
-            Visit ShortHand →
+            See how ShortHand works →
           </Link>
         </div>
       </div>
