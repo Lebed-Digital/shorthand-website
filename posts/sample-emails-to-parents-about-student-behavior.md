@@ -3,6 +3,10 @@ title: "5 Sample Emails to Parents About Student Behavior (Copy-Paste Ready)"
 subtitle: "Copy-paste scripts for the emails teachers write over and over"
 date: "2026-04-15"
 author: "Gregory Lebed"
+relatedPosts:
+  - "how-to-document-student-behavior-as-a-teacher"
+  - "student-behavior-log-for-teachers"
+  - "free-parent-communication-log-for-teachers"
 excerpt: "Copy-paste behavior email templates for teachers. Five ready-to-send scripts for the parent emails you write over and over, without spending your evening staring at a blank screen."
 faq:
   - q: "What should I write in a behavior email to parents?"

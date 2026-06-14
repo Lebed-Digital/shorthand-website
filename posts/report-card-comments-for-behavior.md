@@ -3,6 +3,10 @@ title: "Report Card Comments for Behavior: 120+ Examples You Can Use Today"
 subtitle: "Stop staring at a blank cursor. Here are the behavior comments that actually hold up."
 date: "2026-04-26"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-students-with-adhd"
+  - "report-card-comments-for-students-with-behavior-problems"
+  - "free-report-card-comment-generator"
 excerpt: "Writing behavior report card comments is the hardest part of the job. Here are 120+ real examples organized by situation - strong behavior, ongoing concerns, impulsivity, focus, IEPs, and students with behavior problems. Copy them, adapt them, and get it done."
 faq:
   - q: "What should I write for behavior on a report card?"

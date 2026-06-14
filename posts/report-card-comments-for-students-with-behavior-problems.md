@@ -3,6 +3,10 @@ title: "Report Card Comments for Students With Behavior Problems (50+ Examples)"
 subtitle: "Professional, specific, and honest comments you can actually use this grading period."
 date: "2026-05-26"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-behavior"
+  - "report-card-comments-for-students-with-adhd"
+  - "how-to-document-student-behavior-as-a-teacher"
 excerpt: "Writing honest behavior comments without triggering a parent complaint is one of the hardest parts of report cards. Here are 50+ examples that are professional, specific, and actually say what you mean."
 faq:
   - q: "How do you write report card comments for students with behavior problems?"

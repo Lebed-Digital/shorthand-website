@@ -3,6 +3,10 @@ title: "10 Strength-Based Report Card Comments for Students with ADHD"
 subtitle: "Write honest, professional, and growth-oriented comments that support your neurodiverse learners."
 date: "2026-05-15"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-behavior"
+  - "report-card-comments-for-students-with-behavior-problems"
+  - "how-to-write-behavior-comments-on-report-card"
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
 ---
 

@@ -3,6 +3,10 @@ title: "Report Card Comments for Behavior: Preschool and Pre-K Examples"
 subtitle: "Age-appropriate language for the hardest comments you will write all year."
 date: "2026-03-29"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-behavior"
+  - "report-card-comments-for-students-with-behavior-problems"
+  - "how-to-write-behavior-comments-on-report-card"
 excerpt: "Writing report card comments for preschool behavior is different from K-8. Here are age-appropriate examples for sharing, turn-taking, emotional regulation, and more."
 faq:
   - q: "How do you write report card comments for preschool behavior?"
