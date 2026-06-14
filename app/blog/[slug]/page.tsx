@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AnimatedLogo from '../../../components/AnimatedLogo';
-import { getAllPosts, getPost } from '../../../lib/posts';
+import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -34,6 +34,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   } catch {
     notFound();
   }
+
+  const allPosts = getAllPosts();
+  const relatedPosts = getRelatedPosts(slug, allPosts);
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -141,6 +144,57 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                 </div>
               </details>
             ))}
+          </div>
+        )}
+
+        {relatedPosts.length > 0 && (
+          <div style={{ marginTop: '3.5rem' }}>
+            <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-dim)' }}>
+              Keep Reading
+            </h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+              {relatedPosts.map((rp) => {
+                const wordCount = rp.excerpt ? rp.excerpt.split(/\s+/).length * 8 : 800;
+                const readTime = Math.max(3, Math.round(wordCount / 200));
+                return (
+                  <Link
+                    key={rp.slug}
+                    href={`/blog/${rp.slug}`}
+                    style={{ textDecoration: 'none', display: 'block' }}
+                  >
+                    <div style={{
+                      padding: '1.25rem',
+                      background: 'rgba(255,255,255,0.03)',
+                      border: '1px solid rgba(255,255,255,0.08)',
+                      borderRadius: '12px',
+                      height: '100%',
+                      transition: 'border-color 0.2s, background 0.2s',
+                    }}
+                      onMouseEnter={(e) => {
+                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.2)';
+                        (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.06)';
+                      }}
+                      onMouseLeave={(e) => {
+                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.08)';
+                        (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)';
+                      }}
+                    >
+                      <p style={{ fontSize: '0.7rem', color: 'var(--text-dim)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+                        {readTime} min read
+                      </p>
+                      <p style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', lineHeight: 1.35, margin: 0 }}>
+                        {rp.title}
+                      </p>
+                      {rp.excerpt && (
+                        <p style={{ fontSize: '0.82rem', color: 'var(--text-dim)', marginTop: '0.5rem', lineHeight: 1.5, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                          {rp.excerpt}
+                        </p>
+                      )}
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         )}
 
