@@ -23,7 +23,7 @@ After 20+ years in K-8 classrooms and a Registered Behavior Technician certifica
 
 Here are five copy-paste templates for sample emails to parents about student behavior - so you can clear your inbox and get home on time.
 
-![A teacher sitting at her desk after school typing a behavior email to a parent](/teacher-writing-email.png)
+![An exhausted teacher staring at a blank parent behavior email while classroom notes become an organized message](/blog-illustrations/parent-behavior-email-blank-cursor.png)
 
 ## Why Parent Behavior Emails Matter More Than You Think
 
