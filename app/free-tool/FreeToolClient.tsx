@@ -353,7 +353,7 @@ export default function FreeToolClient() {
                 ShortHand lets you log quick notes on students throughout the year, then turn those notes into polished reports in one tap. No more starting from scratch each term.
               </p>
               <Link
-                href="/install"
+                href="https://app.getshorthandapp.com"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
               >
                 Try ShortHand free →
