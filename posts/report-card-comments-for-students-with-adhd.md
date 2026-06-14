@@ -8,6 +8,8 @@ excerpt: "Looking for report card comments for students with ADHD? Here are 10 s
 
 Writing report card comments is always a balancing act, but writing them for your neurodiverse students can feel like walking a tightrope. You want to be honest about their academic and behavioral challenges, but you also want to celebrate their strengths and preserve their self-esteem.
 
+![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
+
 As a teacher with over twenty years of classroom experience and a former Registered Behavior Technician certification, I have written thousands of these. I know how easy it is to fall back on comments like "needs to stay focused" or "frequently off task."
 
 However, comments like that do not tell the whole story.
