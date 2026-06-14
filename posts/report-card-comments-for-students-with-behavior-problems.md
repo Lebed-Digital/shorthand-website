@@ -17,6 +17,8 @@ faq:
 
 It is late on a Sunday night, the report card portal closes in 48 hours, and you are staring at a blank text box trying to figure out how to say a student throws a pencil every time you ask them to do independent reading. You want to be honest with the parents, but you also do not want an angry email waiting in your inbox on Monday morning. Writing report card comments for students with behavior problems is easily one of the most draining parts of the job because you are constantly trying to balance clinical accuracy with professional diplomacy. You just want to write a comment that actually reflects the daily reality of your classroom without starting a war.
 
+![A tired teacher turning rough classroom behavior notes into a careful report card comment draft](/blog-illustrations/report-card-behavior-problems-sunday-draft.png)
+
 ## Why Behavior Comments Feel So Risky
 
 The anxiety we feel when writing report card comments about behavior is completely real. When we talk about reading levels or math facts, we have hard data to back us up, but behavior feels deeply personal to a family. Parents often read feedback about their child's conduct as a direct reflection on their parenting, which immediately puts them on the defensive.
