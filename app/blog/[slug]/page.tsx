@@ -162,23 +162,14 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                     href={`/blog/${rp.slug}`}
                     style={{ textDecoration: 'none', display: 'block' }}
                   >
-                    <div style={{
+                    <div className="blog-related-card" style={{
                       padding: '1.25rem',
                       background: 'rgba(255,255,255,0.03)',
                       border: '1px solid rgba(255,255,255,0.08)',
                       borderRadius: '12px',
                       height: '100%',
                       transition: 'border-color 0.2s, background 0.2s',
-                    }}
-                      onMouseEnter={(e) => {
-                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.2)';
-                        (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.06)';
-                      }}
-                      onMouseLeave={(e) => {
-                        (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.08)';
-                        (e.currentTarget as HTMLElement).style.background = 'rgba(255,255,255,0.03)';
-                      }}
-                    >
+                    }}>
                       <p style={{ fontSize: '0.7rem', color: 'var(--text-dim)', marginBottom: '0.4rem', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
                         {readTime} min read
                       </p>
