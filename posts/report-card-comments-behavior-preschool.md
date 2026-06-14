@@ -31,6 +31,8 @@ I have taught for over 20 years. I know that preschool report card examples requ
 
 You have to be honest but gentle. Here is how to write report card comments behavior for preschool without crushing a parent.
 
+![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.png)
+
 ## Why report card comments behavior for preschool are different
 
 A third grader refusing to share is a discipline issue. A three-year-old refusing to share is a developmental stage.
