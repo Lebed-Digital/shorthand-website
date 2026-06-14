@@ -355,6 +355,14 @@ export default function FreeToolClient() {
               <Link
                 href="https://app.getshorthandapp.com"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
+                onClick={() => {
+                  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
+                    (window as any).gtag('event', 'cta_click', {
+                      event_category: 'free_tool',
+                      event_label: 'try_shorthand_free',
+                    });
+                  }
+                }}
               >
                 Try ShortHand free →
               </Link>
