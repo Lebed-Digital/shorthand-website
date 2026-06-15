@@ -49,8 +49,8 @@ export default function PrivacyPage() {
             <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', marginBottom: '1rem' }}>The short version</div>
             <ul style={{ margin: 0, padding: '0 0 0 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.6rem', color: 'var(--text-dim)', lineHeight: 1.6 }}>
               <li><strong style={{ color: 'var(--text)' }}>We only collect what you put in.</strong> ShortHand doesn't gather browsing data, device fingerprints, or anything beyond what you actively type or import.</li>
-              <li><strong style={{ color: 'var(--text)' }}>Your data is encrypted.</strong> Everything is stored with AES-256 encryption in a SOC 2 Type II certified data center. Data in transit is protected by HTTPS.</li>
-              <li><strong style={{ color: 'var(--text)' }}>We never see student names.</strong> Student records are locked behind your login. Row-level security means only your account can access your students, not us, not other teachers.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Your data is encrypted.</strong> All data is stored on Supabase, which is SOC 2 Type II certified and encrypts data at rest with AES-256. Data in transit is protected by HTTPS.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Other teachers can&apos;t see your students.</strong> Row-level security means every query is scoped to your account only — no other teacher can access your data. As the operator, I technically have access to the database, but I commit to never looking at your data unless you ask me to (for example, to help fix a problem).</li>
               <li><strong style={{ color: 'var(--text)' }}>We comply with the Student Privacy Pledge.</strong> We do not sell student data, use it for advertising, or share it with third parties beyond what's needed to run the app.</li>
             </ul>
           </div>
@@ -95,7 +95,7 @@ export default function PrivacyPage() {
               We do not use student data for advertising.<br /><br />
               We do not share your data with third parties except the services required to run the app
               (Supabase for database and auth, Groq and Together AI for AI features, Vercel for hosting, Upstash for rate limiting).<br /><br />
-              We do not allow anyone other than you to access your students' information.
+              No other teacher can access your students' information. As the operator, I can access the database directly if needed for support, but I will never do so without your request.
             </div>
           </div>
 
@@ -103,8 +103,8 @@ export default function PrivacyPage() {
             <div className="privacy-icon">🔐</div>
             <div className="privacy-title">How We Protect Your Data</div>
             <div className="privacy-desc">
-              All student data is stored in a SOC 2 Type II compliant data center with AES-256 encryption.<br /><br />
-              All data is stored with Row Level Security (RLS) enabled, meaning every query is scoped to your account only. No teacher can see another teacher's data.<br /><br />
+              All student data is stored on Supabase, which is SOC 2 Type II certified and encrypts all data at rest with AES-256.<br /><br />
+              All data is stored with Row Level Security (RLS) enabled, meaning every query is scoped to your account only — no other teacher can see your data. As the operator, I technically have access to the database, but I commit to never looking at your data unless you ask me to (for example, to help fix a problem).<br /><br />
               All communication between the app and our servers uses HTTPS encryption.<br /><br />
               API endpoints require authentication. Your session token is verified on every request.
             </div>
