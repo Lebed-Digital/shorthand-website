@@ -80,8 +80,9 @@ export default function PrivacyPage() {
             <div className="privacy-icon">🤖</div>
             <div className="privacy-title">How ShortHand Uses AI</div>
             <div className="privacy-desc">
-              Some features (like generating report comments and parent messages) use AI to turn your notes into polished text. For these, ShortHand sends note content using students&apos; first names only — last names are not included.<br /><br />
-              Two features — roster import and birthday import — work by reading names and parent contact details (names, emails, phone numbers) from text you paste in, so those details are sent to our AI provider to be organized. This data is processed only by Groq, our primary AI provider, which is contractually prohibited from storing it, training on it, or using it for any purpose beyond providing the service. These sensitive features never fall back to any other provider; if Groq is unavailable, the import is processed on your device without sending anything to AI, or it simply pauses until Groq is back.<br /><br />
+              ShortHand uses AI for two different kinds of tasks, and we handle each differently depending on how sensitive the data is.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Polishing your notes (reports, parent messages, summaries).</strong> When you generate a report comment, parent message, or note summary, ShortHand sends the note content using students&apos; first names only — last names are never included, and parent contact details are never sent. These features use Groq as our primary AI provider, with Together AI as a backup if Groq is temporarily unavailable. Both providers are configured so your data is not used to train their models.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Organizing pasted lists (roster import, birthday import).</strong> These two features work by reading the text you paste in — which may include full student names, parent names, emails, and phone numbers — and organizing it into clean records. Because making sense of that messy text is the feature, the full pasted content is sent to AI. To protect this more sensitive data, these imports are processed by Groq only — they never fall back to any other provider. Groq is contractually prohibited from storing this data, training on it, or using it for any purpose beyond providing the service. If Groq is unavailable, roster import switches to basic on-device parsing (names only, no AI), and birthday import pauses until Groq is back — in neither case is your data sent to any other AI provider.<br /><br />
               We never send student or parent data to AI for advertising or model training, and we don&apos;t sell your data.
             </div>
           </div>
@@ -93,7 +94,7 @@ export default function PrivacyPage() {
               We do not sell your data or student data to anyone. Ever.<br /><br />
               We do not use student data for advertising.<br /><br />
               We do not share your data with third parties except the services required to run the app
-              (Supabase for database and auth, Groq for AI features, Vercel for hosting, Upstash for rate limiting).<br /><br />
+              (Supabase for database and auth, Groq and Together AI for AI features, Vercel for hosting, Upstash for rate limiting).<br /><br />
               We do not allow anyone other than you to access your students' information.
             </div>
           </div>
@@ -127,6 +128,7 @@ export default function PrivacyPage() {
               ShortHand uses the following third-party services to operate:<br /><br />
               <strong style={{ color: 'var(--text)' }}>Supabase:</strong> database and authentication (<a href="https://supabase.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Groq:</strong> AI language model processing (<a href="https://groq.com/privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>Together AI:</strong> backup AI provider for report and message generation (<a href="https://www.together.ai/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Vercel:</strong> hosting and deployment (<a href="https://vercel.com/legal/privacy-policy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Google:</strong> Google Classroom integration, optional (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)
             </div>
