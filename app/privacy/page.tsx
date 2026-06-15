@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           This policy explains exactly what we collect, why, and how we protect it.
         </p>
         <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          Last updated: March 2026
+          Last updated: June 2026
         </p>
       </div>
 
@@ -72,7 +72,17 @@ export default function PrivacyPage() {
               <strong style={{ color: 'var(--text)' }}>Your account:</strong> Your email address and password (managed securely by Supabase Auth).<br /><br />
               <strong style={{ color: 'var(--text)' }}>Student data you enter:</strong> Student names, class periods, behavioral notes, birthday info, parent contact details, and photo URLs, all entered or imported by you.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Google Classroom (optional):</strong> If you connect Google Classroom, we access your course list and student names, emails, and profile photos to help you import your roster. We store a token to keep you connected. You can disconnect at any time.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>AI features:</strong> When you use AI-generated reports or summaries, the relevant notes are sent to our AI provider (Groq) to generate the response. AI providers process your data only to deliver the service — they&apos;re contractually prohibited from using it for any other purpose, including improving their own models.
+              <strong style={{ color: 'var(--text)' }}>AI features:</strong> Some features use AI to turn your notes into polished text. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
+            </div>
+          </div>
+
+          <div className="privacy-card">
+            <div className="privacy-icon">🤖</div>
+            <div className="privacy-title">How ShortHand Uses AI</div>
+            <div className="privacy-desc">
+              Some features (like generating report comments and parent messages) use AI to turn your notes into polished text. For these, ShortHand sends note content using students&apos; first names only — last names are not included.<br /><br />
+              Two features — roster import and birthday import — work by reading names and parent contact details (names, emails, phone numbers) from text you paste in, so those details are sent to our AI provider to be organized. This data is processed only by Groq, our primary AI provider, which is contractually prohibited from storing it, training on it, or using it for any purpose beyond providing the service. These sensitive features never fall back to any other provider; if Groq is unavailable, the import is processed on your device without sending anything to AI, or it simply pauses until Groq is back.<br /><br />
+              We never send student or parent data to AI for advertising or model training, and we don&apos;t sell your data.
             </div>
           </div>
 
