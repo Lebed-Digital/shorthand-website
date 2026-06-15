@@ -207,7 +207,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <footer>
         <div className="footer-logo">ShortHand</div>
         <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
+        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
         <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Privacy Policy</a></div>
       </footer>
     </>

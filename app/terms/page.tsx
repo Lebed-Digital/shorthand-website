@@ -78,14 +78,14 @@ export default function TermsPage() {
         <p>We may update these Terms from time to time. Continued use of the App after changes are posted constitutes your acceptance of the revised Terms.</p>
 
         <h2>10. Contact</h2>
-        <p>Questions about these Terms? Contact us at <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>hello@getshorthandapp.com</a>.</p>
+        <p>Questions about these Terms? Contact us at <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a>.</p>
 
       </div>
 
       <footer>
         <div className="footer-logo">ShortHand</div>
         <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
+        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
         <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Privacy Policy</a> · <a href="/terms" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Terms of Service</a></div>
       </footer>
     </>

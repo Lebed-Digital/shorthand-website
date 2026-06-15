@@ -96,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "name": "ShortHand",
           "url": "https://getshorthandapp.com",
           "logo": "https://getshorthandapp.com/icon.png",
-          "email": "hello@getshorthandapp.com",
+          "email": "info@getshorthandapp.com",
           "sameAs": [
             "https://www.tiktok.com/@shorthandapp",
             "https://www.instagram.com/getshorthand_app/"

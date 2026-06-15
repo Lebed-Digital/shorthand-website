@@ -150,7 +150,7 @@ export default function PrivacyPage() {
             <div className="privacy-desc">
               Need a Data Processing Agreement (DPA) for district approval?{' '}
               <Link href="/dpa" style={{ color: 'var(--accent)' }}>View our DPA →</Link><br /><br />
-              <strong style={{ color: 'var(--text)' }}>Canadian teachers:</strong> Our DPA includes a section addressing PIPEDA and provincial privacy laws (BC FIPPA, Quebec Law 25). Data is stored on US servers. Schools with data residency requirements should <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>contact us</a> before signing up.
+              <strong style={{ color: 'var(--text)' }}>Canadian teachers:</strong> Our DPA includes a section addressing PIPEDA and provincial privacy laws (BC FIPPA, Quebec Law 25). Data is stored on US servers. Schools with data residency requirements should <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>contact us</a> before signing up.
             </div>
           </div>
 
@@ -159,7 +159,7 @@ export default function PrivacyPage() {
             <div className="privacy-title">Contact</div>
             <div className="privacy-desc">
               Questions about this policy or your data? Reach out anytime:<br /><br />
-              <a href="mailto:hello@getshorthandapp.com" style={{ color: 'var(--accent)' }}>hello@getshorthandapp.com</a><br /><br />
+              <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a><br /><br />
               We're a small team and we'll respond personally.
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
       <footer>
         <div className="footer-logo">ShortHand</div>
         <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:hello@getshorthandapp.com" className="footer-email">hello@getshorthandapp.com</a>
+        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
         <div className="footer-copy">© 2026 ShortHand. All rights reserved.</div>
       </footer>
     </>
