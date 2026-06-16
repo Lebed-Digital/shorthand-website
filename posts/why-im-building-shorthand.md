@@ -77,4 +77,4 @@ If you're a teacher who feels like you're constantly dropping the ball on docume
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He teaches 3rd grade math and science in New Jersey.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He teaches 3rd grade math and science in New Jersey.*

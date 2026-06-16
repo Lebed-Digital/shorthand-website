@@ -68,7 +68,7 @@ ShortHand drafts the message right from my notes. It looks at the log I have bui
 
 If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or head directly over to the [install page](/install) to set it up right now. It runs perfectly on any device without going through an app store. You can also read more of my thoughts on classroom survival over on the [blog](/blog).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
 
 
 *Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

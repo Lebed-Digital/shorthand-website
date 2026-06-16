@@ -127,4 +127,4 @@ No avatars. No monster haircuts. Just documentation that holds up when you need 
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to solve the documentation problems he faced in his own classroom.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to solve the documentation problems he faced in his own classroom.*

@@ -23,7 +23,7 @@ It is 3:45 PM. You are exhausted, your coffee is a cold memory, and you are star
 
 The blank screen fatigue is real. You want to be honest without being alarming, and professional without sounding like a robot.
 
-After 20+ years in K-8 classrooms and a Registered Behavior Technician certification, I learned that the best parent behavior emails are short, objective, and collaborative. I stopped reinventing the wheel and started using scripts.
+After 20+ years in K-8 classrooms and my time as a Registered Behavior Technician, I learned that the best parent behavior emails are short, objective, and collaborative. I stopped reinventing the wheel and started using scripts.
 
 Here are five copy-paste templates for sample emails to parents about student behavior - so you can clear your inbox and get home on time.
 
@@ -194,7 +194,7 @@ The templates above are useful. But the real unlock is having the documentation 
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 ---
 

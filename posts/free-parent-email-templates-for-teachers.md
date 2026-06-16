@@ -220,4 +220,4 @@ The templates above are useful. The real unlock is having the documentation to f
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers document faster and communicate better, without burning an hour on emails every afternoon.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers document faster and communicate better, without burning an hour on emails every afternoon.*

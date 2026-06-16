@@ -23,7 +23,7 @@ The problem is not the format of the log. The problem is the strategy.
 
 Documenting behavior is not about writing down every single whisper or lost pencil. It is about capturing the right data, at the right time, in a way that is sustainable for a busy human being.
 
-As a teacher with twenty years in K-8 classrooms and a former Registered Behavior Technician certification, I have learned how to make documentation work. Here is my practical guide on how to actually use a behavior log day-to-day.
+As a teacher with twenty years in K-8 classrooms and a former Registered Behavior Technician, I have learned how to make documentation work. Here is my practical guide on how to actually use a behavior log day-to-day.
 
 ## When to Log: Establishing a Routine
 

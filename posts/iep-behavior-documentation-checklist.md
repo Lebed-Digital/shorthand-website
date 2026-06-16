@@ -101,7 +101,7 @@ You just tap a button when an incident occurs. When it is time for the IEP meeti
 
 Stop stressing over data collection. Get ready for your next IEP meeting at [Try ShortHand free →](/install).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 
 *Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

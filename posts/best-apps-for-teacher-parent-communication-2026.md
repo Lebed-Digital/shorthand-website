@@ -79,4 +79,4 @@ But if your biggest headache is documentation and finding the time to write thou
 
 You can try it out for yourself by visiting the [install page](/install). It is completely free for individual teachers and you do not need IT approval to get started. If you want more thoughts on surviving the school year without losing your mind, you can check out my other posts on the [blog](/blog).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*

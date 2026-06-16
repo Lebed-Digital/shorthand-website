@@ -10,7 +10,7 @@ If you've ever found yourself staring at a search bar typing "ClassDojo alternat
 
 You're expected to track every behavior, mood, and academic win - but you don't actually have the time or the brain-space to do it.
 
-As a 3rd-grade teacher with 20+ years in K-8 classrooms (and a Registered Behavior Technician certification I actually use), I hit a wall where my system wasn't just failing - it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
+As a 3rd-grade teacher with 20+ years in K-8 classrooms and a former Registered Behavior Technician, I hit a wall where my system wasn't just failing - it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
 
 ## 1. Your Students Outgrew the Gamification
 
@@ -88,7 +88,7 @@ It isn't a ClassDojo replacement in the sense of trying to do everything ClassDo
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to solve the documentation problems he faced in his own classroom.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to solve the documentation problems he faced in his own classroom.*
 
 
 *Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

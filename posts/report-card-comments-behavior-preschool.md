@@ -117,4 +117,4 @@ When you sit down to write your report cards, all your data is ready. You can ea
 
 Make report card time easier on yourself. Try ShortHand today at [Try ShortHand free →](/install). Or use the [free report card comment generator](/free-tool) to draft comments instantly, no sign-up needed.
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

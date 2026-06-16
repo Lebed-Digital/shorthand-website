@@ -10,15 +10,13 @@ relatedPosts:
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
 ---
 
-Writing report card comments is always a balancing act, but writing them for your neurodiverse students can feel like walking a tightrope. You want to be honest about their academic and behavioral challenges, but you also want to celebrate their strengths and preserve their self-esteem.
+Writing report card comments is always a balancing act, but writing them for neurodiverse students can feel like walking a tightrope. You want to be honest about academic and behavioral challenges while also recognizing strengths and preserving self-esteem.
 
 ![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
 
-As a teacher with over twenty years of classroom experience and a former Registered Behavior Technician certification, I have written thousands of these. I know how easy it is to fall back on comments like "needs to stay focused" or "frequently off task."
+As a teacher and former Registered Behavior Technician, I've written hundreds of report card comments over the years. As a parent of a neurodiverse child, I've also seen firsthand how much the wording of those comments matters. It's easy to fall back on phrases like "needs to stay focused" or "frequently off task," but comments like that rarely tell the whole story.
 
-However, comments like that do not tell the whole story.
-
-A student with ADHD is not choosing to be unfocused. Their brain is simply wired differently. When we frame their struggles as moral failures or character flaws, we miss an opportunity to support their growth.
+A student with ADHD is not choosing to be unfocused. Their brain is simply wired differently. When we frame their struggles as character flaws rather than challenges they are learning to manage, we miss an opportunity to support their growth.
 
 Instead, our comments should focus on observable behaviors, highlight strategies that work, and offer a positive path forward.
 

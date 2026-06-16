@@ -68,7 +68,7 @@ If you're tired of the Friday reporting marathon, [try ShortHand for free](/inst
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a Registered Behavior Technician (RBT) certification.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
 
 
 *Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*
