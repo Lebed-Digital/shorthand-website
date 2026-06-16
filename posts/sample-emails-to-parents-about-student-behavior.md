@@ -25,6 +25,8 @@ The blank screen fatigue is real. You want to be honest without being alarming, 
 
 After 20+ years in K-8 classrooms and my time as a Registered Behavior Technician, I learned that the best parent behavior emails are short, objective, and collaborative. I stopped reinventing the wheel and started using scripts.
 
+As a parent of a neurodiverse child, I've also experienced these emails from the other side. The messages that helped me most were the ones that described what happened clearly, avoided labels, and focused on solutions. Parents do not need perfection. They need information they can understand and act on.
+
 Here are five copy-paste templates for sample emails to parents about student behavior - so you can clear your inbox and get home on time.
 
 ![An exhausted teacher staring at a blank parent behavior email while classroom notes become an organized message](/blog-illustrations/parent-behavior-email-blank-cursor.png)
@@ -33,7 +35,7 @@ Here are five copy-paste templates for sample emails to parents about student be
 
 Before the templates - a quick word on why this communication is worth doing well.
 
-Parent emails about behavior aren't just administrative tasks. They're relationship investments. A teacher who reaches out proactively (before things escalate) builds the kind of trust that makes hard conversations much easier later. A parent who hears from you only when things are bad will be defensive. A parent who hears from you regularly - wins and losses - becomes a partner.
+Parent emails about behavior aren't just administrative tasks. They're relationship investments. A teacher who reaches out proactively (before things escalate) builds the kind of trust that makes hard conversations much easier later. A parent who only hears from school when something goes wrong may naturally feel anxious or defensive. A parent who hears from you regularly - wins and losses - becomes a partner.
 
 The other thing: written communication creates a record. If a behavior escalates, if you're sitting in an IEP meeting six months from now, if anyone asks what was communicated and when - you have it. These emails are your documentation as much as they are communication.
 
