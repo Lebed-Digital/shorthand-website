@@ -10,6 +10,8 @@ If you have been teaching for more than a week, you already know the feeling. Yo
 
 But when the parent asks for specific examples, your mind goes blank. You stammer out something vague about them being off-task. The parent crosses their arms. You look like you are exaggerating. In that moment, you realize the hardest truth of teaching. If it is not written down, it simply did not happen.
 
+I learned that lesson the hard way. Early in my teaching career, I relied almost entirely on memory. I always assumed I would remember the important incidents, the parent phone calls, and the patterns that seemed obvious in the moment. Then a meeting would come around weeks later and I would realize I was trying to reconstruct events from memory alone. That frustration eventually became one of the main reasons I built ShortHand.
+
 Learning how to document student behavior is not something they teach you in your education program. They teach you theories about classroom management. They do not teach you how to keep a clear, organized behavior record while simultaneously teaching thirty-two middle schoolers how to find the area of a circle.
 
 ![A stressed teacher in a parent meeting trying to remember behavior details while dated notes create a clear timeline](/blog-illustrations/parent-meeting-memory-test.png)
@@ -25,6 +27,8 @@ The biggest mistake teachers make is waiting for behavior to become severe befor
 You tell yourself you will remember what happened. A student makes a highly inappropriate comment during third period. You are in the middle of a lesson, so you handle it verbally and tell yourself you will write it down during your planning period.
 
 But then fourth period happens. Then a student throws up in the hallway. Then you have recess duty. By the time your planning period finally arrives, you are just trying to grade a stack of quizzes and go to the bathroom. The exact phrasing the student used is gone from your memory. You decide it was not that big of a deal anyway. Two weeks later, when that same student does something much worse, you have no record of the escalating behavior.
+
+That may not sound important until you're sitting across from a parent, administrator, or support team trying to explain what happened. Small details disappear quickly. The problem is not that teachers are careless. The problem is that we process hundreds of interactions every day and memory has limits.
 
 ### The Fear of Being Dramatic
 
@@ -64,7 +68,9 @@ Avoid words like angry, aggressive, malicious, or lazy. These are judgments. Ins
 
 You should start logging behavior the moment a student requires more than a standard, whole-class redirection. If you have to specifically use a student's name to correct behavior more than twice in one class period, start a log.
 
-It is always better to have notes you never need than to need notes you never wrote. Start documenting early in the year. If a student is constantly out of their seat in September, document it. If they talk over you every time you give instructions, document it. This early documentation is gold when you are trying to get a student tested for an IEP or when you need to justify moving their seat away from their friends.
+It is always better to have notes you never need than to need notes you never wrote. Over the years, I've never regretted having too much documentation. I have absolutely regretted assuming I would remember something later.
+
+Start documenting early in the year. If a student is constantly out of their seat in September, document it. If they talk over you every time you give instructions, document it. This early documentation is gold when you are trying to get a student tested for an IEP or when you need to justify moving their seat away from their friends.
 
 ## Making Documentation Sustainable
 
