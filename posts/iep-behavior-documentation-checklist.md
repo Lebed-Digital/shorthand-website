@@ -76,7 +76,7 @@ Do not rely on vague teacher speak. Simply state the truth.
 
 "I do not have formal data on that specific issue right now." Then, offer a solution.
 
-"I will begin tracking that behaviour tomorrow and send you an update next week." Notice the British spelling of behaviour there.
+"I will begin tracking that behavior tomorrow and send you an update next week."
 
 The IEP process is universal. If you need a system for tracking, learn [how to track student behavior data](/blog/how-to-track-student-behavior-data) before your next meeting.
 

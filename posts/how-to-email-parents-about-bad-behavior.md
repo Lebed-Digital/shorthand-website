@@ -22,11 +22,11 @@ Kids are humans. They have bad days just like adults do. Maybe they did not slee
 
 A pattern is entirely different. If a student is repeatedly struggling with the same thing, you need to loop the parents in immediately. You do not want them to be blindsided later in the term. If you wait until parent-teacher conferences to drop a bomb, you have already lost their trust. 
 
-I always look for the rule of three. If an issue happens three times in a single week, it is a pattern. That is exactly when I start drafting my email parents about student behavior. 
+I always look for the rule of three. If an issue happens three times in a single week, it is a pattern. That is exactly when I start drafting my email to parents about student behavior. 
 
-## The Difference Between a Bad Day and Bad Behaviour
+## The Difference Between a Bad Day and a Pattern
 
-Let's talk about the difference between a rough afternoon and a trend of bad behaviour. Yes, I used the British spelling there. We get a lot of teachers from the UK reading this blog, and the concept applies everywhere. 
+Let's talk about the difference between a rough afternoon and a pattern of bad behavior.
 
 A rough afternoon is when Jackson snaps at a peer during recess because he lost a game of four square. You pull him aside. He apologizes. It is over. You do not need to email his mom about that specific incident. 
 
@@ -54,7 +54,7 @@ When you write with facts, parents cannot argue with your perspective. They migh
 | Student throws a chair when asked to do writing | Pattern | Document and contact parents immediately |
 | Student refuses to work with a specific partner today | Bad day | Separate them for the lesson and monitor |
 
-## Drafting Your email parents about student behavior
+## Drafting Your Email to Parents About Student Behavior
 
 Start with a positive. Always. Even if the kid was an absolute terror that day, you can find something good. Find one positive thing they did and put it in the very first sentence. 
 

@@ -22,7 +22,7 @@ Teacher speak happens when we are stressed. We summarize a complex issue into a 
 
 When you use a label, the parent has to guess what it means. Your definition of "disrespectful" might be very different from their definition. This leads to endless back-and-forth emails where nobody is actually talking about the same problem. 
 
-If you want a smoother experience when sending email to parents about behavior, you must drop the labels. You need to describe the specific trend of bad behaviour. You will notice that British spelling of behaviour. The struggle with vague teacher speak is global. 
+If you want a smoother experience when sending email to parents about behavior, you must drop the labels. You need to describe the specific trend of bad behavior. 
 
 ## Phrase 1: "He has an attitude"
 

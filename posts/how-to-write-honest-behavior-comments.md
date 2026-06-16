@@ -79,11 +79,11 @@ You have to be very careful with the word aggression. Describe the physical acti
 
 "Emma is practicing safe play on the playground. She needs reminders to keep her hands to herself."
 
-## A better way to track bad behaviour
+## A better way to track behavior
 
 Writing these comments is awful when you have no data. You cannot remember what happened in October when you are grading in December.
 
-Yes, bad behaviour happens all year. That is exactly why I built ShortHand.
+Yes, bad behavior happens all year. That is exactly why I built ShortHand.
 
 It lets you track specific incidents with a few taps. When report card time comes, you have a complete log of objective data.
 

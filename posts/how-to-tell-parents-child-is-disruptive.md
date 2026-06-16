@@ -71,7 +71,7 @@ Could you chat with him tonight about the importance of quiet work time? I would
 
 ## An email to parents about disruptive behavior that affects others
 
-Sometimes the disruption is physical. A student might be wandering the room or touching other kids' materials. This is a trend of bad behaviour that needs immediate attention. Note the British spelling of behaviour there. It is a universal problem.
+Sometimes the disruption is physical. A student might be wandering the room or touching other kids' materials. This is a pattern that needs immediate attention.
 
 Here is a behavior email to parents template for physical disruption. 
 

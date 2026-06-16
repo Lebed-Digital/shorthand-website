@@ -25,7 +25,7 @@ The biggest mistake you can make when emailing parents about academic concerns i
 
 Instead, position yourself and the parent on the same side of the table, looking at the problem together. Use collaborative language. Say, "I want to share some observations so we can support Mia together." Frame the struggle as a skill gap, not a character flaw. This approach lowers the parent's guard and invites them to collaborate with you.
 
-When you frame it this way, you make the parent feel like an essential partner in their child's education. If you are also dealing with behavioral challenges alongside the academic ones, you might want to look at [sample emails to parents about student behavior](https://getshorthandapp.com/posts/sample-emails-to-parents-about-student-behavior) to see how to maintain a collaborative tone across different issues.
+When you frame it this way, you make the parent feel like an essential partner in their child's education. If you are also dealing with behavioral challenges alongside the academic ones, you might want to look at [sample emails to parents about student behavior](https://getshorthandapp.com/blog/sample-emails-to-parents-about-student-behavior) to see how to maintain a collaborative tone across different issues.
 
 ### Use Objective Data, Not Impressions
 
@@ -33,13 +33,13 @@ Do not rely on vague observations. Saying "Mia seems lost during math" or "Mia i
 
 Instead, bring the data. Mention specific assessments, work samples, and classroom benchmarks. For example, write, "On our weekly multiplication check, Mia scored 2 out of 10. The grade-level goal is 8 out of 10." State the facts of what you have observed in class, such as, "During independent writing, Mia is able to write one sentence in ten minutes, whereas the expectation is a short paragraph."
 
-This objective description makes the problem concrete and undeniable. When academics and classroom behavior intersect, the same data-first approach applies to [how to write behavior emails to parents](https://getshorthandapp.com/posts/how-to-write-behavior-emails-to-parents). When you share data, you show parents that your concern is based on evidence, not a subjective opinion.
+This objective description makes the problem concrete and undeniable. When academics and classroom behavior intersect, the same data-first approach applies to [how to write behavior emails to parents](https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents). When you share data, you show parents that your concern is based on evidence, not a subjective opinion.
 
 ### Invite Parents in with Actionable Steps
 
 When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. Most parents are exhausted after work and are not trained educators.
 
-Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it. If missing homework is part of the academic picture, you may also want to send a separate [email about missing assignments](https://getshorthandapp.com/posts/sample-emails-to-parents-about-missing-homework) that covers the work gap specifically, so the academic concern email stays focused on skills rather than habits.
+Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it. If missing homework is part of the academic picture, you may also want to send a separate [email about missing assignments](https://getshorthandapp.com/blog/sample-emails-to-parents-about-missing-homework) that covers the work gap specifically, so the academic concern email stays focused on skills rather than habits.
 
 ### 2 Copy-Paste Academic Concern Templates
 
@@ -77,7 +77,7 @@ I am reaching out to discuss [Student Name]'s academic progress in math and to s
 
 [Student Name] has shown great effort in class, but they are currently performing significantly below grade level in math. On our unit assessments for fractions, [Student Name] scored a 45%, and they are struggling to complete grade-level tasks independently.
 
-I want to ensure [Student Name] has the support they need to be successful. I would like to schedule a 15-minute meeting this week so we can look at some of their work samples together and create a collaborative support plan. If you want to read more about what to actually say once you are in that meeting, [what to say at a parent-teacher conference](https://getshorthandapp.com/posts/what-to-say-at-parent-teacher-conference) covers how to present concerns and next steps without the conversation going off the rails.
+I want to ensure [Student Name] has the support they need to be successful. I would like to schedule a 15-minute meeting this week so we can look at some of their work samples together and create a collaborative support plan. If you want to read more about what to actually say once you are in that meeting, [what to say at a parent-teacher conference](https://getshorthandapp.com/blog/what-to-say-at-parent-teacher-conference) covers how to present concerns and next steps without the conversation going off the rails.
 
 Here are a few times I am available:
 
@@ -91,4 +91,4 @@ Thank you for your partnership,
 
 [Your Name]
 
-If the first email leads to a meeting request, use [how to prepare for a parent-teacher conference](https://getshorthandapp.com/posts/how-to-prepare-for-parent-teacher-conference) to walk into that room with your data organized and a plan in hand. And start logging every email you send in a [parent communication log](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers). If the concern escalates to an IEP conversation or a difficult phone call, that documentation record is what shows the school you flagged the issue early and communicated consistently.
+If the first email leads to a meeting request, use [how to prepare for a parent-teacher conference](https://getshorthandapp.com/blog/how-to-prepare-for-parent-teacher-conference) to walk into that room with your data organized and a plan in hand. And start logging every email you send in a [parent communication log](https://getshorthandapp.com/blog/free-parent-communication-log-for-teachers). If the concern escalates to an IEP conversation or a difficult phone call, that documentation record is what shows the school you flagged the issue early and communicated consistently.

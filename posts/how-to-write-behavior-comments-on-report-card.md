@@ -61,7 +61,7 @@ There are certain words that act like giant red flags for parents and administra
 
 For 50+ copy-paste examples organized by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems).
 
-## How to Write Behaviour Comments When There Has Been Real Documentation
+## How to Write Behavior Comments When There Has Been Real Documentation
 
 When your report card comments match an ongoing record of documented observations, parent meetings go differently. A parent can see that the comment is not a judgment made in one bad week. It is the summary of a pattern that was tracked, noted, and in many cases already communicated to the family.
 

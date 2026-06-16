@@ -59,20 +59,6 @@ If a parent brings up a complex issue that needs a longer conversation, do not l
 
 To keep a clear record of these conversations and any follow-up commitments, it helps to have a system for [documenting parent contact throughout the year](/blog/how-to-document-parent-contact-as-a-teacher).
 
-## FAQ
-
-**What should a teacher prepare before a parent teacher conference?**
-Prepare a dedicated student folder containing recent assessment data, work samples showing both academic strengths and gaps, a running log of behavior patterns, and a list of specific goals.
-
-**How do you start a parent teacher conference?**
-Begin by welcoming the parent warmly and sharing a specific, positive observation or a short success story about their child to build a cooperative team atmosphere immediately.
-
-**What do you say at a parent teacher conference when things are going well?**
-Highlight the student's progress with clear assessment data, celebrate their social contributions to the classroom, and ask the parent about the child's interests outside of school.
-
-**How long should a parent teacher conference last?**
-A typical parent teacher conference lasts between fifteen and twenty minutes, providing enough time to review academic progress and align on next steps.
-
 ## Moving Forward
 
 Conferences get much easier when you have been tracking communication and notes consistently throughout the year. Instead of scrambling to reconstruct what happened over the past few months, you just open your records.

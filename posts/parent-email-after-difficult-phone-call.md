@@ -23,11 +23,11 @@ It is the last thing you want to do when you are emotionally exhausted. Your bra
 
 In my early years of teaching, I thought a phone call was the best way to handle conflict because it was more personal. While phone calls are great for dialogue, they are terrible for documentation. Memory is highly subjective. Under stress, people hear what they want to hear. A parent who was shouting on the phone might later tell the principal that you were aggressive, or they might claim you promised to waive a classroom rule when you did no such thing.
 
-A written follow-up sent within an hour of the call establishes a shared record while the conversation is still fresh. If there is confusion later about what was said or agreed upon, the email is the reference point for everyone. It keeps your administrator informed and gives the parent a clear summary they can refer back to. Learning [how to document parent contact as a teacher](https://getshorthandapp.com/posts/how-to-document-parent-contact-as-a-teacher) is a vital skill for surviving the school year.
+A written follow-up sent within an hour of the call establishes a shared record while the conversation is still fresh. If there is confusion later about what was said or agreed upon, the email is the reference point for everyone. It keeps your administrator informed and gives the parent a clear summary they can refer back to. Learning [how to document parent contact as a teacher](https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher) is a vital skill for surviving the school year.
 
 ### What to Include in Your Follow-Up
 
-Your follow-up email must be a concise, objective summary of the conversation. Do not write a transcript. Stick to the facts. If the call ended with a request for an in-person meeting, read [how to prepare for a parent-teacher conference](https://getshorthandapp.com/posts/how-to-prepare-for-parent-teacher-conference) before that meeting so you walk in with documentation already organized.
+Your follow-up email must be a concise, objective summary of the conversation. Do not write a transcript. Stick to the facts. If the call ended with a request for an in-person meeting, read [how to prepare for a parent-teacher conference](https://getshorthandapp.com/blog/how-to-prepare-for-parent-teacher-conference) before that meeting so you walk in with documentation already organized.
 
 1. State the date, time, and purpose of the call.
 2. Outline the main points discussed. Keep it neutral. Use phrases like, "We discussed [Student Name]'s difficulty during recess," or "You shared your concerns regarding the homework load."
@@ -40,7 +40,7 @@ If you struggle with the phone call itself, using a structured [parent phone cal
 
 When you are writing after a tense call, you must filter out your emotions. Do not include your opinions, your justifications, or any defensive arguments. If the parent said something hurtful, do not reference it. Do not write, "Even though you raised your voice, I am still willing to work with you." This will only reignite the conflict.
 
-Instead, act like a court reporter. Stick to observable facts. If the parent is completely unresponsive, you should know [what to do when parents don't respond to calls](https://getshorthandapp.com/posts/what-to-do-when-parents-dont-respond-to-calls) so you can continue documenting your attempts. For a hard call, your goal is simply to document that the call occurred, state what was said, and list the next steps.
+Instead, act like a court reporter. Stick to observable facts. If the parent is completely unresponsive, you should know [what to do when parents don't respond to calls](https://getshorthandapp.com/blog/what-to-do-when-parents-dont-respond-to-calls) so you can continue documenting your attempts. For a hard call, your goal is simply to document that the call occurred, state what was said, and list the next steps.
 
 ### 2 Copy-Paste Follow-Up Templates
 
@@ -89,4 +89,4 @@ Sincerely,
 
 [Your Name]
 
-Before you close this tab, start logging these calls somewhere permanent. A [free parent communication log](https://getshorthandapp.com/posts/free-parent-communication-log-for-teachers) gives you a timestamped record of every call, email, and meeting in one place. When a parent later claims you never called, or an administrator asks what steps you took, you pull up the log. That is the documentation that saves you. If you are also dealing with academic struggles connected to the behavior issues that sparked the call, [how to email parents about academic concerns](https://getshorthandapp.com/posts/how-to-email-parents-about-academic-concerns) walks through how to frame that follow-up conversation without putting parents on the defensive.
+Before you close this tab, start logging these calls somewhere permanent. A [free parent communication log](https://getshorthandapp.com/blog/free-parent-communication-log-for-teachers) gives you a timestamped record of every call, email, and meeting in one place. When a parent later claims you never called, or an administrator asks what steps you took, you pull up the log. That is the documentation that saves you. If you are also dealing with academic struggles connected to the behavior issues that sparked the call, [how to email parents about academic concerns](https://getshorthandapp.com/blog/how-to-email-parents-about-academic-concerns) walks through how to frame that follow-up conversation without putting parents on the defensive.
