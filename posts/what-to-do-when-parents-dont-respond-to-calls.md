@@ -77,7 +77,7 @@ Eventually that silent parent will show up. It usually happens after report card
 
 This is where your documentation habit pays off entirely.
 
-You do not argue. You simply pull up your log. You calmly show them the six contact attempts you made over three weeks: the exact dates and times, the voicemails, the emails. That conversation ends immediately. The anger deflates. The focus returns to helping the student.
+You do not argue. You open your phone and scroll through the log. You calmly show them the six contact attempts you made over three weeks: the exact dates and times, the voicemails, the emails. That conversation ends immediately. The anger deflates. The focus returns to helping the student.
 
 ---
 

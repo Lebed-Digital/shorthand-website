@@ -47,7 +47,7 @@ Here are a few examples of how to shift your language from blunt to professional
 
 **The blunt thought:** He throws a tantrum whenever he gets a math problem wrong.
 
-**The professional pivot:** Student experiences frustration when facing challenging academic tasks, which can lead to shut down behavior. When given a short break, he is increasingly able to return to his work and try again.
+**The professional pivot:** Student experiences frustration when facing challenging academic tasks, which can lead to shutting down. When given a short break, he is increasingly able to return to his work and try again.
 
 ## 50+ Report Card Comments for Students With Behavior Problems
 

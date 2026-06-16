@@ -47,7 +47,7 @@ Let the parents and the special education case manager speak first. Take active 
 
 ### Share Your Data Objectively
 
-When it is your turn to speak, stick strictly to the facts. Instead of saying a student is lazy, state clearly that they have completed exactly two out of ten homework assignments this quarter. Present the physical work samples you gathered. Be clear, remain professional, and always speak with compassion.
+When it is your turn to speak, stick strictly to the facts. Instead of saying a student is lazy, state clearly that they have completed exactly two out of ten homework assignments this quarter. Present the physical work samples you gathered. Say what you observed. Let the data do the persuading.
 
 ### Track the Action Items
 
