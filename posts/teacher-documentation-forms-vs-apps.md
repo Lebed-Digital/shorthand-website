@@ -12,6 +12,8 @@ For decades, the paper documentation form has been the gold standard for teacher
 
 It is time to have an honest conversation about how we track student behavior. We need to look closely at the classic paper binder and compare it to modern documentation apps. Because when you are exhausted on a Friday afternoon, the tool you use determines whether you go home on time or stay until six o'clock deciphering your own handwriting.
 
+I used the binder system for years. Like most teachers, I started with the best intentions. Every August, I had a fresh set of forms, neatly organized tabs, and a plan to document everything. By November, reality had taken over. Notes were scattered across sticky notes, scraps of paper, and the backs of worksheets. The issue wasn't laziness. The issue was that the system required more organization than a normal school day allows.
+
 ## The Appeal of the Classic Documentation Binder
 
 The appeal of the binder is real. There is a tangible comfort in holding your data in your hands. Here is why paper forms have survived this long.
@@ -28,7 +30,11 @@ But this organization is often an illusion. The system works perfectly until Oct
 
 ## Where the Binder System Breaks Down
 
-The real problem with paper documentation is not the writing part. The problem is the retrieval part. Paper systems fail catastrophically when you actually need to use the data you collected.
+The real problem with paper documentation is not the writing part. The problem is the retrieval part.
+
+That realization eventually changed the way I thought about documentation. Recording information was never the hard part. Finding it later was. Most teachers can write a note. The challenge is finding the right note, for the right student, at the exact moment someone asks for it.
+
+Paper systems fail catastrophically when you actually need to use the data you collected.
 
 Imagine this scenario. It is a busy Tuesday afternoon. A parent calls the principal, furious about a grade you gave their child. The principal calls you into the office and asks for the communication history.
 
@@ -50,7 +56,7 @@ Switching to a digital documentation system changes the entire landscape of your
 
 This is the absolute game changer. When you use a digital system, you can instantly search for a student's name. You do not have to flip through pages.
 
-If you are in an IEP meeting and a specialist asks about a student's behavior in October, you just type the student's name into your app. Every single interaction, behavior note, and parent phone call appears instantly on your screen. Using ShortHand means you can confidently read off exact quotes and dates without breaking a sweat. It makes you look incredibly professional and prepared, and it completely shuts down any arguments about what actually happened.
+If you are in an IEP meeting and a specialist asks about a student's behavior in October, you just type the student's name into your app. Every single interaction, behavior note, and parent phone call appears instantly on your screen. Using ShortHand means you can confidently read off exact quotes and dates without breaking a sweat. It allows you to answer questions with confidence because you're working from records instead of memory.
 
 ### Undeniable Timestamps
 
