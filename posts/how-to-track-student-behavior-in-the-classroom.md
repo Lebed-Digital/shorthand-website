@@ -12,6 +12,8 @@ But here's the thing: tracking student behavior matters. It helps struggling kid
 
 The problem isn't that teachers don't want to track behavior. It's that most systems are too slow, too complicated, or just not built for the pace of a real classroom.
 
+That realization is what eventually led me to build ShortHand. For years, I tried all the usual solutions: clipboards, sticky notes, spreadsheets, and half-finished behavior trackers. The problem was never understanding that documentation mattered. The problem was finding a system I could actually use while teaching. If a tool only worked after school, I wasn't going to use it consistently during the school day.
+
 This post breaks down how to actually do it, without drowning in paperwork or spending money on tools that require a training day.
 
 ---
@@ -27,6 +29,8 @@ When you track consistently, you start to notice things like:
 - Three kids are struggling every time you introduce a new math concept on Mondays
 
 Those patterns are invisible if you're only writing things down after a blowup. Consistent tracking gives you data you can actually use, for IEP meetings, parent conferences, referrals, or just adjusting your own schedule.
+
+I've also learned that behavior tracking is often less about behavior and more about memory. Most teachers can remember what happened today. The challenge is remembering what happened three weeks ago when a parent, administrator, or support team starts asking questions. A simple log turns fuzzy memories into usable information.
 
 It also keeps you organized when questions come up. "Why wasn't I told about this sooner?" is a lot easier to answer when you have a log with dates and specific observations.
 
