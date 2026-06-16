@@ -19,6 +19,8 @@ faq:
 
 If you are a teacher looking for a classroom management app, you have probably narrowed it down to ClassDojo or Seesaw. Both have been around for years, but teachers have real complaints about how clunky they have gotten lately. Let us look at which one is actually worth your time in 2026.
 
+I've used both systems in real classrooms over the years. Like many teachers, I started with whatever tool my school recommended and tried to make it fit my workflow. What I eventually realized was that ClassDojo and Seesaw solve very different problems. The mistake many teachers make is comparing them as direct competitors when they were designed for different jobs.
+
 ## What ClassDojo Does Well (and Where It Falls Short)
 
 ClassDojo is famous for its little monsters and point system. It is great for younger grades where students need immediate visual feedback. The messaging feature makes it easy to text parents without giving out your real phone number.
@@ -45,7 +47,7 @@ The problem is the sheer volume of approvals. Every single post, comment, and li
 
 After years in the classroom, I realized I did not want more features. I just wanted something that worked without adding to my mental load. ClassDojo feels too noisy. Seesaw feels like a second inbox I have to manage.
 
-Teachers need a simple way to track behaviors, log parent communication, and keep notes. We do not need a gamified point system or a constant feed of student photos to approve. This is why I started using ShortHand. It is designed to be quiet and fast. You can track exactly what you need for your records without pinging parents every five minutes. It just gets out of your way so you can teach.
+Teachers need a simple way to track behaviors, log parent communication, and keep notes. We do not need a gamified point system or a constant feed of student photos to approve. After years in the classroom, I realized I was trying to solve a different problem entirely. I didn't need more parent engagement features or another student portfolio system. I needed a way to remember what happened with dozens of students across a busy school week. That's ultimately what led me to build ShortHand. It focuses on documentation, behavior notes, and parent communication records rather than points, feeds, badges, or portfolios.
 
 ## The Bottom Line
 
