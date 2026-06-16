@@ -27,7 +27,9 @@ It is late on a Sunday night, the report card portal closes in 48 hours, and you
 
 The anxiety we feel when writing report card comments about behavior is completely real. When we talk about reading levels or math facts, we have hard data to back us up, but behavior feels deeply personal to a family. Parents often read feedback about their child's conduct as a direct reflection on their parenting, which immediately puts them on the defensive.
 
-We also worry about setting a permanent label on a child. As a former Registered Behavior Technician, I know firsthand that behavior is just communication, not a fixed personality trait. Still, when you are exhausted at the end of a long grading period, finding the mental bandwidth to write constructive behavior comments for report cards feels almost impossible. So we often end up watering down our words, which helps nobody.
+I've also learned this from the parent side. As a parent of a neurodiverse child, I've read report card comments that left me feeling discouraged and report card comments that made me feel supported. The difference was rarely the concern being communicated. It was the wording. The most helpful comments described what was happening, explained what supports were being used, and made it clear that the teacher and family were on the same team.
+
+We also worry about setting a permanent label on a child. As a former Registered Behavior Technician, I know firsthand that behavior is communication, not a fixed personality trait. As a parent, I've seen how powerful that distinction can be. A comment that describes a behavior feels solvable. A comment that sounds like a judgment about who a child is can stay with a family long after the report card is filed away. Still, when you are exhausted at the end of a long grading period, finding the mental bandwidth to write constructive behavior comments for report cards feels almost impossible. So we often end up watering down our words, which helps nobody.
 
 ## The Formula That Works
 
