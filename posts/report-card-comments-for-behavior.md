@@ -25,9 +25,11 @@ I've been there. Every teacher has.
 
 The hardest report card comments to write are always the behavior ones. Academic progress is relatively easy to describe. But behavior? You're trying to be honest without being harsh, specific without singling a kid out, and professional without losing the parent in EdSpeak.
 
+As both a teacher and a parent of a neurodiverse child, I've seen these comments from both sides. I've written them at the end of a long school day, and I've read them wondering what they actually meant for my own child. That's one reason I've become so careful about the language I use. A good behavior comment should help a family understand what is happening and what support looks like moving forward, not leave them feeling judged.
+
 ![A tired teacher turning messy October behavior notes into a clear report card comment draft](/blog-illustrations/report-card-behavior-october-notes.png)
 
-Here's what I've learned: the best behavior comments for report cards are short, factual, and forward-looking. They tell the parent what you see, not what you feel. And they always end with a next step or a positive.
+Here's what I've learned from years in the classroom and from reading report cards as a parent: the best behavior comments are short, factual, and forward-looking. They tell the family what you see, not what you feel. They focus on observable behaviors, explain the support being provided, and leave room for growth.
 
 Below are 120+ examples organized by situation. Copy them, adapt them, make them yours.
 
