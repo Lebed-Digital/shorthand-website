@@ -23,6 +23,8 @@ Writing report card comments behavior for preschool is a unique challenge. You a
 
 You are grading developmental milestones. Preschool parents are incredibly sensitive.
 
+My years as a Registered Behavior Technician reinforced something that preschool teachers already know: many behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing, waiting, or emotional regulation is often practicing a skill, not displaying a character flaw. That perspective changes the way we write report card comments.
+
 This is often their first school experience. They are highly attached to their young children.
 
 If you use K-8 language on a Pre-K student, you will cause panic. You need positive behavior comments preschool parents can actually understand.
@@ -39,7 +41,7 @@ A third grader refusing to share is a discipline issue. A three-year-old refusin
 
 You cannot use the same language for both. Preschool teachers must focus on growth and skill acquisition.
 
-Every negative action is simply a skill they have not mastered yet. This reframe changes everything.
+Many challenging preschool behaviors are signs of skills that are still developing. This reframe changes everything.
 
 It turns a complaint into a goal. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
 
@@ -101,7 +103,7 @@ Saying goodbye to mom or dad is terrifying. We have to document that progress ge
 
 ### Areas needing growth
 
-Sometimes you have to address difficult behaviour directly. Note the British spelling.
+Sometimes you have to address difficult behavior directly.
 
 "Ethan is working on keeping a safe body when he is angry. We are practicing safe hands every day."
 
