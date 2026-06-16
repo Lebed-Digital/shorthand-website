@@ -10,6 +10,8 @@ Parent communication for students with Individualized Education Programs is not 
 
 I have spent over twenty years in K-8 classrooms. Before that, I worked as a Registered Behavior Technician. I have sat through more contentious, legally complex IEP meetings than I care to remember.
 
+One thing those experiences taught me is that people rarely disagree about events that were documented clearly. They disagree about events that everyone remembers differently. Good documentation protects the school, but it also protects the family and the student because everyone is working from the same facts.
+
 During my time as an RBT, I saw exactly what happens when teacher documentation is incomplete. A parent advocate or a lawyer sits at the table. They ask to see the contact logs regarding a spike in behaviors or a drop in grades. The room gets very quiet because the general education teacher assumed the special education case manager was handling everything. The district scrambles. It is an incredibly uncomfortable position to be in.
 
 Here is what IDEA expects and how to handle your own documentation without losing your mind.
@@ -57,6 +59,8 @@ You do not need to write a legal brief for every phone call. You do need to capt
 The case manager maintains the official legal file for the district. They document the formal meeting invitations, the procedural safeguards, and the signature pages.
 
 Your log is the operational history of what happens in your specific classroom. It proves that you actually implemented the accommodations. It proves that you informed the family when the student struggled. Your log is the supporting evidence that keeps the entire IEP compliant. When an advocate asks for proof of communication, your logs are what the principal will ask you to produce.
+
+As a classroom teacher, I know how tempting it is to assume you'll remember the important details later. In reality, by the time an annual review comes around, even significant events start to blur together. Documentation bridges that gap.
 
 ---
 
