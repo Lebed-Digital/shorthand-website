@@ -10,15 +10,13 @@ relatedPosts:
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
 ---
 
-Writing report card comments is always a balancing act, but writing them for neurodiverse students can feel like walking a tightrope. You want to be honest about academic and behavioral challenges while also recognizing strengths and preserving self-esteem.
+I have read report card comments about my own child. Comments that made me feel like the teacher saw him. Comments that made me feel like the teacher was counting down the days until June. The difference between those two experiences had almost nothing to do with whether the concerns were real. It was the wording.
+
+As a parent of a neurodiverse child, I've sat with that report card on my lap and tried to translate what "frequently off task" actually means about my kid's day, his relationships, his future. As a teacher and former Registered Behavior Technician, I know what the teacher probably meant, and I know how rarely those two understandings line up.
 
 ![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
 
-As a teacher and former Registered Behavior Technician, I've written hundreds of report card comments over the years. As a parent of a neurodiverse child, I've also seen firsthand how much the wording of those comments matters. It's easy to fall back on phrases like "needs to stay focused" or "frequently off task," but comments like that rarely tell the whole story.
-
-A student with ADHD is not choosing to be unfocused. Their brain is simply wired differently. When we frame their struggles as character flaws rather than challenges they are learning to manage, we miss an opportunity to support their growth.
-
-Instead, our comments should focus on observable behaviors, highlight strategies that work, and offer a positive path forward.
+A student with ADHD is not choosing to be unfocused. Their brain is wired differently, and report card language that treats their challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what every parent of a neurodiverse kid is actually hoping to read.
 
 Below are ten copy-and-paste comment templates that are honest, professional, and strength-based.
 

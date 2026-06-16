@@ -1,6 +1,6 @@
 ---
 title: "Classroom Management Plan Template (Free, Editable Examples)"
-date: "2026-03-16T00:00:00+00:00"
+date: "2026-03-16"
 author: "Gregory Lebed"
 excerpt: "Free classroom management plan templates for elementary and middle school teachers. Copy, edit, and actually use them — plus the one habit that keeps your plan alive past October."
 tags: ["Classroom Management", "Teacher Tips", "Free Templates"]

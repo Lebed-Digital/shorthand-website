@@ -119,4 +119,4 @@ This is why teachers use ShortHand.
 
 ShortHand makes it simple to log student behavioral incidents and parent communication in real time. Rather than digging through chaotic email folders or trying to reconstruct timelines from sticky notes, ShortHand stores everything in a secure, organized log. You have a clean record of what happened and when you communicated with families, giving you peace of mind and protecting your professional record.
 
-Explore ShortHand today to simplify your classroom documentation.
+If you want a faster way to keep that record, [ShortHand](https://getshorthandapp.com) lets you log incidents and parent contacts in seconds, right from your phone.

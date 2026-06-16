@@ -15,9 +15,9 @@ faq:
     a: "Within 24 hours, review your notes and add any action items to your task list. Send a brief follow-up email to the case manager confirming anything you committed to doing. File the notes somewhere you can retrieve them quickly if a parent disputes what was agreed. The notes are useless if you can't find them six weeks later."
 ---
 
-Attending an IEP meeting requires a massive amount of mental energy. You are listening to specialists, answering parent questions, and trying to represent your classroom accurately. With so much information flying around the table, it is incredibly easy to forget the specific details the moment you walk out the door.
+Three weeks after the IEP meeting, a parent emailed asking why the accommodation they specifically requested was not happening in the classroom. The case manager had notes. The psychologist had notes. The general ed teacher had nothing but a memory of the meeting and a vague sense that something was agreed to.
 
-Relying on your memory is a massive mistake. You need a reliable system for documenting exactly what was discussed and decided. This free iep meeting notes template provides a simple, foolproof structure to keep you organized, stay aligned with the team, and ensure the student actually receives the promised support.
+That gap is not uncommon. IEP meetings move fast. You are tracking multiple specialists, fielding parent questions, and trying to hold your own classroom observations in your head at the same time. The details that feel obvious in the moment are gone by Friday. This template is what keeps that from happening.
 
 ## Why Taking Your Own Notes is Non-Negotiable
 

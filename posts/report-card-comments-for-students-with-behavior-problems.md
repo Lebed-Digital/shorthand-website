@@ -118,16 +118,16 @@ The following examples are organized by specific area of need. Copy, paste, and 
 49. Student is practicing using her words to express her feelings instead of resorting to physical expressions of frustration.
 50. With adult support, student is getting quicker at calming down and returning to a positive state after an emotional event.
 
-### Positive Behaviour With Room to Grow
+### Positive Behavior With Room to Grow
 
 51. Student demonstrates excellent leadership qualities but needs to ensure she allows others an equal opportunity to lead.
 52. Student displays strong enthusiasm for learning and is working on channeling that energy in ways that support the whole class.
-53. Student demonstrates a solid understanding of our classroom behaviour expectations when an adult is directly present and monitoring.
+53. Student demonstrates a solid understanding of our classroom behavior expectations when an adult is directly present and monitoring.
 54. When highly motivated by the topic, student works beautifully, but she is building stamina for less preferred academic subjects.
 55. Student is incredibly helpful to the teacher and is working on applying that same positive energy toward completing his own independent assignments.
 
 ## Finding the Right Words Faster
 
-Writing these comments requires an immense amount of mental filtering. If you are looking to save some time during this report card cycle, the free [Report Card Comment Generator](https://getshorthandapp.com/free-tool) at getshorthandapp.com/free-tool lets you plug in the behaviors you are observing and instantly formats a professional, balanced comment. No sign-up required. Use it to check one more thing off your to-do list this week.
+Writing these comments requires an immense amount of mental filtering. If you are in the middle of report card season and need to move faster, the free [Report Card Comment Generator](https://getshorthandapp.com/free-tool) at getshorthandapp.com/free-tool lets you plug in the behaviors you are observing and instantly formats a professional, balanced comment. No sign-up required.
 
 For 120+ additional examples covering strong behavior, improvement, IEP students, and the comments that are hardest to write, see [Report Card Comments for Behavior](/blog/report-card-comments-for-behavior). It is organized by situation so you can jump directly to what you need.

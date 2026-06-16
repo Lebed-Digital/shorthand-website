@@ -19,19 +19,9 @@ faq:
     a: "Common preschool behavior domains include: following classroom routines, taking turns and sharing, managing transitions, listening and following directions, regulating emotions, and interacting positively with peers. These are assessed as developmental continuums, not pass/fail grades. Most preschool report cards use language like 'emerging,' 'developing,' or 'demonstrating consistently' rather than letter grades."
 ---
 
-Writing report card comments behavior for preschool is a unique challenge. You are not grading math tests.
+You are not grading math tests when you write preschool report card comments. You are describing a three-year-old's entire relationship with other humans, with frustration, with waiting, with the word "no." Preschool parents are often reading their first school document about their child, and they are going to read every word.
 
-You are grading developmental milestones. Preschool parents are incredibly sensitive.
-
-My years as a Registered Behavior Technician reinforced something that preschool teachers already know: many behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing, waiting, or emotional regulation is often practicing a skill, not displaying a character flaw. That perspective changes the way we write report card comments.
-
-This is often their first school experience. They are highly attached to their young children.
-
-If you use K-8 language on a Pre-K student, you will cause panic. You need positive behavior comments preschool parents can actually understand.
-
-I have taught for over 20 years. I know that preschool report card examples require a delicate touch.
-
-You have to be honest but gentle. Here is how to write report card comments behavior for preschool without crushing a parent.
+My years as a Registered Behavior Technician reinforced something preschool teachers already know: most behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing or emotional regulation is practicing a skill, not displaying a character flaw. That reframe changes everything about how you write these comments. If you use K-8 language on a Pre-K family, you will cause panic. Here is how to write preschool behavior comments that are honest without being alarming.
 
 ![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.png)
 
@@ -117,6 +107,6 @@ That is why I created ShortHand. You can log developmental milestones and incide
 
 When you sit down to write your report cards, all your data is ready. You can easily generate honest, professional comments.
 
-Make report card time easier on yourself. Try ShortHand today at [Try ShortHand free →](/install). Or use the [free report card comment generator](/free-tool) to draft comments instantly, no sign-up needed.
+If you want your notes already organized when report card season hits, [ShortHand](/install) lets you log developmental observations in seconds throughout the term. Or if you just need to get through this week, the [free report card comment generator](/free-tool) requires no sign-up and works immediately.
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
