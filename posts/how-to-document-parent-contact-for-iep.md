@@ -6,7 +6,7 @@ author: "Gregory Lebed"
 excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and how to stay organized."
 ---
 
-Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. If you are a classroom teacher who cannot produce clear records of your outreach, you are not just unprepared for a parent conference. You are missing the organized foundation that IEP teams depend on to make good decisions for the student. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
+Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. If you are a classroom teacher who cannot produce clear records of your outreach, you are not just unprepared for a parent conference. When the meeting starts, people are going to ask what you have seen in the classroom. If your notes live only in your memory, you are going to wish you had written them down. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
 
 I have spent over twenty years in K-8 classrooms. Before that, I worked as a Registered Behavior Technician. I have sat through more contentious, legally complex IEP meetings than I care to remember.
 
