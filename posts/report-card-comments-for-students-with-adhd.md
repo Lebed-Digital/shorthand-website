@@ -10,9 +10,9 @@ relatedPosts:
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
 ---
 
-I have read report card comments about my own child. Comments that made me feel like the teacher saw him. Comments that made me feel like the teacher was counting down the days until June. The difference between those two experiences had almost nothing to do with whether the concerns were real. It was the wording.
+As a parent of a neurodiverse child, I've learned how much wording matters. I've read report card comments that helped me understand what was actually happening at school, and I've read comments that left me wondering what the teacher even meant. The difference between those two experiences had almost nothing to do with whether the concerns were real. It was the wording.
 
-As a parent of a neurodiverse child, I've sat with that report card on my lap and tried to translate what "frequently off task" actually means about my kid's day, his relationships, his future. As a teacher and former Registered Behavior Technician, I know what the teacher probably meant, and I know how rarely those two understandings line up.
+As a teacher and former Registered Behavior Technician, I know what phrases like "frequently off task" usually mean. As a parent, I know how rarely that translation lands the way the teacher intended.
 
 ![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
 

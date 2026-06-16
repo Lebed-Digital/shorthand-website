@@ -15,9 +15,9 @@ faq:
     a: "IEPs are reviewed at least annually, with progress updates typically every quarter. As the general education teacher, you are a required member of the IEP team and should attend annual reviews. For shorter check-ins or amendment meetings, requirements vary by school and state. When in doubt, ask the case manager what your attendance obligation is for each type of meeting."
 ---
 
-I have sat in IEP meetings where the general education teacher walked in with nothing. No data, no work samples, no notes. Just impressions. The room was full of specialists who had been preparing for this meeting for weeks, and that teacher had to reconstruct the student's entire semester from memory while parents were waiting for answers.
+I've been in IEP meetings where nobody was quite sure what the classroom data actually showed. Not because teachers didn't care, but because nobody had told them what to bring, what to track, or what their role at the table actually was. The specialists had their reports. The parents had their questions. The general ed teacher had their impressions and hoped that would be enough.
 
-That teacher was not lazy. They just did not know what was expected of them, and nobody had given them a real checklist. This one is for them.
+It usually isn't. This checklist is what changes that.
 
 This iep meeting checklist for teachers breaks down exactly what you need to do before you walk into the room, what to track while you are sitting at the table, and what to do when the meeting is over. We are going to focus heavily on the "after" phase. This follow up stage is where most teachers drop the ball, yet it is the most critical part of the entire process.
 
