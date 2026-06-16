@@ -25,7 +25,9 @@ A teacher documentation log does not need to be pretty. It needs to be functiona
 
 Relying on your memory is the most dangerous game you can play as a teacher. When you are standing in front of a classroom, you make thousands of micro-decisions a day. You cannot possibly remember exactly what a student said on a Tuesday three weeks ago.
 
-When a parent emails you demanding to know why their child received a failing grade or a detention, you need evidence. A documentation log is your professional armor. It proves that you communicated, it proves that you intervened, and it proves that the behavior is a pattern rather than an isolated event.
+That lesson is one of the main reasons I built ShortHand. For years, I convinced myself I would remember the important details. Then a parent meeting, SST meeting, or report card would come around and I'd realize I was trying to reconstruct weeks of events from memory. The problem wasn't that I wasn't paying attention. The problem was that I was teaching all day. Human memory was never designed to track dozens of students, hundreds of interactions, and months of history without a system.
+
+A documentation log gives you something better than memory. It gives you a record. When a parent asks about a concern, an administrator wants context, or a student support meeting comes around, you are working from facts instead of trying to piece together what happened weeks earlier.
 
 ## The Free Teacher Documentation Log Template
 
@@ -50,6 +52,8 @@ If you are using paper, this log must live somewhere accessible but totally priv
 ## Why a Template Alone Will Not Save You
 
 Having a template is only ten percent of the battle. The other ninety percent is building the habit. Countless teachers print out beautiful templates in August and have completely blank logs by November.
+
+I've learned that most documentation systems don't fail because they're poorly designed. They fail because they're too hard to use in the middle of a real school day.
 
 The physical act of finding a binder, opening the rings, finding the student's page, and writing with a pen is often too much friction during a chaotic school day. A template is just a piece of paper. It cannot force you to remember to write things down.
 
