@@ -25,6 +25,8 @@ That is the exact moment you lose the room. The parent gets defensive. The princ
 
 I have been teaching third grade for over two decades. If there is one golden rule in education, it is this. If it is not written down, it did not happen. A memory is not a data point. A feeling is not evidence. You have to have a record.
 
+I learned that lesson repeatedly over the years. I'd walk into a parent meeting knowing a pattern existed, but struggle to remember the exact dates, wording, or sequence of events. The issue was never that I wasn't paying attention. The issue was that I was trying to rely on memory while teaching all day. Eventually I realized I didn't have a behavior problem. I had a documentation problem.
+
 Keeping a log sounds like just one more chore to add to your endless list. It does not have to be a giant spreadsheet. It just has to be consistent. Here is what you actually need to know about keeping a record that works.
 
 ## What a Behavior Log Actually Is
@@ -59,7 +61,9 @@ I once saw a teacher write that a student was acting like a monster. I had to ge
 
 You have to log the event immediately. Do not wait until the end of the day. Do not wait until Friday afternoon.
 
-Teaching is a high-speed environment. You make hundreds of decisions an hour. If a disruption happens at nine in the morning, the details will be completely erased from your memory by lunchtime. You will forget what triggered it. You will forget exactly what you said in response.
+Teaching is a high-speed environment. You make hundreds of decisions an hour. One of the biggest mistakes I made early in my career was assuming I would remember the important incidents later. I almost never did. By the end of the day, new situations had replaced the old ones. The longer I waited, the more the details faded.
+
+If a disruption happens at nine in the morning, the details will be completely erased from your memory by lunchtime. You will forget what triggered it. You will forget exactly what you said in response.
 
 Find a system that allows you to jot down notes the second the situation is resolved. If you wait, you will end up guessing. Guessing defeats the entire purpose of keeping data. I used to keep a clipboard on my desk. Every time I walked across the room to write something down, the kids knew exactly what I was doing. It caused more anxiety and more disruptions. You need a system that is discreet. You need to be able to log it without making a grand announcement to the entire classroom.
 
@@ -69,7 +73,7 @@ When you have a detailed log, everything changes.
 
 You walk into that parent-teacher conference with confidence. When the parent asks for specifics, you do not freeze. You open your records. You can say that on October fourth at ten in the morning, the student tore up their assignment when asked to transition to reading. You can say it happened again on October seventh.
 
-It takes the emotion out of the conversation. You are no longer attacking their child. You are simply presenting the data. Parents respect data. Administrators respect data. It completely shifts the dynamic from a defensive argument to a collaborative problem-solving session.
+It takes the emotion out of the conversation. You are no longer attacking their child. You are simply presenting the data. Clear documentation helps everyone focus on facts instead of conflicting memories. It completely shifts the dynamic from a defensive argument to a collaborative problem-solving session.
 
 You cannot manage what you do not measure. A good log measures the reality of your classroom.
 
