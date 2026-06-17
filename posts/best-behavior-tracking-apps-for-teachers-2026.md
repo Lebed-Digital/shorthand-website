@@ -29,6 +29,8 @@ Before we get into the list, a quick disclosure: I built one of the tools on it.
 
 A note on context: I teach elementary school, third grade specifically. Most of these apps work across grade levels, but I'll flag where elementary teachers have different needs than secondary. A high school teacher managing 150 students across six periods has a different problem than an elementary teacher who's with the same 22 kids all day.
 
+Looking specifically for classroom-focused tools? See the companion piece: [Best Classroom Behavior Tracking Apps for Teachers](/blog/classroom-behavior-tracking-apps).
+
 ---
 
 ## Why behavior tracking sheets aren't enough
