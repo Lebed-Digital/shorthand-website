@@ -23,6 +23,8 @@ You freeze. You know the behavior is a problem. You feel it in your bones. But w
 
 That is the exact moment you lose the room. The parent gets defensive. The principal looks concerned. You realize you need a student behavior log.
 
+![A worried teacher in a parent conference trying to remember behavior details while a dated student behavior log creates a clear record](/blog-illustrations/student-behavior-log-freeze-moment.png)
+
 I have been teaching third grade for over two decades. If there is one golden rule in education, it is this. If it is not written down, it did not happen. A memory is not a data point. A feeling is not evidence. You have to have a record.
 
 I learned that lesson repeatedly over the years. I'd walk into a parent meeting knowing a pattern existed, but struggle to remember the exact dates, wording, or sequence of events. The issue was never that I wasn't paying attention. The issue was that I was trying to rely on memory while teaching all day. Eventually I realized I didn't have a behavior problem. I had a documentation problem.

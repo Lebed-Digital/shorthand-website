@@ -19,6 +19,8 @@ We have all been down the Pinterest rabbit hole. You search for teacher organiza
 
 Then reality hits. A student has a meltdown during a fire drill. You have to call three parents during your twenty-minute lunch break. Suddenly, that beautiful binder feels like a massive burden. You stop filling it out because it takes too long to find the right page, write the date, and fill in the tiny boxes.
 
+![A teacher overwhelmed by a real school day while a decorative documentation binder sits unused beside a simpler log](/blog-illustrations/documentation-binder-reality-hits.png)
+
 A teacher documentation log does not need to be pretty. It needs to be functional. It needs to capture the exact details of an incident as quickly as possible so you can get back to teaching. In this post, you will get a straightforward, no-nonsense template that actually works in a real classroom. More importantly, we are going to talk about how to use it so you do not abandon it by October.
 
 ## Why You Need a Documentation Log Yesterday

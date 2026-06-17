@@ -19,6 +19,8 @@ For most of my teaching career, my student incident log was a spiral notebook wi
 
 The problem with paper isn't that it doesn't work. It works fine until you need it to work *for* you. Until a parent says "I never heard about this." Until an administrator asks for documentation. Until you're sitting in an IEP meeting trying to remember if that incident was October or November, and all you have is a notebook with three different handwriting styles because you switched pens twice.
 
+![A teacher in an IEP meeting trying to match messy notebook notes to October or November incidents while a clear timeline organizes the records](/blog-illustrations/incident-notebook-october-or-november.png)
+
 Digital tools for recording student incidents solve a specific problem: they make your documentation retrievable, searchable, and shareable when it matters most.
 
 Here's what's actually worth using.

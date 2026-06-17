@@ -21,6 +21,8 @@ I have spent twenty years in K-8 classrooms. I know exactly how infuriating it i
 
 But you cannot give up, and you cannot stop documenting. Here is exactly what to do when a parent goes completely silent, and how to stay organized when they eventually do reach out.
 
+![A frustrated teacher documenting unanswered parent calls and emails as a clear contact-attempt timeline](/blog-illustrations/parents-not-responding-contact-timeline.png)
+
 ---
 
 ## Keep Going and Log Every Single Attempt

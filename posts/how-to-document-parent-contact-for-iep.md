@@ -14,6 +14,8 @@ One thing those experiences taught me is that people rarely disagree about event
 
 During my time as an RBT, I saw exactly what happens when teacher documentation is incomplete. A parent advocate or a lawyer sits at the table. They ask to see the contact logs regarding a spike in behaviors or a drop in grades. The room gets very quiet because the general education teacher assumed the special education case manager was handling everything. The district scrambles. It is an incredibly uncomfortable position to be in.
 
+![A worried teacher in an IEP meeting being asked for parent contact logs while dated notes create a clear timeline](/blog-illustrations/iep-contact-log-room-goes-quiet.png)
+
 Here is what IDEA expects and how to handle your own documentation without losing your mind.
 
 ---
