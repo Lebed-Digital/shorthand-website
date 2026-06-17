@@ -92,7 +92,7 @@ Take five minutes at the end of the day to read through your notes. Fix any ille
 
 This is the most critical step. Within twenty four hours of the meeting, you must send a message to the parents. Thank them for their time and explicitly list the action items you agreed upon. This creates a shared written record and ensures everyone is on exactly the same page.
 
-Sending this message does not have to be a chore. This is exactly why we built [ShortHand](/install). Instead of composing a lengthy, formal email from scratch, you can use ShortHand to quickly reference your meeting notes and fire off a professional follow up message directly to the parents. ShortHand keeps your communication logged and organized in one central place, completely separate from your chaotic email inbox.
+Sending this message does not have to be a chore. This is exactly why we built [ShortHand](https://app.getshorthandapp.com?signup=1). Instead of composing a lengthy, formal email from scratch, you can use ShortHand to quickly reference your meeting notes and fire off a professional follow up message directly to the parents. ShortHand keeps your communication logged and organized in one central place, completely separate from your chaotic email inbox.
 
 You can securely document the agreed upon accommodations directly in the app and follow up with the parents a few weeks later regarding the student's progress. Consistent, accurately documented communication is the best way to ensure an IEP is genuinely successful for everyone involved.
 

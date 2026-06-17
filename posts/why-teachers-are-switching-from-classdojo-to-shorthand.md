@@ -71,7 +71,7 @@ ClassDojo was not built for special education documentation. If you're serving s
 
 ## What Teachers Are Switching To
 
-The tool that keeps coming up in teacher groups, Facebook communities, and staffroom conversations is [ShortHand](/install).
+The tool that keeps coming up in teacher groups, Facebook communities, and staffroom conversations is [ShortHand](https://app.getshorthandapp.com?signup=1).
 
 Here's why it fits where ClassDojo doesn't.
 

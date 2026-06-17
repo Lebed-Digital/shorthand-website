@@ -64,7 +64,7 @@ Teaching is demanding enough without also being a full-time ghostwriter for thir
 
 Now I leave on time on Fridays. The emails go out earlier in the week, when the details are still fresh and the communication is more specific. Parents get better information. I feel more on top of things. Nobody's weekend gets ruined by a vague, half-remembered update that I wasn't confident sending.
 
-If you're tired of the Friday reporting marathon, [try ShortHand for free](/install) and see if it changes your Fridays the way it changed mine.
+If you're tired of the Friday reporting marathon, [try ShortHand for free](https://app.getshorthandapp.com?signup=1) and see if it changes your Fridays the way it changed mine.
 
 ---
 

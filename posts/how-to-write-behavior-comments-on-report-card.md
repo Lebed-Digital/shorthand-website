@@ -67,7 +67,7 @@ When your report card comments match an ongoing record of documented observation
 
 When you have that record, your report card comment becomes the closing chapter of an ongoing conversation, not a surprise. You are no longer speaking from memory or frustration. You are reflecting what was already observed and documented.
 
-This exact need for fast, organized tracking is why I use ShortHand. I needed a mobile-friendly way to log classroom incidents during a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](/install) and have the documentation you need ready well before report card season.
+This exact need for fast, organized tracking is why I use ShortHand. I needed a mobile-friendly way to log classroom incidents during a chaotic 3rd grade day without stopping my lesson. You can set up your roster for free at [getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and have the documentation you need ready well before report card season.
 
 ## Professional Does Not Mean Dishonest
 

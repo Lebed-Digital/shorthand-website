@@ -68,7 +68,7 @@ This is the step that makes or breaks the success of the IEP. You must document 
 
 We highly recommend using a structured format to keep track of these details. You can grab our free [IEP meeting notes template](/blog/iep-meeting-notes-template) to keep your records organized.
 
-Once you have your notes, you need to send a quick follow up message to the parents. This is where [ShortHand](/install) becomes an absolute lifesaver. Instead of typing out a long email or playing phone tag, you can use ShortHand to quickly log the agreed upon next steps and send a direct message to the parents. ShortHand keeps a secure, organized record of your parent communication, ensuring everyone remains accountable for the student's success.
+Once you have your notes, you need to send a quick follow up message to the parents. This is where [ShortHand](https://app.getshorthandapp.com?signup=1) becomes an absolute lifesaver. Instead of typing out a long email or playing phone tag, you can use ShortHand to quickly log the agreed upon next steps and send a direct message to the parents. ShortHand keeps a secure, organized record of your parent communication, ensuring everyone remains accountable for the student's success.
 
 By using these scripts and keeping your communication focused on solutions, you can turn a stressful IEP meeting into a highly productive collaboration.
 

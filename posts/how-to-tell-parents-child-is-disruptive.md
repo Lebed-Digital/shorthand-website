@@ -89,9 +89,9 @@ Writing these emails is draining. You spend twenty minutes agonizing over a sing
 
 That is why I created ShortHand. You log the specific disruption in the app in three seconds. When you are ready, ShortHand writes the email for you. It uses the exact objective, professional tone we just talked about. 
 
-It takes the stress out of parent communication. You can see how it works and [install the app](/install) today. 
+It takes the stress out of parent communication. You can see how it works and [install the app](https://app.getshorthandapp.com?signup=1) today. 
 
-Try it out. Your mental health will thank you. Get started at [Try ShortHand free →](/install).
+Try it out. Your mental health will thank you. Get started at [Try ShortHand free →](https://app.getshorthandapp.com?signup=1).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 

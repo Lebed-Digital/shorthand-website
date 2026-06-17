@@ -64,7 +64,7 @@ This requirement for intense data collection is why so many teachers burn out. K
 
 ShortHand takes the terror out of special education compliance. It allows you to confidently participate in the process, provide the vital data the team needs, and get back to doing what you actually love to do.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
 
 ---
 

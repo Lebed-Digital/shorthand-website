@@ -174,7 +174,7 @@ If you're relying on memory at 4 PM, you're going to write vague emails. "He was
 
 That second version is a professional document. It's useful in a parent meeting. It's useful in an IEP. The first version is noise.
 
-This is exactly the problem I built [ShortHand](/install) to solve. You log notes in under 5 seconds during the day - voice-to-text while walking, one tap to select the student. By the time 4 PM rolls around, ShortHand has already drafted a parent email from your notes. You review it, adjust the tone if needed, and send.
+This is exactly the problem I built [ShortHand](https://app.getshorthandapp.com?signup=1) to solve. You log notes in under 5 seconds during the day - voice-to-text while walking, one tap to select the student. By the time 4 PM rolls around, ShortHand has already drafted a parent email from your notes. You review it, adjust the tone if needed, and send.
 
 The templates above are useful. But the real unlock is having the documentation to fill them with something specific.
 

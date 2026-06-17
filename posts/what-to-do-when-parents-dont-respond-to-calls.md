@@ -89,7 +89,7 @@ Logging failed attempts feels like tedious busywork if you are using paper forms
 
 The ShortHand app automatically logs every attempt with precise timestamps and organizes everything by student. When you need to escalate to an administrator, you have a complete record ready in seconds. When the angry parent finally appears, your entire contact history is on your phone before they finish their sentence.
 
-Stop letting unanswered calls stress you out. Turn that frustration into a clear, organized contact history. [Try ShortHand free at getshorthandapp.com](/install) and know exactly where you stand with every family.
+Stop letting unanswered calls stress you out. Turn that frustration into a clear, organized contact history. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and know exactly where you stand with every family.
 
 ---
 

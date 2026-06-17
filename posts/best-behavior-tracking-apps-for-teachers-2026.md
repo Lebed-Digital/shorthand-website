@@ -144,7 +144,7 @@ If your school is already on ClassDojo or PBIS Rewards, use it. Don't add anothe
 
 If you're a SPED teacher running formal observations, BehaviorSnap is worth learning.
 
-If you're a general education teacher who wants to actually track behavior, document parent contact, and walk into a meeting with a real record, [ShortHand](/install) is the one that fits how school days actually work.
+If you're a general education teacher who wants to actually track behavior, document parent contact, and walk into a meeting with a real record, [ShortHand](https://app.getshorthandapp.com?signup=1) is the one that fits how school days actually work.
 
 No setup, no IT ticket, no waiting for someone else to decide. Just download it and go.
 

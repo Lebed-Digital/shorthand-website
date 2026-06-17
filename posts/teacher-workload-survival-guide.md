@@ -81,7 +81,7 @@ The teachers who feel most in control -- in parent meetings, IEP conversations, 
 
 [ShortHand](/) is built around this. A behavior note in under 10 seconds. Voice-to-text while you are walking between desks. Parent communication drafted from your notes. The record exists before the conversation requires it.
 
-[Try ShortHand free](/install) -- it runs on your phone with nothing to download, and you can be logging your first note before the end of the day.
+[Try ShortHand free](https://app.getshorthandapp.com?signup=1) -- it runs on your phone with nothing to download, and you can be logging your first note before the end of the day.
 
 ---
 

@@ -73,7 +73,7 @@ The digital version of this log that lives right in your pocket is exactly what 
 
 Whether you use a paper template or a digital tool, the key is consistency. Do not let minor behaviors slide. Document everything, stick to the facts, and you will have what you need when it matters.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](/install)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
 
 ---
 

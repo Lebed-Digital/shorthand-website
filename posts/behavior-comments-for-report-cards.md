@@ -157,7 +157,7 @@ Here is what that looks like in practice.
 
 The hardest part of writing report card behavior comments is not finding the words. It is trying to reconstruct a full quarter of behavior from memory in a single sitting.
 
-If you have been logging notes in [ShortHand](/install), you can pull up a student's history in seconds. Dates, patterns, context, what worked, what did not. That is the documentation behind the comment. It is also what you reference when a parent calls and asks for specifics.
+If you have been logging notes in [ShortHand](https://app.getshorthandapp.com?signup=1), you can pull up a student's history in seconds. Dates, patterns, context, what worked, what did not. That is the documentation behind the comment. It is also what you reference when a parent calls and asks for specifics.
 
 If you are doing this from memory right now, that is fine. Finish the report cards. Then set yourself up so the next grading period feels different. Start logging one note per student per week and watch how much easier this gets.
 

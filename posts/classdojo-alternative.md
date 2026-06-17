@@ -109,7 +109,7 @@ There's no universal right answer. But there is a right answer for your specific
 
 ShortHand is a Progressive Web App. Nothing to download, works on your phone, tablet, or school laptop. It's free during beta and takes about 30 seconds to install.
 
-[Try it here](/install). There's a live demo that requires no sign-up.
+[Try it here](https://app.getshorthandapp.com?signup=1). There's a live demo that requires no sign-up.
 
 No avatars. No monster haircuts. Just documentation that holds up when you need it.
 

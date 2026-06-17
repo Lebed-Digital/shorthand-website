@@ -55,7 +55,7 @@ But for private, teacher-to-parent communication regarding behavior or academic 
 ## ShortHand: Built for the Teacher Workflow
 This brings me to my current favorite tool in the rotation. ShortHand is fundamentally different because it was not built to be a social network or a portfolio. It was built specifically around the note-to-parent-message workflow that actual teachers use.
 
-You do not need school buy-in to start using it. You do not need to sit through a district training session. You just go to [getshorthandapp.com](/install) and start immediately.
+You do not need school buy-in to start using it. You do not need to sit through a district training session. You just go to [getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and start immediately.
 
 Instead of navigating complex menus, you simply tap a student's name. You leave a quick voice note about what just happened. The app uses pre-set tags to organize everything automatically. It handles the documentation instantly, getting the thought out of your brain so you can get back to teaching.
 
@@ -77,6 +77,6 @@ You have to pick the tool that matches your biggest daily headache. If your main
 
 But if your biggest headache is documentation and finding the time to write thoughtful emails, ShortHand is easily one of the best apps for teacher parent communication available today.
 
-You can try it out for yourself by visiting the [install page](/install). It is completely free for individual teachers and you do not need IT approval to get started. If you want more thoughts on surviving the school year without losing your mind, you can check out my other posts on the [blog](/blog).
+You can try it out for yourself by visiting the [install page](https://app.getshorthandapp.com?signup=1). It is completely free for individual teachers and you do not need IT approval to get started. If you want more thoughts on surviving the school year without losing your mind, you can check out my other posts on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*

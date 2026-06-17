@@ -166,7 +166,7 @@ This is where most paper systems break down. Clipboards get buried. Binders take
 
 ShortHand is built for exactly this: tap a student's name, log a 5-word note, done. It timestamps automatically. When you need to contact a parent, pull up the log and you have a dated record of every warning and every intervention. That is what "Step 4, parent contact" actually requires: evidence, not memory.
 
-[Try ShortHand free at getshorthandapp.com](/install)
+[Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
 
 ---
 

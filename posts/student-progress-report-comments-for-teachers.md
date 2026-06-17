@@ -119,7 +119,7 @@ Strong progress report comments are specific, honest, and grounded in what you a
 
 If you want next term's progress reports to be easier, start logging now. It takes seconds per student. When you sit down to write in November, you'll be glad you did.
 
-[Try ShortHand free →](/install)
+[Try ShortHand free →](https://app.getshorthandapp.com?signup=1)
 
 ---
 

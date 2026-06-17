@@ -186,7 +186,7 @@ I wrote more about this in [The Fastest Way to Turn Behavior Notes Into Parent M
 
 The system that actually works is one where the note gets captured in the moment, and the email gets drafted from that note rather than from memory hours later.
 
-That's the problem I built [ShortHand](/install) to solve. You log a quick behavior note during the school day -- voice-to-text while walking, one tap to select the student, done in under five seconds. Later, ShortHand uses that log to draft a parent communication that's already clear, specific, and professional. You review it, adjust the tone if you want, and send.
+That's the problem I built [ShortHand](https://app.getshorthandapp.com?signup=1) to solve. You log a quick behavior note during the school day -- voice-to-text while walking, one tap to select the student, done in under five seconds. Later, ShortHand uses that log to draft a parent communication that's already clear, specific, and professional. You review it, adjust the tone if you want, and send.
 
 Instead of staring at a blank screen trying to remember what happened, you're reviewing something that's already written. The hardest part is already done.
 

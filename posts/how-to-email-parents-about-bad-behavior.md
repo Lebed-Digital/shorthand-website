@@ -110,6 +110,6 @@ Writing these emails takes an incredible amount of time. Documenting the specifi
 
 Instead of trying to remember exactly what happened at 9:15 AM during reading groups, you log it in the app with a few taps. Then, when it is time to write the parent, ShortHand uses your logged notes to draft a professional, objective email for you. It keeps the facts straight. It removes the emotion completely. 
 
-Try it out with your next tough message at [Try ShortHand free →](/install).
+Try it out with your next tough message at [Try ShortHand free →](https://app.getshorthandapp.com?signup=1).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

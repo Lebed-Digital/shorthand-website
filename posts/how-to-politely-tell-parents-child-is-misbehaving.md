@@ -102,9 +102,9 @@ It also requires you to document those observations accurately. You cannot write
 
 This is the exact problem ShortHand solves. You log the specific, observable facts right when they happen. It takes seconds. 
 
-Then, when you are ready, the app's AI uses those facts to draft a perfectly polite, objective email. You do not have to worry about accidentally using Teacher Speak. You can read more about how it works on the [install](/install) page. 
+Then, when you are ready, the app's AI uses those facts to draft a perfectly polite, objective email. You do not have to worry about accidentally using Teacher Speak. You can read more about how it works on the [install](https://app.getshorthandapp.com?signup=1) page. 
 
-Start sending better emails without the stress. Try it out at [Try ShortHand free →](/install).
+Start sending better emails without the stress. Try it out at [Try ShortHand free →](https://app.getshorthandapp.com?signup=1).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 

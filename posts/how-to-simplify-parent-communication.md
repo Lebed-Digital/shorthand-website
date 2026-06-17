@@ -66,7 +66,7 @@ Here is the absolute best part of the entire process. When I sit down on Friday 
 
 ShortHand drafts the message right from my notes. It looks at the log I have built up over the week and helps me generate the communication. It bridges the massive gap between the moment something happens and the email that never gets written. It is the only way I have found to actually simplify parent communication without sacrificing the relationship.
 
-If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or head directly over to the [install page](/install) to set it up right now. It runs perfectly on any device without going through an app store. You can also read more of my thoughts on classroom survival over on the [blog](/blog).
+If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or head directly over to the [install page](https://app.getshorthandapp.com?signup=1) to set it up right now. It runs perfectly on any device without going through an app store. You can also read more of my thoughts on classroom survival over on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
 

@@ -47,7 +47,7 @@ Logging takes under 10 seconds. Notes are timestamped and tied to the student. W
 
 It works without school buy-in. No IT ticket, no license, no waiting for an admin to set it up. Free to start, no credit card required.
 
-[Try ShortHand free](/install)
+[Try ShortHand free](https://app.getshorthandapp.com?signup=1)
 
 **Doesn't do:** Student-facing gamification, class announcement feeds, conference scheduling.
 
@@ -123,7 +123,7 @@ If you want a full communication hub to replace everything ClassDojo does, Bloom
 
 Everything else on this list is built for a different primary use case and is worth considering only if that use case fits your situation.
 
-[Try ShortHand free](/install) and have it set up before the end of the day.
+[Try ShortHand free](https://app.getshorthandapp.com?signup=1) and have it set up before the end of the day.
 
 
 *Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

@@ -116,7 +116,7 @@ ShortHand captures notes in the moment using voice or text, automatically timest
 
 The parent communication log is also built in, which means when the special ed teacher asks for your contact history with a family, you're not digging through Gmail. It's already documented and ready.
 
-If you want to walk into your next IEP meeting with actual data, clear trends, and one less thing weighing on you, [try ShortHand for free](/install).
+If you want to walk into your next IEP meeting with actual data, clear trends, and one less thing weighing on you, [try ShortHand for free](https://app.getshorthandapp.com?signup=1).
 
 It's built for real classrooms, real schedules, and teachers who don't have time to babysit a data system.
 

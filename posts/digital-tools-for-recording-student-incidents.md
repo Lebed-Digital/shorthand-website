@@ -116,7 +116,7 @@ I'm a 20-year classroom teacher. I resisted going digital longer than I should h
 
 If you want to try ShortHand, it takes about five minutes to set up your class and log your first note. No IT ticket required.
 
-[Try ShortHand free →](/install)
+[Try ShortHand free →](https://app.getshorthandapp.com?signup=1)
 
 ---
 

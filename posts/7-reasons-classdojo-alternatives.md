@@ -82,7 +82,7 @@ The criteria I applied when I built ShortHand:
 
 ShortHand is a Progressive Web App - no download, no app store, works on your phone or tablet or school laptop. It's free during beta.
 
-It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](/install) - there's a live demo that takes no sign-up and opens instantly.
+It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](https://app.getshorthandapp.com?signup=1) - there's a live demo that takes no sign-up and opens instantly.
 
 **The bottom line:** Teachers don't fail at documentation. Systems fail teachers. The right system is the one you'll actually use at 10:23 AM when something happens and you have 15 other things happening at the same time.
 

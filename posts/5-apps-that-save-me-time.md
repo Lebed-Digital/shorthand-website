@@ -64,7 +64,7 @@ I also use it to track patterns over time. When I walk into an IEP meeting now, 
 
 **How I actually use it:** Every day. Quick notes during transitions, parent communications at the end of the day, and behavior trend reviews before parent meetings.
 
-If you want to see how it works before committing to anything, there's a live demo with fake student data -- no sign-up, no login, just the tool. [Try it here](/install).
+If you want to see how it works before committing to anything, there's a live demo with fake student data -- no sign-up, no login, just the tool. [Try it here](https://app.getshorthandapp.com?signup=1).
 
 ## 5. Tally
 
