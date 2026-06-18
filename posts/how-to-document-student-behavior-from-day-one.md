@@ -207,3 +207,5 @@ Document patterns.
 Focus on consistency.
 
 Your future self will thank you.
+
+Once conference season arrives, those notes become even more valuable. Here is what I recommend [bringing to a parent-teacher conference about behavior](/blog/what-to-bring-to-parent-teacher-conference-about-behavior).
