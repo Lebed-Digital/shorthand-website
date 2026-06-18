@@ -1,7 +1,7 @@
 ---
 title: "How to Document Student Behavior From Day One (Before Problems Start)"
 subtitle: "The first month sets the standard. Here is how to build a documentation habit before you need one."
-date: 2026-06-17
+date: "2026-06-17"
 author: "Gregory Lebed"
 excerpt: "Most behavior problems do not appear overnight. Learn how to start documenting student behavior from day one, what to track during the first month, and why consistent records make parent communication and intervention decisions easier all year long."
 faq:
@@ -42,6 +42,8 @@ A single student behavior does not seem important when it happens. Neither does 
 But when you have twenty or more students and seven hours of teaching, those moments add up fast.
 
 I would reach the end of the week knowing that something had happened multiple times, but I could not always remember exactly when, how often, what preceded it, what followed it, or what I had already communicated to families.
+
+![An overwhelmed elementary teacher watches classroom behavior notes drift away](/blog-illustrations/student-behavior-day-one-sticky-notes.png)
 
 It did not take long for me to realize something important:
 
