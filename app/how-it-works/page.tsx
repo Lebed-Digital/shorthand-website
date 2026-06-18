@@ -20,7 +20,7 @@ export default function HowItWorksPage() {
             <AnimatedLogo />
           </div>
           <motion.a
-            href="/install"
+            href="https://app.getshorthandapp.com/onboarding"
             className="btn-primary"
             whileHover={btnHover}
             whileTap={btnTap}
@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
         <h2 className="detail-cta-heading">Try it yourself.</h2>
         <p className="detail-cta-sub">Free to use. Works on any device. No app store needed.</p>
         <motion.a
-          href="/install"
+          href="https://app.getshorthandapp.com/onboarding"
           className="btn-primary"
           whileHover={btnHover}
           whileTap={btnTap}

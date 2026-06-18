@@ -903,7 +903,7 @@ export default function Home() {
               </p>
               <div className="cta-btns">
                 <motion.a
-                  href="/install"
+                  href="https://app.getshorthandapp.com/onboarding"
                   className="btn-primary btn-primary--lg"
                   whileHover={btnHover}
                   whileTap={btnTap}

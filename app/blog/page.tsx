@@ -35,7 +35,7 @@ export default function BlogIndex() {
             <Link href="/how-it-works" className="nav-link">How It Works</Link>
             <Link href="/blog" className="nav-link">Blog</Link>
           </div>
-          <Link href="/install" className="btn-primary">Get ShortHand</Link>
+          <Link href="https://app.getshorthandapp.com/onboarding" className="btn-primary">Get ShortHand</Link>
         </div>
       </nav>
 

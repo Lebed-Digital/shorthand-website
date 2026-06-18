@@ -70,7 +70,7 @@ Is the work refusal always during math? Is the class clown routine always right 
 
 You cannot keep all of this in your head. You will forget. By the time the dismissal bell rings, you will have made a thousand tiny decisions. You will not remember exactly what happened at ten in the morning. You need a system to track it.
 
-ShortHand helps you spot patterns by keeping a running log tied to each student. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
+ShortHand helps you spot patterns by keeping a running log tied to each student. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com/onboarding).
 
 ---
 

@@ -70,7 +70,7 @@ Conference season is exhausting. The only way to survive it is to be prepared. I
 
 You need a system that captures these observations in the moment, all year long.
 
-ShortHand keeps notes on each student so when conference season comes around, you are not starting from a blank page. You have the comments and data ready to go. Try it free at [getshorthandapp.com/install](https://getshorthandapp.com/install).
+ShortHand keeps notes on each student so when conference season comes around, you are not starting from a blank page. You have the comments and data ready to go. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com/onboarding).
 
 ---
 
