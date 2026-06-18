@@ -23,6 +23,13 @@ export interface Post extends PostMeta {
   contentHtml: string;
 }
 
+function normalizePostData(data: Record<string, unknown>): Omit<PostMeta, 'slug'> {
+  return {
+    ...data,
+    date: data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date),
+  } as Omit<PostMeta, 'slug'>;
+}
+
 export function getAllPosts(): PostMeta[] {
   const files = fs.readdirSync(postsDir).filter((f) => f.endsWith('.md'));
   return files
@@ -30,7 +37,7 @@ export function getAllPosts(): PostMeta[] {
       const slug = file.replace(/\.md$/, '');
       const raw = fs.readFileSync(path.join(postsDir, file), 'utf8');
       const { data } = matter(raw);
-      return { slug, ...data } as PostMeta;
+      return { slug, ...normalizePostData(data) } as PostMeta;
     })
     .sort((a, b) => (a.date < b.date ? 1 : -1));
 }
@@ -93,5 +100,5 @@ export async function getPost(slug: string): Promise<Post> {
   const contentHtml = processed.toString()
     .replace(/<table>/g, '<div class="table-wrapper"><table>')
     .replace(/<\/table>/g, '</table></div>');
-  return { slug, ...data, contentHtml } as Post;
+  return { slug, ...normalizePostData(data), contentHtml } as Post;
 }
