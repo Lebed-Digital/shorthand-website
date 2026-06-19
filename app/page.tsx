@@ -329,7 +329,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL — DANA */}
-      <section style={{ padding: '32px 24px 0' }}>
+      <section style={{ padding: '48px 24px 48px' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
           <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: '#fff', lineHeight: 1.6, marginBottom: '0.5rem' }}>
             &ldquo;The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.&rdquo;
