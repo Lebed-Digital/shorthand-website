@@ -418,7 +418,7 @@ export default function Home() {
           <div className="features-header">
             <div className="section-label">What it does</div>
             <h2 className="section-heading">Remember what happened.<br /><em>When it matters most.</em></h2>
-            <p className="section-sub">Keep behavior notes, parent communication, and student documentation in one place, so you're ready when parents, administrators, or IEP teams need answers.</p>
+            <p className="section-sub">Walk into any conference, IEP meeting, or admin conversation already knowing it's documented, because you logged it the moment it happened.</p>
           </div>
           <div className="features-grid">
             {features.map((f) => (
