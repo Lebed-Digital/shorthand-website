@@ -209,3 +209,5 @@ Focus on consistency.
 Your future self will thank you.
 
 Once conference season arrives, those notes become even more valuable. Here is what I recommend [bringing to a parent-teacher conference about behavior](/blog/what-to-bring-to-parent-teacher-conference-about-behavior).
+
+The same documentation habit applies if you work summer school. The first week of ESY is when you collect some of the most useful information of the whole session. Here is [what I document for every student during the first week of summer school](/blog/summer-school-documentation-first-week).
