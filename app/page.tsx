@@ -342,7 +342,7 @@ export default function Home() {
 
       {/* DIVIDER */}
       <div style={{ display: 'flex', justifyContent: 'center', padding: '0 0 48px' }}>
-        <hr style={{ width: '72px', border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+        <hr style={{ width: '120px', border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
       </div>
 
       {/* INTENT STRIP */}
