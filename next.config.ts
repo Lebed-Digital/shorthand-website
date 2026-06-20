@@ -22,17 +22,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/ig',
-        destination: '/free-tool?utm_source=instagram&utm_medium=bio&utm_campaign=free_tool',
+        destination: '/onboarding?utm_source=instagram&utm_medium=bio&utm_campaign=free_tool',
         permanent: false,
       },
       {
         source: '/tt',
-        destination: '/free-tool?utm_source=tiktok&utm_medium=bio&utm_campaign=free_tool',
+        destination: '/onboarding?utm_source=tiktok&utm_medium=bio&utm_campaign=free_tool',
         permanent: false,
       },
       {
         source: '/yt',
-        destination: '/free-tool?utm_source=youtube&utm_medium=description&utm_campaign=free_tool',
+        destination: '/team-onboarding?utm_source=youtube&utm_medium=description&utm_campaign=free_tool',
         permanent: false,
       },
     ];
