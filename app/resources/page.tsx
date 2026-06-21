@@ -71,18 +71,6 @@ const resources = [
     tag: 'Printable PDF',
     signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
   },
-  {
-    title: 'Welcome Letter Generator',
-    description:
-      'Ready-to-send welcome letters for families. Pick your grade, pick your tone, done in 30 seconds. Free, no sign-up.',
-    href: '/back-to-school-toolkit',
-    download: false,
-    label: 'Try the Generator',
-    accent: '#16a34a',
-    bg: '#f0fdf4',
-    tag: 'Free AI Tool',
-    signals: ['No sign-up required', 'Works for Pre-K through 8th grade', 'Created by a classroom teacher'],
-  },
 ];
 
 export default function ResourcesPage() {
