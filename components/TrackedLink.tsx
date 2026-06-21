@@ -18,8 +18,8 @@ export default function TrackedLink({ href, label, className, children, style }:
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
     e.preventDefault();
     window.gtag?.('event', 'cta_click', {
-      event_category: 'engagement',
-      event_label: label,
+      cta_source: 'homepage',
+      cta_destination: label,
       link_url: href,
       event_callback: () => { window.location.href = href; },
     });

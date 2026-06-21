@@ -365,8 +365,8 @@ export default function FreeToolClient() {
                 onClick={() => {
                   if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
                     (window as any).gtag('event', 'cta_click', {
-                      event_category: 'free_tool',
-                      event_label: 'try_shorthand_free',
+                      cta_source: 'free_tool',
+                      cta_destination: 'app',
                     });
                   }
                 }}

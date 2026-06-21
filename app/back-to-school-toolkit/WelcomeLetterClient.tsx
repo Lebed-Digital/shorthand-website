@@ -290,8 +290,8 @@ export default function WelcomeLetterClient() {
                 onClick={() => {
                   if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
                     (window as any).gtag('event', 'cta_click', {
-                      event_category: 'welcome_letter',
-                      event_label: 'try_shorthand_free',
+                      cta_source: 'welcome_letter_toolkit',
+                      cta_destination: 'app',
                     });
                   }
                 }}

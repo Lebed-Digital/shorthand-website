@@ -40,8 +40,8 @@ export default function Home() {
     e?.preventDefault();
     const navigate = () => { window.location.href = url; };
     (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'cta_click', {
-      event_category: 'engagement',
-      event_label: label,
+      cta_source: 'homepage',
+      cta_destination: label,
       link_url: url,
       event_callback: navigate,
     });
