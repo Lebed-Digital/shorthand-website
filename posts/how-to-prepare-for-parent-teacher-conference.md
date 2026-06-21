@@ -15,9 +15,7 @@ faq:
     a: "A typical parent teacher conference lasts between fifteen and twenty minutes, providing enough time to review academic progress and align on next steps."
 ---
 
-You have twelve conferences packed into a three-hour block, the first parent is already waiting in the hallway, and you are staring at a stack of folders. For a split second, you cannot remember if the folder in your hand belongs to the student who needs intensive reading intervention or the one who is currently hiding plastic dinosaurs in the classroom sink. Your mouth is dry, your coffee is ice cold, and you feel like you are about to give a performance review for a job you did not apply for.
-
-Conferences do not have to feel this chaotic. If you take the time to set up a simple system, you can walk in organized, say exactly what matters, and end the meeting with parents who feel like they are part of your team.
+Twelve conferences packed into a three-hour block is a standard conference day for many teachers. The folders are prepped, the parents are lined up in the hallway, and by the middle of the evening the details start to blur together. You walk out of one meeting and immediately shift your attention to the next. Conferences do not have to feel this chaotic. A simple preparation system helps you stay organized, focus on what matters, and leave each family with a clear understanding of their child's progress.
 
 ## Set Up Your Table (and Your Boundaries)
 
