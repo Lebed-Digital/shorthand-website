@@ -107,6 +107,8 @@ Documentation is especially important in IEP contexts. [How to Document Parent C
 
 ## Building a documentation habit
 
+Before any of the conversations in this guide, there is one communication worth sending first. A welcome letter home at the start of the year sets the tone before problems arrive. If you need one, the [Welcome Letter Generator](/back-to-school-toolkit) builds a ready-to-send letter for your grade and tone in 30 seconds. Or see [four real examples with notes on what makes each one work](/blog/welcome-letter-to-parents-from-teacher).
+
 Everything in this guide is easier when you already have notes.
 
 The teachers who feel most confident in difficult parent conversations are the ones who have been logging behavior and communication consistently. Not because they are paranoid. Because they do not have to rely on memory when a parent pushes back.

@@ -129,7 +129,7 @@ Summer school is often treated as a separate season from the regular school year
 
 I think that is a mistake.
 
-The habits you build during summer school often become the habits you carry into September. If you have been thinking about improving your documentation, parent communication, or behavior tracking process, summer may be the best time to start.
+The habits you build during summer school often become the habits you carry into September. If you have been thinking about improving your documentation, parent communication, or behavior tracking process, summer may be the best time to start. That includes the welcome letter: writing it now, before August chaos arrives, means it is ready to go. The [Welcome Letter Generator](/back-to-school-toolkit) can put a draft in your hands in 30 seconds, and there are [real examples with notes on what works](/blog/welcome-letter-to-parents-from-teacher) if you want to see how teachers approach it differently by grade and tone.
 
 Not because you need it today. Because future you will be glad it already exists when September arrives.
 

@@ -135,7 +135,7 @@ Keep brief notes about:
 * Academic concerns
 * Positive updates
 
-A [free parent communication log](/blog/free-parent-communication-log-for-teachers) can help you keep these contacts organized from the start of the year so nothing falls through the cracks before conference season.
+A [free parent communication log](/blog/free-parent-communication-log-for-teachers) can help you keep these contacts organized from the start of the year so nothing falls through the cracks before conference season. If you have not sent a welcome letter yet, that is the first contact worth making: the [Welcome Letter Generator](/back-to-school-toolkit) takes 30 seconds and sets the tone before any of the harder conversations arrive.
 
 ### Positive Behaviors
 

@@ -265,7 +265,16 @@ export default function WelcomeLetterClient() {
           </div>
         )}
 
-        <div style={{ textAlign: 'center', marginTop: 24 }}>
+        <div style={{ textAlign: 'center', marginTop: 24, marginBottom: 8 }}>
+          <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 6px' }}>
+            Want examples before you generate?{' '}
+            <Link href="/blog/welcome-letter-to-parents-from-teacher" style={{ color: '#0d9488', textDecoration: 'none', fontWeight: 600 }}>
+              See 4 real welcome letters with notes on what works.
+            </Link>
+          </p>
+        </div>
+
+        <div style={{ textAlign: 'center', marginTop: 8 }}>
           <p style={{ fontSize: 12, color: '#475569', margin: 0 }}>Built by a teacher, for teachers.</p>
         </div>
       </div>
