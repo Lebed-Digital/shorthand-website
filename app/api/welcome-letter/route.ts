@@ -21,36 +21,47 @@ export async function POST(req: Request): Promise<Response> {
     return Response.json({ error: { message: 'Invalid request.' } }, { status: 400 });
   }
 
+  const gradeContext: Record<string, string> = {
+    'Pre-K': 'Pre-K families are often anxious about their child\'s first school experience. The letter should be especially reassuring, mention routines and nap/snack time if relevant, use very simple language, and emphasize that the classroom is a safe and playful place.',
+    'Kindergarten': 'Kindergarten families may have a mix of excitement and separation anxiety. Acknowledge the big milestone, mention that the classroom is warm and structured, and reassure them their child will be looked after.',
+    '1st Grade': 'First grade is when reading and writing take off. Reference early literacy and math in a way that feels exciting, not pressured. Families want to know their child will be challenged but supported.',
+    '2nd Grade': 'Second graders are hitting their stride. The letter can be a little more confident in tone, mention growing independence, and reference things like chapter books, math facts, or collaborative projects.',
+    '3rd Grade': 'Third grade is a big transition year — standardized testing, longer writing assignments, more independence. Acknowledge the step up without making it scary. Be specific about what third grade looks like in this classroom.',
+    '4th Grade': 'Fourth graders are becoming more self-directed. Mention student ownership of learning, projects, and the growing complexity of the work. Families appreciate knowing expectations are rising.',
+    '5th Grade': 'Fifth grade is often the last year of elementary school. There may be a mix of nostalgia and anticipation. Acknowledge the role this year plays in preparing students for middle school without being dramatic about it.',
+    '6th Grade': 'Sixth grade often means a new school or a new structure. Families may be nervous about the transition. Be specific about classroom routines, how to reach the teacher, and what middle school expectations look like.',
+    '7th Grade': 'Seventh graders are deep in middle school. The letter can be more direct and less hand-holdy. Families want to know about grading, expectations, and how the teacher communicates. Keep it efficient.',
+    '8th Grade': 'Eighth grade is the final year of middle school. Many families are already thinking about high school. Acknowledge the stakes, be clear about expectations and preparation, and keep the tone mature and confident.',
+  };
+
   const toneInstructions: Record<string, string> = {
-    Warm: 'Write in a warm, welcoming, and encouraging tone. Feel like a teacher who genuinely loves their class and wants families to feel at ease.',
-    Funny: 'Write with light humor and personality. Keep it appropriate for families but let the teacher\'s fun side show through. A joke or two is welcome.',
-    Professional: 'Write in a polished, professional tone. Clear, respectful, and organized. Suitable for formal school communication.',
+    Warm: `Write in a genuinely warm, personal tone. This is not "corporate warm" with words like "journey" and "growth mindset." It sounds like a real person who chose teaching because they love kids. Short sentences. Real feelings. The kind of letter a family reads and thinks, "I like this teacher already."`,
+    Funny: `Write with actual self-deprecating humor about back-to-school chaos. Make at least one joke about the reality of the first week: the supplies list, the 47 permission slips, the child who cries on day one (it might be the teacher). Do NOT just add the word "fun" more often. The humor must be in the actual sentences, not the adjectives. A family should laugh at least once. Keep it appropriate but do not play it safe.`,
+    Professional: `Write in a structured, efficient professional tone. Shorter paragraphs. No fluff. Lead with who you are, what the year will look like, and how to reach you. This is not cold — it is respectful and clear. A family should finish reading it in 30 seconds and know exactly what to expect. Do not use warm filler phrases like "I am so excited" or "this is going to be an amazing year."`,
   };
 
   const subjectLine = subject.trim()
-    ? `The teacher teaches ${subject.trim()}.`
-    : 'The teacher teaches all subjects (elementary generalist).';
+    ? `The teacher teaches ${subject.trim()}. Reference this subject specifically in the letter — what students will do in this class, what families can expect, and why it matters at this grade level.`
+    : 'The teacher teaches all subjects. Reference the range of what students will learn across the day.';
 
   const prompt = `Write a parent welcome letter from a teacher at the start of the school year.
 
 Teacher name: ${teacherName.trim()}
 Grade level: ${grade}
 ${subjectLine}
-Tone: ${toneInstructions[tone]}
 
-The letter should:
-- Open with a warm greeting to families
-- Introduce the teacher briefly (name, grade, subject if applicable)
-- Express excitement for the year ahead
-- Include 2-3 sentences about the classroom environment or teaching philosophy
-- Mention one or two practical things families can expect (communication, homework expectations, or similar)
-- Close with an invitation to reach out with questions
-- Be 3-4 paragraphs total
-- Feel personal and human, not like a template
-- Never use em dashes under any circumstances, use commas, colons, or periods instead
-- Do not use the words "utilize," "leverage," "foster," "facilitate," or "delve"
+GRADE-SPECIFIC CONTEXT — this is critical. The letter must sound like it was written for ${grade} specifically, not a generic classroom:
+${gradeContext[grade] ?? 'Tailor the letter to the specific developmental stage and expectations of this grade level.'}
 
-Output only the letter text. No subject line, no labels, no extra commentary.`;
+TONE — do not ignore this. The three tones produce fundamentally different letters, not just different adjective choices:
+${toneInstructions[tone]}
+
+Additional rules:
+- 3-4 paragraphs
+- Never use em dashes, use commas, colons, or periods instead
+- Do not use: "utilize," "leverage," "foster," "facilitate," "delve," "journey," "growth mindset," "holistic"
+- No generic filler like "this is going to be an amazing year" unless the tone earns it
+- Output only the letter text, no subject line, no labels, no extra commentary`;
 
   try {
     const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
