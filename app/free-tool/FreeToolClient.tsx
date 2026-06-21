@@ -326,7 +326,14 @@ export default function FreeToolClient() {
 
         {result && (
           <div style={{ background: '#fff', borderRadius: 16, padding: 24, marginTop: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderTop: '4px solid #0d9488' }}>
-            <p style={{ fontSize: 15, color: '#1e293b', lineHeight: 1.7, margin: '0 0 20px' }}>{result}</p>
+            <textarea
+              value={result}
+              onChange={(e) => setResult(e.target.value)}
+              rows={6}
+              style={{ width: '100%', fontSize: 15, color: '#1e293b', lineHeight: 1.7, marginBottom: 20, borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+              onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
+              onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
+            />
             <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 16, marginBottom: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
                 <label style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
