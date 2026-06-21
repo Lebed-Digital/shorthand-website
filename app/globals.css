@@ -1118,7 +1118,7 @@ footer {
 
 .blog-content img {
   width: 100%;
-  max-width: 100%;
+  max-width: 520px;
   height: auto;
   display: block;
   margin: 2rem auto;

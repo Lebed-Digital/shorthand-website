@@ -157,6 +157,7 @@ Although this will be my first year as a classroom teacher, I am certain my expe
 Please let me know your preferred way to communicate. You may contact me through ParentSquare or my email.
 
 Sincerely,
+
 Greg Lebed
 
 ---
