@@ -368,6 +368,18 @@ export default function FreeToolClient() {
               </Link>
               <span style={{ display: 'inline-block', marginLeft: 12, fontSize: 12, color: '#64748b' }}>No app store. Opens instantly.</span>
             </div>
+            <div style={{ marginTop: 12, background: '#f0fdf4', borderRadius: 14, padding: '18px 20px', border: '1px solid #bbf7d0' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#16a34a', marginBottom: 6 }}>New free tool</div>
+              <p style={{ fontSize: 14, color: '#1e293b', margin: '0 0 12px', lineHeight: 1.6 }}>
+                Welcome Letter Generator. Ready-to-send parent welcome letters in 30 seconds. Pick your grade, pick your tone, done.
+              </p>
+              <Link
+                href="/back-to-school-toolkit"
+                style={{ display: 'inline-block', background: '#16a34a', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none' }}
+              >
+                Try it →
+              </Link>
+            </div>
           </div>
         )}
 
