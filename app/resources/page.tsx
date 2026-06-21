@@ -27,7 +27,7 @@ const resources = [
     title: 'Parent Contact Documentation Log',
     description:
       'Never walk into a conference wondering when you last contacted home. Track calls, emails, outcomes, and follow-ups in one place.',
-    href: '/Parent Contact Documentation Log.pdf',
+    href: '/parent-contact-documentation-log.pdf',
     download: true,
     label: 'Download Free PDF',
     accent: '#0d9488',
@@ -39,7 +39,7 @@ const resources = [
     title: 'Classroom Behavior Documentation Log',
     description:
       'Keep a clear record of behavior incidents, interventions, and outcomes. Everything you need when a parent asks "Why didn\'t anyone tell me?"',
-    href: '/Classroom Behavior Documentation Log.pdf',
+    href: '/classroom-behavior-documentation-log.pdf',
     download: true,
     label: 'Download Free PDF',
     accent: '#7c3aed',
@@ -51,7 +51,7 @@ const resources = [
     title: 'Student Behavior Pattern Tracker',
     description:
       'By Friday you\'ve forgotten what Monday looked like. This weekly grid helps you spot patterns before the meeting, not during it.',
-    href: '/Student Behavior Pattern Tracker.pdf',
+    href: '/student-behavior-pattern-tracker.pdf',
     download: true,
     label: 'Download Free PDF',
     accent: '#b45309',
@@ -63,7 +63,7 @@ const resources = [
     title: 'Parent-Teacher Conference Notes',
     description:
       'Walk into every conference prepared. Walk out with a clear record of what was said, agreed to, and what happens next.',
-    href: '/Parent-Teacher Conference Notes.pdf',
+    href: '/parent-teacher-conference-notes.pdf',
     download: true,
     label: 'Download Free PDF',
     accent: '#0369a1',
