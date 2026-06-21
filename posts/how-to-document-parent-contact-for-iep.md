@@ -68,7 +68,7 @@ As a classroom teacher, I know how tempting it is to assume you'll remember the 
 
 ## A Better Way to Maintain Compliance
 
-Managing this level of documentation on sticky notes or a messy spreadsheet is a fast track to burnout. You need a system that does the heavy lifting.
+Managing this level of documentation on sticky notes or a messy spreadsheet is a fast track to burnout. You need a system that does the heavy lifting. A [parent communication log](/blog/free-parent-communication-log-for-teachers) gives you a simple structure for capturing every contact in one place, whether you use paper or a digital tool.
 
 The ShortHand app automatically timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a complete, searchable record of your outreach in seconds. You look professional, organized, and completely compliant.
 
@@ -76,6 +76,6 @@ Stop piecing things together from memory before every IEP meeting. [Try ShortHan
 
 ---
 
-*Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called) | [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist)*
+*Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called) | [IEP Behavior Documentation Checklist for Teachers](/blog/iep-behavior-documentation-checklist) | [IEP Meeting Checklist for Teachers](/blog/iep-meeting-checklist-for-teachers)*
 
 *Part of [The Teacher's Complete Guide to Parent Communication](/blog/teacher-parent-communication-guide).*

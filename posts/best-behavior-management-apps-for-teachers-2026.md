@@ -85,7 +85,7 @@ For general education teachers doing day-to-day management, it's overkill. The i
 
 ShortHand is built around the gap most behavior management apps don't fill: the space between noticing a problem, documenting it, and communicating with the parent before it escalates.
 
-Here's how it works in practice: a student has a rough morning. You tap their name, log a quick note with a pre-set tag (so you're not typing from scratch mid-lesson), and mark the mood. After school, you call the parent. You log the call, timestamped and tied to the student, with a summary of what was discussed and whether a follow-up is needed. Three weeks later, at a parent conference, you pull up the full history in seconds.
+Here's how it works in practice: a student has a rough morning. You tap their name, log a quick note with a pre-set tag (so you're not typing from scratch mid-lesson), and mark the mood. After school, you call the parent. You log the call, timestamped and tied to the student, with a summary of what was discussed and whether a follow-up is needed. If you want a standalone record of every parent contact regardless of which app you use, the [free parent communication log](/blog/free-parent-communication-log-for-teachers) covers what to track and how to keep it simple. Three weeks later, at a parent conference, you pull up the full history in seconds.
 
 No one told you to use it. No IT ticket was filed. No school-wide rollout was required.
 

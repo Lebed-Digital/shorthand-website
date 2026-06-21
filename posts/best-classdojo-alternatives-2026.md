@@ -27,7 +27,7 @@ The reasons tend to cluster into a few categories:
 
 **Grade level.** The avatar and points system works well in K-2. By 3rd or 4th grade, the gamification stops landing. Your most complex students checked out of their monster avatar in October. (Somewhere out there a ClassDojo character is still waiting for points that are never coming.)
 
-**Documentation.** ClassDojo wasn't built for professional record-keeping. Points aren't a documentation record. When you need to show a behavioral pattern at an IEP meeting, a screenshot of colored bubbles won't give you what you need.
+**Documentation.** ClassDojo wasn't built for professional record-keeping. Points aren't a documentation record. When you need to show a behavioral pattern at an IEP meeting, a screenshot of colored bubbles won't give you what you need. The [teacher documentation log template](/blog/teacher-documentation-log-template) is a simple starting point for building a real record.
 
 **Parent dependency.** ClassDojo's communication features only work if parents download the app and actually use it. In some communities that happens. In others, you spend the year sending updates into a void.
 

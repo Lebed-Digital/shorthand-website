@@ -73,7 +73,7 @@ If you are unsure how to fill out the concerns section without sounding overly n
 
 ## What to Do With Your Notes After the Meeting
 
-Taking the notes is only step one. A template is useless if it just sits in a folder collecting dust. You must actively use your notes to drive the follow up process. If you need help managing all the steps surrounding the meeting, review our comprehensive [IEP meeting checklist for teachers](/blog/iep-meeting-checklist-for-teachers).
+Taking the notes is only step one. A template is useless if it just sits in a folder collecting dust. And the quality of what you write here depends largely on the quality of the documentation you collected throughout the year. If the year's observations live only in memory and sticky notes, the notes section will be vague. [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) covers the habit that makes this part easier. You must actively use your notes to drive the follow up process. If you need help managing all the steps surrounding the meeting, review our comprehensive [IEP meeting checklist for teachers](/blog/iep-meeting-checklist-for-teachers).
 
 | Timeframe | Action | Who |
 |---|---|---|

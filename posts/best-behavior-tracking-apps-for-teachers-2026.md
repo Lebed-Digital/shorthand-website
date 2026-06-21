@@ -61,7 +61,7 @@ With that in mind, here's how the main options stack up.
 
 ClassDojo is the most widely used classroom behavior app in the world, and for elementary school, it's genuinely good, if you're using it for what it was designed for. The points system, class story feed, and parent messaging are all well-built and familiar to most families.
 
-Where it breaks down: ClassDojo isn't really a *documentation* tool. It's a communication and engagement platform. The behavior log isn't easy to export, search, or present at a meeting. Points given and taken don't automatically translate into a narrative that makes sense in a parent conference or an IEP.
+Where it breaks down: ClassDojo isn't really a *documentation* tool. It's a communication and engagement platform. The behavior log isn't easy to export, search, or present at a meeting. Points given and taken don't automatically translate into a narrative that makes sense in a parent conference or an IEP. If a searchable behavior record is what you actually need, the [teacher documentation log template](/blog/teacher-documentation-log-template) is a simpler place to start.
 
 It also requires parents to opt in and engage with the app, which works great in some school communities and barely at all in others.
 
