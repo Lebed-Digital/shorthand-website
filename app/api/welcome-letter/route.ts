@@ -36,7 +36,7 @@ export async function POST(req: Request): Promise<Response> {
 
   const toneInstructions: Record<string, string> = {
     Warm: `Write in a genuinely warm, personal tone. This is not "corporate warm" with words like "journey" and "growth mindset." It sounds like a real person who chose teaching because they love kids. Short sentences. Real feelings. The kind of letter a family reads and thinks, "I like this teacher already."`,
-    Funny: `Write with actual self-deprecating humor about back-to-school chaos. Make at least one joke about the reality of the first week: the supplies list, the 47 permission slips, the child who cries on day one (it might be the teacher). Do NOT just add the word "fun" more often. The humor must be in the actual sentences, not the adjectives. A family should laugh at least once. Keep it appropriate but do not play it safe.`,
+    Funny: `Write a warm welcome letter with 2-3 dry teacher-humor moments woven in — self-deprecating observations about the first week, the supplies list, the 47 permission slips, or the general chaos of back-to-school. The letter is warm overall; the humor punctuates it, it does not dominate it. Never joke about children's emotions, struggles, or crying. The humor is always directed at the teacher or the situation, never at kids.`,
     Professional: `Write in a structured, efficient professional tone. Shorter paragraphs. No fluff. Lead with who you are, what the year will look like, and how to reach you. This is not cold — it is respectful and clear. A family should finish reading it in 30 seconds and know exactly what to expect. Do not use warm filler phrases like "I am so excited" or "this is going to be an amazing year."`,
   };
 
@@ -75,7 +75,7 @@ Additional rules:
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful assistant that writes parent welcome letters for teachers. Output only the letter text. No labels, no intro, no extra commentary.',
+            content: 'You are a helpful assistant that writes parent welcome letters for teachers. Output only the letter text. No labels, no intro, no extra commentary. Never joke about children crying, struggling emotionally, or having a hard time. Never invent specific systems, apps, websites, or communication platforms — keep any references to communication general (email, notes home, etc.).',
           },
           { role: 'user', content: prompt },
         ],
