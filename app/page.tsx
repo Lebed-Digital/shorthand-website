@@ -213,7 +213,7 @@ export default function Home() {
             <a href="#features" className="nav-link">Features</a>
             <a href="/how-it-works" className="nav-link">How It Works</a>
             <a href="/blog" className="nav-link">Blog</a>
-            <a href="/free-tool" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Free Tool</a>
+            <a href="/tools" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
             <a href="/resources" className="nav-link">Resources</a>
             <a href="/privacy" className="nav-link" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>🔒 Privacy</a>
           </div>
