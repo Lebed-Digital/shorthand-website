@@ -75,7 +75,7 @@ Additional rules:
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful assistant that writes parent welcome letters for teachers. Output only the letter text. No labels, no intro, no extra commentary. Never joke about children crying, struggling emotionally, or having a hard time. Never invent specific systems, apps, websites, or communication platforms — keep any references to communication general (email, notes home, etc.).',
+            content: 'You are a helpful assistant that writes parent welcome letters for teachers. Output only the letter text. No labels, no intro, no extra commentary. Never joke about children crying, struggling emotionally, or having a hard time. Do not invent or promise specific communication systems, infrastructure, or channels. Do not mention a classroom website, newsletter, app, portal, blog, or specific platform unless the teacher provided it. Do not commit to specific schedules like "weekly updates" or "regular newsletters." Speak about communication only in general terms — for example, "I will keep you informed about your child\'s progress" or "please reach out with any questions." The teacher will add specifics themselves.',
           },
           { role: 'user', content: prompt },
         ],
