@@ -27,6 +27,8 @@ After 20+ years in K-8 classrooms and my time as a Registered Behavior Technicia
 
 As a parent of a neurodiverse child, I've also experienced these emails from the other side. The messages that helped me most were the ones that described what happened clearly, avoided labels, and focused on solutions. Parents do not need perfection. They need information they can understand and act on.
 
+Before any of these emails, there's one message worth sending first: a welcome letter home at the start of the year. It's part of why parents are more likely to respond when things get hard later. The [Welcome Letter Generator](/back-to-school-toolkit) takes 30 seconds and sets the tone for the whole year.
+
 Here are five copy-paste templates for sample emails to parents about student behavior - so you can clear your inbox and get home on time.
 
 ![An exhausted teacher staring at a blank parent behavior email while classroom notes become an organized message](/blog-illustrations/parent-behavior-email-blank-cursor.png)

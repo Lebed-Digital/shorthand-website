@@ -27,41 +27,61 @@ const resources = [
     title: 'Parent Contact Documentation Log',
     description:
       'Never walk into a conference wondering when you last contacted home. Track calls, emails, outcomes, and follow-ups in one place.',
-    file: '/Parent Contact Documentation Log.pdf',
+    href: '/Parent Contact Documentation Log.pdf',
+    download: true,
     label: 'Download Free PDF',
     accent: '#0d9488',
     bg: '#f0fdfa',
     tag: 'Printable PDF',
+    signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
   },
   {
     title: 'Classroom Behavior Documentation Log',
     description:
       'Keep a clear record of behavior incidents, interventions, and outcomes. Everything you need when a parent asks "Why didn\'t anyone tell me?"',
-    file: '/Classroom Behavior Documentation Log.pdf',
+    href: '/Classroom Behavior Documentation Log.pdf',
+    download: true,
     label: 'Download Free PDF',
     accent: '#7c3aed',
     bg: '#f5f3ff',
     tag: 'Printable PDF',
+    signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
   },
   {
     title: 'Student Behavior Pattern Tracker',
     description:
       'By Friday you\'ve forgotten what Monday looked like. This weekly grid helps you spot patterns before the meeting, not during it.',
-    file: '/Student Behavior Pattern Tracker.pdf',
+    href: '/Student Behavior Pattern Tracker.pdf',
+    download: true,
     label: 'Download Free PDF',
     accent: '#b45309',
     bg: '#fffbeb',
     tag: 'Printable PDF',
+    signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
   },
   {
     title: 'Parent-Teacher Conference Notes',
     description:
       'Walk into every conference prepared. Walk out with a clear record of what was said, agreed to, and what happens next.',
-    file: '/Parent-Teacher Conference Notes.pdf',
+    href: '/Parent-Teacher Conference Notes.pdf',
+    download: true,
     label: 'Download Free PDF',
     accent: '#0369a1',
     bg: '#f0f9ff',
     tag: 'Printable PDF',
+    signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
+  },
+  {
+    title: 'Welcome Letter Generator',
+    description:
+      'Ready-to-send welcome letters for families. Pick your grade, pick your tone, done in 30 seconds. Free, no sign-up.',
+    href: '/back-to-school-toolkit',
+    download: false,
+    label: 'Try the Generator',
+    accent: '#16a34a',
+    bg: '#f0fdf4',
+    tag: 'Free AI Tool',
+    signals: ['No sign-up required', 'Works for Pre-K through 8th grade', 'Created by a classroom teacher'],
   },
 ];
 
@@ -97,21 +117,30 @@ export default function ResourcesPage() {
       <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
 
         {resources.map((resource) => (
-          <div key={resource.file} style={{ background: resource.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: `4px solid ${resource.accent}` }}>
+          <div key={resource.href} style={{ background: resource.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: `4px solid ${resource.accent}` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
               <span style={{ fontSize: 11, fontWeight: 700, color: resource.accent, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{resource.tag}</span>
             </div>
             <h2 style={{ fontSize: 17, fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.3 }}>{resource.title}</h2>
             <p style={{ fontSize: 14, color: '#475569', margin: '0 0 16px', lineHeight: 1.6 }}>{resource.description}</p>
-            <a
-              href={resource.file}
-              download
-              style={{ display: 'inline-block', background: resource.accent, color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
-            >
-              {resource.label} →
-            </a>
+            {resource.download ? (
+              <a
+                href={resource.href}
+                download
+                style={{ display: 'inline-block', background: resource.accent, color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
+              >
+                {resource.label} →
+              </a>
+            ) : (
+              <Link
+                href={resource.href}
+                style={{ display: 'inline-block', background: resource.accent, color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
+              >
+                {resource.label} →
+              </Link>
+            )}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
-              {['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'].map((signal) => (
+              {resource.signals.map((signal) => (
                 <span key={signal} style={{ fontSize: 12, color: '#475569', display: 'flex', alignItems: 'center', gap: 4 }}>
                   <span style={{ color: resource.accent, fontWeight: 700 }}>✓</span> {signal}
                 </span>
