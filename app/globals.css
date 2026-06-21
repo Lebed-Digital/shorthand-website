@@ -1118,13 +1118,16 @@ footer {
 
 .blog-content img {
   width: 100%;
-  max-width: 520px;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 2rem auto;
   border-radius: 12px;
   background: #fff;
   border: 1px solid rgba(255,255,255,0.08);
+}
+.blog-content img[src*="screenshot"] {
+  max-width: 520px;
 }
 
 .blog-card-link { text-decoration: none; display: block; }
