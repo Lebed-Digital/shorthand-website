@@ -36,7 +36,7 @@ export function getIP(req: Request): string {
 export function rateLimitExceededResponse(tool: string): Response {
   console.log(`[ratelimit] blocked | tool=${tool} | ${new Date().toISOString()}`);
   return Response.json(
-    { error: { message: "You've reached today's free generation limit. Try again in an hour." } },
+    { error: { message: "You've reached the free generation limit. Try again in about an hour." } },
     { status: 429 }
   );
 }
