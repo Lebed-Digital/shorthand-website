@@ -20,6 +20,7 @@ export default function WelcomeLetterClient() {
   const [subject, setSubject] = useState('');
   const [tone, setTone] = useState('Warm');
   const [result, setResult] = useState('');
+  const [refineInstructions, setRefineInstructions] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
@@ -44,6 +45,25 @@ export default function WelcomeLetterClient() {
     }
   }
 
+  async function refine() {
+    if (!result) return;
+    setError(''); setLoading(true);
+    try {
+      const res = await fetch('/api/welcome-letter-refine', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ letter: result, instructions: refineInstructions }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
+      setResult(data.letter);
+    } catch (e: any) {
+      setError(e.message ?? 'Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  }
+
   async function copy() {
     await navigator.clipboard.writeText(result);
     setCopied(true);
@@ -52,7 +72,7 @@ export default function WelcomeLetterClient() {
 
   function reset() {
     setResult(''); setTeacherName(''); setGrade(''); setSubject('');
-    setTone('Warm'); setError('');
+    setTone('Warm'); setRefineInstructions(''); setError('');
   }
 
   const inputStyle: React.CSSProperties = {
@@ -225,18 +245,36 @@ export default function WelcomeLetterClient() {
         {result && (
           <div style={{ background: '#fff', borderRadius: 16, padding: 24, marginTop: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderTop: '4px solid #0d9488' }}>
             <div style={{ fontSize: 11, fontWeight: 700, color: '#0d9488', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>Your welcome letter</div>
-            <div style={{ fontSize: 14, color: '#1e293b', lineHeight: 1.8, margin: '0 0 20px', whiteSpace: 'pre-wrap' }}>{result}</div>
+            <textarea
+              value={result}
+              onChange={(e) => setResult(e.target.value)}
+              rows={14}
+              style={{ width: '100%', fontSize: 14, color: '#1e293b', lineHeight: 1.8, marginBottom: 20, whiteSpace: 'pre-wrap', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+              onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
+              onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
+            />
+            <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 16, marginBottom: 12 }}>
+              <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
+                Refine <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(tell AI what to change)</span>
+              </label>
+              <textarea
+                value={refineInstructions}
+                onChange={(e) => setRefineInstructions(e.target.value)}
+                placeholder="e.g. we're a K-8 school, don't mention high school transition"
+                rows={2}
+                style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+                onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
+                onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
+              />
+            </div>
             <div style={{ display: 'flex', gap: 8 }}>
-              <button
-                onClick={copy}
-                style={{ flex: 1, background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '11px', borderRadius: 10, border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}
-              >
-                {copied ? '✓ Copied!' : 'Copy to clipboard'}
+              <button onClick={copy} style={{ flex: 1, background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '11px', borderRadius: 10, border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}>
+                {copied ? '✓ Copied!' : 'Copy'}
               </button>
-              <button
-                onClick={reset}
-                style={{ padding: '11px 16px', borderRadius: 10, border: '1.5px solid #e2e8f0', background: '#f8fafc', color: '#64748b', fontSize: 13, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}
-              >
+              <button onClick={refine} disabled={loading} style={{ flex: 1, background: '#f8fafc', color: '#334155', fontWeight: 600, fontSize: 13, padding: '11px', borderRadius: 10, border: '1.5px solid #e2e8f0', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit' }}>
+                {loading ? 'Refining…' : 'Refine'}
+              </button>
+              <button onClick={reset} style={{ padding: '11px 16px', borderRadius: 10, border: '1.5px solid #e2e8f0', background: '#f8fafc', color: '#64748b', fontSize: 13, fontWeight: 500, cursor: 'pointer', fontFamily: 'inherit' }}>
                 New
               </button>
             </div>
