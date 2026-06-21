@@ -89,6 +89,14 @@ The features that ClassDojo alternatives tend to add fall into three categories:
 
 **Data that travels.** At the end of the year, ClassDojo data stays in ClassDojo. Alternatives with export features let you hand a behavioral summary to a next-year teacher, a counselor, or a specialist in a format they can actually use.
 
+## MTSS and the Charting Burden on General Education Teachers
+
+In a lot of schools, general education teachers are now expected to bring behavioral data to MTSS and RTI meetings. Not impressions. Not "he has a hard time in math." Actual data: how often does the behavior occur, in what contexts, over what time period.
+
+That is a reasonable request. The problem is that most general education teachers were never given a tool to collect that data in the first place. A ClassDojo point total does not answer the question "what behavioral patterns have you observed over the last 30 days." It tells you he lost 12 points. It does not tell you when, during which activities, or what interventions you tried.
+
+This is not about holding anyone accountable. It is about being able to contribute meaningfully when the team asks for classroom data. A simple daily log, even a few sentences per notable incident, gives you something concrete to bring. ShortHand is one option for collecting those notes quickly and keeping them organized before you need to enter anything into your school's required systems. Whatever tool you use, the goal is the same: arrive with specific information, not just impressions.
+
 ## Which One Is Right for You
 
 **Stay with ClassDojo if:**

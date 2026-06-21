@@ -89,6 +89,12 @@ You're not logging to cover yourself. You're logging because it makes every conv
 
 ---
 
+## The "I Was Never Contacted" Problem
+
+One of the most draining situations teachers face is a parent dispute that comes down to your word against theirs. You called. You emailed. You sent a note home. But you cannot prove any of it, and the conversation quickly becomes uncomfortable for everyone.
+
+A communication log does not exist to win arguments. It exists to remove the argument entirely. When you can pull up a timestamped record of the call you made on October 9th, what was discussed, and what was decided, the conversation shifts. You are not defending yourself. You are reviewing shared information together. That is a much calmer place to start.
+
 ## Tips for Making Parent Logging Actually Stick
 
 The most common reason teachers stop using a communication log: it feels like extra work. Here's how to reduce the friction.

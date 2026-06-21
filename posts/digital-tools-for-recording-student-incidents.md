@@ -27,6 +27,14 @@ Here's what's actually worth using.
 
 ---
 
+## The Fragmentation Problem
+
+Most teachers are not working with one system. They are managing a behavior log in a spreadsheet, parent contacts in email, and mood check-ins on a sticky note somewhere on their desk. When a support meeting or parent conference arrives, none of those sources talk to each other. You are cross-referencing three places trying to piece together a timeline that should have been in one place all along.
+
+The right digital tool does not just record incidents faster. It keeps incident notes, parent contact records, and student history in one searchable place so you are not starting from scratch every time you need to report on a student.
+
+---
+
 ## What "recording student incidents" actually means
 
 Before the list, a quick definition check, because this phrase covers a wide range of teacher needs:

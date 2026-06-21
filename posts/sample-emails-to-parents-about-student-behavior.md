@@ -178,6 +178,8 @@ That second version is a professional document. It's useful in a parent meeting.
 
 This is exactly the problem I built [ShortHand](https://app.getshorthandapp.com?signup=1) to solve. You log notes in under 5 seconds during the day - voice-to-text while walking, one tap to select the student. By the time 4 PM rolls around, ShortHand has already drafted a parent email from your notes. You review it, adjust the tone if needed, and send.
 
+One more thing worth naming: when a behavior incident was genuinely hard, the first instinct is to write an email that sounds like how you feel. That email is usually not the one to send. The templates above are intentionally calm and factual. That is not minimizing what happened. It is protecting you and making it more likely the parent can actually hear what you are saying. Objective, professional wording lands better than emotional wording, especially when the relationship is already under strain.
+
 The templates above are useful. But the real unlock is having the documentation to fill them with something specific.
 
 ---

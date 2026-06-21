@@ -35,6 +35,8 @@ The apps teachers use most are built to impress in a sales meeting, not to hold 
 
 Here is where each tool falls short, and what you should be using instead.
 
+Many teachers end up running three or four different tools at the same time: one for class announcements, one for direct messaging, one for behavior notes, and sometimes a spreadsheet for contact records. None of them share data. When a parent dispute arises and you need a complete picture of what was communicated and when, you are left cross-referencing tabs and scrolling through app feeds. The gap between those systems is exactly where "I was never contacted" disputes take root.
+
 ---
 
 ## ClassDojo: Great for Culture, Weak on Documentation

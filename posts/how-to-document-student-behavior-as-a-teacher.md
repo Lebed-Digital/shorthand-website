@@ -58,6 +58,12 @@ Write this instead: "Asked Marcus to open his textbook to page 42. Marcus threw 
 
 When a parent reads the first example, they might argue about your definition of disrespectful. When a parent reads the second example, there is no argument to be made. The quote speaks for itself. ShortHand is incredibly helpful for this because you can quickly type the exact quote into your phone the second the class ends, before you forget the exact phrasing.
 
+### When You Are Too Stressed to Write Calmly
+
+After a difficult incident, the words that come to mind first are usually not the ones that belong in a professional record. That is normal. The goal in the moment is not to write the perfect note. It is to capture the facts before they disappear.
+
+A quick placeholder logged right after class works fine: "refused to return to seat, raised voice when redirected, left room without permission." That gets the core facts down while they are still accurate. Later in the day, before you leave the building, you can expand it into objective, professional wording with the full sequence of events. You still have the facts. You are just no longer writing from the middle of the frustration.
+
 ### Stick to the Facts, Leave Out Your Feelings
 
 Your behavior log is a professional document. It may be read by your principal or shared at an IEP meeting. Keep your emotions completely out of it.

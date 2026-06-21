@@ -65,6 +65,12 @@ The only way to maintain a documentation log is to adhere strictly to the rule o
 
 If you try to save all your logging for Friday afternoon, you will fail. You will forget the details, and the task will feel overwhelming. You have to log the incident the moment the class transitions, or the moment you sit down for lunch.
 
+## Why End-of-Day Logging Usually Fails
+
+A lot of teachers plan to catch up on documentation after the bell. The problem is that by the time contract hours end, the specific details are already fading. You remember that something happened with a student during third period. You cannot remember exactly what was said, what triggered it, or what you tried first. The note you write at 4pm is vaguer than the note you would have written at 10:23am, and a vague note is not much use at a parent meeting or an IEP.
+
+This is not a willpower problem. It is a timing problem. The only log entry worth making is the one you make during the transition, before the next class starts, while the facts are still clear. Thirty seconds at the moment beats ten minutes of reconstruction after school.
+
 ## Building a Sustainable Documentation Habit
 
 To make documentation sustainable, you have to remove the friction. This means transitioning away from paper whenever possible. Paper gets lost. Paper gets coffee spilled on it. Paper cannot be searched instantly when an administrator walks into your room asking about a specific student.
