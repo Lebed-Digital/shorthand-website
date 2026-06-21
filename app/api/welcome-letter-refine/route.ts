@@ -1,3 +1,5 @@
+import { checkRateLimit } from '@/lib/ratelimit';
+
 export const runtime = 'edge';
 
 export async function POST(req: Request): Promise<Response> {
@@ -5,6 +7,9 @@ export async function POST(req: Request): Promise<Response> {
   if (!apiKey) {
     return Response.json({ error: { message: 'Server misconfigured.' } }, { status: 500 });
   }
+
+  const rl = await checkRateLimit(req, 'welcome-letter-refine');
+  if (rl.blocked) return rl.response!;
 
   let letter: string, instructions: string;
   try {
