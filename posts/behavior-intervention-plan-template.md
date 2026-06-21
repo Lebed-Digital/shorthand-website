@@ -50,7 +50,7 @@ You can fill out that template perfectly. You can memorize the student's trigger
 
 The real work of a behavior intervention plan is the daily data collection. The template is the hypothesis. The daily documentation is the evidence that proves whether the hypothesis is correct or completely wrong.
 
-When you go back to the IEP team in six weeks, the psychologist is going to ask you if the plan is working. If you just say that the student is still acting up, the team cannot make any adjustments. They need raw numbers. They need to know if the pencil throwing decreased from five times a day to two times a day. They need evidence, not feelings.
+When you go back to the IEP team in six weeks, the psychologist is going to ask you if the plan is working. If you just say that the student is still acting up, the team cannot make any adjustments. They need raw numbers. They need to know if the pencil throwing decreased from five times a day to two times a day. They need evidence, not feelings. If the student is also receiving Tier 2 supports through MTSS, see [how to document Tier 2 interventions for MTSS](/blog/how-to-document-tier-2-interventions-for-mtss) for a simple format you can maintain alongside the BIP data.
 
 ## The Daily Documentation Trap
 

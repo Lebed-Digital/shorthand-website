@@ -40,7 +40,7 @@ Second, you need duration data. How long does the outburst last?
 
 Third, you need ABC data. What happens before, during, and after the event?
 
-Fourth, you need intervention logs. What did you try, and did it work?
+Fourth, you need intervention logs. What did you try, and did it work? If your student is on a Tier 2 MTSS plan, [this guide on documenting Tier 2 interventions](/blog/how-to-document-tier-2-interventions-for-mtss) covers exactly what to record and how.
 
 Fifth, you need parent communication records. When did you notify them?
 

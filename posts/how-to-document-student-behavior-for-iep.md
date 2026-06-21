@@ -94,7 +94,7 @@ Here is the system I eventually landed on after years of trying things that didn
 
 **Log in the moment, not later.** Whatever you use, it has to be fast enough to use while teaching. If it takes more than 10 seconds, you won't do it. Voice-to-text changed everything for me. I can log a note while walking to the next student without breaking the flow of the lesson.
 
-**Use consistent categories.** Don't create a new format every time. Pick three or four categories and stick to them: behavior, participation, emotional regulation, positive moment. Consistency is what makes patterns visible.
+**Use consistent categories.** Don't create a new format every time. Pick three or four categories and stick to them: behavior, participation, emotional regulation, positive moment. Consistency is what makes patterns visible. If you're tracking Tier 2 MTSS interventions specifically, [here is a format that works for that](/blog/how-to-document-tier-2-interventions-for-mtss) without requiring a separate binder.
 
 **Note the context automatically.** Time and activity are the most useful contextual details. If your logging tool automatically timestamps the entry, you already have half the context captured.
 

@@ -56,7 +56,7 @@ You can fold the papers. You can tap the desks. But the most critical part of th
 
 Even though a specialist wrote the plan, the specialist is not in your room. The responsibility of tracking the off-task behavior falls squarely on your shoulders. You have to record how many times the student refused to work. You have to record which interventions resulted in compliance and which resulted in further shutdown.
 
-If you do not track this data, the IEP team will assume the plan is working perfectly. When the student fails the semester, everyone will look at you and ask why you did not say anything. Your data is your voice.
+If you do not track this data, the IEP team will assume the plan is working perfectly. When the student fails the semester, everyone will look at you and ask why you did not say anything. Your data is your voice. If the student is receiving Tier 2 supports through MTSS, [this guide on MTSS documentation](/blog/how-to-document-tier-2-interventions-for-mtss) gives you a format that works within the intervention framework.
 
 ## How to Collect Data Without Losing Your Mind
 

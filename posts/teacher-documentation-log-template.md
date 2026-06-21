@@ -77,7 +77,7 @@ To make documentation sustainable, you have to remove the friction. This means t
 
 The digital version of this log that lives right in your pocket is exactly what ShortHand was built for. Instead of lugging around a clipboard, you just open the app. ShortHand automatically logs the date and time and organizes everything by student. You can type the incident in twenty seconds and it is securely saved.
 
-Whether you use a paper template or a digital tool, the key is consistency. Do not let minor behaviors slide. Document everything, stick to the facts, and you will have what you need when it matters.
+Whether you use a paper template or a digital tool, the key is consistency. Do not let minor behaviors slide. Document everything, stick to the facts, and you will have what you need when it matters. If you are documenting Tier 2 interventions as part of an MTSS plan, [here is a simple format built specifically for that](/blog/how-to-document-tier-2-interventions-for-mtss).
 
 If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
 

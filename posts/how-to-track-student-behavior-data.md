@@ -44,7 +44,7 @@ A simple starting point:
 - **Positive behaviors** (helping, participation, effort, progress)
 - **Emotional regulation** (frustration responses, shutdowns, outbursts)
 
-Keep your categories broad and consistent. If your system is too detailed -- if you're trying to sub-categorize every behavior -- you won't stick with it past the first week.
+Keep your categories broad and consistent. If your system is too detailed -- if you're trying to sub-categorize every behavior -- you won't stick with it past the first week. If your tracking is specifically for a student receiving Tier 2 MTSS interventions, see [how to document Tier 2 supports for MTSS](/blog/how-to-document-tier-2-interventions-for-mtss) for intervention-specific data categories.
 
 ## Step 2: Make It Fast Enough to Use in Real Time
 
