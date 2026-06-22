@@ -131,6 +131,10 @@ Provided teacher check-in and visual checklist
 
 Completed 7 of 10 problems after support
 
+**Need a printable version?**
+
+[Download the free MTSS Tier 2 Intervention Tracking Sheet](/mtss-tier-2-intervention-tracking-sheet.pdf) to record the date, target behavior, intervention used, and student response during a 6-8 week intervention cycle.
+
 That takes less than a minute to record and gives your team something meaningful to review later. You can start with the [free teacher documentation log template](/blog/teacher-documentation-log-template) and adapt the columns to match your intervention data.
 
 ## What Happens When Documentation Is Consistent?

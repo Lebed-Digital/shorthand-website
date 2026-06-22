@@ -24,6 +24,18 @@ export const metadata: Metadata = {
 
 const resources = [
   {
+    title: 'Free MTSS Tier 2 Intervention Tracking Sheet',
+    description:
+      'A printable tracking sheet for documenting Tier 2 interventions, student responses, and MTSS team data without creating more paperwork.',
+    href: '/mtss-tier-2-intervention-tracking-sheet.pdf',
+    download: true,
+    label: 'Download PDF',
+    accent: '#0f766e',
+    bg: '#f8fafc',
+    tag: 'Printable PDF',
+    signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
+  },
+  {
     title: 'Parent Contact Documentation Log',
     description:
       'Never walk into a conference wondering when you last contacted home. Track calls, emails, outcomes, and follow-ups in one place.',
