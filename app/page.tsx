@@ -27,7 +27,7 @@ const jobs = [
     title: 'Find It',
     subtitle: 'Walk into meetings with the full story.',
     desc: 'Every note, parent contact, and intervention stays organized in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
-    img: '/screenshot2.png',
+    img: '/2.png',
     imgAlt: 'Student notes history screen',
     objectPosition: 'center top',
   },
@@ -36,7 +36,7 @@ const jobs = [
     title: 'Use It',
     subtitle: 'Turn documentation into action.',
     desc: 'Generate parent emails, behavior summaries, progress reports, and conference-ready documentation from notes you\'ve already collected.',
-    img: '/screenshot3.png',
+    img: '/3.png',
     imgAlt: 'Generated parent report screen',
     objectPosition: 'center top',
   },
@@ -521,7 +521,7 @@ export default function Home() {
                 <Link href={`/features/${j.slug}`} className="feature-card" style={{ gap: 0 }}>
                   <div style={{
                     marginBottom: '1.75rem',
-                    aspectRatio: '9 / 16',
+                    aspectRatio: '3 / 4',
                     width: '100%',
                     position: 'relative',
                     borderRadius: '16px',
