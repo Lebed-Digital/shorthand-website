@@ -5,19 +5,37 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import AnimatedLogo from '../components/AnimatedLogo';
-import { Pencil, ClipboardList, Mail, MessageSquare, School, BarChart2, CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
+import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
-const features = [
-  { slug: 'quick-note',        Icon: Pencil,        title: 'Quick Note',            desc: 'Tap a student, tap a behavior tag, hit save. Done in under 5 seconds. No forms, no menus. Voice-to-text and smart shortcuts built in.' },
-  { slug: 'behavior-tracking', Icon: School,        title: 'Never Miss a Student',  desc: 'Student status rings glow red when you haven\'t logged in 16+ days. Automatic alerts so no one quietly slips through the cracks.' },
-  { slug: 'parent-emails',          Icon: Mail,           title: 'No More Staring at a Blank Email',       desc: 'Log a behavior note. Tap "draft message." ShortHand drafts it instantly, ready to send or edit. No more staring at a blank email. Get parents in the loop fast, before small issues become big ones.' },
-  { slug: 'parent-communication-log', Icon: MessageSquare, title: 'Parent Communication Log', desc: 'Every call, email, and conversation logged in one place. Never scramble to remember when you last reached out, or what was said. A paper trail that protects you and keeps parents accountable.' },
-  { slug: 'ai-reports',             Icon: ClipboardList,  title: 'AI Reports',               desc: 'Turn months of raw notes into polished, parent-ready progress reports in seconds. Quick Note, Standard, or Detailed.' },
-  { slug: 'class-insights',    Icon: BarChart2,     title: 'Progress & Insights',   desc: 'View behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.' },
+const jobs = [
+  {
+    slug: 'quick-note',
+    title: 'Capture It',
+    subtitle: 'Stop relying on memory.',
+    desc: 'Document behavior incidents, parent conversations, accommodations, interventions, and classroom observations in seconds while they\'re still fresh.',
+    img: '/mockup-quicknote.webp',
+    imgAlt: 'Quick note logging screen',
+  },
+  {
+    slug: 'parent-communication-log',
+    title: 'Find It',
+    subtitle: 'Walk into meetings with the full story.',
+    desc: 'Every note, parent contact, and intervention stays organized in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
+    img: '/mockup-parents.webp',
+    imgAlt: 'Parent communication log screen',
+  },
+  {
+    slug: 'ai-reports',
+    title: 'Use It',
+    subtitle: 'Turn documentation into action.',
+    desc: 'Generate parent emails, behavior summaries, progress reports, and conference-ready documentation from notes you\'ve already collected.',
+    img: '/mockup-report.webp',
+    imgAlt: 'Report generation screen',
+  },
 ];
 
 const btnTap   = { scale: 0.96 };
@@ -484,130 +502,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
+      {/* JOBS — 3-card problem/solution section */}
       <section id="features" className="features-section">
         <div className="section-inner" ref={featuresRef}>
           <div className="features-header">
             <div className="section-label">What it does</div>
-            <h2 className="section-heading">Remember what happened.<br /><em>When it matters most.</em></h2>
-            <p className="section-sub">Walk into any conference, IEP meeting, or admin conversation already knowing it's documented, because you logged it the moment it happened.</p>
+            <h2 className="section-heading">Three things every teacher needs.</h2>
+            <p className="section-sub">Capture what happened. Find it when it matters. Turn it into something useful.</p>
           </div>
-          <div className="features-grid">
-            {features.map((f) => (
-              <motion.div key={f.slug} whileHover={{ y: -6, scale: 1.02 }} whileTap={{ scale: 0.98 }}
+          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
+            {jobs.map((j) => (
+              <motion.div key={j.slug} whileHover={{ y: -6, scale: 1.02 }} whileTap={{ scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
-                <Link href={`/features/${f.slug}`} className="feature-card">
-                  <div className="card-icon"><f.Icon size={26} strokeWidth={1.75} /></div>
-                  <div className="card-title" style={f.slug === 'parent-emails' ? { textAlign: 'center' } : undefined}>{f.title}</div>
-                  <p className="card-desc">{f.desc}</p>
-                  {f.slug === 'quick-note' && (
-                    <div className="card-mini-demo">
-                      <div className="qn-note-row">
-                        <div className="qn-avatar" style={{ borderColor: '#22c55e', boxShadow: '0 0 8px rgba(34,197,94,0.5)' }}>MR</div>
-                        <div className="qn-bubble">
-                          <span className="qn-tag">#behavior</span> Stayed on task entire period. Big improvement!
-                          <div className="qn-meta">🎤 voice · just now</div>
-                        </div>
-                      </div>
-                      <div className="qn-badge">⚡ logged in 4 sec</div>
-                    </div>
-                  )}
-                  {f.slug === 'behavior-tracking' && (
-                    <div className="status-ring-demo">
-                      {[
-                        { initials: 'AJ', color: '#22c55e', glow: 'rgba(34,197,94,0.5)', label: 'Logged today' },
-                        { initials: 'MR', color: '#22c55e', glow: 'rgba(34,197,94,0.5)', label: '3 days ago' },
-                        { initials: 'SF', color: '#fbbf24', glow: 'rgba(251,191,36,0.6)', label: '12 days ago' },
-                        { initials: 'TK', color: '#ef4444', glow: 'rgba(239,68,68,0.65)', label: '18 days ago', pulse: true },
-                      ].map((s) => (
-                        <div key={s.initials} className="status-ring-item">
-                          <div className="status-ring-avatar" style={{
-                            borderColor: s.color,
-                            boxShadow: `0 0 10px ${s.glow}, 0 0 20px ${s.glow}`,
-                            animation: s.pulse ? 'ringPulse 2s ease-in-out infinite' : 'none',
-                          }}>
-                            {s.initials}
-                          </div>
-                          <span className="status-ring-label">{s.label}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {f.slug === 'parent-emails' && (
-                    <div className="card-mini-demo">
-                      <div className="ai-report-row">
-                        <div className="ai-report-raw">
-                          <span className="ai-label">Your notes</span>
-                          "talked back, struggled w/ fractions, better end of week"
-                        </div>
-                        <div className="ai-arrow">✦</div>
-                        <div className="ai-report-polished">
-                          <span className="ai-label" style={{ color: '#a78bfa' }}>AI draft</span>
-                          Marcus has shown growth in self-regulation and is making steady progress in math.
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                  {f.slug === 'ai-reports' && (
-                    <div className="card-mini-demo">
-                      <div className="ai-report-types">
-                        {[
-                          { label: 'Quick Note', color: '#22c55e', desc: '2 sentences' },
-                          { label: 'Standard',   color: '#f97316', desc: '1 paragraph' },
-                          { label: 'Detailed',   color: '#a78bfa', desc: 'Full report' },
-                        ].map(r => (
-                          <div key={r.label} className="ai-type-pill" style={{ borderColor: r.color, boxShadow: `0 0 8px ${r.color}44` }}>
-                            <span style={{ color: r.color, fontWeight: 700, fontSize: '0.65rem' }}>{r.label}</span>
-                            <span style={{ color: 'var(--text-dim)', fontSize: '0.6rem' }}>{r.desc}</span>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="ai-spark-badge">✦ months of notes → 30 seconds</div>
-                    </div>
-                  )}
-                  {f.slug === 'class-insights' && (
-                    <div className="card-mini-demo">
-                      <div className="insights-bars">
-                        {[
-                          { label: 'Sep', h: 30, color: '#ef4444' },
-                          { label: 'Nov', h: 45, color: '#f97316' },
-                          { label: 'Jan', h: 60, color: '#f97316' },
-                          { label: 'Mar', h: 82, color: '#22c55e', badge: '↑' },
-                        ].map(b => (
-                          <div key={b.label} className="insights-bar-col">
-                            <div className="insights-bar-wrap">
-                              {b.badge && <span className="insights-badge" style={{ color: '#22c55e' }}>{b.badge}</span>}
-                              <div className="insights-bar" style={{ height: b.h, background: b.color, boxShadow: `0 0 8px ${b.color}88` }} />
-                            </div>
-                            <span className="insights-bar-label">{b.label}</span>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="ai-spark-badge" style={{ color: '#22c55e' }}>↑ Improving · 52-week view</div>
-                    </div>
-                  )}
-                  {f.slug === 'parent-communication-log' && (
-                    <div className="card-mini-demo">
-                      <div className="commlog-list">
-                        {[
-                          { icon: '📞', type: 'Phone call',  detail: 'Discussed behavior',  date: 'Mar 28', color: '#22c55e' },
-                          { icon: '✉️', type: 'Email sent',  detail: 'Lunch money',          date: 'Apr 1',  color: '#22c55e' },
-                          { icon: '🤝', type: 'IEP meeting', detail: '',                      date: 'Apr 4',  color: '#a78bfa' },
-                        ].map(e => (
-                          <div key={e.type} className="commlog-row">
-                            <span className="commlog-icon">{e.icon}</span>
-                            <div style={{ flex: 1 }}>
-                              <span className="commlog-type" style={{ color: e.color }}>{e.type}</span>
-                              {e.detail && <div className="commlog-detail">{e.detail}</div>}
-                            </div>
-                            <span className="commlog-date">{e.date}</span>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="ai-spark-badge">📋 export ready for IEP</div>
-                    </div>
-                  )}
-                  <span className="card-link">Learn more →</span>
+                <Link href={`/features/${j.slug}`} className="feature-card" style={{ gap: 0 }}>
+                  <div style={{
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    marginBottom: '1.75rem',
+                    background: 'rgba(255,255,255,0.03)',
+                    border: '1px solid rgba(255,255,255,0.07)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '1.25rem',
+                    minHeight: '200px',
+                  }}>
+                    <Image
+                      src={j.img}
+                      alt={j.imgAlt}
+                      width={260}
+                      height={200}
+                      style={{ objectFit: 'contain', maxHeight: '200px', width: 'auto', borderRadius: '8px' }}
+                    />
+                  </div>
+                  <div className="card-title" style={{ fontSize: '1.35rem', marginBottom: '0.3rem' }}>{j.title}</div>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--accent, #a78bfa)', marginBottom: '0.75rem' }}>{j.subtitle}</div>
+                  <p className="card-desc" style={{ fontSize: '0.97rem', lineHeight: 1.65 }}>{j.desc}</p>
+                  <span className="card-link" style={{ marginTop: 'auto', paddingTop: '1.25rem' }}>Learn more →</span>
                 </Link>
               </motion.div>
             ))}
@@ -865,7 +796,7 @@ export default function Home() {
         <div className="section-inner">
           <div ref={comingSoonRef} className="coming-soon-inner">
             <div className="section-label">There&apos;s More Inside</div>
-            <h2 className="section-heading">The six features above are just<br /><em>the beginning.</em></h2>
+            <h2 className="section-heading">The three jobs above are just<br /><em>the beginning.</em></h2>
             <p className="coming-soon-body">
               Once you&apos;re in, you&apos;ll find tools that go even deeper, built from real classroom
               experience, for the moments that actually matter.
