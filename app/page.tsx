@@ -524,15 +524,15 @@ export default function Home() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    padding: '1.5rem 1.25rem',
-                    minHeight: '340px',
+                    padding: 0,
+                    height: '460px',
                   }}>
                     <Image
                       src={j.img}
                       alt={j.imgAlt}
                       width={320}
                       height={640}
-                      style={{ objectFit: 'contain', maxHeight: '320px', width: 'auto', borderRadius: '8px' }}
+                      style={{ objectFit: 'contain', height: '100%', width: 'auto' }}
                     />
                   </div>
                   <div className="card-title" style={{ fontSize: '1.35rem', marginBottom: '0.3rem' }}>{j.title}</div>
