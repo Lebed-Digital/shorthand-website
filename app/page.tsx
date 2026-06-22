@@ -17,24 +17,28 @@ const jobs = [
     title: 'Capture It',
     subtitle: 'Stop relying on memory.',
     desc: 'Document behavior incidents, parent conversations, accommodations, interventions, and classroom observations in seconds while they\'re still fresh.',
-    img: '/mockup-quicknote.webp',
-    imgAlt: 'Quick note logging screen',
+    img: '/screenshot1.png',
+    imgAlt: 'Quick note screen with behavior tags',
+    // crop: show top portion — note text + behavior tags, skip bottom nav
+    objectPosition: 'center 15%',
   },
   {
     slug: 'parent-communication-log',
     title: 'Find It',
     subtitle: 'Walk into meetings with the full story.',
     desc: 'Every note, parent contact, and intervention stays organized in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
-    img: '/mockup-insights.webp',
-    imgAlt: 'Student history and progress screen',
+    img: '/screenshot2.png',
+    imgAlt: 'Student notes history screen',
+    objectPosition: 'center top',
   },
   {
     slug: 'ai-reports',
     title: 'Use It',
     subtitle: 'Turn documentation into action.',
     desc: 'Generate parent emails, behavior summaries, progress reports, and conference-ready documentation from notes you\'ve already collected.',
-    img: '/mockup-report.webp',
-    imgAlt: 'Report generation screen',
+    img: '/screenshot3.png',
+    imgAlt: 'Generated parent report screen',
+    objectPosition: 'center top',
   },
 ];
 
@@ -516,23 +520,19 @@ export default function Home() {
                 transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
                 <Link href={`/features/${j.slug}`} className="feature-card" style={{ gap: 0 }}>
                   <div style={{
-                    borderRadius: '12px',
-                    overflow: 'hidden',
                     marginBottom: '1.75rem',
-                    background: 'rgba(255,255,255,0.03)',
-                    border: '1px solid rgba(255,255,255,0.07)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    padding: 0,
-                    height: '460px',
+                    aspectRatio: '9 / 16',
+                    width: '100%',
+                    position: 'relative',
+                    borderRadius: '16px',
+                    overflow: 'hidden',
+                    boxShadow: '0 8px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.08)',
                   }}>
                     <Image
                       src={j.img}
                       alt={j.imgAlt}
-                      width={320}
-                      height={640}
-                      style={{ objectFit: 'contain', height: '100%', width: 'auto' }}
+                      fill
+                      style={{ objectFit: 'cover', objectPosition: j.objectPosition }}
                     />
                   </div>
                   <div className="card-title" style={{ fontSize: '1.35rem', marginBottom: '0.3rem' }}>{j.title}</div>
