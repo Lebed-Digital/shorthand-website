@@ -369,18 +369,10 @@ export default function Home() {
             background: 'rgba(255,255,255,0.04)',
             border: '1px solid rgba(255,255,255,0.1)',
             borderRadius: '20px',
-            padding: '2.5rem 2.75rem',
+            padding: '2rem 2.75rem',
             position: 'relative',
             textAlign: 'center',
           }}>
-            {/* Stars */}
-            <div style={{ display: 'flex', justifyContent: 'center', gap: '0.2rem', marginBottom: '1.25rem' }}>
-              {[...Array(5)].map((_, i) => (
-                <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                </svg>
-              ))}
-            </div>
             {/* Large quote mark */}
             <div style={{
               fontSize: '4rem',
@@ -392,12 +384,12 @@ export default function Home() {
               userSelect: 'none',
             }}>&ldquo;</div>
             <p style={{
-              fontSize: '1.25rem',
+              fontSize: '1.4rem',
               fontStyle: 'italic',
               color: '#fff',
-              lineHeight: 1.65,
+              lineHeight: 1.6,
               fontWeight: 400,
-              margin: '0.25rem 0 1.5rem',
+              margin: '0.25rem 0 1.25rem',
             }}>
               The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.
             </p>
@@ -405,7 +397,7 @@ export default function Home() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              gap: '0.75rem',
+              gap: '0.5rem',
             }}>
               <div style={{
                 width: 'clamp(80px, 10vw, 120px)',
