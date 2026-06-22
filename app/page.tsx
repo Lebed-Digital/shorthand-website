@@ -47,7 +47,6 @@ const btnHover = { scale: 1.04, y: -2 };
 
 export default function Home() {
   const featuresRef      = useRef<HTMLDivElement>(null);
-  const showcaseRef      = useRef<HTMLDivElement>(null);
   const statsRef         = useRef<HTMLDivElement>(null);
   const ctaRef           = useRef<HTMLDivElement>(null);
   const creatorRef       = useRef<HTMLDivElement>(null);
@@ -114,44 +113,6 @@ export default function Home() {
                 scrollTrigger: { trigger: header, start: 'top 85%' } }
             );
           }
-        }
-
-        // Showcase — phones fan out from center on scroll
-        if (showcaseRef.current) {
-          const phones = showcaseRef.current.querySelectorAll<HTMLElement>('.showcase-phone');
-          // phones order: left-far, left-near, center, right-near, right-far
-          const configs = [
-            { x: -340, y: 60,  rotate: -18, scale: 0.72 },
-            { x: -175, y: 24,  rotate: -9,  scale: 0.84 },
-            { x: 0,    y: 0,   rotate: 0,   scale: 1    },
-            { x: 175,  y: 24,  rotate: 9,   scale: 0.84 },
-            { x: 340,  y: 60,  rotate: 18,  scale: 0.72 },
-          ];
-          phones.forEach((phone, i) => {
-            const cfg = configs[i];
-            gsap.fromTo(phone,
-              { x: 0, y: 0, rotate: 0, scale: i === 2 ? 1 : 0.6, opacity: i === 2 ? 1 : 0 },
-              {
-                x: cfg.x, y: cfg.y, rotate: cfg.rotate, scale: cfg.scale, opacity: 1,
-                ease: 'power2.out',
-                scrollTrigger: {
-                  trigger: showcaseRef.current,
-                  start: 'top 75%',
-                  end: 'center 40%',
-                  scrub: 0.6,
-                },
-              }
-            );
-          });
-          // Labels fade in alongside the spread
-          const labels = showcaseRef.current.querySelectorAll<HTMLElement>('.showcase-label');
-          gsap.fromTo(labels,
-            { opacity: 0, y: 12 },
-            {
-              opacity: 1, y: 0, stagger: 0.08, ease: 'power2.out',
-              scrollTrigger: { trigger: showcaseRef.current, start: 'top 65%', end: 'center 40%', scrub: 1 },
-            }
-          );
         }
 
         // Stats — scale up from slightly small
@@ -473,30 +434,6 @@ export default function Home() {
                 <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{emoji}</span>
                 <span>{label}</span>
               </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SHOWCASE — phones fan out on scroll */}
-      <section className="showcase-section">
-        <div className="section-inner">
-          <div className="showcase-header">
-            <div className="section-label">Everything in one place</div>
-            <h2 className="section-heading">How ShortHand saves<br /><em>teachers hours every week.</em></h2>
-          </div>
-          <div className="showcase-stage" ref={showcaseRef}>
-            {[
-              { src: '/mockup-quicknote.webp',  label: 'Log a note in 5 seconds'      },
-              { src: '/mockup-report.webp',     label: 'AI-written parent reports'    },
-              { src: '/mockup-grid.webp',       label: 'Your whole class at a glance' },
-              { src: '/mockup-insights.webp',   label: 'Track progress over time'     },
-              { src: '/mockup-parents.webp',    label: 'Parent communication log'     },
-            ].map((item, i) => (
-              <div key={i} className={`showcase-phone showcase-phone--${i}`}>
-                <Image src={item.src} alt={item.label} width={320} height={650} className="showcase-img" />
-                <div className="showcase-label">{item.label}</div>
-              </div>
             ))}
           </div>
         </div>
