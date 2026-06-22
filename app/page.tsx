@@ -25,8 +25,8 @@ const jobs = [
     title: 'Find It',
     subtitle: 'Walk into meetings with the full story.',
     desc: 'Every note, parent contact, and intervention stays organized in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
-    img: '/mockup-parents.webp',
-    imgAlt: 'Parent communication log screen',
+    img: '/mockup-insights.webp',
+    imgAlt: 'Student history and progress screen',
   },
   {
     slug: 'ai-reports',
@@ -524,15 +524,15 @@ export default function Home() {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    padding: '1.25rem',
-                    minHeight: '200px',
+                    padding: '1.5rem 1.25rem',
+                    minHeight: '340px',
                   }}>
                     <Image
                       src={j.img}
                       alt={j.imgAlt}
-                      width={260}
-                      height={200}
-                      style={{ objectFit: 'contain', maxHeight: '200px', width: 'auto', borderRadius: '8px' }}
+                      width={320}
+                      height={640}
+                      style={{ objectFit: 'contain', maxHeight: '320px', width: 'auto', borderRadius: '8px' }}
                     />
                   </div>
                   <div className="card-title" style={{ fontSize: '1.35rem', marginBottom: '0.3rem' }}>{j.title}</div>
