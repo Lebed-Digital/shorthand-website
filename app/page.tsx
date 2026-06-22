@@ -251,17 +251,12 @@ export default function Home() {
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
-            <h1>5-second notes.<br /><em>Ready when parents ask.</em></h1>
+            <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
             </p>
-            <div className="hero-chips">
-              <span className="hero-chip">You saw it. Save it fast.</span>
-              <span className="hero-chip">You called. Keep the record.</span>
-              <span className="hero-chip">They ask later. You&apos;re ready.</span>
-            </div>
             <p className="hero-sub">
-              ShortHand gives busy teachers one place to log behavior notes, parent calls, emails, and follow-ups in seconds, so conferences, IEPs, and admin questions do not depend on memory.
+              Log a behavior note in 5 seconds. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
             </p>
             <div className="hero-ctas">
               <motion.a
@@ -285,9 +280,26 @@ export default function Home() {
                 See How It Works
               </motion.a>
             </div>
-            <p className="hero-demo-nudge">
-              No sign-up. No app store. Opens instantly.
-            </p>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.5rem 1rem',
+              marginTop: '1rem',
+              fontSize: '0.78rem',
+              fontWeight: 500,
+              color: 'var(--text-dim)',
+              alignItems: 'center',
+            }}>
+              {['FERPA-conscious', 'COPPA-conscious', 'Guided demo included', 'No credit card required'].map((item, i, arr) => (
+                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>✓</span>
+                    {item}
+                  </span>
+                  {i < arr.length - 1 && <span style={{ color: 'rgba(255,255,255,0.15)', marginLeft: '-0.5rem' }}>·</span>}
+                </span>
+              ))}
+            </div>
           </div>
           <div className="hero-demo-wrap">
             <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', background: '#000' }}>
@@ -329,14 +341,69 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL — DANA */}
-      <section style={{ padding: '48px 24px 48px' }}>
-        <div style={{ maxWidth: '680px', margin: '0 auto', textAlign: 'center' }}>
-          <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: '#fff', lineHeight: 1.6, marginBottom: '0.5rem' }}>
-            &ldquo;The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.&rdquo;
-          </p>
-          <p style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-dim)' }}>
-            Dana R., Elementary Teacher
-          </p>
+      <section style={{ padding: '56px 24px' }}>
+        <div style={{ maxWidth: '640px', margin: '0 auto' }}>
+          <div style={{
+            background: 'rgba(255,255,255,0.04)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            borderRadius: '20px',
+            padding: '2.5rem 2.75rem',
+            position: 'relative',
+            textAlign: 'center',
+          }}>
+            {/* Stars */}
+            <div style={{ display: 'flex', justifyContent: 'center', gap: '0.2rem', marginBottom: '1.25rem' }}>
+              {[...Array(5)].map((_, i) => (
+                <svg key={i} width="18" height="18" viewBox="0 0 24 24" fill="#f97316" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              ))}
+            </div>
+            {/* Large quote mark */}
+            <div style={{
+              fontSize: '4rem',
+              lineHeight: 1,
+              color: 'var(--accent)',
+              opacity: 0.4,
+              fontFamily: 'Georgia, serif',
+              marginBottom: '-0.5rem',
+              userSelect: 'none',
+            }}>&ldquo;</div>
+            <p style={{
+              fontSize: '1.25rem',
+              fontStyle: 'italic',
+              color: '#fff',
+              lineHeight: 1.65,
+              fontWeight: 400,
+              margin: '0.25rem 0 1.5rem',
+            }}>
+              The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.
+            </p>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '0.75rem',
+            }}>
+              <div style={{
+                width: '36px',
+                height: '36px',
+                borderRadius: '50%',
+                background: 'linear-gradient(135deg, #f97316, #a78bfa)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.8rem',
+                fontWeight: 700,
+                color: '#fff',
+                flexShrink: 0,
+              }}>DR</div>
+              <div style={{ textAlign: 'left' }}>
+                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text)' }}>Dana R.</div>
+                <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>Elementary Teacher</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
