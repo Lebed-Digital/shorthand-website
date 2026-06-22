@@ -403,24 +403,28 @@ export default function Home() {
             </p>
             <div style={{
               display: 'flex',
+              flexDirection: 'column',
               alignItems: 'center',
-              justifyContent: 'center',
               gap: '0.75rem',
             }}>
               <div style={{
-                width: '36px',
-                height: '36px',
+                width: 'clamp(80px, 10vw, 120px)',
+                height: 'clamp(80px, 10vw, 120px)',
                 borderRadius: '50%',
-                background: 'linear-gradient(135deg, #f97316, #a78bfa)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '0.8rem',
-                fontWeight: 700,
-                color: '#fff',
+                overflow: 'hidden',
                 flexShrink: 0,
-              }}>DR</div>
-              <div style={{ textAlign: 'left' }}>
+                border: '3px solid rgba(249,115,22,0.4)',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
+              }}>
+                <Image
+                  src="/Dana R..png"
+                  alt="Dana R., Elementary Teacher"
+                  width={120}
+                  height={120}
+                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+                />
+              </div>
+              <div style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text)' }}>Dana R.</div>
                 <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>Elementary Teacher</div>
               </div>
