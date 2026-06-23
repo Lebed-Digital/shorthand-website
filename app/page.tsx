@@ -538,6 +538,35 @@ export default function Home() {
       </section>
 
 
+      {/* Privacy Promise */}
+      <section className="privacy-section">
+        <div className="section-inner">
+          <div className="section-label">Data & Privacy</div>
+          <h2 className="section-heading">Our Privacy Promise<br /><em>(Teacher-to-Teacher)</em></h2>
+          <p className="section-sub">You're trusting me with notes about real kids. Here's exactly how I protect that.</p>
+          <div className="privacy-grid">
+            {[
+              { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center, the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
+              { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
+              { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
+              { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy." },
+              { icon: '🔐', title: 'Smart and Private', desc: 'ShortHand only reads your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
+            ].map((item) => (
+              <div key={item.title} className="privacy-card">
+                <div className="privacy-icon">{item.icon}</div>
+                <div className="privacy-title">{item.title}</div>
+                <p className="privacy-desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link href="/privacy" className="btn-ghost" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              🔒 Read the Full Privacy Policy →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CREATOR */}
       <section className="creator-section">
         <div className="section-inner">
@@ -760,35 +789,6 @@ export default function Home() {
               <div className="perspective-title">Classroom Reality</div>
               <p className="perspective-desc">I know you don&apos;t have ten minutes to log a note. That&apos;s why every feature in this app is built to be finished in seconds.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Privacy Promise */}
-      <section className="privacy-section">
-        <div className="section-inner">
-          <div className="section-label">Data & Privacy</div>
-          <h2 className="section-heading">Our Privacy Promise<br /><em>(Teacher-to-Teacher)</em></h2>
-          <p className="section-sub">You're trusting me with notes about real kids. Here's exactly how I protect that.</p>
-          <div className="privacy-grid">
-            {[
-              { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center, the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
-              { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
-              { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
-              { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy." },
-              { icon: '🔐', title: 'Smart and Private', desc: 'ShortHand only reads your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
-            ].map((item) => (
-              <div key={item.title} className="privacy-card">
-                <div className="privacy-icon">{item.icon}</div>
-                <div className="privacy-title">{item.title}</div>
-                <p className="privacy-desc">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link href="/privacy" className="btn-ghost" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-              🔒 Read the Full Privacy Policy →
-            </Link>
           </div>
         </div>
       </section>
