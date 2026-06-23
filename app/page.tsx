@@ -399,14 +399,15 @@ export default function Home() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.875rem', maxWidth: '860px', margin: '0 auto' }}>
             {[
-              { emoji: '✉️', label: 'I need parent email help', href: '/features/parent-emails' },
-              { emoji: '🔄', label: "I'm replacing ClassDojo", href: '/classdojo-alternative' },
-              { emoji: '📋', label: 'I need behavior documentation', href: '/features/quick-note' },
-              { emoji: '🧠', label: 'I keep forgetting what happened', href: '/features/remember-what-happened' },
-            ].map(({ emoji, label, href }) => (
-              <Link
+              { emoji: '✉️', label: 'I need parent email help', href: '/features/parent-emails', track: null },
+              { emoji: '🔄', label: "I'm replacing ClassDojo", href: '/classdojo-alternative', track: null },
+              { emoji: '📋', label: 'I need behavior documentation', href: '/features/quick-note', track: null },
+              { emoji: '🧠', label: 'I keep forgetting what happened', href: 'https://app.getshorthandapp.com?demo=true&source=forgetting', track: 'intent_forgetting_demo' },
+            ].map(({ emoji, label, href, track }) => (
+              <a
                 key={href}
                 href={href}
+                onClick={track ? (e) => trackCta(track, href, e) : undefined}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -433,7 +434,7 @@ export default function Home() {
               >
                 <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{emoji}</span>
                 <span>{label}</span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
