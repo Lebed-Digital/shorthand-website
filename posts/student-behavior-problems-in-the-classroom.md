@@ -74,4 +74,4 @@ ShortHand helps you spot patterns by keeping a running log tied to each student.
 
 ---
 
-*Related reading: [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom) | [The Student Behavior Log for Teachers](/blog/student-behavior-log-for-teachers) | [How to Redirect Student Behavior Without Stopping the Whole Class](/blog/how-to-redirect-student-behavior)*
+*Related reading: [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom) | [The Student Behavior Log for Teachers](/blog/student-behavior-log-for-teachers) | [How to Redirect Student Behavior Without Stopping the Whole Class](/blog/how-to-redirect-student-behavior) | [5 Student Behavior Patterns Teachers Should Never Ignore](/blog/5-student-behavior-patterns-teachers-should-never-ignore)*

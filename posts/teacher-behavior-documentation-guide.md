@@ -61,6 +61,8 @@ If you are documenting for IEP purposes, for a behavior intervention plan, or ju
 
 [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom) gets into the practical systems: tally marks, ABC charts, interval recording, and which method fits which type of behavior.
 
+[5 Student Behavior Patterns Teachers Should Never Ignore](/blog/5-student-behavior-patterns-teachers-should-never-ignore) covers what to look for once your tracking is in place: task avoidance, time-of-day triggers, repeated peer conflicts, sudden behavioral shifts, and constant redirection that has become invisible.
+
 [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) covers the day-to-day habit: what to write, when to write it, and how to keep it going when things are busy.
 
 ---
