@@ -83,7 +83,7 @@ You log a phone call, summarize the conversation in two sentences, and save it. 
 
 That is the only thing that matters in that moment. The receipts speak for themselves.
 
-You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and start immediately. It is free for individual teachers.
+You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and start immediately. It is free for individual teachers.
 
 ---
 
@@ -91,7 +91,7 @@ You do not need school buy-in. You do not need a district training session. You 
 
 If your main concern is broadcasting announcements, Remind is fine. If you want student portfolios, use Seesaw. But if your biggest concern is having an organized, searchable record of every parent contact, there is only one tool built for that.
 
-[Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and have your contact log set up before the end of the day.
+[Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and have your contact log set up before the end of the day.
 
 ---
 

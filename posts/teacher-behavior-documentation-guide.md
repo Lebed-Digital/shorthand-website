@@ -111,7 +111,7 @@ The teachers who navigate these moments with confidence are the ones who have be
 
 [ShortHand](/) is built to make that habit realistic. Quick notes, right from your phone, automatically saved with a timestamp. No forms, no extra steps, no catching up on a Friday afternoon.
 
-[Try ShortHand free](https://app.getshorthandapp.com?signup=1) and see what consistent documentation actually looks like when the tool does not get in the way.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and see what consistent documentation actually looks like when the tool does not get in the way.
 
 ---
 

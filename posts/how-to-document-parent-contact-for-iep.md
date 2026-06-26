@@ -72,7 +72,7 @@ Managing this level of documentation on sticky notes or a messy spreadsheet is a
 
 The ShortHand app automatically timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a complete, searchable record of your outreach in seconds. You look professional, organized, and completely compliant.
 
-Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and go into your next annual review with a complete, organized record.
+Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and go into your next annual review with a complete, organized record.
 
 ---
 

@@ -108,7 +108,7 @@ If your school is on Bloomz, use it. Don't add a second system.
 
 If you're choosing for yourself, as one teacher who needs to stay organized and document what happens with students, ShortHand is the faster, lighter, more focused tool. No $125/year. No waiting on parents to sign up. No IT ticket.
 
-[Try ShortHand free](https://app.getshorthandapp.com?signup=1) and have it set up before the end of the day.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and have it set up before the end of the day.
 
 
 *Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

@@ -119,7 +119,7 @@ An honest comparison of paper forms versus digital tools is covered in the [teac
 
 ShortHand is designed to be that simple system. Log behavior notes, parent communication, accommodations, and positive moments in one place, without the paperwork getting in the way.
 
-[Start documenting free](https://app.getshorthandapp.com?signup=1)
+[Start documenting free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

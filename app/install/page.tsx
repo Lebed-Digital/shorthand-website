@@ -51,7 +51,7 @@ export default function InstallPage() {
           <div className="nav-left">
             <AnimatedLogo />
           </div>
-          <a href="https://app.getshorthandapp.com?signup=1" className="btn-primary">Open App →</a>
+          <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Open App →</a>
         </div>
       </nav>
 
@@ -138,7 +138,7 @@ export default function InstallPage() {
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to open the app?</h2>
         <p className="detail-cta-sub">Free to start. Works on any device.</p>
-        <a href="https://app.getshorthandapp.com?signup=1" className="btn-primary">Open ShortHand →</a>
+        <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Open ShortHand →</a>
       </div>
 
       <footer>

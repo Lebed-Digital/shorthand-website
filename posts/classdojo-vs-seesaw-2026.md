@@ -53,7 +53,7 @@ If you teach primary grades and want a gamified reward system, ClassDojo is stil
 
 But if you are tired of the constant notifications and just want a private, quiet place to document behavior and parent contact, neither app is going to fix that. You might be better off stepping away from the big platforms and looking for something built specifically for teacher documentation.
 
-If you are looking for a simpler way to track behavior and communication without the headache, check out [getshorthandapp.com](https://app.getshorthandapp.com?signup=1). It is exactly the kind of quiet, reliable tool I always wished I had.
+If you are looking for a simpler way to track behavior and communication without the headache, check out [getshorthandapp.com](https://app.getshorthandapp.com?demo=true). It is exactly the kind of quiet, reliable tool I always wished I had.
 
 
 *Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

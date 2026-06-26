@@ -76,7 +76,7 @@ This is why I use the ShortHand app. Every parent contact entry is automatically
 
 When something comes up in a conference, you pull it up on your phone right there at the table. The full contact history for that student, sorted by date, in about ten seconds.
 
-Stop relying on sticky notes and memory. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1) and get your documentation under control.
+Stop relying on sticky notes and memory. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and get your documentation under control.
 
 ---
 

@@ -71,7 +71,7 @@ If the IEP team agreed on new accommodations, put them into practice the very ne
 
 This final step is absolutely critical for building a long term partnership. Send a quick, professional message to the parents thanking them for their time and explicitly reiterating the agreed upon next steps. Remind them what you are doing on your end, and gently remind them of what they agreed to do at home.
 
-This is where having the right communication tool makes a massive difference in your workload. Instead of digging through a cluttered email inbox or trying to catch busy parents on the phone during your prep period, use [ShortHand](https://app.getshorthandapp.com?signup=1). You can log your private follow up notes and send a quick, documented message directly to the parents in under a minute. ShortHand keeps a permanent, timestamped record of the communication. It keeps everyone on the same page and ensures the agreed upon plan is actually executed.
+This is where having the right communication tool makes a massive difference in your workload. Instead of digging through a cluttered email inbox or trying to catch busy parents on the phone during your prep period, use [ShortHand](https://app.getshorthandapp.com?demo=true). You can log your private follow up notes and send a quick, documented message directly to the parents in under a minute. ShortHand keeps a permanent, timestamped record of the communication. It keeps everyone on the same page and ensures the agreed upon plan is actually executed.
 
 Treat the follow up phase with the exact same importance as your initial preparation. Keep this checklist handy for your next meeting, and watch how much more effective your parent partnerships become.
 

@@ -107,7 +107,7 @@ That is why I created ShortHand. You can log developmental milestones and incide
 
 When you sit down to write your report cards, all your data is ready. You can easily generate honest, professional comments.
 
-If you want your notes already organized when report card season hits, [ShortHand](https://app.getshorthandapp.com?signup=1) lets you log developmental observations in seconds throughout the term. Or if you just need to get through this week, the [free report card comment generator](/free-tool) requires no sign-up and works immediately.
+If you want your notes already organized when report card season hits, [ShortHand](https://app.getshorthandapp.com?demo=true) lets you log developmental observations in seconds throughout the term. Or if you just need to get through this week, the [free report card comment generator](/free-tool) requires no sign-up and works immediately.
 
 If you are heading into a new school year with Pre-K families, a welcome letter is often the first thing those parents read from you. The [Welcome Letter Generator](/back-to-school-toolkit) has a Pre-K option and takes about 30 seconds.
 

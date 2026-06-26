@@ -79,7 +79,7 @@ The digital version of this log that lives right in your pocket is exactly what 
 
 Whether you use a paper template or a digital tool, the key is consistency. Do not let minor behaviors slide. Document everything, stick to the facts, and you will have what you need when it matters. If you are documenting Tier 2 interventions as part of an MTSS plan, [here is a simple format built specifically for that](/blog/how-to-document-tier-2-interventions-for-mtss).
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true)
 
 ---
 

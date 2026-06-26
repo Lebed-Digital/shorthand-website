@@ -52,7 +52,7 @@ If you want a digital option, a spreadsheet works fine too. One row per contact,
 
 ## How ShortHand Handles This Automatically
 
-If you're already logging behavior notes, mood check-ins, or parent contacts in [ShortHand](https://app.getshorthandapp.com?signup=1), your communication log builds itself.
+If you're already logging behavior notes, mood check-ins, or parent contacts in [ShortHand](https://app.getshorthandapp.com?demo=true), your communication log builds itself.
 
 Every time you tag a note as a parent contact, it's timestamped, tied to the student, and stored. No separate log needed. When a parent says "I never heard about this," you can pull up the exact date and what was said in about ten seconds.
 
@@ -111,7 +111,7 @@ The most common reason teachers stop using a communication log: it feels like ex
 
 A parent communication log is one of those tools where the upfront effort is low and the payoff is disproportionately high. You don't need a perfect system. You just need something you'll actually use.
 
-[ShortHand](https://app.getshorthandapp.com?signup=1) keeps this built into your daily workflow. Free to try, no setup required.
+[ShortHand](https://app.getshorthandapp.com?demo=true) keeps this built into your daily workflow. Free to try, no setup required.
 
 *Related reading: [The Ultimate Parent Phone Call Script for Teachers](/blog/parent-phone-call-script) | [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [What to Do When a Parent Says You Never Called Them](/blog/what-to-do-when-parent-says-you-never-called)*
 

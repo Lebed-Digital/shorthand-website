@@ -73,7 +73,7 @@ ShortHand isn't built by a tech company in Silicon Valley. It's built in New Jer
 
 If you're a teacher who feels like you're constantly dropping the ball on documentation not because you don't care, but because the system isn't built for real classroom life, this was built for exactly that situation.
 
-[Try ShortHand for free](https://app.getshorthandapp.com?signup=1). No download, no app store, no credit card.
+[Try ShortHand for free](https://app.getshorthandapp.com?demo=true). No download, no app store, no credit card.
 
 ---
 

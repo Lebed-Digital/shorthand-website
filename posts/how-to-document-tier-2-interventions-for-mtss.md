@@ -154,7 +154,7 @@ Most MTSS problems are not intervention problems. They are documentation problem
 
 A simple system that allows you to record observations in the moment will always be more effective than a perfect system that depends on your memory hours later.
 
-If your current system depends on remembering everything at the end of the day, you are not alone. Most teachers are doing the best they can with sticky notes, notebooks, and memory. ShortHand was built to make that process easier. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
+If your current system depends on remembering everything at the end of the day, you are not alone. Most teachers are doing the best they can with sticky notes, notebooks, and memory. ShortHand was built to make that process easier. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true)
 
 ---
 

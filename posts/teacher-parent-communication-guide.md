@@ -117,7 +117,7 @@ The documentation does not need to be complicated. A simple log with the date, w
 
 [ShortHand](/) is built around this exact problem. It lets you log a quick behavior note or parent communication in a few seconds, right from your phone, without switching apps or filling out forms. Over time, those notes become a timestamped record that has your back.
 
-[Try ShortHand free](https://app.getshorthandapp.com?signup=1) and see how much lighter parent communication feels when you are not starting from scratch every time.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and see how much lighter parent communication feels when you are not starting from scratch every time.
 
 ---
 

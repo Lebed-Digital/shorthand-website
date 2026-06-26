@@ -211,4 +211,4 @@ Yes. The [free report card comment generator](/free-tool) on this site lets you 
 
 For more examples organized by specific situation, including impulsive behavior, emotional regulation, peer conflicts, and conduct concerns, see [Behavior Comments for Report Cards: 80+ Examples Organized by Situation](/blog/behavior-comments-for-report-cards).
 
-*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?signup=1) · Or use the [free report card comment generator](/free-tool) to draft comments in seconds.*
+*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/free-tool) to draft comments in seconds.*

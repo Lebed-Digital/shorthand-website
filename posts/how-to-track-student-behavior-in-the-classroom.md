@@ -155,7 +155,7 @@ You're building enough of a picture to help a kid, and to answer clearly when qu
 
 A quick note three times a week beats a detailed binder you abandon in October. Pick the simplest system that you'll actually use, and start there.
 
-If you want to see how ShortHand handles the logging-to-parent-communication piece, you can [try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1). It was built specifically for this, capturing behavior notes fast enough to actually use during a school day.
+If you want to see how ShortHand handles the logging-to-parent-communication piece, you can [try it free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true). It was built specifically for this, capturing behavior notes fast enough to actually use during a school day.
 
 ---
 

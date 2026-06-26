@@ -156,7 +156,7 @@ That statement is worth repeating: a quick note recorded in the moment is more v
 
 ShortHand is built for exactly this kind of documentation. Log behavior observations, parent conversations, and accommodation notes in one place, without extra paperwork slowing you down.
 
-[Start documenting free](https://app.getshorthandapp.com?signup=1)
+[Start documenting free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

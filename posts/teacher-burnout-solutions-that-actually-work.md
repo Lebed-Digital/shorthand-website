@@ -60,14 +60,14 @@ This is the exact reason I started using ShortHand in my own classroom. It does 
 
 ShortHand is a free app built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and dictate a quick note. The app handles the logging securely.
 
-More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at [getshorthandapp.com](https://app.getshorthandapp.com?signup=1).
+More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
 ## Reclaiming Your Afternoon
 We cannot change the entire education system overnight. The demands are not going to magically decrease. But we can absolutely change how we manage our own classrooms.
 
 By finding tools that actually work for our specific workflow, we can stop staring at our screens in the dark and start going home on time.
 
-If you are ready to stop drowning in communication tasks, grab ShortHand from the [install page](https://app.getshorthandapp.com?signup=1). It works seamlessly on your phone or laptop with no app store required. You can also read more about my classroom management strategies over on the [blog](/blog).
+If you are ready to stop drowning in communication tasks, grab ShortHand from the [install page](https://app.getshorthandapp.com?demo=true). It works seamlessly on your phone or laptop with no app store required. You can also read more about my classroom management strategies over on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
 

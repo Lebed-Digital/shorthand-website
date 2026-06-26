@@ -38,7 +38,7 @@ This is the shift that made the biggest difference in how I communicate with fam
 
 Instead of thinking about behavior tracking as the goal, I started thinking about communication as the goal. What I needed wasn't just a way to log notes. I needed a way to take those notes and turn them into something I could send to families right away, without starting from scratch.
 
-That's the problem [ShortHand](https://app.getshorthandapp.com?signup=1) was built to solve. You log a quick behavior note during the school day -- voice-to-text, one tap, done in a few seconds. Later, ShortHand takes that note and turns it into a polished parent message that's ready to review and send.
+That's the problem [ShortHand](https://app.getshorthandapp.com?demo=true) was built to solve. You log a quick behavior note during the school day -- voice-to-text, one tap, done in a few seconds. Later, ShortHand takes that note and turns it into a polished parent message that's ready to review and send.
 
 Not a rough draft that still needs a lot of work. A message that's already clear, specific, and professional, built from your real observations.
 
@@ -74,7 +74,7 @@ You're already noticing behavior. You're already thinking about which families y
 
 If you've ever put off a message because it would take too long, walked into a parent conversation wishing you had better documentation, or wanted to be more proactive but couldn't keep up, this approach is worth trying.
 
-[Try ShortHand here](https://app.getshorthandapp.com?signup=1). You'll know quickly if it saves you time. And if it helps you reach families earlier, it will save you a lot more than time.
+[Try ShortHand here](https://app.getshorthandapp.com?demo=true). You'll know quickly if it saves you time. And if it helps you reach families earlier, it will save you a lot more than time.
 
 Most classroom problems are easier to solve early. The hard part is making early communication realistic. Once that step becomes quick and easy, everything starts to shift.
 

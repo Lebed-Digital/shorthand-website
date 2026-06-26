@@ -56,7 +56,7 @@ You cannot control everything your students do. They will have bad days. They wi
 
 Give yourself permission to step back from the emotional ledge. Stop relying on your memory, stop trying to win every verbal battle, and start letting your documentation do the heavy lifting. When you have a system you trust, the yelling stops, and the teaching finally begins.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true)
 
 ---
 

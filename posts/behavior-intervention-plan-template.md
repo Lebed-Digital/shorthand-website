@@ -74,7 +74,7 @@ When the special education team asks for your data at the end of the month, you 
 
 A behavior intervention plan should not be a burden that breaks your spirit. With the right template and a digital tracking system, it becomes a powerful tool that actually transforms your classroom.
 
-If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?signup=1)
+If you want to skip the binder entirely, ShortHand logs it for you in seconds. [Try it free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true)
 
 ---
 

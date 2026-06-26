@@ -61,7 +61,7 @@ The SGO experience is specific to New Jersey, but the underlying frustration is 
 
 I'm currently looking for beta testers -- especially teachers who deal with data-heavy reporting requirements. If you've sat through your own version of SGO Hell and you want to help shape a tool that makes it better, I'd love to talk.
 
-[Try ShortHand for free](https://app.getshorthandapp.com?signup=1) and reach out if you want to be involved in the beta. The more real teacher problems I hear about, the better the tool gets.
+[Try ShortHand for free](https://app.getshorthandapp.com?demo=true) and reach out if you want to be involved in the beta. The more real teacher problems I hear about, the better the tool gets.
 
 Teachers shouldn't have to be the bridge between broken data systems. That's what the software is supposed to do.
 

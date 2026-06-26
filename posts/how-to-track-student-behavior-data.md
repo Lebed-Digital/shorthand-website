@@ -125,7 +125,7 @@ If you're falling behind on documentation, spending too much time after school w
 
 A good behavior tracking system should feel invisible during the school day. You log things as they happen, the system organizes them, and when you need the data, it's there.
 
-[Try ShortHand here](https://app.getshorthandapp.com?signup=1). You'll know pretty quickly if it fits your workflow.
+[Try ShortHand here](https://app.getshorthandapp.com?demo=true). You'll know pretty quickly if it fits your workflow.
 
 The easier your system is to use, the more consistent you'll be. And consistency is what makes the difference.
 

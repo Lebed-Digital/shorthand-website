@@ -146,7 +146,7 @@ export default function AboutPage() {
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-            <a href="https://app.getshorthandapp.com?signup=1" className="btn-primary">Try ShortHand Free →</a>
+            <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Try ShortHand Free →</a>
             <Link href="/blog" style={{
               display: 'inline-flex',
               alignItems: 'center',
