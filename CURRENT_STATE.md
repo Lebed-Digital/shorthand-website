@@ -32,3 +32,7 @@ SoftwareApplication + Organization schema in app/layout.tsx
 ## Notes
 
 Reference docs/funnel-decisions.md for funnel implementation details.
+
+## Last reviewed
+
+2026-06-26
