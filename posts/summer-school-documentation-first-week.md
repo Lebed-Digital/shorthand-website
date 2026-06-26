@@ -45,7 +45,7 @@ The problem was not that I lacked information. The problem was that the informat
 
 Relying on memory works until it doesn't. If you're heading into summer school with new students, ShortHand lets you log behaviors, parent conversations, and accommodation notes in seconds, so you have a real record before the first week is over.
 
-[Try ShortHand free](https://app.getshorthandapp.com/onboarding)
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

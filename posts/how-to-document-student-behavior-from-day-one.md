@@ -57,7 +57,7 @@ That is why I built ShortHand.
 
 Keep behavior notes, parent communication records, and student documentation organized in one place.
 
-[Start for free](https://app.getshorthandapp.com/onboarding)
+[Start for free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

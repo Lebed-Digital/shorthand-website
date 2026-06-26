@@ -35,6 +35,11 @@ const nextConfig: NextConfig = {
         destination: 'https://app.getshorthandapp.com?demo=true&utm_source=youtube&utm_medium=description&utm_campaign=free_tool',
         permanent: false,
       },
+      {
+        source: '/how-it-works',
+        destination: '/',
+        permanent: false,
+      },
     ];
   },
   async headers() {

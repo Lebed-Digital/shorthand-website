@@ -285,7 +285,7 @@ export default function WelcomeLetterClient() {
                 ShortHand helps you log quick notes on students throughout the year and turn them into polished reports in one tap. No more starting from scratch each term.
               </p>
               <Link
-                href="https://app.getshorthandapp.com/onboarding"
+                href="https://app.getshorthandapp.com?demo=true"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
                 onClick={() => {
                   if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {

@@ -66,7 +66,7 @@ Redirection is a fantastic short-term tool. It keeps your lesson moving. It keep
 
 If you find yourself standing next to the same student every single day during reading group, proximity is no longer a solution. It is just a bandage. You need to figure out why reading group is a trigger for that child.
 
-ShortHand lets you log what happened right after you redirect, while it is still fresh. You can track those triggers and find real solutions. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com/onboarding).
+ShortHand lets you log what happened right after you redirect, while it is still fresh. You can track those triggers and find real solutions. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
 ---
 

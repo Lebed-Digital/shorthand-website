@@ -22,7 +22,7 @@ export default function DpaPage() {
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1.2rem', color: 'var(--text)' }}>ShortHand</span>
             </Link>
           </div>
-          <Link href="https://app.getshorthandapp.com/onboarding" className="btn-primary">Try Free</Link>
+          <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Try Free</Link>
         </div>
       </nav>
 

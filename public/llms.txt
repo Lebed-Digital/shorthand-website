@@ -36,7 +36,6 @@ Free to use. No credit card required.
 
 ### Core Pages
 - Homepage: https://getshorthandapp.com: What ShortHand is, who it's for, and how to get started
-- How It Works: https://getshorthandapp.com/how-it-works: Step-by-step walkthrough of the core workflow
 - Install: https://getshorthandapp.com/install: How to add ShortHand to any device (no app store needed)
 - About the Creator: https://getshorthandapp.com/about: Gregory Lebed's background as a teacher and former RBT, and why he built ShortHand
 

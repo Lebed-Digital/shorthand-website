@@ -194,7 +194,6 @@ export default function Home() {
           </div>
           <div className="nav-links">
             <a href="#features" className="nav-link">Features</a>
-            <a href="/how-it-works" className="nav-link">How It Works</a>
             <a href="/blog" className="nav-link">Blog</a>
             <a href="/tools" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
             <a href="/resources" className="nav-link">Resources</a>
@@ -219,7 +218,6 @@ export default function Home() {
         {menuOpen && (
           <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
-            <a href="/how-it-works" className="nav-mobile-link">How It Works</a>
             <a href="/blog" className="nav-mobile-link">Blog</a>
             <a href="/privacy" className="nav-mobile-link">🔒 Privacy</a>
             <a href="/terms" className="nav-mobile-link">Terms</a>
@@ -253,12 +251,12 @@ export default function Home() {
                 Try the Free Demo →
               </motion.a>
               <motion.a
-                href="/how-it-works"
+                href="https://app.getshorthandapp.com?demo=true"
                 className="btn-ghost"
                 whileHover={{ scale: 1.03, y: -1 }}
                 whileTap={btnTap}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_see_how_it_works', '/how-it-works', e)}
+                onClick={(e) => trackCta('hero_see_how_it_works', 'https://app.getshorthandapp.com?demo=true', e)}
               >
                 See How It Works
               </motion.a>
@@ -806,7 +804,7 @@ export default function Home() {
               </p>
               <div className="cta-btns">
                 <motion.a
-                  href="https://app.getshorthandapp.com/onboarding"
+                  href="https://app.getshorthandapp.com?demo=true"
                   className="btn-primary btn-primary--lg"
                   whileHover={btnHover}
                   whileTap={btnTap}

@@ -67,7 +67,7 @@ At the end of every ESY program, the teachers at my school are asked to write a 
 
 If you are heading into summer school without a documentation system, there is still time to build one. ShortHand lets you log behavior notes, parent conversations, and accommodation details in seconds, so the habit is already in place before September arrives.
 
-[Try ShortHand free](https://app.getshorthandapp.com/onboarding)
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

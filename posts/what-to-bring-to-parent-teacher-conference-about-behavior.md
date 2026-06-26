@@ -69,7 +69,7 @@ Memory is not a system. That is the lesson that eventually led me to build Short
 
 Instead of relying on sticky notes, scattered emails, or trying to remember what happened three weeks ago, ShortHand helps teachers keep behavior notes, parent communication records, and student documentation organized in one place.
 
-[Start for free](https://app.getshorthandapp.com/onboarding)
+[Start for free](https://app.getshorthandapp.com?demo=true)
 
 ---
 

@@ -86,10 +86,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
           <div className="nav-links">
             <Link href="/#features" className="nav-link">Features</Link>
-            <Link href="/how-it-works" className="nav-link">How It Works</Link>
             <Link href="/blog" className="nav-link">Blog</Link>
           </div>
-          <Link href="https://app.getshorthandapp.com/onboarding" className="btn-primary">Get ShortHand</Link>
+          <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
         </div>
       </nav>
 

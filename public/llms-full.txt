@@ -46,6 +46,5 @@ Primary URL: https://getshorthandapp.com/blog
 
 ## Key URLs for Reference
 - Main Site: https://getshorthandapp.com
-- How it Works: https://getshorthandapp.com/how-it-works
 - Free Comment Generator: https://getshorthandapp.com/free-tool
 - Author Profile: https://getshorthandapp.com/about
