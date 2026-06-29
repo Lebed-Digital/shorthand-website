@@ -1,5 +1,5 @@
 ---
-title: "Report Card Comments for Behavior: 120+ Examples You Can Use Today"
+title: "Report Card Comments for Behavior: 120+ Examples (Positive, Honest & Ready to Copy)"
 subtitle: "Stop staring at a blank cursor. Here are the behavior comments that actually hold up."
 date: "2026-04-26"
 author: "Gregory Lebed"
@@ -32,6 +32,8 @@ As both a teacher and a parent of a neurodiverse child, I've seen these comments
 Here's what I've learned from years in the classroom and from reading report cards as a parent: the best behavior comments are short, factual, and forward-looking. They tell the family what you see, not what you feel. They focus on observable behaviors, explain the support being provided, and leave room for growth.
 
 Below are 120+ examples organized by situation. Copy them, adapt them, make them yours.
+
+If you are specifically looking for a student with serious, ongoing behavior concerns, head straight to [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems), where 50+ examples are broken down by attention, impulsivity, emotional regulation, and conduct. Otherwise, start with the sections below.
 
 **Jump to a section:**
 - [When behavior is strong](#when-behavior-is-strong)
