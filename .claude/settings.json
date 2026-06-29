@@ -1,4 +1,5 @@
 {
+  "enabledMcpjsonServers": ["gsc-server"],
   "permissions": {
     "defaultMode": "bypassPermissions",
     "additionalDirectories": [
@@ -12,9 +13,14 @@
       "Bash(powershell *)",
       "Bash(find *)",
       "Bash(curl *)",
-      "Bash(python3 -c *)",
+      "Bash(python3 *)",
+      "Bash(python3)",
+      "Bash(ffmpeg *)",
+      "Bash(ffprobe *)",
+      "Bash(node *)",
       "Bash(Get-ChildItem *)",
       "Bash(dir *)",
+      "Bash(cd *)",
       "WebSearch(*)",
       "WebFetch(*)",
       "Skill(update-config)",

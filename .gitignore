@@ -41,6 +41,10 @@ public/*.mp4
 public/*.pdf
 excalidraw.log
 
+# local-only public files (not deployed, kept out of repo)
+/public/old website 6-21-26/
+/public/mtss-tier-2-intervention-tracking-sheet.html
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

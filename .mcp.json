@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gsc-server": {
+      "command": "node",
+      "args": [
+        "C:/Users/doubl/mcp_gsc/dist/index.js"
+      ],
+      "type": "stdio"
+    }
+  }
+}
