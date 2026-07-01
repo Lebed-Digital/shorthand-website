@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AnimatedLogo from '../../../components/AnimatedLogo';
+import TrackedLink from '../../../components/TrackedLink';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 
 export async function generateStaticParams() {
@@ -197,9 +198,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           textAlign: 'center',
         }}>
           <p style={{ marginBottom: '1rem', color: 'var(--text-dim)' }}>Stop trying to remember everything.</p>
-          <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary" style={{ display: 'inline-block' }}>
+          <TrackedLink
+            href="https://app.getshorthandapp.com?demo=true"
+            label="guided_demo"
+            ctaSource="blog"
+            className="btn-primary"
+            style={{ display: 'inline-block' }}
+          >
             Try ShortHand Free →
-          </a>
+          </TrackedLink>
         </div>
       </article>
 

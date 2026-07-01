@@ -8,6 +8,7 @@ import AnimatedLogo from '../components/AnimatedLogo';
 import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
+import { fireCtaClick } from '../lib/gtag';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
@@ -60,7 +61,7 @@ export default function Home() {
   function trackCta(label: string, url: string, e?: React.MouseEvent) {
     e?.preventDefault();
     const navigate = () => { window.location.href = url; };
-    (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'cta_click', {
+    fireCtaClick({
       cta_source: 'homepage',
       cta_destination: label,
       link_url: url,

@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
+import { fireCtaClick } from '../../lib/gtag';
 
 const SECTIONS = [
   {
@@ -363,12 +364,7 @@ export default function FreeToolClient() {
                 href="https://app.getshorthandapp.com"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
                 onClick={() => {
-                  if (typeof window !== 'undefined' && typeof (window as any).gtag === 'function') {
-                    (window as any).gtag('event', 'cta_click', {
-                      cta_source: 'free_tool',
-                      cta_destination: 'app',
-                    });
-                  }
+                  fireCtaClick({ cta_source: 'free_tool', cta_destination: 'app' });
                 }}
               >
                 Try ShortHand free →

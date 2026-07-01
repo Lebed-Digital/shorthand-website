@@ -1,24 +1,21 @@
 'use client';
 
-declare global {
-  interface Window {
-    gtag?: (...args: unknown[]) => void;
-  }
-}
+import { fireCtaClick } from '../lib/gtag';
 
 interface TrackedLinkProps {
   href: string;
   label: string;
+  ctaSource?: string;
   className?: string;
   children: React.ReactNode;
   style?: React.CSSProperties;
 }
 
-export default function TrackedLink({ href, label, className, children, style }: TrackedLinkProps) {
+export default function TrackedLink({ href, label, ctaSource = 'homepage', className, children, style }: TrackedLinkProps) {
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
     e.preventDefault();
-    window.gtag?.('event', 'cta_click', {
-      cta_source: 'homepage',
+    fireCtaClick({
+      cta_source: ctaSource,
       cta_destination: label,
       link_url: href,
       event_callback: () => { window.location.href = href; },
