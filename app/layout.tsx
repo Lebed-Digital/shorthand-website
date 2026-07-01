@@ -61,13 +61,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${fredoka.variable}`}>
       <head>
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y954JF2V55"></script>
+        {/* Google Analytics (production hostname only — keeps Vercel preview deploys and localhost out of GA4) */}
         <script dangerouslySetInnerHTML={{ __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-Y954JF2V55');
+          if (window.location.hostname === 'getshorthandapp.com') {
+            var gaScript = document.createElement('script');
+            gaScript.async = true;
+            gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y954JF2V55';
+            document.head.appendChild(gaScript);
+
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-Y954JF2V55');
+          }
         `}} />
         {/* JSON-LD Schema — SoftwareApplication */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
