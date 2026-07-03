@@ -3,6 +3,10 @@ title: "How to Track Student Behavior Data (Without Falling Behind During the Sc
 subtitle: "A realistic system that actually survives contact with real students"
 date: "2026-04-09"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Learn how to track student behavior data quickly and consistently. A simple system for teachers that works during real classroom instruction."
 ---
 

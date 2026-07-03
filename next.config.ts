@@ -16,6 +16,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/blog/how-to-write-honest-behavior-comments',
+        destination: '/blog/how-to-write-behavior-comments-on-report-card',
+        permanent: true,
+      },
+      {
+        source: '/blog/classroom-behavior-tracking-apps',
+        destination: '/blog/best-behavior-tracking-apps-for-teachers-2026',
+        permanent: true,
+      },
+      {
+        source: '/blog/what-teachers-mean-vs-what-parents-hear',
+        destination: '/blog/turn-behavior-notes-into-parent-messages',
+        permanent: true,
+      },
+      {
         source: '/features/attendance',
         destination: '/',
         permanent: true,

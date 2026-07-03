@@ -3,6 +3,10 @@ title: "How to Actually Use a Student Behavior Log for Teachers"
 subtitle: "A practical guide to building a documentation habit without losing your prep period."
 date: "2026-05-19"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Learn how to use a student behavior log for teachers effectively. Discover what to log, how to avoid over-logging, and how to use data for IEPs."
 faq:
   - q: "How do you use a student behavior log without it taking over your day?"

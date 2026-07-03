@@ -3,6 +3,10 @@ title: "Why Summer School Is the Perfect Time to Build a Documentation System Be
 subtitle: "The habits you build during ESY are the habits you carry into September. Here is how to use summer school to get ahead."
 date: "2026-06-19"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Most teachers plan to start a new documentation system in September. Most never do. Summer school gives you the room to test a system when the stakes are lower, so it is already a habit when you actually need it."
 faq:
   - q: "How can teachers get organized before the school year starts?"

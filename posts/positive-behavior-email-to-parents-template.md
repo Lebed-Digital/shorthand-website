@@ -3,6 +3,10 @@ title: "5 Positive Behavior Email to Parents Templates"
 subtitle: "Build strong family partnerships by sharing the good news before you have to share the bad."
 date: "2026-05-13"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Use a positive behavior email to parents template to build trust. Here are 5 copy-paste templates that celebrate student wins and make teaching easier."
 ---
 

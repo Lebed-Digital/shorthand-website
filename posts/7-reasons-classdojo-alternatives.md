@@ -3,6 +3,10 @@ title: "7 Reasons You're Googling \"ClassDojo Alternatives\" (From a 3rd Grade T
 subtitle: "If you've ever typed 'ClassDojo alternatives' at 7 PM on a Tuesday, you're not alone."
 date: "2026-04-08"
 author: "Gregory Lebed"
+relatedPosts:
+  - "best-classdojo-alternatives-2026"
+  - "best-behavior-tracking-apps-for-teachers-2026"
+  - "classdojo-vs-seesaw-2026"
 excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are switching, and what actually works instead, from a 3rd grade teacher with 20+ years in K-8 classrooms."
 ---
 

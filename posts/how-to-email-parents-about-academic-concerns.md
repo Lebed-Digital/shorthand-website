@@ -3,6 +3,10 @@ title: "How to Email Parents About Academic Concerns (Without Making Them Defens
 subtitle: "Frame school struggles as a team effort using data-backed parent communication strategies."
 date: "2026-06-06"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Learn how to share academic struggles with parents by framing the issue as a collaborative puzzle and backing it up with clear, objective classroom data."
 faq:
   - q: "How do you email a parent about academic concerns?"

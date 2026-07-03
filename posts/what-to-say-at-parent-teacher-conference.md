@@ -3,6 +3,10 @@ title: "What to Say at a Parent Teacher Conference (From the Teacher's Side)"
 subtitle: "You are running this meeting, not just reacting to it."
 date: "2026-05-09"
 author: "Gregory Lebed"
+relatedPosts:
+  - "what-to-bring-to-parent-teacher-conference-about-behavior"
+  - "how-to-prepare-for-parent-teacher-conference"
+  - "parent-teacher-conference-comments-for-teachers"
 excerpt: "Wondering exactly what to say during a parent teacher conference? Here is how to run the meeting, share concerns, and keep the conversation on track."
 ---
 

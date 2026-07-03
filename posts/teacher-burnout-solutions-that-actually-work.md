@@ -3,6 +3,10 @@ title: "Teacher Burnout Solutions That Actually Work"
 subtitle: "Deep breathing is great, but it does not answer your emails or write your documentation."
 date: "2026-04-10"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-workload-survival-guide"
+  - "5-apps-that-save-me-time"
+  - "moving-beyond-friday-reporting"
 excerpt: "I am so tired of professional development sessions telling me to practice self-care. Here is why fixing your daily systems is the only real way to survive the school year."
 ---
 

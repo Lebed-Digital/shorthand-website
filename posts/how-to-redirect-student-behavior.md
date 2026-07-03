@@ -3,6 +3,10 @@ title: "How to Redirect Student Behavior Without Stopping the Whole Class"
 subtitle: "Keep teaching while handling the distractions."
 date: "2026-05-08"
 author: "Gregory Lebed"
+relatedPosts:
+  - "classroom-management-plan-template"
+  - "classroom-management-for-disruptive-students"
+  - "classroom-management-without-yelling"
 excerpt: "Wondering how to redirect student behavior without pausing your entire lesson? Try these subtle, practical strategies that real teachers use every day."
 ---
 

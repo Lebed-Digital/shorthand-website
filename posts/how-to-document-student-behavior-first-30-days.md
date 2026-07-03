@@ -3,6 +3,10 @@ title: "How to Document Student Behavior During the First 30 Days of School"
 subtitle: "The first month gives you the most valuable baseline data of the year. Here is how to capture it."
 date: "2026-06-25"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "The first 30 days of school are your best window for spotting behavior patterns before they become bigger problems. Learn what to document, how to keep notes objective, and why starting early makes every parent meeting easier."
 faq:
   - q: "What student behaviors should teachers document during the first month of school?"

@@ -2,6 +2,10 @@
 title: "Classroom Management Plan Template (Free, Editable Examples)"
 date: "2026-03-16"
 author: "Gregory Lebed"
+relatedPosts:
+  - "classroom-management-for-disruptive-students"
+  - "classroom-management-without-yelling"
+  - "how-to-redirect-student-behavior"
 excerpt: "Free classroom management plan templates for elementary and middle school teachers. Copy, edit, and actually use them, plus the one habit that keeps your plan alive past October."
 tags: ["Classroom Management", "Teacher Tips", "Free Templates"]
 faq:

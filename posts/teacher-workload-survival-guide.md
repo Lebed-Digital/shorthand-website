@@ -3,6 +3,10 @@ title: "The Teacher's Survival Guide to Workload and Burnout"
 subtitle: "What actually helps when the job feels impossible"
 date: "2026-05-27"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-burnout-solutions-that-actually-work"
+  - "5-apps-that-save-me-time"
+  - "moving-beyond-friday-reporting"
 excerpt: "A practical guide for teachers dealing with workload overload and burnout: classroom management, paperwork reduction, communication shortcuts, and the mindset shifts that actually help."
 faq:
   - q: "What causes teacher burnout?"

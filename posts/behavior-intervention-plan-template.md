@@ -2,6 +2,10 @@
 title: "The Behavior Intervention Plan Template That Actually Works"
 date: "2026-03-19"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-notes-template"
+  - "iep-meeting-checklist-for-teachers"
+  - "how-to-document-student-behavior-for-iep"
 excerpt: "A behavior intervention plan looks incredibly professional on paper. But without the right daily documentation system, it is just another binder gathering dust on your desk."
 tags: ["Behavior Intervention Plan", "Teacher Tips", "Free Templates"]
 ---

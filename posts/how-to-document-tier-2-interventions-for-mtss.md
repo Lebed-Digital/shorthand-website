@@ -2,6 +2,10 @@
 title: "How to Document Tier 2 Interventions for MTSS Without Creating More Paperwork"
 date: "2026-06-21"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-notes-template"
+  - "iep-meeting-checklist-for-teachers"
+  - "how-to-document-student-behavior-for-iep"
 excerpt: "Most teachers are not struggling to provide Tier 2 interventions. They are struggling to document them consistently. Here is a simple system that actually works."
 faq:
   - q: "What data should a teacher collect for Tier 2 MTSS interventions?"

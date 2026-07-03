@@ -3,6 +3,10 @@ title: "What to Bring to a Parent-Teacher Conference About Behavior"
 subtitle: "Preparation turns a stressful conversation into a productive one. Here is exactly what to have ready."
 date: "2026-06-17"
 author: "Gregory Lebed"
+relatedPosts:
+  - "how-to-prepare-for-parent-teacher-conference"
+  - "what-to-say-at-parent-teacher-conference"
+  - "parent-teacher-conference-comments-for-teachers"
 excerpt: "Behavior conferences are nerve-wracking when you are relying on memory. Learn what documentation, records, and examples to bring so the conversation stays focused on facts and solutions instead of feelings and opinions."
 faq:
   - q: "What should I bring to a parent-teacher conference about behavior?"

@@ -3,6 +3,10 @@ title: "How to Politely Tell a Parent Their Child Is Misbehaving: 5 Phrases to D
 subtitle: "Drop the vague teacher-speak and start using objective data."
 date: "2026-03-31"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Wondering how to politely tell a parent their child is misbehaving? Stop using vague teacher-speak. Try these 5 professional phrase swaps instead."
 ---
 

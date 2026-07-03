@@ -3,6 +3,10 @@ title: "How to Tell a Parent Their Child Is Disruptive in Class (Without Startin
 subtitle: "Turn defensive reactions into productive partnerships with the right words."
 date: "2026-04-05"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Learning how to tell a parent their child is disruptive in class is tough. Use these specific phrases and templates to communicate without starting a war."
 ---
 

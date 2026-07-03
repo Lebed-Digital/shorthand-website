@@ -3,6 +3,10 @@ title: "Why I'm Building an App While Teaching Full-Time (Because My Memory is S
 subtitle: "The real reason I started writing code after school instead of grading papers"
 date: "2026-04-03"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-workload-survival-guide"
+  - "teacher-burnout-solutions-that-actually-work"
+  - "5-apps-that-save-me-time"
 excerpt: "Let's be real for a second: To be a good teacher you need a good memory. You need to be good at staying organized. I stink at both!"
 ---
 

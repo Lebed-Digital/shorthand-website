@@ -17,6 +17,8 @@ faq:
     a: "ClassDojo is a parent communication and student engagement tool built around a points system. ShortHand is a behavior documentation tool built for fast logging, parent contact records, and IEP-ready data. ClassDojo is best for elementary classroom culture; ShortHand is best when you need a complete, searchable contact record."
   - q: "Do behavior tracking apps work for special education teachers?"
     a: "It depends on the app. BehaviorSnap is built specifically for formal ABC data collection used in IEPs and behavior intervention plans. ShortHand works well for general education teachers who serve students with IEPs and need timestamped notes and parent contact logs. PBIS Rewards requires a school-wide rollout."
+  - q: "What is the difference between classroom management apps and behavior tracking apps?"
+    a: "Classroom management apps focus on engagement, rewards, and routines. Behavior tracking apps focus on documentation: logging incidents, recording parent communication, and organizing data so you can retrieve it during a conference, referral, or IEP meeting. Many teachers use one of each, but if you can only pick one, pick the one that solves your bigger daily problem."
 ---
 
 There are roughly four stages of teacher behavior tracking. Stage one: mental notes. Stage two: sticky notes. Stage three: a behavior tracking sheet you update every three weeks. Stage four: an actual app. (Stage five is being asked at an IEP meeting to produce documentation from October and realizing you're still in stage two.)
@@ -28,8 +30,6 @@ If you're ready for stage four, here's what's actually worth your time in 2026.
 Before we get into the list, a quick disclosure: I built one of the tools on it. Not because I set out to start a software company, but because I kept running into the same problem. I'd sit down for a parent meeting or report card and realize I was trying to reconstruct weeks of student behavior from memory, sticky notes, and half-finished spreadsheets. After one too many conversations that started with "I know it happened, I just can't remember exactly when," I decided there had to be a better way.
 
 A note on context: I teach elementary school, third grade specifically. Most of these apps work across grade levels, but I'll flag where elementary teachers have different needs than secondary. A high school teacher managing 150 students across six periods has a different problem than an elementary teacher who's with the same 22 kids all day.
-
-Looking specifically for classroom-focused tools? See the companion piece: [Best Classroom Behavior Tracking Apps for Teachers](/blog/classroom-behavior-tracking-apps).
 
 ---
 

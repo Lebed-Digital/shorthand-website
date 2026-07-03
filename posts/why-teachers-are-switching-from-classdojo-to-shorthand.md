@@ -3,6 +3,10 @@ title: "Why Teachers Are Switching from ClassDojo to ShortHand in 2026"
 subtitle: "It's not you. It's the points."
 date: "2026-04-21"
 author: "Gregory Lebed"
+relatedPosts:
+  - "best-classdojo-alternatives-2026"
+  - "best-behavior-tracking-apps-for-teachers-2026"
+  - "classdojo-vs-seesaw-2026"
 excerpt: "ClassDojo's points stop working by 3rd grade, and they were never built for IEP documentation. Here are the 5 real reasons teachers are switching in 2026, and what they're using instead."
 faq:
   - q: "Why are teachers switching from ClassDojo to ShortHand?"

@@ -2,6 +2,10 @@
 title: "Classroom Management for Disruptive Students: What Actually Works"
 date: "2026-04-28"
 author: "Gregory Lebed"
+relatedPosts:
+  - "classroom-management-plan-template"
+  - "classroom-management-without-yelling"
+  - "how-to-redirect-student-behavior"
 excerpt: "When traditional classroom management strategies fail, you need a system that keeps you organized and builds a clear record of student behavior."
 tags: ["Classroom Management", "Teacher Tips"]
 faq:

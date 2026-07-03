@@ -3,6 +3,10 @@ title: "Welcome Letter to Parents From Teacher: 4 Examples (With Notes on What A
 subtitle: "Real examples, a before/after, and the one mistake most teachers make."
 date: "2026-06-20"
 author: "Gregory Lebed"
+relatedPosts:
+  - "short-welcome-message-to-parents-from-teacher"
+  - "teacher-introduction-letter-to-parents"
+  - "teacher-parent-communication-guide"
 excerpt: "Four welcome letter examples for teachers, including a real first-year letter and what I would change about it today. Plus a free generator if you just need one done."
 faq:
   - q: "What should be included in a teacher welcome letter to parents?"

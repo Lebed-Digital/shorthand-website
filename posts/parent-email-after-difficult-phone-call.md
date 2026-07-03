@@ -3,6 +3,10 @@ title: "How to Write a Follow Up Email After a Difficult Parent Phone Call"
 subtitle: "Document tough conversations clearly with these objective follow-up templates."
 date: "2026-06-06"
 author: "Gregory Lebed"
+relatedPosts:
+  - "parent-phone-call-script"
+  - "what-to-say-when-you-call-a-parent-about-behavior"
+  - "what-to-do-when-parents-dont-respond-to-calls"
 excerpt: "Stressed after a heated phone call? Learn why a written follow-up matters and how to write a neutral, factual summary email."
 faq:
   - q: "How do you document a difficult parent phone call?"

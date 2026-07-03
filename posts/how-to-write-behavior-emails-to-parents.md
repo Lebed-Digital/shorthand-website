@@ -3,6 +3,10 @@ title: "How to Write Behavior Emails to Parents (Without Overthinking Every Word
 subtitle: "A simple structure that makes parent communication faster and less stressful"
 date: "2026-03-22"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "positive-behavior-email-to-parents-template"
 excerpt: "Copy-paste templates and a simple 3-part structure for writing behavior emails to parents, so you spend less time staring at a blank screen and more time actually hitting send."
 faq:
   - q: "How do you write a behavior email to parents?"

@@ -3,6 +3,10 @@ title: "ShortHand vs Bloomz: Which App Is Right for Your Classroom?"
 subtitle: "One is a class communication hub. The other is built for per-student documentation."
 date: "2026-04-19"
 author: "Gregory Lebed"
+relatedPosts:
+  - "best-classdojo-alternatives-2026"
+  - "best-behavior-tracking-apps-for-teachers-2026"
+  - "classdojo-vs-seesaw-2026"
 excerpt: "Bloomz and ShortHand both handle parent communication and behavior tracking, but they're built for very different problems. Here's an honest comparison to help you pick the right one."
 faq:
   - q: "What is the difference between ShortHand and Bloomz?"

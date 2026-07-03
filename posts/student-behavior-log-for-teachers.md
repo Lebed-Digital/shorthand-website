@@ -3,6 +3,10 @@ title: "The Student Behavior Log: What to Track, How to Track It, and Why It Act
 subtitle: "What to track, how to track it, and why consistent records change every meeting."
 date: "2026-05-07"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "A simple student behavior log gives you the organized record you need at every meeting. Learn exactly what to track, what to leave out, and how to build a consistent system."
 faq:
   - q: "What should a student behavior log include?"

@@ -3,6 +3,10 @@ title: "How to Document Student Behavior From Day One (Before Problems Start)"
 subtitle: "The first month sets the standard. Here is how to build a documentation habit before you need one."
 date: "2026-06-17"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Most behavior problems do not appear overnight. Learn how to start documenting student behavior from day one, what to track during the first month, and why consistent records make parent communication and intervention decisions easier all year long."
 faq:
   - q: "Why should teachers document student behavior?"

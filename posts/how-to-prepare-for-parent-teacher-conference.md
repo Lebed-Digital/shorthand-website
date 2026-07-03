@@ -3,6 +3,10 @@ title: "How to Prepare for a Parent Teacher Conference"
 subtitle: "A practical checklist for teachers who want the meeting to go smoothly"
 date: "2026-06-07"
 author: "Gregory Lebed"
+relatedPosts:
+  - "what-to-bring-to-parent-teacher-conference-about-behavior"
+  - "what-to-say-at-parent-teacher-conference"
+  - "parent-teacher-conference-comments-for-teachers"
 excerpt: "Parent teacher conferences don't have to feel like a performance review you didn't study for. Here's how to walk in organized, say what matters, and end on a note parents actually remember."
 faq:
   - q: "What should a teacher prepare before a parent teacher conference?"

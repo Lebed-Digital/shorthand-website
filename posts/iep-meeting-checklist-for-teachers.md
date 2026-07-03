@@ -3,6 +3,10 @@ title: "IEP Meeting Checklist for Teachers (Before, During, and After)"
 subtitle: "The follow-up phase is where most IEPs fall apart. Here is how to get it right."
 date: "2026-03-30"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-notes-template"
+  - "how-to-document-student-behavior-for-iep"
+  - "what-to-say-at-an-iep-meeting"
 excerpt: "This comprehensive iep meeting checklist for teachers covers exactly what to prepare before, track during, and do after the meeting to support students."
 faq:
   - q: "What should a general education teacher bring to an IEP meeting?"

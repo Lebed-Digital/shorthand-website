@@ -3,6 +3,10 @@ title: "Free Parent Communication Log for Teachers (Printable + Digital)"
 subtitle: "Stop trying to remember who you called, what you said, and what you promised to follow up on."
 date: "2026-04-24"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "A free parent communication log keeps you covered at conferences, IEP meetings, and those 'I never got a call' moments. Here's what to track and how to do it without adding to your workload."
 ---
 

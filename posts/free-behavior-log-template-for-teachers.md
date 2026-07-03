@@ -3,6 +3,10 @@ title: "Free Behavior Log Template for Teachers"
 subtitle: "Keep your classroom documentation organized with these copy-and-paste printable templates."
 date: "2026-05-17"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Get a free behavior log template for teachers to track classroom behavior. Clean markdown templates for K-8 and elementary teachers to copy and use."
 ---
 

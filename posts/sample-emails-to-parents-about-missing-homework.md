@@ -3,6 +3,10 @@ title: "How to Write a Parent Email About Missing Assignments (Without the Drama
 subtitle: "Real-world strategies and copy-paste templates for chronic homework avoidance and missing work."
 date: "2026-06-06"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Stop spending hours writing individual missing homework notes. Use these battle-tested strategies and email templates to get parents on your side and get the work turned in."
 faq:
   - q: "How do you write a professional email to parents about missing homework?"

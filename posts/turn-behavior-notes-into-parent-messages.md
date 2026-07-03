@@ -3,6 +3,10 @@ title: "The Fastest Way to Turn Behavior Notes Into Parent Messages (Without Add
 subtitle: "What changed when I stopped treating communication as a separate task"
 date: "2026-03-28"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Tracking student behavior is only half the job. The harder part is actually reaching out to families - early, before small issues become big ones."
 ---
 

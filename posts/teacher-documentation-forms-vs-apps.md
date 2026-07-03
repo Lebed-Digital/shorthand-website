@@ -2,6 +2,10 @@
 title: "Teacher Documentation Forms vs. Apps: What Actually Works"
 date: "2026-03-21"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Still carrying around a massive binder of behavior logs? Here is a brutally honest comparison of paper forms versus digital apps, and why it is time to ditch the clipboard."
 tags: ["Teacher Documentation", "EdTech", "Classroom Management"]
 ---

@@ -3,6 +3,10 @@ title: "What I Document for Every Student During the First Week of Summer School
 subtitle: "The first week of ESY gives you the most valuable information you will collect all session. Here is how to capture it before it disappears."
 date: "2026-06-19"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Summer school moves fast and memory fades faster. Here is the five-category documentation system I use during the first week of ESY to track student strengths, behavior patterns, parent communication, and accommodations before problems start."
 faq:
   - q: "What should teachers document during the first week of summer school?"

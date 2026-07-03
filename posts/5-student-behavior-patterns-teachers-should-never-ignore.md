@@ -3,6 +3,10 @@ title: "5 Student Behavior Patterns Teachers Should Never Ignore"
 subtitle: "The incident is rarely the problem. The pattern is."
 date: "2026-06-25"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Most major behavior problems have warning signs. Here are five student behavior patterns teachers should start tracking early, before a small concern becomes a big one."
 faq:
   - q: "What are the most common student behavior patterns teachers miss?"

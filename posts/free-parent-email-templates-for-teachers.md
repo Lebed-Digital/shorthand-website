@@ -3,6 +3,10 @@ title: "Free Parent Email Templates for Teachers (Copy, Paste, Done)"
 subtitle: "Because 'I hope this email finds you well' is not a personality"
 date: "2026-04-22"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Stop writing parent behavior emails from scratch. Here are 8 free copy-paste templates for every situation: behavior concerns, IEP follow-ups, positive wins, and more."
 ---
 

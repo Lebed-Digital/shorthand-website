@@ -3,6 +3,10 @@ title: "What to Say at an IEP Meeting: A Teacher's Script Guide"
 subtitle: "The right words turn a stressful meeting into a real partnership."
 date: "2026-03-25"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-notes-template"
+  - "iep-meeting-checklist-for-teachers"
+  - "how-to-document-student-behavior-for-iep"
 excerpt: "Wondering exactly what to say at an IEP meeting? This highly practical guide provides clear teacher scripts for opening meetings and sharing concerns."
 ---
 

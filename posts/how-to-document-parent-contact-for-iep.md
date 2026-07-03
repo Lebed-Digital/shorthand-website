@@ -3,6 +3,10 @@ title: "How to Document Parent Contact for IEP Students (What IDEA Expects From 
 subtitle: "IDEA requires meaningful parent involvement, not just occasional updates. Here's what that looks like day to day."
 date: "2026-05-03"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-notes-template"
+  - "iep-meeting-checklist-for-teachers"
+  - "how-to-document-student-behavior-for-iep"
 excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and how to stay organized."
 ---
 

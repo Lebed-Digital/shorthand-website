@@ -3,6 +3,10 @@ title: "IEP Meeting Notes Template for Teachers (Free + Simple)"
 subtitle: "The meeting is just the beginning. Your notes are what make the plan stick."
 date: "2026-03-26"
 author: "Gregory Lebed"
+relatedPosts:
+  - "iep-meeting-checklist-for-teachers"
+  - "how-to-document-student-behavior-for-iep"
+  - "what-to-say-at-an-iep-meeting"
 excerpt: "Use this free and simple iep meeting notes template to perfectly track action items, document accommodations, and easily follow up with parents after."
 faq:
   - q: "What should a teacher include in IEP meeting notes?"

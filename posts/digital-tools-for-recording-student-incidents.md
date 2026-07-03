@@ -3,6 +3,10 @@ title: "Digital Tools for Recording Student Incidents and Progress"
 subtitle: "Why teachers are going digital, and what actually works in a real classroom."
 date: "2026-04-17"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-behavior-documentation-guide"
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
 excerpt: "Still logging student incidents on paper or a tracking sheet? Here's an honest look at digital tools for recording student incidents and progress: what works, what's overkill, and what I actually use in my classroom."
 faq:
   - q: "What is the best digital tool for recording student incidents?"

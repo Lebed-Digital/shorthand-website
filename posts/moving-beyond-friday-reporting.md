@@ -3,6 +3,10 @@ title: "Moving Beyond the Friday Reporting Grind"
 subtitle: "What changed when I stopped saving everything for the end of the week"
 date: "2026-04-07"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "It's 4:00 PM on a Friday. The building is mostly empty, and I'm staring at a blank email draft. I have four parent updates to write - and I can barely remember Tuesday."
 ---
 

@@ -3,6 +3,10 @@ title: "The Teacher's Complete Guide to Documenting Student Behavior"
 subtitle: "What to track, how to track it, and why it matters"
 date: "2026-05-27"
 author: "Gregory Lebed"
+relatedPosts:
+  - "teacher-documentation-log-template"
+  - "how-to-write-a-student-behavior-report"
+  - "student-behavior-log-for-teachers"
 excerpt: "A practical guide to documenting student behavior in the classroom: behavior logs, IEP records, intervention plans, tracking systems, and the documentation habits that protect teachers when things escalate."
 faq:
   - q: "Why is documenting student behavior important for teachers?"

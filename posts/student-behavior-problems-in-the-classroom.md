@@ -3,6 +3,10 @@ title: "Student Behavior Problems in the Classroom: What's Actually Going On (An
 subtitle: "Looking past the bad choices to find the real triggers."
 date: "2026-03-23"
 author: "Gregory Lebed"
+relatedPosts:
+  - "classroom-management-plan-template"
+  - "classroom-management-for-disruptive-students"
+  - "classroom-management-without-yelling"
 excerpt: "Dealing with student behavior problems can exhaust any teacher. Learn the common triggers behind classroom disruptions and practical ways to solve them."
 ---
 

@@ -3,6 +3,10 @@ title: "How to Write Honest Behavior Comments on a Report Card (Without Getting 
 subtitle: "The formula that keeps you out of the principal's office and actually helps the student."
 date: "2026-05-26"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-behavior"
+  - "report-card-comments-for-students-with-behavior-problems"
+  - "report-card-comments-for-struggling-students"
 excerpt: "Writing behavior comments that are honest, professional, and parent-proof is a skill nobody teaches you. Here is the formula that actually works."
 faq:
   - q: "How do you write a behavior comment on a report card without upsetting parents?"
@@ -58,6 +62,17 @@ There are certain words that act like giant red flags for parents and administra
 - Instead of "unmotivated," use "requires regular teacher proximity and explicit check-ins to begin tasks."
 - Instead of "defiant," use "struggles to comply with initial verbal directives during classroom transitions."
 - Instead of "mean," use "is working on developing positive social language when collaborating with classmates."
+
+If you need the swap in table form for the phrases teachers reach for most when writing a negative comment, here is the quick reference:
+
+| Stop Saying This | Start Saying This |
+| :--- | :--- |
+| "He is disrespectful to peers." | "He is working on using kind words with classmates." |
+| "She refuses to do her work." | "She requires multiple prompts to begin independent tasks." |
+| "He is constantly out of his seat." | "He is learning to remain seated during instructional time." |
+| "She has a bad attitude." | "She is developing strategies to handle frustration appropriately." |
+| "He is too aggressive." | "He is working on keeping safe hands during recess." |
+| "She is disruptive during lessons." | "She is practicing quiet listening when others are speaking." |
 
 For 50+ copy-paste examples organized by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems). For grade-specific wording, the [second grade behavior report card comments](/blog/second-grade-behavior-report-card-comments) show how this language sounds for younger students.
 

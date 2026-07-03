@@ -3,6 +3,10 @@ title: "Bad Behavior vs. Bad Day: How to Email Parents About Bad Behavior"
 subtitle: "Turn the hardest part of teaching into a productive partnership."
 date: "2026-04-04"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Figuring out how to email parents about bad behavior without causing drama is tough. Learn when to write, what to say, and how to protect the relationship."
 ---
 

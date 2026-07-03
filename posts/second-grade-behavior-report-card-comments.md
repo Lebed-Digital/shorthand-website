@@ -3,6 +3,10 @@ title: "12 Second Grade Behavior Report Card Comments"
 subtitle: "Copy-and-paste behavior comments tailored specifically for the developmental milestones of seven and eight-year-olds."
 date: "2026-05-16"
 author: "Gregory Lebed"
+relatedPosts:
+  - "report-card-comments-for-behavior"
+  - "report-card-comments-for-students-with-behavior-problems"
+  - "how-to-write-behavior-comments-on-report-card"
 excerpt: "Find the perfect second grade behavior report card comments. Here are 12 copy-paste templates that cover social skills, effort, listening, and transitions."
 ---
 

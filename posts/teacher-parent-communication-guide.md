@@ -3,6 +3,10 @@ title: "The Teacher's Complete Guide to Parent Communication"
 subtitle: "Every conversation, email, call, and meeting: handled"
 date: "2026-05-27"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "how-to-write-behavior-emails-to-parents"
+  - "positive-behavior-email-to-parents-template"
 excerpt: "A practical guide to every kind of parent communication teachers dread: behavior emails, difficult phone calls, IEP meetings, parent-teacher conferences, and what to do when parents don't respond or push back."
 faq:
   - q: "How should teachers communicate with parents about behavior problems?"

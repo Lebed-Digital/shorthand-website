@@ -3,6 +3,10 @@ title: "What to Do When a Parent Says You Never Called Them"
 subtitle: "Stay calm, redirect to the student, and offer to check your records. Here's exactly what to do."
 date: "2026-05-01"
 author: "Gregory Lebed"
+relatedPosts:
+  - "parent-phone-call-script"
+  - "what-to-say-when-you-call-a-parent-about-behavior"
+  - "parent-email-after-difficult-phone-call"
 excerpt: "When a parent claims a teacher never called about their child's behavior or grades, here's exactly what to do in the moment and how to make sure it never happens again."
 ---
 

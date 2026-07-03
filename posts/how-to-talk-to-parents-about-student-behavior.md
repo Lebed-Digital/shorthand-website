@@ -3,6 +3,10 @@ title: "How to Talk to Parents About Student Behavior: A Step-by-Step Guide"
 subtitle: "Navigate difficult phone calls and meetings with empathy, clarity, and professionalism."
 date: "2026-05-20"
 author: "Gregory Lebed"
+relatedPosts:
+  - "sample-emails-to-parents-about-student-behavior"
+  - "teacher-parent-communication-guide"
+  - "how-to-write-behavior-emails-to-parents"
 excerpt: "Learn how to talk to parents about student behavior. Read our step-by-step guide on opening calls, handling defensiveness, and documenting conversations."
 faq:
   - q: "How do you start a phone call with a parent about behavior?"
