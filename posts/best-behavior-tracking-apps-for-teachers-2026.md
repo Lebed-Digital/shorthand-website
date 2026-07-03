@@ -142,7 +142,7 @@ ShortHand won't run a formal ABC observation or manage a whole-school points eco
 
 If your school is already on ClassDojo or PBIS Rewards, use it. Don't add another system.
 
-If you're a SPED teacher running formal observations, BehaviorSnap is worth learning.
+If you're a SPED teacher running formal observations, BehaviorSnap is worth learning. And if your notes are more anecdotal records than behavior tallies, we compared that whole category separately in [Student Observation Apps: What Actually Works](/blog/best-student-observation-apps-for-teachers).
 
 If you're a general education teacher who wants to actually track behavior, document parent contact, and walk into a meeting with a real record, [ShortHand](https://app.getshorthandapp.com?demo=true) is the one that fits how school days actually work.
 

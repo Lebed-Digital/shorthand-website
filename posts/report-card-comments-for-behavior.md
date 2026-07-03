@@ -33,7 +33,7 @@ Here's what I've learned from years in the classroom and from reading report car
 
 Below are 120+ examples organized by situation. Copy them, adapt them, make them yours.
 
-If you are specifically looking for a student with serious, ongoing behavior concerns, head straight to [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems), where 50+ examples are broken down by attention, impulsivity, emotional regulation, and conduct. Otherwise, start with the sections below.
+If you are specifically looking for a student with serious, ongoing behavior concerns, head straight to [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems), where 50+ examples are broken down by attention, impulsivity, emotional regulation, and conduct. For the social-emotional learning section of the report, we have a dedicated set of [social emotional report card comments](/blog/social-emotional-report-card-comments), and for kids who are behind academically there are [positive comments for struggling students](/blog/report-card-comments-for-struggling-students). Otherwise, start with the sections below.
 
 **Jump to a section:**
 - [When behavior is strong](#when-behavior-is-strong)

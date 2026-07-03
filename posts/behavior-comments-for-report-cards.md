@@ -8,7 +8,7 @@ faq:
   - q: "What are good behavior comments for report cards?"
     a: "Good behavior comments name a specific, observable pattern, describe its impact on learning, and point toward a strategy or area of growth. Avoid vague phrases like 'needs improvement' on their own. The most effective comments give parents a clear picture without using character judgments like 'disrespectful' or 'defiant.'"
   - q: "How do you write behavior comments for report cards without upsetting parents?"
-    a: "Use observable language, not character labels. 'Student frequently calls out during direct instruction' lands better than 'Student is disruptive.' Pair every concern with what is being done to address it. And never put a concern on a report card that a parent is reading for the first time — they should have already heard it from you."
+    a: "Use observable language, not character labels. 'Student frequently calls out during direct instruction' lands better than 'Student is disruptive.' Pair every concern with what is being done to address it. And never put a concern on a report card that a parent is reading for the first time: they should have already heard it from you."
   - q: "What should behavior comments on a report card include?"
     a: "Every behavior comment should have three parts: what the behavior looks like (specific and observable), when or how often it occurs, and what growth or support is in place. This gives families something concrete and actionable to work with."
   - q: "Can I use AI to write report card behavior comments?"

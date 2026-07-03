@@ -1039,12 +1039,15 @@ footer {
 .blog-content a { color: var(--accent, #a78bfa); text-decoration: underline; }
 .blog-content strong { color: var(--text); font-weight: 600; }
 .blog-content blockquote {
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-left: 3px solid var(--accent, #a78bfa);
-  padding-left: 1.25rem;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
   margin: 2rem 0;
   color: var(--text-dim);
-  font-style: italic;
 }
+.blog-content blockquote p:last-child { margin-bottom: 0; }
 .blog-content table {
   width: 100%;
   border-collapse: collapse;

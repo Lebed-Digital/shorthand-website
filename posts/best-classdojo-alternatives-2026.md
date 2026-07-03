@@ -8,7 +8,7 @@ faq:
   - q: "What is the best ClassDojo alternative for upper elementary teachers?"
     a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that points don't create a real documentation record for IEP meetings or parent conferences."
   - q: "Is there a free ClassDojo alternative?"
-    a: "Yes. Remind is free and handles parent messaging without requiring parents to create accounts. Seesaw has a free tier for individual teachers. ShortHand offers a free plan for individual classroom use. Most ClassDojo alternatives are free at the individual teacher level — costs typically kick in at the school or district level."
+    a: "Yes. Remind is free and handles parent messaging without requiring parents to create accounts. Seesaw has a free tier for individual teachers. ShortHand offers a free plan for individual classroom use. Most ClassDojo alternatives are free at the individual teacher level, but costs typically kick in at the school or district level."
   - q: "What ClassDojo alternative is best for behavior documentation?"
     a: "If you need behavior documentation that actually holds up at an IEP meeting or parent conference, you need a tool that logs timestamped notes per student with parent contact records attached. ClassDojo points screenshots don't provide that. ShortHand is built specifically for this use case, letting teachers log behavior notes and parent contacts in seconds."
   - q: "Why are teachers leaving ClassDojo in 2026?"

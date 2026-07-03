@@ -73,4 +73,4 @@ This exact need for fast, organized tracking is why I use ShortHand. I needed a 
 
 Changing your phrasing from blunt to professional does not mean you are lying or sugarcoating reality. It just means you are acting as the clinical expert in the room. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you reduce defensiveness from families and actually help the student move forward.
 
-If you want ready-to-use language that already follows this formula, [Report Card Comments for Behavior: 120+ Examples You Can Use Today](/blog/report-card-comments-for-behavior) has comments organized by situation — strong behavior, ongoing concerns, IEP students, impulsivity, and more. Copy them directly or use them as a starting point.
+If you want ready-to-use language that already follows this formula, [Report Card Comments for Behavior: 120+ Examples You Can Use Today](/blog/report-card-comments-for-behavior) has comments organized by situation: strong behavior, ongoing concerns, IEP students, impulsivity, and more. Copy them directly or use them as a starting point.

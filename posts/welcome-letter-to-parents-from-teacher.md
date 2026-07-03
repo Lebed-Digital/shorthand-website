@@ -27,7 +27,7 @@ The good news is that a strong welcome letter does not need to be perfect. It ju
 
 Below are four examples with notes on what makes each one work, including one letter I actually sent and what I would change about it today.
 
-If you just need a letter done, the [Welcome Letter Generator](/back-to-school-toolkit) will build one for your grade and tone in about 30 seconds. But if you want to understand what makes a welcome letter actually land with parents, keep reading.
+If you just need a letter done, the [Welcome Letter Generator](/back-to-school-toolkit) will build one for your grade and tone in about 30 seconds. If what you actually need is shorter or more specific, we also have [30 short welcome messages for class apps and texts](/blog/short-welcome-message-to-parents-from-teacher) and [introduction letter examples for new and mid-year teachers](/blog/teacher-introduction-letter-to-parents). But if you want to understand what makes a welcome letter actually land with parents, keep reading.
 
 ## What parents actually need from a welcome letter
 
@@ -178,11 +178,11 @@ The rest of the letter was fine. The mistake was the resume. Cut it down and the
 
 Every welcome letter, regardless of grade or tone, should cover these five things:
 
-1. **Your name and what you teach** — sounds obvious, gets skipped more than you would think
-2. **One personal detail** — something that makes you a human being, not a job title
-3. **What families can expect** — communication style, your general approach, anything that answers "what kind of teacher are you"
-4. **How to reach you** — specific app or email, response time, what to do in an urgent situation
-5. **An invitation** — something that signals you actually want to hear from them, not just send information at them
+1. **Your name and what you teach**: sounds obvious, gets skipped more than you would think
+2. **One personal detail**: something that makes you a human being, not a job title
+3. **What families can expect**: communication style, your general approach, anything that answers "what kind of teacher are you"
+4. **How to reach you**: specific app or email, response time, what to do in an urgent situation
+5. **An invitation**: something that signals you actually want to hear from them, not just send information at them
 
 Parents rarely remember every detail from a welcome letter. They remember how it made them feel. If families finish reading and think "my child is in good hands," the letter did its job.
 

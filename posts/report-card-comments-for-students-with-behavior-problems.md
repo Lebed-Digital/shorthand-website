@@ -131,3 +131,5 @@ The following examples are organized by specific area of need. Copy, paste, and 
 Writing these comments requires an immense amount of mental filtering. If you are in the middle of report card season and need to move faster, the free [Report Card Comment Generator](https://getshorthandapp.com/free-tool) at getshorthandapp.com/free-tool lets you plug in the behaviors you are observing and instantly formats a professional, balanced comment. No sign-up required.
 
 For 120+ additional examples covering strong behavior, improvement, IEP students, and the comments that are hardest to write, see [Report Card Comments for Behavior](/blog/report-card-comments-for-behavior). It is organized by situation so you can jump directly to what you need.
+
+And if the challenge is academic rather than behavioral, the student who is behind and needs a comment that stays both positive and honest, we wrote a separate set of [report card comments for struggling students](/blog/report-card-comments-for-struggling-students) for exactly that.

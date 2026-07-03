@@ -2,7 +2,7 @@
 title: "Classroom Management Plan Template (Free, Editable Examples)"
 date: "2026-03-16"
 author: "Gregory Lebed"
-excerpt: "Free classroom management plan templates for elementary and middle school teachers. Copy, edit, and actually use them — plus the one habit that keeps your plan alive past October."
+excerpt: "Free classroom management plan templates for elementary and middle school teachers. Copy, edit, and actually use them, plus the one habit that keeps your plan alive past October."
 tags: ["Classroom Management", "Teacher Tips", "Free Templates"]
 faq:
   - q: "What should be included in a classroom management plan?"
@@ -16,7 +16,7 @@ faq:
   - q: "What is a good classroom management plan example?"
     a: "A good example includes 3-4 positively stated rules, a 4-5 step consequence ladder starting with non-verbal redirection, a simple positive reinforcement system, and a parent contact protocol. The best plans fit on one page so students can read them and you can enforce them without looking at your notes."
   - q: "How long should a classroom management plan be?"
-    a: "One page. If your plan is longer than one page, it is too complicated to enforce consistently. Complex plans look impressive in August and get abandoned by October. Focus on rules, consequences, and contact procedures — leave the rest out."
+    a: "One page. If your plan is longer than one page, it is too complicated to enforce consistently. Complex plans look impressive in August and get abandoned by October. Focus on rules, consequences, and contact procedures, and leave the rest out."
 ---
 
 Every teacher writes a beautiful classroom management plan in August. Most teachers have quietly abandoned it by October.
@@ -37,8 +37,8 @@ Copy this, replace the bracketed sections with your own details, and print it ou
 
 ---
 
-**[Your Name] — Room [Number] — [Grade] Grade**
-**Classroom Management Plan — [School Year]**
+**[Your Name], Room [Number], [Grade] Grade**
+**Classroom Management Plan: [School Year]**
 
 **Our Classroom Rules**
 
@@ -59,7 +59,7 @@ Copy this, replace the bracketed sections with your own details, and print it ou
 | Step | What happens |
 |------|-------------|
 | 1 | Non-verbal reminder (look, proximity, hand signal) |
-| 2 | Quiet verbal warning — private, brief |
+| 2 | Quiet verbal warning: private, brief |
 | 3 | Seat change or 5-minute cool-down at the back table |
 | 4 | Parent contact + loss of privilege (recess, free choice) |
 | 5 | Office referral with written incident documentation |
@@ -67,7 +67,7 @@ Copy this, replace the bracketed sections with your own details, and print it ou
 **Positive Recognition System**
 
 - [Choose one: table points / class Dojo / marble jar / verbal praise system]
-- Goal: [describe reward — extra recess, movie afternoon, free choice Friday]
+- Goal: [describe reward: extra recess, movie afternoon, free choice Friday]
 - Positive parent contact: at least [2] positive notes or calls home per week
 
 **Parent Communication Protocol**
@@ -88,8 +88,8 @@ Middle school teachers often see 80-150 students per day across multiple periods
 
 ---
 
-**[Your Name] — Period [X] — [Subject] — [Grade]**
-**Classroom Expectations and Procedures — [School Year]**
+**[Your Name], Period [X], [Subject], [Grade]**
+**Classroom Expectations and Procedures: [School Year]**
 
 **Classroom Expectations**
 
@@ -110,7 +110,7 @@ Middle school teachers often see 80-150 students per day across multiple periods
 | Step | What happens |
 |------|-------------|
 | 1 | Non-verbal redirect (look, proximity) |
-| 2 | Verbal warning — private, during a transition |
+| 2 | Verbal warning: private, during a transition |
 | 3 | After-class conversation (2 minutes, brief) |
 | 4 | Parent contact + lunch detention or seat change |
 | 5 | Office referral with documentation |
@@ -156,7 +156,7 @@ The teachers who enforce their plans consistently are the ones who log behavior 
 
 You do not need to write a paragraph. A quick note with the date, the behavior, and the step taken is enough. Example:
 
-> *Oct 14 — Marcus — verbal warning for talking during instruction (Step 2)*
+> *Oct 14, Marcus: verbal warning for talking during instruction (Step 2)*
 
 When it happens again the next week, you open your log and you see: Step 2. You go to Step 3. No guessing, no memory required.
 
@@ -177,12 +177,12 @@ ShortHand is built for exactly this: tap a student's name, log a 5-word note, do
 - Use picture-based rule displays alongside text for younger readers
 - Keep rules to 3 or 4. More than 4 and students cannot remember them
 - Positive reinforcement works better at this age than consequence-heavy systems
-- Send the signed plan home in the first week — parent buy-in matters
+- Send the signed plan home in the first week: parent buy-in matters
 
 ### Middle School (6-8)
 
 - Students respond better to logical consequences than arbitrary ones (losing recess does not mean anything to a 7th grader)
-- The after-class conversation at Step 3 is powerful — most students will self-correct to avoid it
+- The after-class conversation at Step 3 is powerful: most students will self-correct to avoid it
 - Parent contact at Step 4 should be a phone call, not an email. Email gives parents room to ignore it
 - Document everything by period. Patterns matter, and you cannot see them without records
 
@@ -198,7 +198,7 @@ ShortHand is built for exactly this: tap a student's name, log a 5-word note, do
 
 **Can I use one of these templates for a teacher interview?**
 
-Yes. Both templates are suitable for demonstrating your classroom management philosophy in an interview. Be ready to explain your documentation method — administrators frequently ask follow-up questions about how you track consistency and parent communication.
+Yes. Both templates are suitable for demonstrating your classroom management philosophy in an interview. Be ready to explain your documentation method: administrators frequently ask follow-up questions about how you track consistency and parent communication.
 
 **Do I need to share my plan with parents?**
 

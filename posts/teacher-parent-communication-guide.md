@@ -1,6 +1,6 @@
 ---
 title: "The Teacher's Complete Guide to Parent Communication"
-subtitle: "Every conversation, email, call, and meeting — handled"
+subtitle: "Every conversation, email, call, and meeting: handled"
 date: "2026-05-27"
 author: "Gregory Lebed"
 excerpt: "A practical guide to every kind of parent communication teachers dread: behavior emails, difficult phone calls, IEP meetings, parent-teacher conferences, and what to do when parents don't respond or push back."

@@ -73,6 +73,8 @@ Paper works. But it gets lost, left at school, and is hard to search when you ne
 
 [Digital Tools for Recording Student Incidents and Progress](/blog/digital-tools-for-recording-student-incidents) covers the options for moving behavior documentation into a format you can access anywhere, search quickly, and share with a team when needed.
 
+If your documentation leans more toward anecdotal and skill observations than incidents, [Student Observation Apps: What Actually Works](/blog/best-student-observation-apps-for-teachers) compares paper, spreadsheets, forms, and dedicated apps against the only test that matters: whether you can use them mid-lesson.
+
 [ShortHand](/) was built specifically for this problem. You log a behavior note in a few seconds from your phone, right after it happens, without opening a laptop or filling out a form. Over time those quick notes become a searchable, timestamped record.
 
 ---
@@ -84,6 +86,8 @@ IEP documentation has higher stakes than general behavior tracking. What you wri
 [How to Document Student Behavior for IEP Meetings](/blog/how-to-document-student-behavior-for-iep) covers the specific format IEP teams need: observable descriptions, baseline data, frequency and duration counts, and how to connect your classroom observations to the language of the IEP.
 
 When it is time for the annual review, [The IEP Behavior Documentation Checklist](/blog/iep-behavior-documentation-checklist) walks you through exactly what to bring so you are not scrambling the night before the meeting.
+
+And when the team asks you to "put together a report on his behavior lately," [How to Write a Student Behavior Report](/blog/how-to-write-a-student-behavior-report) gives you the five-section format, a complete worked example, and the wording traps to avoid.
 
 ---
 

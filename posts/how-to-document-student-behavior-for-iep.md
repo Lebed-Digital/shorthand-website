@@ -24,7 +24,7 @@ The good news is that the IEP team doesn't need you to be a behavior analyst. Th
 |---|---|---|
 | **Frequency** | "He's disruptive a lot" | "Needed verbal prompts on 4 of the last 5 Mondays" |
 | **Context** | "During class" | "During transitions from math to specials" |
-| **Response** | "I dealt with it" | "Offered a movement break — behavior stopped within 2 min" |
+| **Response** | "I dealt with it" | "Offered a movement break, behavior stopped within 2 min" |
 | **Trend** | "It's been getting worse" | "Increased since October, improved after seating change" |
 
 ### 1. Frequency
