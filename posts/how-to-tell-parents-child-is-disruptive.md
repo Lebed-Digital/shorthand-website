@@ -83,6 +83,8 @@ For safety reasons, it is critical that students remain at their tables during l
 
 We are going to try again tomorrow. Are there any specific reminders you use at home when she struggles to stay in one place?"
 
+If the disruption has grown into a serious, repeated pattern, that conversation needs a different structure. See [how to email parents about bad behavior](/blog/how-to-email-parents-about-bad-behavior) for the harder version of this email.
+
 ## Stop Dreading the Send Button
 
 Writing these emails is draining. You spend twenty minutes agonizing over a single sentence because you do not want the parent to yell at you. 

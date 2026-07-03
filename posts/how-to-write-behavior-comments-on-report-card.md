@@ -59,7 +59,7 @@ There are certain words that act like giant red flags for parents and administra
 - Instead of "defiant," use "struggles to comply with initial verbal directives during classroom transitions."
 - Instead of "mean," use "is working on developing positive social language when collaborating with classmates."
 
-For 50+ copy-paste examples organized by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems).
+For 50+ copy-paste examples organized by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems). For grade-specific wording, the [second grade behavior report card comments](/blog/second-grade-behavior-report-card-comments) show how this language sounds for younger students.
 
 ## How to Write Behavior Comments When There Has Been Real Documentation
 

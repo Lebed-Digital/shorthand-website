@@ -3,6 +3,10 @@ title: "I Tested the Most Popular ClassDojo Alternatives. Here's What I Found."
 subtitle: "A 3rd grade teacher's honest take on what actually works, and what's just a different flavor of the same frustration."
 date: "2026-04-20"
 author: "Gregory Lebed"
+relatedPosts:
+  - "classdojo-vs-seesaw-2026"
+  - "why-teachers-are-switching-from-classdojo-to-shorthand"
+  - "7-reasons-classdojo-alternatives"
 excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest ranking of the best ClassDojo alternatives in 2026, based on what's actually frustrating you about Dojo."
 faq:
   - q: "What is the best ClassDojo alternative for upper elementary teachers?"
@@ -95,7 +99,7 @@ This is a school-wide adoption, not a personal classroom tool. If your school is
 
 Seesaw is well-loved in elementary schools for sharing student work with families. Photo uploads, video clips, digital portfolios, and parent messaging are all polished and easy to use.
 
-It isn't a behavior tracking tool. If documentation and parent contact records are your primary need, Seesaw won't fill that gap. If you want a ClassDojo replacement for the class story and family engagement side, Seesaw is worth a look.
+It isn't a behavior tracking tool. If documentation and parent contact records are your primary need, Seesaw won't fill that gap. If you want a ClassDojo replacement for the class story and family engagement side, Seesaw is worth a look. If you're weighing these two head to head, I wrote a full [ClassDojo vs Seesaw comparison](/blog/classdojo-vs-seesaw-2026) that goes deeper on both.
 
 **Doesn't do:** Behavior logging, incident documentation, IEP-ready records.
 

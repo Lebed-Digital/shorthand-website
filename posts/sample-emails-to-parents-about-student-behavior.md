@@ -45,7 +45,7 @@ The other thing: written communication creates a record. If a behavior escalates
 
 Quick note before the templates.
 
-If it is something emotional, escalating, or likely to be misunderstood, call. Tone matters too much in those situations and email can make things worse. If a student had a significant outburst, made a threat, or was involved in something that could embarrass the family - call first, then follow up in writing.
+If it is something emotional, escalating, or likely to be misunderstood, call. Tone matters too much in those situations and email can make things worse. If a student had a significant outburst, made a threat, or was involved in something that could embarrass the family - call first, then follow up in writing. If the situation was a physical altercation, I wrote a separate guide with templates for the [email to parents about a fight at school](/blog/email-to-parents-about-fight-at-school), because that one deserves extra care.
 
 But for patterns, updates, and anything you want a written record of, a behavior email to parents works well. That is where having a solid template ready to go really saves time.
 
@@ -68,7 +68,7 @@ The best time to contact a parent about behavior is before there's a problem. Te
 > Best,
 > [Your Name]
 
-**Why it works:** Short, specific, and positive. The specificity matters - "they were great today" lands differently than "they helped a classmate figure out a math problem without being asked." Specific praise is credible.
+**Why it works:** Short, specific, and positive. The specificity matters - "they were great today" lands differently than "they helped a classmate figure out a math problem without being asked." Specific praise is credible. If you want to make this a weekly habit, there are five more ready-to-send scripts in the [positive behavior email to parents templates](/blog/positive-behavior-email-to-parents-template) collection.
 
 ---
 
@@ -89,7 +89,7 @@ When something is happening repeatedly, vague language makes parents defensive. 
 > Thanks for the support,
 > [Your Name]
 
-**Why it works:** It names a specific pattern, mentions what you're already doing, and invites the parent as a partner rather than informing them of a problem. The collaborative framing changes the entire tone.
+**Why it works:** It names a specific pattern, mentions what you're already doing, and invites the parent as a partner rather than informing them of a problem. The collaborative framing changes the entire tone. For the harder version of this conversation, when the behavior is serious and repeated, see [how to email parents about bad behavior](/blog/how-to-email-parents-about-bad-behavior).
 
 ---
 
@@ -135,7 +135,7 @@ This is the most underused template on the list. After any verbal conversation a
 > Best,
 > [Your Name]
 
-**Why it works:** No ambiguity about what was agreed. No "I thought you said" conversations later. If the situation ever escalates to an IEP or administrative level, you have documentation that shows you communicated proactively and established a plan.
+**Why it works:** No ambiguity about what was agreed. No "I thought you said" conversations later. If the situation ever escalates to an IEP or administrative level, you have documentation that shows you communicated proactively and established a plan. And if the call itself went badly, here is [how to write a follow-up email after a difficult parent phone call](/blog/parent-email-after-difficult-phone-call) without reigniting the conflict.
 
 ---
 

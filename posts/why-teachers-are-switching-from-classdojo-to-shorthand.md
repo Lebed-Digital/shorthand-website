@@ -99,7 +99,7 @@ That's not a problem. That's just Tuesday.
 
 ---
 
-**Related reading:** [Free parent email templates for teachers](/blog/free-parent-email-templates-for-teachers) · [7 reasons you're Googling ClassDojo alternatives](/blog/7-reasons-classdojo-alternatives)
+**Related reading:** [Free parent email templates for teachers](/blog/free-parent-email-templates-for-teachers) · [7 reasons you're Googling ClassDojo alternatives](/blog/7-reasons-classdojo-alternatives) · [Best ClassDojo alternatives in 2026, ranked](/blog/best-classdojo-alternatives-2026) · [ClassDojo vs Seesaw compared](/blog/classdojo-vs-seesaw-2026)
 
 ---
 

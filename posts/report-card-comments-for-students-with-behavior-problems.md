@@ -132,4 +132,4 @@ Writing these comments requires an immense amount of mental filtering. If you ar
 
 For 120+ additional examples covering strong behavior, improvement, IEP students, and the comments that are hardest to write, see [Report Card Comments for Behavior](/blog/report-card-comments-for-behavior). It is organized by situation so you can jump directly to what you need.
 
-And if the challenge is academic rather than behavioral, the student who is behind and needs a comment that stays both positive and honest, we wrote a separate set of [report card comments for struggling students](/blog/report-card-comments-for-struggling-students) for exactly that.
+And if the challenge is academic rather than behavioral, the student who is behind and needs a comment that stays both positive and honest, we wrote a separate set of [report card comments for struggling students](/blog/report-card-comments-for-struggling-students) for exactly that. Teaching 2nd grade? There is also a short set of [second grade behavior report card comments](/blog/second-grade-behavior-report-card-comments) written for that age band.

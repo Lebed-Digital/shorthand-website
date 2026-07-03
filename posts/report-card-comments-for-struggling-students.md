@@ -109,7 +109,7 @@ If the struggle is primarily behavioral rather than academic, we have a full set
 
 ## Write the phone call before the comment
 
-One rule above all: the report card should never be breaking news. If a student is genuinely struggling, the parent hears it from your voice first. The comment then becomes easy, because it is just a summary of a conversation you have already had. If that call is the part you dread, this [script for calling a parent about behavior](/blog/what-to-say-when-you-call-a-parent-about-behavior) adapts well to academic conversations too.
+One rule above all: the report card should never be breaking news. If a student is genuinely struggling, the parent hears it from your voice first. The mid-term progress report is the other place parents should see it coming; these [student progress report comments](/blog/student-progress-report-comments-for-teachers) are built for those check-ins. The comment then becomes easy, because it is just a summary of a conversation you have already had. If that call is the part you dread, this [script for calling a parent about behavior](/blog/what-to-say-when-you-call-a-parent-about-behavior) adapts well to academic conversations too.
 
 ## Where the specifics come from
 

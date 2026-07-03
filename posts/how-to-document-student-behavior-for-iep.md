@@ -98,7 +98,7 @@ Here is the system I eventually landed on after years of trying things that didn
 
 **Note the context automatically.** Time and activity are the most useful contextual details. If your logging tool automatically timestamps the entry, you already have half the context captured.
 
-**Review weekly, not just before meetings.** Spend five minutes on Friday looking at the week. You'll spot patterns you'd otherwise miss, and you'll be ready for meetings without cramming.
+**Review weekly, not just before meetings.** Spend five minutes on Friday looking at the week. You'll spot patterns you'd otherwise miss, and you'll be ready for meetings without cramming. When the meeting arrives, pair your data with this [IEP meeting notes template](/blog/iep-meeting-notes-template) so what gets decided is documented as carefully as what happened in class.
 
 ## What Happens When You Get This Right
 

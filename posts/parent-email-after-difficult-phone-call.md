@@ -34,7 +34,7 @@ Your follow-up email must be a concise, objective summary of the conversation. D
 3. List the agreed-upon action steps. Be specific about who is doing what.
 4. End with a confirmation prompt. Ask the parent to reply if they have a different recollection of the call. This is crucial because it forces them to either agree with your summary or put their disagreement in writing.
 
-If you struggle with the phone call itself, using a structured [parent phone call script](https://getshorthandapp.com/posts/parent-phone-call-script) before you dial can help keep the conversation focused and prevent it from spiraling.
+If you struggle with the phone call itself, using a structured [parent phone call script](https://getshorthandapp.com/blog/parent-phone-call-script) before you dial can help keep the conversation focused and prevent it from spiraling.
 
 ### What to Leave Out: The Emotional Filter
 

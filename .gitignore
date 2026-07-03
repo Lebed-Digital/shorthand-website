@@ -36,9 +36,8 @@ yarn-error.log*
 # vercel
 .vercel
 
-# large media files
+# large media files (PDFs are lead magnets and must deploy; keep them in the repo)
 public/*.mp4
-public/*.pdf
 excalidraw.log
 
 # local-only public files (not deployed, kept out of repo)

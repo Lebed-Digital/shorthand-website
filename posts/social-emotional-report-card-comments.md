@@ -125,6 +125,8 @@ The difference between "demonstrates growth in self-regulation" and "recovery th
 
 Social-emotional growth is slow and quiet. Nobody remembers in June that the chair-flipping stopped in January unless it got written down in January. A one-line note in the moment is all it takes, and our [teacher's guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) shows how to make that a habit that survives a real school year.
 
+These comments also work for mid-term check-ins. If you are writing progress reports rather than report cards, the [student progress report comments for teachers](/blog/student-progress-report-comments-for-teachers) collection covers that shorter format.
+
 ShortHand was built for exactly this. Log a ten-second note on your phone when something happens ("used calm corner on his own, first time"), and at report card time every note is waiting, sorted by student. It can even draft the comment from your own observations, in your voice, with the specifics already in place.
 
 The kid worked hard all year for that growth. [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and make sure the report card actually shows it. And if reports are due tomorrow morning, the [free report card comment generator](/free-tool) works right now, no sign-up required.

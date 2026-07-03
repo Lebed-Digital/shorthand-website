@@ -60,7 +60,7 @@ Here is exactly what you need to collect.
 
 Do not walk into a meeting with a pile of sticky notes. The team cannot read your shorthand scribbles.
 
-You need to organize your behavior data for IEP meetings professionally. Format it so the team can easily digest it.
+You need to organize your behavior data for IEP meetings professionally. Format it so the team can easily digest it. During the meeting itself, capture decisions in a structured [IEP meeting notes template](/blog/iep-meeting-notes-template) so nothing agreed in the room gets lost afterward.
 
 Create a one-page summary. List the primary concern at the top.
 

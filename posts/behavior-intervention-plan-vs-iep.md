@@ -58,7 +58,7 @@ Your daily behavior logs are the raw data that feed this entire special educatio
 
 ## Proving the Plan is Actually Being Implemented
 
-If you do not document the behavior and your interventions, the entire system collapses. You cannot rely on your memory during an IEP meeting in April to discuss a behavior that happened in October.
+If you do not document the behavior and your interventions, the entire system collapses. You cannot rely on your memory during an IEP meeting in April to discuss a behavior that happened in October. Taking structured notes during the meeting itself matters too, and this free [IEP meeting notes template](/blog/iep-meeting-notes-template) keeps them organized.
 
 This requirement for intense data collection is why so many teachers burn out. Keeping a clipboard for every student with a BIP is a logistical nightmare. ShortHand solves this directly. When you implement a strategy from a student's BIP, you immediately log it on your phone. The app timestamps the entry and files it under the student's profile automatically. When you are pulled into an unexpected IEP meeting, you do not panic. You open ShortHand and instantly produce a flawless, professional record of exactly how you have supported the student.
 

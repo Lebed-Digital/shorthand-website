@@ -123,7 +123,7 @@ It keeps your message focused, professional, and actionable. Most emails written
 
 ## Sample Behavior Emails to Parents (Copy and Paste)
 
-Here are three real examples using that structure. Fill in the details for your student and you're done.
+Here are three real examples using that structure. Fill in the details for your student and you're done. One situation these do not cover: a physical altercation. That email has its own rules, and the [email to parents about a fight at school](/blog/email-to-parents-about-fight-at-school) guide walks through them with templates.
 
 ---
 
