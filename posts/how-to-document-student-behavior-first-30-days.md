@@ -81,7 +81,7 @@ The second example describes observable behavior, not interpretation. That matte
 
 A good note includes: what the student did, how long or how often, and the context (subject, time of day, activity type). One or two sentences is usually enough.
 
-For more on building a sustainable logging habit, see [how to document student behavior as a teacher](/blog/how-to-document-student-behavior-as-a-teacher) and the [free behavior log template for teachers](/blog/free-behavior-log-template-for-teachers).
+For more on building a sustainable logging habit, see [how to document student behavior as a teacher](/blog/how-to-document-student-behavior-as-a-teacher), the [free behavior log template for teachers](/blog/free-behavior-log-template-for-teachers), or [why summer school is the perfect time to build this system before September](/blog/summer-school-build-documentation-system-before-september).
 
 ## Keep Documentation Objective
 
