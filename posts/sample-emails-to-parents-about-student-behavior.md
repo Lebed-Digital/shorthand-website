@@ -1,5 +1,5 @@
 ---
-title: "5 Sample Emails to Parents About Student Behavior (Copy-Paste Ready)"
+title: "Sample Email to Parents About Student Behavior (5 Templates You Can Copy)"
 subtitle: "Copy-paste scripts for the emails teachers write over and over"
 date: "2026-04-15"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "how-to-document-student-behavior-as-a-teacher"
   - "student-behavior-log-for-teachers"
   - "free-parent-communication-log-for-teachers"
-excerpt: "Copy-paste behavior email templates for teachers. Five ready-to-send scripts for the parent emails you write over and over, without spending your evening staring at a blank screen."
+excerpt: "Need to email a parent about behavior tonight? Five ready-to-send templates for the exact situations you're facing, plus what to say when you don't hear back."
 faq:
   - q: "What should I write in a behavior email to parents?"
     a: "Keep it specific, objective, and brief. Describe what happened and when, mention what you're already doing to support the student, and invite the parent to respond. Avoid vague phrases like 'having a hard time' - instead write something like 'had difficulty during the transition from math to reading on three occasions this week.' Specific language is more useful to the parent and easier to reference if the situation needs a follow-up meeting."

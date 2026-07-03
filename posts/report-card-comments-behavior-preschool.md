@@ -1,5 +1,5 @@
 ---
-title: "Report Card Comments for Behavior: Preschool and Pre-K Examples"
+title: "Preschool Report Card Comments for Behavior (Pre-K Examples You Can Copy)"
 subtitle: "Age-appropriate language for the hardest comments you will write all year."
 date: "2026-03-29"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "report-card-comments-for-behavior"
   - "report-card-comments-for-students-with-behavior-problems"
   - "how-to-write-behavior-comments-on-report-card"
-excerpt: "Writing report card comments for preschool behavior is different from K-8. Here are age-appropriate examples for sharing, turn-taking, emotional regulation, and more."
+excerpt: "Behavior comments for a 4-year-old don't read like comments for a 4th grader. Age-appropriate language for sharing, turn-taking, and emotional regulation, ready to copy."
 faq:
   - q: "How do you write report card comments for preschool behavior?"
     a: "Focus on observable developmental milestones, not comparisons to other students. Use strength-based language that names what the child is working on rather than what they can't do. Instead of 'has difficulty sharing,' write 'is developing turn-taking skills with peer support.' Preschool parents are often first-time school parents, so your language sets the tone for how they understand their child's development."
