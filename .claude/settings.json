@@ -1,10 +1,5 @@
 {
-  "enabledMcpjsonServers": ["gsc-server"],
   "permissions": {
-    "defaultMode": "bypassPermissions",
-    "additionalDirectories": [
-      "c:\\projects\\shorthand-video"
-    ],
     "allow": [
       "Bash(git *)",
       "Bash(npm run *)",
@@ -21,6 +16,12 @@
       "Bash(Get-ChildItem *)",
       "Bash(dir *)",
       "Bash(cd *)",
+      "Bash(cd \"c:/projects/shorthand-website\" && *)",
+      "Bash(cd \"c:\\\\projects\\\\shorthand-website\" && *)",
+      "Bash(cd /c/projects/shorthand-website && *)",
+      "Bash(cd \"c:/projects/pulse 2.0\" && *)",
+      "Bash(cd \"c:\\\\projects\\\\pulse 2.0\" && *)",
+      "Bash(cd /c/projects/pulse 2.0 && *)",
       "WebSearch(*)",
       "WebFetch(*)",
       "Skill(update-config)",
@@ -44,11 +45,25 @@
       "mcp__youtube__getVideoDetails",
       "mcp__youtube__getChannelStatistics",
       "mcp__youtube__getTranscripts",
-      "mcp__youtube__searchVideos"
+      "mcp__youtube__searchVideos",
+      "Bash(GA4_PROPERTY_ID=530199256 node --input-type=module -e ' *)",
+      "mcp__claude_ai_Claude_Code_Remote__send_later",
+      "mcp__claude_ai_Claude_Code_Remote__create_trigger",
+      "mcp__claude_ai_Claude_Code_Remote__list_triggers",
+      "mcp__claude_ai_Claude_Code_Remote__delete_trigger",
+      "mcp__claude_ai_Claude_Code_Remote__update_trigger",
+      "mcp__claude_ai_Claude_Code_Remote__list_environments"
     ],
     "deny": [
       "Bash(git push --force*)",
       "Bash(git push -f*)"
+    ],
+    "defaultMode": "bypassPermissions",
+    "additionalDirectories": [
+      "c:\\projects\\shorthand-video"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "gsc-server"
+  ]
 }

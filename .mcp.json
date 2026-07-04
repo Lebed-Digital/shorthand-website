@@ -5,7 +5,10 @@
       "args": [
         "C:/Users/doubl/mcp_gsc/dist/index.js"
       ],
-      "type": "stdio"
+      "type": "stdio",
+      "env": {
+        "GA4_PROPERTY_ID": "530199256"
+      }
     }
   }
 }
