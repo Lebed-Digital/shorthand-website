@@ -17,7 +17,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/blog/how-to-write-honest-behavior-comments',
-        destination: '/blog/how-to-write-behavior-comments-on-report-card',
+        destination: '/blog/report-card-comments-for-behavior',
+        permanent: true,
+      },
+      {
+        source: '/blog/how-to-write-behavior-comments-on-report-card',
+        destination: '/blog/report-card-comments-for-behavior',
+        permanent: true,
+      },
+      {
+        source: '/blog/behavior-comments-for-report-cards',
+        destination: '/blog/report-card-comments-for-behavior',
+        permanent: true,
+      },
+      {
+        source: '/blog/report-card-comments-for-students-with-behavior-problems',
+        destination: '/blog/report-card-comments-for-behavior',
         permanent: true,
       },
       {

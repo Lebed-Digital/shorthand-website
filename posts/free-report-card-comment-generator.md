@@ -5,8 +5,8 @@ date: "2026-05-06"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-behavior"
-  - "report-card-comments-for-students-with-behavior-problems"
-  - "how-to-write-behavior-comments-on-report-card"
+  - "report-card-comments-for-students-with-adhd"
+  - "report-card-comments-for-struggling-students"
 excerpt: "A free AI tool that generates personalized report card comments in seconds. Pick strengths, areas for growth, and behavior from a list and get a comment ready to copy. No account, no login."
 ---
 
@@ -82,7 +82,7 @@ ShortHand is the version of this built into a real documentation system. You log
 
 If you're doing this all from memory right now, that's the piece worth changing. One note per student per week adds up to a lot by the end of a term.
 
-If you need ready-to-copy examples while you work through the generator, [Report Card Comments for Behavior: 120+ Examples](/blog/report-card-comments-for-behavior) has examples organized by situation: strong behavior, improvement, ongoing concerns, IEP students, and the hardest-to-write cases. [Behavior Comments for Report Cards](/blog/behavior-comments-for-report-cards) has 80+ more organized by behavior type.
+If you need ready-to-copy examples while you work through the generator, [Report Card Comments for Behavior: 120+ Examples](/blog/report-card-comments-for-behavior) has examples organized by situation: strong behavior, improvement, ongoing concerns, IEP students, and the hardest-to-write cases.
 
 ---
 

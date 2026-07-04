@@ -5,8 +5,8 @@ date: "2026-03-29"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-behavior"
-  - "report-card-comments-for-students-with-behavior-problems"
-  - "how-to-write-behavior-comments-on-report-card"
+  - "preschool-report-card-comments"
+  - "free-report-card-comment-generator"
 excerpt: "Behavior comments for a 4-year-old don't read like comments for a 4th grader. Age-appropriate language for sharing, turn-taking, and emotional regulation, ready to copy."
 faq:
   - q: "How do you write report card comments for preschool behavior?"

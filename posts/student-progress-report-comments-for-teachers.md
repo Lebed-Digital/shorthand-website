@@ -5,8 +5,8 @@ date: "2026-04-16"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-behavior"
-  - "report-card-comments-for-students-with-behavior-problems"
-  - "how-to-write-behavior-comments-on-report-card"
+  - "report-card-comments-for-students-with-adhd"
+  - "free-report-card-comment-generator"
 excerpt: "Writing student progress report comments doesn't have to start from a blank page. Here are examples organized by situation, plus how AI-generated comments based on your own classroom logs can cut the work in half."
 ---
 

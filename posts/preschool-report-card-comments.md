@@ -142,7 +142,7 @@ Reports for the youngest preschoolers should feel even softer. You are reassurin
 A few things I learned the hard way, first as an RBT writing daily notes and later as a teacher:
 
 - **No diagnoses or diagnostic-sounding language.** You may suspect something. The report card is not the place. That conversation happens in person, with support staff involved.
-- **No comparisons to classmates.** "Behind the rest of the class" helps no one at this age. Compare the child to their own September self instead. If a concern is real, our guide to [writing honest behavior comments](/blog/how-to-write-behavior-comments-on-report-card) covers how to say it without softening it into meaninglessness.
+- **No comparisons to classmates.** "Behind the rest of the class" helps no one at this age. Compare the child to their own September self instead. If a concern is real, our guide to [writing honest behavior comments](/blog/report-card-comments-for-behavior) covers how to say it without softening it into meaninglessness.
 - **No surprises.** If a parent learns about a concern for the first time on a progress report, the report has failed. Call first, write second.
 
 ## The real secret: notes you took months ago

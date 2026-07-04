@@ -4,7 +4,7 @@ subtitle: "How to write comments that give parents hope without hiding the truth
 date: "2026-07-02"
 author: "Gregory Lebed"
 relatedPosts:
-  - "report-card-comments-for-students-with-behavior-problems"
+  - "report-card-comments-for-behavior"
   - "report-card-comments-for-students-with-adhd"
   - "free-report-card-comment-generator"
 excerpt: "35 positive report card comments for struggling students, organized by reading, writing, math, work completion, confidence, and working below grade level. Honest about the struggle, specific about the plan, and safe to send home."
@@ -105,7 +105,7 @@ A few translations, learned over many report card seasons:
 * **Instead of:** "Struggles with everything." **Write:** the two priority areas, with the plan for each. A comment naming everything fixes nothing.
 * **Instead of:** "Doesn't care." **Write:** what you observe, not what you infer: "rarely completes independent work" is observable; "doesn't care" is a guess about a child's heart, and it is usually wrong.
 
-If the struggle is primarily behavioral rather than academic, we have a full set of [report card comments for students with behavior problems](/blog/report-card-comments-for-students-with-behavior-problems). And if the student has ADHD or you suspect attention is the root, the [strength-based ADHD comment templates](/blog/report-card-comments-for-students-with-adhd) handle that specific wording challenge.
+If the struggle is primarily behavioral rather than academic, we have a full set of [report card comments for behavior](/blog/report-card-comments-for-behavior). And if the student has ADHD or you suspect attention is the root, the [strength-based ADHD comment templates](/blog/report-card-comments-for-students-with-adhd) handle that specific wording challenge.
 
 ## Write the phone call before the comment
 

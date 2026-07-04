@@ -5,8 +5,8 @@ date: "2026-05-15"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-behavior"
-  - "report-card-comments-for-students-with-behavior-problems"
-  - "how-to-write-behavior-comments-on-report-card"
+  - "report-card-comments-for-struggling-students"
+  - "free-report-card-comment-generator"
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
 ---
 

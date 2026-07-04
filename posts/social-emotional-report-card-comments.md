@@ -101,7 +101,7 @@ Sometimes "developing" is not the honest word. Sometimes the skill is genuinely 
 39. "[Name] finds losing games and making mistakes very difficult, and reactions can be intense. We are teaching specific coping strategies and celebrating every calm recovery. This is our top social-emotional priority for the coming term."
 40. "[Name] is learning to respect classmates' personal space and belongings, with adult support still needed most days. We have a plan, we are consistent, and we would welcome a conversation about what you see at home."
 
-Notice what those five comments never do: guess at a cause, use diagnostic language, or compare the child to classmates. If a concern is big enough that you are choosing words this carefully, it is big enough for a phone call before the report goes home. Our guide on [how to write honest behavior comments](/blog/how-to-write-behavior-comments-on-report-card) goes deeper on getting that balance right, and if the conversation needs to happen by email first, these [sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior) will save you a draft or three.
+Notice what those five comments never do: guess at a cause, use diagnostic language, or compare the child to classmates. If a concern is big enough that you are choosing words this carefully, it is big enough for a phone call before the report goes home. Our guide on [how to write honest behavior comments](/blog/report-card-comments-for-behavior) goes deeper on getting that balance right, and if the conversation needs to happen by email first, these [sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior) will save you a draft or three.
 
 ## Growth-over-time comments
 

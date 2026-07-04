@@ -5,7 +5,7 @@ date: "2026-04-26"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-students-with-adhd"
-  - "report-card-comments-for-students-with-behavior-problems"
+  - "report-card-comments-for-struggling-students"
   - "free-report-card-comment-generator"
 excerpt: "It's Sunday night and the portal closes tomorrow. Here are 120+ behavior comments sorted by situation: impulsivity, focus, IEPs, ongoing concerns. Find yours, adjust the name, done."
 faq:
@@ -15,6 +15,8 @@ faq:
     a: "Be specific about what the student actually does well. 'Models expected behavior for peers' and 'handles redirection gracefully' are more useful to a parent than 'has great behavior.' Specific observations also hold up better if a parent ever questions them."
   - q: "How do you write a behavior comment for a difficult student?"
     a: "Describe the behavior, not the child. 'Has difficulty staying on task during independent work' is accurate and professional. Always include what is being done to support the student and invite the family into the conversation."
+  - q: "What words should I avoid in a behavior comment?"
+    a: "Avoid labels like 'disrespectful,' 'aggressive,' 'lazy,' 'defiant,' and 'mean.' These read as character attacks to parents and offer no path forward. Replace them with an observable description: instead of 'defiant,' write 'struggles to comply with initial verbal directives during transitions.'"
   - q: "Can I use AI to write report card behavior comments?"
     a: "Yes. The free report card comment generator at getshorthandapp.com/free-tool lets you pick strengths, areas for growth, and behavior observations and generates a polished comment in seconds. No sign-up required."
 ---
@@ -29,13 +31,20 @@ As both a teacher and a parent of a neurodiverse child, I've seen these comments
 
 ![A tired teacher turning messy October behavior notes into a clear report card comment draft](/blog-illustrations/report-card-behavior-october-notes.png)
 
+## Behavior is communication, not a character flaw
+
+As a former Registered Behavior Technician, I know firsthand that behavior is communication, not a fixed personality trait. As a parent, I've seen how powerful that distinction can be. A comment that describes a behavior feels solvable. A comment that sounds like a judgment about who a child is can stay with a family long after the report card is filed away.
+
+We also worry, often without naming it, about setting a permanent label on a child. When we are exhausted at the end of a long grading period, finding the mental bandwidth to write constructive behavior comments feels almost impossible. So we water down our words, which helps nobody. The formula below is how I get past that.
+
 Here's what I've learned from years in the classroom and from reading report cards as a parent: the best behavior comments are short, factual, and forward-looking. They tell the family what you see, not what you feel. They focus on observable behaviors, explain the support being provided, and leave room for growth.
 
 Below are 120+ examples organized by situation. Copy them, adapt them, make them yours.
 
-If you are specifically looking for a student with serious, ongoing behavior concerns, head straight to [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems), where 50+ examples are broken down by attention, impulsivity, emotional regulation, and conduct. For the social-emotional learning section of the report, we have a dedicated set of [social emotional report card comments](/blog/social-emotional-report-card-comments), and for kids who are behind academically there are [positive comments for struggling students](/blog/report-card-comments-for-struggling-students). Otherwise, start with the sections below.
+For the social-emotional learning section of the report, we have a dedicated set of [social emotional report card comments](/blog/social-emotional-report-card-comments), and for kids who are behind academically there are [positive comments for struggling students](/blog/report-card-comments-for-struggling-students). Otherwise, start with the sections below.
 
 **Jump to a section:**
+- [Behavior is communication, not a character flaw](#behavior-is-communication-not-a-character-flaw)
 - [When behavior is strong](#when-behavior-is-strong)
 - [When behavior is improving](#when-behavior-is-improving)
 - [When there are ongoing concerns](#when-there-are-ongoing-concerns-honest-but-constructive)
@@ -45,6 +54,7 @@ If you are specifically looking for a student with serious, ongoing behavior con
 - [For social interactions and peer relationships](#for-social-interactions-and-peer-relationships)
 - [For students with IEPs or behavior plans](#for-students-with-ieps-or-behavior-plans)
 - [Rules I follow](#a-few-rules-i-follow-when-writing-behavior-comments)
+- [The comment that landed me in the principal's office](#the-comment-that-landed-me-in-the-principals-office)
 
 ---
 
@@ -109,8 +119,6 @@ These are the hardest comments to write. You have a student with real, ongoing b
 - "There have been repeated incidents this term involving [behavior]. We are taking this seriously and working with [Name] and their family on a path forward."
 
 **A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. See [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) or [the complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) for the system that makes this sustainable. That is exactly the situation that led me to build ShortHand.
-
-If you need comments organized specifically by behavior type, see [Report Card Comments for Students With Behavior Problems](/blog/report-card-comments-for-students-with-behavior-problems) for 50+ examples broken down by attention, impulsivity, emotional regulation, and more.
 
 ---
 
@@ -182,6 +190,27 @@ It makes these comments faster to write, more specific, and a lot easier to defe
 
 ---
 
+## The comment that landed me in the principal's office
+
+A few years into my teaching career, I wrote a report card comment that felt beautifully, wonderfully honest. I wrote that a certain student was a constant social disruption who prioritized his friends over his math worksheets. By Tuesday morning, I was sitting in the principal's office with an incredibly angry parent who felt I was personally targeting her child. That was the day I learned that while honesty is essential, the way we package that honesty is what keeps us from spending our prep periods in administrative meetings.
+
+When a teacher writes, "He has a bad attitude in class," the parent does not hear that their child is struggling with task aversion. They hear that the teacher dislikes their kid. Blunt language creates an emotional wall, and the second a parent becomes defensive, you have lost any chance of partnering with them to fix the actual issue.
+
+There are certain words that act like giant red flags for parents and administrators. If you want to avoid triggering a defensive phone call, swap out character judgments for objective descriptions:
+
+| Stop saying this | Start saying this |
+| :--- | :--- |
+| "He is disrespectful to peers." | "He is working on using kind words with classmates." |
+| "She refuses to do her work." | "She requires multiple prompts to begin independent tasks." |
+| "He is constantly out of his seat." | "He is learning to remain seated during instructional time." |
+| "She has a bad attitude." | "She is developing strategies to handle frustration appropriately." |
+| "He is too aggressive." | "He is working on keeping safe hands during recess." |
+| "She is disruptive during lessons." | "She is practicing quiet listening when others are speaking." |
+
+Professional does not mean dishonest. Changing your phrasing from blunt to professional just means you are acting as the clinical expert in the room. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you reduce defensiveness from families and actually help the student move forward.
+
+---
+
 ## The bottom line
 
 Good behavior comments are honest, specific, and constructive. Use the examples above as a starting point, but adapt them to the real kid in front of you. Parents can tell when a comment was written for their child versus pulled from a template.
@@ -210,7 +239,5 @@ Good behavior comments are short, specific, and constructive. They describe some
 Yes. The [free report card comment generator](/free-tool) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
 
 ---
-
-For more examples organized by specific situation, including impulsive behavior, emotional regulation, peer conflicts, and conduct concerns, see [Behavior Comments for Report Cards: 80+ Examples Organized by Situation](/blog/behavior-comments-for-report-cards).
 
 *ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/free-tool) to draft comments in seconds.*
