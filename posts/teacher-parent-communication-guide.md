@@ -27,6 +27,8 @@ It does not cover what to say when a parent tells you their child would never do
 
 Parent communication is one of the most stressful parts of teaching, and most teachers figure it out alone, on the fly, after something has already gone sideways.
 
+![A tired teacher organizing difficult parent emails, calls, conferences, and IEP conversations into a dated communication log](/blog-illustrations/parent-communication-log-hard-conversations.png)
+
 This guide covers all of it: emails, phone calls, conferences, IEP meetings, documentation, and the situations that keep teachers up at night.
 
 ---

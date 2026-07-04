@@ -23,6 +23,8 @@ The email usually arrives on a Tuesday. The counselor, the case manager, or an a
 
 And you think: I have a hundred mental snapshots of this kid and nothing on paper, or a pile of notes in four different places. What exactly is a "behavior report"? How formal? How long? What are they going to do with it?
 
+![A teacher turning scattered behavior memories and notes into a calm dated student behavior report](/blog-illustrations/student-behavior-report-scattered-notes.png)
+
 I have been on both sides of this document. As a Registered Behavior Technician, behavior reports were my daily output, read by BCBAs and parents and insurance reviewers. As a teacher, I have written them for IEP teams and intervention meetings. The format below is the one that has never failed me: five sections, all facts, everything traceable to a dated note.
 
 ## First, know what you are being asked for

@@ -24,6 +24,8 @@ They're struggling to document them consistently. You may have started to log an
 
 The challenge is not knowing what to do. The challenge is finding time and energy to record what happened while managing a classroom full of students.
 
+![A teacher helping a student with a Tier 2 intervention while classroom interruptions compete with the data trail](/blog-illustrations/mtss-tier-2-intervention-data-trail.png)
+
 ## What Is a Tier 2 Intervention?
 
 Tier 2 interventions are targeted supports for students who need more help than the core instruction provided to the entire class.

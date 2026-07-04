@@ -23,6 +23,8 @@ Here is how student observation actually works in most classrooms. You notice so
 
 I spent years doing structured observation professionally, as a Registered Behavior Technician, before I ever ran my own classroom. RBTs record behavior all day; it is the core of the job. So I came into teaching assuming I would keep great observation records. Then I met the reality of teaching 25 kids alone, and my beautiful system collapsed by mid-September.
 
+![A teacher trying to capture an important student observation before the detail fades into the rest of the school day](/blog-illustrations/student-observation-moment-fading-memory.png)
+
 The problem was never discipline. The problem was that every system I tried failed the same test: **it could not be used in the moment, while teaching.** So before comparing tools, that is the bar. Everything below is judged on three questions:
 
 1. **Speed:** Can you capture an observation in under 30 seconds, mid-lesson?

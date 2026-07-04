@@ -27,6 +27,8 @@ What happens when the intervention is not working and you need to show the team 
 
 Documentation is the part of behavior management that nobody teaches, and it is the part that holds everything else together.
 
+![A teacher connecting behavior strategies to parent meetings and IEP questions with a dated evidence timeline](/blog-illustrations/behavior-documentation-guide-evidence-timeline.png)
+
 This guide covers the full picture: daily behavior logs, tracking systems, intervention plans, IEP documentation, and the habits that make all of it sustainable.
 
 ---
