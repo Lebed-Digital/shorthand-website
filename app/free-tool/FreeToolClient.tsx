@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { fireCtaClick } from '../../lib/gtag';
+import LeadGate from '../../components/LeadGate';
 
 const SECTIONS = [
   {
@@ -137,6 +138,14 @@ function useSpeechToText(onResult: (text: string) => void) {
 }
 
 export default function FreeToolClient() {
+  return (
+    <LeadGate source="report-card-generator">
+      <FreeToolInner />
+    </LeadGate>
+  );
+}
+
+function FreeToolInner() {
   const [name, setName] = useState('');
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [extra, setExtra] = useState('');
