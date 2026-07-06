@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { fireCtaClick } from '../../lib/gtag';
+import LeadGate from '../../components/LeadGate';
 
 const GRADES = [
   'Pre-K', 'Kindergarten', '1st Grade', '2nd Grade', '3rd Grade',
@@ -16,6 +17,14 @@ const TONES = [
 ];
 
 export default function WelcomeLetterClient() {
+  return (
+    <LeadGate source="welcome-letter-generator">
+      <WelcomeLetterInner />
+    </LeadGate>
+  );
+}
+
+function WelcomeLetterInner() {
   const [teacherName, setTeacherName] = useState('');
   const [grade, setGrade] = useState('');
   const [subject, setSubject] = useState('');
@@ -131,7 +140,7 @@ export default function WelcomeLetterClient() {
             Welcome Letter Generator
           </h1>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
-            Free · No sign-up · Ready in 10 seconds
+            Free · Ready in 10 seconds
           </p>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
             Fill in four fields. Get a ready-to-send letter for families.
