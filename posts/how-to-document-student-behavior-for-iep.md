@@ -18,6 +18,8 @@ If you're relying on sticky notes and Friday afternoon catch-up, you aren't fail
 
 Here's how to fix it.
 
+![A teacher in an IEP meeting turning scattered classroom behavior notes into a simple evidence trail](/blog-illustrations/iep-behavior-data-scattered-notes.png)
+
 ## What the IEP Team Actually Needs From You
 
 A lot of teachers dread IEP meetings because they feel underprepared. The case manager has binders. The specialist has assessment data. And you have... a general sense of how the kid has been doing.

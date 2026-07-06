@@ -12,6 +12,8 @@ excerpt: "When a parent claims a teacher never called about their child's behavi
 
 When a parent says you never called them, stay calm, avoid arguing the point, and offer to check your communication records. If you have documentation, calmly present the dates and times of your outreach. If you do not have records, acknowledge their frustration, note the gap, and redirect the conversation to solving the student's issue. Do not get defensive. After the meeting, implement a communication log immediately so this never happens again.
 
+![A teacher staying calm in a parent meeting while a dated contact record shows previous calls and emails](/blog-illustrations/parent-never-called-contact-record.png)
+
 ---
 
 ## Why Parents Make This Claim

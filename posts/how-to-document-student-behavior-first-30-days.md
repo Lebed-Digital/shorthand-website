@@ -31,6 +31,8 @@ Not a great moment.
 
 By the time that conversation happened, specific incidents had blurred together. Early warning signs were impressions, not facts. That is an uncomfortable position to be in during a parent meeting, and an even worse one during an MTSS discussion.
 
+![A busy teacher during the first month of school turning early behavior observations into a calm baseline timeline](/blog-illustrations/first-30-days-baseline-notes.png)
+
 The good news: effective behavior documentation during the first month does not need to be complicated. It just needs to start.
 
 ## Why the First 30 Days Matter
