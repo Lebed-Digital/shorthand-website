@@ -174,7 +174,7 @@ export default function WelcomeLetterClient() {
             type="text"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
-            placeholder="e.g. Math, Science — leave blank if you teach all subjects"
+            placeholder="e.g. Math, Science. Leave blank if you teach all subjects"
             style={inputStyle}
             onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
             onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}

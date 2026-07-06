@@ -3,7 +3,7 @@ import WelcomeLetterClient from './WelcomeLetterClient';
 
 export const metadata: Metadata = {
   title: 'Free Welcome Letter Generator for Teachers | ShortHand',
-  description: 'Generate a ready-to-send parent welcome letter in seconds. Enter your name, grade, and tone — get a personalized letter instantly. Free, no sign-up required.',
+  description: 'Generate a ready-to-send parent welcome letter in seconds. Enter your name, grade, and tone, get a personalized letter instantly. Free, no sign-up required.',
   alternates: { canonical: 'https://getshorthandapp.com/back-to-school-toolkit' },
   openGraph: {
     title: 'Free Welcome Letter Generator for Teachers',
