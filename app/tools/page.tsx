@@ -4,11 +4,11 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Free Tools for Teachers | ShortHand',
   description:
-    'Free AI tools for teachers. Generate report card comments and parent welcome letters in seconds. No sign-up required.',
+    'Free AI tools for teachers. Generate report card comments and parent welcome letters in seconds.',
   alternates: { canonical: 'https://getshorthandapp.com/tools' },
   openGraph: {
     title: 'Free Tools for Teachers | ShortHand',
-    description: 'Free AI tools for teachers. No sign-up required.',
+    description: 'Free AI tools for teachers.',
     url: 'https://getshorthandapp.com/tools',
     type: 'website',
     images: [
@@ -32,7 +32,7 @@ const tools = [
     accent: '#0d9488',
     bg: '#f0fdfa',
     tag: 'Free AI Tool',
-    signals: ['No sign-up required', 'Works for any grade', 'Editable output'],
+    signals: ['Free to use', 'Works for any grade', 'Editable output'],
   },
   {
     title: 'Welcome Letter Generator',
@@ -43,7 +43,7 @@ const tools = [
     accent: '#16a34a',
     bg: '#f0fdf4',
     tag: 'Free AI Tool',
-    signals: ['No sign-up required', 'Works for Pre-K through 8th grade', 'Editable output'],
+    signals: ['Free to use', 'Works for Pre-K through 8th grade', 'Editable output'],
   },
 ];
 
@@ -71,7 +71,7 @@ export default function ToolsPage() {
             Free Tools for Teachers
           </h1>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
-            AI tools that save real time. No sign-up, no email required.
+            AI tools that save real time.
           </p>
         </div>
       </div>
