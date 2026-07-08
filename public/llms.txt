@@ -35,29 +35,29 @@ Free to use. No credit card required.
 ## URLs
 
 ### Core Pages
-- Homepage: https://getshorthandapp.com: What ShortHand is, who it's for, and how to get started
-- Install: https://getshorthandapp.com/install: How to add ShortHand to any device (no app store needed)
-- About the Creator: https://getshorthandapp.com/about: Gregory Lebed's background as a teacher and former RBT, and why he built ShortHand
+- [Homepage](https://getshorthandapp.com): What ShortHand is, who it's for, and how to get started
+- [Install](https://getshorthandapp.com/install): How to add ShortHand to any device (no app store needed)
+- [About the Creator](https://getshorthandapp.com/about): Gregory Lebed's background as a teacher and former RBT, and why he built ShortHand
 
 ### Feature Pages
-- Parent Communication Log: https://getshorthandapp.com/features/parent-communication-log: Timestamped record of every parent contact
-- Behavior Tracking: https://getshorthandapp.com/features/behavior-tracking: Visual trend data for IEP meetings and conferences
-- AI Reports: https://getshorthandapp.com/features/ai-reports: Auto-generate report card comments from logged notes
-- Parent Emails: https://getshorthandapp.com/features/parent-emails: Turn behavior notes into professional emails instantly
-- Class Insights: https://getshorthandapp.com/features/class-insights: Whole-class pattern dashboard
+- [Parent Communication Log](https://getshorthandapp.com/features/parent-communication-log): Timestamped record of every parent contact
+- [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
+- [AI Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
+- [Parent Emails](https://getshorthandapp.com/features/parent-emails): Turn behavior notes into professional emails instantly
+- [Class Insights](https://getshorthandapp.com/features/class-insights): Whole-class pattern dashboard
 
 ### Free Tools
-- Free Comment Generator: https://getshorthandapp.com/free-tool: Generate report card comments without signing up
-- Free Parent Communication Log: https://getshorthandapp.com/tools/parent-communication-log: Standalone log tool, no account required
+- [Free Comment Generator](https://getshorthandapp.com/free-tool): Generate report card comments without signing up
+- [Free Parent Communication Log](https://getshorthandapp.com/tools/parent-communication-log): Standalone log tool, no account required
 
 ### High-Value Blog Posts
-- How to Document Parent Contact as a Teacher: https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher
-- How to Document Student Behavior for an IEP: https://getshorthandapp.com/blog/how-to-document-student-behavior-for-iep
-- Best Parent Communication Apps for Documentation: https://getshorthandapp.com/blog/best-parent-communication-apps-for-documentation-2026
-- Free Parent Communication Log for Teachers: https://getshorthandapp.com/blog/free-parent-communication-log-for-teachers
-- How to Write Behavior Emails to Parents: https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents
-- IEP Behavior Documentation Checklist: https://getshorthandapp.com/blog/iep-behavior-documentation-checklist
-- Blog Index: https://getshorthandapp.com/blog
+- [How to Document Parent Contact as a Teacher](https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher)
+- [How to Document Student Behavior for an IEP](https://getshorthandapp.com/blog/how-to-document-student-behavior-for-iep)
+- [Best Parent Communication Apps for Documentation](https://getshorthandapp.com/blog/best-parent-communication-apps-for-documentation-2026)
+- [Free Parent Communication Log for Teachers](https://getshorthandapp.com/blog/free-parent-communication-log-for-teachers)
+- [How to Write Behavior Emails to Parents](https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents)
+- [IEP Behavior Documentation Checklist](https://getshorthandapp.com/blog/iep-behavior-documentation-checklist)
+- [Blog Index](https://getshorthandapp.com/blog)
 
 ## Contact
 info@getshorthandapp.com
