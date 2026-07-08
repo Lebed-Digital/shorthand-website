@@ -61,9 +61,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${fredoka.variable}`}>
       <head>
-        {/* Google Analytics (production hostname only — keeps Vercel preview deploys and localhost out of GA4) */}
+        {/* Google Analytics (production hostname only, and only for real users — skips headless/automated browsers and Greg's dev flag) */}
         <script dangerouslySetInnerHTML={{ __html: `
-          if (window.location.hostname === 'getshorthandapp.com') {
+          if (
+            window.location.hostname === 'getshorthandapp.com' &&
+            !navigator.webdriver &&
+            window.localStorage.getItem('sh_dev') !== '1'
+          ) {
             var gaScript = document.createElement('script');
             gaScript.async = true;
             gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-Y954JF2V55';
