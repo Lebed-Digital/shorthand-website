@@ -27,6 +27,8 @@ There are roughly four stages of teacher behavior tracking. Stage one: mental no
 
 If you're ready for stage four, here's what's actually worth your time in 2026.
 
+*Teaching primarily in special education or collecting IEP behavior data? Read my in-depth guide to [special education behavior tracking software](/blog/special-education-behavior-tracking-software) instead.*
+
 Before we get into the list, a quick disclosure: I built one of the tools on it. Not because I set out to start a software company, but because I kept running into the same problem. I'd sit down for a parent meeting or report card and realize I was trying to reconstruct weeks of student behavior from memory, sticky notes, and half-finished spreadsheets. After one too many conversations that started with "I know it happened, I just can't remember exactly when," I decided there had to be a better way.
 
 A note on context: I teach elementary school, third grade specifically. Most of these apps work across grade levels, but I'll flag where elementary teachers have different needs than secondary. A high school teacher managing 150 students across six periods has a different problem than an elementary teacher who's with the same 22 kids all day.
