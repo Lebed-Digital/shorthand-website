@@ -105,7 +105,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "email": "info@getshorthandapp.com",
           "sameAs": [
             "https://www.tiktok.com/@shorthandapp",
-            "https://www.instagram.com/getshorthand_app/"
+            "https://www.instagram.com/getshorthand_app/",
+            "https://www.capterra.com/p/10049021/ShortHand/",
+            "https://www.softwareadvice.com/product/556571-ShortHand/",
+            "https://www.getapp.com/all-software/a/shorthand-1/"
           ],
           "founder": {
             "@type": "Person",
