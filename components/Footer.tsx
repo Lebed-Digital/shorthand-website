@@ -24,7 +24,7 @@ export default function Footer() {
         </Link>{' '}
         ·{' '}
         <Link href="/press" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
-          Press
+          Press & Mentions
         </Link>{' '}
         ·{' '}
         <a href="https://pulseacademic.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
