@@ -40,6 +40,7 @@ export default function PdfGate({
     }
 
     setUnlocked(true);
+    window.open(href, '_blank');
   }
 
   if (unlocked) {
