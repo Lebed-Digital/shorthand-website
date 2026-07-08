@@ -1,8 +1,10 @@
 'use client';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const PARTICLE_COUNT = 90;
+const PARTICLE_COUNT_MOBILE = 45;
 const MAX_DIST = 160;
+const MOUNT_DELAY_MS = 800;
 
 interface Particle {
   x: number; y: number;
@@ -25,8 +27,16 @@ function pickColor() {
 
 export default function HeroBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [ready, setReady] = useState(false);
+
+  // Defer starting the animation so it doesn't compete with LCP/TBT on first paint
+  useEffect(() => {
+    const t = setTimeout(() => setReady(true), MOUNT_DELAY_MS);
+    return () => clearTimeout(t);
+  }, []);
 
   useEffect(() => {
+    if (!ready) return;
     const canvas = canvasRef.current as HTMLCanvasElement;
     if (!canvas) return;
     const ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
@@ -37,7 +47,8 @@ export default function HeroBackground() {
     let particles: Particle[] = [];
 
     function spawn(w: number, h: number): Particle[] {
-      return Array.from({ length: PARTICLE_COUNT }, () => ({
+      const count = w < 768 ? PARTICLE_COUNT_MOBILE : PARTICLE_COUNT;
+      return Array.from({ length: count }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
         vx: (Math.random() - 0.5) * 0.28,
@@ -104,16 +115,15 @@ export default function HeroBackground() {
       animId = requestAnimationFrame(draw);
     }
 
-    // Use RAF to ensure browser has painted before measuring
-    const t = setTimeout(() => { resize(); draw(); }, 100);
+    resize();
+    draw();
     window.addEventListener('resize', resize);
 
     return () => {
-      clearTimeout(t);
       window.removeEventListener('resize', resize);
       cancelAnimationFrame(animId);
     };
-  }, []);
+  }, [ready]);
 
   return (
     <>
