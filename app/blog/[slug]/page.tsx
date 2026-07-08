@@ -3,7 +3,23 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
+import PdfGate from '../../../components/PdfGate';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
+
+const PDF_GATE_MARKER = 'PDFGATEMARKER';
+
+const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
+  'sample-emails-to-parents-about-student-behavior': {
+    source: 'sample-emails-behavior-post',
+    href: '/Ready_to_Send_Behavior_Emails_x7k2.pdf',
+    linkText: '10 Ready-to-Send Behavior Emails for Teachers',
+  },
+  'how-to-write-behavior-emails-to-parents': {
+    source: 'how-to-write-behavior-emails-post',
+    href: '/Ready_to_Send_Behavior_Emails_x7k2.pdf',
+    linkText: '10 Ready-to-Send Behavior Emails for Teachers',
+  },
+};
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -111,10 +127,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </p>
         )}
 
-        <div
-          className="blog-content"
-          dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-        />
+        {PDF_GATES[slug] && post.contentHtml.includes(PDF_GATE_MARKER) ? (
+          <div className="blog-content">
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[0] }} />
+            <PdfGate {...PDF_GATES[slug]} />
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[1] }} />
+          </div>
+        ) : (
+          <div
+            className="blog-content"
+            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+          />
+        )}
 
         {post.faq && post.faq.length > 0 && (
           <div style={{ marginTop: '3rem' }}>

@@ -196,7 +196,7 @@ The templates above are useful. But the real unlock is having the documentation 
 
 ---
 
-**Want all 10 templates in one place?** Download the free PDF: [10 Ready-to-Send Behavior Emails for Teachers](/Ready_to_Send_Behavior_Emails.pdf)
+**Want all 10 templates in one place?** PDFGATEMARKER
 
 ---
 
