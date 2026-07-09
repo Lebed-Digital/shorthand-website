@@ -16,6 +16,8 @@ I need to send a behavior update to a parent who, understandably, wants to know 
 
 The problem isn't the parent asking. The problem is the process. To give an honest, detailed update, I have to mentally reconstruct five days of a chaotic 3rd-grade classroom. I'm digging through scribbled sticky notes and trying to remember the specific wins and struggles from Tuesday morning. It's harder than it sounds.
 
+![A tired teacher facing a blank Friday parent update email while scattered weekly notes become clear records](/blog-illustrations/friday-reporting-blank-email.png)
+
 ## The Weight of a Blank Screen
 
 Most people love Fridays. I was starting to dread them.

@@ -23,6 +23,8 @@ I've been in IEP meetings where nobody was quite sure what the classroom data ac
 
 It usually isn't. This checklist is what changes that.
 
+![A teacher in an IEP meeting turning scattered classroom impressions into organized evidence and follow-up notes](/blog-illustrations/iep-meeting-checklist-scattered-notes.png)
+
 This iep meeting checklist for teachers breaks down exactly what you need to do before you walk into the room, what to track while you are sitting at the table, and what to do when the meeting is over. We are going to focus heavily on the "after" phase. This follow up stage is where most teachers drop the ball, yet it is the most critical part of the entire process.
 
 ## Phase 1: Before the Meeting (Preparation)

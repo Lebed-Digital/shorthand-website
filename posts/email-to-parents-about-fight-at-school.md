@@ -22,6 +22,8 @@ Instead, pick up the phone to deliver the news and discuss the immediate steps. 
 
 Below are guidelines and templates to help you write follow-up emails after a physical altercation.
 
+![A teacher making a calm parent phone call after a school fight before writing a clear follow-up record](/blog-illustrations/school-fight-call-first-follow-up.png)
+
 ## The Golden Rule: Call First, Email Second
 
 Before you touch your keyboard, pick up the phone. Even if you only leave a voicemail and request an immediate callback, you must attempt direct vocal communication first.
