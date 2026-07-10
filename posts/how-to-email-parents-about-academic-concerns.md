@@ -21,6 +21,8 @@ faq:
 
 You are looking at the math intervention tracker at 4:30 PM on a Tuesday. The spreadsheet is color-coded, and Mia's row is a sea of red. She has scored below the benchmark on the last four multiplication quick checks. You know she is trying. She sits at her desk, she bites her lip, and she scribbles numbers, but she is falling further behind every day. You know you need to reach out to her parents. But academic concerns are a minefield. If you phrase it poorly, parents might feel attacked, think you are calling their child dumb, or assume you are not doing your job.
 
+![A teacher reviewing academic data and drafting a parent email that frames the concern as a team plan](/blog-illustrations/academic-concern-parent-email-team-plan.png)
+
 As a veteran teacher and former RBT, I know that sharing academic struggles requires a specific strategy. You must frame the conversation as a team challenge, back it up with objective data, and present a clear path forward. Here is how to navigate this conversation without causing defensiveness.
 
 ### Shift the Frame: From Blame to Teamwork

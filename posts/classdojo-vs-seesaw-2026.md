@@ -23,6 +23,8 @@ If you are a teacher looking for a classroom management app, you have probably n
 
 I've used both systems in real classrooms over the years. Like many teachers, I started with whatever tool my school recommended and tried to make it fit my workflow. What I eventually realized was that ClassDojo and Seesaw solve very different problems. The mistake many teachers make is comparing them as direct competitors when they were designed for different jobs.
 
+![A teacher caught between point rewards and portfolio approvals while one dated notebook offers a simpler record](/blog-illustrations/classdojo-vs-seesaw-app-overload.png)
+
 ## What ClassDojo Does Well (and Where It Falls Short)
 
 ClassDojo is famous for its little monsters and point system. It is great for younger grades where students need immediate visual feedback. The messaging feature makes it easy to text parents without giving out your real phone number.

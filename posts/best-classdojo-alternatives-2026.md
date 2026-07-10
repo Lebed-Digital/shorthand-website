@@ -23,6 +23,8 @@ ClassDojo is the most widely used classroom app in the world. It's also the most
 
 If you're in that second group, here's what to consider instead.
 
+![A teacher sorting through noisy classroom app notifications while dated note cards create a clearer documentation trail](/blog-illustrations/classdojo-alternatives-documentation-choice.png)
+
 ---
 
 ## Why Teachers Look for ClassDojo Alternatives
