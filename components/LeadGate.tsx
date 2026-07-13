@@ -62,7 +62,7 @@ export default function LeadGate({
           Get instant access
         </h2>
         <p style={{ fontSize: 14, color: '#475569', margin: '0 0 24px', lineHeight: 1.6 }}>
-          Enter your email to unlock this free tool. We occasionally send new free teacher resources. Unsubscribe anytime.
+          Enter your email to unlock this free tool. We occasionally send teacher resources and ShortHand updates. Unsubscribe anytime.
         </p>
         <form onSubmit={handleSubmit}>
           <input
