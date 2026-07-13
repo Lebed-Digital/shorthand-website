@@ -43,7 +43,7 @@ The problem is that ClassDojo is a communication and engagement tool that got us
 
 By the time students hit 2nd or 3rd grade, or really any age where they've been using ClassDojo for more than a year, the gamification starts to lose its pull. The students who most need a behavior system are also the ones who checked out of the avatar economy in October.
 
-When the tool only works for the students who were already doing fine, it's not doing the job you need it to do.
+When the tool only works for the students who were already doing fine, it's not doing the job you need it to do. That problem becomes more pronounced after elementary school. Here's [what changes when you're documenting behavior for middle and high schoolers](/classdojo-alternative) instead of running a points board.
 
 ### 2. Points Are Not Documentation
 

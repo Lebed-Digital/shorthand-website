@@ -22,7 +22,7 @@ This is the most common reason, and the one nobody wants to say out loud: the mo
 
 In kindergarten and 1st grade, earning points for a cartoon character is genuinely motivating. By 3rd grade, your most behaviorally complex students - the ones you most need a system for - are also the ones who stopped caring about their avatar in October. The tool that was designed to engage students ends up being ignored by the exact students you need it to reach.
 
-ClassDojo was built around engagement. But behavior documentation for older students isn't about engagement - it's about professional record-keeping.
+ClassDojo was built around engagement. But behavior documentation for older students isn't about engagement, it's about professional record-keeping. If you teach middle or high school, the gap is even wider. See what a [ClassDojo alternative built for older students](/classdojo-alternative) looks like.
 
 ## 2. Points Aren't Data
 
