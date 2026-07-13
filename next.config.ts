@@ -52,22 +52,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/ig',
-        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=instagram&utm_medium=bio&utm_campaign=free_tool',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=instagram&utm_medium=organic_social&utm_campaign=guided_demo',
         permanent: false,
       },
       {
         source: '/tt',
-        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=tiktok&utm_medium=bio&utm_campaign=free_tool',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=tiktok&utm_medium=organic_social&utm_campaign=guided_demo',
         permanent: false,
       },
       {
         source: '/yt',
-        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=youtube&utm_medium=description&utm_campaign=free_tool',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=youtube&utm_medium=organic_social&utm_campaign=guided_demo',
         permanent: false,
       },
       {
         source: '/fb',
-        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=facebook&utm_medium=bio&utm_campaign=free_tool',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=facebook&utm_medium=organic_social&utm_campaign=guided_demo',
         permanent: false,
       },
       {
