@@ -66,6 +66,11 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: '/fb',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=facebook&utm_medium=bio&utm_campaign=free_tool',
+        permanent: false,
+      },
+      {
         source: '/how-it-works',
         destination: '/',
         permanent: false,
