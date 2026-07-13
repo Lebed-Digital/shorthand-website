@@ -3,6 +3,7 @@ title: "7 Reasons You're Googling \"ClassDojo Alternatives\" (From a 3rd Grade T
 subtitle: "If you've ever typed 'ClassDojo alternatives' at 7 PM on a Tuesday, you're not alone."
 date: "2026-04-08"
 author: "Gregory Lebed"
+mergeNote: "Part of a 5-post ClassDojo cluster. Do not merge/redirect without new GSC evidence of query cannibalization. See Decisions Log 2026-07-13. Had zero GSC impressions as of 2026-07-13, insufficient data rather than proof of redundancy."
 relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"

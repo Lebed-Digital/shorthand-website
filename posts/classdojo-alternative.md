@@ -3,6 +3,7 @@ title: "ShortHand vs ClassDojo: An Honest Comparison From a Teacher Who Used Bot
 subtitle: "Not which one is better. Which one is right for your classroom."
 date: "2026-04-06"
 author: "Gregory Lebed"
+mergeNote: "Part of a 5-post ClassDojo cluster. Do not merge/redirect without new GSC evidence of query cannibalization. See Decisions Log 2026-07-13."
 relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"

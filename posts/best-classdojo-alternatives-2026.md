@@ -3,6 +3,7 @@ title: "I Tested the Most Popular ClassDojo Alternatives. Here's What I Found."
 subtitle: "A 3rd grade teacher's honest take on what actually works, and what's just a different flavor of the same frustration."
 date: "2026-04-20"
 author: "Gregory Lebed"
+mergeNote: "Part of a 5-post ClassDojo cluster. Do not merge/redirect without new GSC evidence of query cannibalization. See Decisions Log 2026-07-13. This is the primary/preserved page in the cluster."
 relatedPosts:
   - "classdojo-vs-seesaw-2026"
   - "why-teachers-are-switching-from-classdojo-to-shorthand"

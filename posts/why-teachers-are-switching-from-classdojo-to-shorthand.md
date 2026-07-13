@@ -3,6 +3,7 @@ title: "Why Teachers Are Switching from ClassDojo to ShortHand in 2026"
 subtitle: "It's not you. It's the points."
 date: "2026-04-21"
 author: "Gregory Lebed"
+mergeNote: "Part of a 5-post ClassDojo cluster. Do not merge/redirect without new GSC evidence of query cannibalization. See Decisions Log 2026-07-13. Had zero GSC impressions as of 2026-07-13, insufficient data rather than proof of redundancy."
 relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"

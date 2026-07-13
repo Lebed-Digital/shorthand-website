@@ -3,6 +3,7 @@ title: "ClassDojo vs Seesaw (2026): Which One Is Actually Worth It?"
 subtitle: "An honest comparison, and why a lot of teachers end up choosing neither."
 date: "2026-04-14"
 author: "Gregory Lebed"
+mergeNote: "Part of a 5-post ClassDojo cluster. Do not merge/redirect without new GSC evidence of query cannibalization. See Decisions Log 2026-07-13. Distinct intent: head-to-head comparison queries, not roundup queries."
 relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "classdojo-alternative"
