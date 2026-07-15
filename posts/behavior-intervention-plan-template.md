@@ -16,6 +16,8 @@ You nod and smile, but inside, you feel a familiar wave of exhaustion. You alrea
 
 When you sit down to look at the paperwork, it feels overwhelming. It is filled with clinical jargon and theoretical strategies that seem completely divorced from the reality of a loud, chaotic classroom. You are a general education teacher, not a behavior analyst.
 
+![A teacher turning a dense behavior intervention plan packet into one practical shared card and consistent classroom observations](/blog-illustrations/behavior-plan-packet-to-usable-card.png)
+
 This post is going to break down exactly what a behavior intervention plan looks like in the real world. You will get a simplified template that makes sense to a classroom teacher. More importantly, we are going to talk about why that template alone is completely useless unless you have a sustainable way to document it every single day.
 
 ## What Exactly Is a Behavior Intervention Plan

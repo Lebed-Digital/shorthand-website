@@ -20,6 +20,8 @@ We dread these calls because they are unpredictable. We do not know who is going
 
 That unpredictability is exactly why you need a parent phone call script. You cannot control their reaction. You can only control your words. Having the words written down in front of you changes everything. It takes the emotion out of the moment. It keeps you focused on the facts. It gives you a roadmap when the conversation starts to drift into tricky territory.
 
+![An exhausted teacher at 3:45 moving from dread before a parent phone call to calm confidence with a simple script](/blog-illustrations/parent-phone-call-script-confidence.png)
+
 ## Positive Calls Versus Behavior Calls
 
 There are generally two reasons we pick up the phone. A positive phone call home and a behavior phone call to parents.

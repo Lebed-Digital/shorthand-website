@@ -25,6 +25,8 @@ I have written that comment many times, and I have also been on the receiving en
 
 The parent of a struggling student is not looking for a grade. They already suspect. What they are looking for, reading your comment at the kitchen table, is the answer to three questions:
 
+![A thoughtful teacher balancing a student's strength, academic struggle, and support plan in an honest report-card comment](/blog-illustrations/struggling-student-comment-balanced-plan.png)
+
 1. Does this teacher see anything good in my kid?
 2. How bad is it, really?
 3. Is anyone doing anything about it?

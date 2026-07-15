@@ -14,6 +14,8 @@ We have all been there. The noise level in the room is slowly rising. You have a
 
 The room goes instantly silent. For about thirty seconds, you have total compliance. But as you look out at twenty-five wide-eyed faces, the guilt washes over you. You promised yourself you would not be that teacher. You wanted a classroom built on mutual respect, not fear.
 
+![A teacher moving from the guilt of yelling in a noisy classroom to a calm pause and confident written response](/blog-illustrations/classroom-yelling-guilt-to-calm.png)
+
 Let me be very clear. Teachers who yell are usually not bad teachers. They are teachers who have completely run out of tools. Yelling is a desperate attempt to regain control when every other strategy has failed. If you want to achieve classroom management without yelling, you have to understand why you lose your cool in the first place, and you have to build a system that gives you your confidence back.
 
 ## The Brutal Truth About Why Teachers Yell
