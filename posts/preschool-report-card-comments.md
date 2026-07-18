@@ -27,7 +27,7 @@ Every comment below is built to do exactly that. They are organized by developme
 
 ![A preschool teacher turning small classroom observations into warm progress report comments](/blog-illustrations/preschool-progress-comments-observations.png)
 
-If you are specifically looking for behavior-focused comments, we have a separate post on [preschool and pre-K behavior report card comments](/blog/report-card-comments-behavior-preschool). And if reports are due tonight, the [free report card comment generator](/free-tool) builds a polished comment in seconds with no sign-up.
+If you are specifically looking for behavior-focused comments, we have a separate post on [preschool and pre-K behavior report card comments](/blog/report-card-comments-behavior-preschool). And if reports are due tonight, the [free report card comment generator](/report-card-comment-generator) builds a polished comment in seconds with no sign-up.
 
 ## The formula that makes preschool comments easy
 
@@ -155,7 +155,7 @@ The teachers who write the best preschool comments are not better writers. They 
 
 That is also exactly why I built ShortHand. You log a ten-second note on your phone in the moment ("M. asked for the sand timer herself today"), and at report time every note is right there, sorted by child. The specific, warm, personal comment writes itself, because you already wrote it back in October.
 
-[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and let your own notes do the heavy lifting. Or if report cards are due this week, the [free report card comment generator](/free-tool) will get you through tonight.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and let your own notes do the heavy lifting. Or if report cards are due this week, the [free report card comment generator](/report-card-comment-generator) will get you through tonight.
 
 ---
 

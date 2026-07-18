@@ -119,7 +119,7 @@ Every strong example above leans on a detail: the reread intervention book, the 
 
 That is the entire idea behind ShortHand. A ten-second note on your phone in the moment ("finished the whole page independently, first time") becomes the raw material for report card comments, parent emails, and intervention documentation later. When it is time to write about a struggling student, you are not staring at a blank box trying to be fair from memory. Your own observations are right there, and they already tell the story: honestly, specifically, and with the progress visible.
 
-[Try ShortHand free](https://app.getshorthandapp.com?demo=true). The kids who struggle deserve the best-written comments on the page. And if reports are due before you can build the note-taking habit, the [free report card comment generator](/free-tool) will draft one for you right now, no sign-up needed.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true). The kids who struggle deserve the best-written comments on the page. And if reports are due before you can build the note-taking habit, the [free report card comment generator](/report-card-comment-generator) will draft one for you right now, no sign-up needed.
 
 ---
 

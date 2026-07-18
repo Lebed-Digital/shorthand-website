@@ -139,9 +139,37 @@ function useSpeechToText(onResult: (text: string) => void) {
 
 export default function FreeToolClient() {
   return (
-    <LeadGate source="report-card-generator">
-      <FreeToolInner />
-    </LeadGate>
+    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+
+      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
+        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
+          <span style={{ fontSize: 16 }}>←</span> Back to ShortHand
+        </Link>
+      </div>
+
+      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
+        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
+          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 24, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 36, letterSpacing: '0.02em' }}>
+            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
+              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
+            ))}
+          </Link>
+          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
+            Report Card Comment Generator
+          </h1>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
+            Free · No sign-up · Ready in 10 seconds
+          </p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
+            Here from the videos? The jokes are fake. These comments are real.
+          </p>
+        </div>
+      </div>
+
+      <LeadGate source="report-card-generator">
+        <FreeToolInner />
+      </LeadGate>
+    </div>
   );
 }
 
@@ -212,34 +240,7 @@ function FreeToolInner() {
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
-
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
-          <span style={{ fontSize: 16 }}>←</span> Back to ShortHand
-        </Link>
-      </div>
-
-      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
-          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 24, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 36, letterSpacing: '0.02em' }}>
-            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
-            ))}
-          </Link>
-          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
-            Report Card Comment Generator
-          </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
-            Free · No sign-up · Ready in 10 seconds
-          </p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
-            Here from the videos? The jokes are fake. These comments are real.
-          </p>
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
+    <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
 
         <div style={{ background: '#f0f9ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0ea5e9' }}>
           <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
@@ -398,7 +399,6 @@ function FreeToolInner() {
         <div style={{ textAlign: 'center', marginTop: 24 }}>
           <p style={{ fontSize: 12, color: '#475569', margin: 0 }}>Built by a teacher, for teachers.</p>
         </div>
-      </div>
     </div>
   );
 }

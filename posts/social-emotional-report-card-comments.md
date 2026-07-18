@@ -129,7 +129,7 @@ These comments also work for mid-term check-ins. If you are writing progress rep
 
 ShortHand was built for exactly this. Log a ten-second note on your phone when something happens ("used calm corner on his own, first time"), and at report card time every note is waiting, sorted by student. It can even draft the comment from your own observations, in your voice, with the specifics already in place.
 
-The kid worked hard all year for that growth. [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and make sure the report card actually shows it. And if reports are due tomorrow morning, the [free report card comment generator](/free-tool) works right now, no sign-up required.
+The kid worked hard all year for that growth. [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and make sure the report card actually shows it. And if reports are due tomorrow morning, the [free report card comment generator](/report-card-comment-generator) works right now, no sign-up required.
 
 ---
 

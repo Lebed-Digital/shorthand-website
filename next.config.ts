@@ -41,6 +41,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/free-tool',
+        destination: '/report-card-comment-generator',
+        permanent: true,
+      },
+      {
         source: '/blog/what-teachers-mean-vs-what-parents-hear',
         destination: '/blog/turn-behavior-notes-into-parent-messages',
         permanent: true,

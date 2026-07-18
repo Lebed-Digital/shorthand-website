@@ -27,7 +27,7 @@ const tools = [
     title: 'Report Card Comment Generator',
     description:
       'Pick strengths, growth areas, and behavior observations. Get a polished comment in seconds. Editable before you copy.',
-    href: '/free-tool',
+    href: '/report-card-comment-generator',
     label: 'Open Tool',
     accent: '#0d9488',
     bg: '#f0fdfa',

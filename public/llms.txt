@@ -47,7 +47,7 @@ Free to use. No credit card required.
 - [Class Insights](https://getshorthandapp.com/features/class-insights): Whole-class pattern dashboard
 
 ### Free Tools
-- [Free Comment Generator](https://getshorthandapp.com/free-tool): Generate report card comments without signing up
+- [Free Comment Generator](https://getshorthandapp.com/report-card-comment-generator): Generate report card comments without signing up
 - [Free Parent Communication Log](https://getshorthandapp.com/tools/parent-communication-log): Standalone log tool, no account required
 
 ### High-Value Blog Posts

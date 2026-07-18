@@ -20,7 +20,7 @@ I built a free tool to help with the first draft problem. Here's how it works an
 
 ## What the tool does
 
-The [free report card comment generator](/free-tool) lets you:
+The [free report card comment generator](/report-card-comment-generator) lets you:
 
 - Enter the student's name (optional)
 - Pick academic strengths: math, ELA, reading, writing, science, phonics, problem solving, and more
@@ -88,10 +88,10 @@ If you need ready-to-copy examples while you work through the generator, [Report
 
 ## Try it
 
-The tool is at [getshorthandapp.com/free-tool](/free-tool). Free, no sign-up, works on your phone or computer.
+The tool is at [getshorthandapp.com/report-card-comment-generator](/report-card-comment-generator). Free, no sign-up, works on your phone or computer.
 
 If you find it useful, the full ShortHand app is where the same idea goes deeper: logging throughout the year so the comments at the end write themselves.
 
 ---
 
-*ShortHand is a free classroom app for logging student behavior and academic observations by voice or text. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or jump straight to the [free report card comment generator](/free-tool).*
+*ShortHand is a free classroom app for logging student behavior and academic observations by voice or text. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or jump straight to the [free report card comment generator](/report-card-comment-generator).*

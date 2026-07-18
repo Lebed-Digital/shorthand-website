@@ -18,7 +18,7 @@ Philosophy: **experience first**. A reader who just finished a blog post, or a f
 ```
 https://app.getshorthandapp.com
 ```
-No `?demo=true` means `isDemo` evaluates false in `App.tsx` (pulse 2.0 repo), so the visitor lands directly on the Sign In / Create Account screen — no demo detour. Used on: every page's nav "Get ShortHand" / "Open ShortHand →" button (including the homepage nav, which is distinct from the homepage *hero*), the six feature landing pages (`ai-reports`, `class-insights`, `behavior-tracking`, `parent-communication-log`, `parent-emails`, `quick-note`), `classdojo-alternative`, `/tools`, `/resources`, `/free-tool`.
+No `?demo=true` means `isDemo` evaluates false in `App.tsx` (pulse 2.0 repo), so the visitor lands directly on the Sign In / Create Account screen — no demo detour. Used on: every page's nav "Get ShortHand" / "Open ShortHand →" button (including the homepage nav, which is distinct from the homepage *hero*), the six feature landing pages (`ai-reports`, `class-insights`, `behavior-tracking`, `parent-communication-log`, `parent-emails`, `quick-note`), `classdojo-alternative`, `/tools`, `/resources`, `/report-card-comment-generator` (formerly `/free-tool`).
 
 Philosophy: these are the buttons a visitor reaches when they've already decided. Nav CTAs get clicked by people re-visiting to open the app, not people browsing cold — they don't need a demo detour they didn't ask for. The feature pages and `classdojo-alternative` are SEO landing pages for high-intent searches ("classdojo alternative", "behavior tracking software") — the visitor is already comparing solutions, not looking for a soft on-ramp, so sending them straight to account creation is the shorter path to the thing they came to do.
 

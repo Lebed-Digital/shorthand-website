@@ -18,9 +18,40 @@ const TONES = [
 
 export default function WelcomeLetterClient() {
   return (
-    <LeadGate source="welcome-letter-generator">
-      <WelcomeLetterInner />
-    </LeadGate>
+    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+
+      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
+        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
+          <span style={{ fontSize: 16 }}>←</span> Back to ShortHand
+        </Link>
+      </div>
+
+      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
+        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
+          <Link href="/" style={{ display: 'block', marginBottom: 16, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 36, letterSpacing: '0.02em' }}>
+            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
+              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
+            ))}
+          </Link>
+          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.2)', borderRadius: 999, padding: '4px 14px', fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 16 }}>
+            Back-to-School Toolkit
+          </div>
+          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
+            Welcome Letter Generator
+          </h1>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
+            Free · Ready in 10 seconds
+          </p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
+            Fill in four fields. Get a ready-to-send letter for families.
+          </p>
+        </div>
+      </div>
+
+      <LeadGate source="welcome-letter-generator">
+        <WelcomeLetterInner />
+      </LeadGate>
+    </div>
   );
 }
 
@@ -118,37 +149,7 @@ function WelcomeLetterInner() {
   };
 
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
-
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
-          <span style={{ fontSize: 16 }}>←</span> Back to ShortHand
-        </Link>
-      </div>
-
-      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
-          <Link href="/" style={{ display: 'block', marginBottom: 16, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 36, letterSpacing: '0.02em' }}>
-            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
-            ))}
-          </Link>
-          <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.2)', borderRadius: 999, padding: '4px 14px', fontSize: 12, fontWeight: 700, color: '#fff', letterSpacing: '0.06em', textTransform: 'uppercase', marginBottom: 16 }}>
-            Back-to-School Toolkit
-          </div>
-          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
-            Welcome Letter Generator
-          </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
-            Free · Ready in 10 seconds
-          </p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
-            Fill in four fields. Get a ready-to-send letter for families.
-          </p>
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
+    <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
 
         <div style={cardStyle}>
           <label style={labelStyle}>Your name</label>
@@ -320,7 +321,6 @@ function WelcomeLetterInner() {
         <div style={{ textAlign: 'center', marginTop: 8 }}>
           <p style={{ fontSize: 12, color: '#475569', margin: 0 }}>Built by a teacher, for teachers.</p>
         </div>
-      </div>
     </div>
   );
 }

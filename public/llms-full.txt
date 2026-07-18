@@ -46,5 +46,5 @@ Primary URL: https://getshorthandapp.com/blog
 
 ## Key URLs for Reference
 - Main Site: https://getshorthandapp.com
-- Free Comment Generator: https://getshorthandapp.com/free-tool
+- Free Comment Generator: https://getshorthandapp.com/report-card-comment-generator
 - Author Profile: https://getshorthandapp.com/about

@@ -18,7 +18,7 @@ faq:
   - q: "What words should I avoid in a behavior comment?"
     a: "Avoid labels like 'disrespectful,' 'aggressive,' 'lazy,' 'defiant,' and 'mean.' These read as character attacks to parents and offer no path forward. Replace them with an observable description: instead of 'defiant,' write 'struggles to comply with initial verbal directives during transitions.'"
   - q: "Can I use AI to write report card behavior comments?"
-    a: "Yes. The free report card comment generator at getshorthandapp.com/free-tool lets you pick strengths, areas for growth, and behavior observations and generates a polished comment in seconds. No sign-up required."
+    a: "Yes. The free report card comment generator at getshorthandapp.com/report-card-comment-generator lets you pick strengths, areas for growth, and behavior observations and generates a polished comment in seconds. No sign-up required."
 ---
 
 It's report card season. You have 25 students, a stack of notes that made perfect sense in October and now mean nothing, and a blinking cursor waiting for something that doesn't sound like it was written by a legal department.
@@ -236,8 +236,8 @@ Describe the behavior, not the child. "Has difficulty staying on task during ind
 Good behavior comments are short, specific, and constructive. They describe something observable, acknowledge where the student is in their development, and point toward what comes next. The examples in this post are a starting point, but the best comments are always adapted to the real student in front of you.
 
 **Can I use AI to write report card behavior comments?**
-Yes. The [free report card comment generator](/free-tool) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
+Yes. The [free report card comment generator](/report-card-comment-generator) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
 
 ---
 
-*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/free-tool) to draft comments in seconds.*
+*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/report-card-comment-generator) to draft comments in seconds.*
