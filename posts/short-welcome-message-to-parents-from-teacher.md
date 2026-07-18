@@ -93,6 +93,8 @@ Three quick checks, thirty seconds total:
 - **Say when you reply.** "Message me anytime" with no reply window quietly creates 9 pm expectations. "I reply within one school day" protects your evenings all year.
 - **Hold the logistics.** No supply lists, rules, or dismissal procedures in message one. Warmth first. The logistics can ride along in message two, and parents will actually read them there.
 
+And if what you actually need is the full welcome letter rather than the short message, the free [Welcome Letter Generator](/back-to-school-toolkit) builds a ready-to-send one for your grade and tone in about 30 seconds.
+
 ## The message after the welcome message
 
 The welcome message is the easy one. The messages that actually build trust come later: the quick positive note in week three, the heads-up before a problem grows, the reply that arrives when you said it would. Two habits carry all of it:

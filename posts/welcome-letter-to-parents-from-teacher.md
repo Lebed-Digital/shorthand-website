@@ -1,5 +1,5 @@
 ---
-title: "Welcome Letter to Parents From Teacher: 4 Examples (With Notes on What Actually Works)"
+title: "Welcome Letter to Parents From Teacher: 4 Examples + Free Template"
 subtitle: "Real examples, a before/after, and the one mistake most teachers make."
 date: "2026-06-20"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "short-welcome-message-to-parents-from-teacher"
   - "teacher-introduction-letter-to-parents"
   - "teacher-parent-communication-guide"
-excerpt: "Four welcome letter examples for teachers, including a real first-year letter and what I would change about it today. Plus a free generator if you just need one done."
+excerpt: "Four real welcome letter examples for teachers, plus a fill-in-the-blank template and a free generator for creating your own in seconds."
 faq:
   - q: "What should be included in a teacher welcome letter to parents?"
     a: "A strong welcome letter covers four things: a brief personal introduction, how and when you can be reached, what families can expect this year, and an invitation for parents to communicate back. Keep it under one page. The goal is warmth and clarity, not a complete biography."
@@ -17,6 +17,8 @@ faq:
     a: "Ideally one to two weeks before the first day of school. Families who hear from you before school starts are less anxious on day one, and you will spend less time answering the same questions in person. If you missed that window, send it the first week anyway."
   - q: "Should classroom rules be included in a welcome letter?"
     a: "A brief mention is fine, but save the full rules for an in-person conversation. A welcome letter is an introduction, not a handbook. If you lead with rules, parents focus on rules instead of getting to know you."
+  - q: "What is the difference between a welcome letter and an introduction letter?"
+    a: "An introduction letter is about you: who you are, how to reach you, why you teach. A welcome letter is about the year ahead: what families can expect, how communication will work, and an invitation to connect. At back to school time, most teachers combine both into one letter. Mid-year teachers, specialists, and student teachers usually need a pure introduction letter instead, because the year is already underway."
 ---
 
 Every August, I tell myself I am going to save last year's welcome letter somewhere obvious.
@@ -44,7 +46,7 @@ Before the examples, a quick frame. Parents reading a welcome letter are asking 
 
 Everything else is nice to have. A letter that answers those four questions clearly and warmly has done its job.
 
-## Example 1: Warm Elementary Letter
+## Example 1: Warm elementary welcome letter
 
 This is the style I use now. Personal without being a resume. Practical without being cold.
 
@@ -77,7 +79,7 @@ Mr. Lebed
 
 **What works here:** The favorites section is the most important part of this letter. Parents remember "Eagles fan with a 16-year-old" far longer than they remember a list of credentials. It makes you a person before you are a teacher. The communication instructions are specific, which eliminates follow-up questions.
 
-## Example 2: Professional Letter
+## Example 2: Professional welcome letter for upper elementary and middle school
 
 For teachers who prefer a cleaner, more formal tone, or for upper elementary and middle school where the audience is a mix of parents and students who can read independently.
 
@@ -142,7 +144,34 @@ Tired of rewriting the same letter every August? The [Welcome Letter Generator](
 
 ---
 
-## The mistake most teachers make: treating a welcome letter like a resume
+## Sample welcome letter template (fill in the blanks)
+
+If you would rather write your own but want a starting structure, this is the skeleton all the examples above share. Copy it and fill in the brackets.
+
+---
+
+Dear Families,
+
+My name is [your name], and I am excited to be your child's [grade or subject] teacher this year at [school].
+
+A little about me: [one or two human details. A hobby, a family fact, a favorite team. One is enough.]
+
+What you can count on from me: [one honest sentence about what you care about as a teacher].
+
+The best way to reach me is [app or email]. I reply within [your response window] on school days. For anything urgent, please contact the main office.
+
+One favor: sometime this week, send me one sentence about your child. What they love, what worries them, anything you wish their teachers knew.
+
+I cannot wait for this year.
+
+Warmly,
+[Your name]
+
+---
+
+Every bracket is a decision the examples above can help you make. And if the personal-details bracket is where you freeze, that is normal. Pick the thing you would mention to another adult at a barbecue.
+
+## Example 4: My real first-year letter (and the resume mistake to avoid)
 
 Here is a real welcome letter I sent during my first year. I am sharing it because I think the mistake I made is one a lot of teachers make, and it is easier to see in someone else's letter than your own.
 
@@ -193,6 +222,8 @@ Parents rarely remember every detail from a welcome letter. They remember how it
 ---
 
 Once the welcome letter is out the door, the next thing worth doing before September is building a documentation habit before you need one. The post on [documenting student behavior from day one](/blog/how-to-document-student-behavior-from-day-one) covers that exactly. And if you are teaching summer school and want to get your systems in place before the regular year starts, this piece on [using ESY to build your documentation system](/blog/summer-school-build-documentation-system-before-september) is worth reading before August.
+
+The welcome letter is also just the first entry in a year of parent communication. For everything that comes after it, from positive notes to the hard phone calls, the [teacher's complete guide to parent communication](/blog/teacher-parent-communication-guide) is the map.
 
 ---
 

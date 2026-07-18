@@ -1,5 +1,5 @@
 ---
-title: "Teacher Introduction Letter to Parents: 3 Examples for New Teachers, Mid-Year Starts, and Specialists"
+title: "Teacher Introduction Letter to Parents: 3 Examples + In-Person Script"
 subtitle: "How to introduce yourself to families without sounding like a resume, with full letters you can adapt."
 date: "2026-06-29"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "welcome-letter-to-parents-from-teacher"
   - "short-welcome-message-to-parents-from-teacher"
   - "teacher-parent-communication-guide"
-excerpt: "Three complete teacher introduction letter examples: a first-year teacher, a mid-year replacement, and a specialist teacher. Plus the five lines every introduction letter needs."
+excerpt: "Three complete teacher introduction letters, plus a meet-the-teacher script, a first-email example, and the five details every introduction should include."
 faq:
   - q: "What should a teacher introduction letter to parents include?"
     a: "Five things: your name and role, one or two human details about you, your teaching approach in a sentence, exactly how to reach you, and an invitation for the parent to share something about their child. Keep it under one page. Credentials matter less than parents feeling like their child's teacher is a real, reachable person."
@@ -17,6 +17,8 @@ faq:
     a: "Acknowledge the transition directly, keep the tone steady and warm, and be concrete about continuity: what stays the same, what you bring, and how to reach you. Families whose teacher left mid-year are often anxious. Your letter's main job is reassurance, so send it within your first few days, even if it is short."
   - q: "Should a new teacher tell parents it is their first year?"
     a: "You do not need to announce it, but do not hide it if asked. Instead of \"this is my first year teaching,\" lead with what is true and confident: your degree, your student teaching, your excitement, and your commitment to communication. Parents care far more about whether you are responsive and organized than about your years of service."
+  - q: "What do you say when introducing yourself to parents at meet the teacher night?"
+    a: "Keep it to about sixty seconds per family: your name and grade, one human detail, one sentence about your approach, exactly how to reach you, and one request: ask the parent to tell you one thing about their child. Skip the credentials. Parents remember warmth and a specific invitation, not a resume, and that one question gives you thirty insights no file folder has."
 ---
 
 Writing a letter that introduces yourself to thirty families you have never met is a strange assignment. Too formal and you sound like a substitute-teacher form letter. Too casual and you are telling strangers about your dog before they know you can teach fractions.
@@ -110,6 +112,36 @@ Mrs. Chen
 
 **Why this works:** Short, warm, and it recruits parents as allies for the subject. The "questionable trumpet" line does more relationship-building than a paragraph of credentials.
 
+### Preschool and daycare version
+
+The same rules apply for preschool and daycare teachers, with one shift in emphasis: parents of the youngest kids care less about curriculum and more about daily rhythm and safety. So swap the "approach" sentence for a "your child's day" sentence: when they nap, how meals work, how you handle tears at drop-off. One line like "drop-off tears are normal, and I will always message you when the morning turns around" does more for a daycare parent than anything about learning goals. Keep everything else: the human detail, the specific contact info, and the invitation.
+
+## How to introduce yourself in person: meet the teacher night
+
+The letter is half the assignment. The other half happens face to face at meet the teacher night or back to school night, where you get roughly sixty seconds per family. The good news: the five lines from above double as a spoken script.
+
+> "Hi, I'm Ms. Rivera, and I teach 4th grade. I'm a runner and a baker, though not a good one. My big goal this year is that by October I can tell you something true about your child that has nothing to do with a grade. The best way to reach me is the class app, and I reply within a school day. And sometime this week, would you send me one sentence about your child? It helps me more than anything else."
+
+That is the whole thing. Swap in your details and you are done. Three things that make the night easier:
+
+- **Stand near the door, not behind the desk.** The desk turns a hello into a conference. The door turns it into a handshake.
+- **Do not recite credentials.** Nobody at meet the teacher night is verifying your qualifications. They are deciding whether their child will be happy in your room.
+- **End every conversation with the invitation.** "Tell me one thing about your child" is even more powerful spoken than written, because parents answer on the spot.
+
+## The first-email version
+
+If your first contact with families is digital, compress the letter into an email under 100 words. Subject line: "Your child's [grade] teacher this year." Then:
+
+> Dear Families,
+>
+> My name is Ms. Rivera, and I am excited to be your child's 4th grade teacher this year. A little about me: I am a runner, a baker, and a lifelong reader. My goal is for every child in my room to feel known. The best way to reach me is right here, and I reply within a school day.
+>
+> One favor: reply with one sentence about your child. It helps me more than you know.
+>
+> Warmly, Ms. Rivera
+
+If you just need the two-sentence class app version, our [30 short welcome messages](/blog/short-welcome-message-to-parents-from-teacher) post has those ready to paste.
+
 ## Three mistakes that sink an introduction letter
 
 **Turning it into a resume.** Parents are not hiring you; the district already did that. A paragraph of certifications reads as nerves, not credibility. One sentence of background, then get to the human being.
@@ -129,6 +161,8 @@ An introduction letter opens a relationship; what you send over the next month d
 This is also where ShortHand quietly earns its keep. It keeps a running log of every parent contact automatically, shows you which families you have not reached yet, and drafts those quick positive notes from the observations you have already jotted down. The introduction letter makes the first impression; ShortHand makes sure the second, third, and tenth impressions actually happen.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true), and start the year with every family feeling like their child's teacher knows them.
+
+And if what you actually need is the full back-to-school welcome letter rather than an introduction, the free [Welcome Letter Generator](/back-to-school-toolkit) builds one for your grade and tone in about 30 seconds.
 
 ---
 

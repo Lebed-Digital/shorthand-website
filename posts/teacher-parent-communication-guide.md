@@ -113,7 +113,7 @@ Documentation is especially important in IEP contexts. [How to Document Parent C
 
 ## Building a documentation habit
 
-Before any of the conversations in this guide, there is one communication worth sending first. A welcome letter home at the start of the year sets the tone before problems arrive. If you need one, the [Welcome Letter Generator](/back-to-school-toolkit) builds a ready-to-send letter for your grade and tone in 30 seconds. Or see [four real examples with notes on what makes each one work](/blog/welcome-letter-to-parents-from-teacher).
+Before any of the conversations in this guide, there is one communication worth sending first. A welcome letter home at the start of the year sets the tone before problems arrive. If you need one, the [Welcome Letter Generator](/back-to-school-toolkit) builds a ready-to-send letter for your grade and tone in 30 seconds. Or see [four real examples with notes on what makes each one work](/blog/welcome-letter-to-parents-from-teacher). For the app and WhatsApp version, there are [30 short welcome messages ready to paste](/blog/short-welcome-message-to-parents-from-teacher). And if you are a new or mid-year teacher introducing yourself for the first time, start with the [teacher introduction letter examples](/blog/teacher-introduction-letter-to-parents).
 
 Everything in this guide is easier when you already have notes.
 
