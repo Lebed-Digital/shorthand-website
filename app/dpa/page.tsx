@@ -104,7 +104,7 @@ export default function DpaPage() {
             <div className="privacy-desc">
               Student Data is retained only as long as the Authorized User's account is active.<br /><br />
               Teachers can delete all Student Data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
-              Teachers can permanently delete their account and all associated data (Settings → Danger Zone → Delete My Account).<br /><br />
+              Teachers can permanently delete their account and all Student Data (Settings → Danger Zone → Delete My Account).<br /><br />
               Upon written request from the School, ShortHand will delete all Student Data associated with the School's Authorized Users within 30 days.
             </div>
           </div>

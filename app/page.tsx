@@ -549,7 +549,7 @@ export default function Home() {
               { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center, the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
               { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
               { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
-              { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy." },
+              { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy of your notes or student information." },
               { icon: '🔐', title: 'Smart and Private', desc: 'ShortHand only reads your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
             ].map((item) => (
               <div key={item.title} className="privacy-card">

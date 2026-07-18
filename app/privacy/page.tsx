@@ -115,7 +115,7 @@ export default function PrivacyPage() {
             <div className="privacy-title">Your Rights</div>
             <div className="privacy-desc">
               You can delete all your data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
-              You can permanently delete your account and all associated data from within the app (Settings → Danger Zone → Delete My Account).<br /><br />
+              You can permanently delete your account, your notes, and your student data from within the app (Settings → Danger Zone → Delete My Account).<br /><br />
               You can export a copy of all your data at any time (Settings → Your Data → Export My Data).<br /><br />
               You can disconnect Google Classroom at any time, which removes your stored Google tokens.
             </div>
