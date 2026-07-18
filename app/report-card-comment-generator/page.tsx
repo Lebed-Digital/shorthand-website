@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
 import FreeToolClient from './FreeToolClient';
+import TrackedLink from '../../components/TrackedLink';
 
 export const metadata: Metadata = {
   title: 'Free Report Card Comment Generator for Teachers',
@@ -189,6 +190,25 @@ export default function ReportCardCommentGeneratorPage() {
             </Link>
             {' '}explains when to use it and when to write from your own notes.
           </p>
+
+          <div style={{ marginTop: 32, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '24px 24px 22px', border: '1px solid rgba(167,139,250,0.25)' }}>
+            <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
+              Stop starting report card comments from scratch
+            </h2>
+            <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 16px', lineHeight: 1.6 }}>
+              ShortHand helps you save quick student notes throughout the year, then turn those
+              real observations into polished reports and parent communication when you need
+              them.
+            </p>
+            <TrackedLink
+              href="https://app.getshorthandapp.com"
+              label="app"
+              ctaSource="report_card_generator_bottom"
+              style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
+            >
+              Try ShortHand free →
+            </TrackedLink>
+          </div>
         </div>
       </section>
     </>
