@@ -1,5 +1,5 @@
 ---
-title: "Preschool Report Card Comments for Behavior (Pre-K Examples You Can Copy)"
+title: "Preschool Behavior Report Card Comments (Pre-K Examples You Can Copy)"
 subtitle: "Age-appropriate language for the hardest comments you will write all year."
 date: "2026-03-29"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "report-card-comments-for-behavior"
   - "preschool-report-card-comments"
   - "free-report-card-comment-generator"
-excerpt: "Behavior comments for a 4-year-old don't read like comments for a 4th grader. Age-appropriate language for sharing, turn-taking, and emotional regulation, ready to copy."
+excerpt: "Behavior comments for a 4-year-old don't read like comments for a 4th grader. Age-appropriate language for routines, transitions, sharing, turn-taking, and emotional regulation, ready to copy."
 faq:
   - q: "How do you write report card comments for preschool behavior?"
     a: "Focus on observable developmental milestones, not comparisons to other students. Use strength-based language that names what the child is working on rather than what they can't do. Instead of 'has difficulty sharing,' write 'is developing turn-taking skills with peer support.' Preschool parents are often first-time school parents, so your language sets the tone for how they understand their child's development."
@@ -21,11 +21,11 @@ faq:
 
 You are not grading math tests when you write preschool report card comments. You are describing a three-year-old's entire relationship with other humans, with frustration, with waiting, with the word "no." Preschool parents are often reading their first school document about their child, and they are going to read every word.
 
-My years as a Registered Behavior Technician reinforced something preschool teachers already know: most behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing or emotional regulation is practicing a skill, not displaying a character flaw. That reframe changes everything about how you write these comments. If you use K-8 language on a Pre-K family, you will cause panic. Here is how to write preschool behavior comments that are honest without being alarming. (This post covers the behavior section specifically. For the rest of the report, from early literacy to motor skills to end-of-year wrap-ups, see our [preschool report card comments for every domain](/blog/preschool-report-card-comments).)
+My years as a Registered Behavior Technician reinforced something preschool teachers already know: most behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing or emotional regulation is practicing a skill, not displaying a character flaw. That reframe changes everything about how you write these comments. If you use K-8 language on a Pre-K family, you will cause panic. Here is how to write preschool behavior comments that are honest without being alarming. (This post covers behavior: routines, transitions, sharing, and self-regulation. For development and academics, from early literacy to motor skills to end-of-year wrap-ups, see our [preschool report card comments for every domain](/blog/preschool-report-card-comments).)
 
 ![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.png)
 
-## Why report card comments behavior for preschool are different
+## Why preschool behavior comments are different
 
 A third grader refusing to share is a discipline issue. A three-year-old refusing to share is a developmental stage.
 
@@ -37,7 +37,7 @@ It turns a complaint into a goal. If you need help tracking these skills, read [
 
 ## K-8 Language vs. Preschool-Appropriate Language
 
-You have to translate traditional school language into early childhood terms. Here is how to soften your social emotional comments preschool style.
+You have to translate traditional school language into early childhood terms. Here is how to soften the language without losing the honesty.
 
 | K-8 Behavior Language | Preschool-Appropriate Language |
 | :--- | :--- |
@@ -47,7 +47,7 @@ You have to translate traditional school language into early childhood terms. He
 | "Hits other children." | "Is practicing gentle touches with friends." |
 | "Cannot sit still." | "Is very active and learning to participate in circle time." |
 
-## Examples of report card comments behavior for preschool
+## Preschool behavior comment examples by skill
 
 Here are categorized copy-paste examples you can use right now. For more ideas, you can also view our general [report card comments for behavior](/blog/report-card-comments-for-behavior) guide.
 
@@ -58,6 +58,26 @@ Sharing is incredibly hard for young children. It is completely normal for them 
 "Leo is working hard on taking turns with the classroom toys. He is learning to trade items with his friends."
 
 "Mia enjoys parallel play. She is beginning to share building blocks during center time."
+
+"Freya is learning to take turns with preferred toys. A sand timer has been a big help, and she now sometimes asks for it herself."
+
+"Elias is learning to ask for a turn with words instead of reaching for the toy. We practice the phrase 'Can I have a turn?' every day, and it is sticking."
+
+### Classroom routines and self-regulation
+
+Routines are the scaffolding that makes the rest of the day possible. These comments cover transitions, calm-down strategies, and following classroom routines.
+
+"Mason has learned our classroom routines and transitions between activities smoothly most days. Cleanup time is a genuine strength."
+
+"Ruby is building strategies for big feelings. She is beginning to use the calm-down corner on her own, which is a significant step for this age."
+
+"Diego handles frustration best with a warning before transitions. With a two-minute heads-up, he finishes activities calmly and confidently."
+
+"Priya is learning that it is okay to feel disappointed when a choice is not available. She recovers more quickly each month, and we celebrate that growth."
+
+"Wyatt follows two-step directions consistently and is beginning to manage three-step directions with visual support."
+
+"Zoe has made real progress waiting in line and keeping hands to herself during transitions. We use a special line-leader job as motivation, and it works."
 
 ### Emotional regulation
 
