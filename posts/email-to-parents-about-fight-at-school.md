@@ -1,5 +1,5 @@
 ---
-title: "Email to Parents About Fight at School: Guidelines and Templates"
+title: "Email to Parents About a Fight at School: 3 Teacher Templates"
 subtitle: "How to handle high-stakes safety incidents with professional, documentation-ready communication."
 date: "2026-05-14"
 author: "Gregory Lebed"
@@ -7,7 +7,7 @@ relatedPosts:
   - "sample-emails-to-parents-about-student-behavior"
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
-excerpt: "Drafting an email to parents about fight at school is stressful. Read our call-first advice and get templates to document conversations professionally."
+excerpt: "After a fight at school, call home first, then email. Three follow-up email templates for teachers, plus what to document and what to leave out."
 ---
 
 Few phone calls or emails are more stressful than the ones concerning physical altercations.
