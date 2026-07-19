@@ -15,7 +15,7 @@
 
 | # | Project | Type | When | Impact | Confidence |
 |---|---------|------|------|--------|------------|
-| 1 | CTR fixes: parent-email meta + fight-at-school title | Existing-page | Now (July) | Medium | High |
+| 1 | CTR fixes: parent-email meta + fight-at-school title (PARTIAL 2026-07-19: fight-at-school shipped, sample-emails deferred to Aug 15) | Existing-page | Now (July) | Medium | High |
 | 2 | GSC indexing requests (Greg, manual) | Technical | Now (July) | Medium | High |
 | 3 | ClassDojo roundup: add "vs Hiteach" section | Existing-page | July/early Aug | Small-Medium | High |
 | 4 | New post: Daily Behavior Report for Preschool (Free Template) | New content | Early Aug | Medium | Medium-High |
@@ -33,6 +33,15 @@ Parked (do NOT start in this window): classroom-management cluster, admin-observ
 ## A. Existing-page improvements
 
 ### Project 1 — CTR fixes on the two parent-email pages
+
+> **STATUS 2026-07-19: PARTIALLY COMPLETE.** The fight-at-school half shipped. The sample-emails half was deliberately deferred to the 2026-08-15 check. Read this block before touching either page.
+>
+> - **DONE, fight-at-school.** Title changed from "Email to Parents About Fight at School: Guidelines and Templates" to "Email to Parents About a Fight at School: 3 Teacher Templates" (adds the teacher audience signal plus the artifact count, 61 chars so it survives before Next.js appends `| ShortHand Blog`). Excerpt replaced: the old one read "about fight at school" with the article missing and opened on a weak "Read our call-first advice" CTA. New excerpt: "After a fight at school, call home first, then email. Three follow-up email templates for teachers, plus what to document and what to leave out." Slug, date, subtitle, headings, and body untouched. Frontmatter only.
+> - **DEFERRED, sample-emails. Do NOT apply this plan's excerpt rewrite yet.** Commit `d0b2196` (2026-07-03, "CTR test: rewrite title/meta on 4 high-impression, low-CTR posts") already ran a CTR test on that page, rewriting both title and excerpt. The excerpt it replaced was nearly identical to the replacement this plan proposes, so executing this plan as written would revert a live 16-day-old experiment back to its own control. This plan's stated data basis (90-day window ending 2026-07-17) measures the pre-test copy for roughly 76 of its 90 days, so it cannot be used to judge that test.
+> - **Fresh GSC, pulled 2026-07-19, page-level, 2026-04-18 to 2026-07-17.** sample-emails: 111 clicks, 3,970 impressions, 2.8% CTR, position 6.9. fight-at-school: 3 clicks, 555 impressions, 0.54% CTR, position 7.3. Both differ from the figures in the bullet below (which cite 58 clicks/2,375 imp for sample-emails and 292 imp at pos 8.0 for fight-at-school). Trust the fresh numbers. 2.8% at position 6.9 is roughly normal for that position rather than starved, so the urgency this plan assigned to sample-emails was overstated. The genuinely starved page was fight-at-school, which is the one that shipped.
+> - **When to revisit sample-emails:** at the 2026-08-15 consolidation check, once back-to-school traffic can actually read the 2026-07-03 variant. Summer volume is far too low to measure anything (the page drew about 29 impressions in the 14 days following the test). If the July 3 variant is still flat at the same position after real in-session traffic, apply this plan's excerpt then, as the second variant. Ready to paste: "Copy-paste email templates for telling parents about behavior problems, written by a teacher. Polite, professional, and ready in two minutes."
+> - **Also noted, not actioned:** `posts/email-to-parents-about-fight-at-school.md` has no `faq` frontmatter, which the global AEO rules require of every post. Out of scope for a CTR pass; worth a separate sweep.
+
 - **Expected impact:** Medium. The primary is the site's #1 page (58 clicks/2,375 imp/90d, pos 6.7); a better meta description at position 6-7 realistically lifts CTR 20-40%. Fight-at-school has 292 imp at pos 8.0 with 0.68% CTR, which is starved.
 - **Confidence:** High. Pure CTR mechanics, no ranking risk.
 - **Primary URLs:** `/blog/sample-emails-to-parents-about-student-behavior`, `/blog/email-to-parents-about-fight-at-school`.
@@ -134,6 +143,8 @@ Still outstanding from 2026-07-17: `/report-card-comment-generator`, `/free-tool
 
 ### Project 6a — 2026-08-15 consolidation check (gate for Project 6)
 Pull `gsc_page_performance` + `gsc_query_for_page` for every redirecting URL listed in the map's "check dates" section. Expected: old URLs shedding impressions; `/report-card-comment-generator` indexed and replacing `/free-tool`; welcome-letter post moving from ~14.7 toward top 10. Record results in the map, then trigger Project 6.
+
+**Also due at this check (carried over from Project 1, deferred 2026-07-19):** evaluate the 2026-07-03 CTR test on `/blog/sample-emails-to-parents-about-student-behavior` (commit `d0b2196`, which rewrote both title and excerpt). Baseline to beat, measured 2026-04-18 to 2026-07-17 and therefore mostly reflecting the PRE-test copy: 111 clicks, 3,970 impressions, 2.8% CTR, position 6.9. Compare against in-session traffic only; summer volume is unreadable. If CTR improved at the same position, keep the July 3 copy and close Project 1. If it is flat, apply the replacement excerpt recorded in the Project 1 status block as the second variant. See the Project 1 status block for full reasoning.
 
 ---
 
