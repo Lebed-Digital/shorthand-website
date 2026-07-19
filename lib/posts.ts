@@ -12,6 +12,13 @@ export interface PostMeta {
   title: string;
   subtitle: string;
   date: string;
+  /**
+   * Optional. Set this only when an existing post is genuinely refreshed.
+   * `date` stays the original publication date; this drives dateModified.
+   * When absent, dateModified falls back to `date`, so posts that have never
+   * been revised are not reported to Google as recently updated.
+   */
+  lastModified?: string;
   author: string;
   excerpt: string;
   tags?: string[];
@@ -23,10 +30,20 @@ export interface Post extends PostMeta {
   contentHtml: string;
 }
 
+// gray-matter parses unquoted YAML dates into Date objects, so both date fields
+// have to survive that before they reach the schema.
+function toDateString(value: unknown): string {
+  return value instanceof Date ? value.toISOString().slice(0, 10) : String(value);
+}
+
 function normalizePostData(data: Record<string, unknown>): Omit<PostMeta, 'slug'> {
   return {
     ...data,
-    date: data.date instanceof Date ? data.date.toISOString().slice(0, 10) : String(data.date),
+    date: toDateString(data.date),
+    // Spread conditionally: a post without lastModified must stay undefined
+    // rather than becoming the string "undefined", which would defeat the
+    // `?? date` fallback at the call site.
+    ...(data.lastModified != null ? { lastModified: toDateString(data.lastModified) } : {}),
   } as Omit<PostMeta, 'slug'>;
 }
 
