@@ -61,7 +61,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
     "headline": post.title,
     "description": post.excerpt,
     "datePublished": `${post.date}T00:00:00+00:00`,
-    "dateModified": `${post.date}T00:00:00+00:00`,
+    // Falls back to the publication date so untouched posts are never reported
+    // as freshly updated. Never default this to the current date.
+    "dateModified": `${post.lastModified ?? post.date}T00:00:00+00:00`,
     "author": {
       "@type": "Person",
       "name": "Gregory Lebed",

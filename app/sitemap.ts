@@ -5,12 +5,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://getshorthandapp.com';
   const now = new Date();
 
-  const blogPosts = getAllPosts().map((post) => ({
-    url: `${base}/blog/${post.slug}`,
-    lastModified: new Date(post.date.includes('T') ? post.date : post.date + 'T12:00:00'),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+  const blogPosts = getAllPosts().map((post) => {
+    // Must stay in sync with the dateModified fallback in app/blog/[slug]/page.tsx.
+    // If these two disagree, Google gets contradictory freshness signals.
+    const modified = post.lastModified ?? post.date;
+    return {
+      url: `${base}/blog/${post.slug}`,
+      lastModified: new Date(modified.includes('T') ? modified : modified + 'T12:00:00'),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    };
+  });
 
   return [
     { url: base, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
