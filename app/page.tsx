@@ -27,9 +27,9 @@ const jobs = [
     slug: 'parent-communication-log',
     title: 'Find It',
     subtitle: 'Walk into meetings with the full story.',
-    desc: 'See what was discussed, when you reached out, and what still needs follow-up, all timestamped in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
-    img: '/2.png',
-    imgAlt: 'Student notes history screen',
+    desc: 'See what was discussed, when contact happened, and what still needs follow-up, all organized in one place for conferences, IEP meetings, and admin conversations.',
+    img: '/parent-comms-log.png',
+    imgAlt: 'Parent communication log showing timestamped contact entries and an urgent follow-up alert',
     objectPosition: 'center top',
   },
   {
@@ -511,9 +511,8 @@ export default function Home() {
                 'Scraps of paper shoved in a pocket',
                 'Forgotten parent conversations',
                 '3 hours of SGO data entry on a Sunday',
-                '"Who was I going to follow up with?"',
-                'Writing the same report 25 times',
-                'Re-typing the same details for every email, summary, and meeting.',
+                '"Which students haven\'t I documented lately?"',
+                'Rewriting the same details for emails, reports, and meetings',
               ].map(item => (
                 <div key={item} className="ba-item ba-item--before">
                   <span className="ba-icon">✗</span> {item}
@@ -524,11 +523,10 @@ export default function Home() {
               <div className="ba-label">After</div>
               {[
                 'Tap, speak, saved. In 5 seconds.',
-                'Full communication log, ready for IEPs',
+                'A full parent communication log with follow-ups surfaced',
                 'Reports generated while you drink coffee',
-                'Red ring alerts you before anyone slips through',
-                'One button. Professional email to a parent.',
-                'Capture them once. Reuse them for emails, reports, and meeting notes.',
+                'Red rings show who may be slipping through',
+                'Capture it once. Reuse it for emails, reports, and meeting notes.',
               ].map(item => (
                 <div key={item} className="ba-item ba-item--after">
                   <span className="ba-icon">✓</span> {item}
@@ -648,7 +646,7 @@ export default function Home() {
               },
               {
                 q: 'How does ShortHand help with parent communication?',
-                a: 'After you log a behavior note, ShortHand drafts a parent-ready message in seconds. You review it, make any tweaks, and send. No staring at a blank email. It also keeps a full communication log for IEP meetings.',
+                a: 'ShortHand keeps your parent communication history organized in one place, including dates, details, and follow-ups. When you need to reach out, it can turn an existing note into a parent-ready draft. You review it, make any changes, and send it through your own email.',
               },
               {
                 q: 'Can ShortHand help me spot behavior patterns?',
