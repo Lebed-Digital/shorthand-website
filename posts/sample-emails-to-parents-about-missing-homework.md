@@ -1,5 +1,5 @@
 ---
-title: "How to Write a Parent Email About Missing Assignments (Without the Drama)"
+title: "Missing Assignment Email to Parents: Copy-and-Paste Templates"
 subtitle: "Real-world strategies and copy-paste templates for chronic homework avoidance and missing work."
 date: "2026-06-06"
 author: "Gregory Lebed"
