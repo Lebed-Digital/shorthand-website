@@ -27,7 +27,7 @@ const jobs = [
     slug: 'parent-communication-log',
     title: 'Find It',
     subtitle: 'Walk into meetings with the full story.',
-    desc: 'Every note, parent contact, and intervention stays organized in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
+    desc: 'See what was discussed, when you reached out, and what still needs follow-up, all timestamped in one place, so conferences, IEP meetings, and admin conversations never depend on memory.',
     img: '/2.png',
     imgAlt: 'Student notes history screen',
     objectPosition: 'center top',
@@ -36,7 +36,7 @@ const jobs = [
     slug: 'ai-reports',
     title: 'Use It',
     subtitle: 'Turn documentation into action.',
-    desc: 'Generate parent emails, behavior summaries, progress reports, and conference-ready documentation from notes you\'ve already collected.',
+    desc: 'Turn the notes you\'ve already logged into a parent-ready draft. Review it, edit if needed, and send it straight from your own email. No parent account, login, or download required.',
     img: '/3.png',
     imgAlt: 'Generated parent report screen',
     objectPosition: 'center top',
@@ -232,7 +232,7 @@ export default function Home() {
         <div className="hero-canvas"><SplineHero /></div>
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
-            <div className="hero-eyebrow">No App Store &nbsp;·&nbsp; Works on Any Device</div>
+            <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; No App Store &nbsp;·&nbsp; Works on Any Device</div>
             <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
             <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
               ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
@@ -513,6 +513,7 @@ export default function Home() {
                 '3 hours of SGO data entry on a Sunday',
                 '"Who was I going to follow up with?"',
                 'Writing the same report 25 times',
+                'Re-typing the same details for every email, summary, and meeting.',
               ].map(item => (
                 <div key={item} className="ba-item ba-item--before">
                   <span className="ba-icon">✗</span> {item}
@@ -527,6 +528,7 @@ export default function Home() {
                 'Reports generated while you drink coffee',
                 'Red ring alerts you before anyone slips through',
                 'One button. Professional email to a parent.',
+                'Capture them once. Reuse them for emails, reports, and meeting notes.',
               ].map(item => (
                 <div key={item} className="ba-item ba-item--after">
                   <span className="ba-icon">✓</span> {item}
@@ -638,7 +640,7 @@ export default function Home() {
               },
               {
                 q: 'What is ShortHand?',
-                a: 'ShortHand is a behavior tracking app built for K-12 teachers. It lets you log student notes in under 5 seconds using voice or text, track behavior patterns over time, generate polished progress reports in seconds, and send parent messages instantly.',
+                a: 'ShortHand is a behavior and parent-communication tool built for K-12 teachers. Log what happened in seconds, then turn those notes into parent emails, progress reports, and meeting-ready summaries whenever you need them.',
               },
               {
                 q: 'Do I need to download anything?',
