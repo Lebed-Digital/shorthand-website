@@ -650,7 +650,7 @@ export default function Home() {
               },
               {
                 q: 'Can ShortHand help me spot behavior patterns?',
-                a: 'Yes. ShortHand tracks behavior over 4 to 52 weeks and shows visual trend charts for each student. Smart badges highlight who\'s improving and who needs attention, so you\'re not relying on memory.',
+                a: 'Yes. ShortHand tracks behavior from 1 day to 52 weeks and shows visual trend charts for each student. Smart badges highlight who\'s improving and who may need attention, so you\'re not relying on memory.',
               },
               {
                 q: 'Does ShortHand alert me if I haven\'t checked in on a student?',
