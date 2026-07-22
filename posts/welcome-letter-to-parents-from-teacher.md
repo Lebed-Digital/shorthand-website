@@ -7,7 +7,7 @@ relatedPosts:
   - "short-welcome-message-to-parents-from-teacher"
   - "teacher-introduction-letter-to-parents"
   - "teacher-parent-communication-guide"
-excerpt: "Four real welcome letter examples for teachers, plus a fill-in-the-blank template and a free generator for creating your own in seconds."
+excerpt: "Four copy-and-paste welcome letter examples from a real classroom, plus a free fill-in-the-blank template you can send tonight."
 faq:
   - q: "What should be included in a teacher welcome letter to parents?"
     a: "A strong welcome letter covers four things: a brief personal introduction, how and when you can be reached, what families can expect this year, and an invitation for parents to communicate back. Keep it under one page. The goal is warmth and clarity, not a complete biography."
@@ -146,7 +146,7 @@ Tired of rewriting the same letter every August? The [Welcome Letter Generator](
 
 ## Sample welcome letter template (fill in the blanks)
 
-If you would rather write your own but want a starting structure, this is the skeleton all the examples above share. Copy it and fill in the brackets.
+If you would rather write your own but want a starting structure, this is the skeleton all the examples above share. Copy it, fill in the brackets, and adapt it for elementary, middle, or high school.
 
 ---
 
@@ -207,7 +207,7 @@ Two sentences. Same information. Parents do not need the full timeline. They nee
 
 The rest of the letter was fine. The mistake was the resume. Cut it down and the letter breathes.
 
-## What to include no matter what
+## Welcome Letter to Parents Checklist
 
 Every welcome letter, regardless of grade or tone, should cover these five things:
 
