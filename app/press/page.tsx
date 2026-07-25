@@ -6,10 +6,10 @@ import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Press & Mentions | ShortHand',
-  description: 'Where ShortHand has been featured and reviewed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
+  description: 'Where ShortHand has been featured and listed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
   openGraph: {
     title: 'Press & Mentions | ShortHand',
-    description: 'Where ShortHand has been featured and reviewed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
+    description: 'Where ShortHand has been featured and listed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
     url: 'https://getshorthandapp.com/press',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -26,19 +26,19 @@ const mentions = [
   },
   {
     name: 'Capterra',
-    desc: 'ShortHand is listed and reviewed on Capterra, a software directory used by schools and districts evaluating ed-tech tools.',
+    desc: 'ShortHand is listed on Capterra, a software directory used by schools and districts evaluating ed-tech tools.',
     href: 'https://www.capterra.com/p/10049021/ShortHand/',
     cta: 'View listing',
   },
   {
     name: 'Software Advice',
-    desc: 'ShortHand is listed and reviewed on Software Advice, a Gartner Digital Markets property.',
+    desc: 'ShortHand is listed on Software Advice, a Gartner Digital Markets property.',
     href: 'https://www.softwareadvice.com/product/556571-ShortHand/',
     cta: 'View listing',
   },
   {
     name: 'GetApp',
-    desc: 'ShortHand is listed and reviewed on GetApp, a Gartner Digital Markets property.',
+    desc: 'ShortHand is listed on GetApp, a Gartner Digital Markets property.',
     href: 'https://www.getapp.com/all-software/a/shorthand-1/',
     cta: 'View listing',
   },
@@ -117,12 +117,19 @@ export default function PressPage() {
         </div>
 
         <div style={{ marginTop: '3rem', textAlign: 'center' }}>
-          <Image
-            src="/saas-browser-badge-14.svg"
-            alt="Featured on SaaS Browser"
-            width={171}
-            height={60}
-          />
+          <a
+            href="https://saasbrowser.com/en/case-studies/1540632/shorthand"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View ShortHand on SaaS Browser"
+          >
+            <Image
+              src="/saas-browser-badge-14.svg"
+              alt="Featured on SaaS Browser"
+              width={171}
+              height={60}
+            />
+          </a>
         </div>
       </article>
 
