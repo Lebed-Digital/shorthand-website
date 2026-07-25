@@ -72,7 +72,7 @@ The behavior you log at 10:23 AM is still accurate at 4:00 PM. The behavior you 
 
 If you serve students with IEPs, 504s, or behavior intervention plans, this one matters a lot.
 
-ClassDojo wasn't built for special education documentation. When someone asks for a pattern of behavior over the last 60 days - in writing, with dates, in a format that can be printed or shared - a screenshot of colored bubbles isn't going to hold up.
+ClassDojo wasn't built for special education documentation. When someone asks for a pattern of behavior over the last 60 days (in writing, with dates, in a format that can be printed or shared), a screenshot of colored bubbles isn't going to hold up.
 
 ShortHand logs are timestamped, categorized by behavioral theme, and exportable. When you need to show that a student's aggressive behavior increased after a schedule change, or that their on-task rate improved after a seating adjustment, that data is there. You don't have to reconstruct it from memory.
 

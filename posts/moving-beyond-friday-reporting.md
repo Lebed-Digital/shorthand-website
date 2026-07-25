@@ -7,7 +7,7 @@ relatedPosts:
   - "sample-emails-to-parents-about-student-behavior"
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
-excerpt: "It's 4:00 PM on a Friday. The building is mostly empty, and I'm staring at a blank email draft. I have four parent updates to write - and I can barely remember Tuesday."
+excerpt: "It's 4:00 PM on a Friday. The building is mostly empty, and I'm staring at a blank email draft. I have four parent updates to write, and I can barely remember Tuesday."
 ---
 
 It's 4:00 PM on a Friday. The building is mostly empty, the janitor's cart is rattling down the hall, and I'm still at my desk. I have a stack of math tests to grade, but instead I'm staring at a blank email draft.

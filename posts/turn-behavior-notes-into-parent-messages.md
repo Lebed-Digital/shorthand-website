@@ -7,7 +7,7 @@ relatedPosts:
   - "sample-emails-to-parents-about-student-behavior"
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
-excerpt: "Tracking student behavior is only half the job. The harder part is actually reaching out to families - early, before small issues become big ones."
+excerpt: "Tracking student behavior is only half the job. The harder part is actually reaching out to families early, before small issues become big ones."
 ---
 
 Tracking student behavior is only half the job. The harder part is actually reaching out to families.

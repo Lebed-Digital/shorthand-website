@@ -184,7 +184,7 @@ Keep these factual and neutral. Stick to what's observable and documented.
 
 **4. Keep your notes.** If you're writing a comment about a behavior pattern, make sure you have the observations to back it up. That's where a lot of teachers get caught: writing a comment about something they observed but never documented.
 
-That last point is what pushed me to build ShortHand. I was writing report card comments from memory, trying to reconstruct months of behavior from sticky notes and a gut feeling. Now I log notes in real time - a few seconds per student - and when report card season hits, I have actual data to write from instead of guessing.
+That last point is what pushed me to build ShortHand. I was writing report card comments from memory, trying to reconstruct months of behavior from sticky notes and a gut feeling. Now I log notes in real time (a few seconds per student), and when report card season hits, I have actual data to write from instead of guessing.
 
 It makes these comments faster to write, more specific, and a lot easier to defend if a parent pushes back.
 
@@ -240,4 +240,4 @@ Yes. The [free report card comment generator](/report-card-comment-generator) on
 
 ---
 
-*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds - by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/report-card-comment-generator) to draft comments in seconds.*
+*ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds, by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/report-card-comment-generator) to draft comments in seconds.*

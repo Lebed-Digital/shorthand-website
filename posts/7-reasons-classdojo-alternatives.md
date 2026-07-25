@@ -13,15 +13,15 @@ excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are s
 
 If you've ever found yourself staring at a search bar typing "ClassDojo alternatives" at 7:00 PM on a Tuesday, you aren't doing anything wrong. You're just dealing with the same reality I was:
 
-You're expected to track every behavior, mood, and academic win - but you don't actually have the time or the brain-space to do it.
+You're expected to track every behavior, mood, and academic win, but you don't actually have the time or the brain-space to do it.
 
-As a 3rd-grade teacher with 20+ years in K-8 classrooms and a former Registered Behavior Technician, I hit a wall where my system wasn't just failing - it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
+As a 3rd-grade teacher with 20+ years in K-8 classrooms and a former Registered Behavior Technician, I hit a wall where my system wasn't just failing, it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
 
 ## 1. Your Students Outgrew the Gamification
 
 This is the most common reason, and the one nobody wants to say out loud: the monster avatars stop working.
 
-In kindergarten and 1st grade, earning points for a cartoon character is genuinely motivating. By 3rd grade, your most behaviorally complex students - the ones you most need a system for - are also the ones who stopped caring about their avatar in October. The tool that was designed to engage students ends up being ignored by the exact students you need it to reach.
+In kindergarten and 1st grade, earning points for a cartoon character is genuinely motivating. By 3rd grade, your most behaviorally complex students (the ones you most need a system for) are also the ones who stopped caring about their avatar in October. The tool that was designed to engage students ends up being ignored by the exact students you need it to reach.
 
 ClassDojo was built around engagement. But behavior documentation for older students isn't about engagement, it's about professional record-keeping. If you teach middle or high school, the gap is even wider. See what a [ClassDojo alternative built for older students](/classdojo-alternative) looks like.
 
@@ -39,7 +39,7 @@ Here's the math: if a behavior happens during a math block and it takes you 90 s
 
 The only documentation system that actually gets used is one that takes under 10 seconds. Voice-to-text. One tap to select a student. Done before the class notices you stopped.
 
-If your system isn't that fast, it will gradually stop being your system. You'll drift back to sticky notes, mental notes, or nothing at all - and then spend Fridays trying to reconstruct a week you can barely remember.
+If your system isn't that fast, it will gradually stop being your system. You'll drift back to sticky notes, mental notes, or nothing at all, and then spend Fridays trying to reconstruct a week you can barely remember.
 
 ## 4. You Need IEP-Ready Documentation
 
@@ -47,11 +47,11 @@ ClassDojo isn't built for special education documentation. When you're sitting i
 
 Real documentation means timestamped notes, behavioral categories, trend data, and a format that can be exported or printed without looking unprofessional. If you're serving students with IEPs, 504s, or behavior intervention plans, you need a system that produces the kind of records those processes require.
 
-This is one of the reasons I built ShortHand. I was tired of being the least-prepared person in the room during IEP meetings - not because I hadn't been watching, but because I hadn't been documenting in a way that translated to the table.
+This is one of the reasons I built ShortHand. I was tired of being the least-prepared person in the room during IEP meetings, not because I hadn't been watching, but because I hadn't been documenting in a way that translated to the table.
 
 ## 5. Parent Emails Take Way Too Long
 
-Every behavior incident has a tail: the parent email. And if you're doing that from scratch - staring at a blank compose window at 4:15 PM, trying to find professional words for "your kid had a meltdown during math" - you're burning time you don't have.
+Every behavior incident has a tail: the parent email. And if you're doing that from scratch (staring at a blank compose window at 4:15 PM, trying to find professional words for "your kid had a meltdown during math"), you're burning time you don't have.
 
 The best behavior tracking systems close the loop automatically. Your logged notes should feed directly into a draft parent communication. You should be reviewing and sending, not writing from zero.
 
@@ -61,11 +61,11 @@ This sounds obvious, but very few tools actually do it. Most of them track behav
 
 At the end of the school year, what happens to your ClassDojo data? For most teachers, the honest answer is: nothing useful. You can't easily hand a next-year teacher a behavioral timeline. You can't export a student's full year of behavior notes in a format that's readable to a counselor or specialist.
 
-Behavior data should be portable. A student's 4th-grade teacher should be able to see what you observed in 3rd grade - not because you printed something out and stuffed it in a cumulative folder, but because the system handles it automatically.
+Behavior data should be portable. A student's 4th-grade teacher should be able to see what you observed in 3rd grade, not because you printed something out and stuffed it in a cumulative folder, but because the system handles it automatically.
 
 ## 7. You're Carrying Too Much in Your Head
 
-The single most underrated problem in classroom management isn't behavior - it's memory. You have 25 students. Each of them has patterns, triggers, good days, and bad days. You cannot hold all of that in your head and also teach.
+The single most underrated problem in classroom management isn't behavior. It's memory. You have 25 students. Each of them has patterns, triggers, good days, and bad days. You cannot hold all of that in your head and also teach.
 
 The teachers who manage complex classrooms well aren't necessarily better at reading behavior. They're better at offloading the tracking to a system so their brain is free to actually respond in the moment. When you're not trying to remember what happened with Miguel last Tuesday, you can actually focus on what's happening with Miguel right now.
 
@@ -85,9 +85,9 @@ The criteria I applied when I built ShortHand:
 
 ## The Tool I Built (Because Nothing Else Fit)
 
-ShortHand is a Progressive Web App - no download, no app store, works on your phone or tablet or school laptop. It's free during beta.
+ShortHand is a Progressive Web App: no download, no app store, works on your phone or tablet or school laptop. It's free during beta.
 
-It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](https://app.getshorthandapp.com?demo=true) - there's a live demo that takes no sign-up and opens instantly. And if you want to see the whole field before deciding, I tested and ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) in a separate post.
+It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](https://app.getshorthandapp.com?demo=true), there's a live demo that takes no sign-up and opens instantly. And if you want to see the whole field before deciding, I tested and ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) in a separate post.
 
 **The bottom line:** Teachers don't fail at documentation. Systems fail teachers. The right system is the one you'll actually use at 10:23 AM when something happens and you have 15 other things happening at the same time.
 
