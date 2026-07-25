@@ -35,11 +35,11 @@ An experienced teacher told me she finished hers in 20 minutes. Mine took four h
 
 ## Why It Takes So Long
 
-The reason it takes this long isn't that the math is hard. It's that the data lives in silos.
+It takes this long because the data lives in silos, not because the math is hard.
 
-Your diagnostic scores are in one system. Your attendance and enrollment data is somewhere else. The growth calculations have to be done manually. And you -- the teacher who has been in the classroom every day since September -- are the one stuck building the bridges between all of it.
+Your diagnostic scores are in one system. Your attendance and enrollment data is somewhere else. The growth calculations have to be done manually. And you, the teacher who has been in the classroom every day since September, are the one stuck building the bridges between all of it.
 
-Nobody in the district has designed a system that does this automatically. So instead of analyzing student growth, you're doing data entry. Instead of thinking about what the numbers mean and what to do next year, you're cross-referencing spreadsheets and hoping you didn't accidentally include the kid who transferred in March.
+Nobody in the district has designed a system that does this automatically. So instead of analyzing what the growth numbers mean, you're cross-referencing spreadsheets and hoping you didn't accidentally include the kid who transferred in March.
 
 ## The Bigger Problem This Points To
 
@@ -49,11 +49,11 @@ Teachers are expected to produce professional-grade data documentation. The syst
 
 This is the same problem that happens with parent communication, IEP documentation, behavior reports, and progress notes. The expectation exists. The tool to meet it efficiently does not.
 
-Most of the apps that are supposed to help are built for the data entry part -- getting information into a system. They fall short on the other side: getting useful output out of that system without spending hours on it.
+Most of the apps that are supposed to help are built for the data entry part, getting information into a system. They fall short on the other side: getting useful output out of it without spending hours on it.
 
 ## What I'm Building to Fix This
 
-I didn't build ShortHand to replace the diagnostic tests. I'm not solving the i-Ready problem directly. But I am building something that addresses the core issue: teachers shouldn't have to be data scientists to do their jobs.
+ShortHand doesn't replace the diagnostic tests or solve the i-Ready problem directly. It addresses the core issue: teachers shouldn't have to be data scientists to do their jobs.
 
 One of the features I'm actively developing is a reporting engine that understands school cycles. SGOs, quarterly progress updates, IEP data points, weekly parent summaries. The goal is that your logged observations translate into formatted reports without a four-hour data entry session.
 
@@ -63,7 +63,7 @@ The vision is simple: you log things as they happen throughout the year, in a fe
 
 The SGO experience is specific to New Jersey, but the underlying frustration is universal. Teachers everywhere are being asked to produce documentation that requires more administrative time than anyone actually budgeted for when they designed the evaluation system.
 
-I'm currently looking for beta testers -- especially teachers who deal with data-heavy reporting requirements. If you've sat through your own version of SGO Hell and you want to help shape a tool that makes it better, I'd love to talk.
+I'm currently looking for beta testers, especially teachers who deal with data-heavy reporting requirements. If you've sat through your own version of SGO Hell and you want to help shape a tool that makes it better, I'd love to talk.
 
 [Try ShortHand for free](https://app.getshorthandapp.com?demo=true) and reach out if you want to be involved in the beta. The more real teacher problems I hear about, the better the tool gets.
 
