@@ -76,7 +76,12 @@ Rule of thumb proven by this site's data: pages win when they ARE the artifact (
 
 - Five posts carry `mergeNote` frontmatter (Decisions Log 2026-07-13): **do not merge or redirect any of them without fresh query-level cannibalization evidence.**
 - **Primary (roundup):** `/blog/best-classdojo-alternatives-2026` (1,344 imp, pos 7.9). **Head-to-head:** `classdojo-vs-seesaw-2026` (500 imp, pos 7.1). Supporting: `classdojo-alternative` (blog), `7-reasons-classdojo-alternatives`, `why-teachers-are-switching-from-classdojo-to-shorthand`. Note the separate marketing landing page `/classdojo-alternative` (app route) also exists — intentional, signup-first CTA per funnel-decisions.md.
-- **Pending adds:** "classdojo vs hiteach" section on the roundup (23 imp, pos 5.5, zero coverage); "ClassDojo vs Remind" post (Dec 2026 — head-to-head = distinct intent per the mergeNotes).
+- **Re-verified 2026-07-26 (query×page, 28d vs prior 28d): still NO cannibalization.** Every query resolves to one page with the loser 15-40 positions behind at single-digit impressions ("class dojo alternatives" roundup 6.5 vs seesaw 23.5; "seesaw vs class dojo" seesaw 4.2 vs roundup 20.0). Google is choosing correctly. Five-post separation confirmed; mergeNotes stay.
+- **Primary now:** 47 clicks / 1,749 imp / 2.69% CTR / pos 6.9 (was pos ~16). Position fix worked. **Note:** a US-only slice of this page reads 292 imp / 0.68% CTR and excludes the converting query — do not use that number to judge the page.
+- **Done 2026-07-26:** added "Best ClassDojo Alternatives by Need" (documentation, parent comms, points, grading, lesson planning) + a "ClassDojo vs HiTeach" section to the roundup. Closes the zero-click gap on `classdojo alternatives for grading` (40 imp, pos 5.9), `...for lesson planning` (17 imp, pos 9.1), `...for points` (19 imp, pos 5.9) and pulls `which is better: classdojo vs. hiteach` (27 imp, pos 4.6) off the Seesaw post, which never mentioned HiTeach. Grading/lesson-planning entries deliberately route searchers to SIS/planning tools and state ShortHand does not serve those needs.
+- **Owns (added):** classdojo alternatives for grading / for lesson planning / for points, classdojo vs hiteach.
+- **Watch (~2026-08-20):** whether the grading/lesson-planning queries convert now or stay at 0 CTR. If impressions hold at pos ~6 with still-zero clicks, the cause is AI Overview absorption, not the page, and no further content work is warranted.
+- **Pending adds:** "ClassDojo vs Remind" post (Dec 2026 — head-to-head = distinct intent per the mergeNotes).
 
 ## 10. MTSS / interventions
 
