@@ -48,9 +48,13 @@ The reasons tend to cluster into a few categories:
 
 **Best for:** Teachers who need fast behavior logging, parent contact records, and documentation that holds up in meetings.
 
+I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who kept showing up to IEP meetings with nothing useful written down. I couldn't find it, so I made it.
+
 ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood check-in, parent contact log, AI-drafted follow-up email.
 
 Logging takes under 10 seconds. Notes are timestamped and tied to the student. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in 30 seconds.
+
+And when a note has to end up somewhere else, one tap strips the conversational padding out of it so you can paste it straight into your district's system without rewriting it by hand. That's the part I care about most: ShortHand isn't trying to replace the platform your school already requires. It's trying to make feeding that platform take seconds instead of your prep period.
 
 It works without school buy-in. No IT ticket, no license, no waiting for an admin to set it up. Free to start, no credit card required.
 
@@ -117,6 +121,56 @@ It isn't a behavior tracking tool. If documentation and parent contact records a
 | Class Charts | School-wide secondary tracking | Hard | Yes | Limited |
 | PBIS Rewards | School PBIS programs | No | Yes | No |
 | Seesaw | K-5 portfolios + family comms | Yes | No | Yes |
+
+---
+
+## Best ClassDojo Alternatives by Need
+
+Most teachers searching for a ClassDojo replacement are really trying to replace one specific thing it did, not all of it. Here's where to look depending on which piece you actually need.
+
+### If you need behavior documentation
+
+This is the gap ClassDojo leaves most often. Points tell you a student got a "helping others" bubble sometime in October. They don't tell you what happened, when it happened, or who you contacted about it.
+
+Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and a clean way to get any of it back out: exported to hand across a table at a meeting, or stripped down and pasted straight into whatever system your district already makes you log things in. A tool that traps your notes inside itself has just become one more place to check.
+
+### If you need parent communication
+
+If messaging families was the only part of ClassDojo you actually used, you don't need a behavior app at all. Remind and TalkingPoints both handle teacher-to-parent messaging without asking parents to manage another account, and TalkingPoints handles translation well if that matters in your community. Seesaw and Bloomz are better fits if you also want to share photos and student work.
+
+### If you need points and rewards
+
+If the points system is working for you and you just want it somewhere better, LiveSchool is the closest match in spirit: points, rewards, and student-facing feedback, and it tends to hold up with older students better than avatars do. It's usually purchased at the school level rather than by one teacher, and the same is true of PBIS Rewards, which makes sense if your building already runs a formal PBIS program.
+
+Worth saying plainly: ShortHand doesn't do points. That's a deliberate choice, not a missing feature. It's built for the teachers who stopped wanting a public points board in the first place.
+
+### If you need grading
+
+Search "ClassDojo alternatives for grading" and you'll get a long list of behavior apps that don't grade anything, including most of this page.
+
+So here's the honest version: ClassDojo was never a gradebook. If grading is what you're after, you're looking at a different category of product entirely. That means your district's student information system (PowerSchool, Infinite Campus, Skyward), or Google Classroom if you want something lighter that keeps assignments and grades together.
+
+ShortHand doesn't do grading either, and it isn't going to. Behavior notes and grades are separate records for good reason, and the moment they live in the same place, one of them starts influencing how you write the other.
+
+### If you need lesson planning
+
+Same answer, different category. ClassDojo didn't do lesson planning, so nothing on a ClassDojo alternatives list is going to replace it for you.
+
+Planbook and Common Curriculum are the dedicated tools teachers actually use for this, and Google Classroom covers it loosely if you're already working inside it. If you landed here searching for ClassDojo alternatives for lesson planning, the useful thing I can tell you is that you're shopping for a planning tool, not a behavior app, and you'll find much better options once you search that way.
+
+---
+
+## ClassDojo vs HiTeach
+
+This one comes up more than you'd expect, so it's worth being direct: these two tools aren't really competing with each other.
+
+HiTeach is smart classroom software. It's built around interactive displays, student response systems, and live formative assessment. You push a question out, every student answers, and the results come up on the board while the lesson is still happening. The engagement and points layer exists to support the lesson in front of you.
+
+ClassDojo is a behavior and communication tool. It runs across the whole day instead of inside a single lesson, and its real center of gravity is the parent-facing side.
+
+If you're comparing the two, the question isn't which one is better. It's which job you're hiring for. Trying to make live lessons more interactive on a classroom display? That's HiTeach's category. Trying to manage behavior and keep families in the loop? That's ClassDojo, or one of the alternatives above depending on which piece you need.
+
+One practical note: HiTeach is typically a school or district deployment and generally assumes classroom display hardware is already in place. It isn't something an individual teacher signs up for on a Sunday night the way you can with ClassDojo, Seesaw, or ShortHand.
 
 ---
 

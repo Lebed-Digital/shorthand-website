@@ -76,7 +76,12 @@ Rule of thumb proven by this site's data: pages win when they ARE the artifact (
 
 - Five posts carry `mergeNote` frontmatter (Decisions Log 2026-07-13): **do not merge or redirect any of them without fresh query-level cannibalization evidence.**
 - **Primary (roundup):** `/blog/best-classdojo-alternatives-2026` (1,344 imp, pos 7.9). **Head-to-head:** `classdojo-vs-seesaw-2026` (500 imp, pos 7.1). Supporting: `classdojo-alternative` (blog), `7-reasons-classdojo-alternatives`, `why-teachers-are-switching-from-classdojo-to-shorthand`. Note the separate marketing landing page `/classdojo-alternative` (app route) also exists — intentional, signup-first CTA per funnel-decisions.md.
-- **Pending adds:** "classdojo vs hiteach" section on the roundup (23 imp, pos 5.5, zero coverage); "ClassDojo vs Remind" post (Dec 2026 — head-to-head = distinct intent per the mergeNotes).
+- **Re-verified 2026-07-26 (query×page, 28d vs prior 28d): still NO cannibalization.** Every query resolves to one page with the loser 15-40 positions behind at single-digit impressions ("class dojo alternatives" roundup 6.5 vs seesaw 23.5; "seesaw vs class dojo" seesaw 4.2 vs roundup 20.0). Google is choosing correctly. Five-post separation confirmed; mergeNotes stay.
+- **Primary now:** 47 clicks / 1,749 imp / 2.69% CTR / pos 6.9 (was pos ~16). Position fix worked. **Note:** a US-only slice of this page reads 292 imp / 0.68% CTR and excludes the converting query — do not use that number to judge the page.
+- **Done 2026-07-26:** added "Best ClassDojo Alternatives by Need" (documentation, parent comms, points, grading, lesson planning) + a "ClassDojo vs HiTeach" section to the roundup. Closes the zero-click gap on `classdojo alternatives for grading` (40 imp, pos 5.9), `...for lesson planning` (17 imp, pos 9.1), `...for points` (19 imp, pos 5.9) and pulls `which is better: classdojo vs. hiteach` (27 imp, pos 4.6) off the Seesaw post, which never mentioned HiTeach. Grading/lesson-planning entries deliberately route searchers to SIS/planning tools and state ShortHand does not serve those needs.
+- **Owns (added):** classdojo alternatives for grading / for lesson planning / for points, classdojo vs hiteach.
+- **Watch (~2026-08-20):** whether the grading/lesson-planning queries convert now or stay at 0 CTR. If impressions hold at pos ~6 with still-zero clicks, the cause is AI Overview absorption, not the page, and no further content work is warranted.
+- **Pending adds:** "ClassDojo vs Remind" post (Dec 2026 — head-to-head = distinct intent per the mergeNotes).
 
 ## 10. MTSS / interventions
 
@@ -122,6 +127,7 @@ Evidence bar for anything bigger (merging the two roundups, new observation post
 # Metrics and check dates
 
 - **2026-08-15:** GSC check — redirect consolidation (clusters 1, 5, 6): old URLs should be shedding impressions. Welcome cluster positions (expect welcome-letter post moving from ~14.7 toward top 10 as August volume arrives). `/report-card-comment-generator` indexed and replacing `/free-tool` in GSC (expect position improvement from 79 baseline; realistic target 15-25 by October).
+- **2026-08-20:** ClassDojo roundup check (cluster 9). Re-pull `gsc_query_for_page` for `/blog/best-classdojo-alternatives-2026`. Baseline to beat: 47 clicks / 1,749 imp / 2.69% CTR / pos 6.9 (28d to 2026-07-25). Watch the four queries the 2026-07-26 sections targeted: `classdojo alternatives for grading` (40 imp @5.9, 0 clicks), `...for points` (19 @5.9, 0), `...for lesson planning` (17 @9.1, 0), `which is better: classdojo vs. hiteach` (27 @4.6). **Clicks appear = success, stop. Impressions hold at pos ~6 with still-zero clicks = AI Overview absorption, not the page: stop, do not keep editing.** Position drop = revert. Do NOT judge this page from the US-only slice (292 imp / 0.68% CTR), it excludes the converting query.
 - **2026-08-13:** special-ed audit (pre-existing commitment) — fold AI-query routing into it.
 - **2026-09-15:** back-to-school cluster review — clicks on welcome/intro/toolkit pages; decide whether the intro post's in-person section captures "how to introduce yourself" clicks.
 - **2026-10-15:** report-card season pre-check — preschool differentiation results (generic "preschool report card comments" should have ONE page ranking, position <15), hub build decision, generator page position.
