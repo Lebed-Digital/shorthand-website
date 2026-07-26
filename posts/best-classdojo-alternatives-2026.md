@@ -48,11 +48,13 @@ The reasons tend to cluster into a few categories:
 
 **Best for:** Teachers who need fast behavior logging, parent contact records, and documentation that holds up in meetings.
 
-I built this one, so weigh it accordingly. I went looking for it first, as a 3rd grade teacher who kept showing up to IEP meetings with nothing useful written down. I couldn't find it, so I made it.
+I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who kept showing up to IEP meetings with nothing useful written down. I couldn't find it, so I made it.
 
 ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood check-in, parent contact log, AI-drafted follow-up email.
 
 Logging takes under 10 seconds. Notes are timestamped and tied to the student. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in 30 seconds.
+
+And when a note has to end up somewhere else, one tap strips the conversational padding out of it so you can paste it straight into your district's system without rewriting it by hand. That's the part I care about most: ShortHand isn't trying to replace the platform your school already requires. It's trying to make feeding that platform take seconds instead of your prep period.
 
 It works without school buy-in. No IT ticket, no license, no waiting for an admin to set it up. Free to start, no credit card required.
 
@@ -130,7 +132,7 @@ Most teachers searching for a ClassDojo replacement are really trying to replace
 
 This is the gap ClassDojo leaves most often. Points tell you a student got a "helping others" bubble sometime in October. They don't tell you what happened, when it happened, or who you contacted about it.
 
-Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and something you can export and hand across a table at a meeting.
+Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and a clean way to get any of it back out: exported to hand across a table at a meeting, or stripped down and pasted straight into whatever system your district already makes you log things in. A tool that traps your notes inside itself has just become one more place to check.
 
 ### If you need parent communication
 
