@@ -29,6 +29,10 @@ export default function Footer() {
         ·{' '}
         <a href="https://pulseacademic.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Pulse Academic
+        </a>{' '}
+        ·{' '}
+        <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          Simple Teacher AI
         </a>
       </div>
     </footer>
