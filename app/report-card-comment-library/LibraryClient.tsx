@@ -19,14 +19,19 @@ import {
 const SECTIONS = Object.keys(CATEGORIES_BY_SECTION) as Section[];
 const SAMPLE_NAME = 'Jordan';
 
+function capitalizeName(name: string): string {
+  return name.replace(/\p{L}+/gu, (word) => word[0].toUpperCase() + word.slice(1));
+}
+
 function personalize(text: string, name: string): string {
-  const useName = name.trim() || SAMPLE_NAME;
+  const trimmed = name.trim();
+  const useName = trimmed ? capitalizeName(trimmed) : SAMPLE_NAME;
   return text.split('[Student]').join(useName);
 }
 
 function finalizeForCopy(text: string, name: string): string {
   const trimmed = name.trim();
-  if (trimmed) return text.split('[Student]').join(trimmed);
+  if (trimmed) return text.split('[Student]').join(capitalizeName(trimmed));
   return text.split('[Student]').join('the student');
 }
 
@@ -35,6 +40,11 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
   const [draft, setDraft] = useState(() => personalize(comment.text, name));
   const [copied, setCopied] = useState(false);
   const [dirty, setDirty] = useState(false);
+  const [dirtyForName, setDirtyForName] = useState(name);
+
+  if (dirty && dirtyForName !== name) {
+    setDirty(false);
+  }
 
   const displayText = dirty ? draft : personalize(comment.text, name);
 
@@ -77,6 +87,7 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
           onChange={(e) => {
             setDraft(e.target.value);
             setDirty(true);
+            setDirtyForName(name);
           }}
           rows={4}
           style={{
@@ -219,6 +230,9 @@ export default function LibraryClient() {
             placeholder={`e.g. Alex (previewing as "${SAMPLE_NAME}")`}
             style={inputStyle}
           />
+          <p style={{ fontSize: 12, color: '#64748b', margin: '6px 0 0' }}>
+            Changing the student name resets any edited comments.
+          </p>
         </div>
 
         <div style={{ background: '#fff', borderRadius: 16, padding: 16, marginBottom: 16, border: '1px solid #e2e8f0' }}>
