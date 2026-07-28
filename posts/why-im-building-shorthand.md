@@ -28,7 +28,7 @@ By the time I sat down at 3:35 to pull things together, the specific "what" and 
 
 ## The Loop That Kept Repeating
 
-Here's the ugly truth about forgetting: the kids notice.
+The kids notice when you forget.
 
 If there's no phone call home and no follow-up conversation the next morning, the behavior doesn't change. In fact, it usually gets worse. I was stuck in a loop that looked like this:
 

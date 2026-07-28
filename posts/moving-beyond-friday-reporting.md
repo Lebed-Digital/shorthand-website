@@ -34,7 +34,7 @@ As both a teacher and a Registered Behavior Technician, I've been trained to tra
 
 Most apps and systems are designed for the tracking part: the quick logging of a behavior in the heat of the moment. But they fall short on the telling part. Converting raw logs into a professional, helpful narrative for a family takes time that teachers simply don't have.
 
-When I'm in the middle of a math or science lesson, I can't stop to write a paragraph. But if I don't capture something right then, it's gone. That gap -- between the moment it happens and the moment you report it -- is where the stress lives.
+When I'm in the middle of a math or science lesson, I can't stop to write a paragraph. But if I don't capture something right then, it's gone. That gap, between the moment it happens and the moment you report it, is where the stress lives.
 
 And that gap gets wider on Fridays. By the end of the week, Monday might as well have been a month ago.
 
@@ -42,13 +42,13 @@ And that gap gets wider on Fridays. By the end of the week, Monday might as well
 
 The Friday reporting grind is what happens when documentation and communication are treated as separate tasks that both get pushed to the end of the week.
 
-When you save everything for Friday, a few things happen. The details fade. The notes you do have are incomplete. You spend more time reconstructing than reporting. The emails you send are vague because vague is all you have left. And then you drive home feeling like you let some families down -- not because you didn't care, but because the system set you up to fail.
+When you save everything for Friday, a few things happen. The details fade. The notes you do have are incomplete. You spend more time reconstructing than reporting. The emails you send are vague because vague is all you have left. And then you drive home feeling like you let some families down, not because you didn't care, but because the system set you up to fail.
 
 The alternative isn't working harder. It's closing the gap between when something happens and when you record it.
 
 ## What Actually Changes When You Log in the Moment
 
-The first time I logged a behavior note while walking between desks during a lesson -- just a quick voice note, done in about four seconds -- I realized how much I had been losing by waiting.
+The first time I logged a behavior note while walking between desks during a lesson, just a quick voice note, done in about four seconds, I realized how much I had been losing by waiting.
 
 The specific detail is there. The context is there: what subject, what time, what triggered it, what happened next. And because I captured it in the moment, there's no reconstruction involved on Friday. I'm reviewing something that already happened instead of trying to remember whether it happened.
 
