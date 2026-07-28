@@ -1,8 +1,10 @@
 # Report Card Comment Library — Session Handoff
 
 **Last updated:** 2026-07-28
-**Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57). Library at 213 of ~450-480.
-**Next task:** Draft the Preschool section (target 80-100). Do not start until the map is approved.
+**Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57).
+Preschool complete (92). Library at 301.
+**Next task:** Resolve the final-target math in §12 BEFORE drafting Academics.
+Do not start a content map until that question is answered.
 
 ---
 
@@ -31,6 +33,10 @@ workflows, AI generation, complex export formats, subscriptions, tiers.
 ## 2. Branch and files
 
 **Branch:** `feature/report-card-comment-library-prototype` (NOT merged to main)
+
+**Latest commit:** `c003830` Report Card Comment Library: Preschool section
+complete (92 comments). Working tree clean. Not pushed, not merged, no deploy.
+Branch is 3 commits ahead of its remote and 4 ahead of `origin/main`.
 
 | File | Role |
 |---|---|
@@ -314,6 +320,140 @@ These came out of Greg's batch reviews and apply to future sections:
 
 ---
 
+## 7b. Preschool section — COMPLETE (92 comments, 6 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| social-emotional-development | 16 | 9 | 7 |
+| self-help-skills | 16 | 9 | 7 |
+| play-and-cooperation | 16 | 9 | 7 |
+| early-literacy | 16 | 9 | 7 |
+| early-math | 14 | 8 | 6 |
+| gross-and-fine-motor | 14 | 8 | 6 |
+| **TOTAL** | **92** | **52** | **40** |
+
+Target was 80-100. **92 hit the approved map exactly**, the first section to do
+so. 88 new comments plus four Step 3 samples revised in place.
+
+**Grade bands:** preschool = 92, all others 0. This is correct and deliberate.
+
+**Tone split is 57/43 positive**, a deliberate positive skew approved at map
+time. At this age many "growth" items are normal developmental acquisition, and
+a heavy growth column reads as deficit framing for a four-year-old. The
+countervailing risk Greg named: positive comments must still name a specific
+observable skill, never become praise filler.
+
+**Audit result:** one near-duplicate pair at 0.38 (the fastener pair, reviewed
+and approved as an ordinary positive/growth pairing). **Zero** against the
+entire rest of the library, including all 20 preschool-band behavior comments.
+Zero of 52 positive comments use conditional support wording.
+
+### The four Step 3 samples were revised in place
+
+Step 3 approval was treated as approval of the *situations*, not permanent
+protection of wording that predates the house style. IDs, categories, tones, and
+grade bands preserved. What was removed: named tools ("playdough and tongs"),
+time-of-day framing ("During story time," "at pickup time"), inferred internal
+states ("gets excited every time"), compliance framing ("without being
+reminded"), unsupported claims ("would help build hand strength"), and
+turn-taking language that crossed into Behavior's lane.
+
+**Apply the same rule to the remaining Academics (4) and Social-Emotional (3)
+samples.** They have the same provenance and the same problems.
+
+### Category boundaries settled during the Preschool build
+
+| Category | Owns |
+|---|---|
+| social-emotional-development | First acquisition of a social-emotional skill |
+| self-help-skills | Dressing, toileting, meals, belongings, cleanup as a physical sequence |
+| play-and-cooperation | The nature of play itself: entering, sustaining, negotiating, recovering |
+| early-literacy | Letters, sounds, name writing, print concepts, read-aloud, retell, predict, rhyme |
+| early-math | Rote counting, one-to-one correspondence, numerals, sorting, patterns, shapes, spatial words, quantity |
+| gross-and-fine-motor | Hand control outside the eating routine, plus climbing, balance, ball skills, spatial navigation |
+
+Worked distinctions:
+
+- **Rote counting** (saying the sequence) and **one-to-one correspondence**
+  (one number per object) are separate skills and must not be merged. A draft
+  that said "counts in order to a growing number of objects" collapsed them and
+  was caught in review.
+- **Sorting** is about what belongs together; **quantity comparison** is about
+  which group has more, fewer, or the same. Both involve groups of objects.
+- **Meal utensils are self-help-skills**, not motor. Motor owns hand control in
+  drawing, cutting, building, and manipulating.
+- **Cleanup is the physical sequence**, not obeying a cleanup direction. That
+  keeps it clear of `behavior/independence` (classroom routines).
+- **Group games measure understanding the structure**, not rule obedience,
+  waiting, or impulse control.
+- **Body awareness is navigating space** (stopping, changing direction,
+  avoiding obstacles), never personal space or hands-to-self, which are
+  `behavior/self-control`.
+- **Recovery in play** is returning to the activity or trying a new idea, not
+  emotional regulation broadly.
+
+### Content guardrails established during the Preschool build
+
+- Parallel play is not deficient by default. A growth comment framing it as a
+  gap needs explicit evidence that shared play is the current instructional
+  goal.
+- Independent play and independent book use are legitimate positive skills, not
+  lower stages that must progress toward group activity. Both were left
+  unpaired deliberately.
+- "Trying independently first" must never imply that asking for help sooner is a
+  weakness.
+- Toileting stays neutral, private, and brief. Two comments, routine-framed, no
+  accident language, no clinical terms.
+- Meals cover containers, utensils, feeding, and cleanup, never quantity eaten
+  or food preferences.
+- Name writing is letter formation, never handwriting neatness.
+- Read-aloud comments describe attending, commenting, answering, connecting.
+  Never "loves books" or "enjoys stories."
+- Retelling (known events) and prediction (clues suggesting what comes next) are
+  distinct and must not blend.
+- Drawing describes observable control or representation, never artistic talent,
+  and never whether another person can recognize the picture.
+- Do not make speed, memorization, or answering correctly-and-quickly the
+  success criterion in early-math.
+- Avoid claims about strength, coordination, or developmental progress a teacher
+  cannot directly observe. Describe the action.
+- Supports stay classroom-based. Home-practice prescriptions appear exactly once
+  library-wide (self-help growth-03) and should not be repeated.
+
+### Deliberately unwritten (do NOT add later to hit a number)
+
+Four mapped situations were left uncovered because every draft was either filler
+or a near-duplicate: **vocabulary** and **independent book choice**
+(early-literacy), **nonstandard measurement** (early-math), and **running**
+(gross-and-fine-motor). The map identifies possible ground, not a checklist that
+overrides quality.
+
+### Repeated frames: measured, deliberately not fixed
+
+| Frame | Count | Share of 40 growth |
+|---|---|---|
+| `[Student] is learning to` | 5 | 13% |
+| `and is beginning to` | 5 | 13% |
+| `is a skill [Student] is` | 3 | 8% |
+| `is difficult for [Student]` | 3 | 8% |
+
+Openings are 62% `[Student]`-initial with 32 distinct non-`[Student]` openings,
+none appearing more than twice. No repeated growth closers at all.
+
+**All four frames are left alone deliberately.** At 13% or below this is
+cosmetic churn, and they belong in the deferred whole-library structural review
+(§11) alongside behavior's frame A and ADHD's `[Student]` concentration, so the
+same formulas get thinned once, coordinated.
+
+**Process lesson worth carrying:** `[Student] is learning to` was capped
+mid-section, and `and is beginning to` then accumulated to the same count
+unwatched. Steering away from one frame concentrates another. Track the whole
+frame distribution, not just the one currently being avoided. The same thing
+happened with conditionals: avoiding "may support this" pushed "could help" to
+the top spot.
+
+---
+
 ## 8. Boundary decisions (hard-won, apply them)
 
 **CORRECTED 2026-07-28 (during the ADHD build).** The earlier framing said
@@ -400,23 +540,24 @@ technically risky or a regression is suspected.
 
 ---
 
-## 10. Library status: 213 comments
+## 10. Library status: 301 comments
 
 | Section | Populated | Target | Categories locked | Categories populated | Status |
 |---|---|---|---|---|---|
 | behavior | **145** | 150-200 | 8 | 8 | COMPLETE |
 | adhd | **57** | 60-80 | 5 | 5 | COMPLETE |
-| preschool | 4 | 80-100 | 6 | 4 | next |
-| academics | 4 | 40-60 | 4 | 4 | pending |
+| preschool | **92** | 80-100 | 6 | 6 | COMPLETE |
+| academics | 4 | 40-60 | 4 | 4 | next |
 | social-emotional | 3 | 30-40 | 4 | 3 | pending |
-| **TOTAL** | **213** | ~450-480 | 27 | 24 | |
+| **TOTAL** | **301** | see §12 | 27 | 26 | |
 
-**Remaining: Preschool (80-100), Academics (40-60), Social-Emotional (30-40).**
-Roughly 140-190 comments left. The preschool/academics/social-emotional counts
-above are the original Step 3 sample comments only.
+**Remaining: Academics (40-60), Social-Emotional (30-40).** The academics and
+social-emotional counts above are the original Step 3 sample comments only, and
+both sets need the same in-place revision the four preschool samples got (§7b).
 
-Both completed sections came in **under** their targets (145 vs 150-200, 57 vs
-60-80) and both were accepted deliberately. Do not retroactively pad them.
+Behavior and ADHD came in **under** target (145 vs 150-200, 57 vs 60-80),
+Preschool hit its map exactly (92). All three were accepted deliberately. Do not
+retroactively pad any of them.
 
 ### Verify the category list against the schema, not the data
 
@@ -426,8 +567,9 @@ now populated. Still outstanding:
 
 | Section | Locked but currently unpopulated |
 |---|---|
-| preschool | `social-emotional-development`, `early-math` |
 | social-emotional | `self-awareness` |
+
+This is now the **only** unpopulated category left in the library.
 
 **At the start of each section, read `CATEGORIES_BY_SECTION` in
 `lib/report-card-comments.ts` directly.** Never infer a section's category list
@@ -442,21 +584,25 @@ tracked target, not per-category quotas.
 
 ## 11. Next steps
 
-Remaining content: **preschool (80-100), academics (40-60), social-emotional
-(30-40)**, roughly 140-190 comments. Preschool is next. Follow the §4 workflow
-exactly: content map first, wait for approval, then one category at a time with
-a self-audit before each write.
+**Resolve §12 first.** Do not open an Academics content map until the
+final-target question is answered, because the answer may change what Academics
+and Social-Emotional are supposed to contain.
+
+Remaining content: **academics (40-60), social-emotional (30-40)**, roughly
+70-100 comments. Follow the §4 workflow exactly: content map first, wait for
+approval, then one category at a time with a self-audit before each write.
 
 Then, in order:
 
-1. **Whole-library structural review (deferred).** Two known clusters to thin in
-   one coordinated pass, not piecemeal:
+1. **Whole-library structural review (deferred).** Three known clusters to thin
+   in one coordinated pass, not piecemeal:
    - **Behavior:** frame A still holds 22 comments and three stock closers hold
      24. Stock-frame share is 73% after the first pass.
    - **ADHD:** `[Student]` openings at 56% of 57; "may support this" at 6 of 24
      growth comments, all concentrated in task-completion and organization
      (drafted before the vary-the-conditional rule was established).
-   Do not fix either piecemeal while drafting new sections.
+   - **Preschool:** four frames at 13% or below of 40 growth comments (§7b).
+   Do not fix any of them piecemeal while drafting new sections.
 2. Evaluate the deferred content ideas from §7
 3. Decide whether behavior's 145 and ADHD's 57 stand as final
 4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
@@ -465,3 +611,63 @@ Then, in order:
 5. Commit the branch, open the PR (this route is `.tsx`, so it is
    **branch-and-wait**, never self-merge)
 6. Stripe integration, gating, checkout
+
+---
+
+## 12. UNRESOLVED: the final-target math does not add up
+
+**Raised 2026-07-28 by Greg, after Preschool completed. Answer this before
+drafting Academics.**
+
+The arithmetic:
+
+| | |
+|---|---|
+| Current library | **301** |
+| Academics target | 40-60 |
+| Social-Emotional target | 30-40 |
+| **Projected final total** | **371-401** |
+| Target as stated in this handoff (DISPROVEN, see below) | ~450-480 |
+| **Apparent gap** | **49-109 comments** |
+
+The three completed sections are not the cause. Behavior (145) and ADHD (57)
+came in under target and Preschool (92) hit its map, but even at the **top** of
+every remaining range the library lands at 401, still 49 short of 450.
+
+**Do NOT close this gap by quietly expanding Academics or Social-Emotional.**
+That would reintroduce exactly the padding this project has refused at every
+step, and it contradicts the standing rule that section totals are need-based.
+
+### Checked against both source docs 2026-07-28, same session
+
+Possibility 1 is confirmed. **The "~450-480" figure is drift and was never an
+approved number.** Neither source doc contains it:
+
+| Source | Stated overall target |
+|---|---|
+| `Report Card Comment Library - Product Decision.md`, "Content target" | "Approximately **350-450** genuinely distinct comments" |
+| `Report Card Comment Library - V1 Schema.md` §2, sum of the five per-section ranges (150-200, 60-80, 80-100, 40-60, 30-40) | **360-480** |
+
+Schema §2 also explicitly warns against the arithmetic that produces an inflated
+number: an earlier draft multiplied 27 categories by 15-20 each, reached 405-540,
+and was corrected precisely because it was "quietly over target, and worse, an
+incentive to pad narrow categories."
+
+**Resolution: the projected 371-401 sits inside both approved bands.** It clears
+the Product Decision's 350-450 and sits inside Schema §2's 360-480. There is no
+gap and nothing to make up. The apparent 49-109 shortfall was measured against a
+number that does not exist in any approved document.
+
+**Consequences:**
+
+- Academics stays at 40-60 and Social-Emotional at 30-40. Do not expand either
+  to chase a total.
+- The tracked target is **350-450** (Product Decision, the source of truth for
+  scope). Every "~450-480" reference in this handoff has been corrected.
+- If a section again appears to fall short, check the figure against the Product
+  Decision doc before treating it as a gap. This is the second time a derived
+  number has drifted upward and created phantom scope.
+
+Greg still owns the final call on whether 371-401 is the right landing place. The
+point resolved here is narrower: **there is no arithmetic problem to solve, so no
+padding is warranted.**
