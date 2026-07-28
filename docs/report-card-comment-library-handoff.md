@@ -1,8 +1,8 @@
 # Report Card Comment Library — Session Handoff
 
 **Last updated:** 2026-07-28
-**Status:** Step 6 in progress. Behavior section complete (145). Library at 160 of ~450-480.
-**Next task:** Draft the ADHD section (target 60-80).
+**Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57). Library at 213 of ~450-480.
+**Next task:** Draft the Preschool section (target 80-100). Do not start until the map is approved.
 
 ---
 
@@ -133,6 +133,31 @@ being over-applied.
 **Project rule:** no em dashes anywhere in user-facing text. The audit script
 checks this automatically.
 
+### The observed-versus-possible support rule (established during ADHD, applies library-wide)
+
+Any comment naming a support must be one of two forms, and the wording is not
+interchangeable:
+
+- **Observed support** (the teacher has seen it work for this student): direct
+  wording. "Attention is steadier with a brief check-in partway through a task."
+  "Identifying a clear first step helps them begin."
+- **Possible support** (a strategy being proposed, not reported): conditional
+  wording. "Dividing a task into shorter segments **may support** this."
+  "More frequent movement opportunities **might help**."
+
+Positive comments lean observed, because the teacher is reporting what happened.
+**A positive comment must never use conditional support wording** (audited: 0 in
+ADHD). Growth comments use both, but a growth comment proposing a strategy the
+teacher has not seen work must be conditional.
+
+This is what lets the library name supports at all without violating style rule
+3 (no invented interventions or claimed results).
+
+**Vary the conditional construction from the start.** "May support this" alone
+reached 50% of ADHD growth comments before being deliberately varied ("could
+help," "might help," restructured sentences), ending at 25%. Do not let a single
+modal phrase dominate a section and defer the fix.
+
 ### Additional wording rules Greg established during Step 6
 
 These came out of batch reviews and are not in the schema doc yet:
@@ -189,19 +214,126 @@ stock closers hold 24, but they are now spread thinly rather than clustered.
 drafted**, so the same formulas can be thinned once, coordinated, rather than
 piecemeal.
 
-**Deferred content ideas (do NOT add during ADHD):** specials/substitutes/
-different-adult contexts, unstructured settings (recess, hallway, lunch),
-digital/device conduct, preschool-appropriate participation. Evaluate these only
-after the full library exists.
+**Deferred content ideas (do NOT add while drafting other sections):**
+specials/substitutes/different-adult contexts, unstructured settings (recess,
+hallway, lunch), digital/device conduct, preschool-appropriate participation.
+Evaluate these only after the full library exists.
+
+---
+
+## 7a. ADHD section — COMPLETE (57 comments, 5 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| attention-and-focus | 15 | 9 | 6 |
+| task-completion | 12 | 7 | 5 |
+| organization | 12 | 7 | 5 |
+| self-regulation-strategies | 10 | 6 | 4 |
+| impulse-control | 8 | 4 | 4 |
+| **TOTAL** | **57** | **33** | **24** |
+
+Target was 60-80. **57 was accepted deliberately, not padded.** The approved map
+planned 66; nine were lost to consolidation and guardrail-driven cuts, every one
+of them Greg-directed. Padding to 60 was explicitly declined.
+
+**Grade bands:** 3-5 = 57, middle-upper = 53, k-2 = 33, preschool = 0.
+Preschool is intentionally zero (the Preschool section owns that band, and
+due-date/assignment tracking is not a preschool concept).
+
+**Audit result:** zero near-duplicate pairs at >=0.35 similarity, both within
+ADHD and against the entire rest of the library. That threshold is stricter than
+the >=0.40 used on behavior.
+
+### Category boundaries settled during the ADHD build
+
+| Category | Owns |
+|---|---|
+| attention-and-focus | Whether attention is sustained or regained, as a recurring pattern |
+| impulse-control | Acting, speaking, or moving before pausing, across situations |
+| organization | Workable systems for materials, papers, assignments, due dates, unfinished work |
+| task-completion | Whether work is begun, finished, resumed, and submitted across assignments |
+| self-regulation-strategies | Recognizing a need and selecting, requesting, or using a strategy |
+
+Worked distinctions:
+
+- Task initiation appears in **task-completion** only as a recurring pattern
+  across assignments, never as one isolated slow start (that is
+  `behavior/independence`).
+- Starting *too fast*, before reviewing the task, is **impulse-control**, not
+  task-completion.
+- Work never finished (**task-completion growth-02**) is kept distinct from work
+  completed but not submitted (**growth-03**). Different failure points.
+- Misplaced papers (**organization**) is distinct from unsubmitted completed work
+  (**task-completion**).
+- Recording assignments, due dates, and outstanding work were consolidated into
+  **one** organization concept in two tones, not three near-duplicate entries.
+- "Returning to learning after using a strategy" lives in
+  `adhd-positive-impulse-control-03`, deliberately not duplicated in
+  self-regulation-strategies.
+- Multi-day project *effort* is `behavior/effort-and-motivation`; multi-day
+  project *organization* is `adhd/organization`.
+
+### Content guardrails established during the ADHD build
+
+These came out of Greg's batch reviews and apply to future sections:
+
+- Do not equate organization with a neat desk or tidy folders. A system can look
+  unconventional and still work. Measure whether the student can locate
+  materials, identify what needs attention, and move work through the steps.
+- Do not frame impulsivity as disrespect, defiance, carelessness, or character.
+- Do not treat stillness, silence, or immediate compliance as the ideal, and do
+  not praise a student merely for being quiet or seated.
+- Movement comments focus on using appropriate opportunities and returning to
+  learning, never on suppressing movement.
+- Do not treat unfinished work as laziness or lack of caring.
+- Do not praise overwork, perfectionism, rigid systems, or working beyond the
+  expected time.
+- Do not praise compliance with adult support. Asking for help, movement, space,
+  or a break is self-advocacy, not dependence.
+- Growth comments must not blame a student for failing to recognize a need
+  before becoming overwhelmed.
+- Do not imply families are responsible when materials do not travel between
+  home and school.
+- Do not assume a specific classroom system exists (no signal system, break
+  spot, seating menu, or chart as an established fixture).
+- Avoid naming specialized or clinical tools.
+- A positive comment must describe a real strength or growing self-management
+  skill, not merely the absence of a problem.
+
+### Known thin spots (reported, deliberately not filled)
+
+1. **Growth is lighter than positive in every category** (24 vs 33). Most
+   pronounced in attention-and-focus (9/6). A teacher writing about a documented
+   challenge likely reaches for growth comments more often, so this is the
+   imbalance most likely to be felt in real use.
+2. **k-2 coverage is 33 of 57 (58%)**, skewing toward 3-5 and middle-upper.
+   Developmentally right for organization and task-completion, less obviously
+   right for attention-and-focus and impulse-control.
+3. **impulse-control at 8** is the smallest category and lost the most during
+   review. If any ADHD category warrants a later revisit, it is this one.
 
 ---
 
 ## 8. Boundary decisions (hard-won, apply them)
 
-The single most important rule for the next session:
+**CORRECTED 2026-07-28 (during the ADHD build).** The earlier framing said
+behavior comments carry no support clauses. That was wrong and is superseded:
 
-- **`behavior/focus-and-attention`** = attention during a **specific** task, subject, setting, or time of day. No implication of a persistent pattern. **Carries no support clauses.**
-- **`adhd` section** = a **broader or recurring** attention/executive-function pattern, and **may name supports that help**.
+- **The real axis is bounded-situation vs. recurring-pattern.**
+  `behavior/*` describes a bounded classroom situation or skill.
+  `adhd` describes a recurring pattern, strategy, or support condition **across**
+  situations.
+- **Behavior comments are not forbidden from mentioning supports.** Support
+  language is a common *consequence* of the recurring-pattern lane, not the test
+  for it.
+- **Do not add support language merely to make a behavior-like comment qualify
+  for ADHD.** If a comment describes one bounded situation, it belongs in
+  behavior no matter how the support clause is worded.
+
+Applied concretely between `behavior/focus-and-attention` and `adhd`:
+
+- **`behavior/focus-and-attention`** = attention during a **specific** task, subject, setting, or time of day.
+- **`adhd` section** = a **broader or recurring** attention/executive-function pattern.
 
 All 16 behavior/focus-and-attention comments already exist and are scoped to
 named settings. The ADHD section must occupy the recurring-pattern-and-supports
@@ -236,15 +368,24 @@ Worked examples of the fine distinctions:
 ## 9. Reusable audit scripts
 
 Location: the session scratchpad. **Recreate them if missing** (they are
-read-only analysis tools, not repo files).
-
-`C:\Users\doubl\AppData\Local\Temp\claude\c--Projects-Shorthand-website\b6e8418c-f6e8-45eb-b80b-8342ee951476\scratchpad\`
+read-only analysis tools, not repo files). They live in whatever the current
+session's scratchpad path is; recreating is faster than hunting for the old one.
 
 | Script | Checks |
 |---|---|
-| `audit-comments.mjs` | Totals by section/category/tone, grade-band coverage, **duplicate texts**, **missing `[Student]` token**, **em dashes**, and a parse-count vs. raw-count check that catches malformed records |
-| `behavior-audit.mjs` | Full text dump by category/tone, opening-phrase and closing-phrase frequency, per-category grade bands, **Jaccard near-duplicate detection** (same tone, ≥0.40). Currently filtered to `section === 'behavior'`; one line to generalize |
-| `growth-structures.mjs` | Classifies growth comments into structural frames, reports stock-frame share |
+| `audit-comments.mjs` | Totals by section/category/tone, grade-band coverage, **duplicate IDs**, **duplicate texts**, **missing `[Student]` token**, **em/en dashes**, **ID convention + sequential numbering**, **locked-but-unpopulated categories**, and a parse-count vs. raw-count check that catches malformed records |
+| `section-audit.mjs` | Takes a section name. **Jaccard near-duplicates within the section AND against the entire rest of the library** (>=0.35), support-language breakdown (conditional vs observed vs none, plus a check that no positive comment uses conditional wording), opening-structure buckets, growth-closer frequency, repeated 4-grams, per-category grade bands |
+| `dump.mjs` | Takes `section` or `section/category` filters. Prints full text by tone with grade bands. Use before drafting to read the adjacent categories you must not restate |
+
+**Do not count anything by hand.** Greg has caught manual miscounts twice, and
+one missing `[Student]` token reached his review because a batch was
+hand-audited. Run the scripts.
+
+### Structural classification rule
+
+When bucketing opening structures, **every opening beginning with `[Student]`
+goes in one bucket**, including possessive forms (`[Student]'s`). Splitting them
+understates concentration.
 
 **Standard verification after every batch:**
 
@@ -259,64 +400,68 @@ technically risky or a regression is suspected.
 
 ---
 
-## 10. Library status: 160 comments
+## 10. Library status: 213 comments
 
-| Section | Populated | Target | Categories locked | Categories populated |
-|---|---|---|---|---|
-| behavior | **145** | 150-200 | 8 | 8 |
-| adhd | 4 | 60-80 | 5 | 4 |
-| preschool | 4 | 80-100 | 6 | 4 |
-| academics | 4 | 40-60 | 4 | 4 |
-| social-emotional | 3 | 30-40 | 4 | 3 |
-| **TOTAL** | **160** | ~450-480 | 27 | 23 |
+| Section | Populated | Target | Categories locked | Categories populated | Status |
+|---|---|---|---|---|---|
+| behavior | **145** | 150-200 | 8 | 8 | COMPLETE |
+| adhd | **57** | 60-80 | 5 | 5 | COMPLETE |
+| preschool | 4 | 80-100 | 6 | 4 | next |
+| academics | 4 | 40-60 | 4 | 4 | pending |
+| social-emotional | 3 | 30-40 | 4 | 3 | pending |
+| **TOTAL** | **213** | ~450-480 | 27 | 24 | |
 
-The non-behavior counts are the original Step 3 sample comments only.
+**Remaining: Preschool (80-100), Academics (40-60), Social-Emotional (30-40).**
+Roughly 140-190 comments left. The preschool/academics/social-emotional counts
+above are the original Step 3 sample comments only.
 
-### RESOLVED: the ADHD category-count question
+Both completed sections came in **under** their targets (145 vs 150-200, 57 vs
+60-80) and both were accepted deliberately. Do not retroactively pad them.
 
-Greg flagged that planning said five ADHD categories while the data showed four.
+### Verify the category list against the schema, not the data
 
-**Verified against `CATEGORIES_BY_SECTION` in `lib/report-card-comments.ts`:
-the schema locks FIVE ADHD categories.**
-
-```
-adhd: ['attention-and-focus', 'impulse-control', 'organization',
-       'task-completion', 'self-regulation-strategies']
-```
-
-`task-completion` is locked but **unpopulated**: no Step 3 sample was written
-for it. The four visible categories are an artifact of sampling, not a schema
-discrepancy. **The ADHD map must cover all five, including `task-completion`.**
-
-The same pattern exists elsewhere and is expected, not a bug. Four locked
-categories across three sections have zero comments so far, and each must be
-covered when its section is drafted:
+Locked categories with zero comments are expected, not a bug: they are an
+artifact of Step 3 sampling. `adhd/task-completion` was the first case and is
+now populated. Still outstanding:
 
 | Section | Locked but currently unpopulated |
 |---|---|
-| adhd | `task-completion` |
 | preschool | `social-emotional-development`, `early-math` |
 | social-emotional | `self-awareness` |
 
-Verify this list against `CATEGORIES_BY_SECTION` at the start of each section,
-rather than inferring the category list from what already has comments.
+**At the start of each section, read `CATEGORIES_BY_SECTION` in
+`lib/report-card-comments.ts` directly.** Never infer a section's category list
+from what already has comments. The audit script reports this automatically
+under "locked but unpopulated categories."
 
-Schema §2 guidance for ADHD: ~12-16 per category if even, but
-`self-regulation-strategies` may want fewer, more specific entries than
-`attention-and-focus`. Section total is the tracked target, not per-category quotas.
+Schema §2 guidance for preschool: roughly even across all 6 categories is
+plausible, since all are genuinely core to the age band. Section total is the
+tracked target, not per-category quotas.
 
 ---
 
-## 11. Next steps after ADHD
+## 11. Next steps
 
-Remaining: preschool (80-100), academics (40-60), social-emotional (30-40).
-Roughly 230-260 comments after ADHD.
+Remaining content: **preschool (80-100), academics (40-60), social-emotional
+(30-40)**, roughly 140-190 comments. Preschool is next. Follow the §4 workflow
+exactly: content map first, wait for approval, then one category at a time with
+a self-audit before each write.
 
 Then, in order:
 
-1. Whole-library structural review (deferred frame-A and stock-closer thinning)
+1. **Whole-library structural review (deferred).** Two known clusters to thin in
+   one coordinated pass, not piecemeal:
+   - **Behavior:** frame A still holds 22 comments and three stock closers hold
+     24. Stock-frame share is 73% after the first pass.
+   - **ADHD:** `[Student]` openings at 56% of 57; "may support this" at 6 of 24
+     growth comments, all concentrated in task-completion and organization
+     (drafted before the vary-the-conditional rule was established).
+   Do not fix either piecemeal while drafting new sections.
 2. Evaluate the deferred content ideas from §7
-3. Decide whether behavior's 145 and any other under-target sections stand
-4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log with the Step 6 content decisions and the additional wording rules in §6 above
-5. Commit the branch, open the PR (this route is `.tsx`, so it is **branch-and-wait**, never self-merge)
+3. Decide whether behavior's 145 and ADHD's 57 stand as final
+4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
+   with the Step 6 content decisions, the observed-versus-possible support rule
+   (§6), the corrected boundary rule (§8), and the ADHD guardrails (§7a)
+5. Commit the branch, open the PR (this route is `.tsx`, so it is
+   **branch-and-wait**, never self-merge)
 6. Stripe integration, gating, checkout
