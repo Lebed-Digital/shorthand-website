@@ -3,8 +3,9 @@
 **Last updated:** 2026-07-28
 **Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57).
 Preschool complete (92). Library at 301.
-**Next task:** Resolve the final-target math in §12 BEFORE drafting Academics.
-Do not start a content map until that question is answered.
+**Next task:** Academics content map. The final-target question is **resolved**
+(§12): the projected 371-401 sits inside both approved bands, and the approved
+per-section targets are unchanged.
 
 ---
 
@@ -34,9 +35,9 @@ workflows, AI generation, complex export formats, subscriptions, tiers.
 
 **Branch:** `feature/report-card-comment-library-prototype` (NOT merged to main)
 
-**Latest commit:** `c003830` Report Card Comment Library: Preschool section
-complete (92 comments). Working tree clean. Not pushed, not merged, no deploy.
-Branch is 3 commits ahead of its remote and 4 ahead of `origin/main`.
+**Latest commit:** `22f6d7c` Report Card Comment Library: update handoff for
+Preschool completion. Not pushed, not merged, no deploy. Branch is 4 commits
+ahead of its remote and 5 ahead of `origin/main`.
 
 | File | Role |
 |---|---|
@@ -46,8 +47,8 @@ Branch is 3 commits ahead of its remote and 4 ahead of `origin/main`.
 
 The route is not linked from anywhere on the site yet.
 
-**Uncommitted changes exist on this branch** (both files modified). Step 5 fixes
-and all Step 6 content are uncommitted as of this handoff.
+**Working tree is clean** (verified 2026-07-28). Step 5 fixes and all Step 6
+content through Preschool are committed.
 
 ---
 
@@ -584,9 +585,8 @@ tracked target, not per-category quotas.
 
 ## 11. Next steps
 
-**Resolve §12 first.** Do not open an Academics content map until the
-final-target question is answered, because the answer may change what Academics
-and Social-Emotional are supposed to contain.
+**§12 is resolved.** The approved targets stand unchanged: Academics 40-60,
+Social-Emotional 30-40. Do not expand either to chase a total.
 
 Remaining content: **academics (40-60), social-emotional (30-40)**, roughly
 70-100 comments. Follow the §4 workflow exactly: content map first, wait for
@@ -614,7 +614,7 @@ Then, in order:
 
 ---
 
-## 12. UNRESOLVED: the final-target math does not add up
+## 12. RESOLVED: the final-target math (no gap exists)
 
 **Raised 2026-07-28 by Greg, after Preschool completed. Answer this before
 drafting Academics.**
