@@ -27,13 +27,9 @@ My years as a Registered Behavior Technician reinforced something preschool teac
 
 ## Why preschool behavior comments are different
 
-A third grader refusing to share is a discipline issue. A three-year-old refusing to share is a developmental stage.
+A preschooler refusing to share is different from an older student deliberately ignoring an established classroom expectation. With young children, the behavior usually points to a social skill that is still developing. Framing it that way turns a complaint into a goal.
 
-You cannot use the same language for both. Preschool teachers must focus on growth and skill acquisition.
-
-Many challenging preschool behaviors are signs of skills that are still developing. This reframe changes everything.
-
-It turns a complaint into a goal. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
+Often, challenging preschool behaviors are signs of a skill still in progress rather than a character issue. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
 
 ## K-8 Language vs. Preschool-Appropriate Language
 
@@ -53,7 +49,7 @@ Here are categorized copy-paste examples you can use right now. For more ideas, 
 
 ### Sharing and turn-taking
 
-Sharing is incredibly hard for young children. It is completely normal for them to struggle.
+Sharing is genuinely hard at this age, and struggling with it is developmentally common.
 
 "Leo is working hard on taking turns with the classroom toys. He is learning to trade items with his friends."
 
@@ -81,7 +77,7 @@ Routines are the scaffolding that makes the rest of the day possible. These comm
 
 ### Emotional regulation
 
-Big feelings are part of the daily routine. You must document how they handle those emotions.
+Big feelings are part of the daily routine at this age. How a child works through them is worth capturing.
 
 "Sam is learning to take deep breaths when he feels frustrated. He is making progress identifying his emotions."
 
@@ -89,7 +85,7 @@ Big feelings are part of the daily routine. You must document how they handle th
 
 ### Following directions
 
-Following two-step directions is a massive milestone. Not every child hits it at the same time.
+Following two-step directions is a real milestone, and not every child hits it on the same timeline.
 
 "Jackson does a wonderful job following simple routines. He is working on following two-step instructions."
 
@@ -97,7 +93,7 @@ Following two-step directions is a massive milestone. Not every child hits it at
 
 ### Social interaction with peers
 
-Making friends is the most important part of early childhood. This is a critical area to assess.
+Learning how to join play, communicate with peers, and build friendships is a major part of early childhood development. These comments help capture that growth clearly.
 
 "Noah loves playing alongside his classmates. He is practicing asking friends to join his games."
 
@@ -105,15 +101,15 @@ Making friends is the most important part of early childhood. This is a critical
 
 ### Separation and transitions
 
-Saying goodbye to mom or dad is terrifying. We have to document that progress gently.
+Saying goodbye can be genuinely hard for a young child, and it's worth documenting that progress with a gentle touch.
 
-"Liam is having an easier time separating in the morning. He settles into his morning work quickly."
+"Liam is having an easier time separating from his caregiver in the morning. He settles into his morning work quickly."
 
 "Olivia still needs a hug at drop-off. She is becoming more confident entering the classroom."
 
 ### Areas needing growth
 
-Sometimes you have to address difficult behavior directly.
+Sometimes a behavior is significant enough that it needs to be named directly. The goal is not to soften it beyond recognition, but to describe it without labeling the child.
 
 "Ethan is working on keeping a safe body when he is angry. We are practicing safe hands every day."
 
