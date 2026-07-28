@@ -16,23 +16,21 @@ As a teacher and former Registered Behavior Technician, I know what phrases like
 
 ![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
 
-A student with ADHD is not choosing to be unfocused. Their brain is wired differently, and report card language that treats their challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what every parent of a neurodiverse kid is actually hoping to read.
+A student with ADHD is not simply choosing to be unfocused. ADHD can make attention regulation, task initiation, and impulse control much harder, especially during tasks that are lengthy, repetitive, or overwhelming. Report card language that treats those challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what every parent of a neurodiverse kid is actually hoping to read.
 
 Below are ten copy-and-paste comment templates that are honest, professional, and strength-based.
 
 ## Why Strength-Based Comments Matter for ADHD
 
-Neurodiverse students often receive a constant stream of negative feedback throughout the school day. By the time they reach middle school, they have heard thousands of micro-corrections. Report cards should not just be a list of what they cannot do.
+Many neurodiverse students receive a steady stream of corrections throughout the school day. By middle school, that feedback can shape how they see themselves as learners. Report cards should not just be a list of what they cannot do.
 
-When you write a strength-based comment, you start with what the student does well. This makes the parent more receptive to the feedback.
-
-Once you establish their strengths, you can introduce the area of growth as a skill they are currently building, rather than a permanent deficit.
+Lead with what the student does well, and the parent is more receptive to what comes next. Once you've established the strength, you can introduce the area of growth as a skill they're currently building, not a permanent deficit.
 
 If you are looking to build a habit of sharing these wins throughout the term, check out our [positive behavior email to parents template](/blog/positive-behavior-email-to-parents-template) collection to establish strong partnerships early.
 
 ## 10 Report Card Comments for Students with ADHD
 
-Here are ten templates categorized by the common areas we track on report cards.
+Here are ten templates categorized by the common areas we track on report cards. Replace the strategies and outcomes in each template with what you have actually observed. A strength-based comment should still be specific and accurate.
 
 ### Focus and Attention Struggles
 
@@ -79,12 +77,12 @@ For example, if a student is struggling with organization and forgetting work, y
 
 ## How ShortHand Simplifies Your Report Card Season
 
-Writing personalized, behavior-focused comments for neurodiverse students takes a lot of time. If you do not have specific data points, you end up writing generic phrases that do not capture the student's true progress.
+Writing personalized, behavior-focused comments for neurodiverse students takes time. Without specific data points, you end up writing generic phrases that don't capture the student's actual progress.
 
-This is why having a digital log is a game changer.
+This is where a digital log actually earns its keep.
 
 ShortHand allows you to log specific student behaviors, accommodations used, and positive milestones in just a few seconds during the school day. When report card season arrives, you do not have to rely on memory or guess which strategies worked. If you do not yet have a logging habit in place, [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) is a practical starting point for building one.
 
-With ShortHand, you have a complete, searchable timeline of exactly how a student responded to visual schedules, movement breaks, or reminders. You can generate detailed, professional, and strength-based comments that parents will appreciate, all without losing your weekends to grading.
+With ShortHand, you have a searchable timeline of exactly how a student responded to visual schedules, movement breaks, or reminders, so the comment you write reflects what actually happened, not what you can still remember in June.
 
-Try ShortHand today and make report card writing stress-free.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and write report card comments from real classroom notes instead of relying on memory.
