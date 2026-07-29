@@ -1287,12 +1287,47 @@ Gated page behavior on every render:
 1. Verify the HMAC locally. Invalid or past `exp` means clear cookie, show paywall.
 2. If `revalidateAfter` has **not** passed, grant access, **no network call**.
 3. If it **has** passed, call `report-card-access-revalidate`:
-   - still `paid`: issue a fresh 30-day cookie with a new 24-hour window
-   - `refunded` / `revoked` / missing: clear cookie, show paywall
-   - **transient DB error: keep existing access** (see the warning in §13.10)
+   - `valid: true`: set a fresh 30-day token with a new 24-hour window, grant access
+   - `not_paid`: clear cookie, show paywall
+   - `lookup_failed`: see the rule immediately below
 
 Cost is roughly one Edge Function call per user per day, off the hot path.
 Revocation takes effect within 24 hours worst case, immediately on a new device.
+
+#### The `lookup_failed` rule (corrected 2026-07-29, read this carefully)
+
+An earlier draft of this section said only "keep existing access" on a transient
+database error. **That was underspecified and would have been a real
+vulnerability.** If the gate minted a fresh token whenever revalidation failed,
+anyone able to induce or wait out a Supabase error could keep renewing access
+forever, and the 30-day hard expiry would never actually bite.
+
+The correct behavior on `lookup_failed`:
+
+- **Temporarily grant access using the existing token.** Do not lock out a
+  paying customer over a transient outage.
+- **Do not mint, refresh, extend, or re-set the token.** `exp` and
+  `revalidateAfter` both stay exactly as they were.
+- Because `revalidateAfter` stays stale, the next render retries revalidation.
+  The system heals itself once Supabase recovers.
+- The existing token therefore keeps working **only until its original hard
+  `exp`**, and no further.
+
+**Never mint a fresh token after `lookup_failed`.**
+
+Complete state table for the gate:
+
+| Token state | Revalidate result | Behavior |
+|---|---|---|
+| valid, `revalidateAfter` not passed | (not called) | grant access, no network call |
+| valid, revalidation due | `valid: true` | **set fresh token**, grant access |
+| valid, revalidation due | `not_paid` | **clear cookie**, show paywall |
+| valid, revalidation due | `lookup_failed` | grant access, **token untouched**, retry next render |
+| past `exp`, or bad signature, or malformed | (not called) | show paywall, **even if Supabase is unavailable** |
+| no cookie | (not called) | show paywall |
+
+An expired or invalid token must never be rescued by a Supabase outage. The
+local HMAC and `exp` check happens first and is decisive on its own.
 
 `verifyAccessToken()` checks signature and hard expiry but deliberately does
 **not** enforce `revalidateAfter`. The caller decides, because the gated page
@@ -1348,6 +1383,11 @@ All four are Deno, all need `verify_jwt = false` at deploy time.
 > **Do not conflate `lookup_failed` with `not_paid` when building the gate.**
 > `lookup_failed` must **keep** existing access, so a Supabase outage does not
 > lock out every paying customer at once. Only `not_paid` revokes.
+>
+> But `lookup_failed` must **never mint a fresh token**. It grants access on the
+> existing token only, leaving `exp` and `revalidateAfter` untouched, so access
+> still dies at the original hard expiry and revalidation retries next render.
+> See the full state table in §13.9.
 
 ### 13.11 Tests completed
 
@@ -1414,36 +1454,65 @@ confirmed before Claude acts on anything adjacent to it.
 
 ### 13.14 Exact next-step prompt
 
-> Continue the Report Card Comment Library Stripe integration on branch
-> `feature/report-card-comment-library-stripe`. Read §13 of
-> `docs/report-card-comment-library-handoff.md` first; it is the authoritative
-> record. Do not redo the migration, it is applied and verified.
+Paste this verbatim into a fresh Claude chat. Tell it to read this handoff
+first, then continue from here.
+
+> Proceed with the Vercel-side checkpoint:
 >
-> Build the Vercel-side access layer:
+> lib/report-card-access.ts
+> success-page verification route
+> cookie issuance
+> server-side library gate
+> 24-hour revalidation handling
 >
-> 1. `lib/report-card-access.ts`, the Node/edge-side verifier mirroring the
->    exact wire format in `supabase/functions/_shared/access-token.ts`
->    (`base64url(payload).base64url(HMAC-SHA256)`, payload
->    `{ purchaseId, exp, revalidateAfter }`, Web Crypto, shared
->    `RCCL_TOKEN_SECRET`). Keep the two implementations in lockstep.
-> 2. `lib/report-card-functions.ts`, the authenticated client for calling the
->    private Edge Functions with the `REPORT_CARD_FUNCTIONS_SECRET` bearer token.
-> 3. The success-page route and page: receive `session_id`, call
->    `report-card-checkout-fulfill` server-side, set the HTTP-only `Secure`
->    `SameSite=Lax` access cookie, show a clear button into the library.
-> 4. The server-side gate on `/report-card-comment-library` with the 24-hour
->    revalidation flow from §13.9. **`lookup_failed` must keep access; only
->    `not_paid` revokes.**
-> 5. The teaser UI: full page structure, section/category list, total comment
->    count, filters, and 1-2 real sample comments per section. Everything else
->    hidden. **The other ~370 comments must not be sent to non-paying browsers
->    and hidden with CSS; server-side gating must keep locked comment text out
->    of the client payload entirely.**
-> 6. The restore-access routes wrapping `report-card-access-restore`
->    (`request` and `confirm`), rate-limited via the existing
->    `report-card-restore` limiter.
+> On a transient lookup_failed, do not immediately lock out a paying customer,
+> but do not refresh or extend the token.
 >
-> Preserve `noindex, nofollow`. Never treat query params, the success redirect,
-> localStorage, or client state as proof of purchase. Stay in Stripe test mode.
-> Do not deploy Edge Functions, configure secrets, register the webhook, push,
-> merge, or change Vercel environment settings. Report at each checkpoint.
+> The existing token may continue granting access only until its original hard
+> exp. Keep revalidateAfter stale so the system retries later. Never mint a
+> fresh token after lookup_failed.
+>
+> Required behavior:
+>
+> valid: true -> set fresh token and grant access
+> not_paid -> clear cookie and show paywall
+> lookup_failed with an otherwise unexpired token -> temporarily grant access
+> using the existing token, without changing expiry or revalidation time
+> expired or invalid token -> show paywall even if Supabase is unavailable
+>
+> Preserve:
+>
+> non-payers must never receive the full 374-comment dataset in browser
+> JavaScript
+> immediate access cannot depend on Resend
+> noindex, nofollow
+> no deployment, secrets, commit, or push yet
+>
+> After implementation, report:
+>
+> Exact gate behavior for every token state
+> Whether the full dataset appears anywhere in the unauthenticated payload
+> Cookie security flags
+> Success-page failure behavior
+> Typecheck, build, and targeted test results
+
+Supporting detail for whoever picks this up (not part of the prompt above):
+
+- The wire format `lib/report-card-access.ts` must mirror exactly is in
+  `supabase/functions/_shared/access-token.ts`:
+  `base64url(payload) + "." + base64url(HMAC-SHA256)`, payload
+  `{ purchaseId, exp, revalidateAfter }`, Web Crypto, shared
+  `RCCL_TOKEN_SECRET`. Keep the two implementations in lockstep.
+- A `lib/report-card-functions.ts` client is also needed: the authenticated
+  caller for the private Edge Functions, sending
+  `Authorization: Bearer <REPORT_CARD_FUNCTIONS_SECRET>`.
+- The full gate state table is in §13.9. The `lookup_failed` rule there is
+  binding.
+- The restore-access routes wrapping `report-card-access-restore` (`request`
+  and `confirm`) are still outstanding, rate-limited via the existing
+  `report-card-restore` limiter. They can follow this checkpoint.
+- The teaser UI is the full page structure, section/category list, total
+  comment count, filters, and 1-2 real sample comments per section, with
+  everything else withheld server-side.
+- Never treat query params, the success redirect, localStorage, or client
+  state as proof of purchase. Stay in Stripe test mode.
