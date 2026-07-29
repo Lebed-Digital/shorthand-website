@@ -20,11 +20,19 @@ shared secrets confirmed matching, and no retries or errors.
 with no PR open. Still test mode only: no live Stripe key, and no real payment
 has ever been taken.
 
-**Still pending:** Resend (no API key, no verified domain), which blocks the
-restore-*request* route and UI (§15.10), the only unbuilt code left.
+**Still pending:** Resend (no API key, no verified domain). **§17 is the
+authoritative Resend setup map**: what to verify, which variables go where, and
+the ordered `RCCL_SITE_URL` flip (§17.8).
 
-**Read §15.13 for the ordered next steps.** Note that §11's step list predates
-all payment work and is superseded; see the banner there.
+**The restore-request route and form are now BUILT (§17.9)**, uncommitted and
+never run against a live service. That closes the last unbuilt code, but
+**changes nothing observable until Resend is configured**: the form completes
+successfully and silently sends nothing, by design (§17.5). Do not describe
+restore email as working until a real send appears in the Resend dashboard.
+
+**Read §17.9 for what shipped, then §17.8 for the ordered next steps**, then
+§15.13 for the wider sequence. Note that §11's step list predates all payment work and is superseded;
+see the banner there.
 
 ---
 
@@ -2295,3 +2303,271 @@ Functions with the updated environment, bumping every function's version by one,
 including `delete-account`, which this project never touched. `ezbr_sha256`,
 `created_at`, and `updated_at` were unchanged on all five, confirming no code
 was redeployed. A version bump alone does not indicate a redeploy.
+
+---
+
+## 17. Resend setup map and restore-request audit (DOCUMENTATION ONLY, 2026-07-29)
+
+**No code was changed, deployed, merged, or configured in this session.** This
+section is the result of a read-only audit of the existing restore code, done to
+establish exactly what Resend setup it expects before any of it is built. The
+implementation plan that came out of this audit is in §17.7, and it is a
+proposal awaiting approval, not a record of work done.
+
+### 17.1 Resend account setup
+
+| Item | Value | Notes |
+|---|---|---|
+| Domain to verify | `getshorthandapp.com` | A subdomain such as `mail.getshorthandapp.com` also works. Nothing in the code hard-codes either one. |
+| Sender address | `ShortHand <info@getshorthandapp.com>` | Not set in code. Read entirely from `RESEND_FROM_ADDRESS` and passed straight through to Resend's `from` field, so the `Name <addr>` display form is accepted. |
+| API key permissions | **Sending access only**, restricted to the verified domain | The function never reads, lists, or manages anything. It makes exactly one call: `POST https://api.resend.com/emails`. |
+
+`info@getshorthandapp.com` is the right sender because it is already the address
+used across the whole site, including on both restore pages
+(`restore/page.tsx`, `restore/failed/page.tsx`), so replies reach a real inbox.
+`hello@` was used in a first draft and corrected (§14.13); do not reintroduce it.
+
+### 17.2 Where the variables live: Supabase only
+
+| Variable | Location | Read at |
+|---|---|---|
+| `RESEND_API_KEY` | **Supabase Edge Function secrets only** | `report-card-access-restore/index.ts` |
+| `RESEND_FROM_ADDRESS` | **Supabase Edge Function secrets only** | same |
+| `RCCL_SITE_URL` | **Supabase Edge Function secrets only** | same, builds the emailed link |
+
+**No Resend variable belongs in Vercel.** The Vercel side never touches Resend
+and never sends mail. All three are read with `Deno.env.get` inside the Edge
+Function. This matches the secrets table in §13.4; adding the two Resend keys
+takes the configured Supabase secret count from six to eight.
+
+### 17.3 `RCCL_SITE_URL` is shared across Preview and Production
+
+**This is the trap in this section.** Supabase secrets are project-wide. They
+are not branch-scoped and not environment-scoped, unlike the Vercel Preview
+variables used in §16. There is exactly one `RCCL_SITE_URL` and both Preview and
+Production read the same value.
+
+It builds the link inside every restoration email. So whatever it is set to is
+where **every** restore email points, for every user, regardless of which
+deployment they bought from.
+
+Consequences, both real:
+
+- Set to the Preview URL, production emails send paying teachers to a preview
+  deployment (which is normally behind Vercel Authentication).
+- Set to production, the Preview restore flow cannot be tested, because the
+  emailed link will leave the preview deployment entirely.
+
+There is no way to split this per environment with the current design. It must
+be flipped deliberately, in the order given in §17.8, and flipping it is a
+required cutover step, not a cleanup detail.
+
+### 17.4 The restore-request flow has no caller (the real gap)
+
+> **Superseded by §17.9 (2026-07-29).** The relay route and form described as
+> missing below were built later the same session. The audit findings are kept
+> verbatim because they explain *why* the code is shaped the way it is. What
+> remains true: Resend is still unconfigured, so the flow still sends nothing.
+
+The Edge Function's `action: "request"` handler is **fully built and deployed**.
+Nothing invokes it. Verified three ways:
+
+1. There is no `app/api/report-card-access/restore` route. The only report-card
+   API routes that exist are `report-card-access/refresh`,
+   `report-card-checkout/create-session`, and
+   `report-card-checkout/verify-session`.
+2. Grepping `app/` and `lib/` for the `request` action literal returns nothing.
+3. `/report-card-comment-library/restore` is still the §14.13 placeholder. It
+   has **no email form**, and tells users to email `info@getshorthandapp.com`
+   manually.
+
+**Configuring Resend alone will therefore change nothing observable.** No code
+path reaches the send. Two pieces must still be built: a Vercel API route that
+relays the request action, and a form that posts to it. The confirm half is
+complete and was proven in §15/§16; only the half that generates and emails
+links is missing. This restates §15.10 and remains true.
+
+### 17.5 Success is not observable from the HTTP response
+
+`handleRequest` **always** returns `{ ok: true }`, whether the email matched a
+paid purchase, matched nothing, or was malformed. This is deliberate
+anti-enumeration design, documented in the function's own header comment: the
+caller must not be able to tell whether a given address bought the product.
+
+A missing `RESEND_API_KEY` or `RESEND_FROM_ADDRESS` is **logged and returns
+early**, never thrown, so the response is still `{ ok: true }`.
+
+**A completely unconfigured Resend setup is therefore indistinguishable from a
+working one, from the outside.** Delivery must be verified through:
+
+- **Supabase Edge Function logs** (the `console.error` lines name the exact
+  missing variable, and log Resend's status code and body on a failed send), and
+- **the Resend dashboard** (delivery events).
+
+Never treat a `200` or an `{ ok: true }` from this route as evidence that mail
+was sent. That inference is invalid by design.
+
+### 17.6 The restore email is plain text only
+
+The send body sets `text` and no `html` field. This is deliverable and fine, and
+arguably better for spam filtering, but it means no styling, no logo, and no
+button: the recipient sees a bare URL. Worth knowing before anyone reports it as
+a bug. Subject line is `Your Report Card Comment Library access`. The link
+expires in 30 minutes (`RESTORE_TOKEN_TTL_SECONDS`).
+
+### 17.7 Implementation plan (APPROVED, steps 1-2 BUILT: see §17.9)
+
+Steps 1 and 2 were approved and are now built; §17.9 records what actually
+shipped and where it differs from the text below. Steps 3 and 4 remain pending
+and are still blocked on Resend.
+
+1. **Vercel relay route**, `app/api/report-card-access/restore/route.ts`:
+   POST, `runtime = 'nodejs'`, `dynamic = 'force-dynamic'`. Validates the email
+   shape, applies an IP-keyed rate limit (this path is IP-keyed unlike
+   restore-confirm, because here there is no link to key on; see §15.5 for why
+   confirm went the other way), relays via `callReportCardFunction`, and returns
+   the same generic success for every outcome including its own failures, to
+   preserve §17.5.
+2. **Restore form** replacing the §14.13 placeholder: email field, one submit
+   button, and a single terminal state saying that if that address bought the
+   library, a link is on its way, and to check the inbox and the spam folder. It
+   must **never** confirm or deny that the address was found. Keep the
+   `info@getshorthandapp.com` fallback line for the genuinely stuck. Keep
+   `noindex, nofollow`.
+3. **Preview testing** covering paid email, unknown email, expired link, reused
+   link, and successful unlock (§17.8).
+4. **`RCCL_SITE_URL` flip** per §17.8, before production cutover.
+
+### 17.8 Required ordering for `RCCL_SITE_URL`
+
+Because of §17.3, the flip is ordered, not incidental:
+
+1. Set `RCCL_SITE_URL` to the **exact Preview URL** of the branch deployment,
+   including scheme and no trailing slash.
+2. Run the full Preview restore test matrix (§17.7 step 3). Vercel
+   Authentication has to be off for the emailed link to land, exactly as in
+   §16.5, and must be **re-enabled immediately afterwards**.
+3. At production cutover, set `RCCL_SITE_URL` to
+   **`https://getshorthandapp.com`**.
+4. Re-verify with one real restore email from production after the merge. Until
+   step 3 happens, any restore email a real customer triggers points at a
+   preview deployment.
+
+**Do not skip step 3.** It is the single change that most easily gets forgotten,
+because nothing fails loudly when it is wrong: the emails still send, still
+return `200`, and still look fine in the logs. They just point somewhere the
+customer cannot reach.
+
+### 17.9 What was actually built (steps 1-2, 2026-07-29)
+
+**Not committed, not pushed, not deployed, no PR.** Resend is still
+unconfigured and `RCCL_SITE_URL` is unchanged. Steps 3 and 4 of §17.7 have not
+been started.
+
+**Files:**
+
+| File | Change |
+|---|---|
+| `app/api/report-card-access/restore/route.ts` | **new**, the relay route |
+| `app/report-card-comment-library/restore/RestoreRequestClient.tsx` | **new**, the form |
+| `app/report-card-comment-library/restore/page.tsx` | rewritten, placeholder replaced |
+
+#### Differences from the §17.7 proposal
+
+**1. The response contract is asymmetric, not uniformly generic.** §17.7 said
+the route would return generic success for *every* outcome. That was overcautious
+and is not what was built. Malformed input now gets a 400:
+
+| Case | Response |
+|---|---|
+| Invalid JSON body | `400 { error: 'invalid_request' }` |
+| Missing / non-string / malformed / >320-char email | `400 { error: 'invalid_request' }` |
+| Valid email, purchased | `200 { ok: true }` |
+| Valid email, never purchased | `200 { ok: true }` (identical) |
+| Edge Function unreachable or erroring | `200 { ok: true }`, real failure logged |
+| Rate limited | `429` |
+
+This does not weaken anti-enumeration. A 400 is a statement about the request,
+not about any address: a well-formed email can never produce one, so a 400
+cannot separate a customer from a stranger. What must stay indistinguishable is
+the three 200 cases, and they are byte-identical, **including when our own
+infrastructure fails**. That last case is the subtle one: surfacing a real error
+only to people whose send actually attempted would be a purchase oracle, so
+transport failures are logged server-side and shown as success.
+
+**2. No rate limiter was added.** §17.7 implied new limiter config. Not needed.
+`report-card-restore` already existed in `lib/ratelimit.ts` at **5 requests per
+hour, IP-keyed**, defined during earlier work and never wired to anything. It
+was evidently reserved for exactly this route. `lib/ratelimit.ts` is
+**unchanged**; the route calls `checkRateLimit(req, 'report-card-restore')`.
+
+Note the deliberate contrast with restore-confirm, which rejected an IP-primary
+key because a shared school NAT would let one teacher's link block the next
+(§15.5). That reasoning does not transfer: this endpoint has no per-link
+identifier to key on, and the quantity being limited is "how much mail one host
+can make us send", which is inherently per-IP.
+
+**3. The page stayed a server component.** The form was extracted to
+`RestoreRequestClient.tsx` so `page.tsx` keeps emitting its `noindex, nofollow`
+metadata normally. Verified in the prerendered output: the built
+`restore.html` contains `<meta name="robots" content="noindex, nofollow"/>`.
+The route is now `○ (Static)` in the build manifest, which is correct: the shell
+is static and the form is entirely client-side.
+
+#### Form states as built
+
+| State | Behavior |
+|---|---|
+| Idle | Labelled email field, "Email me a link" |
+| Locally invalid | Inline `role="alert"`, `aria-invalid`, red border, **no request sent**; clears on next keystroke |
+| Submitting | Field and button disabled, "Sending..." |
+| Submitted | Terminal message, form replaced, not re-armed |
+| Rate limited (429) | "Too many requests from this connection", form stays usable |
+| Network / server failure | **Identical to Submitted**, by design |
+
+The submitted message says a link is on its way *if that address was used to buy
+the library*, states the 30-minute expiry, and points at the spam folder. It
+never confirms or denies that a purchase was found.
+
+Accessibility: `<label htmlFor>` bound to the input, `type="email"`,
+`autoComplete="email"`, `inputMode="email"`, `autoCapitalize="none"`,
+`autoCorrect="off"`, `spellCheck={false}`, `maxLength={320}`, `aria-invalid`,
+`aria-describedby` pointing at the error, `role="alert"` on errors and
+`role="status"` on the success message. `noValidate` on the form so the custom
+message is what users see rather than the browser's native bubble.
+
+The `info@getshorthandapp.com` fallback appears in **both** the idle and
+submitted states. It is load-bearing while Resend is unconfigured, because in
+that window the form completes successfully and silently sends nothing (§17.5).
+
+#### Client-side validation is not a security boundary
+
+The component's `EMAIL_RE` and 320-char bound intentionally duplicate the
+route's, which in turn match the Edge Function's. The client copy exists only so
+honest typos get corrected without a round trip. All three layers must be kept
+in agreement: if the client ever accepts something the route rejects, users get
+an opaque terminal message instead of a useful correction.
+
+#### Verification
+
+- `npx tsc --noEmit`: **clean, exit 0**
+- `npm run lint`: **54 problems (52 errors, 2 warnings), all pre-existing.**
+  Confirmed by stashing the changes and re-running: the baseline is identical at
+  54/52/2. The three new/changed files produce **zero** lint output. The
+  pre-existing errors are unrelated (`react/no-unescaped-entities`,
+  `react-hooks/set-state-in-effect` in `components/LeadGate.tsx`, and an
+  `<img>` warning in `components/FeatureVideo.tsx`).
+- `npm run build`: **succeeded.** `/api/report-card-access/restore` registers as
+  `ƒ (Dynamic)`; `/report-card-comment-library/restore` as `○ (Static)`.
+- **No test framework exists in this repo.** `package.json` defines only `dev`,
+  `build`, `start`, and `lint`, and there are no `*.test.*` or `*.spec.*` files.
+  "Tests" here means typecheck + lint + build. Nothing was run against a live
+  Supabase or Resend, and **no runtime verification of this code has happened
+  at all yet**: the matrix in §17.8 is still entirely outstanding.
+
+#### Still true after this work
+
+Submitting the form today does nothing observable. Resend has no API key and no
+verified domain, so the Edge Function logs the missing variable and still
+returns `{ ok: true }`. The UI cannot tell, by design. Do not describe restore
+email as working until a real test send is confirmed in the Resend dashboard.
