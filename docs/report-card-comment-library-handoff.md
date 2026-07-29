@@ -4,9 +4,13 @@
 **Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
 Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
 **Library total: 374.** Behavior structural thinning pass complete (§11a).
-**Next task:** Brain schema doc update (§11 step 4), then commit, PR. The
-final-target question is **resolved** (§12); 374 sits inside both approved
-bands (350-450 Product Decision, 360-480 Schema §2 sum).
+Brain schema doc updated. **PR #7 open** (branch `feature/report-card-comment-library-prototype`,
+pushed to origin, not merged). **Manual browser QA PASSED** on desktop, iPhone,
+and Android (see §11b) — PR #7 is now ready for final code review and merge.
+**Next task:** Greg's code review and merge of PR #7 (branch-and-wait, this
+route is `.tsx`). Stripe integration waits until after merge. The final-target
+question is **resolved** (§12); 374 sits inside both approved bands (350-450
+Product Decision, 360-480 Schema §2 sum).
 
 ---
 
@@ -948,6 +952,25 @@ reasonable and left as-is.
 library total unchanged at 374 (pure rewording, no additions or removals).
 Highest within-section near-duplicate after the pass: 0.50 (the two documented
 debt pairs above), down from a working set that included a 0.69 outlier.
+
+---
+
+## 11b. Manual browser QA — PASSED (2026-07-28)
+
+Greg tested PR #7's preview deployment directly at `/report-card-comment-library`
+(the route is unlinked and `noindex`, so it must be reached by URL, not by
+navigating the site).
+
+**Result: manual browser QA passed on desktop, iPhone, and Android.** All
+sections, categories, filters, comment wrapping, copy behavior, refresh
+behavior, browser Back behavior, and mobile layout worked correctly. No
+issues found.
+
+**PR #7 is now ready for final code review and merge.** This was the last
+blocker on the merge (§10/§11 previously listed it as pending). Stripe
+integration still waits until after the merge, per the standing sequencing:
+content and structure first, payment integration only once the library itself
+is confirmed working end-to-end in a real browser.
 
 ---
 
