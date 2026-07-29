@@ -3,10 +3,10 @@
 **Last updated:** 2026-07-28
 **Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
 Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
-**Library total: 374.**
-**Next task:** the whole-library structural review (§11), then Brain schema doc
-update, commit, PR. The final-target question is **resolved** (§12); 374 sits
-inside both approved bands (350-450 Product Decision, 360-480 Schema §2 sum).
+**Library total: 374.** Behavior structural thinning pass complete (§11a).
+**Next task:** Brain schema doc update (§11 step 4), then commit, PR. The
+final-target question is **resolved** (§12); 374 sits inside both approved
+bands (350-450 Product Decision, 360-480 Schema §2 sum).
 
 ---
 
@@ -870,36 +870,84 @@ tracked target, not per-category quotas.
 inside both approved bands.** No further content drafting is planned unless
 Greg explicitly reopens a section.
 
-In order:
+**The Behavior structural thinning pass is done (§11a).** ADHD, Preschool,
+Academics, and Social-Emotional were reviewed and deliberately left unchanged;
+their flagged metrics are documented debt, not proven defects (see §11a for
+the reasoning).
 
-1. **Whole-library structural review (deferred, now unblocked).** Four known
-   clusters to thin in one coordinated pass, not piecemeal:
-   - **Behavior:** frame A still holds 22 comments and three stock closers hold
-     24. Stock-frame share is 73% after the first pass.
-   - **ADHD:** `[Student]` openings at 56% of 57; "may support this" at 6 of 24
-     growth comments, all concentrated in task-completion and organization
-     (drafted before the vary-the-conditional rule was established).
-   - **Preschool:** four frames at 13% or below of 40 growth comments (§7b).
-   - **Academics:** `[Student]`-initial openings at 63% of 49, `might help` at
-     33% of 21 growth comments, and two new repeated 4-grams (`[Student] does
-     not yet`, `does not yet consistently`) (§7c).
-   - **Social-Emotional:** `[Student]`-initial openings at 22 of 31 (71%,
-     section high); shared 4-grams inside `emotional-regulation` ("a strong
-     feeling has[eased]", `[Student] is developing a`) and `self-awareness`
-     (`[Student] is beginning to`) (§7d).
-   Do not fix any of them piecemeal; this is a single coordinated pass across
-   the finished library.
-2. Evaluate the deferred content ideas from §7 (behavior) and §7c (academics)
-3. Decide whether behavior's 145, ADHD's 57, Academics' 49, and
+Remaining, in order:
+
+1. Evaluate the deferred content ideas from §7 (behavior) and §7c (academics)
+2. Decide whether behavior's 145, ADHD's 57, Academics' 49, and
    Social-Emotional's 31 stand as final (recommendation: yes, all four were
    accepted deliberately with documented rationale)
-4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
+3. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
    with the Step 6 content decisions, the observed-versus-possible support rule
-   (§6), the corrected boundary rule (§8), the ADHD guardrails (§7a), and the
-   resilience-and-growth-mindset fence (§7d)
-5. Commit the branch, open the PR (this route is `.tsx`, so it is
+   (§6), the corrected boundary rule (§8), the ADHD guardrails (§7a), the
+   resilience-and-growth-mindset fence (§7d), and the structural review
+   outcome (§11a)
+4. Commit the branch, open the PR (this route is `.tsx`, so it is
    **branch-and-wait**, never self-merge)
-6. Stripe integration, gating, checkout
+5. Stripe integration, gating, checkout
+
+---
+
+## 11a. Behavior structural thinning pass — COMPLETE (2026-07-28)
+
+**Scope decision:** a full section-by-section audit (fresh `section-audit.mjs`
+run against all five sections) showed Behavior was the only section with a
+real, compounding structural problem. ADHD, Preschool, Academics, and
+Social-Emotional each had at most one or two mild, single-metric skews
+(opening-structure concentration, one repeated modal phrase) with **no
+near-duplicate pair above 0.42** and no 4-gram repeated more than twice.
+Behavior alone had a true monopoly frame plus three compounding stock closers
+plus a cluster of 0.40-0.50+ cross-category near-duplicate pairs, all
+downstream of the same four templates colliding across categories. **Decision:
+thin Behavior only; leave the other four sections untouched.** Rewriting their
+mild skews would contradict the standing rule against changing clear content
+solely to manipulate a percentage.
+
+**What was fixed:**
+
+1. **The `[Student] is working on` monopoly.** Held 25 of 67 growth comments
+   (37%) across all 8 categories. 12 were reworded to genuinely different
+   sentence structures (present-tense negatives, reordered clauses, "may"
+   constructions), not swapped for a second stock phrase. Result: 12 of 67
+   (18%), no category left with more than 1-2 remaining instances. The other
+   13 were left as-is; one instance per category reads naturally, multiple is
+   where the monopoly was actually felt.
+2. **Two near-identical positive/growth pairs**, both the same sentence with
+   "is working on" prepended to the positive version:
+   - `following-directions-07`/`following-directions-05` (0.69, the highest
+     similarity found anywhere in the library this project). Growth-05 now
+     names the actual behavioral gap (proceeding without asking) rather than
+     negating the positive sentence.
+   - `leadership-06`/`leadership-05` (0.50, caught in a targeted check
+     requested by Greg specifically for this pair before committing).
+     Growth-05 now describes the missing behavior concretely rather than
+     restating the positive with a prefix.
+
+**What was deliberately left alone**, out of scope for this pass: the three
+older stock closers (`is an area [Student] is continuing to develop` — 10
+uses, `an ongoing goal for [Student]` — 7 uses, `[Student] continues to build`
+— 7 uses) and their resulting 0.35-0.50 cross-category collisions (about a
+dozen pairs, e.g. `peer-relationships-04`/`independence-02` and
+`participation-08`/`participation-07`, both at 0.50). **These are documented
+debt, not proven defects.** Continuing to chase every 0.35-0.50 pair risks
+turning a useful structural pass into endless percentage cleanup; a future
+session should treat these as a deliberate, separately-scoped decision, not an
+extension of this one.
+
+**A new phrase, capped on introduction:** "is still developing for [Student]"
+was used 3 times across the reworded batch (`focus-and-attention-08`,
+`peer-relationships-07`, `leadership-04`). Watched during drafting so it did
+not become a second monopoly; 3 uses across 3 categories was judged
+reasonable and left as-is.
+
+**Verification:** typecheck clean, zero duplicate IDs, zero audit errors,
+library total unchanged at 374 (pure rewording, no additions or removals).
+Highest within-section near-duplicate after the pass: 0.50 (the two documented
+debt pairs above), down from a working set that included a 0.69 outlier.
 
 ---
 

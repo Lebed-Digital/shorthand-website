@@ -249,7 +249,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'self-control',
     tone: 'growth',
     gradeBands: ['k-2', '3-5'],
-    text: 'During high-energy moments, [Student] is working on keeping their excitement at a manageable level.',
+    text: 'During high-energy moments, [Student] may become overly excited and have difficulty keeping their energy at a manageable level.',
   },
   {
     id: 'behavior-growth-self-control-03',
@@ -281,7 +281,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'self-control',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: 'When a peer interaction becomes upsetting, [Student] is working on walking away or seeking adult support rather than reacting in the moment.',
+    text: 'When a peer interaction becomes upsetting, [Student] does not yet consistently walk away or seek adult support before reacting in the moment.',
   },
   {
     id: 'behavior-growth-self-control-07',
@@ -401,7 +401,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'focus-and-attention',
     tone: 'growth',
     gradeBands: ['k-2', '3-5'],
-    text: '[Student] is working on returning to a task promptly after an interruption.',
+    text: 'After an interruption, [Student] does not yet return to the task promptly.',
   },
   {
     id: 'behavior-growth-focus-and-attention-04',
@@ -441,7 +441,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'focus-and-attention',
     tone: 'growth',
     gradeBands: ['k-2', '3-5', 'middle-upper'],
-    text: '[Student] is working on tracking the speaker during class discussions and lessons.',
+    text: 'Tracking the speaker during class discussions and lessons is still developing for [Student].',
   },
   {
     id: 'behavior-positive-peer-relationships-01',
@@ -593,7 +593,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'peer-relationships',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: "In group work, [Student] is working on making room for others' ideas alongside their own.",
+    text: "In group work, [Student] does not yet consistently make room for others' ideas alongside their own.",
   },
   {
     id: 'behavior-growth-peer-relationships-07',
@@ -601,7 +601,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'peer-relationships',
     tone: 'growth',
     gradeBands: ['k-2', '3-5'],
-    text: '[Student] is working on responding flexibly when peer groupings or activity arrangements change.',
+    text: 'When peer groupings or activity arrangements change, responding flexibly is still developing for [Student].',
   },
   {
     id: 'behavior-growth-peer-relationships-08',
@@ -609,7 +609,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'peer-relationships',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: '[Student] is working on moving forward after a disagreement so it does not affect later interactions.',
+    text: 'After a disagreement, [Student] may remain focused on the conflict during later interactions with the peer.',
   },
   {
     id: 'behavior-growth-peer-relationships-09',
@@ -721,7 +721,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'following-directions',
     tone: 'growth',
     gradeBands: ['k-2', '3-5', 'middle-upper'],
-    text: '[Student] is working on asking for clarification when part of a direction is unclear.',
+    text: 'When part of a direction is unclear, [Student] may begin the task without first asking for clarification about that part.',
   },
   {
     id: 'behavior-growth-following-directions-06',
@@ -833,7 +833,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'leadership',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: "[Student] is working on inviting others' ideas when guiding a group.",
+    text: "When guiding a group, inviting others' ideas is still developing for [Student].",
   },
   {
     id: 'behavior-growth-leadership-05',
@@ -841,7 +841,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'leadership',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: '[Student] is working on raising concerns respectfully and working toward fair solutions.',
+    text: 'When [Student] disagrees with a decision, they do not yet consistently raise the concern respectfully or work toward a solution that could satisfy everyone.',
   },
   {
     id: 'behavior-growth-leadership-06',
@@ -945,7 +945,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'independence',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: '[Student] is working on trying a strategy independently before asking for help.',
+    text: '[Student] tends to ask for help before trying a strategy independently.',
   },
   {
     id: 'behavior-growth-independence-04',
@@ -1153,7 +1153,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'effort-and-motivation',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: '[Student] is working on engaging with new material before deciding whether it interests them.',
+    text: 'When new material does not immediately seem interesting, [Student] may disengage before exploring it fully.',
   },
   {
     id: 'behavior-positive-participation-01',
@@ -1257,7 +1257,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'participation',
     tone: 'growth',
     gradeBands: ['k-2', '3-5', 'middle-upper'],
-    text: '[Student] is working on asking for clarification when they are unsure how to proceed.',
+    text: 'When unsure how to proceed, [Student] does not yet consistently ask for clarification.',
   },
   {
     id: 'behavior-growth-participation-04',
@@ -1265,7 +1265,7 @@ export const REPORT_CARD_COMMENTS: Comment[] = [
     category: 'participation',
     tone: 'growth',
     gradeBands: ['3-5', 'middle-upper'],
-    text: "[Student] is working on responding to classmates' ideas rather than only offering their own.",
+    text: "[Student] tends to offer their own ideas rather than responding to what classmates have said.",
   },
   {
     id: 'behavior-growth-participation-05',
