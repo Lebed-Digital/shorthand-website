@@ -1,11 +1,12 @@
 # Report Card Comment Library — Session Handoff
 
 **Last updated:** 2026-07-28
-**Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57).
-Preschool complete (92). Academics complete (49). Library at 346.
-**Next task:** Social-Emotional content map (30-40), the last content section.
-Then the whole-library structural review (§11). The final-target question is
-**resolved** (§12); projected finish is 376-386, inside both approved bands.
+**Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
+Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
+**Library total: 374.**
+**Next task:** the whole-library structural review (§11), then Brain schema doc
+update, commit, PR. The final-target question is **resolved** (§12); 374 sits
+inside both approved bands (350-450 Product Decision, 360-480 Schema §2 sum).
 
 ---
 
@@ -35,9 +36,14 @@ workflows, AI generation, complex export formats, subscriptions, tiers.
 
 **Branch:** `feature/report-card-comment-library-prototype` (NOT merged to main)
 
-**Latest commit:** `22f6d7c` Report Card Comment Library: update handoff for
-Preschool completion. Not pushed, not merged, no deploy. Branch is 4 commits
-ahead of its remote and 5 ahead of `origin/main`.
+**Latest commit:** `49103e6` Report Card Comment Library: Academics section
+complete (49 comments). Not pushed, not merged, no deploy. Branch is 6 commits
+ahead of its remote and 7 ahead of `origin/main`.
+
+**UNCOMMITTED as of this update:** the full Social-Emotional section (31
+comments: empathy-and-relationships, emotional-regulation, self-awareness from
+a prior session; resilience-and-growth-mindset drafted and written this
+session) is in the working tree but not yet committed.
 
 | File | Role |
 |---|---|
@@ -619,6 +625,107 @@ detector. Deferred to the same review.
 
 ---
 
+## 7d. Social-Emotional section — COMPLETE (31 comments, 4 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| self-awareness | 9 | 5 | 4 |
+| empathy-and-relationships | 7 | 4 | 3 |
+| emotional-regulation | 7 | 3 | 4 |
+| resilience-and-growth-mindset | 8 | 4 | 4 |
+| **TOTAL** | **31** | **16** | **15** |
+
+Target was 30-40. **31 accepted deliberately, not padded.** Three categories
+(self-awareness, empathy-and-relationships, emotional-regulation) were drafted
+in a prior session directly against the original three Step 3 samples, each
+revised in place. `resilience-and-growth-mindset` was drafted this session
+against a fourth Step 3 sample that was **retired**, following the Academics
+`general-work-habits-01` precedent (see §7c), because its situation
+(persistence after a wrong answer) was already owned by
+`behavior-positive-effort-and-motivation-01` and it carried a trait claim
+("one of their real strengths") the style guide forbids. The ID was reused;
+the situation was not preserved.
+
+**Grade bands:** 3-5 = 30, middle-upper = 27, k-2 = 6, preschool = 0.
+Preschool is intentionally zero, matching every other non-preschool section.
+The section skews older by design: all four categories describe a student's
+own reflective account of an internal or interpersonal pattern, which is
+developmentally a 3-5-and-up skill. k-2 coverage is thin (6 of 31) and honest,
+not padded to look even.
+
+**Audit result:** zero near-duplicate pairs at >=0.35 against the rest of the
+library. Within-section, one pair originally scored 0.75 (see below) and was
+reworded down to 0.42, now in line with the section's other positive/growth
+pairs and the rest of the library. Zero of 16 positive comments use
+conditional support wording.
+
+### The resilience-and-growth-mindset fence (locked before drafting)
+
+The category's mechanism is **what a student believes a setback means and
+whether that belief shifts**, not whether the student keeps trying. That is
+`behavior/effort-and-motivation`'s lane. The first draft map leaked into
+persistence ("returns to trying," "struggles to return to trying") and was
+caught and tightened before drafting:
+
+| Content | Goes to |
+|---|---|
+| Whether a student keeps working, tries again, or gives up | `behavior/effort-and-motivation` |
+| Whether a student's *interpretation* of a mistake, struggle, or difficulty shifts | `social-emotional/resilience-and-growth-mindset` |
+
+Test applied to every draft line: if it can be rewritten as "keeps trying" or
+"puts in effort" without losing the point, it belongs to Behavior, not here.
+
+Final ground: using a mistake as information rather than only a verdict,
+believing ability develops with practice rather than being fixed, revising a
+negative self-conclusion after a struggle, and treating early difficulty in
+something new as expected rather than a warning sign. A fifth positive
+situation (comparing current difficulty to a past skill that used to be hard)
+was proposed and cut in review as the weakest of the five and the most
+backstory-adjacent under style rule 3.
+
+### A near-duplicate pair caught and fixed in review (0.75 -> 0.42)
+
+`resilience-positive-02` and the first draft of `resilience-growth-02` both
+described the fixed-vs-changeable-ability belief and scored **0.75** Jaccard
+similarity, the highest pair measured anywhere in the library this project
+(next highest anywhere: 0.42). Both shared the clause "something they either
+have or do not have." Greg explicitly declined to wave this through as an
+ordinary positive/growth mirror: "the pair can express opposite sides of the
+same mechanism without being nearly the same sentence." Growth-02 was
+rewritten with different structure and emphasis, preserving the mechanism:
+
+> Before: "[Student] describes a skill as something they either have or do not
+> have, rather than as something that changes with practice."
+>
+> After: "[Student] often speaks about ability as fixed and does not yet
+> describe skills as something that can develop over time."
+
+**Rule for future sections:** a positive/growth mirror pair scoring
+meaningfully above the section's other pairs (not just above the 0.35/0.40
+threshold) warrants a reword pass even if it technically clears the audit
+threshold. Shared function words in a single clean mechanism are not an
+excuse; different sentence structure is achievable and was achieved here in
+one pass.
+
+### A parser gap found and fixed this session (third parser issue, same root cause)
+
+The retired-and-replaced record (`resilience-positive-01`) carries a five-line
+inline `//` comment block between its opening `{` and its `id:` field,
+documenting the retirement per the Academics precedent. It is the only record
+in the entire file with a comment block in that position. The recreated
+`parse.mjs` regex required `id:` immediately after `{` and silently dropped
+this one record, undercounting the library by one (373 instead of 374) and
+producing a downstream non-sequential-numbering false error. Caught by the
+existing parse-count-vs-raw-count check before anything was reported to Greg.
+Fixed by making the regex tolerate an optional `//`-comment block between `{`
+and `id:`. **Any future parser rewrite must handle: single-quoted text,
+double-quoted text (including escaped internal double-quotes), and an optional
+leading comment block.** This is the third distinct parsing edge case found
+across the project (see §9); the pattern is that hand-written records
+accumulate formatting variety the original parser never had to anticipate.
+
+---
+
 ## 8. Boundary decisions (hard-won, apply them)
 
 **CORRECTED 2026-07-28 (during the ADHD build).** The earlier framing said
@@ -723,7 +830,7 @@ technically risky or a regression is suspected.
 
 ---
 
-## 10. Library status: 301 comments
+## 10. Library status: 374 comments — ALL CONTENT SECTIONS COMPLETE
 
 | Section | Populated | Target | Categories locked | Categories populated | Status |
 |---|---|---|---|---|---|
@@ -731,33 +838,20 @@ technically risky or a regression is suspected.
 | adhd | **57** | 60-80 | 5 | 5 | COMPLETE |
 | preschool | **92** | 80-100 | 6 | 6 | COMPLETE |
 | academics | **49** | 40-60 | 4 | 4 | COMPLETE |
-| social-emotional | 3 | 30-40 | 4 | 3 | next |
-| **TOTAL** | **346** | see §12 | 27 | 26 | |
+| social-emotional | **31** | 30-40 | 4 | 4 | COMPLETE |
+| **TOTAL** | **374** | 350-450 | 27 | 27 | ALL COMPLETE |
 
-**Remaining: Social-Emotional (30-40).** Its 3 comments are the original Step 3
-samples and need the same in-place revision the preschool and academics samples
-got (§7b, §7c).
-
-**346 is below the 350 floor and that is expected, not a problem.** The floor
-applies to the completed library, not an unfinished checkpoint. Social-Emotional
-at 30-40 brings the projected finish to **376-386**, inside both approved bands,
-with no padding.
-
-Behavior and ADHD came in **under** target (145 vs 150-200, 57 vs 60-80),
-Preschool hit its map exactly (92), Academics landed mid-range (49). All four
-were accepted deliberately. Do not retroactively pad any of them.
+**374 sits inside both approved bands** (350-450 Product Decision; 360-480
+Schema §2 sum of per-section ranges). No padding anywhere. Behavior and ADHD
+came in **under** target, Preschool hit its map exactly, Academics landed
+mid-range, Social-Emotional landed low-range. All five were accepted
+deliberately. Do not retroactively pad any of them.
 
 ### Verify the category list against the schema, not the data
 
-Locked categories with zero comments are expected, not a bug: they are an
-artifact of Step 3 sampling. `adhd/task-completion` was the first case and is
-now populated. Still outstanding:
-
-| Section | Locked but currently unpopulated |
-|---|---|
-| social-emotional | `self-awareness` |
-
-This is now the **only** unpopulated category left in the library.
+Locked categories with zero comments were an artifact of Step 3 sampling
+during earlier sections. As of this session, **every locked category in every
+section is populated.** Nothing outstanding.
 
 **At the start of each section, read `CATEGORIES_BY_SECTION` in
 `lib/report-card-comments.ts` directly.** Never infer a section's category list
@@ -772,18 +866,14 @@ tracked target, not per-category quotas.
 
 ## 11. Next steps
 
-**§12 is resolved.** The approved targets stand unchanged. Social-Emotional
-stays at 30-40; do not expand it to chase a total or to lift 346 over the 350
-floor (see §10).
+**All five content sections are complete. §12 is resolved and holds: 374 sits
+inside both approved bands.** No further content drafting is planned unless
+Greg explicitly reopens a section.
 
-Remaining content: **academics (40-60), social-emotional (30-40)**, roughly
-70-100 comments. Follow the §4 workflow exactly: content map first, wait for
-approval, then one category at a time with a self-audit before each write.
+In order:
 
-Then, in order:
-
-1. **Whole-library structural review (deferred).** Three known clusters to thin
-   in one coordinated pass, not piecemeal:
+1. **Whole-library structural review (deferred, now unblocked).** Four known
+   clusters to thin in one coordinated pass, not piecemeal:
    - **Behavior:** frame A still holds 22 comments and three stock closers hold
      24. Stock-frame share is 73% after the first pass.
    - **ADHD:** `[Student]` openings at 56% of 57; "may support this" at 6 of 24
@@ -792,14 +882,21 @@ Then, in order:
    - **Preschool:** four frames at 13% or below of 40 growth comments (§7b).
    - **Academics:** `[Student]`-initial openings at 63% of 49, `might help` at
      33% of 21 growth comments, and two new repeated 4-grams (`[Student] does
-     not yet`, `does not yet consistently`). All are cap side effects, reported
-     per batch, deliberately not fixed piecemeal (§7c).
-   Do not fix any of them piecemeal while drafting new sections.
-2. Evaluate the deferred content ideas from §7
-3. Decide whether behavior's 145, ADHD's 57, and Academics' 49 stand as final
+     not yet`, `does not yet consistently`) (§7c).
+   - **Social-Emotional:** `[Student]`-initial openings at 22 of 31 (71%,
+     section high); shared 4-grams inside `emotional-regulation` ("a strong
+     feeling has[eased]", `[Student] is developing a`) and `self-awareness`
+     (`[Student] is beginning to`) (§7d).
+   Do not fix any of them piecemeal; this is a single coordinated pass across
+   the finished library.
+2. Evaluate the deferred content ideas from §7 (behavior) and §7c (academics)
+3. Decide whether behavior's 145, ADHD's 57, Academics' 49, and
+   Social-Emotional's 31 stand as final (recommendation: yes, all four were
+   accepted deliberately with documented rationale)
 4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
    with the Step 6 content decisions, the observed-versus-possible support rule
-   (§6), the corrected boundary rule (§8), and the ADHD guardrails (§7a)
+   (§6), the corrected boundary rule (§8), the ADHD guardrails (§7a), and the
+   resilience-and-growth-mindset fence (§7d)
 5. Commit the branch, open the PR (this route is `.tsx`, so it is
    **branch-and-wait**, never self-merge)
 6. Stripe integration, gating, checkout
