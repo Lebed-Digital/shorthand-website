@@ -1,16 +1,14 @@
 # Report Card Comment Library — Session Handoff
 
-**Last updated:** 2026-07-28
-**Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
-Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
-**Library total: 374.** Behavior structural thinning pass complete (§11a).
-Brain schema doc updated. **PR #7 open** (branch `feature/report-card-comment-library-prototype`,
-pushed to origin, not merged). **Manual browser QA PASSED** on desktop, iPhone,
-and Android (see §11b) — PR #7 is now ready for final code review and merge.
-**Next task:** Greg's code review and merge of PR #7 (branch-and-wait, this
-route is `.tsx`). Stripe integration waits until after merge. The final-target
-question is **resolved** (§12); 374 sits inside both approved bands (350-450
-Product Decision, 360-480 Schema §2 sum).
+**Last updated:** 2026-07-29
+**Status:** Content COMPLETE (374 comments, 27 categories, 5 sections). **PR #7
+merged.** Library is live and hidden (`noindex`, unlinked). **Stripe integration
+IN PROGRESS** on branch `feature/report-card-comment-library-stripe` — see §13,
+which is the authoritative record for all payment work. Content sections §1-§12
+below are historical and complete; do not reopen them.
+
+**Next task:** the Vercel-side access layer (§13.12). Nothing is deployed, no
+secrets are configured, and nothing is pushed.
 
 ---
 
@@ -1031,3 +1029,421 @@ number that does not exist in any approved document.
 Greg still owns the final call on whether 371-401 is the right landing place. The
 point resolved here is narrower: **there is no arithmetic problem to solve, so no
 padding is warranted.**
+
+---
+
+## 13. Stripe integration (IN PROGRESS, 2026-07-29)
+
+**This section supersedes §11's step 5 and is the authoritative record for all
+payment work.** Everything above it concerns content and is finished.
+
+### 13.1 Branch and commit status
+
+**Branch:** `feature/report-card-comment-library-stripe` (PR #7 already merged,
+so this branches from a `main` that contains the full 374-comment library).
+
+| | |
+|---|---|
+| Committed this session | `92f1489` Add report_card_purchases migration for Stripe integration |
+| Ahead of origin by | 1 commit (**not pushed**) |
+| Uncommitted | all Edge Function and Vercel code listed in §13.3 |
+
+**Nothing has been pushed, merged, or deployed.** No Edge Function is deployed.
+No Stripe or Supabase secret has been configured in any dashboard. The only
+thing that has touched live infrastructure is the migration (§13.2).
+
+### 13.2 Migration: APPLIED and VERIFIED
+
+`supabase/migrations/20260728000000_report_card_purchases.sql`, applied to
+Supabase project **`muywwvbmpjotcffocyjb`**.
+
+**Important context:** that project ref is listed in the Supabase dashboard as
+"Classroom Pulse 3.0 Claude". It is the **shared production database** that also
+holds live student data (`notes`, `students`, `parent_communications`,
+`student_accommodations`, thousands of rows each). `report_card_purchases` is a
+brand-new, fully isolated table with no foreign keys in either direction, but
+any future work here is operating in the same database as sensitive student
+records. Treat it accordingly.
+
+Final schema:
+
+```sql
+create table if not exists public.report_card_purchases (
+  id uuid primary key default gen_random_uuid(),
+  stripe_checkout_session_id text not null,
+  stripe_payment_intent_id text,
+  stripe_customer_id text,
+  stripe_price_id text not null,
+  email text not null,
+  amount_total integer not null,
+  currency text not null,
+  status text not null default 'paid',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+
+  constraint report_card_purchases_session_id_key unique (stripe_checkout_session_id),
+  constraint report_card_purchases_payment_intent_id_key unique (stripe_payment_intent_id),
+  constraint report_card_purchases_amount_total_check check (amount_total >= 0),
+  constraint report_card_purchases_status_check check (status in ('paid', 'refunded', 'revoked'))
+);
+```
+
+Plus a `lower(email)` index, an `updated_at` trigger (function hardened with
+`set search_path = ''`), and RLS enabled with **zero policies**.
+
+**Verified post-apply (all 8 checks passed):** table exists; RLS enabled; 0
+policies; 2 unique constraints; 2 check constraints; email index present;
+1 non-internal trigger; 0 rows.
+
+**Two migration-safety fixes Greg caught before apply, worth remembering:**
+
+1. `create trigger` is not repeat-safe. A retried migration fails on an existing
+   trigger. Fixed with `drop trigger if exists ... on <table>;` immediately
+   before it.
+2. The trigger function needed `set search_path = ''` to close search-path
+   hijacking.
+
+**Full rollback** (both statements needed, dropping the table does NOT remove
+the standalone function):
+
+```sql
+drop table if exists public.report_card_purchases;
+drop function if exists public.report_card_purchases_set_updated_at();
+```
+
+### 13.3 Files changed, added, deleted
+
+**Committed (in `92f1489`):**
+
+| File | Status |
+|---|---|
+| `supabase/migrations/20260728000000_report_card_purchases.sql` | added |
+
+**Uncommitted, Supabase Edge Functions (all Deno):**
+
+| File | Status |
+|---|---|
+| `supabase/functions/_shared/access-token.ts` | added |
+| `supabase/functions/_shared/auth.ts` | added |
+| `supabase/functions/_shared/fulfillment.ts` | added |
+| `supabase/functions/_shared/stripe.ts` | added, then **DELETED** (see §13.7) |
+| `supabase/functions/report-card-checkout-fulfill/index.ts` | added |
+| `supabase/functions/report-card-checkout-webhook/index.ts` | added |
+| `supabase/functions/report-card-access-restore/index.ts` | added |
+| `supabase/functions/report-card-access-revalidate/index.ts` | added |
+| `supabase/functions/deno.json` | added |
+| `supabase/functions/deno.lock` | added (generated, keep for reproducible builds) |
+
+**Uncommitted, Vercel side:**
+
+| File | Status |
+|---|---|
+| `lib/stripe.ts` | added (restricted-key client + required-env `getSiteUrl()`) |
+| `app/api/report-card-checkout/create-session/route.ts` | added |
+| `lib/ratelimit.ts` | modified (added `report-card-checkout` 10/h, `report-card-restore` 5/h) |
+| `tsconfig.json` | modified (excluded `supabase/functions`, separate Deno runtime) |
+| `package.json` / `package-lock.json` | modified (added `stripe` npm dep) |
+
+### 13.4 Final architecture: no Supabase key in Vercel
+
+**The governing constraint, set by Greg:** `SUPABASE_SERVICE_ROLE_KEY` must never
+exist in the Vercel marketing-site environment, because it grants full
+administrative access to the same database holding student data.
+
+Therefore **all privileged database access happens inside Supabase Edge
+Functions.** Vercel holds no Supabase key of any kind, not even the anon key,
+for this feature. It calls narrowly scoped Edge Functions over HTTPS with a
+shared bearer secret.
+
+**Secrets by location:**
+
+| Vercel | Supabase Edge Function secrets |
+|---|---|
+| `STRIPE_SECRET_KEY` (**restricted**, Checkout Sessions Write only) | `STRIPE_SECRET_KEY` (full test key) |
+| `STRIPE_PRICE_ID` | `STRIPE_PRICE_ID` |
+| `NEXT_PUBLIC_SITE_URL` | `STRIPE_WEBHOOK_SECRET` |
+| `REPORT_CARD_FUNCTIONS_SECRET` | `REPORT_CARD_FUNCTIONS_SECRET` (same value) |
+| `RCCL_TOKEN_SECRET` | `RCCL_TOKEN_SECRET` (same value) |
+| | `RESEND_API_KEY`, `RESEND_FROM_ADDRESS` |
+| | `RCCL_SITE_URL` |
+| | `SUPABASE_SERVICE_ROLE_KEY` (ambient, provided by Supabase automatically) |
+
+`NEXT_PUBLIC_SITE_URL` is **required with no fallback**, it must never silently
+default to the production domain, so a misconfigured preview fails loudly.
+Values: `http://localhost:3000` local, `https://getshorthandapp.com` production,
+per-environment override on Vercel previews.
+
+**Threat model summary:** a full Vercel compromise yields a Checkout-only
+restricted Stripe key, the shared function secret (which only reaches the
+purpose-built functions, each re-verifying against Stripe before writing), and
+the token-signing secret (worst case: free access to a $4.99 comment library).
+**It yields no path to student data.** The service-role key stays inside
+Supabase's runtime, the same trust boundary the pre-existing `delete-account`
+function already occupies, so this feature adds no new location for it.
+
+### 13.5 Stripe decisions
+
+- **Test mode only.** No live keys, no real payments, until Greg explicitly
+  approves the live-mode switch.
+- **Vercel uses a Stripe restricted test key** with exactly one permission:
+  **Checkout Sessions, Write.** Everything else set to None. Confirmed this is
+  sufficient: creating a session with a Price ID string needs no read access to
+  Prices, Products, Customers, or PaymentIntents.
+- **The full Stripe test secret key lives only in Supabase**, where session
+  retrieval and webhook verification happen.
+
+### 13.6 Direct Stripe-to-Supabase webhook routing
+
+Stripe calls the Supabase Edge Function **directly**. The webhook is never
+forwarded through Vercel, so Vercel never handles a raw webhook payload.
+
+**URL to register in Stripe test mode:**
+
+```
+https://muywwvbmpjotcffocyjb.supabase.co/functions/v1/report-card-checkout-webhook
+```
+
+**Event to subscribe:** `checkout.session.completed` **only.**
+
+The webhook authenticates exclusively via Stripe's signature. It does **not**
+accept `REPORT_CARD_FUNCTIONS_SECRET`; that secret is only for the private
+fulfill / restore / revalidate calls from Vercel.
+
+Deploy note: this function needs `verify_jwt = false` (matching the existing
+`delete-account` convention), since Stripe cannot present a Supabase Auth JWT.
+
+### 13.7 Official Stripe SDK replaced handwritten crypto
+
+Originally the Edge Functions used a hand-rolled webhook-signature parser and a
+hand-built Stripe REST wrapper. Greg challenged this: handwritten payment crypto
+needs a strong reason to exist. It did not.
+
+`_shared/stripe.ts` was **deleted outright** (not left alongside) and replaced
+with `npm:stripe@19.2.0`:
+
+- `Stripe.createFetchHttpClient()`, Deno/edge compatible transport
+- `stripe.webhooks.constructEventAsync(...)`, **the async variant is required**;
+  the sync `constructEvent` assumes Node's crypto module and throws
+  `SubtleCryptoProvider cannot be used in a synchronous context` under Deno
+- `stripe.checkout.sessions.retrieve(id, { expand: ['line_items'] })`
+
+**A real bug this fixed:** the handwritten parser used `Object.fromEntries` on
+the `Stripe-Signature` header, keeping only the **last** `v1=` value. Stripe
+sends multiple `v1` signatures during webhook-secret rotation, so the old code
+would have failed verification mid-rotation. Verified fixed (§13.11).
+
+### 13.8 Exact fulfillment checks
+
+`_shared/fulfillment.ts` is the **single idempotent fulfillment path**, imported
+by both `report-card-checkout-fulfill` and `report-card-checkout-webhook`. Do not
+duplicate this logic; the two callers must never drift.
+
+**Why metadata alone was rejected:** the first version verified
+`session.metadata.rccl_price_id`. Greg caught that this is written by our own
+checkout route and is therefore a self-signed label, not proof of what was
+bought. Fulfillment now inspects the **actual purchased line item**.
+
+Every check, all required:
+
+| Check | Required value |
+|---|---|
+| `session.status` | `'complete'` |
+| `session.payment_status` | `'paid'` |
+| line item count | exactly **1** |
+| `line_items.data[0].price.id` | `=== STRIPE_PRICE_ID` |
+| `line_items.data[0].quantity` | **1** |
+| `session.amount_total` | **499** |
+| `session.currency` | **`'usd'`** |
+
+**499 and `usd` are hardcoded constants in the module, deliberately not derived
+from Stripe at runtime.** A price change in the Stripe dashboard must not
+silently change what the application accepts as valid payment; changing the
+price is an intentional code change plus a full test pass.
+
+`metadata.rccl_price_id` remains only as a logged consistency check, explicitly
+commented as **not** the source of truth.
+
+**Idempotency:** select-or-insert keyed on the unique
+`stripe_checkout_session_id`. On a concurrent race the loser's insert hits
+Postgres error `23505` and reads back the winner's row. Both callers converge on
+the same `purchaseId`. No duplicate row is possible, so success-page
+verification and webhook delivery cannot double-fulfill.
+
+### 13.9 Access model: 30-day cookie, 24-hour revalidation
+
+**The problem Greg identified:** the original design used a one-year stateless
+HMAC cookie that never rechecked the database. That made `refunded` and
+`revoked` decorative, marking a purchase refunded would not remove access for
+up to a year. Worse, the restore path *did* check status, so revocation was
+half-enforced and incoherent.
+
+**Chosen model.** Token payload is `{ purchaseId, exp, revalidateAfter }`:
+
+- `exp` = **30 days** (hard expiry)
+- `revalidateAfter` = **24 hours**
+
+Gated page behavior on every render:
+
+1. Verify the HMAC locally. Invalid or past `exp` means clear cookie, show paywall.
+2. If `revalidateAfter` has **not** passed, grant access, **no network call**.
+3. If it **has** passed, call `report-card-access-revalidate`:
+   - still `paid`: issue a fresh 30-day cookie with a new 24-hour window
+   - `refunded` / `revoked` / missing: clear cookie, show paywall
+   - **transient DB error: keep existing access** (see the warning in §13.10)
+
+Cost is roughly one Edge Function call per user per day, off the hot path.
+Revocation takes effect within 24 hours worst case, immediately on a new device.
+
+`verifyAccessToken()` checks signature and hard expiry but deliberately does
+**not** enforce `revalidateAfter`. The caller decides, because the gated page
+and the restore-confirm path need different behavior. `newAccessTokenPayload()`
+is the single place TTLs are set, so fulfill / restore / revalidate cannot drift.
+
+Restoration remains blocked unless status is `paid`.
+
+### 13.10 Edge Function contracts
+
+All four are Deno, all need `verify_jwt = false` at deploy time.
+
+**`report-card-checkout-fulfill`** (private, Bearer `REPORT_CARD_FUNCTIONS_SECRET`)
+
+- `POST { sessionId }`
+- `200 { granted: true, accessToken, isNewPurchase }`
+- `200 { granted: false, reason }`, where reason is one of `not_paid`,
+  `product_mismatch`, `amount_mismatch`, `currency_mismatch`, `missing_email`,
+  `db_error`, `session_lookup_failed`, `server_misconfigured`
+- `401` bad secret, `400` malformed
+
+**`report-card-checkout-webhook`** (public, Stripe signature only)
+
+- `POST` raw Stripe event body, `Stripe-Signature` header
+- `200 { received: true }` terminal
+- `500` **only** on `db_error` / `session_lookup_failed`, so Stripe retries
+  genuine transient failures. Definitive rejections return 200 so Stripe stops.
+- Raw body via `req.text()`, passed untouched to `constructEventAsync()`. Nothing
+  parses or re-serializes before verification.
+
+**`report-card-access-restore`** (private, Bearer secret)
+
+- `POST { action: 'request', email }` returns **always** `200 { ok: true }`
+  regardless of whether the email matched, including on malformed input and on
+  internal misconfiguration. Enumeration is prevented at the function, so Vercel
+  cannot distinguish the cases either.
+- `POST { action: 'confirm', token }` returns `200 { granted: true, accessToken }`
+  or `200 { granted: false, reason }`
+- Restore links are fresh, short-lived (**30 min**), and minted on demand. There
+  is **no stored token column**; verification is purely cryptographic. This is
+  why `access_token_hash` was dropped from the schema.
+
+**`report-card-access-revalidate`** (private, Bearer secret), **NEW this session**
+
+- `POST { purchaseId }` (UUID-validated; Vercel has already verified the HMAC
+  locally, so this function's only job is the database status check)
+- `200 { valid: true, accessToken }`, still paid, fresh 30-day token
+- `200 { valid: false, reason: 'not_paid' }`, refunded / revoked / missing,
+  clear cookie and show paywall
+- `200 { valid: false, reason: 'lookup_failed' }`, **transient DB error**
+- `401` bad secret, `400` malformed
+
+> **Do not conflate `lookup_failed` with `not_paid` when building the gate.**
+> `lookup_failed` must **keep** existing access, so a Supabase outage does not
+> lock out every paying customer at once. Only `not_paid` revokes.
+
+### 13.11 Tests completed
+
+| Test | Result |
+|---|---|
+| `deno check` (7 function files, real Stripe types) | clean |
+| `deno lint` (excl. `no-import-prefix`, see note) | clean |
+| Stripe SDK runtime probe | `createFetchHttpClient`, `constructEventAsync`, `sessions.retrieve` all present |
+| Webhook sig: valid signature | accepted |
+| Webhook sig: tampered payload | rejected |
+| Webhook sig: wrong secret | rejected |
+| Webhook sig: **multi-`v1` rotation header** | accepted (old handwritten parser would have failed) |
+| Token round-trip | OK |
+| Token TTLs (30d exp, 24h revalidate, revalidate < exp) | OK |
+| Token wrong secret / tampered payload / expired / malformed | all rejected |
+| Token stale-but-unexpired still verifies, revalidation detectable | OK |
+| `npx tsc --noEmit` | clean |
+| `npx eslint` on new/changed files | clean |
+| `npm run build` | succeeds, route registered dynamic |
+
+`no-import-prefix` is excluded deliberately: it objects to inline
+`https://esm.sh/...` imports, which is the exact pattern the existing production
+`delete-account` function already uses successfully.
+
+Repo-wide `eslint .` reports 52 **pre-existing** errors (`app/terms/page.tsx`,
+`components/LeadGate.tsx`, and the `catch (e: any)` pattern in the older API
+routes). None are in files touched by this work.
+
+`npm audit` reports pre-existing vulnerabilities in `next`, `sharp`, `postcss`,
+and dev transitives. **Not introduced by adding `stripe`**, out of scope here.
+
+### 13.12 Untestable before deployment
+
+- Shared-secret auth under real Supabase request routing (`Deno.env.get` against
+  actually-configured secrets)
+- Real Stripe webhook delivery end to end (needs `stripe listen` / `stripe
+  trigger` against the deployed function)
+- The `23505` race path under genuine concurrency
+- Service-role RLS-bypass behavior against the real table
+- Resend delivery, entirely. **No API key or verified sending domain exists
+  yet.** Missing `RESEND_API_KEY` / `RESEND_FROM_ADDRESS` is handled safely
+  (logged, non-throwing, still returns the generic `{ ok: true }`), but
+  **restoration email must not be described as working until a real test send
+  succeeds.**
+- The full redirect loop, since the success page, gated UI, and the Vercel-side
+  token verifier do not exist yet
+
+### 13.13 Setup Greg still has to do (none of it done yet)
+
+Nothing below has been touched. All of it requires Greg, and each step should be
+confirmed before Claude acts on anything adjacent to it.
+
+1. Create the Stripe **test-mode** Product and Price ($4.99 one-time), which
+   yields `STRIPE_PRICE_ID`
+2. Create the Stripe **restricted test key**, Checkout Sessions Write, all
+   else None
+3. Generate `REPORT_CARD_FUNCTIONS_SECRET` and `RCCL_TOKEN_SECRET` (long random
+   values, identical in both Vercel and Supabase)
+4. Set Supabase Edge Function secrets (§13.4 right column)
+5. Set Vercel env vars (§13.4 left column)
+6. Register the webhook URL (§13.6) in Stripe test mode, which yields
+   `STRIPE_WEBHOOK_SECRET`
+7. Resend account, API key, verified sending domain
+
+### 13.14 Exact next-step prompt
+
+> Continue the Report Card Comment Library Stripe integration on branch
+> `feature/report-card-comment-library-stripe`. Read §13 of
+> `docs/report-card-comment-library-handoff.md` first; it is the authoritative
+> record. Do not redo the migration, it is applied and verified.
+>
+> Build the Vercel-side access layer:
+>
+> 1. `lib/report-card-access.ts`, the Node/edge-side verifier mirroring the
+>    exact wire format in `supabase/functions/_shared/access-token.ts`
+>    (`base64url(payload).base64url(HMAC-SHA256)`, payload
+>    `{ purchaseId, exp, revalidateAfter }`, Web Crypto, shared
+>    `RCCL_TOKEN_SECRET`). Keep the two implementations in lockstep.
+> 2. `lib/report-card-functions.ts`, the authenticated client for calling the
+>    private Edge Functions with the `REPORT_CARD_FUNCTIONS_SECRET` bearer token.
+> 3. The success-page route and page: receive `session_id`, call
+>    `report-card-checkout-fulfill` server-side, set the HTTP-only `Secure`
+>    `SameSite=Lax` access cookie, show a clear button into the library.
+> 4. The server-side gate on `/report-card-comment-library` with the 24-hour
+>    revalidation flow from §13.9. **`lookup_failed` must keep access; only
+>    `not_paid` revokes.**
+> 5. The teaser UI: full page structure, section/category list, total comment
+>    count, filters, and 1-2 real sample comments per section. Everything else
+>    hidden. **The other ~370 comments must not be sent to non-paying browsers
+>    and hidden with CSS; server-side gating must keep locked comment text out
+>    of the client payload entirely.**
+> 6. The restore-access routes wrapping `report-card-access-restore`
+>    (`request` and `confirm`), rate-limited via the existing
+>    `report-card-restore` limiter.
+>
+> Preserve `noindex, nofollow`. Never treat query params, the success redirect,
+> localStorage, or client state as proof of purchase. Stay in Stripe test mode.
+> Do not deploy Edge Functions, configure secrets, register the webhook, push,
+> merge, or change Vercel environment settings. Report at each checkpoint.
