@@ -9,16 +9,19 @@ Content sections §1-§12 below are historical and complete; do not reopen them.
 
 **Where the payment work actually stands:** the Supabase Edge Functions (§13),
 the Vercel-side access gate (§14), and the restore-confirm route plus refresh
-abuse protection (§15) are all built and verified locally. All of it is now
-committed and pushed to the feature branch. **Still true: nothing is deployed,
-no secret is configured in any dashboard, no Stripe Product or Price exists, no
-PR is open, and nothing is merged.** The §13.2 migration remains the only thing
-that has ever touched live infrastructure.
+abuse protection (§15) are all built, committed, pushed, deployed, and
+**proven end to end by a real Stripe test-mode purchase (§16, 2026-07-29)**:
+checkout completed, webhook signature verified, exactly one paid row created at
+$4.99, fulfillment returned 200, the full 374-comment library unlocked, both
+shared secrets confirmed matching, and no retries or errors.
 
-**Next task:** Greg's external setup (§13.13), which every remaining
-verification depends on. No further code checkpoint can shorten the §14.12
-untested list without it. The restore-*request* route and UI (§15.10) are the
-only unbuilt code, and they are blocked on Resend.
+**Next task:** decide on the production merge. The proof above came from the
+**branch preview deployment**, not production, and the branch is still unmerged
+with no PR open. Still test mode only: no live Stripe key, and no real payment
+has ever been taken.
+
+**Still pending:** Resend (no API key, no verified domain), which blocks the
+restore-*request* route and UI (§15.10), the only unbuilt code left.
 
 **Read §15.13 for the ordered next steps.** Note that §11's step list predates
 all payment work and is superseded; see the banner there.
@@ -2189,3 +2192,106 @@ as evidence of a bug.
    that fix.
 4. **Then** real end-to-end testing against Stripe test mode, the only thing
    that can close out §14.12.
+
+---
+
+## 16. First successful end-to-end Stripe test-mode purchase (2026-07-29)
+
+**The payment path works end to end.** A real test-mode checkout was completed
+against the deployed Edge Functions and the branch preview deployment. This
+closes most of the §14.12 untested list, which no amount of local testing could
+reach.
+
+### 16.1 What was verified, with the evidence
+
+| Claim | Evidence |
+|---|---|
+| Checkout session created | `create-session` returned a live `cs_test_...` URL, 200 |
+| Payment completed | Stripe test card `4242...`, redirected back to the preview |
+| **Webhook signature verified** | webhook returned **200**, not 400 |
+| Exactly one purchase row | `total_rows = 1`, `distinct_sessions = 1` |
+| Correct product | `amount_total = 499`, `currency = 'usd'`, `status = 'paid'` |
+| Fulfillment succeeded | `report-card-checkout-fulfill` returned **200** |
+| Full library unlocked | all 374 comments rendered for the paying user |
+| Shared secrets match | see §16.3 |
+| No retries, no errors | zero 500s in the logs, single webhook delivery |
+
+**Signature verification passed affirmatively, not by absence of evidence.** A
+bad signature makes `constructEventAsync` throw, which returns **400**. An
+earlier unsigned probe confirmed that 400 path fires. The real delivery
+returned 200, so it got past verification, parsed the event, and ran
+fulfillment to completion.
+
+### 16.2 The idempotency race ran for real and held
+
+The two independent fulfillment callers both fired, about 3 seconds apart:
+
+| Time (UTC) | Function | Status |
+|---|---|---|
+| 19:14:21.807 | `report-card-checkout-webhook` | 200 |
+| 19:14:24.772 | `report-card-checkout-fulfill` | 200 |
+
+Both call the same `fulfillCheckoutSession()`. Result: **one row**, with
+`created_at` exactly equal to `updated_at`. The second caller neither inserted
+a duplicate nor updated the winner's row. It took the select-finds-existing
+path and returned the same `purchaseId`, which is why the success page could
+unlock with a valid cookie.
+
+**Caveat, stated honestly:** 3 seconds apart is sequential, not simultaneous.
+This exercised the **select-finds-existing** branch, NOT the `23505`
+unique-violation branch, which requires true concurrency. The practical
+double-fulfillment failure mode is confirmed handled; the `23505` path remains
+formally untested and is low risk.
+
+### 16.3 Secret parity confirmed indirectly but decisively
+
+Neither shared secret was directly asserted, but both are proven by behavior:
+
+- **`REPORT_CARD_FUNCTIONS_SECRET`** matches: `report-card-checkout-fulfill`
+  returned 200 rather than 401, so Vercel's bearer token was accepted by the
+  deployed function.
+- **`RCCL_TOKEN_SECRET`** matches: the library unlocked. A token minted in Deno
+  was verified by `lib/report-card-access.ts` under Node. Had these drifted,
+  `verify-session` would have refused to set the cookie (§14.9), by design.
+
+### 16.4 §14.12 status after this test
+
+| Item | Status |
+|---|---|
+| Real Stripe webhook delivery end to end | **CLOSED** |
+| Shared-secret auth under real Supabase routing | **CLOSED** |
+| Service-role RLS-bypass against the real table | **CLOSED** (row written to an RLS-enabled, zero-policy table) |
+| `RCCL_TOKEN_SECRET` parity Vercel/Supabase | **CLOSED** |
+| `23505` idempotency race under genuine concurrency | still open, low risk (§16.2) |
+| **Resend delivery** | **still open, unconfigured** |
+
+### 16.5 Environment used, and what is still pending
+
+Tested on the **branch preview deployment** of
+`feature/report-card-comment-library-stripe`, not production. Six Preview-scoped
+Vercel variables were configured, including `SUPABASE_FUNCTIONS_URL`, the one
+missing from §13.4 until it was caught during the commit review.
+
+**Vercel Authentication was temporarily disabled** for Preview deployments so
+Stripe's redirect back from Checkout could reach the success page. Stripe's
+redirect is a plain browser navigation and carries no SSO cookie, so the
+protection wall would have broken the success page while leaving the webhook
+unaffected (Stripe calls Supabase directly, never Vercel). **Protection was
+re-enabled immediately after the test.**
+
+**Still pending, both deliberately:**
+
+1. **Resend**: no API key, no verified sending domain. The restore-*request*
+   route and UI remain unbuilt (§15.10). Do not add a "send me a link" form
+   until a real test send succeeds.
+2. **Production merge**: the branch is unmerged and no PR is open. Everything
+   above was proven on a preview deployment. Still test mode only; no live
+   Stripe key, and no real payment has ever been taken.
+
+### 16.6 Deployment version note
+
+Setting `STRIPE_WEBHOOK_SECRET` caused Supabase to restart **all** Edge
+Functions with the updated environment, bumping every function's version by one,
+including `delete-account`, which this project never touched. `ezbr_sha256`,
+`created_at`, and `updated_at` were unchanged on all five, confirming no code
+was redeployed. A version bump alone does not indicate a redeploy.
