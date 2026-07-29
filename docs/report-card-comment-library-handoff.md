@@ -1,0 +1,1033 @@
+# Report Card Comment Library — Session Handoff
+
+**Last updated:** 2026-07-28
+**Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
+Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
+**Library total: 374.** Behavior structural thinning pass complete (§11a).
+Brain schema doc updated. **PR #7 open** (branch `feature/report-card-comment-library-prototype`,
+pushed to origin, not merged). **Manual browser QA PASSED** on desktop, iPhone,
+and Android (see §11b) — PR #7 is now ready for final code review and merge.
+**Next task:** Greg's code review and merge of PR #7 (branch-and-wait, this
+route is `.tsx`). Stripe integration waits until after merge. The final-target
+question is **resolved** (§12); 374 sits inside both approved bands (350-450
+Product Decision, 360-480 Schema §2 sum).
+
+---
+
+## 1. Product context
+
+A $4.99 one-time-purchase static comment library, separate from the free
+`/report-card-comment-generator`. The goal is Greg's first real paid ShortHand
+sale, not revenue maximization. One real stranger paying $4.99 is the success
+condition.
+
+**Sources of truth (read before changing scope or schema):**
+
+- `Brain/Report Card Comment Library - Product Decision.md` — scope, price, what is NOT in V1
+- `Brain/Report Card Comment Library - V1 Schema.md` — record shape, categories, §7 content style guide
+
+Brain path: `C:\Users\doubl\GOOGLE DRIVE\My Drive\Google AI Studio\ShortHand\Brain\`
+
+Payment provider is **Stripe** (decided 2026-07-22). Not yet integrated. Out of
+scope until the library content is done.
+
+**Explicitly NOT in V1:** accounts, saved favorites, rosters, batch/bulk
+workflows, AI generation, complex export formats, subscriptions, tiers.
+
+---
+
+## 2. Branch and files
+
+**Branch:** `feature/report-card-comment-library-prototype` (NOT merged to main)
+
+**Latest commit:** `49103e6` Report Card Comment Library: Academics section
+complete (49 comments). Not pushed, not merged, no deploy. Branch is 6 commits
+ahead of its remote and 7 ahead of `origin/main`.
+
+**UNCOMMITTED as of this update:** the full Social-Emotional section (31
+comments: empathy-and-relationships, emotional-regulation, self-awareness from
+a prior session; resilience-and-growth-mindset drafted and written this
+session) is in the working tree but not yet committed.
+
+| File | Role |
+|---|---|
+| `lib/report-card-comments.ts` | Schema types, `CATEGORIES_BY_SECTION`, all comment data |
+| `app/report-card-comment-library/page.tsx` | Route wrapper, noindex |
+| `app/report-card-comment-library/LibraryClient.tsx` | All UI: tabs, filters, search, personalization, edit, copy |
+
+The route is not linked from anywhere on the site yet.
+
+**Working tree is clean** (verified 2026-07-28). Step 5 fixes and all Step 6
+content through Preschool are committed.
+
+---
+
+## 3. Steps 1-5 (complete)
+
+1. **Decision memo** — approved 2026-07-22
+2. **Schema design** — approved 2026-07-22, three revisions folded in
+3. **~20 sample comments** — approved 2026-07-22 after three revision passes; these are the style model
+4. **One-pass prototype** — built 2026-07-22, Playwright-verified (12/12 checks)
+5. **Confirmation review pass** — completed 2026-07-28. Three fixes:
+   - **Name capitalization:** lowercase input now auto-capitalizes in preview and copy, via `capitalizeName()` using `\p{L}+` so hyphenated and multi-word names work ("mary jane" → "Mary Jane").
+   - **Stale-edit bug (correctness):** editing a comment used to freeze the student name into it permanently. A teacher moving through a roster could copy student #1's name onto student #2's report card. Fixed by resetting `dirty` when the `name` prop changes (`dirtyForName` state + set-during-render reset).
+   - **Explanatory note** added under the name field: "Changing the student name resets any edited comments."
+   - Deliberately NOT changed: the preschool section-tab vs. preschool grade-band overlap. It is intentional per schema §1/§2.
+
+---
+
+## 4. Step 6 workflow (the approved loop)
+
+Greg switched the session to **Opus** for this step because content quality,
+category boundaries, and duplicate prevention matter more than token cost.
+
+**Do not generate the whole library in one pass.** For each category:
+
+1. **Propose a content map** (read-only) — distinct situations/skills per category with approximate counts. Wait for approval.
+2. **Draft one batch**, roughly 14-22 comments. Do not write to the data file.
+3. **Self-audit the batch** against the style guide, section boundaries, and all previously approved comments. Explicitly flag near-duplicates, vague wording, invented interventions or progress, diagnosis language, absolutes, and repeated sentence structures.
+4. **Greg reviews and returns targeted revisions.** He revises heavily; expect 4-9 changes per batch.
+5. **Apply revisions, re-audit only the changed comments**, then write to the data file.
+6. **Run typecheck + the audit scripts**, report exact totals derived from the data.
+
+**Rules that govern the loop:**
+
+- **Human review before writing.** Never add a batch to the data file before Greg approves it.
+- **Derive all audit counts from the data, never by hand.** Greg caught two manual miscounts; counts now come from scripts.
+- **Do not pad to hit a number.** Stop when new comments restate existing ones. 450 is not a hard ceiling (~480 is fine if genuinely distinct), and coming in under a section target is acceptable and should be reported honestly.
+- **Do not mirror every positive into a growth comment.** Pair only when both tones carry genuinely different observational weight.
+- **When the mirroring rule cuts a comment, first look for a genuinely distinct situation to replace it**, rather than assuming the section must shrink.
+- **Do not add a new category to close a numerical gap.** A new category requires a genuinely distinct body of content.
+
+---
+
+## 5. Locked schema
+
+```ts
+type Section = 'behavior' | 'adhd' | 'preschool' | 'academics' | 'social-emotional';
+type Tone = 'positive' | 'growth';
+type GradeBand = 'preschool' | 'k-2' | '3-5' | 'middle-upper';
+
+interface Comment {
+  id: string;               // "behavior-positive-self-control-01", never reused
+  section: Section;
+  category: CategoryFor<Section>;  // must belong to its own section
+  tone: Tone;
+  gradeBands: GradeBand[];
+  text: string;             // uses the literal [Student] token
+}
+```
+
+All four classification fields are closed types derived from
+`CATEGORIES_BY_SECTION`. A misspelled category is a build error, which is why
+**the typecheck is the real validation step**, not a formality.
+
+**ID convention:** `{section}-{tone}-{category}-{NN}`, zero-padded, sequential
+within each section+tone+category combination.
+
+**Personalization:** `[Student]` is the stored token. Preview shows "Jordan"
+when no name is entered. Copy-time fallback to "the student" only if a name was
+never entered.
+
+---
+
+## 6. Content style guide (schema §7, all 9 rules)
+
+1. Professional, observable, family-facing language. Write for the parent.
+2. No diagnosing or implying a diagnosis, especially in the ADHD section.
+3. **The line is invented backstory/results, not specificity.** Fine: "benefits from brief breaks," "keeps materials organized." Not fine: "since starting a color-coded folder system," "has reduced missing work," "a timer solved the problem."
+4. No comparisons with classmates.
+5. No unsupportable absolutes ("always," "never," "hardest"). **But confident, warm phrasing is not an absolute.** Do not flatten "tries again rather than give up."
+6. Gender-neutral they/their for any second reference.
+7. Specific enough to be useful, broad enough to copy honestly.
+8. Growth comments name the developing skill; a broadly applicable support is allowed, a named tool or claimed result is not.
+9. No near-duplicates that differ only in adjectives.
+
+**Guardrail:** the goal is a trustworthy library, not a maximally hedged one. If
+a revision pass is making every comment more tentative or generic, the guide is
+being over-applied.
+
+**Project rule:** no em dashes anywhere in user-facing text. The audit script
+checks this automatically.
+
+### The observed-versus-possible support rule (established during ADHD, applies library-wide)
+
+Any comment naming a support must be one of two forms, and the wording is not
+interchangeable:
+
+- **Observed support** (the teacher has seen it work for this student): direct
+  wording. "Attention is steadier with a brief check-in partway through a task."
+  "Identifying a clear first step helps them begin."
+- **Possible support** (a strategy being proposed, not reported): conditional
+  wording. "Dividing a task into shorter segments **may support** this."
+  "More frequent movement opportunities **might help**."
+
+Positive comments lean observed, because the teacher is reporting what happened.
+**A positive comment must never use conditional support wording** (audited: 0 in
+ADHD). Growth comments use both, but a growth comment proposing a strategy the
+teacher has not seen work must be conditional.
+
+This is what lets the library name supports at all without violating style rule
+3 (no invented interventions or claimed results).
+
+**Vary the conditional construction from the start.** "May support this" alone
+reached 50% of ADHD growth comments before being deliberately varied ("could
+help," "might help," restructured sentences), ending at 25%. Do not let a single
+modal phrase dominate a section and defer the fix.
+
+### Additional wording rules Greg established during Step 6
+
+These came out of batch reviews and are not in the schema doc yet:
+
+- Do not infer internal states. Write the observable behavior. ("understands directions" → "follows directions"; "takes pride in" → "completes with care and is eager to share")
+- Do not claim an effect on others ("in a way others can follow", "helps the whole class").
+- Do not predict an outcome that has not been observed ("would help them catch missed steps").
+- Do not characterize another student ("a struggling classmate", "a provoking peer"). Name the situation instead.
+- Do not imply popularity, being in charge, or having classmates follow them.
+- Do not praise compliance, speed, volume, confidence, extroversion, perfectionism, or overwork.
+- Do not use neatness or presentation as a proxy for effort.
+- Do not assume which subjects a student prefers in a positive comment.
+- Avoid overusing "the first time," "without reminders," "listens carefully."
+- Asking for help must never read as a weakness. Include comments where recognizing the need for help is a strength.
+- A quiet student must have honestly positive participation comments available. Listening and written contribution are real participation, not consolation prizes.
+
+---
+
+## 7. Behavior section — COMPLETE (145 comments, 8 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| peer-relationships | 22 | 13 | 9 |
+| self-control | 21 | 11 | 10 |
+| effort-and-motivation | 20 | 11 | 9 |
+| participation | 19 | 10 | 9 |
+| independence | 18 | 9 | 9 |
+| focus-and-attention | 16 | 8 | 8 |
+| following-directions | 15 | 8 | 7 |
+| leadership | 14 | 8 | 6 |
+| **TOTAL** | **145** | **78** | **67** |
+
+Target was 150-200. **145 was accepted deliberately**, not padded. Greg and
+Claude agreed distinctness beats a round number.
+
+**Grade band coverage within behavior:** 3-5 = 135, middle-upper = 104, k-2 = 88,
+preschool = 20. **Do not try to equalize these.** The dedicated Preschool section
+carries preschool content, and some imbalance is developmentally appropriate
+(self-control skews young, leadership skews old).
+
+### Structural variety pass (completed 2026-07-28)
+
+An audit found 88% of behavior growth comments used one of eight stock frames,
+with "[Student] is working on X" alone accounting for 30. Twelve comments were
+reworded (content, tone, category, and grade bands all preserved).
+
+Result: stock-frame share **88% → 73%**; "is working on" openings **31 → 23**;
+varied structures **8 → 18**. Both cross-category near-duplicate pairs resolved;
+the detector now returns **zero** pairs above 0.40 similarity in behavior.
+
+**Deliberately stopped there.** Frame A still holds 22 comments and the three
+stock closers hold 24, but they are now spread thinly rather than clustered.
+**These are deferred to a whole-library structural review after all sections are
+drafted**, so the same formulas can be thinned once, coordinated, rather than
+piecemeal.
+
+**Deferred content ideas (do NOT add while drafting other sections):**
+specials/substitutes/different-adult contexts, unstructured settings (recess,
+hallway, lunch), digital/device conduct, preschool-appropriate participation.
+Evaluate these only after the full library exists.
+
+---
+
+## 7a. ADHD section — COMPLETE (57 comments, 5 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| attention-and-focus | 15 | 9 | 6 |
+| task-completion | 12 | 7 | 5 |
+| organization | 12 | 7 | 5 |
+| self-regulation-strategies | 10 | 6 | 4 |
+| impulse-control | 8 | 4 | 4 |
+| **TOTAL** | **57** | **33** | **24** |
+
+Target was 60-80. **57 was accepted deliberately, not padded.** The approved map
+planned 66; nine were lost to consolidation and guardrail-driven cuts, every one
+of them Greg-directed. Padding to 60 was explicitly declined.
+
+**Grade bands:** 3-5 = 57, middle-upper = 53, k-2 = 33, preschool = 0.
+Preschool is intentionally zero (the Preschool section owns that band, and
+due-date/assignment tracking is not a preschool concept).
+
+**Audit result:** zero near-duplicate pairs at >=0.35 similarity, both within
+ADHD and against the entire rest of the library. That threshold is stricter than
+the >=0.40 used on behavior.
+
+### Category boundaries settled during the ADHD build
+
+| Category | Owns |
+|---|---|
+| attention-and-focus | Whether attention is sustained or regained, as a recurring pattern |
+| impulse-control | Acting, speaking, or moving before pausing, across situations |
+| organization | Workable systems for materials, papers, assignments, due dates, unfinished work |
+| task-completion | Whether work is begun, finished, resumed, and submitted across assignments |
+| self-regulation-strategies | Recognizing a need and selecting, requesting, or using a strategy |
+
+Worked distinctions:
+
+- Task initiation appears in **task-completion** only as a recurring pattern
+  across assignments, never as one isolated slow start (that is
+  `behavior/independence`).
+- Starting *too fast*, before reviewing the task, is **impulse-control**, not
+  task-completion.
+- Work never finished (**task-completion growth-02**) is kept distinct from work
+  completed but not submitted (**growth-03**). Different failure points.
+- Misplaced papers (**organization**) is distinct from unsubmitted completed work
+  (**task-completion**).
+- Recording assignments, due dates, and outstanding work were consolidated into
+  **one** organization concept in two tones, not three near-duplicate entries.
+- "Returning to learning after using a strategy" lives in
+  `adhd-positive-impulse-control-03`, deliberately not duplicated in
+  self-regulation-strategies.
+- Multi-day project *effort* is `behavior/effort-and-motivation`; multi-day
+  project *organization* is `adhd/organization`.
+
+### Content guardrails established during the ADHD build
+
+These came out of Greg's batch reviews and apply to future sections:
+
+- Do not equate organization with a neat desk or tidy folders. A system can look
+  unconventional and still work. Measure whether the student can locate
+  materials, identify what needs attention, and move work through the steps.
+- Do not frame impulsivity as disrespect, defiance, carelessness, or character.
+- Do not treat stillness, silence, or immediate compliance as the ideal, and do
+  not praise a student merely for being quiet or seated.
+- Movement comments focus on using appropriate opportunities and returning to
+  learning, never on suppressing movement.
+- Do not treat unfinished work as laziness or lack of caring.
+- Do not praise overwork, perfectionism, rigid systems, or working beyond the
+  expected time.
+- Do not praise compliance with adult support. Asking for help, movement, space,
+  or a break is self-advocacy, not dependence.
+- Growth comments must not blame a student for failing to recognize a need
+  before becoming overwhelmed.
+- Do not imply families are responsible when materials do not travel between
+  home and school.
+- Do not assume a specific classroom system exists (no signal system, break
+  spot, seating menu, or chart as an established fixture).
+- Avoid naming specialized or clinical tools.
+- A positive comment must describe a real strength or growing self-management
+  skill, not merely the absence of a problem.
+
+### Known thin spots (reported, deliberately not filled)
+
+1. **Growth is lighter than positive in every category** (24 vs 33). Most
+   pronounced in attention-and-focus (9/6). A teacher writing about a documented
+   challenge likely reaches for growth comments more often, so this is the
+   imbalance most likely to be felt in real use.
+2. **k-2 coverage is 33 of 57 (58%)**, skewing toward 3-5 and middle-upper.
+   Developmentally right for organization and task-completion, less obviously
+   right for attention-and-focus and impulse-control.
+3. **impulse-control at 8** is the smallest category and lost the most during
+   review. If any ADHD category warrants a later revisit, it is this one.
+
+---
+
+## 7b. Preschool section — COMPLETE (92 comments, 6 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| social-emotional-development | 16 | 9 | 7 |
+| self-help-skills | 16 | 9 | 7 |
+| play-and-cooperation | 16 | 9 | 7 |
+| early-literacy | 16 | 9 | 7 |
+| early-math | 14 | 8 | 6 |
+| gross-and-fine-motor | 14 | 8 | 6 |
+| **TOTAL** | **92** | **52** | **40** |
+
+Target was 80-100. **92 hit the approved map exactly**, the first section to do
+so. 88 new comments plus four Step 3 samples revised in place.
+
+**Grade bands:** preschool = 92, all others 0. This is correct and deliberate.
+
+**Tone split is 57/43 positive**, a deliberate positive skew approved at map
+time. At this age many "growth" items are normal developmental acquisition, and
+a heavy growth column reads as deficit framing for a four-year-old. The
+countervailing risk Greg named: positive comments must still name a specific
+observable skill, never become praise filler.
+
+**Audit result:** one near-duplicate pair at 0.38 (the fastener pair, reviewed
+and approved as an ordinary positive/growth pairing). **Zero** against the
+entire rest of the library, including all 20 preschool-band behavior comments.
+Zero of 52 positive comments use conditional support wording.
+
+### The four Step 3 samples were revised in place
+
+Step 3 approval was treated as approval of the *situations*, not permanent
+protection of wording that predates the house style. IDs, categories, tones, and
+grade bands preserved. What was removed: named tools ("playdough and tongs"),
+time-of-day framing ("During story time," "at pickup time"), inferred internal
+states ("gets excited every time"), compliance framing ("without being
+reminded"), unsupported claims ("would help build hand strength"), and
+turn-taking language that crossed into Behavior's lane.
+
+**Apply the same rule to the remaining Academics (4) and Social-Emotional (3)
+samples.** They have the same provenance and the same problems.
+
+### Category boundaries settled during the Preschool build
+
+| Category | Owns |
+|---|---|
+| social-emotional-development | First acquisition of a social-emotional skill |
+| self-help-skills | Dressing, toileting, meals, belongings, cleanup as a physical sequence |
+| play-and-cooperation | The nature of play itself: entering, sustaining, negotiating, recovering |
+| early-literacy | Letters, sounds, name writing, print concepts, read-aloud, retell, predict, rhyme |
+| early-math | Rote counting, one-to-one correspondence, numerals, sorting, patterns, shapes, spatial words, quantity |
+| gross-and-fine-motor | Hand control outside the eating routine, plus climbing, balance, ball skills, spatial navigation |
+
+Worked distinctions:
+
+- **Rote counting** (saying the sequence) and **one-to-one correspondence**
+  (one number per object) are separate skills and must not be merged. A draft
+  that said "counts in order to a growing number of objects" collapsed them and
+  was caught in review.
+- **Sorting** is about what belongs together; **quantity comparison** is about
+  which group has more, fewer, or the same. Both involve groups of objects.
+- **Meal utensils are self-help-skills**, not motor. Motor owns hand control in
+  drawing, cutting, building, and manipulating.
+- **Cleanup is the physical sequence**, not obeying a cleanup direction. That
+  keeps it clear of `behavior/independence` (classroom routines).
+- **Group games measure understanding the structure**, not rule obedience,
+  waiting, or impulse control.
+- **Body awareness is navigating space** (stopping, changing direction,
+  avoiding obstacles), never personal space or hands-to-self, which are
+  `behavior/self-control`.
+- **Recovery in play** is returning to the activity or trying a new idea, not
+  emotional regulation broadly.
+
+### Content guardrails established during the Preschool build
+
+- Parallel play is not deficient by default. A growth comment framing it as a
+  gap needs explicit evidence that shared play is the current instructional
+  goal.
+- Independent play and independent book use are legitimate positive skills, not
+  lower stages that must progress toward group activity. Both were left
+  unpaired deliberately.
+- "Trying independently first" must never imply that asking for help sooner is a
+  weakness.
+- Toileting stays neutral, private, and brief. Two comments, routine-framed, no
+  accident language, no clinical terms.
+- Meals cover containers, utensils, feeding, and cleanup, never quantity eaten
+  or food preferences.
+- Name writing is letter formation, never handwriting neatness.
+- Read-aloud comments describe attending, commenting, answering, connecting.
+  Never "loves books" or "enjoys stories."
+- Retelling (known events) and prediction (clues suggesting what comes next) are
+  distinct and must not blend.
+- Drawing describes observable control or representation, never artistic talent,
+  and never whether another person can recognize the picture.
+- Do not make speed, memorization, or answering correctly-and-quickly the
+  success criterion in early-math.
+- Avoid claims about strength, coordination, or developmental progress a teacher
+  cannot directly observe. Describe the action.
+- Supports stay classroom-based. Home-practice prescriptions appear exactly once
+  library-wide (self-help growth-03) and should not be repeated.
+
+### Deliberately unwritten (do NOT add later to hit a number)
+
+Four mapped situations were left uncovered because every draft was either filler
+or a near-duplicate: **vocabulary** and **independent book choice**
+(early-literacy), **nonstandard measurement** (early-math), and **running**
+(gross-and-fine-motor). The map identifies possible ground, not a checklist that
+overrides quality.
+
+### Repeated frames: measured, deliberately not fixed
+
+| Frame | Count | Share of 40 growth |
+|---|---|---|
+| `[Student] is learning to` | 5 | 13% |
+| `and is beginning to` | 5 | 13% |
+| `is a skill [Student] is` | 3 | 8% |
+| `is difficult for [Student]` | 3 | 8% |
+
+Openings are 62% `[Student]`-initial with 32 distinct non-`[Student]` openings,
+none appearing more than twice. No repeated growth closers at all.
+
+**All four frames are left alone deliberately.** At 13% or below this is
+cosmetic churn, and they belong in the deferred whole-library structural review
+(§11) alongside behavior's frame A and ADHD's `[Student]` concentration, so the
+same formulas get thinned once, coordinated.
+
+**Process lesson worth carrying:** `[Student] is learning to` was capped
+mid-section, and `and is beginning to` then accumulated to the same count
+unwatched. Steering away from one frame concentrates another. Track the whole
+frame distribution, not just the one currently being avoided. The same thing
+happened with conditionals: avoiding "may support this" pushed "could help" to
+the top spot.
+
+---
+
+## 7c. Academics section — COMPLETE (49 comments, 4 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| reading | 14 | 8 | 6 |
+| writing | 14 | 8 | 6 |
+| math | 14 | 8 | 6 |
+| general-work-habits | 7 | 4 | 3 |
+| **TOTAL** | **49** | **28** | **21** |
+
+Target was 40-60. **49 was accepted deliberately.** general-work-habits was
+capped at 9 and finished at 7 because the missing mirrors would have been
+padding or boundary violations.
+
+**Grade bands:** 3-5 = 46, middle-upper = 32, k-2 = 23, preschool = 0.
+Preschool is intentionally zero. k-2 in general-work-habits is 1 of 7 and is
+honestly thin: consulting subject references, using disciplinary vocabulary,
+and revising an explanation after hearing a peer are developmentally later
+skills. Do not force them into younger bands to balance the distribution.
+
+**Audit result:** zero near-duplicate pairs at >=0.35, within the section and
+against the entire rest of the library. Zero of 28 positives use conditional
+support wording.
+
+### THE ARITHMETIC LESSON: replacing a record does not add to the total
+
+**Academics is 49, not 50.** The projection said 50 because it counted the
+seven-comment general-work-habits batch as seven additions. It was not. That
+category already held one Step 3 sample, which was retired and its ID reused,
+so the batch produced **six net additions**, not seven.
+
+`14 + 14 + 14 + 7 = 49.` Library went 340 -> 346, not 347.
+
+**The rule: when a batch replaces or retires an existing record, the section
+total is the count of records that end up in the category, not the count of
+comments drafted.** Reading, Writing, and Math each revised a Step 3 sample
+*in place*, so their batches of 14 produced 13 net additions each and the
+category totals are still 14. Only general-work-habits changed a record count,
+because the retired sample was a growth comment and its replacement is also a
+growth comment at the same ID.
+
+Derive the total from the audit script after writing, never from the batch
+size. This is the third time a projected number has drifted (see §12).
+
+### The Step 3 sample retirement (a deviation, documented)
+
+`academics-growth-general-work-habits-01` was **retired, not revised in place**.
+The other three Academics samples got the same in-place treatment the preschool
+samples got. This one could not:
+
+- The original described **homework submission**, which is outside the
+  general-work-habits fence and already owned by `adhd/task-completion` (see
+  `adhd-positive-task-completion-01` and `adhd-growth-task-completion-03`).
+- The problem was **placement, not wording**. The preschool samples had wording
+  that predated the house style; this one had a situation that predated the
+  fence. No revision preserving the situation could respect the boundary.
+- The **ID was retained for sequencing**, and tone plus the middle-upper band
+  were preserved. The original situation was intentionally not preserved.
+- A code comment at the record in `lib/report-card-comments.ts` documents this,
+  so a future reader does not mistake it for an in-place revision.
+
+### The general-work-habits fence (locked before drafting)
+
+The category is **not** a holding area for comments that fit awkwardly
+elsewhere. Placement rule:
+
+| Content | Goes to |
+|---|---|
+| Reasoning about numbers, solving a problem, showing a mathematical sequence | `math` |
+| Revising, organizing, or supporting written ideas | `writing` |
+| Citing or interpreting text evidence | `reading` |
+| A habit that clearly applies across **multiple** academic subjects | `general-work-habits` |
+
+Explicitly **outside** the fence, owned by Behavior or ADHD: turning work in,
+homework, starting promptly, gathering materials, pacing, persistence,
+following directions, staying focused, keeping papers organized, general
+checking of work.
+
+The five situations that survived: reference tools (both tones), subject
+vocabulary (both tones), making reasoning visible cross-subject (positive
+only), transfer between subjects (positive only, one comment), revising an
+academic explanation after hearing another idea (growth only). Three situations
+earned no mirror, which is why the category is 7 and not 9.
+
+### Category boundaries settled during the Academics build
+
+- **The section axis:** Behavior and ADHD describe *how a student works*;
+  Academics describes *what a student can do with the content*. If a comment
+  would still make sense with the subject swapped out, it belongs in Behavior.
+- **Word problems** measure identifying relevant information and choosing
+  operations, never reading comprehension broadly.
+- **Fact fluency** describes recall and use of number relationships, never
+  speed.
+- **Showing work** stays in `math` when the sequence is mathematical.
+  `general-work-habits` may cover making thinking visible only when the wording
+  genuinely crosses disciplines.
+- **Explaining thinking** in math is steps, representations, and relationships,
+  not `behavior/participation`'s discussion contribution.
+- **Content revision** (`writing`) is what changes in the piece;
+  `behavior/effort-and-motivation` owns accepting and using feedback as a
+  disposition.
+- **Evidence** runs in two directions: `reading` locates it in a text to answer
+  a question, `writing` deploys it to support the student's own claim.
+- **Transfer** in `math` stays inside mathematics (a familiar operation applied
+  to a new problem type); cross-subject transfer is `general-work-habits`.
+
+### Content guardrails established during the Academics build
+
+- No grade-level, benchmark, reading-level, or assessment-data claims anywhere.
+  These are invented results under style rule 3.
+- No "gets the right answer," speed, persistence, effort, or confidence framing
+  in math. Reasonableness comments describe estimating and comparing against
+  the problem, never being correct.
+- No trait labels: "good work habits," "responsible learner," "organized
+  student."
+- Do not praise using a tool *independently* unless independence is itself the
+  target, which in this section it is not (Behavior owns it).
+- Supports must name a real academic action, not a generic reminder or
+  checklist.
+- Handwriting and neatness are absent by design; writing conventions are an
+  academic skill, never presentation quality.
+- Do not claim an effect on a reader ("so a reader can see"), per the standing
+  no-effect-on-others rule.
+
+### Deliberately unwritten
+
+- **Vocabulary from context** (`reading`): every draft restated decoding or
+  inference.
+- **Mathematical re-approach** (`math`, map situation 9): drafted four times.
+  Every version either restated strategy choice (positive-04 / growth-04) or
+  was persistence language in mathematical vocabulary. Persistence was removed
+  from the map language deliberately; when the concrete strategy-change wording
+  did not survive, the situation was left out rather than forced.
+- **Growth mirrors** for making-reasoning-visible, transfer, and academic
+  discussion (see the fence section above).
+
+### Repeated frames: measured, deliberately not fixed
+
+| Dimension | Result |
+|---|---|
+| `[Student]`-initial openings | 31 of 49 (63%), section high |
+| Distinct non-`[Student]` openings | 13 |
+| Top growth frame | `is a skill [Student] is` and `is difficult for [Student]`, 2 each (10%) |
+| Top support construction | `might help`, 7 of 21 growth (33%) |
+| Repeated growth closers | **0** |
+| Near-duplicate pairs >=0.35 | **0** |
+
+**The §7b process lesson repeated and was watched this time.** Two hard caps
+were set mid-section (no `When [Student]` openings, no `may support this`).
+Both held at zero for the rest of the section, and both concentrated something
+else: `[Student]`-initial openings rose 47% -> 63%, and `might help` rose to
+33% to become the dominant modal. This was reported at each batch rather than
+discovered at the end. Greg's ruling: **do not rewrite clear content to
+manipulate an opening percentage.** The tail stayed varied and no stock growth
+frame accumulated, so all of it defers to the whole-library structural review
+(§11).
+
+New repeated 4-grams introduced: `[Student] does not yet` and `does not yet
+consistently`, both shared between `academics-growth-math-06` and
+`academics-growth-general-work-habits-01`. Neither trips the duplicate
+detector. Deferred to the same review.
+
+---
+
+## 7d. Social-Emotional section — COMPLETE (31 comments, 4 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| self-awareness | 9 | 5 | 4 |
+| empathy-and-relationships | 7 | 4 | 3 |
+| emotional-regulation | 7 | 3 | 4 |
+| resilience-and-growth-mindset | 8 | 4 | 4 |
+| **TOTAL** | **31** | **16** | **15** |
+
+Target was 30-40. **31 accepted deliberately, not padded.** Three categories
+(self-awareness, empathy-and-relationships, emotional-regulation) were drafted
+in a prior session directly against the original three Step 3 samples, each
+revised in place. `resilience-and-growth-mindset` was drafted this session
+against a fourth Step 3 sample that was **retired**, following the Academics
+`general-work-habits-01` precedent (see §7c), because its situation
+(persistence after a wrong answer) was already owned by
+`behavior-positive-effort-and-motivation-01` and it carried a trait claim
+("one of their real strengths") the style guide forbids. The ID was reused;
+the situation was not preserved.
+
+**Grade bands:** 3-5 = 30, middle-upper = 27, k-2 = 6, preschool = 0.
+Preschool is intentionally zero, matching every other non-preschool section.
+The section skews older by design: all four categories describe a student's
+own reflective account of an internal or interpersonal pattern, which is
+developmentally a 3-5-and-up skill. k-2 coverage is thin (6 of 31) and honest,
+not padded to look even.
+
+**Audit result:** zero near-duplicate pairs at >=0.35 against the rest of the
+library. Within-section, one pair originally scored 0.75 (see below) and was
+reworded down to 0.42, now in line with the section's other positive/growth
+pairs and the rest of the library. Zero of 16 positive comments use
+conditional support wording.
+
+### The resilience-and-growth-mindset fence (locked before drafting)
+
+The category's mechanism is **what a student believes a setback means and
+whether that belief shifts**, not whether the student keeps trying. That is
+`behavior/effort-and-motivation`'s lane. The first draft map leaked into
+persistence ("returns to trying," "struggles to return to trying") and was
+caught and tightened before drafting:
+
+| Content | Goes to |
+|---|---|
+| Whether a student keeps working, tries again, or gives up | `behavior/effort-and-motivation` |
+| Whether a student's *interpretation* of a mistake, struggle, or difficulty shifts | `social-emotional/resilience-and-growth-mindset` |
+
+Test applied to every draft line: if it can be rewritten as "keeps trying" or
+"puts in effort" without losing the point, it belongs to Behavior, not here.
+
+Final ground: using a mistake as information rather than only a verdict,
+believing ability develops with practice rather than being fixed, revising a
+negative self-conclusion after a struggle, and treating early difficulty in
+something new as expected rather than a warning sign. A fifth positive
+situation (comparing current difficulty to a past skill that used to be hard)
+was proposed and cut in review as the weakest of the five and the most
+backstory-adjacent under style rule 3.
+
+### A near-duplicate pair caught and fixed in review (0.75 -> 0.42)
+
+`resilience-positive-02` and the first draft of `resilience-growth-02` both
+described the fixed-vs-changeable-ability belief and scored **0.75** Jaccard
+similarity, the highest pair measured anywhere in the library this project
+(next highest anywhere: 0.42). Both shared the clause "something they either
+have or do not have." Greg explicitly declined to wave this through as an
+ordinary positive/growth mirror: "the pair can express opposite sides of the
+same mechanism without being nearly the same sentence." Growth-02 was
+rewritten with different structure and emphasis, preserving the mechanism:
+
+> Before: "[Student] describes a skill as something they either have or do not
+> have, rather than as something that changes with practice."
+>
+> After: "[Student] often speaks about ability as fixed and does not yet
+> describe skills as something that can develop over time."
+
+**Rule for future sections:** a positive/growth mirror pair scoring
+meaningfully above the section's other pairs (not just above the 0.35/0.40
+threshold) warrants a reword pass even if it technically clears the audit
+threshold. Shared function words in a single clean mechanism are not an
+excuse; different sentence structure is achievable and was achieved here in
+one pass.
+
+### A parser gap found and fixed this session (third parser issue, same root cause)
+
+The retired-and-replaced record (`resilience-positive-01`) carries a five-line
+inline `//` comment block between its opening `{` and its `id:` field,
+documenting the retirement per the Academics precedent. It is the only record
+in the entire file with a comment block in that position. The recreated
+`parse.mjs` regex required `id:` immediately after `{` and silently dropped
+this one record, undercounting the library by one (373 instead of 374) and
+producing a downstream non-sequential-numbering false error. Caught by the
+existing parse-count-vs-raw-count check before anything was reported to Greg.
+Fixed by making the regex tolerate an optional `//`-comment block between `{`
+and `id:`. **Any future parser rewrite must handle: single-quoted text,
+double-quoted text (including escaped internal double-quotes), and an optional
+leading comment block.** This is the third distinct parsing edge case found
+across the project (see §9); the pattern is that hand-written records
+accumulate formatting variety the original parser never had to anticipate.
+
+---
+
+## 8. Boundary decisions (hard-won, apply them)
+
+**CORRECTED 2026-07-28 (during the ADHD build).** The earlier framing said
+behavior comments carry no support clauses. That was wrong and is superseded:
+
+- **The real axis is bounded-situation vs. recurring-pattern.**
+  `behavior/*` describes a bounded classroom situation or skill.
+  `adhd` describes a recurring pattern, strategy, or support condition **across**
+  situations.
+- **Behavior comments are not forbidden from mentioning supports.** Support
+  language is a common *consequence* of the recurring-pattern lane, not the test
+  for it.
+- **Do not add support language merely to make a behavior-like comment qualify
+  for ADHD.** If a comment describes one bounded situation, it belongs in
+  behavior no matter how the support clause is worded.
+
+Applied concretely between `behavior/focus-and-attention` and `adhd`:
+
+- **`behavior/focus-and-attention`** = attention during a **specific** task, subject, setting, or time of day.
+- **`adhd` section** = a **broader or recurring** attention/executive-function pattern.
+
+All 16 behavior/focus-and-attention comments already exist and are scoped to
+named settings. The ADHD section must occupy the recurring-pattern-and-supports
+lane **without restating them**. Six candidates were cut from that category
+specifically because they belonged to ADHD: "needs frequent check-ins to stay on
+task" (recurring pattern) and "benefits from a quiet workspace" (names a
+support) are the two clearest examples of what ADHD should now cover.
+
+Other locked boundaries:
+
+| Category | Owns |
+|---|---|
+| self-control | Regulating an impulse or reaction in an emotionally charged moment |
+| focus-and-attention | Staying mentally engaged with a task or lesson |
+| following-directions | Understanding, remembering, clarifying, carrying out an instruction |
+| independence | Starting, managing, checking, completing work; materials, time, routines, help-seeking |
+| participation | Contributing to instruction, discussion, shared learning |
+| leadership | Guiding, coordinating, modeling, advocating, taking responsibility |
+| peer-relationships | Cooperation and reciprocity with classmates |
+| effort-and-motivation | Willingness, persistence, investment, response to feedback |
+
+Worked examples of the fine distinctions:
+
+- "adjusts when plans change" = **self-control** (emotional response); "adjusts when a procedure changes" = **following-directions** (procedural update).
+- "begins work when an activity starts" = **independence**; a comment about the gap between directions ending and work starting was **cut** as too narrow to justify against it.
+- "listens as much as they contribute" = **peer-relationships** (reciprocity); "listens and builds on what classmates said" = **participation** (shared learning).
+- "classroom responsibilities" = **leadership** (duty to the class), not independence (own work).
+- "rereads the directions before asking for help" = **following-directions**; "tries a strategy before asking" = **independence**.
+
+---
+
+## 9. Reusable audit scripts
+
+Location: the session scratchpad. **Recreate them if missing** (they are
+read-only analysis tools, not repo files). They live in whatever the current
+session's scratchpad path is; recreating is faster than hunting for the old one.
+
+| Script | Checks |
+|---|---|
+| `audit-comments.mjs` | Totals by section/category/tone, grade-band coverage, **duplicate IDs**, **duplicate texts**, **missing `[Student]` token**, **em/en dashes**, **ID convention + sequential numbering**, **locked-but-unpopulated categories**, and a parse-count vs. raw-count check that catches malformed records |
+| `section-audit.mjs` | Takes a section name. **Jaccard near-duplicates within the section AND against the entire rest of the library** (>=0.35), support-language breakdown (conditional vs observed vs none, plus a check that no positive comment uses conditional wording), opening-structure buckets, growth-closer frequency, repeated 4-grams, per-category grade bands |
+| `dump.mjs` | Takes `section` or `section/category` filters. Prints full text by tone with grade bands. Use before drafting to read the adjacent categories you must not restate |
+
+**Do not count anything by hand.** Greg has caught manual miscounts three times
+now, and one missing `[Student]` token reached his review because a batch was
+hand-audited. Run the scripts.
+
+### Two parser/reporting bugs found 2026-07-28 — keep both guards
+
+1. **Double-quoted records were silently dropped.** Records whose text contains
+   an apostrophe (`[Student]'s ...`) are stored **double-quoted** in the data
+   file; the rest are single-quoted. A parser matching only single quotes
+   dropped **14 records** and reported the library at 287 instead of 301. The
+   parse-count vs raw-count check caught it. `audit-comments.mjs` now also
+   carries an explicit **possessive-string regression check** that fails loudly
+   if double-quoted records stop parsing. It was verified by fault injection:
+   reinstating the old bug makes it fire two errors. Any rewrite of the parser
+   must handle **both quote styles**.
+2. **A hand-built opening table summed to 13 of 14.** A possessive opening
+   (`[Student]'s written ideas ...`) was left out of the `[Student]`-initial
+   bucket, which is exactly what the §9 structural rule forbids.
+   `section-audit.mjs` now prints a **RECONCILIATION** line asserting the
+   buckets sum to the section total, plus a count of possessive openings. Never
+   report a bucket table that does not reconcile.
+
+### Structural classification rule
+
+When bucketing opening structures, **every opening beginning with `[Student]`
+goes in one bucket**, including possessive forms (`[Student]'s`). Splitting them
+understates concentration.
+
+**Standard verification after every batch:**
+
+```bash
+npx tsc --noEmit -p tsconfig.json 2>&1 | grep -i "report-card-comments\|LibraryClient"
+grep -o "id: '[^']*'" lib/report-card-comments.ts | sort | uniq -d   # duplicate IDs
+node <scratchpad>/audit-comments.mjs
+```
+
+Greg handles browser testing himself. Only ask him to test when a change is
+technically risky or a regression is suspected.
+
+---
+
+## 10. Library status: 374 comments — ALL CONTENT SECTIONS COMPLETE
+
+| Section | Populated | Target | Categories locked | Categories populated | Status |
+|---|---|---|---|---|---|
+| behavior | **145** | 150-200 | 8 | 8 | COMPLETE |
+| adhd | **57** | 60-80 | 5 | 5 | COMPLETE |
+| preschool | **92** | 80-100 | 6 | 6 | COMPLETE |
+| academics | **49** | 40-60 | 4 | 4 | COMPLETE |
+| social-emotional | **31** | 30-40 | 4 | 4 | COMPLETE |
+| **TOTAL** | **374** | 350-450 | 27 | 27 | ALL COMPLETE |
+
+**374 sits inside both approved bands** (350-450 Product Decision; 360-480
+Schema §2 sum of per-section ranges). No padding anywhere. Behavior and ADHD
+came in **under** target, Preschool hit its map exactly, Academics landed
+mid-range, Social-Emotional landed low-range. All five were accepted
+deliberately. Do not retroactively pad any of them.
+
+### Verify the category list against the schema, not the data
+
+Locked categories with zero comments were an artifact of Step 3 sampling
+during earlier sections. As of this session, **every locked category in every
+section is populated.** Nothing outstanding.
+
+**At the start of each section, read `CATEGORIES_BY_SECTION` in
+`lib/report-card-comments.ts` directly.** Never infer a section's category list
+from what already has comments. The audit script reports this automatically
+under "locked but unpopulated categories."
+
+Schema §2 guidance for preschool: roughly even across all 6 categories is
+plausible, since all are genuinely core to the age band. Section total is the
+tracked target, not per-category quotas.
+
+---
+
+## 11. Next steps
+
+**All five content sections are complete. §12 is resolved and holds: 374 sits
+inside both approved bands.** No further content drafting is planned unless
+Greg explicitly reopens a section.
+
+**The Behavior structural thinning pass is done (§11a).** ADHD, Preschool,
+Academics, and Social-Emotional were reviewed and deliberately left unchanged;
+their flagged metrics are documented debt, not proven defects (see §11a for
+the reasoning).
+
+Remaining, in order:
+
+1. Evaluate the deferred content ideas from §7 (behavior) and §7c (academics)
+2. Decide whether behavior's 145, ADHD's 57, Academics' 49, and
+   Social-Emotional's 31 stand as final (recommendation: yes, all four were
+   accepted deliberately with documented rationale)
+3. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
+   with the Step 6 content decisions, the observed-versus-possible support rule
+   (§6), the corrected boundary rule (§8), the ADHD guardrails (§7a), the
+   resilience-and-growth-mindset fence (§7d), and the structural review
+   outcome (§11a)
+4. Commit the branch, open the PR (this route is `.tsx`, so it is
+   **branch-and-wait**, never self-merge)
+5. Stripe integration, gating, checkout
+
+---
+
+## 11a. Behavior structural thinning pass — COMPLETE (2026-07-28)
+
+**Scope decision:** a full section-by-section audit (fresh `section-audit.mjs`
+run against all five sections) showed Behavior was the only section with a
+real, compounding structural problem. ADHD, Preschool, Academics, and
+Social-Emotional each had at most one or two mild, single-metric skews
+(opening-structure concentration, one repeated modal phrase) with **no
+near-duplicate pair above 0.42** and no 4-gram repeated more than twice.
+Behavior alone had a true monopoly frame plus three compounding stock closers
+plus a cluster of 0.40-0.50+ cross-category near-duplicate pairs, all
+downstream of the same four templates colliding across categories. **Decision:
+thin Behavior only; leave the other four sections untouched.** Rewriting their
+mild skews would contradict the standing rule against changing clear content
+solely to manipulate a percentage.
+
+**What was fixed:**
+
+1. **The `[Student] is working on` monopoly.** Held 25 of 67 growth comments
+   (37%) across all 8 categories. 12 were reworded to genuinely different
+   sentence structures (present-tense negatives, reordered clauses, "may"
+   constructions), not swapped for a second stock phrase. Result: 12 of 67
+   (18%), no category left with more than 1-2 remaining instances. The other
+   13 were left as-is; one instance per category reads naturally, multiple is
+   where the monopoly was actually felt.
+2. **Two near-identical positive/growth pairs**, both the same sentence with
+   "is working on" prepended to the positive version:
+   - `following-directions-07`/`following-directions-05` (0.69, the highest
+     similarity found anywhere in the library this project). Growth-05 now
+     names the actual behavioral gap (proceeding without asking) rather than
+     negating the positive sentence.
+   - `leadership-06`/`leadership-05` (0.50, caught in a targeted check
+     requested by Greg specifically for this pair before committing).
+     Growth-05 now describes the missing behavior concretely rather than
+     restating the positive with a prefix.
+
+**What was deliberately left alone**, out of scope for this pass: the three
+older stock closers (`is an area [Student] is continuing to develop` — 10
+uses, `an ongoing goal for [Student]` — 7 uses, `[Student] continues to build`
+— 7 uses) and their resulting 0.35-0.50 cross-category collisions (about a
+dozen pairs, e.g. `peer-relationships-04`/`independence-02` and
+`participation-08`/`participation-07`, both at 0.50). **These are documented
+debt, not proven defects.** Continuing to chase every 0.35-0.50 pair risks
+turning a useful structural pass into endless percentage cleanup; a future
+session should treat these as a deliberate, separately-scoped decision, not an
+extension of this one.
+
+**A new phrase, capped on introduction:** "is still developing for [Student]"
+was used 3 times across the reworded batch (`focus-and-attention-08`,
+`peer-relationships-07`, `leadership-04`). Watched during drafting so it did
+not become a second monopoly; 3 uses across 3 categories was judged
+reasonable and left as-is.
+
+**Verification:** typecheck clean, zero duplicate IDs, zero audit errors,
+library total unchanged at 374 (pure rewording, no additions or removals).
+Highest within-section near-duplicate after the pass: 0.50 (the two documented
+debt pairs above), down from a working set that included a 0.69 outlier.
+
+---
+
+## 11b. Manual browser QA — PASSED (2026-07-28)
+
+Greg tested PR #7's preview deployment directly at `/report-card-comment-library`
+(the route is unlinked and `noindex`, so it must be reached by URL, not by
+navigating the site).
+
+**Result: manual browser QA passed on desktop, iPhone, and Android.** All
+sections, categories, filters, comment wrapping, copy behavior, refresh
+behavior, browser Back behavior, and mobile layout worked correctly. No
+issues found.
+
+**PR #7 is now ready for final code review and merge.** This was the last
+blocker on the merge (§10/§11 previously listed it as pending). Stripe
+integration still waits until after the merge, per the standing sequencing:
+content and structure first, payment integration only once the library itself
+is confirmed working end-to-end in a real browser.
+
+---
+
+## 12. RESOLVED: the final-target math (no gap exists)
+
+**Raised 2026-07-28 by Greg, after Preschool completed. Resolved the same day,
+before Academics was drafted. Kept as the record of why no padding happened.**
+
+The arithmetic:
+
+| | |
+|---|---|
+| Current library | **301** |
+| Academics target | 40-60 |
+| Social-Emotional target | 30-40 |
+| **Projected final total** | **371-401** |
+| Target as stated in this handoff (DISPROVEN, see below) | ~450-480 |
+| **Apparent gap** | **49-109 comments** |
+
+The three completed sections are not the cause. Behavior (145) and ADHD (57)
+came in under target and Preschool (92) hit its map, but even at the **top** of
+every remaining range the library lands at 401, still 49 short of 450.
+
+**Do NOT close this gap by quietly expanding Academics or Social-Emotional.**
+That would reintroduce exactly the padding this project has refused at every
+step, and it contradicts the standing rule that section totals are need-based.
+
+### Checked against both source docs 2026-07-28, same session
+
+Possibility 1 is confirmed. **The "~450-480" figure is drift and was never an
+approved number.** Neither source doc contains it:
+
+| Source | Stated overall target |
+|---|---|
+| `Report Card Comment Library - Product Decision.md`, "Content target" | "Approximately **350-450** genuinely distinct comments" |
+| `Report Card Comment Library - V1 Schema.md` §2, sum of the five per-section ranges (150-200, 60-80, 80-100, 40-60, 30-40) | **360-480** |
+
+Schema §2 also explicitly warns against the arithmetic that produces an inflated
+number: an earlier draft multiplied 27 categories by 15-20 each, reached 405-540,
+and was corrected precisely because it was "quietly over target, and worse, an
+incentive to pad narrow categories."
+
+**Resolution: the projected 371-401 sits inside both approved bands.** It clears
+the Product Decision's 350-450 and sits inside Schema §2's 360-480. There is no
+gap and nothing to make up. The apparent 49-109 shortfall was measured against a
+number that does not exist in any approved document.
+
+**Consequences:**
+
+- Academics stays at 40-60 and Social-Emotional at 30-40. Do not expand either
+  to chase a total.
+- The tracked target is **350-450** (Product Decision, the source of truth for
+  scope). Every "~450-480" reference in this handoff has been corrected.
+- If a section again appears to fall short, check the figure against the Product
+  Decision doc before treating it as a gap. This is the second time a derived
+  number has drifted upward and created phantom scope.
+
+Greg still owns the final call on whether 371-401 is the right landing place. The
+point resolved here is narrower: **there is no arithmetic problem to solve, so no
+padding is warranted.**
