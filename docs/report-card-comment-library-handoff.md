@@ -2,10 +2,10 @@
 
 **Last updated:** 2026-07-28
 **Status:** Step 6 in progress. Behavior complete (145). ADHD complete (57).
-Preschool complete (92). Library at 301.
-**Next task:** Academics content map. The final-target question is **resolved**
-(§12): the projected 371-401 sits inside both approved bands, and the approved
-per-section targets are unchanged.
+Preschool complete (92). Academics complete (49). Library at 346.
+**Next task:** Social-Emotional content map (30-40), the last content section.
+Then the whole-library structural review (§11). The final-target question is
+**resolved** (§12); projected finish is 376-386, inside both approved bands.
 
 ---
 
@@ -455,6 +455,170 @@ the top spot.
 
 ---
 
+## 7c. Academics section — COMPLETE (49 comments, 4 categories)
+
+| Category | Total | Positive | Growth |
+|---|---|---|---|
+| reading | 14 | 8 | 6 |
+| writing | 14 | 8 | 6 |
+| math | 14 | 8 | 6 |
+| general-work-habits | 7 | 4 | 3 |
+| **TOTAL** | **49** | **28** | **21** |
+
+Target was 40-60. **49 was accepted deliberately.** general-work-habits was
+capped at 9 and finished at 7 because the missing mirrors would have been
+padding or boundary violations.
+
+**Grade bands:** 3-5 = 46, middle-upper = 32, k-2 = 23, preschool = 0.
+Preschool is intentionally zero. k-2 in general-work-habits is 1 of 7 and is
+honestly thin: consulting subject references, using disciplinary vocabulary,
+and revising an explanation after hearing a peer are developmentally later
+skills. Do not force them into younger bands to balance the distribution.
+
+**Audit result:** zero near-duplicate pairs at >=0.35, within the section and
+against the entire rest of the library. Zero of 28 positives use conditional
+support wording.
+
+### THE ARITHMETIC LESSON: replacing a record does not add to the total
+
+**Academics is 49, not 50.** The projection said 50 because it counted the
+seven-comment general-work-habits batch as seven additions. It was not. That
+category already held one Step 3 sample, which was retired and its ID reused,
+so the batch produced **six net additions**, not seven.
+
+`14 + 14 + 14 + 7 = 49.` Library went 340 -> 346, not 347.
+
+**The rule: when a batch replaces or retires an existing record, the section
+total is the count of records that end up in the category, not the count of
+comments drafted.** Reading, Writing, and Math each revised a Step 3 sample
+*in place*, so their batches of 14 produced 13 net additions each and the
+category totals are still 14. Only general-work-habits changed a record count,
+because the retired sample was a growth comment and its replacement is also a
+growth comment at the same ID.
+
+Derive the total from the audit script after writing, never from the batch
+size. This is the third time a projected number has drifted (see §12).
+
+### The Step 3 sample retirement (a deviation, documented)
+
+`academics-growth-general-work-habits-01` was **retired, not revised in place**.
+The other three Academics samples got the same in-place treatment the preschool
+samples got. This one could not:
+
+- The original described **homework submission**, which is outside the
+  general-work-habits fence and already owned by `adhd/task-completion` (see
+  `adhd-positive-task-completion-01` and `adhd-growth-task-completion-03`).
+- The problem was **placement, not wording**. The preschool samples had wording
+  that predated the house style; this one had a situation that predated the
+  fence. No revision preserving the situation could respect the boundary.
+- The **ID was retained for sequencing**, and tone plus the middle-upper band
+  were preserved. The original situation was intentionally not preserved.
+- A code comment at the record in `lib/report-card-comments.ts` documents this,
+  so a future reader does not mistake it for an in-place revision.
+
+### The general-work-habits fence (locked before drafting)
+
+The category is **not** a holding area for comments that fit awkwardly
+elsewhere. Placement rule:
+
+| Content | Goes to |
+|---|---|
+| Reasoning about numbers, solving a problem, showing a mathematical sequence | `math` |
+| Revising, organizing, or supporting written ideas | `writing` |
+| Citing or interpreting text evidence | `reading` |
+| A habit that clearly applies across **multiple** academic subjects | `general-work-habits` |
+
+Explicitly **outside** the fence, owned by Behavior or ADHD: turning work in,
+homework, starting promptly, gathering materials, pacing, persistence,
+following directions, staying focused, keeping papers organized, general
+checking of work.
+
+The five situations that survived: reference tools (both tones), subject
+vocabulary (both tones), making reasoning visible cross-subject (positive
+only), transfer between subjects (positive only, one comment), revising an
+academic explanation after hearing another idea (growth only). Three situations
+earned no mirror, which is why the category is 7 and not 9.
+
+### Category boundaries settled during the Academics build
+
+- **The section axis:** Behavior and ADHD describe *how a student works*;
+  Academics describes *what a student can do with the content*. If a comment
+  would still make sense with the subject swapped out, it belongs in Behavior.
+- **Word problems** measure identifying relevant information and choosing
+  operations, never reading comprehension broadly.
+- **Fact fluency** describes recall and use of number relationships, never
+  speed.
+- **Showing work** stays in `math` when the sequence is mathematical.
+  `general-work-habits` may cover making thinking visible only when the wording
+  genuinely crosses disciplines.
+- **Explaining thinking** in math is steps, representations, and relationships,
+  not `behavior/participation`'s discussion contribution.
+- **Content revision** (`writing`) is what changes in the piece;
+  `behavior/effort-and-motivation` owns accepting and using feedback as a
+  disposition.
+- **Evidence** runs in two directions: `reading` locates it in a text to answer
+  a question, `writing` deploys it to support the student's own claim.
+- **Transfer** in `math` stays inside mathematics (a familiar operation applied
+  to a new problem type); cross-subject transfer is `general-work-habits`.
+
+### Content guardrails established during the Academics build
+
+- No grade-level, benchmark, reading-level, or assessment-data claims anywhere.
+  These are invented results under style rule 3.
+- No "gets the right answer," speed, persistence, effort, or confidence framing
+  in math. Reasonableness comments describe estimating and comparing against
+  the problem, never being correct.
+- No trait labels: "good work habits," "responsible learner," "organized
+  student."
+- Do not praise using a tool *independently* unless independence is itself the
+  target, which in this section it is not (Behavior owns it).
+- Supports must name a real academic action, not a generic reminder or
+  checklist.
+- Handwriting and neatness are absent by design; writing conventions are an
+  academic skill, never presentation quality.
+- Do not claim an effect on a reader ("so a reader can see"), per the standing
+  no-effect-on-others rule.
+
+### Deliberately unwritten
+
+- **Vocabulary from context** (`reading`): every draft restated decoding or
+  inference.
+- **Mathematical re-approach** (`math`, map situation 9): drafted four times.
+  Every version either restated strategy choice (positive-04 / growth-04) or
+  was persistence language in mathematical vocabulary. Persistence was removed
+  from the map language deliberately; when the concrete strategy-change wording
+  did not survive, the situation was left out rather than forced.
+- **Growth mirrors** for making-reasoning-visible, transfer, and academic
+  discussion (see the fence section above).
+
+### Repeated frames: measured, deliberately not fixed
+
+| Dimension | Result |
+|---|---|
+| `[Student]`-initial openings | 31 of 49 (63%), section high |
+| Distinct non-`[Student]` openings | 13 |
+| Top growth frame | `is a skill [Student] is` and `is difficult for [Student]`, 2 each (10%) |
+| Top support construction | `might help`, 7 of 21 growth (33%) |
+| Repeated growth closers | **0** |
+| Near-duplicate pairs >=0.35 | **0** |
+
+**The §7b process lesson repeated and was watched this time.** Two hard caps
+were set mid-section (no `When [Student]` openings, no `may support this`).
+Both held at zero for the rest of the section, and both concentrated something
+else: `[Student]`-initial openings rose 47% -> 63%, and `might help` rose to
+33% to become the dominant modal. This was reported at each batch rather than
+discovered at the end. Greg's ruling: **do not rewrite clear content to
+manipulate an opening percentage.** The tail stayed varied and no stock growth
+frame accumulated, so all of it defers to the whole-library structural review
+(§11).
+
+New repeated 4-grams introduced: `[Student] does not yet` and `does not yet
+consistently`, both shared between `academics-growth-math-06` and
+`academics-growth-general-work-habits-01`. Neither trips the duplicate
+detector. Deferred to the same review.
+
+---
+
 ## 8. Boundary decisions (hard-won, apply them)
 
 **CORRECTED 2026-07-28 (during the ADHD build).** The earlier framing said
@@ -518,9 +682,27 @@ session's scratchpad path is; recreating is faster than hunting for the old one.
 | `section-audit.mjs` | Takes a section name. **Jaccard near-duplicates within the section AND against the entire rest of the library** (>=0.35), support-language breakdown (conditional vs observed vs none, plus a check that no positive comment uses conditional wording), opening-structure buckets, growth-closer frequency, repeated 4-grams, per-category grade bands |
 | `dump.mjs` | Takes `section` or `section/category` filters. Prints full text by tone with grade bands. Use before drafting to read the adjacent categories you must not restate |
 
-**Do not count anything by hand.** Greg has caught manual miscounts twice, and
-one missing `[Student]` token reached his review because a batch was
+**Do not count anything by hand.** Greg has caught manual miscounts three times
+now, and one missing `[Student]` token reached his review because a batch was
 hand-audited. Run the scripts.
+
+### Two parser/reporting bugs found 2026-07-28 — keep both guards
+
+1. **Double-quoted records were silently dropped.** Records whose text contains
+   an apostrophe (`[Student]'s ...`) are stored **double-quoted** in the data
+   file; the rest are single-quoted. A parser matching only single quotes
+   dropped **14 records** and reported the library at 287 instead of 301. The
+   parse-count vs raw-count check caught it. `audit-comments.mjs` now also
+   carries an explicit **possessive-string regression check** that fails loudly
+   if double-quoted records stop parsing. It was verified by fault injection:
+   reinstating the old bug makes it fire two errors. Any rewrite of the parser
+   must handle **both quote styles**.
+2. **A hand-built opening table summed to 13 of 14.** A possessive opening
+   (`[Student]'s written ideas ...`) was left out of the `[Student]`-initial
+   bucket, which is exactly what the §9 structural rule forbids.
+   `section-audit.mjs` now prints a **RECONCILIATION** line asserting the
+   buckets sum to the section total, plus a count of possessive openings. Never
+   report a bucket table that does not reconcile.
 
 ### Structural classification rule
 
@@ -548,17 +730,22 @@ technically risky or a regression is suspected.
 | behavior | **145** | 150-200 | 8 | 8 | COMPLETE |
 | adhd | **57** | 60-80 | 5 | 5 | COMPLETE |
 | preschool | **92** | 80-100 | 6 | 6 | COMPLETE |
-| academics | 4 | 40-60 | 4 | 4 | next |
-| social-emotional | 3 | 30-40 | 4 | 3 | pending |
-| **TOTAL** | **301** | see §12 | 27 | 26 | |
+| academics | **49** | 40-60 | 4 | 4 | COMPLETE |
+| social-emotional | 3 | 30-40 | 4 | 3 | next |
+| **TOTAL** | **346** | see §12 | 27 | 26 | |
 
-**Remaining: Academics (40-60), Social-Emotional (30-40).** The academics and
-social-emotional counts above are the original Step 3 sample comments only, and
-both sets need the same in-place revision the four preschool samples got (§7b).
+**Remaining: Social-Emotional (30-40).** Its 3 comments are the original Step 3
+samples and need the same in-place revision the preschool and academics samples
+got (§7b, §7c).
+
+**346 is below the 350 floor and that is expected, not a problem.** The floor
+applies to the completed library, not an unfinished checkpoint. Social-Emotional
+at 30-40 brings the projected finish to **376-386**, inside both approved bands,
+with no padding.
 
 Behavior and ADHD came in **under** target (145 vs 150-200, 57 vs 60-80),
-Preschool hit its map exactly (92). All three were accepted deliberately. Do not
-retroactively pad any of them.
+Preschool hit its map exactly (92), Academics landed mid-range (49). All four
+were accepted deliberately. Do not retroactively pad any of them.
 
 ### Verify the category list against the schema, not the data
 
@@ -585,8 +772,9 @@ tracked target, not per-category quotas.
 
 ## 11. Next steps
 
-**§12 is resolved.** The approved targets stand unchanged: Academics 40-60,
-Social-Emotional 30-40. Do not expand either to chase a total.
+**§12 is resolved.** The approved targets stand unchanged. Social-Emotional
+stays at 30-40; do not expand it to chase a total or to lift 346 over the 350
+floor (see §10).
 
 Remaining content: **academics (40-60), social-emotional (30-40)**, roughly
 70-100 comments. Follow the §4 workflow exactly: content map first, wait for
@@ -602,9 +790,13 @@ Then, in order:
      growth comments, all concentrated in task-completion and organization
      (drafted before the vary-the-conditional rule was established).
    - **Preschool:** four frames at 13% or below of 40 growth comments (§7b).
+   - **Academics:** `[Student]`-initial openings at 63% of 49, `might help` at
+     33% of 21 growth comments, and two new repeated 4-grams (`[Student] does
+     not yet`, `does not yet consistently`). All are cap side effects, reported
+     per batch, deliberately not fixed piecemeal (§7c).
    Do not fix any of them piecemeal while drafting new sections.
 2. Evaluate the deferred content ideas from §7
-3. Decide whether behavior's 145 and ADHD's 57 stand as final
+3. Decide whether behavior's 145, ADHD's 57, and Academics' 49 stand as final
 4. Update `Brain/Report Card Comment Library - V1 Schema.md` §10 revision log
    with the Step 6 content decisions, the observed-versus-possible support rule
    (§6), the corrected boundary rule (§8), and the ADHD guardrails (§7a)
@@ -616,8 +808,8 @@ Then, in order:
 
 ## 12. RESOLVED: the final-target math (no gap exists)
 
-**Raised 2026-07-28 by Greg, after Preschool completed. Answer this before
-drafting Academics.**
+**Raised 2026-07-28 by Greg, after Preschool completed. Resolved the same day,
+before Academics was drafted. Kept as the record of why no padding happened.**
 
 The arithmetic:
 
