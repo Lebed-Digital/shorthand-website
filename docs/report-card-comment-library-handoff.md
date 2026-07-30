@@ -2927,3 +2927,24 @@ fully verified end to end.** Still deliberately deferred, unchanged from
 changing the shared 30-minute TTL) and tampering (cookie and link-token). See
 §16.6's "Still outstanding" note for how to test each without touching shared
 config.
+
+## 21. Launch closeout (2026-07-30)
+
+- **PR #8** merged via squash as `5babad2734731da888af8bcfd6b20cb1f5af9064`.
+- **`main`** clean and synced at `2ab472d4fef7980919d09f84fa8c88594fba085d`.
+- **`feature/report-card-comment-library-stripe`** deleted locally and on
+  origin; nothing left depends on it.
+- Live Stripe product and $4.99 price configured and confirmed correct
+  (§18-19).
+- One real-money live purchase passed (§19). Initial access grant failed
+  silently because the Supabase `STRIPE_PRICE_ID` secret still held the
+  test-mode price ID; updating it to the live price ID and reloading the
+  existing paid success URL recovered access **without a second charge**.
+- Known-email and unknown-email restore-by-email both passed in production
+  (§20), including anti-enumeration.
+- Exactly one live `report_card_purchases` row exists, no duplicates, no
+  runtime errors observed anywhere in this process.
+- Remaining, deliberately deferred: expired-token and tampering tests
+  (§16.4/§16.6), neither of which blocks launch.
+
+**No current launch blockers.**
