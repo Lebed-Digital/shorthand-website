@@ -46,6 +46,8 @@ Here are twelve templates covering the most common behavioral areas for second-g
 
 2. **The Helper:** "[Student] comes to school each day with a positive attitude and a readiness to learn. They are quick to offer help to classmates and take great pride in keeping our classroom organized."
 
+LIBRARYCTAMARKER
+
 ### Needs Improvement and Behavior Support
 
 3. **The Developing Self-Regulator:** "[Student] has wonderful ideas to share but is working on managing their impulsivity. They benefit from gentle reminders to raise their hand and wait for their turn to speak during whole-group lessons."
@@ -75,8 +77,6 @@ Here are twelve templates covering the most common behavioral areas for second-g
 11. **The Smooth Transitioner:** "[Student] handles classroom transitions with ease. They are quick to clean up their materials and prepare for the next subject, helping our classroom run smoothly."
 
 12. **The Routine Builder:** "[Student] is working on managing transitions between activities without losing focus. We are using visual cues and timers to help them pack up and prepare for the next lesson in a timely manner."
-
-LIBRARYCTAMARKER
 
 ## Writing Comments That Build Partnerships
 

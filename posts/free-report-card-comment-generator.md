@@ -36,6 +36,8 @@ No account. No login. No payment. Just copy and go.
 
 ---
 
+LIBRARYCTAMARKER
+
 ## Who this is for
 
 This tool is most useful when you're:
@@ -85,8 +87,6 @@ If you're doing this all from memory right now, that's the piece worth changing.
 If you need ready-to-copy examples while you work through the generator, [Report Card Comments for Behavior: 120+ Examples](/blog/report-card-comments-for-behavior) has examples organized by situation: strong behavior, improvement, ongoing concerns, IEP students, and the hardest-to-write cases.
 
 ---
-
-LIBRARYCTAMARKER
 
 ## Try it
 

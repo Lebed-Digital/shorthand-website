@@ -59,6 +59,8 @@ Sharing is genuinely hard at this age, and struggling with it is developmentally
 
 "Elias is learning to ask for a turn with words instead of reaching for the toy. We practice the phrase 'Can I have a turn?' every day, and it is sticking."
 
+LIBRARYCTAMARKER
+
 ### Classroom routines and self-regulation
 
 Routines are the scaffolding that makes the rest of the day possible. These comments cover transitions, calm-down strategies, and following classroom routines.
@@ -114,8 +116,6 @@ Sometimes a behavior is significant enough that it needs to be named directly. T
 "Ethan is working on keeping a safe body when he is angry. We are practicing safe hands every day."
 
 "Sophia requires support to stay engaged during story time. She is learning to be a good listener."
-
-LIBRARYCTAMARKER
 
 ## Save time on your preschool comments
 

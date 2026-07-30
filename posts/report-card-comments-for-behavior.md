@@ -88,6 +88,8 @@ For the social-emotional learning section of the report, we have a dedicated set
 
 ---
 
+LIBRARYCTAMARKER
+
 ## When there are ongoing concerns (honest but constructive)
 
 - "[Name] continues to work on [behavior]. We are collaborating on strategies to support continued growth."
@@ -173,8 +175,6 @@ Keep these factual and neutral. Stick to what's observable and documented.
 - "Documentation of [Name]'s progress is ongoing. I look forward to discussing this with the team at our next meeting."
 
 ---
-
-LIBRARYCTAMARKER
 
 ## A few rules I follow when writing behavior comments
 

@@ -56,6 +56,8 @@ The hardest box on the card for most teachers. These cover big feelings, transit
 11. "[Name] is working on settling back into learning after exciting moments like recess and assemblies. A short reset routine at their desk is helping."
 12. "[Name] is learning to keep a calm voice and body when excitement runs high. They respond immediately to our quiet signal and often model it for others."
 
+LIBRARYCTAMARKER
+
 ## Peer relationships and social skills
 
 13. "[Name] is a loyal and caring friend who is learning to widen their circle. We are encouraging them to include new classmates in games, and they are trying."
@@ -118,8 +120,6 @@ Notice what those five comments never do: guess at a cause, use diagnostic langu
 48. "is the classmate others turn to when they need help"
 49. "makes our classroom a better place to be"
 50. "has a genuine gift for making others feel included"
-
-LIBRARYCTAMARKER
 
 ## Where the specifics come from
 

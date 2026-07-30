@@ -50,6 +50,8 @@ Social growth is the heart of preschool. If your report card has a dedicated soc
 5. "[Name] has grown from parallel play into true cooperative play this year. Their pretend kitchen restaurant now has regular customers."
 6. "[Name] shares materials willingly and often offers supplies to classmates during art projects before being asked."
 
+LIBRARYCTAMARKER
+
 ## Looking for behavior, routines, or self-regulation comments?
 
 Comments about classroom routines, transitions, calm-down strategies, and self-regulation live on our dedicated [preschool behavior report card comments](/blog/report-card-comments-behavior-preschool) page. This page focuses on development and academics; that one covers behavior and emotional growth.
@@ -111,8 +113,6 @@ Every honest report names at least one skill still in progress. The pattern that
 42. "[Name] is working on counting accurately past five. Counting real objects together at home, like stairs or snack crackers, reinforces what we practice at school."
 43. "[Name] is building the confidence to speak loudly enough for the whole group to hear. In small groups their ideas are wonderful, and we are working on sharing them more widely."
 44. "[Name] is learning to try new activities outside their comfort zone. We offer choices and celebrate every brave attempt."
-
-LIBRARYCTAMARKER
 
 ## Comments for 4-year-olds
 
