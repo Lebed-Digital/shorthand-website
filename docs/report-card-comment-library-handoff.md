@@ -2861,3 +2861,69 @@ must be updated on **both** Vercel and Supabase, not just Vercel) is now
 called out explicitly in §18.6.C above so it is not repeated. No refund, code
 change, secret rotation, redeploy, or restore-by-email test was performed as
 part of this verification.
+
+## 20. Production restore-by-email verified: known + unknown email (2026-07-30)
+
+### 20.1 Known-email restore (request + confirm)
+
+Greg ran a real production restore using the email from the live purchase in
+§19.
+
+- **Request.** `POST /api/report-card-access/restore` at `18:11:33 UTC` → 200,
+  rate limiter allowed. Matching Supabase `report-card-access-restore` call
+  (`action: request`) at `18:11:34.678 UTC` → 200.
+- **Confirm.** `GET /report-card-comment-library/restore/confirm` at
+  `18:12:14 UTC` → **303** to the library path. Per
+  `restore/confirm/route.ts`, a 303 to `LIBRARY_PATH` is reachable only from
+  the success branch (line 117); every failure branch redirects to
+  `/restore/failed` instead and logs `console.error`, none of which fired.
+  Matching Supabase confirm call at `18:12:16.094 UTC` → 200.
+- **Link origin.** The confirm request landed on the Production deployment
+  aliased only to `getshorthandapp.com` and its domain variants, consistent
+  with the emailed link pointing at production rather than a preview URL.
+- **No duplicate purchase row.** `report_card_purchases` held exactly 2 rows
+  before and after this test; neither `created_at` nor `updated_at` changed.
+  Restore never writes to this table by design.
+- **No new errors** in Vercel or Supabase logs.
+- **Incidental, not a fault:** Production rolled over to a new deployment
+  (triggered by the §19 docs commit) between the request and confirm calls.
+  Both deployments alias to the same production domain; no disruption.
+
+### 20.2 Unknown-email restore (anti-enumeration)
+
+- `POST /api/report-card-access/restore` at `18:16:24.914 UTC` → **200**,
+  same shape and status as the known-email request in §20.1, byte-identical
+  from the caller's perspective. Matching Supabase call at
+  `18:16:26.006 UTC` → **200**.
+- **No account existence revealed.** Per code review
+  (`supabase/functions/report-card-access-restore`, §17.5): the `request`
+  action always returns `{ ok: true }` regardless of whether the email
+  matches a purchase, so a 200 here carries no signal either way.
+- **No purchase row created or changed.** Row count still 2, most recent
+  `updated_at` unchanged at `18:07:45.513 UTC`.
+- **No email sent, inferred not directly observed.** The send path is only
+  reached on a matched purchase; since no row changed and this is by
+  definition an unmatched email, Resend was never called. This is inferred
+  from code + database evidence; no direct Resend dashboard log was checked.
+- **No new errors** in Vercel or Supabase logs.
+
+### 20.3 Production status: LIVE and fully verified
+
+Every planned production test has now passed:
+
+| Test | Result |
+|---|---|
+| Real $4.99 live Stripe purchase (after the §19 `STRIPE_PRICE_ID` fix) | PASS |
+| Exactly one matching `report_card_purchases` row, no duplicates | PASS |
+| Access granted, all 374 comments visible, refresh-safe via cookie | PASS |
+| Restore-by-email, known purchaser (request + confirm) | PASS |
+| Restore-by-email, unknown email (anti-enumeration) | PASS |
+| Link points to `getshorthandapp.com`, not Preview | PASS |
+| No duplicate charges, no duplicate rows, no unexpected errors | PASS |
+
+**The Report Card Comment Library ($4.99, Stripe) is production-live and
+fully verified end to end.** Still deliberately deferred, unchanged from
+§16.4: token expiry (test with a locally generated pre-expired token, not by
+changing the shared 30-minute TTL) and tampering (cookie and link-token). See
+§16.6's "Still outstanding" note for how to test each without touching shared
+config.
