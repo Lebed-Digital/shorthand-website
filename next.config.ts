@@ -76,6 +76,21 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: '/sub',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=substack&utm_medium=organic_social&utm_campaign=guided_demo',
+        permanent: false,
+      },
+      {
+        source: '/x',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=twitter&utm_medium=organic_social&utm_campaign=guided_demo',
+        permanent: false,
+      },
+      {
+        source: '/li',
+        destination: 'https://app.getshorthandapp.com?demo=true&utm_source=linkedin&utm_medium=organic_social&utm_campaign=guided_demo',
+        permanent: false,
+      },
+      {
         source: '/how-it-works',
         destination: '/',
         permanent: false,
