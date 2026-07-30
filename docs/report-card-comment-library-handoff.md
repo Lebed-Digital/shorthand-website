@@ -2759,13 +2759,105 @@ signing secret.
 only; confirm only `NEXT_PUBLIC_SITE_URL` is browser-exposed; leave Preview
 values untouched.
 
-**C. Supabase secrets** — update `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET`
-to live values (note §18.5.1); flip `RCCL_SITE_URL` to
+**C. Supabase secrets** — update `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
+**and `STRIPE_PRICE_ID`** to live values (note §18.5.1); flip `RCCL_SITE_URL` to
 `https://getshorthandapp.com` and read it back to confirm exact value; confirm
 Resend secrets unchanged; do not redeploy functions unless required.
+
+> **§19 correction (2026-07-30): `STRIPE_PRICE_ID` was missing from this list**
+> when cutover was actually performed. Only `STRIPE_SECRET_KEY` and
+> `STRIPE_WEBHOOK_SECRET` were updated on the Supabase side; the Supabase
+> `STRIPE_PRICE_ID` secret was left holding the **test** price ID. This caused
+> the first live purchase to fail fulfillment silently. See §19 for the full
+> incident and recovery. `STRIPE_PRICE_ID` is now added to this checklist item
+> above and must be treated as a required live-mode secret on **both**
+> Vercel and Supabase, not just Vercel.
 
 **D. Final pre-merge verification** — re-confirm PR #8 still CLEAN/MERGEABLE
 and branch hasn't drifted; three-way match of code expectations vs. Vercel
 Production vs. Supabase; confirm Vercel Authentication still on for Preview;
 merge PR #8 (Greg's decision); proceed to the smoke test / controlled
 real-purchase / restore-test phases of the cutover plan.
+
+## 19. First live purchase: silent fulfillment failure and recovery (2026-07-30)
+
+**Incident.** The first real production purchase ($4.99, live Stripe) charged
+successfully, but the success page showed "We could not confirm this yet."
+Both `report-card-checkout-webhook` and `report-card-checkout-fulfill`
+returned HTTP 200, and Vercel's `verify-session` route also returned 200, so
+no error appeared anywhere in Supabase or Vercel logs. Despite the real
+charge succeeding, **zero rows** were written to `report_card_purchases` for
+this purchase; the table still held only the one test-mode row from
+2026-07-29.
+
+**Root cause.** `fulfillCheckoutSession()` (`supabase/functions/_shared/fulfillment.ts`)
+reads `STRIPE_PRICE_ID` from the **Supabase** secret store, a separate value
+from the Vercel `STRIPE_PRICE_ID` used to create the Checkout Session. During
+cutover, only the Vercel-side `STRIPE_PRICE_ID` was updated to the live price.
+The Supabase-side `STRIPE_PRICE_ID` secret still held the **test-mode** price
+ID, so when fulfillment retrieved the live session and compared its actual
+line-item price against the expected price, they did not match. This trips
+the `product_mismatch` branch (`fulfillment.ts:91-94`), which is a
+**non-retryable** rejection: the webhook acknowledges it with 200 (by design,
+so Stripe stops retrying an event that will never succeed as coded), and
+`verify-session` also returns 200 with `granted: false` **without logging
+anything** (`verify-session/route.ts:60-62`). A silent, correctly-coded
+denial, not a crash, which is why nothing appeared in error-level logs on
+either platform. Confirmed by Greg reading back the Supabase secret and
+finding it still set to the test price ID.
+
+**Recovery.** Greg updated the Supabase `STRIPE_PRICE_ID` secret to the live
+price `price_1TyxR1J2hMFVGCT3zjNupHSE`, then reloaded the existing Stripe
+success URL once (same `cs_live_...` Checkout Session, no new charge). This
+re-invoked `verify-session` → `report-card-checkout-fulfill` against the same
+session ID, which now matched the corrected price, and fulfillment completed
+successfully.
+
+### 19.1 Read-only verification performed after recovery
+
+- **Exactly one new live row.** `report_card_purchases` now has two rows
+  total: the pre-existing 2026-07-29 test-mode row and one new row created at
+  `2026-07-30 18:07:45.513 UTC`. No duplicates.
+- **Row matches the live purchase.** `stripe_checkout_session_id` begins
+  `cs_live_...`, `stripe_price_id` = `price_1TyxR1J2hMFVGCT3zjNupHSE` (the live
+  price ID), `amount_total` = 499, `currency` = `usd`, `status` = `paid`.
+- **Timestamp correlation.** The successful retry's fulfill call in Supabase
+  logs (`18:07:45.588 UTC`) lands within 75ms of the row's `created_at`
+  (`18:07:45.513 UTC`), confirming that specific call is what wrote it.
+- **Granted: true confirmed indirectly.** Vercel logs show
+  `GET /report-card-comment-library/success` at `18:07:41`,
+  `POST /api/report-card-checkout/verify-session` at `18:07:42` (200,
+  rate-limit allowed), then `GET /report-card-comment-library` at `18:07:45`
+  (200) — consistent with `verify-session` receiving `granted: true`, setting
+  the access cookie, and the browser proceeding to the unlocked library. This
+  matches Greg's direct observation that all 374 comments became visible.
+- **No new errors.** No error/warning-level logs in Vercel for the recovery
+  window or since. No Supabase Edge Function log entries beyond the expected
+  200s. `get_runtime_errors` returned none.
+- **No duplicate webhook delivery.** Only the original webhook delivery
+  (`17:58:07.994 UTC`) appears in logs; the retry did not re-trigger Stripe's
+  webhook, only Vercel's own `verify-session` → fulfill call, which is
+  idempotent on `stripe_checkout_session_id` (unique constraint), consistent
+  with exactly one row existing despite three total fulfillment attempts
+  (original webhook, original fulfill, retry fulfill) against the same
+  session.
+- **Refresh-safe access confirmed by code review.** `lib/report-card-gate.ts`
+  (`evaluateAccess`) verifies the `rccl_access` cookie's HMAC and hard expiry
+  locally on every request, no network call, and only calls Supabase to
+  revalidate when the 24-hour `revalidateAfter` window has passed. A page
+  refresh right after purchase will preserve access purely from the cookie
+  already set by `verify-session`. Even once revalidation is due, a
+  transient Supabase failure defaults to keeping access rather than
+  revoking it (`lookup_failed` and unexpected-shape responses both fall
+  through to `{ access: true }`); only an explicit `not_paid` from Supabase
+  revokes.
+
+### 19.2 Verdict
+
+The purchase path is now confirmed healthy for this transaction: one real
+$4.99 charge, one matching database row, no duplicates, no new errors, access
+correctly granted and refresh-safe. The underlying cause (`STRIPE_PRICE_ID`
+must be updated on **both** Vercel and Supabase, not just Vercel) is now
+called out explicitly in §18.6.C above so it is not repeated. No refund, code
+change, secret rotation, redeploy, or restore-by-email test was performed as
+part of this verification.
