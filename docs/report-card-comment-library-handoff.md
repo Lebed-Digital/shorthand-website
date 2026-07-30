@@ -2447,6 +2447,8 @@ Because of §17.3, the flip is ordered, not incidental:
 2. Run the full Preview restore test matrix (§17.7 step 3). Vercel
    Authentication has to be off for the emailed link to land, exactly as in
    §16.5, and must be **re-enabled immediately afterwards**.
+   **Done 2026-07-29/30, results in §17.10.** Authentication was re-enabled and
+   confirmed. Expiry and tampering remain outstanding.
 3. At production cutover, set `RCCL_SITE_URL` to
    **`https://getshorthandapp.com`**.
 4. Re-verify with one real restore email from production after the merge. Until
@@ -2460,9 +2462,15 @@ customer cannot reach.
 
 ### 17.9 What was actually built (steps 1-2, 2026-07-29)
 
-**Not committed, not pushed, not deployed, no PR.** Resend is still
-unconfigured and `RCCL_SITE_URL` is unchanged. Steps 3 and 4 of §17.7 have not
-been started.
+*(Status line below is superseded by §17.10. Kept for the record of what was
+true when steps 1-2 landed.)* **Not committed, not pushed, not deployed, no PR.**
+Resend is still unconfigured and `RCCL_SITE_URL` is unchanged. Steps 3 and 4 of
+§17.7 have not been started.
+
+**Current status:** committed and pushed to
+`feature/report-card-comment-library-stripe`, deployed to Preview, Resend
+configured and verified, and runtime-tested per §17.10. Still no PR and not
+merged to production.
 
 **Files:**
 
@@ -2562,12 +2570,106 @@ an opaque terminal message instead of a useful correction.
 - **No test framework exists in this repo.** `package.json` defines only `dev`,
   `build`, `start`, and `lint`, and there are no `*.test.*` or `*.spec.*` files.
   "Tests" here means typecheck + lint + build. Nothing was run against a live
-  Supabase or Resend, and **no runtime verification of this code has happened
-  at all yet**: the matrix in §17.8 is still entirely outstanding.
+  Supabase or Resend at the time this section was written.
+
+  **Superseded by §17.10:** runtime verification on Preview has since happened.
+  The matrix is no longer outstanding except for token expiry and tampering.
 
 #### Still true after this work
+
+*(Superseded by §17.10. Resend is now configured and verified, and a real test
+send has been confirmed. The paragraph below described the state before that.)*
 
 Submitting the form today does nothing observable. Resend has no API key and no
 verified domain, so the Edge Function logs the missing variable and still
 returns `{ ok: true }`. The UI cannot tell, by design. Do not describe restore
 email as working until a real test send is confirmed in the Resend dashboard.
+
+### 17.10 Preview runtime verification results (2026-07-29/30)
+
+Run against the branch Preview deployment with `RCCL_SITE_URL` pointed at the
+Preview URL and Vercel Authentication temporarily off. **Vercel Authentication
+was re-enabled afterwards and confirmed in a fresh incognito window.**
+
+All timestamps below are UTC. Note the run spans midnight: the happy path ran
+2026-07-30 00:49-00:50 UTC, which was the evening of 2026-07-29 Eastern.
+
+#### Results
+
+| # | Test | Result |
+|---|---|---|
+| 1 | Happy path: purchased email | **Pass.** Generic response, email delivered, link pointed at the exact Preview deployment, confirmation redirected, all 374 comments unlocked |
+| 2 | Unknown email | **Pass.** Byte-identical generic response, no email delivered, single `200`, no confirm follow-up |
+| 3 | Malformed email via form | **Pass.** Inline error, no request sent, no rate-limit budget consumed |
+| 4 | Malformed email direct (`{"email":"not-an-email"}`) | **Pass.** `400 invalid_request` |
+| 5 | Malformed email direct (invalid JSON body) | **Pass.** `400 invalid_request` |
+| 6 | Rate limiting | **Pass.** Threshold confirmed at 5/hour, 6th request `429` |
+| 7 | Limited-state UI | **Pass.** Correct message, form stays usable rather than being replaced |
+| 8 | Resend dashboard | **Pass.** No sends for unknown addresses |
+
+**Neither direct malformed request (#4, #5) reached the Edge Function.**
+Confirmed by absence from the Supabase logs: validation in
+`app/api/report-card-access/restore/route.ts` runs before the limiter and before
+`callReportCardFunction`, so a malformed body is rejected entirely within Vercel.
+
+#### Rate-limit threshold: how 5 was actually proven
+
+The run did not start from an empty window, and the reconciliation matters
+because a naive reading of the logs looks like a contradiction.
+
+`report-card-restore` is `Ratelimit.slidingWindow(5, '1 h')`, IP-keyed. Sliding,
+not fixed: each request counts for one hour from its own timestamp and drops out
+individually. That is what makes the arithmetic below valid.
+
+At run start (01:52:06):
+
+| Prior request | Age | Counted? |
+|---|---|---|
+| 00:49:46 happy path | 62 min | No, aged out |
+| 00:58:38 unknown email | 53 min | **Yes** |
+
+So the IP began with **1 of 5 already consumed**. Four new requests were allowed
+(01:52:06, 01:52:29, 01:53:15, 01:53:35), reaching the total of 5. The next form
+submission returned `429`.
+
+1 surviving + 4 allowed = 5 at the threshold, 6th blocked. **The configured
+5-per-hour threshold is confirmed.** No clean-window retest is required.
+
+**The `429`s never reached Supabase.** Only four new Edge Function entries exist
+for this run, and the blocked requests produced none, because `checkRateLimit`
+returns before `callReportCardFunction` is called. Short-circuit behavior
+directly observed, not inferred.
+
+> Reading these logs later: the Network tab and the Edge Function logs count
+> different things and will not match. The browser sees every POST to
+> `/api/report-card-access/restore`; Supabase sees only those that passed the
+> limiter. One `200` and four `429`s in DevTools alongside four Edge Function
+> `200`s is consistent, not contradictory, once the surviving prior request is
+> accounted for.
+
+#### Known non-error in the webhook log
+
+`report-card-checkout-webhook` has a `400` at 2026-07-30 00:49:35 UTC. It
+**predates** the successful purchase webhook (01:14:21) by about 25 minutes and
+is **not a retry of it**. It is a known setup-time rejected request, almost
+certainly a signature check against a payload signed with a different secret
+during configuration.
+
+Earlier notes said the purchase run had "no retries or errors". That is true of
+the successful run specifically, but should not be read as the function's entire
+history being clean. Do not treat this `400` as a new fault.
+
+#### Still outstanding
+
+- **Token expiry.** Deliberately excluded from the live matrix. To be tested
+  later with a locally generated pre-expired token, **without changing the shared
+  30-minute TTL**.
+- **Tampering.** Note when testing: a tampered *cookie* is rejected by local HMAC
+  in `lib/report-card-gate.ts` with no network call, so a passing tamper test
+  produces **zero** Edge Function log lines. Absence of logs is the pass
+  condition. A tampered *link token* does reach the Edge Function and should come
+  back not-granted.
+- **`RCCL_SITE_URL` flip to `https://getshorthandapp.com`** at production
+  cutover, per §17.8 step 3.
+- Production merge, production Vercel variables, Stripe live-mode setup, and a
+  final real-money purchase test.
