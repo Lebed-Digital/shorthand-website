@@ -10,7 +10,7 @@ relatedPosts:
 excerpt: "Learn how to document parent contact for IEP students the right way. IDEA has specific requirements for parent communication. Here is what teachers need to log and how to stay organized."
 ---
 
-Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. If you are a classroom teacher who cannot produce clear records of your outreach, you are not just unprepared for a parent conference. When the meeting starts, people are going to ask what you have seen in the classroom. If your notes live only in your memory, you are going to wish you had written them down. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
+Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. And when an IEP meeting starts, people are going to ask what you have seen in your classroom. If your notes live only in your memory, that is the moment you will wish you had written them down. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
 
 I have spent over twenty years in K-8 classrooms. Before that, I worked as a Registered Behavior Technician. I have sat through more contentious, legally complex IEP meetings than I care to remember.
 
@@ -64,7 +64,7 @@ You do not need to write a legal brief for every phone call. You do need to capt
 
 The case manager maintains the official legal file for the district. They document the formal meeting invitations, the procedural safeguards, and the signature pages.
 
-Your log is the operational history of what happens in your specific classroom. It proves that you actually implemented the accommodations. It proves that you informed the family when the student struggled. Your log is the supporting evidence that keeps the entire IEP compliant. When an advocate asks for proof of communication, your logs are what the principal will ask you to produce.
+Your log is the operational history of what happens in your specific classroom. It shows that you actually implemented the accommodations, and that you informed the family when the student struggled. When an advocate asks for proof of communication, your logs are usually what the principal turns around and asks you to produce.
 
 As a classroom teacher, I know how tempting it is to assume you'll remember the important details later. In reality, by the time an annual review comes around, even significant events start to blur together. Documentation bridges that gap.
 
@@ -74,7 +74,7 @@ As a classroom teacher, I know how tempting it is to assume you'll remember the 
 
 Managing this level of documentation on sticky notes or a messy spreadsheet is a fast track to burnout. You need a system that does the heavy lifting. A [parent communication log](/blog/free-parent-communication-log-for-teachers) gives you a simple structure for capturing every contact in one place, whether you use paper or a digital tool.
 
-The ShortHand app automatically timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a complete, searchable record of your outreach in seconds. You look professional, organized, and completely compliant.
+The ShortHand app timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a searchable record of your outreach in seconds instead of reconstructing it from memory.
 
 Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and go into your next annual review with a complete, organized record.
 

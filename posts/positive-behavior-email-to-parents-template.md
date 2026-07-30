@@ -16,19 +16,19 @@ But if the only time a parent hears from you is when their child did something w
 
 That is why I make it a priority to send positive emails home.
 
-Getting a positive note from a teacher is a fantastic feeling for parents. It is like finding a crisp twenty-dollar bill in your winter coat pocket. It builds a reserve of goodwill that you can draw from later if challenges arise.
+A positive note out of nowhere lands differently than any other email a parent gets from school. It builds a reserve of goodwill that you can draw from later if challenges come up.
 
 Below are five copy-and-paste templates you can use to celebrate your students and build strong partnerships with their families.
 
 ## The Power of the Positive Email Bank Account
 
-In my years of teaching and working as a Registered Behavior Technician, I learned about the importance of reinforcement. Positive reinforcement shapes behavior much faster than punishment.
+In my years of teaching and working as a Registered Behavior Technician, reinforcement came up constantly. Reinforcing the behavior you want to see tends to shape it more reliably than punishing the behavior you don't.
 
-When you send a positive email home, three things happen. First, the student feels recognized and motivated to repeat the behavior. Second, the parents feel proud and valued. Third, you deposit goodwill into the relationship bank account.
+A positive email usually does three things at once. The student feels recognized. The parents feel proud. And you deposit goodwill into the relationship bank account.
 
 If you later need to send an email about a difficult behavior, the parent already knows you care about their child and see their strengths. They are far more likely to partner with you rather than get defensive.
 
-If you are currently facing those harder classroom scenarios, you can read our guide on [5 Sample Emails to Parents About Student Behavior](/blog/sample-emails-to-parents-about-student-behavior). But today, let us focus on spreading the good news.
+If you are currently facing those harder classroom scenarios, our guide on [5 Sample Emails to Parents About Student Behavior](/blog/sample-emails-to-parents-about-student-behavior) covers those. This post is for the good news.
 
 ## 5 Positive Behavior Email to Parents Templates
 
@@ -140,8 +140,6 @@ If you ever need to pivot back to documenting more serious behaviors, having a s
 
 It is easy to lose track of who you have praised and who is still waiting for their turn in the spotlight. In the busyness of the school day, we tend to focus our attention on the loudest issues.
 
-ShortHand solves this problem.
+That is the gap ShortHand was built to close. You log positive student behaviors as they happen, and it keeps a running history of every parent contact, including when you last reached out with good news. When that record is in front of you, the quiet kids stop slipping through.
 
-With ShortHand, you can log positive student behaviors in real time. It keeps a clean history of every parent contact, showing you exactly when you last reached out to share good news. When you have a clear, visual record of your communication history, you can ensure that every student gets the positive recognition they deserve, all while saving hours of administration time.
-
-Start using ShortHand today to build stronger, happier classroom connections.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true) and see who on your class list has not heard from you yet.

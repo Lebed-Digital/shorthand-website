@@ -23,7 +23,7 @@ It is 4:15 PM on a Thursday. You are sitting at your small kidney-shaped table w
 
 ![A tired teacher drafting a parent email about missing homework while a gradebook and blank worksheet show the facts](/blog-illustrations/missing-homework-parent-email-draft.png)
 
-I have been there. In my years teaching third grade and working as a Registered Behavior Technician (RBT), I have written this exact parent email about missing assignments hundreds of times. In my early years, I either waited too long to reach out or sent emails that sounded too accusatory. Neither worked. When I used RBT principles of objective data and clear behavioral expectations, the responses changed. The parents stopped getting defensive and started helping.
+I have been there. In my years teaching third grade and working as a Registered Behavior Technician (RBT), I have written this parent email more times than I can count. Early on, I either waited too long to reach out or sent emails that sounded too accusatory. Neither worked. When I started leaning on the RBT habit of objective data and clear expectations, the responses changed. Parents stopped getting defensive and started helping.
 
 If you are struggling with missing work in your classroom, you do not have to guess at what works. Here is a practical guide to handling parent communication for missing homework, along with copy-paste templates you can use today.
 
