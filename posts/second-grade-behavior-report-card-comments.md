@@ -76,6 +76,8 @@ Here are twelve templates covering the most common behavioral areas for second-g
 
 12. **The Routine Builder:** "[Student] is working on managing transitions between activities without losing focus. We are using visual cues and timers to help them pack up and prepare for the next lesson in a timely manner."
 
+LIBRARYCTAMARKER
+
 ## Writing Comments That Build Partnerships
 
 Remember that report cards are not a permanent record of a student's character. They are a snapshot of a developmental stage.
@@ -92,4 +94,4 @@ ShortHand was built to solve this problem.
 
 ShortHand allows primary teachers to log behavior notes, track transitions, and record positive wins in seconds. Since it is mobile-friendly, you can log notes during recess, center rotations, or line-up times. When it is time to write report cards, you will have a detailed history of every student's behavioral growth, allowing you to copy, paste, and customize your comments in minutes.
 
-Try ShortHand today and spend less time documenting and more time teaching.
+[Try ShortHand](https://app.getshorthandapp.com?demo=true) today and spend less time documenting and more time teaching.

@@ -174,6 +174,8 @@ Keep these factual and neutral. Stick to what's observable and documented.
 
 ---
 
+LIBRARYCTAMARKER
+
 ## A few rules I follow when writing behavior comments
 
 **1. Never use language you wouldn't say to the parent's face.** If you'd feel awkward saying it at a conference, rewrite it.

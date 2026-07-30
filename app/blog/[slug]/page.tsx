@@ -4,9 +4,36 @@ import { notFound } from 'next/navigation';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import PdfGate from '../../../components/PdfGate';
+import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
+import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
+const LIBRARY_CTA_MARKER = 'LIBRARYCTAMARKER';
+
+// Intro sentence is post-specific so the CTA speaks to what that page just
+// covered; the count always comes from REPORT_CARD_COMMENTS.length above, so
+// it can never silently go stale if the library grows.
+const LIBRARY_CTA_INTROS: Record<string, string> = {
+  'report-card-comments-for-behavior':
+    'These 120+ examples cover behavior specifically.',
+  'preschool-report-card-comments':
+    'This page covers development and academics for Pre-K. If you also need the behavior side, or want everything in one searchable place:',
+  'report-card-comments-behavior-preschool':
+    'These examples cover the hardest preschool behavior moments.',
+  'report-card-comments-for-students-with-adhd':
+    'Looking for more ADHD-specific language, plus every other section?',
+  'report-card-comments-for-struggling-students':
+    'Need more, across every category?',
+  'social-emotional-report-card-comments':
+    'These 50 comments cover social-emotional growth.',
+  'student-progress-report-comments-for-teachers':
+    'Want comments organized and searchable by category?',
+  'second-grade-behavior-report-card-comments':
+    'Want more, beyond second grade behavior?',
+  'free-report-card-comment-generator':
+    'This generator creates one comment from what you select. If you would rather browse a large set of ready-made comments and copy what fits:',
+};
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
   'sample-emails-to-parents-about-student-behavior': {
@@ -134,6 +161,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[0] }} />
             <PdfGate {...PDF_GATES[slug]} />
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[1] }} />
+          </div>
+        ) : LIBRARY_CTA_INTROS[slug] && post.contentHtml.includes(LIBRARY_CTA_MARKER) ? (
+          <div className="blog-content">
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(LIBRARY_CTA_MARKER)[0] }} />
+            <LibraryCtaBlock
+              sourceSlug={slug}
+              placement="report-card-library-inline"
+              totalCount={REPORT_CARD_COMMENTS.length}
+              intro={LIBRARY_CTA_INTROS[slug]}
+            />
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(LIBRARY_CTA_MARKER)[1] }} />
           </div>
         ) : (
           <div

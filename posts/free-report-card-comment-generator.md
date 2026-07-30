@@ -86,6 +86,8 @@ If you need ready-to-copy examples while you work through the generator, [Report
 
 ---
 
+LIBRARYCTAMARKER
+
 ## Try it
 
 The tool is at [getshorthandapp.com/report-card-comment-generator](/report-card-comment-generator). Free, no sign-up, works on your phone or computer.

@@ -119,6 +119,8 @@ Notice what those five comments never do: guess at a cause, use diagnostic langu
 49. "makes our classroom a better place to be"
 50. "has a genuine gift for making others feel included"
 
+LIBRARYCTAMARKER
+
 ## Where the specifics come from
 
 The difference between "demonstrates growth in self-regulation" and "recovery that used to take a lesson now takes a few minutes" is not writing talent. It is whether you have notes.

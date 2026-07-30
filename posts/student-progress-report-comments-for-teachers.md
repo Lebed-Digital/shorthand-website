@@ -85,6 +85,8 @@ Keep these factual, observable, and tied to documented goals.
 
 ---
 
+LIBRARYCTAMARKER
+
 ## The blank-page problem, and how to fix it
 
 The reason progress report comments take so long isn't the writing. It's the remembering.

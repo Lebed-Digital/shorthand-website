@@ -112,6 +112,8 @@ Every honest report names at least one skill still in progress. The pattern that
 43. "[Name] is building the confidence to speak loudly enough for the whole group to hear. In small groups their ideas are wonderful, and we are working on sharing them more widely."
 44. "[Name] is learning to try new activities outside their comfort zone. We offer choices and celebrate every brave attempt."
 
+LIBRARYCTAMARKER
+
 ## Comments for 4-year-olds
 
 Four-year-olds are on the runway to kindergarten, so reports for this age can lean a little more academic while staying warm. These highlight the readiness skills parents are watching for.
