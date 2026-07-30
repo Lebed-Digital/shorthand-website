@@ -47,6 +47,8 @@ Answer all three and you have written a great comment. Skip the first one and th
 7. "[Name] used to write two words and stop. They now produce several sentences with support, and our next goal is a full paragraph, guided by a simple checklist they helped design."
 8. "[Name] finds writing time stressful, so our first project has been lowering the stakes: shorter prompts, drawing before drafting, and celebrating every finished piece. The dread is fading and the output is rising."
 
+LIBRARYCTAMARKER
+
 ## Struggling math students
 
 9. "[Name] has a strong sense of numbers in real-world contexts, especially anything involving money. Multi-step problems on paper are the current challenge, and we are breaking them into single steps with a checklist that is starting to work."

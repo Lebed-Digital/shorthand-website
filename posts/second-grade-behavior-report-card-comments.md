@@ -46,6 +46,8 @@ Here are twelve templates covering the most common behavioral areas for second-g
 
 2. **The Helper:** "[Student] comes to school each day with a positive attitude and a readiness to learn. They are quick to offer help to classmates and take great pride in keeping our classroom organized."
 
+LIBRARYCTAMARKER
+
 ### Needs Improvement and Behavior Support
 
 3. **The Developing Self-Regulator:** "[Student] has wonderful ideas to share but is working on managing their impulsivity. They benefit from gentle reminders to raise their hand and wait for their turn to speak during whole-group lessons."
@@ -92,4 +94,4 @@ ShortHand was built to solve this problem.
 
 ShortHand allows primary teachers to log behavior notes, track transitions, and record positive wins in seconds. Since it is mobile-friendly, you can log notes during recess, center rotations, or line-up times. When it is time to write report cards, you will have a detailed history of every student's behavioral growth, allowing you to copy, paste, and customize your comments in minutes.
 
-Try ShortHand today and spend less time documenting and more time teaching.
+[Try ShortHand](https://app.getshorthandapp.com?demo=true) today and spend less time documenting and more time teaching.

@@ -48,6 +48,8 @@ Here are ten templates categorized by the common areas we track on report cards.
 
 6. **The Strategy User:** "[Student] is learning to identify when they need a brief movement break to recharge. They are becoming more independent in utilizing these strategies, which has led to a noticeable improvement in the accuracy of their math work."
 
+LIBRARYCTAMARKER
+
 ### Social and Emotional Skills
 
 7. **The Collaborative Peer:** "[Student] is a kind and empathetic classmate who works well in group settings. They are very enthusiastic about sharing their ideas. We are working on strategies to help them practice active listening and wait for their turn to speak during peer discussions."

@@ -48,6 +48,8 @@ Before the examples, here's a quick framework. The best progress report comments
 - "[Name] demonstrates solid understanding of core concepts. Applying them independently is the next step."
 - "[Name] is on track. Continued reading at home will support the growth we're seeing."
 
+LIBRARYCTAMARKER
+
 ### Academic progress: area of concern
 
 - "[Name] is working below grade-level expectations in [subject]. We are providing additional support and monitoring progress closely."
