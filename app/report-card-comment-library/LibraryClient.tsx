@@ -7,7 +7,6 @@ import {
   CATEGORY_LABELS,
   GRADE_BANDS,
   GRADE_BAND_LABELS,
-  REPORT_CARD_COMMENTS,
   SECTION_LABELS,
   TONES,
   type Comment,
@@ -15,6 +14,12 @@ import {
   type Section,
   type Tone,
 } from '../../lib/report-card-comments';
+
+// The comment data arrives as a prop from the gated Server Component, never by
+// importing REPORT_CARD_COMMENTS here. That import is what would put all 374
+// comments into the client bundle for every visitor, paid or not. The labels
+// and category maps above are small, non-sensitive metadata and are safe to
+// import: they are also what the paywall view legitimately shows.
 
 const SECTIONS = Object.keys(CATEGORIES_BY_SECTION) as Section[];
 const SAMPLE_NAME = 'Jordan';
@@ -169,7 +174,7 @@ const secondaryButtonStyle: React.CSSProperties = {
   fontFamily: 'inherit',
 };
 
-export default function LibraryClient() {
+export default function LibraryClient({ comments }: { comments: Comment[] }) {
   const [name, setName] = useState('');
   const [section, setSection] = useState<Section>('behavior');
   const [category, setCategory] = useState<string>('all');
@@ -186,7 +191,7 @@ export default function LibraryClient() {
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return REPORT_CARD_COMMENTS.filter((c) => {
+    return comments.filter((c) => {
       if (q) {
         const haystack = `${c.text} ${CATEGORY_LABELS[c.category]}`.toLowerCase();
         return haystack.includes(q);
@@ -197,7 +202,7 @@ export default function LibraryClient() {
       if (gradeBand !== 'all' && !c.gradeBands.includes(gradeBand)) return false;
       return true;
     });
-  }, [search, section, category, tone, gradeBand]);
+  }, [comments, search, section, category, tone, gradeBand]);
 
   return (
     <div style={{ minHeight: '100vh', background: '#0f172a' }}>
@@ -213,7 +218,7 @@ export default function LibraryClient() {
             Report Card Comment Library
           </h1>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
-            Prototype preview. Search, browse by section, and personalize with a name.
+            Search, browse by section, and personalize with a name.
           </p>
         </div>
       </div>

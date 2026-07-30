@@ -1,16 +1,38 @@
 # Report Card Comment Library — Session Handoff
 
-**Last updated:** 2026-07-28
-**Status:** Step 6 CONTENT COMPLETE. Behavior complete (145). ADHD complete (57).
-Preschool complete (92). Academics complete (49). Social-Emotional complete (31).
-**Library total: 374.** Behavior structural thinning pass complete (§11a).
-Brain schema doc updated. **PR #7 open** (branch `feature/report-card-comment-library-prototype`,
-pushed to origin, not merged). **Manual browser QA PASSED** on desktop, iPhone,
-and Android (see §11b) — PR #7 is now ready for final code review and merge.
-**Next task:** Greg's code review and merge of PR #7 (branch-and-wait, this
-route is `.tsx`). Stripe integration waits until after merge. The final-target
-question is **resolved** (§12); 374 sits inside both approved bands (350-450
-Product Decision, 360-480 Schema §2 sum).
+**Last updated:** 2026-07-29
+**Status:** Content COMPLETE (374 comments, 27 categories, 5 sections). **PR #7
+merged.** Library is live and hidden (`noindex`, unlinked). **Stripe integration
+IN PROGRESS** on branch `feature/report-card-comment-library-stripe` — see §13,
+§14, and §15, which together are the authoritative record for all payment work.
+Content sections §1-§12 below are historical and complete; do not reopen them.
+
+**Where the payment work actually stands:** the Supabase Edge Functions (§13),
+the Vercel-side access gate (§14), and the restore-confirm route plus refresh
+abuse protection (§15) are all built, committed, pushed, deployed, and
+**proven end to end by a real Stripe test-mode purchase (§16, 2026-07-29)**:
+checkout completed, webhook signature verified, exactly one paid row created at
+$4.99, fulfillment returned 200, the full 374-comment library unlocked, both
+shared secrets confirmed matching, and no retries or errors.
+
+**Next task:** decide on the production merge. The proof above came from the
+**branch preview deployment**, not production, and the branch is still unmerged
+with no PR open. Still test mode only: no live Stripe key, and no real payment
+has ever been taken.
+
+**Still pending:** Resend (no API key, no verified domain). **§17 is the
+authoritative Resend setup map**: what to verify, which variables go where, and
+the ordered `RCCL_SITE_URL` flip (§17.8).
+
+**The restore-request route and form are now BUILT (§17.9)**, uncommitted and
+never run against a live service. That closes the last unbuilt code, but
+**changes nothing observable until Resend is configured**: the form completes
+successfully and silently sends nothing, by design (§17.5). Do not describe
+restore email as working until a real send appears in the Resend dashboard.
+
+**Read §17.9 for what shipped, then §17.8 for the ordered next steps**, then
+§15.13 for the wider sequence. Note that §11's step list predates all payment work and is superseded;
+see the banner there.
 
 ---
 
@@ -836,6 +858,12 @@ technically risky or a regression is suspected.
 
 ## 10. Library status: 374 comments — ALL CONTENT SECTIONS COMPLETE
 
+> **Still accurate as a content record.** The comment totals, per-section
+> rationale, and the "verify categories against the schema" rule below all
+> stand. Nothing here is superseded. It simply describes finished work: the
+> content phase ended with PR #7, which is merged. No content drafting is
+> planned.
+
 | Section | Populated | Target | Categories locked | Categories populated | Status |
 |---|---|---|---|---|---|
 | behavior | **145** | 150-200 | 8 | 8 | COMPLETE |
@@ -869,6 +897,22 @@ tracked target, not per-category quotas.
 ---
 
 ## 11. Next steps
+
+> **SUPERSEDED as a task list (2026-07-29). Do not work from this section.**
+> It was written before any payment work existed and its step list has been
+> overtaken by events:
+>
+> - **Step 4 ("commit the branch, open the PR") is done.** That referred to the
+>   content branch. PR #7 is merged and the 374-comment library is on `main`.
+> - **Step 5 ("Stripe integration, gating, checkout") is in progress**, and is
+>   documented in §13, §14, and §15, not here.
+> - **Steps 1-3 (deferred content ideas, final section totals, the Brain schema
+>   revision log) were never done and are still genuinely open.** They are
+>   content-side follow-ups with no bearing on the payment work, and none of
+>   them block it.
+>
+> **The live ordered task list is §15.13.** The text below is kept unedited as
+> the record of what the content phase expected to happen next.
 
 **All five content sections are complete. §12 is resolved and holds: 374 sits
 inside both approved bands.** No further content drafting is planned unless
@@ -1031,3 +1075,1697 @@ number that does not exist in any approved document.
 Greg still owns the final call on whether 371-401 is the right landing place. The
 point resolved here is narrower: **there is no arithmetic problem to solve, so no
 padding is warranted.**
+
+---
+
+## 13. Stripe integration (IN PROGRESS, 2026-07-29)
+
+**This section supersedes §11's step 5 and is the authoritative record for all
+payment work.** Everything above it concerns content and is finished.
+
+### 13.1 Branch and commit status
+
+**Branch:** `feature/report-card-comment-library-stripe` (PR #7 already merged,
+so this branches from a `main` that contains the full 374-comment library).
+
+| | |
+|---|---|
+| Committed this session | `92f1489` Add report_card_purchases migration for Stripe integration |
+| Ahead of origin by | 1 commit (**not pushed**) |
+| Uncommitted | all Edge Function and Vercel code listed in §13.3 |
+
+**Nothing has been pushed, merged, or deployed.** No Edge Function is deployed.
+No Stripe or Supabase secret has been configured in any dashboard. The only
+thing that has touched live infrastructure is the migration (§13.2).
+
+### 13.2 Migration: APPLIED and VERIFIED
+
+`supabase/migrations/20260728000000_report_card_purchases.sql`, applied to
+Supabase project **`muywwvbmpjotcffocyjb`**.
+
+**Important context:** that project ref is listed in the Supabase dashboard as
+"Classroom Pulse 3.0 Claude". It is the **shared production database** that also
+holds live student data (`notes`, `students`, `parent_communications`,
+`student_accommodations`, thousands of rows each). `report_card_purchases` is a
+brand-new, fully isolated table with no foreign keys in either direction, but
+any future work here is operating in the same database as sensitive student
+records. Treat it accordingly.
+
+Final schema:
+
+```sql
+create table if not exists public.report_card_purchases (
+  id uuid primary key default gen_random_uuid(),
+  stripe_checkout_session_id text not null,
+  stripe_payment_intent_id text,
+  stripe_customer_id text,
+  stripe_price_id text not null,
+  email text not null,
+  amount_total integer not null,
+  currency text not null,
+  status text not null default 'paid',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+
+  constraint report_card_purchases_session_id_key unique (stripe_checkout_session_id),
+  constraint report_card_purchases_payment_intent_id_key unique (stripe_payment_intent_id),
+  constraint report_card_purchases_amount_total_check check (amount_total >= 0),
+  constraint report_card_purchases_status_check check (status in ('paid', 'refunded', 'revoked'))
+);
+```
+
+Plus a `lower(email)` index, an `updated_at` trigger (function hardened with
+`set search_path = ''`), and RLS enabled with **zero policies**.
+
+**Verified post-apply (all 8 checks passed):** table exists; RLS enabled; 0
+policies; 2 unique constraints; 2 check constraints; email index present;
+1 non-internal trigger; 0 rows.
+
+**Two migration-safety fixes Greg caught before apply, worth remembering:**
+
+1. `create trigger` is not repeat-safe. A retried migration fails on an existing
+   trigger. Fixed with `drop trigger if exists ... on <table>;` immediately
+   before it.
+2. The trigger function needed `set search_path = ''` to close search-path
+   hijacking.
+
+**Full rollback** (both statements needed, dropping the table does NOT remove
+the standalone function):
+
+```sql
+drop table if exists public.report_card_purchases;
+drop function if exists public.report_card_purchases_set_updated_at();
+```
+
+### 13.3 Files changed, added, deleted
+
+**Committed (in `92f1489`):**
+
+| File | Status |
+|---|---|
+| `supabase/migrations/20260728000000_report_card_purchases.sql` | added |
+
+**Uncommitted, Supabase Edge Functions (all Deno):**
+
+| File | Status |
+|---|---|
+| `supabase/functions/_shared/access-token.ts` | added |
+| `supabase/functions/_shared/auth.ts` | added |
+| `supabase/functions/_shared/fulfillment.ts` | added |
+| `supabase/functions/_shared/stripe.ts` | added, then **DELETED** (see §13.7) |
+| `supabase/functions/report-card-checkout-fulfill/index.ts` | added |
+| `supabase/functions/report-card-checkout-webhook/index.ts` | added |
+| `supabase/functions/report-card-access-restore/index.ts` | added |
+| `supabase/functions/report-card-access-revalidate/index.ts` | added |
+| `supabase/functions/deno.json` | added |
+| `supabase/functions/deno.lock` | added (generated, keep for reproducible builds) |
+
+**Uncommitted, Vercel side:**
+
+| File | Status |
+|---|---|
+| `lib/stripe.ts` | added (restricted-key client + required-env `getSiteUrl()`) |
+| `app/api/report-card-checkout/create-session/route.ts` | added |
+| `lib/ratelimit.ts` | modified (added `report-card-checkout` 10/h, `report-card-restore` 5/h) |
+| `tsconfig.json` | modified (excluded `supabase/functions`, separate Deno runtime) |
+| `package.json` / `package-lock.json` | modified (added `stripe` npm dep) |
+
+### 13.4 Final architecture: no Supabase key in Vercel
+
+**The governing constraint, set by Greg:** `SUPABASE_SERVICE_ROLE_KEY` must never
+exist in the Vercel marketing-site environment, because it grants full
+administrative access to the same database holding student data.
+
+Therefore **all privileged database access happens inside Supabase Edge
+Functions.** Vercel holds no Supabase key of any kind, not even the anon key,
+for this feature. It calls narrowly scoped Edge Functions over HTTPS with a
+shared bearer secret.
+
+**Secrets by location:**
+
+| Vercel | Supabase Edge Function secrets |
+|---|---|
+| `STRIPE_SECRET_KEY` (**restricted**, Checkout Sessions Write only) | `STRIPE_SECRET_KEY` (full test key) |
+| `STRIPE_PRICE_ID` | `STRIPE_PRICE_ID` |
+| `NEXT_PUBLIC_SITE_URL` | `STRIPE_WEBHOOK_SECRET` |
+| `REPORT_CARD_FUNCTIONS_SECRET` | `REPORT_CARD_FUNCTIONS_SECRET` (same value) |
+| `RCCL_TOKEN_SECRET` | `RCCL_TOKEN_SECRET` (same value) |
+| **`SUPABASE_FUNCTIONS_URL`** (see below) | `RESEND_API_KEY`, `RESEND_FROM_ADDRESS` |
+| | `RCCL_SITE_URL` |
+| | `SUPABASE_SERVICE_ROLE_KEY` (ambient, provided by Supabase automatically) |
+
+> **`SUPABASE_FUNCTIONS_URL` was missing from this table until 2026-07-29** and
+> is easy to overlook, because it is not a secret and looks like infrastructure
+> rather than configuration. `lib/report-card-functions.ts` requires it, with
+> **no fallback**: without it every private Edge Function call throws and the
+> gate takes its transient-failure branch, so paying customers would keep
+> access until their 30-day token expires while nothing ever revalidates.
+> Value: `https://muywwvbmpjotcffocyjb.supabase.co/functions/v1`. It must be
+> added to the §13.13 setup steps alongside the Vercel env vars. It is a URL,
+> not a credential, and holds no privilege on its own.
+
+`NEXT_PUBLIC_SITE_URL` is **required with no fallback**, it must never silently
+default to the production domain, so a misconfigured preview fails loudly.
+Values: `http://localhost:3000` local, `https://getshorthandapp.com` production,
+per-environment override on Vercel previews.
+
+**Threat model summary:** a full Vercel compromise yields a Checkout-only
+restricted Stripe key, the shared function secret (which only reaches the
+purpose-built functions, each re-verifying against Stripe before writing), and
+the token-signing secret (worst case: free access to a $4.99 comment library).
+**It yields no path to student data.** The service-role key stays inside
+Supabase's runtime, the same trust boundary the pre-existing `delete-account`
+function already occupies, so this feature adds no new location for it.
+
+### 13.5 Stripe decisions
+
+- **Test mode only.** No live keys, no real payments, until Greg explicitly
+  approves the live-mode switch.
+- **Vercel uses a Stripe restricted test key** with exactly one permission:
+  **Checkout Sessions, Write.** Everything else set to None. Confirmed this is
+  sufficient: creating a session with a Price ID string needs no read access to
+  Prices, Products, Customers, or PaymentIntents.
+- **The full Stripe test secret key lives only in Supabase**, where session
+  retrieval and webhook verification happen.
+
+### 13.6 Direct Stripe-to-Supabase webhook routing
+
+Stripe calls the Supabase Edge Function **directly**. The webhook is never
+forwarded through Vercel, so Vercel never handles a raw webhook payload.
+
+**URL to register in Stripe test mode:**
+
+```
+https://muywwvbmpjotcffocyjb.supabase.co/functions/v1/report-card-checkout-webhook
+```
+
+**Event to subscribe:** `checkout.session.completed` **only.**
+
+The webhook authenticates exclusively via Stripe's signature. It does **not**
+accept `REPORT_CARD_FUNCTIONS_SECRET`; that secret is only for the private
+fulfill / restore / revalidate calls from Vercel.
+
+Deploy note: this function needs `verify_jwt = false` (matching the existing
+`delete-account` convention), since Stripe cannot present a Supabase Auth JWT.
+
+### 13.7 Official Stripe SDK replaced handwritten crypto
+
+Originally the Edge Functions used a hand-rolled webhook-signature parser and a
+hand-built Stripe REST wrapper. Greg challenged this: handwritten payment crypto
+needs a strong reason to exist. It did not.
+
+`_shared/stripe.ts` was **deleted outright** (not left alongside) and replaced
+with `npm:stripe@19.2.0`:
+
+> **Version note (recorded 2026-07-29).** The two sides are on **different
+> major versions of the Stripe SDK**, and that is not a mistake to "fix"
+> casually. Deno/Edge Functions pin `npm:stripe@19.2.0` inline (and in
+> `deno.lock`); the Vercel side resolved to `stripe@^22.3.2` when it was
+> installed. They never exchange SDK objects, only a Checkout Session **id
+> string**, so there is no compatibility surface between them. Vercel only
+> creates sessions; all verification happens on the Deno side. Worth knowing
+> before anyone aligns the versions, since bumping the Deno pin would mean
+> re-running the §13.11 webhook-signature tests.
+
+- `Stripe.createFetchHttpClient()`, Deno/edge compatible transport
+- `stripe.webhooks.constructEventAsync(...)`, **the async variant is required**;
+  the sync `constructEvent` assumes Node's crypto module and throws
+  `SubtleCryptoProvider cannot be used in a synchronous context` under Deno
+- `stripe.checkout.sessions.retrieve(id, { expand: ['line_items'] })`
+
+**A real bug this fixed:** the handwritten parser used `Object.fromEntries` on
+the `Stripe-Signature` header, keeping only the **last** `v1=` value. Stripe
+sends multiple `v1` signatures during webhook-secret rotation, so the old code
+would have failed verification mid-rotation. Verified fixed (§13.11).
+
+### 13.8 Exact fulfillment checks
+
+`_shared/fulfillment.ts` is the **single idempotent fulfillment path**, imported
+by both `report-card-checkout-fulfill` and `report-card-checkout-webhook`. Do not
+duplicate this logic; the two callers must never drift.
+
+**Why metadata alone was rejected:** the first version verified
+`session.metadata.rccl_price_id`. Greg caught that this is written by our own
+checkout route and is therefore a self-signed label, not proof of what was
+bought. Fulfillment now inspects the **actual purchased line item**.
+
+Every check, all required:
+
+| Check | Required value |
+|---|---|
+| `session.status` | `'complete'` |
+| `session.payment_status` | `'paid'` |
+| line item count | exactly **1** |
+| `line_items.data[0].price.id` | `=== STRIPE_PRICE_ID` |
+| `line_items.data[0].quantity` | **1** |
+| `session.amount_total` | **499** |
+| `session.currency` | **`'usd'`** |
+
+**499 and `usd` are hardcoded constants in the module, deliberately not derived
+from Stripe at runtime.** A price change in the Stripe dashboard must not
+silently change what the application accepts as valid payment; changing the
+price is an intentional code change plus a full test pass.
+
+`metadata.rccl_price_id` remains only as a logged consistency check, explicitly
+commented as **not** the source of truth.
+
+**Idempotency:** select-or-insert keyed on the unique
+`stripe_checkout_session_id`. On a concurrent race the loser's insert hits
+Postgres error `23505` and reads back the winner's row. Both callers converge on
+the same `purchaseId`. No duplicate row is possible, so success-page
+verification and webhook delivery cannot double-fulfill.
+
+### 13.9 Access model: 30-day cookie, 24-hour revalidation
+
+**The problem Greg identified:** the original design used a one-year stateless
+HMAC cookie that never rechecked the database. That made `refunded` and
+`revoked` decorative, marking a purchase refunded would not remove access for
+up to a year. Worse, the restore path *did* check status, so revocation was
+half-enforced and incoherent.
+
+**Chosen model.** Token payload is `{ purchaseId, exp, revalidateAfter }`:
+
+- `exp` = **30 days** (hard expiry)
+- `revalidateAfter` = **24 hours**
+
+Gated page behavior on every render:
+
+1. Verify the HMAC locally. Invalid or past `exp` means clear cookie, show paywall.
+2. If `revalidateAfter` has **not** passed, grant access, **no network call**.
+3. If it **has** passed, call `report-card-access-revalidate`:
+   - `valid: true`: set a fresh 30-day token with a new 24-hour window, grant access
+   - `not_paid`: clear cookie, show paywall
+   - `lookup_failed`: see the rule immediately below
+
+Cost is roughly one Edge Function call per user per day, off the hot path.
+Revocation takes effect within 24 hours worst case, immediately on a new device.
+
+#### The `lookup_failed` rule (corrected 2026-07-29, read this carefully)
+
+An earlier draft of this section said only "keep existing access" on a transient
+database error. **That was underspecified and would have been a real
+vulnerability.** If the gate minted a fresh token whenever revalidation failed,
+anyone able to induce or wait out a Supabase error could keep renewing access
+forever, and the 30-day hard expiry would never actually bite.
+
+The correct behavior on `lookup_failed`:
+
+- **Temporarily grant access using the existing token.** Do not lock out a
+  paying customer over a transient outage.
+- **Do not mint, refresh, extend, or re-set the token.** `exp` and
+  `revalidateAfter` both stay exactly as they were.
+- Because `revalidateAfter` stays stale, the next render retries revalidation.
+  The system heals itself once Supabase recovers.
+- The existing token therefore keeps working **only until its original hard
+  `exp`**, and no further.
+
+**Never mint a fresh token after `lookup_failed`.**
+
+Complete state table for the gate:
+
+| Token state | Revalidate result | Behavior |
+|---|---|---|
+| valid, `revalidateAfter` not passed | (not called) | grant access, no network call |
+| valid, revalidation due | `valid: true` | **set fresh token**, grant access |
+| valid, revalidation due | `not_paid` | **clear cookie**, show paywall |
+| valid, revalidation due | `lookup_failed` | grant access, **token untouched**, retry next render |
+| past `exp`, or bad signature, or malformed | (not called) | show paywall, **even if Supabase is unavailable** |
+| no cookie | (not called) | show paywall |
+
+An expired or invalid token must never be rescued by a Supabase outage. The
+local HMAC and `exp` check happens first and is decisive on its own.
+
+`verifyAccessToken()` checks signature and hard expiry but deliberately does
+**not** enforce `revalidateAfter`. The caller decides, because the gated page
+and the restore-confirm path need different behavior. `newAccessTokenPayload()`
+is the single place TTLs are set, so fulfill / restore / revalidate cannot drift.
+
+Restoration remains blocked unless status is `paid`.
+
+### 13.10 Edge Function contracts
+
+All four are Deno, all need `verify_jwt = false` at deploy time.
+
+**`report-card-checkout-fulfill`** (private, Bearer `REPORT_CARD_FUNCTIONS_SECRET`)
+
+- `POST { sessionId }`
+- `200 { granted: true, accessToken, isNewPurchase }`
+- `200 { granted: false, reason }`, where reason is one of `not_paid`,
+  `product_mismatch`, `amount_mismatch`, `currency_mismatch`, `missing_email`,
+  `db_error`, `session_lookup_failed`, `server_misconfigured`
+- `401` bad secret, `400` malformed
+
+**`report-card-checkout-webhook`** (public, Stripe signature only)
+
+- `POST` raw Stripe event body, `Stripe-Signature` header
+- `200 { received: true }` terminal
+- `500` **only** on `db_error` / `session_lookup_failed`, so Stripe retries
+  genuine transient failures. Definitive rejections return 200 so Stripe stops.
+- Raw body via `req.text()`, passed untouched to `constructEventAsync()`. Nothing
+  parses or re-serializes before verification.
+
+**`report-card-access-restore`** (private, Bearer secret)
+
+- `POST { action: 'request', email }` returns **always** `200 { ok: true }`
+  regardless of whether the email matched, including on malformed input and on
+  internal misconfiguration. Enumeration is prevented at the function, so Vercel
+  cannot distinguish the cases either.
+- `POST { action: 'confirm', token }` returns `200 { granted: true, accessToken }`
+  or `200 { granted: false, reason }`
+- Restore links are fresh, short-lived (**30 min**), and minted on demand. There
+  is **no stored token column**; verification is purely cryptographic. This is
+  why `access_token_hash` was dropped from the schema.
+
+**`report-card-access-revalidate`** (private, Bearer secret), **NEW this session**
+
+- `POST { purchaseId }` (UUID-validated; Vercel has already verified the HMAC
+  locally, so this function's only job is the database status check)
+- `200 { valid: true, accessToken }`, still paid, fresh 30-day token
+- `200 { valid: false, reason: 'not_paid' }`, refunded / revoked / missing,
+  clear cookie and show paywall
+- `200 { valid: false, reason: 'lookup_failed' }`, **transient DB error**
+- `401` bad secret, `400` malformed
+
+> **Do not conflate `lookup_failed` with `not_paid` when building the gate.**
+> `lookup_failed` must **keep** existing access, so a Supabase outage does not
+> lock out every paying customer at once. Only `not_paid` revokes.
+>
+> But `lookup_failed` must **never mint a fresh token**. It grants access on the
+> existing token only, leaving `exp` and `revalidateAfter` untouched, so access
+> still dies at the original hard expiry and revalidation retries next render.
+> See the full state table in §13.9.
+
+### 13.11 Tests completed
+
+| Test | Result |
+|---|---|
+| `deno check` (7 function files, real Stripe types) | clean |
+| `deno lint` (excl. `no-import-prefix`, see note) | clean |
+| Stripe SDK runtime probe | `createFetchHttpClient`, `constructEventAsync`, `sessions.retrieve` all present |
+| Webhook sig: valid signature | accepted |
+| Webhook sig: tampered payload | rejected |
+| Webhook sig: wrong secret | rejected |
+| Webhook sig: **multi-`v1` rotation header** | accepted (old handwritten parser would have failed) |
+| Token round-trip | OK |
+| Token TTLs (30d exp, 24h revalidate, revalidate < exp) | OK |
+| Token wrong secret / tampered payload / expired / malformed | all rejected |
+| Token stale-but-unexpired still verifies, revalidation detectable | OK |
+| `npx tsc --noEmit` | clean |
+| `npx eslint` on new/changed files | clean |
+| `npm run build` | succeeds, route registered dynamic |
+
+`no-import-prefix` is excluded deliberately: it objects to inline
+`https://esm.sh/...` imports, which is the exact pattern the existing production
+`delete-account` function already uses successfully.
+
+Repo-wide `eslint .` reports 52 **pre-existing** errors (`app/terms/page.tsx`,
+`components/LeadGate.tsx`, and the `catch (e: any)` pattern in the older API
+routes). None are in files touched by this work.
+
+`npm audit` reports pre-existing vulnerabilities in `next`, `sharp`, `postcss`,
+and dev transitives. **Not introduced by adding `stripe`**, out of scope here.
+
+### 13.12 Untestable before deployment
+
+- Shared-secret auth under real Supabase request routing (`Deno.env.get` against
+  actually-configured secrets)
+- Real Stripe webhook delivery end to end (needs `stripe listen` / `stripe
+  trigger` against the deployed function)
+- The `23505` race path under genuine concurrency
+- Service-role RLS-bypass behavior against the real table
+- Resend delivery, entirely. **No API key or verified sending domain exists
+  yet.** Missing `RESEND_API_KEY` / `RESEND_FROM_ADDRESS` is handled safely
+  (logged, non-throwing, still returns the generic `{ ok: true }`), but
+  **restoration email must not be described as working until a real test send
+  succeeds.**
+- The full redirect loop, since the success page, gated UI, and the Vercel-side
+  token verifier do not exist yet
+
+### 13.13 Setup Greg still has to do (none of it done yet)
+
+Nothing below has been touched. All of it requires Greg, and each step should be
+confirmed before Claude acts on anything adjacent to it.
+
+1. Create the Stripe **test-mode** Product and Price ($4.99 one-time), which
+   yields `STRIPE_PRICE_ID`
+2. Create the Stripe **restricted test key**, Checkout Sessions Write, all
+   else None
+3. Generate `REPORT_CARD_FUNCTIONS_SECRET` and `RCCL_TOKEN_SECRET` (long random
+   values, identical in both Vercel and Supabase)
+4. Set Supabase Edge Function secrets (§13.4 right column)
+5. Set Vercel env vars (§13.4 left column)
+6. Register the webhook URL (§13.6) in Stripe test mode, which yields
+   `STRIPE_WEBHOOK_SECRET`
+7. Resend account, API key, verified sending domain
+
+### 13.14 Exact next-step prompt
+
+Paste this verbatim into a fresh Claude chat. Tell it to read this handoff
+first, then continue from here.
+
+> Proceed with the Vercel-side checkpoint:
+>
+> lib/report-card-access.ts
+> success-page verification route
+> cookie issuance
+> server-side library gate
+> 24-hour revalidation handling
+>
+> On a transient lookup_failed, do not immediately lock out a paying customer,
+> but do not refresh or extend the token.
+>
+> The existing token may continue granting access only until its original hard
+> exp. Keep revalidateAfter stale so the system retries later. Never mint a
+> fresh token after lookup_failed.
+>
+> Required behavior:
+>
+> valid: true -> set fresh token and grant access
+> not_paid -> clear cookie and show paywall
+> lookup_failed with an otherwise unexpired token -> temporarily grant access
+> using the existing token, without changing expiry or revalidation time
+> expired or invalid token -> show paywall even if Supabase is unavailable
+>
+> Preserve:
+>
+> non-payers must never receive the full 374-comment dataset in browser
+> JavaScript
+> immediate access cannot depend on Resend
+> noindex, nofollow
+> no deployment, secrets, commit, or push yet
+>
+> After implementation, report:
+>
+> Exact gate behavior for every token state
+> Whether the full dataset appears anywhere in the unauthenticated payload
+> Cookie security flags
+> Success-page failure behavior
+> Typecheck, build, and targeted test results
+
+Supporting detail for whoever picks this up (not part of the prompt above):
+
+- The wire format `lib/report-card-access.ts` must mirror exactly is in
+  `supabase/functions/_shared/access-token.ts`:
+  `base64url(payload) + "." + base64url(HMAC-SHA256)`, payload
+  `{ purchaseId, exp, revalidateAfter }`, Web Crypto, shared
+  `RCCL_TOKEN_SECRET`. Keep the two implementations in lockstep.
+- A `lib/report-card-functions.ts` client is also needed: the authenticated
+  caller for the private Edge Functions, sending
+  `Authorization: Bearer <REPORT_CARD_FUNCTIONS_SECRET>`.
+- The full gate state table is in §13.9. The `lookup_failed` rule there is
+  binding.
+- The restore-access routes wrapping `report-card-access-restore` (`request`
+  and `confirm`) are still outstanding, rate-limited via the existing
+  `report-card-restore` limiter. They can follow this checkpoint.
+- The teaser UI is the full page structure, section/category list, total
+  comment count, filters, and 1-2 real sample comments per section, with
+  everything else withheld server-side.
+- Never treat query params, the success redirect, localStorage, or client
+  state as proof of purchase. Stay in Stripe test mode.
+
+---
+
+## 14. Vercel-side gate checkpoint (COMPLETE, 2026-07-29)
+
+**This section records the work described by §13.14's "exact next-step prompt".**
+That checkpoint is now implemented and verified locally. §13 remains accurate
+for everything on the Supabase/Stripe side; this section is the authority for
+the Vercel side.
+
+### 14.1 Status: nothing deployed, pushed, or committed
+
+Unchanged from §13.1 and important:
+
+| | |
+|---|---|
+| Committed this session | **nothing** |
+| Branch | `feature/report-card-comment-library-stripe` |
+| Unpushed commits on branch | 3 (`92f1489`, `06d521c`, `2f3b428`, all pre-dating this session) |
+| Everything in §14.2 | **uncommitted working-tree changes** |
+
+No Edge Function deployed. No secret configured in any dashboard. No Stripe
+Product/Price created. Still test-mode-only by design. The migration (§13.2)
+remains the only thing that has ever touched live infrastructure.
+
+### 14.2 Files added and changed
+
+**Added, Vercel library code:**
+
+| File | Purpose |
+|---|---|
+| `lib/report-card-access.ts` | HMAC verifier + cookie option builders. Mirrors the Deno wire format exactly. |
+| `lib/report-card-functions.ts` | Authenticated Edge Function client (bearer secret, 10s timeout). |
+| `lib/report-card-gate.ts` | `evaluateAccess()`, the single access decision. Implements the §13.9 state table. |
+| `lib/report-card-teaser.ts` | `server-only` module. Builds the non-payer payload; also exposes `getFullLibrary()`. |
+
+**Added, routes and UI:**
+
+| File | Purpose |
+|---|---|
+| `app/api/report-card-checkout/verify-session/route.ts` | Success-page verification. Relays session id to fulfill, sets the cookie. |
+| `app/api/report-card-access/refresh/route.ts` | Cookie-writing companion to the gated page. Takes no body. |
+| `app/report-card-comment-library/PaywallClient.tsx` | Unauthenticated view (teaser only). |
+| `app/report-card-comment-library/AccessRefresher.tsx` | Pings the refresh route to persist a decision. |
+| `app/report-card-comment-library/success/page.tsx` | Reads `session_id` (awaited `searchParams`, Next 16). |
+| `app/report-card-comment-library/success/SuccessClient.tsx` | Verification UI, retry logic. |
+| `app/report-card-comment-library/restore/page.tsx` | **Placeholder only.** See §14.10. |
+
+**Changed:**
+
+| File | Change |
+|---|---|
+| `app/report-card-comment-library/page.tsx` | Now a gated async Server Component. `dynamic = 'force-dynamic'`. |
+| `app/report-card-comment-library/LibraryClient.tsx` | Takes `comments` as a **prop**; no longer imports `REPORT_CARD_COMMENTS`. Dropped stale "Prototype preview" copy. |
+| `package.json` / `package-lock.json` | Added `server-only@^0.0.1` (see §14.6). |
+
+`lib/ratelimit.ts` and `tsconfig.json` still show as modified, but those are the
+§13.3 changes from the prior session, not new work.
+
+### 14.3 The architectural constraint that shaped this
+
+**Next.js Server Components cannot set cookies during render.** Confirmed in
+`node_modules/next/dist/docs/01-app/03-api-reference/04-functions/cookies.md`:
+`.set` / `.delete` only work in a Server Function or Route Handler.
+
+So the gated page **decides** but cannot **persist**. The page renders
+`AccessRefresher`, a tiny client component that POSTs to
+`/api/report-card-access/refresh`, which re-runs the same `evaluateAccess()`
+and writes the resulting cookie.
+
+**That route takes no request body at all.** It re-derives everything from the
+incoming cookie, so a caller can only ever cause the state their own cookie
+already justifies. It is a "flush the decision" nudge, not a client claim.
+
+Also considered and rejected: doing this in `proxy.ts` (Next 16's rename of
+`middleware.ts`). Its own docs warn against relying on shared modules there.
+
+### 14.4 Exact gate behavior, all token states (verified)
+
+Every row was exercised against a running production build (`next start`), not
+reasoned about:
+
+| Token state | Revalidate result | Behavior | Verified |
+|---|---|---|---|
+| no cookie | not called | paywall | yes |
+| valid, `revalidateAfter` not passed | not called | grant, **no network call** | yes |
+| valid, revalidation due | `valid: true` | grant + **fresh token set** | yes |
+| valid, revalidation due | `not_paid` | paywall + **cookie cleared** | yes |
+| valid, revalidation due | `lookup_failed` | grant, **no `Set-Cookie` at all** | yes |
+| valid, revalidation due | network/function unreachable | identical to `lookup_failed` | yes |
+| past `exp` | not called | paywall (Supabase never consulted) | yes |
+| bad signature (wrong secret) | not called | paywall | yes |
+| malformed garbage | not called | paywall | yes |
+
+The local HMAC + hard-expiry check runs first and is decisive on its own, so an
+expired or forged token is never rescued by a Supabase outage.
+
+### 14.5 30-day cookie, 24-hour revalidation, and the lookup_failed rule
+
+TTLs come from `newAccessTokenPayload()` on the Deno side and are never
+recomputed on the Vercel side: `exp` = 30 days, `revalidateAfter` = 24 hours.
+Before `revalidateAfter` passes, the gate grants access on local HMAC alone
+with **zero network calls**. Cost is roughly one function call per user per day.
+
+**`lookup_failed` was verified by header inspection, not by reading the code.**
+With a stale-but-unexpired token and the function unreachable, the page render
+and the refresh route both returned **no `Set-Cookie` header whatsoever**:
+
+```
+=== Page render with stale token + unreachable function ===
+  (no Set-Cookie -> token NOT refreshed)
+=== Refresh route with stale token + unreachable function ===
+  (no Set-Cookie -> token NOT refreshed)
+  body: {"access":true}
+```
+
+So access continues, `exp` and `revalidateAfter` stay exactly as they were, the
+token still dies at its original hard expiry, and because `revalidateAfter`
+stays stale the next render retries and the system heals itself. This is the
+§13.9 rule holding in practice: **never mint a fresh token after
+`lookup_failed`.**
+
+A transport-level failure (network error, timeout, 401, non-JSON) is
+deliberately indistinguishable from `lookup_failed` to the gate and is handled
+identically. Only an explicit `not_paid` revokes.
+
+### 14.6 server-only enforcement for teaser data
+
+`lib/report-card-teaser.ts` begins with `import 'server-only'`. This is
+load-bearing: it makes the **build fail** if that module is ever pulled into a
+Client Component, which is exactly what would drag all 374 comments into the
+browser bundle.
+
+This required adding `server-only@^0.0.1` to `package.json` (it was not
+previously a dependency). It is the official React package for this guarantee
+and ships essentially no runtime code.
+
+The structural fix matters more than the guard: `LibraryClient` no longer
+imports `REPORT_CARD_COMMENTS` at all. The data arrives as a prop from the
+gated Server Component. The small label/category maps are still imported
+directly, which is fine, they are non-sensitive and the paywall legitimately
+displays them.
+
+### 14.7 Dataset exposure results (all 374 records checked)
+
+Method: a scratch script split `lib/report-card-comments.ts` on record
+boundaries so **every** record was accounted for rather than relying on one
+regex, then searched the real rendered payload from a running server. It
+reported `total records (by id): 374`, `texts extracted: 374`, **`records with
+UNPARSED text: 0`**, so the claim below covers the whole dataset with no
+silently skipped records.
+
+| Payload | Comment texts present | Expected |
+|---|---|---|
+| Anonymous visitor | **10** | 10 (2 samples x 5 sections) |
+| Revoked user (`not_paid`) | **10** | 10 |
+| Paid user | **374** | all |
+
+The 10 in both unauthenticated cases are exactly the intended samples: one
+`positive` and one `growth` per section, chosen deterministically so the
+preview honestly represents both tones.
+
+> **CORRECTED 2026-07-29 (§15).** This section originally reported the paid
+> payload as **373** of 374 and explained it as React splitting one comment's
+> string across separate rendered nodes. **That explanation was wrong.**
+>
+> The real cause was a bug in the audit script itself: it split the source on
+> `{ id:` boundaries, and the first record's opening brace shares a line with
+> the array opener, so record #1 was silently dropped from the extraction
+> before any searching happened. The shortfall was in the measurement, never in
+> the payload.
+>
+> With the splitter corrected (split on `id:` rather than `{ id:`), the script
+> reports `total records (by id): 374`, `texts extracted: 374`, `records with
+> UNPARSED text: 0`, and the paid payload matches **374 of 374**.
+>
+> **The library has all 374 records and always did.** Do not go looking for a
+> missing comment, and do not trust the old React explanation if you find it
+> quoted elsewhere.
+
+Also confirmed: zero occurrences of any non-sample comment in
+`.next/static/chunks/`, so nothing leaks via the client bundle either.
+
+### 14.8 Cookie flags (observed, not assumed)
+
+```
+set-cookie: rccl_access=<TOKEN>; Path=/; Expires=...; Max-Age=2592000; Secure; HttpOnly; SameSite=lax
+```
+
+- `HttpOnly` so client JS can never read the token; an XSS bug cannot exfiltrate access.
+- `Secure` in production only, so `http://localhost` development still works.
+- `SameSite=lax` **deliberately, not strict**: the Stripe success redirect is a
+  top-level cross-site GET back to our domain, which `strict` would block.
+- `Max-Age` derives from the token's own `exp`, so the browser drops the cookie
+  at the same moment the signature stops verifying.
+- Clearing uses `Max-Age=0`.
+
+### 14.9 Success page and tamper tests
+
+**Success page.** The `session_id` in the URL is never proof of purchase. It is
+posted to `verify-session`, which relays it to the fulfill Edge Function, which
+retrieves the session from Stripe and applies every §13.8 check before minting.
+
+Retry behavior: terminal reasons (`not_paid`, `product_mismatch`,
+`amount_mismatch`, `currency_mismatch`, `missing_email`, `invalid_session_id`,
+`invalid_request`) fail immediately and are never retried. Everything else is
+treated as transient and retried up to 3 times at 2s intervals, because a
+brand-new payment can briefly race the webhook. On final failure the page never
+claims the payment failed; it points to restore and says access is safe.
+Fulfillment is idempotent, so refreshing the success page is harmless.
+
+`verify-session` also re-verifies the token it was handed before setting it, so
+a `RCCL_TOKEN_SECRET` mismatch between Vercel and Supabase fails loudly instead
+of writing a cookie the gate would silently reject.
+
+**Tamper tests, all rejected:**
+
+| Attack | Result |
+|---|---|
+| No cookie -> refresh route | `{"access":false}`, no `Set-Cookie` |
+| Attacker body `{"purchaseId":"...","access":true}` | `{"access":false}` (body ignored entirely) |
+| Forged token signed with a different secret | `{"access":false}` |
+| Empty/garbage `sessionId` | `{"granted":false,"reason":"invalid_request"}` |
+
+### 14.10 Bug found and fixed mid-session: dead cookie never cleared
+
+Caught while testing `not_paid`, and worth recording because it was introduced
+and fixed within this session.
+
+**The bug:** on the revocation branch the page returned `<PaywallClient />`
+only. The paywall rendered correctly, but `AccessRefresher` was rendered solely
+when `decision.freshToken` existed, so a revoked user's dead cookie was never
+actually removed from the browser. Every subsequent page load would re-run the
+full Edge Function round trip instead of short-circuiting on "no cookie".
+
+**The fix:** `page.tsx` now renders `AccessRefresher` on the deny branch too,
+whenever `decision.clearCookie` is set. Re-verified afterward: revocation still
+shows the paywall, still clears the cookie, and the paywall branch still leaks
+only the 10 samples.
+
+### 14.11 What was tested, and how
+
+Against a real production build (`npm run build` + `next start` on port 3100),
+with test-only secrets passed through the process environment. **The existing
+`.env.local` was deliberately not modified**, it holds live values.
+
+| Check | Result |
+|---|---|
+| `npx tsc --noEmit` | clean |
+| `npx eslint` on all new/changed files | clean |
+| `npm run build` | succeeds; library + success routes correctly `ƒ` (dynamic) |
+| All 9 gate token states | pass (§14.4) |
+| Dataset exposure, 3 payloads, 374/374 records | pass (§14.7) |
+| Cookie flags | pass (§14.8) |
+| Full purchase flow -> cookie -> library unlocked | pass |
+| 4 tamper tests | all rejected (§14.9) |
+
+**Edge Functions were replaced by a local Node stub** for these tests
+(`stub-functions.mjs` in scratchpad, modes: `valid` / `not_paid` /
+`lookup_failed`), mirroring the real shared-secret auth and token format.
+Nothing was deployed to Supabase.
+
+### 14.12 Still untested (unchanged from §13.12, plus)
+
+The stub does not reduce the §13.12 list. Still genuinely unverified:
+
+- **Real Stripe webhook delivery** end to end (`stripe listen` / `stripe trigger`
+  against the deployed function)
+- **The `23505` idempotency race** under genuine concurrency
+- **Resend delivery, entirely.** No API key, no verified sending domain. Restore
+  email must not be described as working until a real test send succeeds.
+- Shared-secret auth under real Supabase request routing
+- Service-role RLS-bypass behavior against the real table
+
+### 14.13 `/restore` is a placeholder
+
+`app/report-card-comment-library/restore/page.tsx` exists **only** so the
+"Already bought it?" link is never a 404. It does not call
+`report-card-access-restore`, and it deliberately **does not claim email
+restoration works**, because it does not: the Vercel-side request/confirm
+routes are unwritten and Resend is unconfigured (§13.13 step 7).
+
+It currently directs users to `info@getshorthandapp.com`, which is the address
+already used across the site (`hello@` was used in a first draft and corrected).
+
+### 14.14 What's next
+
+1. ~~**Restore routes**: `request` and `confirm`~~ **The `confirm` half is now
+   built and tested, see §15.** The `request` half is still unbuilt and still
+   blocked on Resend. Note that §15 did **not** use the existing
+   `report-card-restore` limiter as planned here; see §15.5 for why an IP-keyed
+   limiter was the wrong choice for this path.
+2. **Greg's setup steps** (§13.13), none of which are done.
+3. **Deploy the four Edge Functions** with `verify_jwt = false`.
+4. **Then** real end-to-end testing against Stripe test mode, which is the only
+   thing that can close out §14.12.
+
+---
+
+## 15. Restore-confirm + refresh abuse protection (COMPLETE, 2026-07-29)
+
+Narrow checkpoint following §14. Two things were in scope: build the
+**restore-confirm** route only, and add **abuse protection** to
+`/api/report-card-access/refresh`. The restore-*request* UI was explicitly out
+of scope and is still not built.
+
+### 15.1 Status: nothing committed, pushed, deployed, or configured
+
+Unchanged from §14.1 and still true:
+
+| | |
+|---|---|
+| Committed this session | **nothing** |
+| Branch | `feature/report-card-comment-library-stripe` |
+| Unpushed commits on branch | 3, all pre-dating §14 |
+| Everything in §15.2 | **uncommitted working-tree changes** |
+
+No Edge Function deployed. No secret set in any dashboard. No Stripe
+Product/Price created. `.env.local` was **not** modified; it holds live values,
+and all testing passed test-only secrets through the process environment
+instead. The §13.2 migration remains the only thing that has ever touched live
+infrastructure.
+
+### 15.2 Files added and changed
+
+**Added:**
+
+| File | Purpose |
+|---|---|
+| `app/report-card-comment-library/restore/confirm/route.ts` | The restore-confirm Route Handler. |
+| `app/report-card-comment-library/restore/failed/page.tsx` | Generic failure page, two buckets, no internal reasons. |
+
+**Changed:**
+
+| File | Change |
+|---|---|
+| `supabase/functions/report-card-access-restore/index.ts` | Split `not_paid` from `lookup_failed` (§15.6). Reason codes documented in the header. |
+| `lib/ratelimit.ts` | Added 3 limiters + `hashedRateLimitKey`, `checkPurchaseRateLimit`, `checkRestoreConfirmRateLimit`. |
+| `lib/report-card-gate.ts` | `evaluateAccess()` takes an optional `RevalidationThrottle`. |
+| `app/api/report-card-access/refresh/route.ts` | Now rate limited; takes `req` so the limiter can see the request. |
+| `app/report-card-comment-library/restore/page.tsx` | Comment only. User-facing copy deliberately unchanged (§15.10). |
+
+### 15.3 Restore-confirm path and full flow
+
+**Path: `/report-card-comment-library/restore/confirm`.** This is a
+**Route Handler at a user-facing path**, not under `/api/`, and that is
+deliberate: it is the exact URL the Edge Function already mints into
+restoration emails (`RCCL_SITE_URL` + this path + `?token=`). Putting the
+handler anywhere else would have meant either changing the emailed URL or
+adding a second hop that leaks the token into a client-visible redirect.
+
+It is a Route Handler rather than a page for the §14.3 reason: it must write a
+cookie, and a Server Component cannot. Confirmed again in Next 16.2.1's own
+docs (`cookies.md`: `.set` works only in a Server Function or Route Handler).
+
+It responds to **GET**, because the visitor arrives by clicking a link in a
+mail client, not via fetch.
+
+Flow, in order:
+
+1. **Extract `token`** from the query string.
+2. **Validate the token shape locally** before anything else (§15.4).
+3. **Rate-limit check**, keyed on the link (§15.5).
+4. **Forward to the Edge Function** as `action: 'confirm'`, via
+   `callReportCardFunction`, with the bearer secret. This route performs no
+   database access and holds no Supabase key of any kind.
+5. **On `granted: true`, re-verify the returned access token locally**
+   before trusting it (§15.4).
+6. **Set the cookie and redirect**, `303` to `/report-card-comment-library`,
+   with `Set-Cookie` and `Location` in the same response.
+
+`303` specifically, so the browser follows with a GET and a refresh of the
+destination does not resubmit the restore link.
+
+The token in the URL is **never** treated as proof of purchase. The Edge
+Function verifies its HMAC and 30-minute expiry, then re-checks the live
+purchase row, before minting anything.
+
+### 15.4 Token validation, both directions
+
+**Inbound, before forwarding.** A token that is absent, empty, or longer than
+2000 characters is rejected locally and is **never forwarded** to the Edge
+Function. This check sits deliberately **before** the rate limiter, so junk
+requests cannot consume a legitimate link's budget.
+
+**Outbound, before setting the cookie.** When the Edge Function returns
+`granted: true`, the route calls `verifyAccessToken()` on the token it was
+handed *before* writing it. If Vercel and Supabase ever drift on
+`RCCL_TOKEN_SECRET` or on the wire format, this fails loudly at the moment of
+restoration instead of writing a cookie the gate would silently reject on the
+next page load, which to a user would look like a broken restore link. Same
+guard `verify-session` already uses (§14.9), and it is tested: the
+`wrong_secret_token` case redirects to the failure page and sets no cookie.
+
+### 15.5 Rate-limit keys, thresholds, and fallback
+
+| Route | Primary key | Budget | Secondary |
+|---|---|---|---|
+| `restore/confirm` | SHA-256 of the **presented link** | 8 / hour | IP, 60 / hour |
+| `access/refresh` | SHA-256 of the **verified `purchaseId`** | 12 / hour | IP folded into the same key |
+
+**No raw token is ever a rate-limit key, and no raw token or IP is ever
+logged.** `hashedRateLimitKey()` hashes and truncates to 160 bits; log lines
+record only `keyed=purchase` or `keyed=link`.
+
+**Shared-school-network protection.** Neither route is IP-primary, and that is
+the whole point. Teachers in one building share a single outbound NAT address.
+The obvious implementation, reusing the existing IP-keyed `report-card-restore`
+limiter at 5/hour, would mean **the second teacher in a school to ever click a
+restore link gets blocked by the first.** That was in fact the first
+implementation here and it was wrong; it is now keyed on the link itself, with
+IP only as a wide secondary bound. Verified directly: after one link exhausted
+its 8 attempts, **a different link from the same IP succeeded immediately.**
+
+The `report-card-restore` limiter (5/h, IP) is now used by nothing. Left in
+place for the future restore-*request* route, where an IP key is appropriate
+because there is no link or purchase to key on yet.
+
+**Fallback when the limiter itself is unavailable: fail open.** If Upstash is
+unreachable, both helpers log and allow the request. These limiters bound cost,
+they do not enforce access, and the real gate still runs afterwards. Failing
+closed would convert an Upstash blip into a site-wide lockout of paying
+customers.
+
+### 15.6 not_paid versus lookup_failed (a real bug, fixed)
+
+`report-card-access-revalidate` already drew this distinction correctly.
+**`report-card-access-restore` did not.** Its confirm path collapsed three
+different situations into one reason:
+
+```ts
+if (error || !purchase || purchase.status !== 'paid') {
+  return jsonResponse({ granted: false, reason: 'purchase_not_found' }, 200);
+}
+```
+
+So a **transient database failure** was reported to a paying customer as
+"your purchase does not exist", and the caller had no way to tell a retryable
+outage from a definitive answer. Now split:
+
+| Situation | Reason | Retryable |
+|---|---|---|
+| Query **succeeded**, no matching row | `not_paid` | no |
+| Query **succeeded**, row is `refunded` / `revoked` | `not_paid` | no |
+| Query **failed** (actual DB/query error) | `lookup_failed` | **yes** |
+
+The full reason list is now documented in the function's header comment:
+`invalid_token`, `invalid_or_expired_token`, `not_paid`, `lookup_failed`,
+`server_misconfigured`. Only `lookup_failed` is transient.
+
+**This mirrors §13.9's rule and must stay mirrored.** A successful lookup that
+finds nothing is a definitive answer. A failed lookup is not an answer at all.
+
+### 15.7 Refresh: throttled only when revalidation is actually due
+
+`evaluateAccess()` now accepts an optional `RevalidationThrottle`, consulted at
+exactly one point: **after** the local HMAC and hard-expiry check pass, and
+**after** `isRevalidationDue()` returns true. That is the only place the gate
+makes a network call.
+
+Consequences, both verified:
+
+- A **locally valid token whose `revalidateAfter` has not passed is never rate
+  limited and never touches the network.** Eight rapid refresh calls with a
+  fresh token produced **0** Edge Function invocations. Ordinary reading is
+  therefore never throttled.
+- An **expired or forged token is rejected before the throttle is reached**, so
+  the limiter can never be the thing that grants or denies access.
+
+**A rate-limit block is treated exactly like `lookup_failed`** (§13.9): access
+continues **on the existing token only**. Nothing is minted, refreshed, or
+extended; `exp` and `revalidateAfter` are left untouched, so the token still
+dies at its original hard expiry and the next render retries. Verified by
+header inspection: a throttled request returned `{"access":true}` with **no
+`Set-Cookie` at all**.
+
+This closes the obvious attack on the design. Being throttled cannot be used to
+dodge revocation, and cannot extend access past 30 days.
+
+Gate state table, extended from §13.9:
+
+| Token state | Revalidate result | Behavior |
+|---|---|---|
+| valid, `revalidateAfter` not passed | (not called) | grant, no network call, **not throttled** |
+| valid, revalidation due | `valid: true` | set fresh token, grant |
+| valid, revalidation due | `not_paid` | clear cookie, paywall |
+| valid, revalidation due | `lookup_failed` | grant, **token untouched** |
+| valid, revalidation due | **throttled** | grant, **token untouched**, retry next render |
+| past `exp` / bad signature / malformed | (not called) | paywall, throttle never consulted |
+| no cookie | (not called) | paywall |
+
+### 15.8 Generic failure page
+
+`/report-card-comment-library/restore/failed`. Every unsuccessful confirm lands
+here, and the route collapses **all** internal reasons into exactly two buckets
+before redirecting:
+
+| Bucket | Meaning | Covers |
+|---|---|---|
+| `e=busy` | transient, worth retrying | `lookup_failed`, function unreachable, timeout, non-2xx, rate limited, token/secret drift |
+| `e=link` | definitive, retrying will not help | expired link, bad signature, malformed/absent/oversized token, `not_paid` (missing, refunded, revoked) |
+
+Anything unrecognised falls back to `link`. The real reason is logged
+server-side and **never reflected to the visitor**, so the URL cannot be used
+to probe whether a given purchase exists, was refunded, or was revoked. Tested
+for the absence of the strings `lookup_failed`, `not_paid`, `invalid`,
+`revoked`, `refunded`, and `purchase` in the rendered HTML of both buckets.
+
+`robots: { index: false, follow: false }` on both new pages, matching the rest
+of the feature.
+
+### 15.9 Cookie flags
+
+Identical to §14.8 and to `accessCookieOptions()`, observed on the wire:
+
+```
+rccl_access=<TOKEN>; Path=/; Max-Age=2592000; HttpOnly; SameSite=Lax
+```
+
+- `HttpOnly`, so client JS can never read the token.
+- `SameSite=Lax`, not strict, for the same top-level cross-site redirect reason
+  as §14.8.
+- `Max-Age` derived from the token's own `exp`.
+- **`Secure` is added in production only** (`NODE_ENV === 'production'`), so
+  `http://localhost` development still works. `NODE_ENV` is build-time, not
+  user input, so this is not attacker-controllable.
+
+The cookie is built by hand in this route rather than via `cookies().set()`, so
+that `Set-Cookie` and the redirect leave in a single response. The flags are
+kept deliberately identical to `accessCookieOptions()`; **if one changes, change
+both.**
+
+Every failure path sets **no cookie at all**, verified in all 8 rejection cases.
+
+### 15.10 Restore-request email flow is still NOT built
+
+Unchanged and important:
+
+- The Vercel-side `request` route does not exist. Nothing on the site sends a
+  restoration email.
+- Resend is still unconfigured: no API key, no verified sending domain
+  (§13.13 step 7).
+- `/report-card-comment-library/restore` is **still the §14.13 placeholder**,
+  and still points users to **`info@getshorthandapp.com`**. Its user-facing
+  copy was deliberately left unchanged this session, because it correctly says
+  email restoration is not switched on, and that is still true.
+- **Do not add a "send me a link" form until a real Resend test send
+  succeeds.** Such a form would silently do nothing.
+
+What *is* now true: if a user somehow has a valid restore link, the confirm
+half will honor it. Only the half that generates and emails links is missing.
+
+### 15.11 Tests, checks, and build
+
+All against a real production build (`npm run build` + `next start` on 3100),
+Edge Functions replaced by a local Node stub mirroring the real shared-secret
+auth and token wire format. Nothing deployed. Real Upstash credentials were
+read from `.env.local` for the limiter tests **without modifying the file**;
+test limiters use their own key prefixes and never touch production buckets.
+
+| Check | Result |
+|---|---|
+| Targeted suite (sections A-F) | **42 / 42 pass** |
+| Dataset exposure, 374/374 records, 0 unparsed | pass, see below |
+| `npx tsc --noEmit` | clean |
+| `npx eslint` on all new/changed files | clean |
+| `deno check` on the changed function | clean |
+| `deno lint` (excl. `no-import-prefix`) | clean |
+| `npm run build` | succeeds, both new routes registered as dynamic |
+| Em dash rule | no em dashes in any new file |
+
+What the 42 cover: the full success flow and that the issued cookie really does
+unlock the library; all 8 rejection cases, each checked for both the correct
+bucket and the absence of a cookie; failure-page reason leakage in both
+buckets; that a locally valid token makes zero function calls; the refresh
+throttle engaging, still granting, and minting nothing; and a re-run of every
+§14.4 gate state to confirm no regression.
+
+Exposure results on the restore paths, all 374 records accounted for:
+
+| Payload | Comment texts | Expected |
+|---|---|---|
+| failure page `e=busy` | 0 | 0 |
+| failure page `e=link` | 0 | 0 |
+| confirm with a bad token | 0 | 0 |
+| `/restore` placeholder | 0 | 0 |
+| library, no cookie | 10 | 10 |
+
+### 15.12 Testing lesson: an orphaned next start served a stale build
+
+Recorded as a **testing-process lesson, not a product bug.** There is nothing
+to fix in the application.
+
+Two consecutive rounds of test failures looked exactly like real code defects,
+including cases that could not possibly have reached the failing code path. The
+cause was an **orphaned `next start` process still holding port 3100** from an
+earlier launch, serving a stale build. `pkill -f "next start"` did not match it
+on this platform and reported zero processes, so every "clean rebuild, re-run"
+cycle was still being answered by the old server.
+
+What actually found it: `netstat -ano` filtered to `:3100` showed a live PID
+that did not appear in the node process list. `taskkill //PID <pid> //F`
+cleared it, and the identical test run then passed 42/42.
+
+**For the next session:** on Windows, verify the listening PID with `netstat`
+and kill by PID. Do not trust `pkill -f` to have worked, and treat "a code path
+that cannot run is failing" as evidence of a stale server before it is treated
+as evidence of a bug.
+
+### 15.13 What is next (unchanged from §14.14, minus the confirm half)
+
+1. **Restore-request route + UI**, blocked on Resend (§13.13 step 7).
+2. **Greg's setup steps** (§13.13), none of which are done.
+3. **Deploy the four Edge Functions** with `verify_jwt = false`. Note the
+   restore function changed this session (§15.6) and must be redeployed with
+   that fix.
+4. **Then** real end-to-end testing against Stripe test mode, the only thing
+   that can close out §14.12.
+
+---
+
+## 16. First successful end-to-end Stripe test-mode purchase (2026-07-29)
+
+**The payment path works end to end.** A real test-mode checkout was completed
+against the deployed Edge Functions and the branch preview deployment. This
+closes most of the §14.12 untested list, which no amount of local testing could
+reach.
+
+### 16.1 What was verified, with the evidence
+
+| Claim | Evidence |
+|---|---|
+| Checkout session created | `create-session` returned a live `cs_test_...` URL, 200 |
+| Payment completed | Stripe test card `4242...`, redirected back to the preview |
+| **Webhook signature verified** | webhook returned **200**, not 400 |
+| Exactly one purchase row | `total_rows = 1`, `distinct_sessions = 1` |
+| Correct product | `amount_total = 499`, `currency = 'usd'`, `status = 'paid'` |
+| Fulfillment succeeded | `report-card-checkout-fulfill` returned **200** |
+| Full library unlocked | all 374 comments rendered for the paying user |
+| Shared secrets match | see §16.3 |
+| No retries, no errors | zero 500s in the logs, single webhook delivery |
+
+**Signature verification passed affirmatively, not by absence of evidence.** A
+bad signature makes `constructEventAsync` throw, which returns **400**. An
+earlier unsigned probe confirmed that 400 path fires. The real delivery
+returned 200, so it got past verification, parsed the event, and ran
+fulfillment to completion.
+
+### 16.2 The idempotency race ran for real and held
+
+The two independent fulfillment callers both fired, about 3 seconds apart:
+
+| Time (UTC) | Function | Status |
+|---|---|---|
+| 19:14:21.807 | `report-card-checkout-webhook` | 200 |
+| 19:14:24.772 | `report-card-checkout-fulfill` | 200 |
+
+Both call the same `fulfillCheckoutSession()`. Result: **one row**, with
+`created_at` exactly equal to `updated_at`. The second caller neither inserted
+a duplicate nor updated the winner's row. It took the select-finds-existing
+path and returned the same `purchaseId`, which is why the success page could
+unlock with a valid cookie.
+
+**Caveat, stated honestly:** 3 seconds apart is sequential, not simultaneous.
+This exercised the **select-finds-existing** branch, NOT the `23505`
+unique-violation branch, which requires true concurrency. The practical
+double-fulfillment failure mode is confirmed handled; the `23505` path remains
+formally untested and is low risk.
+
+### 16.3 Secret parity confirmed indirectly but decisively
+
+Neither shared secret was directly asserted, but both are proven by behavior:
+
+- **`REPORT_CARD_FUNCTIONS_SECRET`** matches: `report-card-checkout-fulfill`
+  returned 200 rather than 401, so Vercel's bearer token was accepted by the
+  deployed function.
+- **`RCCL_TOKEN_SECRET`** matches: the library unlocked. A token minted in Deno
+  was verified by `lib/report-card-access.ts` under Node. Had these drifted,
+  `verify-session` would have refused to set the cookie (§14.9), by design.
+
+### 16.4 §14.12 status after this test
+
+| Item | Status |
+|---|---|
+| Real Stripe webhook delivery end to end | **CLOSED** |
+| Shared-secret auth under real Supabase routing | **CLOSED** |
+| Service-role RLS-bypass against the real table | **CLOSED** (row written to an RLS-enabled, zero-policy table) |
+| `RCCL_TOKEN_SECRET` parity Vercel/Supabase | **CLOSED** |
+| `23505` idempotency race under genuine concurrency | still open, low risk (§16.2) |
+| **Resend delivery** | **still open, unconfigured** |
+
+### 16.5 Environment used, and what is still pending
+
+Tested on the **branch preview deployment** of
+`feature/report-card-comment-library-stripe`, not production. Six Preview-scoped
+Vercel variables were configured, including `SUPABASE_FUNCTIONS_URL`, the one
+missing from §13.4 until it was caught during the commit review.
+
+**Vercel Authentication was temporarily disabled** for Preview deployments so
+Stripe's redirect back from Checkout could reach the success page. Stripe's
+redirect is a plain browser navigation and carries no SSO cookie, so the
+protection wall would have broken the success page while leaving the webhook
+unaffected (Stripe calls Supabase directly, never Vercel). **Protection was
+re-enabled immediately after the test.**
+
+**Still pending, both deliberately:**
+
+1. **Resend**: no API key, no verified sending domain. The restore-*request*
+   route and UI remain unbuilt (§15.10). Do not add a "send me a link" form
+   until a real test send succeeds.
+2. **Production merge**: the branch is unmerged and no PR is open. Everything
+   above was proven on a preview deployment. Still test mode only; no live
+   Stripe key, and no real payment has ever been taken.
+
+### 16.6 Deployment version note
+
+Setting `STRIPE_WEBHOOK_SECRET` caused Supabase to restart **all** Edge
+Functions with the updated environment, bumping every function's version by one,
+including `delete-account`, which this project never touched. `ezbr_sha256`,
+`created_at`, and `updated_at` were unchanged on all five, confirming no code
+was redeployed. A version bump alone does not indicate a redeploy.
+
+---
+
+## 17. Resend setup map and restore-request audit (DOCUMENTATION ONLY, 2026-07-29)
+
+**No code was changed, deployed, merged, or configured in this session.** This
+section is the result of a read-only audit of the existing restore code, done to
+establish exactly what Resend setup it expects before any of it is built. The
+implementation plan that came out of this audit is in §17.7, and it is a
+proposal awaiting approval, not a record of work done.
+
+### 17.1 Resend account setup
+
+| Item | Value | Notes |
+|---|---|---|
+| Domain to verify | `getshorthandapp.com` | A subdomain such as `mail.getshorthandapp.com` also works. Nothing in the code hard-codes either one. |
+| Sender address | `ShortHand <info@getshorthandapp.com>` | Not set in code. Read entirely from `RESEND_FROM_ADDRESS` and passed straight through to Resend's `from` field, so the `Name <addr>` display form is accepted. |
+| API key permissions | **Sending access only**, restricted to the verified domain | The function never reads, lists, or manages anything. It makes exactly one call: `POST https://api.resend.com/emails`. |
+
+`info@getshorthandapp.com` is the right sender because it is already the address
+used across the whole site, including on both restore pages
+(`restore/page.tsx`, `restore/failed/page.tsx`), so replies reach a real inbox.
+`hello@` was used in a first draft and corrected (§14.13); do not reintroduce it.
+
+### 17.2 Where the variables live: Supabase only
+
+| Variable | Location | Read at |
+|---|---|---|
+| `RESEND_API_KEY` | **Supabase Edge Function secrets only** | `report-card-access-restore/index.ts` |
+| `RESEND_FROM_ADDRESS` | **Supabase Edge Function secrets only** | same |
+| `RCCL_SITE_URL` | **Supabase Edge Function secrets only** | same, builds the emailed link |
+
+**No Resend variable belongs in Vercel.** The Vercel side never touches Resend
+and never sends mail. All three are read with `Deno.env.get` inside the Edge
+Function. This matches the secrets table in §13.4; adding the two Resend keys
+takes the configured Supabase secret count from six to eight.
+
+### 17.3 `RCCL_SITE_URL` is shared across Preview and Production
+
+**This is the trap in this section.** Supabase secrets are project-wide. They
+are not branch-scoped and not environment-scoped, unlike the Vercel Preview
+variables used in §16. There is exactly one `RCCL_SITE_URL` and both Preview and
+Production read the same value.
+
+It builds the link inside every restoration email. So whatever it is set to is
+where **every** restore email points, for every user, regardless of which
+deployment they bought from.
+
+Consequences, both real:
+
+- Set to the Preview URL, production emails send paying teachers to a preview
+  deployment (which is normally behind Vercel Authentication).
+- Set to production, the Preview restore flow cannot be tested, because the
+  emailed link will leave the preview deployment entirely.
+
+There is no way to split this per environment with the current design. It must
+be flipped deliberately, in the order given in §17.8, and flipping it is a
+required cutover step, not a cleanup detail.
+
+### 17.4 The restore-request flow has no caller (the real gap)
+
+> **Superseded by §17.9 (2026-07-29).** The relay route and form described as
+> missing below were built later the same session. The audit findings are kept
+> verbatim because they explain *why* the code is shaped the way it is. What
+> remains true: Resend is still unconfigured, so the flow still sends nothing.
+
+The Edge Function's `action: "request"` handler is **fully built and deployed**.
+Nothing invokes it. Verified three ways:
+
+1. There is no `app/api/report-card-access/restore` route. The only report-card
+   API routes that exist are `report-card-access/refresh`,
+   `report-card-checkout/create-session`, and
+   `report-card-checkout/verify-session`.
+2. Grepping `app/` and `lib/` for the `request` action literal returns nothing.
+3. `/report-card-comment-library/restore` is still the §14.13 placeholder. It
+   has **no email form**, and tells users to email `info@getshorthandapp.com`
+   manually.
+
+**Configuring Resend alone will therefore change nothing observable.** No code
+path reaches the send. Two pieces must still be built: a Vercel API route that
+relays the request action, and a form that posts to it. The confirm half is
+complete and was proven in §15/§16; only the half that generates and emails
+links is missing. This restates §15.10 and remains true.
+
+### 17.5 Success is not observable from the HTTP response
+
+`handleRequest` **always** returns `{ ok: true }`, whether the email matched a
+paid purchase, matched nothing, or was malformed. This is deliberate
+anti-enumeration design, documented in the function's own header comment: the
+caller must not be able to tell whether a given address bought the product.
+
+A missing `RESEND_API_KEY` or `RESEND_FROM_ADDRESS` is **logged and returns
+early**, never thrown, so the response is still `{ ok: true }`.
+
+**A completely unconfigured Resend setup is therefore indistinguishable from a
+working one, from the outside.** Delivery must be verified through:
+
+- **Supabase Edge Function logs** (the `console.error` lines name the exact
+  missing variable, and log Resend's status code and body on a failed send), and
+- **the Resend dashboard** (delivery events).
+
+Never treat a `200` or an `{ ok: true }` from this route as evidence that mail
+was sent. That inference is invalid by design.
+
+### 17.6 The restore email is plain text only
+
+The send body sets `text` and no `html` field. This is deliverable and fine, and
+arguably better for spam filtering, but it means no styling, no logo, and no
+button: the recipient sees a bare URL. Worth knowing before anyone reports it as
+a bug. Subject line is `Your Report Card Comment Library access`. The link
+expires in 30 minutes (`RESTORE_TOKEN_TTL_SECONDS`).
+
+### 17.7 Implementation plan (APPROVED, steps 1-2 BUILT: see §17.9)
+
+Steps 1 and 2 were approved and are now built; §17.9 records what actually
+shipped and where it differs from the text below. Steps 3 and 4 remain pending
+and are still blocked on Resend.
+
+1. **Vercel relay route**, `app/api/report-card-access/restore/route.ts`:
+   POST, `runtime = 'nodejs'`, `dynamic = 'force-dynamic'`. Validates the email
+   shape, applies an IP-keyed rate limit (this path is IP-keyed unlike
+   restore-confirm, because here there is no link to key on; see §15.5 for why
+   confirm went the other way), relays via `callReportCardFunction`, and returns
+   the same generic success for every outcome including its own failures, to
+   preserve §17.5.
+2. **Restore form** replacing the §14.13 placeholder: email field, one submit
+   button, and a single terminal state saying that if that address bought the
+   library, a link is on its way, and to check the inbox and the spam folder. It
+   must **never** confirm or deny that the address was found. Keep the
+   `info@getshorthandapp.com` fallback line for the genuinely stuck. Keep
+   `noindex, nofollow`.
+3. **Preview testing** covering paid email, unknown email, expired link, reused
+   link, and successful unlock (§17.8).
+4. **`RCCL_SITE_URL` flip** per §17.8, before production cutover.
+
+### 17.8 Required ordering for `RCCL_SITE_URL`
+
+Because of §17.3, the flip is ordered, not incidental:
+
+1. Set `RCCL_SITE_URL` to the **exact Preview URL** of the branch deployment,
+   including scheme and no trailing slash.
+2. Run the full Preview restore test matrix (§17.7 step 3). Vercel
+   Authentication has to be off for the emailed link to land, exactly as in
+   §16.5, and must be **re-enabled immediately afterwards**.
+   **Done 2026-07-29/30, results in §17.10.** Authentication was re-enabled and
+   confirmed. Expiry and tampering remain outstanding.
+3. At production cutover, set `RCCL_SITE_URL` to
+   **`https://getshorthandapp.com`**.
+4. Re-verify with one real restore email from production after the merge. Until
+   step 3 happens, any restore email a real customer triggers points at a
+   preview deployment.
+
+**Do not skip step 3.** It is the single change that most easily gets forgotten,
+because nothing fails loudly when it is wrong: the emails still send, still
+return `200`, and still look fine in the logs. They just point somewhere the
+customer cannot reach.
+
+### 17.9 What was actually built (steps 1-2, 2026-07-29)
+
+*(Status line below is superseded by §17.10. Kept for the record of what was
+true when steps 1-2 landed.)* **Not committed, not pushed, not deployed, no PR.**
+Resend is still unconfigured and `RCCL_SITE_URL` is unchanged. Steps 3 and 4 of
+§17.7 have not been started.
+
+**Current status:** committed and pushed to
+`feature/report-card-comment-library-stripe`, deployed to Preview, Resend
+configured and verified, and runtime-tested per §17.10. Still no PR and not
+merged to production.
+
+**Files:**
+
+| File | Change |
+|---|---|
+| `app/api/report-card-access/restore/route.ts` | **new**, the relay route |
+| `app/report-card-comment-library/restore/RestoreRequestClient.tsx` | **new**, the form |
+| `app/report-card-comment-library/restore/page.tsx` | rewritten, placeholder replaced |
+
+#### Differences from the §17.7 proposal
+
+**1. The response contract is asymmetric, not uniformly generic.** §17.7 said
+the route would return generic success for *every* outcome. That was overcautious
+and is not what was built. Malformed input now gets a 400:
+
+| Case | Response |
+|---|---|
+| Invalid JSON body | `400 { error: 'invalid_request' }` |
+| Missing / non-string / malformed / >320-char email | `400 { error: 'invalid_request' }` |
+| Valid email, purchased | `200 { ok: true }` |
+| Valid email, never purchased | `200 { ok: true }` (identical) |
+| Edge Function unreachable or erroring | `200 { ok: true }`, real failure logged |
+| Rate limited | `429` |
+
+This does not weaken anti-enumeration. A 400 is a statement about the request,
+not about any address: a well-formed email can never produce one, so a 400
+cannot separate a customer from a stranger. What must stay indistinguishable is
+the three 200 cases, and they are byte-identical, **including when our own
+infrastructure fails**. That last case is the subtle one: surfacing a real error
+only to people whose send actually attempted would be a purchase oracle, so
+transport failures are logged server-side and shown as success.
+
+**2. No rate limiter was added.** §17.7 implied new limiter config. Not needed.
+`report-card-restore` already existed in `lib/ratelimit.ts` at **5 requests per
+hour, IP-keyed**, defined during earlier work and never wired to anything. It
+was evidently reserved for exactly this route. `lib/ratelimit.ts` is
+**unchanged**; the route calls `checkRateLimit(req, 'report-card-restore')`.
+
+Note the deliberate contrast with restore-confirm, which rejected an IP-primary
+key because a shared school NAT would let one teacher's link block the next
+(§15.5). That reasoning does not transfer: this endpoint has no per-link
+identifier to key on, and the quantity being limited is "how much mail one host
+can make us send", which is inherently per-IP.
+
+**3. The page stayed a server component.** The form was extracted to
+`RestoreRequestClient.tsx` so `page.tsx` keeps emitting its `noindex, nofollow`
+metadata normally. Verified in the prerendered output: the built
+`restore.html` contains `<meta name="robots" content="noindex, nofollow"/>`.
+The route is now `○ (Static)` in the build manifest, which is correct: the shell
+is static and the form is entirely client-side.
+
+#### Form states as built
+
+| State | Behavior |
+|---|---|
+| Idle | Labelled email field, "Email me a link" |
+| Locally invalid | Inline `role="alert"`, `aria-invalid`, red border, **no request sent**; clears on next keystroke |
+| Submitting | Field and button disabled, "Sending..." |
+| Submitted | Terminal message, form replaced, not re-armed |
+| Rate limited (429) | "Too many requests from this connection", form stays usable |
+| Network / server failure | **Identical to Submitted**, by design |
+
+The submitted message says a link is on its way *if that address was used to buy
+the library*, states the 30-minute expiry, and points at the spam folder. It
+never confirms or denies that a purchase was found.
+
+Accessibility: `<label htmlFor>` bound to the input, `type="email"`,
+`autoComplete="email"`, `inputMode="email"`, `autoCapitalize="none"`,
+`autoCorrect="off"`, `spellCheck={false}`, `maxLength={320}`, `aria-invalid`,
+`aria-describedby` pointing at the error, `role="alert"` on errors and
+`role="status"` on the success message. `noValidate` on the form so the custom
+message is what users see rather than the browser's native bubble.
+
+The `info@getshorthandapp.com` fallback appears in **both** the idle and
+submitted states. It is load-bearing while Resend is unconfigured, because in
+that window the form completes successfully and silently sends nothing (§17.5).
+
+#### Client-side validation is not a security boundary
+
+The component's `EMAIL_RE` and 320-char bound intentionally duplicate the
+route's, which in turn match the Edge Function's. The client copy exists only so
+honest typos get corrected without a round trip. All three layers must be kept
+in agreement: if the client ever accepts something the route rejects, users get
+an opaque terminal message instead of a useful correction.
+
+#### Verification
+
+- `npx tsc --noEmit`: **clean, exit 0**
+- `npm run lint`: **54 problems (52 errors, 2 warnings), all pre-existing.**
+  Confirmed by stashing the changes and re-running: the baseline is identical at
+  54/52/2. The three new/changed files produce **zero** lint output. The
+  pre-existing errors are unrelated (`react/no-unescaped-entities`,
+  `react-hooks/set-state-in-effect` in `components/LeadGate.tsx`, and an
+  `<img>` warning in `components/FeatureVideo.tsx`).
+- `npm run build`: **succeeded.** `/api/report-card-access/restore` registers as
+  `ƒ (Dynamic)`; `/report-card-comment-library/restore` as `○ (Static)`.
+- **No test framework exists in this repo.** `package.json` defines only `dev`,
+  `build`, `start`, and `lint`, and there are no `*.test.*` or `*.spec.*` files.
+  "Tests" here means typecheck + lint + build. Nothing was run against a live
+  Supabase or Resend at the time this section was written.
+
+  **Superseded by §17.10:** runtime verification on Preview has since happened.
+  The matrix is no longer outstanding except for token expiry and tampering.
+
+#### Still true after this work
+
+*(Superseded by §17.10. Resend is now configured and verified, and a real test
+send has been confirmed. The paragraph below described the state before that.)*
+
+Submitting the form today does nothing observable. Resend has no API key and no
+verified domain, so the Edge Function logs the missing variable and still
+returns `{ ok: true }`. The UI cannot tell, by design. Do not describe restore
+email as working until a real test send is confirmed in the Resend dashboard.
+
+### 17.10 Preview runtime verification results (2026-07-29/30)
+
+Run against the branch Preview deployment with `RCCL_SITE_URL` pointed at the
+Preview URL and Vercel Authentication temporarily off. **Vercel Authentication
+was re-enabled afterwards and confirmed in a fresh incognito window.**
+
+All timestamps below are UTC. Note the run spans midnight: the happy path ran
+2026-07-30 00:49-00:50 UTC, which was the evening of 2026-07-29 Eastern.
+
+#### Results
+
+| # | Test | Result |
+|---|---|---|
+| 1 | Happy path: purchased email | **Pass.** Generic response, email delivered, link pointed at the exact Preview deployment, confirmation redirected, all 374 comments unlocked |
+| 2 | Unknown email | **Pass.** Byte-identical generic response, no email delivered, single `200`, no confirm follow-up |
+| 3 | Malformed email via form | **Pass.** Inline error, no request sent, no rate-limit budget consumed |
+| 4 | Malformed email direct (`{"email":"not-an-email"}`) | **Pass.** `400 invalid_request` |
+| 5 | Malformed email direct (invalid JSON body) | **Pass.** `400 invalid_request` |
+| 6 | Rate limiting | **Pass.** Threshold confirmed at 5/hour, 6th request `429` |
+| 7 | Limited-state UI | **Pass.** Correct message, form stays usable rather than being replaced |
+| 8 | Resend dashboard | **Pass.** No sends for unknown addresses |
+
+**Neither direct malformed request (#4, #5) reached the Edge Function.**
+Confirmed by absence from the Supabase logs: validation in
+`app/api/report-card-access/restore/route.ts` runs before the limiter and before
+`callReportCardFunction`, so a malformed body is rejected entirely within Vercel.
+
+#### Rate-limit threshold: how 5 was actually proven
+
+The run did not start from an empty window, and the reconciliation matters
+because a naive reading of the logs looks like a contradiction.
+
+`report-card-restore` is `Ratelimit.slidingWindow(5, '1 h')`, IP-keyed. Sliding,
+not fixed: each request counts for one hour from its own timestamp and drops out
+individually. That is what makes the arithmetic below valid.
+
+At run start (01:52:06):
+
+| Prior request | Age | Counted? |
+|---|---|---|
+| 00:49:46 happy path | 62 min | No, aged out |
+| 00:58:38 unknown email | 53 min | **Yes** |
+
+So the IP began with **1 of 5 already consumed**. Four new requests were allowed
+(01:52:06, 01:52:29, 01:53:15, 01:53:35), reaching the total of 5. The next form
+submission returned `429`.
+
+1 surviving + 4 allowed = 5 at the threshold, 6th blocked. **The configured
+5-per-hour threshold is confirmed.** No clean-window retest is required.
+
+**The `429`s never reached Supabase.** Only four new Edge Function entries exist
+for this run, and the blocked requests produced none, because `checkRateLimit`
+returns before `callReportCardFunction` is called. Short-circuit behavior
+directly observed, not inferred.
+
+> Reading these logs later: the Network tab and the Edge Function logs count
+> different things and will not match. The browser sees every POST to
+> `/api/report-card-access/restore`; Supabase sees only those that passed the
+> limiter. One `200` and four `429`s in DevTools alongside four Edge Function
+> `200`s is consistent, not contradictory, once the surviving prior request is
+> accounted for.
+
+#### Known non-error in the webhook log
+
+`report-card-checkout-webhook` has a `400` at 2026-07-30 00:49:35 UTC. It
+**predates** the successful purchase webhook (01:14:21) by about 25 minutes and
+is **not a retry of it**. It is a known setup-time rejected request, almost
+certainly a signature check against a payload signed with a different secret
+during configuration.
+
+Earlier notes said the purchase run had "no retries or errors". That is true of
+the successful run specifically, but should not be read as the function's entire
+history being clean. Do not treat this `400` as a new fault.
+
+#### Still outstanding
+
+- **Token expiry.** Deliberately excluded from the live matrix. To be tested
+  later with a locally generated pre-expired token, **without changing the shared
+  30-minute TTL**.
+- **Tampering.** Note when testing: a tampered *cookie* is rejected by local HMAC
+  in `lib/report-card-gate.ts` with no network call, so a passing tamper test
+  produces **zero** Edge Function log lines. Absence of logs is the pass
+  condition. A tampered *link token* does reach the Edge Function and should come
+  back not-granted.
+- **`RCCL_SITE_URL` flip to `https://getshorthandapp.com`** at production
+  cutover, per §17.8 step 3.
+- Production merge, production Vercel variables, Stripe live-mode setup, and a
+  final real-money purchase test.
+
+## 18. Production cutover Phase 1 + prep inventory (2026-07-30)
+
+**Read-only sessions. No code, secrets, Stripe, Vercel, or Supabase state was
+changed by either pass below.**
+
+### 18.1 Phase 1: PR opened
+
+- **PR:** [#8](https://github.com/Lebed-Digital/shorthand-website/pull/8) —
+  `feature/report-card-comment-library-stripe` into `main`.
+- **Rollback reference** (pre-merge `main`):
+  `0b939c30124feec6f45ee5d86b54f97b1f286ed8`.
+- 34 files changed, +4540/-24. Diff audited line-by-line for secrets: every
+  `SUPABASE_SERVICE_ROLE_KEY` hit is a `Deno.env.get(...)` lookup by name, not
+  a value. Migration only creates `report_card_purchases`, RLS enabled, zero
+  policies (service_role-only).
+- Checks: Vercel deployment pass, Vercel Preview Comments pass. Merge state:
+  CLEAN / MERGEABLE. **Not merged** — merge is Greg's call, per the
+  application-code branch-and-wait rule.
+
+### 18.2 The six Vercel Production environment variables
+
+| # | Variable | Read at | Exposure | Production value | Source |
+|---|---|---|---|---|---|
+| 1 | `STRIPE_SECRET_KEY` | `lib/stripe.ts:8` | Server-only | **New live value** — restricted key, Checkout Sessions: Write only | Stripe |
+| 2 | `STRIPE_PRICE_ID` | `app/api/report-card-checkout/create-session/route.ts:11` | Server-only | **New live value** — live price ID, not interchangeable with test | Stripe |
+| 3 | `NEXT_PUBLIC_SITE_URL` | `lib/stripe.ts:20` | **Browser-exposed** | `https://getshorthandapp.com` | Application URL |
+| 4 | `REPORT_CARD_FUNCTIONS_SECRET` | `lib/report-card-functions.ts:39` (sends) / `supabase/functions/_shared/auth.ts:15` (verifies) | Server-only | Must **match** the Supabase-side value exactly | Shared secret |
+| 5 | `RCCL_TOKEN_SECRET` | `lib/report-card-access.ts:44` / `supabase/functions/_shared/access-token.ts` | Server-only | Must **match** the Supabase-side value exactly | Shared secret |
+| 6 | `SUPABASE_FUNCTIONS_URL` | `lib/report-card-functions.ts:27` | Server-only | Same Supabase project serves both environments (secrets are project-wide, §17.3), so **same as Preview**: `https://muywwvbmpjotcffocyjb.supabase.co/functions/v1` | Supabase |
+
+This matches the §13.4 table exactly; no drift found between code and docs.
+`RCCL_SITE_URL` is **not** part of this list — it is Supabase-only (§17.2/17.3),
+and `NEXT_PUBLIC_SUPABASE_URL`/`NEXT_PUBLIC_SUPABASE_ANON_KEY`
+(`lib/supabase.ts`) belong to an unrelated, pre-existing Supabase client.
+
+### 18.3 Webhook event and URL
+
+- Subscribed event: **`checkout.session.completed` only**
+  (`supabase/functions/report-card-checkout-webhook/index.ts:15,61-66`; any
+  other event type is acknowledged `200` and ignored, by design).
+- Production webhook URL (same for Preview and Production, since the webhook
+  authenticates via Stripe signature, not by environment):
+  `https://muywwvbmpjotcffocyjb.supabase.co/functions/v1/report-card-checkout-webhook`
+
+### 18.4 Stripe live-mode items to create
+
+1. Product: "Report Card Comment Library"
+2. One-time Price, **$4.99 USD** exactly — `fulfillment.ts:16-18` hardcodes
+   `EXPECTED_AMOUNT_TOTAL = 499` / `EXPECTED_CURRENCY = 'usd'`; any other
+   amount or currency is rejected as `amount_mismatch`/`currency_mismatch`
+3. Live webhook endpoint at the URL in §18.3, event `checkout.session.completed`
+4. Live webhook signing secret → Supabase `STRIPE_WEBHOOK_SECRET`
+5. **Two** live API keys are needed, not one:
+   - Restricted (Checkout Sessions: Write only) → Vercel `STRIPE_SECRET_KEY`
+   - Full-access → Supabase-side `STRIPE_SECRET_KEY`
+
+### 18.5 Risks and ambiguities found
+
+1. **Supabase secrets are project-wide**, so `STRIPE_SECRET_KEY` and
+   `STRIPE_WEBHOOK_SECRET` cannot differ between Preview and Production on the
+   Supabase side — there is one Supabase project. Flipping these to live values
+   at cutover means **Preview's webhook/fulfillment path goes live-mode at the
+   same moment**, same trap already documented for `RCCL_SITE_URL` in §17.3,
+   just not previously called out for the Stripe secrets. Decide deliberately.
+2. **Two distinct live secret keys, same variable name.** Easy to paste the
+   same key into both Vercel and Supabase by mistake; they must be different
+   keys with different scopes, mirroring the existing test-mode split.
+3. **No Stripe publishable key exists in the code.** Checkout is created
+   server-side and the browser follows `session.url`
+   (`create-session/route.ts:43`) — do not add a
+   `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` unprompted.
+4. No other doc/code mismatch found. The six-variable table, webhook event,
+   and webhook URL are consistent across code comments and this doc.
+
+### 18.6 Tomorrow's checklist
+
+**A. Stripe live-mode** — switch to live mode; create Product; create $4.99
+Price; create restricted key (Vercel); create full-access key (Supabase);
+create webhook endpoint (§18.3 URL, `checkout.session.completed` only); copy
+signing secret.
+
+**B. Vercel Production variables** — add all six from §18.2, Production scope
+only; confirm only `NEXT_PUBLIC_SITE_URL` is browser-exposed; leave Preview
+values untouched.
+
+**C. Supabase secrets** — update `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET`
+to live values (note §18.5.1); flip `RCCL_SITE_URL` to
+`https://getshorthandapp.com` and read it back to confirm exact value; confirm
+Resend secrets unchanged; do not redeploy functions unless required.
+
+**D. Final pre-merge verification** — re-confirm PR #8 still CLEAN/MERGEABLE
+and branch hasn't drifted; three-way match of code expectations vs. Vercel
+Production vs. Supabase; confirm Vercel Authentication still on for Preview;
+merge PR #8 (Greg's decision); proceed to the smoke test / controlled
+real-purchase / restore-test phases of the cutover plan.
