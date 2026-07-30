@@ -2948,3 +2948,87 @@ config.
   (§16.4/§16.6), neither of which blocks launch.
 
 **No current launch blockers.**
+
+## 22. Refund handling: current state and manual procedure (2026-07-30)
+
+**Refunds are not automated.** Confirmed by code review: the webhook
+(`supabase/functions/report-card-checkout-webhook/index.ts`) subscribes to
+and handles `checkout.session.completed` only; any other event type,
+including `charge.refunded` or `refund.created`, is acknowledged and ignored
+(`{ received: true, ignored: true }`). Stripe's dashboard is likewise
+subscribed to `checkout.session.completed` only. **Refunding a purchase in
+Stripe has zero automatic effect on `report_card_purchases` or on the
+purchaser's access.**
+
+This is not accidental scope: the schema's check constraint already allows
+`status in ('paid', 'refunded', 'revoked')`, and every access path
+(`report-card-access-revalidate`, `report-card-access-restore`,
+`lib/report-card-gate.ts`) already enforces `status = 'paid'` correctly
+wherever it reads the row. Only the *writer* for the refunded/revoked
+transition was never built. Given $4.99 pricing and expected near-zero
+refund volume, building a refund webhook handler now would be premature; the
+manual procedure below is sufficient until refund volume ever makes it
+annoying.
+
+### 22.1 Manual refund procedure (use this every time, until automated)
+
+1. Refund the payment in the Stripe dashboard as normal.
+2. Find the matching row by the **Stripe checkout session ID or payment
+   intent ID** (not email; an email can match multiple purchases over time,
+   the session/intent ID cannot).
+3. Run, scoped to that exact identifier:
+   ```sql
+   update public.report_card_purchases
+   set status = 'refunded'
+   where stripe_checkout_session_id = '<exact session id>'
+     and stripe_payment_intent_id = '<exact payment intent id>'
+   returning id, stripe_checkout_session_id, status, updated_at;
+   ```
+4. Confirm the `returning` output is exactly one row, matches the intended
+   purchase, and shows `status = 'refunded'`. Never delete the row; it stays
+   the permanent, traceable record of a legitimate refund.
+5. Access dies automatically within 24 hours via the existing revalidation
+   cycle (`ACCESS_REVALIDATE_SECONDS`, `_shared/access-token.ts`). To confirm
+   immediately rather than waiting: clear the `rccl_access` cookie for
+   `getshorthandapp.com` in the browser that made the purchase, then reload
+   `/report-card-comment-library`. A cookie-less request always re-checks the
+   database, so a `refunded` row shows the $4.99 paywall immediately.
+
+**The risk of skipping step 3:** not fraud exposure (the product is 374
+static text comments, worth nothing to resell), but record drift, Stripe
+shows refunded while Supabase still shows paid, discovered only much later.
+Revisit automating this only if refund volume ever makes the manual step
+easy to forget.
+
+### 22.2 Personal test-purchase refund, verified end to end (2026-07-30)
+
+Greg's own real production purchase (§19, the live-mode `cs_live_...`
+session, distinct from the earlier `cs_test_...` test-mode row from
+2026-07-29, which was untouched throughout) was refunded in Stripe and
+cleaned up using the procedure above, to keep the purchase history honest:
+one real test purchase, fully refunded, zero real customer purchases to
+date.
+
+- **Row identified and confirmed** before any change: exactly 2 rows existed
+  in `report_card_purchases`, both `status = 'paid'`. The `cs_live_...` row
+  (id `33be7f7f-3181-41c8-bc12-b3a64b5e7b5d`) was confirmed against the
+  Stripe-side refunded payment intent (`pi_3TyyDXJ2hMFVGCT31dUGRx49`) before
+  the update ran.
+- **Update executed**, scoped by both `stripe_checkout_session_id` and
+  `stripe_payment_intent_id`. Exactly one row returned and changed:
+  `status: 'paid' -> 'refunded'`, `updated_at` bumped by the existing
+  trigger.
+- **No other row affected.** Full-table re-select afterward showed the
+  `cs_test_...` row (id `f5a1c6a7-487b-439b-8ae0-e3e1a93382fe`) unchanged,
+  still `status = 'paid'`, `updated_at` identical to its original
+  `created_at`. Row never deleted, permanently traceable by both its Stripe
+  session and payment-intent IDs.
+- **Access revocation confirmed live**, not just at the database level:
+  Greg cleared the `rccl_access` cookie in the browser that made the
+  purchase and reloaded `/report-card-comment-library` on production. Result:
+  the $4.99 paywall, exactly as an unauthenticated visitor sees it. Confirms
+  the revalidation logic in `lib/report-card-gate.ts` behaves as designed
+  when `status != 'paid'`.
+- **No code changed.** This was a one-time manual data correction using
+  machinery that already existed; §22.1 is the reusable procedure for any
+  future refund, real or test.
