@@ -2673,3 +2673,99 @@ history being clean. Do not treat this `400` as a new fault.
   cutover, per §17.8 step 3.
 - Production merge, production Vercel variables, Stripe live-mode setup, and a
   final real-money purchase test.
+
+## 18. Production cutover Phase 1 + prep inventory (2026-07-30)
+
+**Read-only sessions. No code, secrets, Stripe, Vercel, or Supabase state was
+changed by either pass below.**
+
+### 18.1 Phase 1: PR opened
+
+- **PR:** [#8](https://github.com/Lebed-Digital/shorthand-website/pull/8) —
+  `feature/report-card-comment-library-stripe` into `main`.
+- **Rollback reference** (pre-merge `main`):
+  `0b939c30124feec6f45ee5d86b54f97b1f286ed8`.
+- 34 files changed, +4540/-24. Diff audited line-by-line for secrets: every
+  `SUPABASE_SERVICE_ROLE_KEY` hit is a `Deno.env.get(...)` lookup by name, not
+  a value. Migration only creates `report_card_purchases`, RLS enabled, zero
+  policies (service_role-only).
+- Checks: Vercel deployment pass, Vercel Preview Comments pass. Merge state:
+  CLEAN / MERGEABLE. **Not merged** — merge is Greg's call, per the
+  application-code branch-and-wait rule.
+
+### 18.2 The six Vercel Production environment variables
+
+| # | Variable | Read at | Exposure | Production value | Source |
+|---|---|---|---|---|---|
+| 1 | `STRIPE_SECRET_KEY` | `lib/stripe.ts:8` | Server-only | **New live value** — restricted key, Checkout Sessions: Write only | Stripe |
+| 2 | `STRIPE_PRICE_ID` | `app/api/report-card-checkout/create-session/route.ts:11` | Server-only | **New live value** — live price ID, not interchangeable with test | Stripe |
+| 3 | `NEXT_PUBLIC_SITE_URL` | `lib/stripe.ts:20` | **Browser-exposed** | `https://getshorthandapp.com` | Application URL |
+| 4 | `REPORT_CARD_FUNCTIONS_SECRET` | `lib/report-card-functions.ts:39` (sends) / `supabase/functions/_shared/auth.ts:15` (verifies) | Server-only | Must **match** the Supabase-side value exactly | Shared secret |
+| 5 | `RCCL_TOKEN_SECRET` | `lib/report-card-access.ts:44` / `supabase/functions/_shared/access-token.ts` | Server-only | Must **match** the Supabase-side value exactly | Shared secret |
+| 6 | `SUPABASE_FUNCTIONS_URL` | `lib/report-card-functions.ts:27` | Server-only | Same Supabase project serves both environments (secrets are project-wide, §17.3), so **same as Preview**: `https://muywwvbmpjotcffocyjb.supabase.co/functions/v1` | Supabase |
+
+This matches the §13.4 table exactly; no drift found between code and docs.
+`RCCL_SITE_URL` is **not** part of this list — it is Supabase-only (§17.2/17.3),
+and `NEXT_PUBLIC_SUPABASE_URL`/`NEXT_PUBLIC_SUPABASE_ANON_KEY`
+(`lib/supabase.ts`) belong to an unrelated, pre-existing Supabase client.
+
+### 18.3 Webhook event and URL
+
+- Subscribed event: **`checkout.session.completed` only**
+  (`supabase/functions/report-card-checkout-webhook/index.ts:15,61-66`; any
+  other event type is acknowledged `200` and ignored, by design).
+- Production webhook URL (same for Preview and Production, since the webhook
+  authenticates via Stripe signature, not by environment):
+  `https://muywwvbmpjotcffocyjb.supabase.co/functions/v1/report-card-checkout-webhook`
+
+### 18.4 Stripe live-mode items to create
+
+1. Product: "Report Card Comment Library"
+2. One-time Price, **$4.99 USD** exactly — `fulfillment.ts:16-18` hardcodes
+   `EXPECTED_AMOUNT_TOTAL = 499` / `EXPECTED_CURRENCY = 'usd'`; any other
+   amount or currency is rejected as `amount_mismatch`/`currency_mismatch`
+3. Live webhook endpoint at the URL in §18.3, event `checkout.session.completed`
+4. Live webhook signing secret → Supabase `STRIPE_WEBHOOK_SECRET`
+5. **Two** live API keys are needed, not one:
+   - Restricted (Checkout Sessions: Write only) → Vercel `STRIPE_SECRET_KEY`
+   - Full-access → Supabase-side `STRIPE_SECRET_KEY`
+
+### 18.5 Risks and ambiguities found
+
+1. **Supabase secrets are project-wide**, so `STRIPE_SECRET_KEY` and
+   `STRIPE_WEBHOOK_SECRET` cannot differ between Preview and Production on the
+   Supabase side — there is one Supabase project. Flipping these to live values
+   at cutover means **Preview's webhook/fulfillment path goes live-mode at the
+   same moment**, same trap already documented for `RCCL_SITE_URL` in §17.3,
+   just not previously called out for the Stripe secrets. Decide deliberately.
+2. **Two distinct live secret keys, same variable name.** Easy to paste the
+   same key into both Vercel and Supabase by mistake; they must be different
+   keys with different scopes, mirroring the existing test-mode split.
+3. **No Stripe publishable key exists in the code.** Checkout is created
+   server-side and the browser follows `session.url`
+   (`create-session/route.ts:43`) — do not add a
+   `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` unprompted.
+4. No other doc/code mismatch found. The six-variable table, webhook event,
+   and webhook URL are consistent across code comments and this doc.
+
+### 18.6 Tomorrow's checklist
+
+**A. Stripe live-mode** — switch to live mode; create Product; create $4.99
+Price; create restricted key (Vercel); create full-access key (Supabase);
+create webhook endpoint (§18.3 URL, `checkout.session.completed` only); copy
+signing secret.
+
+**B. Vercel Production variables** — add all six from §18.2, Production scope
+only; confirm only `NEXT_PUBLIC_SITE_URL` is browser-exposed; leave Preview
+values untouched.
+
+**C. Supabase secrets** — update `STRIPE_SECRET_KEY` and `STRIPE_WEBHOOK_SECRET`
+to live values (note §18.5.1); flip `RCCL_SITE_URL` to
+`https://getshorthandapp.com` and read it back to confirm exact value; confirm
+Resend secrets unchanged; do not redeploy functions unless required.
+
+**D. Final pre-merge verification** — re-confirm PR #8 still CLEAN/MERGEABLE
+and branch hasn't drifted; three-way match of code expectations vs. Vercel
+Production vs. Supabase; confirm Vercel Authentication still on for Preview;
+merge PR #8 (Greg's decision); proceed to the smoke test / controlled
+real-purchase / restore-test phases of the cutover plan.
