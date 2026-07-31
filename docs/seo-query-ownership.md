@@ -1,9 +1,37 @@
 # SEO Query Ownership Map
 
 **Created:** 2026-07-17 (flagship session). **Data basis:** GSC 90-day window 2026-06-19 to 2026-07-17, GA4 28-day window, live SERP checks.
+**Updated 2026-07-30:** country-segmented GSC + GA4 pass. Added the geography/site-age preamble below and revised cluster 1. Blended figures elsewhere in this doc predate that pass and have not been re-segmented.
 **Purpose:** one primary URL per query cluster. Before creating, merging, redirecting, or retitling any page, check this map first. Update it when decisions change.
 
 Rule of thumb proven by this site's data: pages win when they ARE the artifact (copy-paste comments, emails, templates, tools) and carry a specificity modifier (ADHD, preschool, Tier 2). Pages lose when two of our URLs are eligible for the same query.
+
+---
+
+# Read this before using any number in this document (added 2026-07-30)
+
+Every impression, click, and position figure below, unless explicitly labelled US-only, is a **blended worldwide average**. Blended numbers on this site are systematically misleading, for two reasons established on 2026-07-30.
+
+**1. The US is the only segment that converts.** GA4, 90 days to 2026-07-30, country-segmented:
+
+| Event | US | Rest of world |
+|---|---|---|
+| signup_completed | 30 | 2 (Canada 1, India 1) |
+| demo_started | 159 | 11 |
+| cta_click | 100 | 15 |
+| Organic search users | 428 | ~380 |
+
+Comparable organic traffic volume, roughly 13x difference in conversion rate. Non-US visitors are not a problem and are not displacing US visitors (rankings are not zero-sum across countries, US and non-US impressions grew together all summer), but they are not the audience the funnel serves. Note also that 542 US users arrived **Direct**, more than US organic; GSC is blind to that channel entirely.
+
+**2. Blended position hides the US picture.** Examples measured 2026-07-30: `report-card-comments-for-behavior` reads 8.8 blended but 40.0 US-only. `preschool-report-card-comments` reads US 25.3. `sample-emails-to-parents-about-student-behavior` reads US 22.4. Total US blog clicks sitewide were ~13.
+
+**Practical rule: segment GSC to `country = usa` by default when judging a page's commercial value.** Use blended numbers only for reach questions. Where a cluster note below cites a blended figure, treat it as a reach metric, not a funnel metric.
+
+## Site age confounds every trend in this document
+
+The site launched ~2026-04-08. Through 2026-07-28 the dominant signal in all traffic data is **new-domain indexing, not seasonality or content quality**. US impressions roughly tripled during July (early June ~100-170/day, late July 500-1,455/day) and US position improved from ~15 in May to ~7-9 in late July, both moving in the favourable direction at once, which is characteristic of a young site gaining ground rather than of seasonal demand.
+
+Consequence: **do not attribute the expected September/October rise in US traffic to school being back in session.** Most of it will be the same indexing curve continuing. Attributing it to seasonality will make a maturing domain look like a working content strategy. A clean seasonality read is not available until roughly April 2027 (one full year of data); the first usable partial read is a September/October comparison against the July baseline recorded here.
 
 ---
 
@@ -17,6 +45,20 @@ Rule of thumb proven by this site's data: pages win when they ARE the artifact (
 - **Redirects still consolidating into primary:** `/blog/report-card-comments-for-students-with-behavior-problems` (merged 2026-07-04, old URL still earned 32 clicks/1,382 imp in GSC — normal lag, do nothing), `/blog/behavior-comments-for-report-cards`, `/blog/how-to-write-honest-behavior-comments`, `/blog/how-to-write-behavior-comments-on-report-card`
 - **Cannibalization:** none active after the 07-04 merge; watch that consolidation completes (check ~2026-08-15)
 - **Recommendation:** leave alone structurally. **Hub gap:** this is the site's #1 clicking cluster and the only major cluster without a hub. Build a report-card-comments hub before October report-card season, linking every supporting page + the generator.
+- **US performance: UNTESTED, not poor (established 2026-07-30).** This cluster's blended numbers are its best, and its US numbers are its worst (primary reads 8.8 blended, 40.0 US-only). The tempting conclusion, that report-card content is a poor funnel fit and the October hub should be dropped, was drafted and then **disproven**. During the US report-card season this site has actually lived through (2026-05-15 to 06-20), these six pages sat at **positions 35 to 75**, i.e. pages 4 through 8:
+
+  | Page | US imp | US clicks | US pos |
+  |---|---|---|---|
+  | report-card-comments-for-behavior | 62 | 0 | 35.7 |
+  | report-card-comments-for-students-with-behavior-problems | 23 | 0 | 40.1 |
+  | how-to-write-behavior-comments-on-report-card | 21 | 0 | 74.9 |
+  | report-card-comments-behavior-preschool | 16 | 0 | 37.6 |
+  | report-card-comments-for-students-with-adhd | 10 | 0 | 40.6 |
+  | behavior-comments-for-report-cards | 6 | 0 | 66.2 |
+
+  Zero US clicks at position 35+ is the expected result of not being visible, not evidence that US teachers don't want this content. The primary has since climbed from 35.7 to ~15. **The cluster has never been tested against US traffic while ranking.** Do not judge it until it has been.
+- **Keep the October hub.** Its original rationale rested on blended data, but the corrected reading supports it more strongly: build the asset during the trough so it has a quarter of indexing before the next US cycle. Same logic applies to the Report Card Comment Library product.
+- **Real checkpoints for this cluster:** early November 2026 (first US season with plausible rankings) and late May/June 2027 (the decisive one, matching the window measured above). Two of the six pages sat at 66 and 75, far worse than the rest; if they have not moved substantially by November, distinguish "young page" from "page isn't good enough for the query" then, not now.
 
 ## 2. Preschool
 
@@ -136,4 +178,8 @@ Evidence bar for anything bigger (merging the two roundups, new observation post
 - **2026-08-13:** special-ed audit (pre-existing commitment) — fold AI-query routing into it.
 - **2026-09-15:** back-to-school cluster review — clicks on welcome/intro/toolkit pages; decide whether the intro post's in-person section captures "how to introduce yourself" clicks.
 - **2026-10-15:** report-card season pre-check — preschool differentiation results (generic "preschool report card comments" should have ONE page ranking, position <15), hub build decision, generator page position.
+- **2026-11-05:** report-card cluster, first US-season read. Segment `country = usa`. Baseline to beat is the 2026-05-15 to 06-20 table in cluster 1 (six pages, 138 US imp, 0 US clicks, positions 35-75). Any US clicks at all is new information. Also check whether the two worst pages (66.2, 74.9) have moved.
+- **2027-05-25:** the decisive report-card read, same window as the original measurement. This is the first apples-to-apples US season comparison and the point at which "is this cluster worth more investment" can honestly be answered.
+- **2027-04-08:** one full year of data. First point at which seasonality can be separated from the new-domain indexing curve. Before this date, treat all year-over-nothing trend claims as confounded.
 - **Baselines (90d ending 2026-07-17):** site 316 clicks / ~20,000 impressions; top pages listed in cluster sections above.
+- **Geography baselines (90d ending 2026-07-30, for the checkpoints above):** US 383 clicks / 21,215 imp / pos 12 blended-window; GA4 30 US signups vs 2 non-US; ~13 total US blog clicks sitewide. Daily US impressions late July: 500-1,455. Daily US impressions early June: 96-208.
