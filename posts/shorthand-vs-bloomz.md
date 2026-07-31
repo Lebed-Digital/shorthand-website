@@ -10,18 +10,20 @@ relatedPosts:
 excerpt: "Bloomz and ShortHand both handle parent communication and behavior tracking, but they're built for very different problems. Here's an honest comparison to help you pick the right one."
 faq:
   - q: "What is the difference between ShortHand and Bloomz?"
-    a: "Bloomz is a whole-class communication platform: announcements, calendars, volunteer sign-ups, portfolios. ShortHand is a per-student documentation tool: behavior notes, parent contact logs, and AI-generated emails tied to individual students. Bloomz is built for broadcasting to the group. ShortHand is built for keeping a detailed record on specific students."
+    a: "Bloomz is a whole-school communication platform: announcements, calendars, volunteer sign-ups, portfolios, and translation, sent to families by app, email, SMS, or voice. ShortHand is a per-student documentation tool: behavior notes, parent contact logs, and AI-drafted emails tied to individual students. Bloomz sends communication to families. ShortHand helps you prepare it and keep the record afterward. They are not direct substitutes."
   - q: "Is Bloomz free for teachers?"
-    a: "Bloomz offers a free tier for individual teachers, but many of its features require a school or district subscription. Parent communication, messaging, and advanced tracking features are often gated behind paid plans. ShortHand is free for individual classroom use with no school license required."
+    a: "Bloomz is sold to schools and districts on a per-student basis, starting around $3 per student per year, and it is free for teachers and families once a school has bought it. It is not something an individual teacher can purchase alone. ShortHand is free for individual classroom use with no school license required."
   - q: "Does Bloomz have behavior tracking?"
-    a: "Bloomz includes basic behavior tracking, but it is not its core strength. The behavior features are lightweight compared to dedicated documentation tools. Teachers who need timestamped, per-student behavior logs with parent contact records attached typically find Bloomz insufficient for that specific use case and use a dedicated tool like ShortHand instead."
+    a: "Yes. Bloomz includes behavior tracking with PBIS-structured tools as part of its broader platform. Whether it is enough depends on what you need it for: if you want per-student timestamped notes and a parent contact history you can pull up quickly in a meeting, that specific workflow is what a dedicated documentation tool like ShortHand is built around."
   - q: "Which app is better for IEP documentation, ShortHand or Bloomz?"
-    a: "ShortHand is the stronger choice for IEP documentation. It logs behavior notes and parent contacts in a per-student timeline with timestamps, which is exactly what you need at IEP meetings and parent conferences. Bloomz does not produce that kind of individual student record. If your primary goal is having documentation ready for a meeting, ShortHand is built for that problem."
+    a: "ShortHand is built specifically for this: behavior notes and parent contacts in a per-student timeline with timestamps, which is what conferences and IEP meetings tend to ask for. Bloomz covers behavior as one part of a much broader platform, and what it can produce for an individual student depends on your school's tier and setup. If documentation is your primary need, check what your school's existing tools already give you before adding anything."
 ---
 
 Bloomz and ShortHand overlap on paper: both log behavior, both connect teachers to parents. But they're built around completely different assumptions about what the job actually is.
 
-Bloomz is a class communication platform that added behavior tracking. ShortHand is a behavior-first documentation tool that added parent communication. That difference shapes everything about how they feel to use.
+Bloomz is a broad school communication platform that includes behavior and family-engagement tools. ShortHand is a focused documentation tool that helps one teacher record what happened, prepare parent communication, and keep a contact history. That difference shapes everything about how they feel to use.
+
+Worth saying up front, since I built ShortHand: for most teachers these two are not substitutes. They solve different problems, and a fair number of people would reasonably use both.
 
 ---
 
@@ -34,7 +36,7 @@ Bloomz is built to replace the class newsletter, the email blast, and the sign-u
 - Conference scheduling and volunteer signups
 - Behavior tracking with PBIS tools
 - Student portfolios and assignment submission
-- Translation into 243 languages
+- Translation into 250+ languages
 - School and district-level dashboards
 
 It's genuinely broad. If your school wants one platform for announcements, scheduling, behavior, and portfolios, Bloomz can do all of it.
@@ -60,28 +62,34 @@ It's free to start, works on your phone, and requires no school buy-in or IT app
 | | ShortHand | Bloomz |
 |---|---|---|
 | Behavior logging | Yes, phone-first | Yes, part of broader platform |
-| Parent messaging | Built in | Yes, class-wide |
+| Parent communication | Drafts messages, logs contacts | Sends via a parent-facing platform |
 | Contact log with timestamps | Yes | Implicit in chat history |
 | AI-drafted parent emails | Yes | No |
-| Works without parent sign-up | Yes | No |
+| Reaches families without the app | You send it yourself | Yes, via email, SMS, voice |
+| Translation | No | Yes, 250+ languages |
+| School dashboards | No | Yes |
 | Conference scheduling | No | Yes |
 | Announcements / newsletters | No | Yes |
 | Student portfolios | No | Yes |
-| Free tier | Yes, full core features | Limited |
-| Paid plan | Free to start | $125/year for premium |
-| School buy-in required | No | No (but scales to school) |
+| Free tier | Yes, full core features | Free to teachers once the school buys it |
+| Paid plan | Free to start | From ~$3/student/year, school-purchased |
+| Can one teacher adopt it? | Yes | No, sold to schools and districts |
 
 ---
 
 ## The Real Difference
 
-Bloomz requires parents to sign up, download the app, and engage with it for the communication side to work. In some schools that happens. In many it doesn't, and the teacher ends up doing all the setup for a tool half the parents never open.
+I want to correct something I used to say about Bloomz, because I had it wrong. I assumed it lived or died on parents downloading the app. It doesn't: Bloomz sends across app, email, SMS, and voice at every pricing tier, and the app is optional on the family side. If parent reach is your worry, that's a point in Bloomz's favor, not against it.
 
-ShortHand works for you whether or not the parents ever touch it. The log, the notes, the contact record, the drafted email: all of that is yours, on your phone, regardless of what the parents do.
+The real difference is who the tool is for. Bloomz is built to reach families. ShortHand is built for the record you keep on your own side. The log, the notes, the contact history, the drafted email: all of that is yours, on your phone, and it exists whether or not a parent ever opens anything.
 
 Bloomz also has a steeper setup curve, and app-store reviews regularly mention stability complaints: slow loads, trouble with photo uploads, and slow support responses. It's a bigger tool with bigger maintenance overhead.
 
-The flip side, and I should say this plainly since I built the other one: ShortHand gives up almost everything Bloomz does to stay that small. No announcements, no conference scheduling, no portfolios, no parent-facing feed, no translation. If you want one platform that covers all of that, Bloomz is the more complete product and this is not a close call. ShortHand is the better choice only if your actual problem is the per-student record, not the broadcasting.
+The flip side, and I should say this plainly since I built the other one: ShortHand gives up almost everything Bloomz does in order to stay that small.
+
+No announcements, no conference scheduling, no portfolios, no parent-facing feed, no translation, no school dashboards. And the one worth being clearest about, because a comparison table can make it look otherwise: **ShortHand does not send messages to parents.** It drafts the message from your notes and logs the contact after you make it. You still send it through email, or a phone call, or whatever platform your school already uses. Bloomz sends; ShortHand prepares and records.
+
+If you want one platform that covers all of that, Bloomz is the more complete product and it isn't close. ShortHand is the better choice only if your actual problem is the per-student record rather than the broadcasting.
 
 ---
 
@@ -101,18 +109,20 @@ Bloomz makes sense if:
 ShortHand makes sense if:
 
 - You want behavior and parent contact logs on your phone, fast
-- You need documentation that holds up in a meeting or IEP
-- You don't want to depend on parents downloading yet another app
+- You need a per-student record you can pull up in a meeting or IEP
 - You want AI help drafting follow-up emails
 - You're a solo teacher who doesn't want to wait for school-wide buy-in
+- Your school hasn't bought anything, and Bloomz isn't a purchase you can make alone
 
 ---
 
 ## The Bottom Line
 
-If your school is on Bloomz, use it. Don't add a second system.
+For most teachers these aren't competing purchases, and the honest answer is which problem you have.
 
-If you're choosing for yourself, as one teacher who needs to stay organized and document what happens with students, ShortHand is the faster, lighter, more focused tool. No $125/year. No waiting on parents to sign up. No IT ticket. And if neither of these two feels right, I ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) across every major option.
+If your school needs to reach families, with announcements, translation, scheduling, and portfolios, that's Bloomz, and it's a decision made at the school level anyway. If you're one teacher who needs to remember what happened and prove what you communicated, that's the narrower thing ShortHand does, and you can start it yourself this afternoon.
+
+Plenty of teachers would reasonably run both: the school's platform for reaching parents, something small for the record you keep on your side. And if neither fits, I ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) across every major option.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and have it set up before the end of the day.
 
