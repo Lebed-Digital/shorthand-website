@@ -53,7 +53,7 @@ If you've been away from this category for a few years and remember it as "every
 | ParentSquare | Districtwide communication | No, district only | No | Yes | Quote |
 | SchoolStatus Connect | Districtwide, former ClassTag | No, district only | No | Yes | Quote |
 | Seesaw | Student portfolios | No, school or district | Yes | Yes | Quote |
-| Bloomz | All-in-one school platform | No, per student | Yes | 250+ languages | $3/student/yr |
+| Bloomz | All-in-one school platform | No, per student | No, app optional | 250+ languages | $3/student/yr |
 | ShortHand | Documenting contacts you make | Yes | No, never | n/a | Free to start |
 
 Prices and availability were checked against each company's own pricing page in 2026. Anything marked "quote" means the vendor doesn't publish a number and routes you to sales, which is usually a sign the product isn't sold to individuals.
@@ -160,7 +160,9 @@ Bloomz is broad. Announcements, two-way messaging, conference scheduling, volunt
 
 Pricing is now per student per year, starting at $3 for Essentials and rising to $9 for the full 360 tier, with annual minimums for smaller schools. The individual "Teacher Premium" plan that used to anchor this product is no longer what's on offer.
 
-**Where it falls short:** Breadth is the tradeoff. The interface carries every one of those features at once, which is a lot to navigate when you want to log one quick thing between reading groups. And it's another tool that depends on families engaging with it.
+Family reach is a real strength here and I had this wrong for a while: Bloomz sends by app, email, SMS, and voice at every tier, with the app optional on the family side. It doesn't hinge on parents installing anything.
+
+**Where it falls short:** Breadth is the tradeoff. The interface carries every one of those features at once, which is a lot to navigate when you want to log one quick thing between reading groups. And it's a school-level purchase, so it isn't a decision you make alone.
 
 **Choose it if:** The decision is being made at the school level and the school wants one platform for everything.
 

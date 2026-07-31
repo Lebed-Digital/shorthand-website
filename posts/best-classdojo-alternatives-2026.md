@@ -70,7 +70,7 @@ It works without school buy-in. No IT ticket, no license, no waiting for an admi
 
 Bloomz combines parent messaging, behavior tracking, class updates, and conference scheduling. It's the closest thing to a full ClassDojo replacement in terms of feature breadth.
 
-The trade-offs: meaningful features require Teacher Premium at $125/year. The free tier is limited. App stability is a consistent complaint in reviews: crashes on photo uploads, slow load times, account lockouts after updates. And like ClassDojo, it depends on parents actually downloading and using the app.
+The trade-offs: it's sold to schools per student, starting around $3 per student per year, so it isn't something you can adopt on your own the way you could a few years ago. Once a school buys it, it's free for teachers and families. Reach is genuinely good, since it sends by email, SMS, and voice rather than depending on parents installing the app.
 
 **Doesn't do:** AI-assisted parent email drafting, works-without-parent-sign-up logging.
 
@@ -117,7 +117,7 @@ It isn't a behavior tracking tool. If documentation and parent contact records a
 | App | Best for | Solo use? | Behavior logging? | Free tier? |
 |---|---|---|---|---|
 | ShortHand | Behavior docs + parent comms | Yes | Yes, phone-first | Yes |
-| Bloomz | Full communication platform | Yes | Yes | Limited |
+| Bloomz | Full communication platform | No, school-purchased | Yes | Free once school buys |
 | Class Charts | School-wide secondary tracking | Hard | Yes | Limited |
 | PBIS Rewards | School PBIS programs | No | Yes | No |
 | Seesaw | K-5 portfolios + family comms | Yes | No | Yes |
@@ -180,7 +180,7 @@ If you teach K-2 and your students still respond to the gamification, stay on Cl
 
 If you're past that point and you need actual documentation, parent contact records, and something that holds up in a meeting, ShortHand is the one built for that specific problem. No school license needed, no parent app required, free to start.
 
-If you want a full communication hub to replace everything ClassDojo does, Bloomz is the closest match, but budget for the premium tier.
+If you want a full communication hub to replace everything ClassDojo does, Bloomz is the closest match, but it's a school-level purchase now rather than something you can sign up for alone.
 
 Everything else on this list is built for a different primary use case and is worth considering only if that use case fits your situation.
 
