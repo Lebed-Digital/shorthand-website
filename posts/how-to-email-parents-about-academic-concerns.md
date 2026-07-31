@@ -43,7 +43,7 @@ This objective description makes the problem concrete and much harder to wave aw
 
 ### Invite Parents in with Actionable Steps
 
-When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. Plenty of parents are exhausted by the time homework happens, and most are not trained educators.
+When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. A lot of parents are exhausted by the time homework happens, and most are not trained educators.
 
 Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it. If missing homework is part of the academic picture, you may also want to send a separate [email about missing assignments](https://getshorthandapp.com/blog/sample-emails-to-parents-about-missing-homework) that covers the work gap specifically, so the academic concern email stays focused on skills rather than habits.
 

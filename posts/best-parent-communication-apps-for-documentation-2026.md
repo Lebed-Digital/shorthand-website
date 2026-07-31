@@ -47,9 +47,9 @@ Many teachers end up running three or four different tools at the same time: one
 
 ClassDojo is everywhere. Kids love the little avatars. Parents love the updates. If your goal is building a positive classroom culture, it does its job well.
 
-But as a documentation tool, it completely fails. The behavior log is points-based. You give a student a plus or a minus. There is no context attached. When a parent demands to know what happened on a specific Tuesday three months ago, ClassDojo gives you a red minus symbol with no notes.
+But as a documentation tool, it falls apart. The behavior log is points-based. You give a student a plus or a minus, and no context goes with it. When a parent demands to know what happened on a specific Tuesday three months ago, ClassDojo gives you a red minus symbol and nothing else.
 
-A minus point is not a behavior record. It will not hold up at a disciplinary hearing. There is no documentation trail. It is a classroom management game, not a professional log.
+A minus point is not a behavior record. It tells you something happened, not what happened, and that gap is the whole problem when you need to explain yourself. It is a classroom management game, not a professional log.
 
 ---
 
@@ -79,13 +79,13 @@ But it is parent-facing by design. You would never log a sensitive behavior inci
 
 ## ShortHand: Built Around the Contact Record
 
-If you want an app that actually keeps organized documentation, ShortHand is the answer.
+This is the tool I built, so read this section with that in mind. Here is the honest tradeoff: ShortHand does one job, and it gives up the things the apps above are good at to do it.
 
-Every parent contact is timestamped, tied directly to a student, and instantly searchable. ShortHand is not a megaphone. It is a private, secure documentation log built for the reality of classroom teaching.
+There is no announcement feed. You cannot blast a message to sixty families about the late bus. Parents do not log in, and there are no photos, portfolios, or points. If those are what you need, one of the tools above is a better fit than mine.
 
-You log a phone call, summarize the conversation in two sentences, and save it. That entry is now timestamped and attached to that student's record. When a parent says nobody ever told them about a grade, you pull out your phone. You pull up the exact date, the exact time, and your summary in about ten seconds.
+What it does instead is keep the record. Every parent contact is timestamped, tied directly to a student, and searchable. You log a phone call, summarize the conversation in two sentences, and save it. When a parent says nobody ever told them about a grade, you pull up the exact date, the exact time, and your summary in about ten seconds.
 
-That is the only thing that matters in that moment. The receipts speak for themselves.
+That narrowness is the point. The reason the record is fast to search is that there is nothing else in it.
 
 You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and start immediately. It is free for individual teachers.
 

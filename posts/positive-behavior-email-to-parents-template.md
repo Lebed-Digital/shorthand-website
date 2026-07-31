@@ -16,7 +16,7 @@ But if the only time a parent hears from you is when their child did something w
 
 That is why I make it a priority to send positive emails home.
 
-A positive note out of nowhere lands differently than any other email a parent gets from school. It builds a reserve of goodwill that you can draw from later if challenges come up.
+Getting a positive note from a teacher is a great feeling for parents. It is like finding a twenty-dollar bill in a coat pocket. It builds goodwill that can make future difficult conversations a little easier.
 
 Below are five copy-and-paste templates you can use to celebrate your students and build strong partnerships with their families.
 
