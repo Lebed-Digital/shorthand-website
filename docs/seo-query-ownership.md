@@ -60,6 +60,30 @@ Observations worth carrying forward, each with its caveat:
 
 What would actually test it: re-observe these four SERPs plus 3-4 template/artifact queries from other clusters at the Aug 20 and Nov 5 checkpoints; compare CTR on queries with vs without an overview once impression volume is large enough to support the comparison.
 
+### Source panel vs named answer: record these separately
+
+Four more SERPs were checked later the same day (eight total). These showed something the first four did not make obvious: **getshorthandapp.com appears repeatedly in AI Overview source panels while ShortHand is not named in any overview answer text.** On `best behavior tracking apps for teachers in 2026` the source panel showed three getshorthandapp.com cards (special-ed page, parent-communication page, and one more) while the answer named ClassDojo, LiveSchool, PBIS Rewards, Class Charts, BEHCA/AbleSpace.
+
+These are two different things and they can move independently, so **future checks should record both**:
+
+1. Is `getshorthandapp.com` in the **source panel**? (2026-07-30: yes, repeatedly.)
+2. Is **ShortHand named in the answer text**? (2026-07-30: no, on any of 8 queries.)
+
+If source citations rise while name-mentions stay flat, that would point away from trust/authority and toward content shape. If both rise together, authority. If neither moves, something else. None of that is established; it is just what the two-part record would let a future session distinguish.
+
+**One untested idea, recorded so it is not lost and not acted on yet.** The pages being cited are roundups, i.e. editorial *about* apps. An extraction system reading a roundup has products to extract, and they are mostly other people's. A page that is unambiguously about ShortHand may give a summarizer a different thing to work with. This is speculation from 8 screenshots. **Do not rewrite the roundups to promote ShortHand harder** — their neutrality is plausibly what makes them citable, and the deliberate decision to route grading/lesson-planning searchers elsewhere (cluster 9) is worth more than a shot at an overview mention. If anything is ever tried here, it should be an *additional* product-shaped page, not degradation of the editorial ones.
+
+**Queries checked 2026-07-30, reuse this exact list for comparability:** `class dojo alternatives`, `classdojo competitors`, `apps like classdojo`, `sample emails to parents about student behavior`, `best behavior tracking apps for teachers in 2026`, `free teacher apps for behavior tracking`, `best apps for documenting parent communication for teachers`, `teacher apps that track behavior and document parent communication`.
+
+### Head terms vs long tail (observation, ordinary explanation available)
+
+Across those 8 SERPs, the pattern in where we rank organically:
+
+- **Short category head terms** (`behavior tracking app`, `class dojo alternatives`): buried, pos ~7 or worse, below Reddit/aggregators/vendors.
+- **Long multi-feature queries** (`teacher apps that track behavior and document parent communication`): the **homepage ranked first organically**, with a snippet describing ShortHand doing exactly that. On `best apps for documenting parent communication for teachers`, our own snippet surfaced "...the best option is ShortHand. It logs every parent contact with a..."
+
+**This does not need an AI Overview explanation.** Long specific queries have less competition, and a 4-month-old domain competing on long tail before head terms is the ordinary progression. Noted because it is where we currently look competitive, and because those searchers have clearer intent. Not a basis for a content plan on its own; volume on those queries is unknown and probably small.
+
 ## 1. Report card comments (core)
 
 - **Primary:** `/blog/report-card-comments-for-behavior` (2,480 imp, pos 8.2, 50 clicks/90d — biggest earner)
