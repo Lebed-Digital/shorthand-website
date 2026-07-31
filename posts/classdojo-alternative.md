@@ -48,7 +48,9 @@ The problems tend to show up around 3rd grade and above, and they compound the l
 | Feature | ClassDojo | ShortHand |
 |--------|-----------|-----------|
 | Best age range | PreK–2nd grade | 3rd grade and up |
-| Student engagement (gamification) | Yes (avatars and points) | No - built for teachers, not students |
+| Student engagement (gamification) | Yes (avatars and points) | No, built for teachers, not students |
+| Class announcements and family feed | Yes | No |
+| Parent-facing app families already have | Yes | No |
 | Speed of logging | 60–90 seconds | Under 10 seconds |
 | Voice-to-text logging | No | Yes |
 | AI-generated behavior reports | No | Yes |

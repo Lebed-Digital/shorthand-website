@@ -39,7 +39,7 @@ Bloomz is built to replace the class newsletter, the email blast, and the sign-u
 
 It's genuinely broad. If your school wants one platform for announcements, scheduling, behavior, and portfolios, Bloomz can do all of it.
 
-The free tier exists but is limited. Meaningful features require Teacher Premium at $125/year, or a school or district license at an additional cost.
+Pricing has moved to a per-student model, starting at $3 per student per year for the Essentials tier and rising to $9 for the full 360 tier, with annual minimums for smaller schools. The individual teacher plan that used to anchor the product is no longer the way it's sold, so in practice this is now a school-level decision rather than one you make on your own.
 
 ---
 
@@ -79,7 +79,9 @@ Bloomz requires parents to sign up, download the app, and engage with it for the
 
 ShortHand works for you whether or not the parents ever touch it. The log, the notes, the contact record, the drafted email: all of that is yours, on your phone, regardless of what the parents do.
 
-Bloomz also has a steeper setup curve. Teachers consistently mention crashes on photo uploads, slow load times, account lockouts after updates, and week-long waits for customer support. It's a bigger tool with bigger maintenance overhead.
+Bloomz also has a steeper setup curve, and app-store reviews regularly mention stability complaints: slow loads, trouble with photo uploads, and slow support responses. It's a bigger tool with bigger maintenance overhead.
+
+The flip side, and I should say this plainly since I built the other one: ShortHand gives up almost everything Bloomz does to stay that small. No announcements, no conference scheduling, no portfolios, no parent-facing feed, no translation. If you want one platform that covers all of that, Bloomz is the more complete product and this is not a close call. ShortHand is the better choice only if your actual problem is the per-student record, not the broadcasting.
 
 ---
 
