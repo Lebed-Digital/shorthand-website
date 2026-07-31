@@ -39,11 +39,11 @@ Do not rely on vague observations. Saying "Mia seems lost during math" or "Mia i
 
 Instead, bring the data. Mention specific assessments, work samples, and classroom benchmarks. For example, write, "On our weekly multiplication check, Mia scored 2 out of 10. The grade-level goal is 8 out of 10." State the facts of what you have observed in class, such as, "During independent writing, Mia is able to write one sentence in ten minutes, whereas the expectation is a short paragraph."
 
-This objective description makes the problem concrete and undeniable. When academics and classroom behavior intersect, the same data-first approach applies to [how to write behavior emails to parents](https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents). When you share data, you show parents that your concern is based on evidence, not a subjective opinion.
+This objective description makes the problem concrete and much harder to wave away. When academics and classroom behavior intersect, the same data-first approach applies to [how to write behavior emails to parents](https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents). When you share data, you show parents that your concern is based on evidence, not a subjective opinion.
 
 ### Invite Parents in with Actionable Steps
 
-When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. Most parents are exhausted after work and are not trained educators.
+When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. A lot of parents are exhausted by the time homework happens, and most are not trained educators.
 
 Instead, give them micro-tasks that are easy to integrate into their existing routines. Ask them to do five minutes of flashcards in the car, or have their child read aloud while they make dinner. Make the request specific, simple, and manageable. When parents see a clear, simple task, they are much more likely to actually do it. If missing homework is part of the academic picture, you may also want to send a separate [email about missing assignments](https://getshorthandapp.com/blog/sample-emails-to-parents-about-missing-homework) that covers the work gap specifically, so the academic concern email stays focused on skills rather than habits.
 
