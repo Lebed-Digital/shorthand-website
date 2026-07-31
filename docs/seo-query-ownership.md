@@ -1,7 +1,9 @@
 # SEO Query Ownership Map
 
 **Created:** 2026-07-17 (flagship session). **Data basis:** GSC 90-day window 2026-06-19 to 2026-07-17, GA4 28-day window, live SERP checks.
-**Updated 2026-07-30:** country-segmented GSC + GA4 pass. Added the geography/site-age preamble below and revised cluster 1. Blended figures elsewhere in this doc predate that pass and have not been re-segmented.
+**Updated 2026-07-30:** country-segmented GSC + GA4 pass. Added the geography/site-age preamble, the SERP-composition observations, revised cluster 1, and a US-only read of the four "better US targets". Blended figures elsewhere in this doc predate that pass and have not been re-segmented.
+
+**Standing caution for whoever edits this doc.** This file has twice recorded a conclusion more confidently than its evidence supported: the preschool "CONFIRMED cannibalization" label (single-day snapshot, disproven 2026-07-30) and, in the same session that caught it, two further overreaches — reading 4-day-old content as if it had 28 days of data, and treating 2 clicks as a measured CTR. The recurring error is stating a mechanism when only a correlation was observed. **Prefer "observed X on date Y, cause not established" over any label like CONFIRMED, PROVEN, or RESOLVED.** If a claim would change what someone does, write down what would falsify it.
 **Purpose:** one primary URL per query cluster. Before creating, merging, redirecting, or retitling any page, check this map first. Update it when decisions change.
 
 Rule of thumb proven by this site's data: pages win when they ARE the artifact (copy-paste comments, emails, templates, tools) and carry a specificity modifier (ADHD, preschool, Tier 2). Pages lose when two of our URLs are eligible for the same query.
@@ -33,7 +35,30 @@ The site launched ~2026-04-08. Through 2026-07-28 the dominant signal in all tra
 
 Consequence: **do not attribute the expected September/October rise in US traffic to school being back in session.** Most of it will be the same indexing curve continuing. Attributing it to seasonality will make a maturing domain look like a working content strategy. A clean seasonality read is not available until roughly April 2027 (one full year of data); the first usable partial read is a September/October comparison against the July baseline recorded here.
 
----
+## SERP composition: what position 7 currently buys (observed 2026-07-30)
+
+**Status: four manual SERP observations, one per query, single point in time, one location. Suggestive, not established.** Recorded here so future checks have a baseline to compare against, not as a settled finding. SERPs vary by user, device, location, and day, and Google's AI Overview rollout is actively changing. Re-observe before relying on any of this.
+
+Four US desktop SERPs were checked by hand because click data could not answer the question (sample too small) and the WebSearch tool is unreliable for live SERP checks on this domain. **All four showed an AI Overview above the organic results.** These spanned three different clusters, so whatever is happening does not appear to be specific to one query family.
+
+| Query | Our pos | What sat above us |
+|---|---|---|
+| `class dojo alternatives` | ~7 | AI Overview, Reddit, Leaderboarded, Facebook, LiveSchool, PAA (4 questions), Capterra |
+| `classdojo competitors` | ~2 organic | AI Overview, Bloomz (competitor blog, near-identical article) |
+| `apps like classdojo` | ~3 organic | AI Overview, Reddit, PAA |
+| `sample emails to parents about student behavior` | ~3 organic | AI Overview (reproduced a full email template, subject + body), Reddit, Tarver Academy |
+
+Observations worth carrying forward, each with its caveat:
+
+- **The overviews cited competitors, not us,** on all three app queries (LiveSchool, Bloomz, Remind, TalkingPoints, Seesaw, Classcraft). Sources skewed toward aggregators (Capterra, Leaderboarded) and vendor pages. Whether being cited is achievable, or worth pursuing, is unknown and untested.
+- **Reddit ranked #1 or #3 on all four** and was cited in most overviews. Consistent with Google favouring peer discussion on these queries. What to do about that, if anything, is an open question and not answered here.
+- **The parent-email overview reproduced the artifact itself,** not a summary. A prior expectation that template-intent queries would be *less* absorbed than comparison queries was wrong on this one observation. Worth re-testing on other template queries before generalising.
+- **`behavior tracking app` resolved to the wrong intent entirely:** the overview and most results covered consumer habit-tracking apps (Habitica, App Store listings, an NIH paper), not classroom software. If that holds on re-check, the query is probably not worth pursuing regardless of position.
+- **`apps like classdojo` had the shortest stack above us** and is also the only ClassDojo query that earned clicks (2 clicks / 22 imp, 28d). Two clicks is far too few to conclude anything; noting the coincidence only so a future check can look for the same pattern with more data.
+
+**Possible implication, explicitly not established:** if this pattern holds, the click value of a position-7 ranking on these queries may be materially lower than standard CTR curves assume, which would make ranking-improvement work worth less than it looks. The site's US CTR of 1.8% at average position 12 is at least *consistent* with that, but it is equally consistent with other explanations (young domain, title/description quality, query mix). **Do not restructure content strategy on this.** Treat it as a hypothesis to test deliberately, with a stated method, before acting.
+
+What would actually test it: re-observe these four SERPs plus 3-4 template/artifact queries from other clusters at the Aug 20 and Nov 5 checkpoints; compare CTR on queries with vs without an overview once impression volume is large enough to support the comparison.
 
 ## 1. Report card comments (core)
 
@@ -128,6 +153,8 @@ Consequence: **do not attribute the expected September/October rise in US traffi
 - **Done 2026-07-26:** added "Best ClassDojo Alternatives by Need" (documentation, parent comms, points, grading, lesson planning) + a "ClassDojo vs HiTeach" section to the roundup. Closes the zero-click gap on `classdojo alternatives for grading` (40 imp, pos 5.9), `...for lesson planning` (17 imp, pos 9.1), `...for points` (19 imp, pos 5.9) and pulls `which is better: classdojo vs. hiteach` (27 imp, pos 4.6) off the Seesaw post, which never mentioned HiTeach. Grading/lesson-planning entries deliberately route searchers to SIS/planning tools and state ShortHand does not serve those needs.
 - **Owns (added):** classdojo alternatives for grading / for lesson planning / for points, classdojo vs hiteach.
 - **Watch (~2026-08-20):** whether the grading/lesson-planning queries convert now or stay at 0 CTR. If impressions hold at pos ~6 with still-zero clicks, the cause is AI Overview absorption, not the page, and no further content work is warranted.
+- **Do not read those sections before ~2026-08-20 (noted 2026-07-30).** A 28d US pull on 07-30 showed grading 37 imp @5.8 / points 17 @5.7 / lesson-planning 15 @8.9, all zero clicks, and this was briefly taken as the Aug 20 rule firing early. It was not: the sections went live 2026-07-26, so they existed for **4 of those 28 days** while the impressions accumulated mostly before they existed. Google also typically takes 2-8 weeks to re-evaluate after a content change. The Aug 20 date was chosen for this reason and should not be pulled forward.
+- **US-only 28d snapshot for the primary, 2026-07-02 to 07-30 (context for Aug 20, not a verdict):** 323 imp / 2 clicks / 0.62% / pos 7.7 across 39 queries. Sister page `classdojo-vs-seesaw-2026`: 61 imp / 0 clicks / pos 7.7. Low CTR at a good position is real at the page level here, but the cause is not established: SERP composition (see preamble), young domain, and snippet quality are all live candidates. Two clicks on the one converting query is not enough to distinguish them.
 - **Pending adds:** "ClassDojo vs Remind" post (Dec 2026 — head-to-head = distinct intent per the mergeNotes).
 
 ## 10. MTSS / interventions
@@ -168,6 +195,19 @@ Wait until ~2026-08-15 (after redirect consolidation is checked in GSC):
 5. Freshness pass on both roundups before back-to-school app-decision peak (mid-August).
 
 Evidence bar for anything bigger (merging the two roundups, new observation post): fresh `gsc_query_for_page` pulls showing the same query splitting between them with material impressions. As of 2026-07-17 that bar is NOT met for a merge — the two roundups serve distinct query families.
+
+## US-only pull on the four "better US targets" (2026-07-02 to 07-30)
+
+A prior session listed four pages as better US targets on blended data. Segmented to `country = usa`, two of the four look different than expected. Single 28d window on a young site, so treat as a first read rather than a ranking.
+
+| Page | US imp | US clicks | US pos | Note |
+|---|---|---|---|---|
+| `special-education-behavior-tracking-software` | 350 | 0 | 17.6 | **253 imp (72%) come from one AI-phrased query**, `compare special education software for integrating behavioral tracking.` @9.9, 0 clicks. Excluding it, ~97 real imp. Genuine queries underneath: `behavior tracking software` 22 @16.1, `best iep service tracking software for reporting` 12 @9.7, `best behavior plan software for special education` 4 @7. **Still parked to 2026-08-13; leave parked.** |
+| `classroom-behavior-tracking-apps` | 150 | 0 | 19.7 | Best query set of the four: `behavior tracking app` 23 @11.6, `free behavior tracking apps for teachers` 15 @4.8, `behavior tracking apps` 8 @9.4, `student behavior tracking app` 3 @8.3. But this URL is **supposed to be 301'd** into the 2026 roundup (272 US imp @11.1) and is still holding impressions. Looks like a consolidation issue rather than a content opportunity. Handle via the 2026-08-15 redirect check above, not as a writing task. |
+| `best-parent-communication-apps-for-documentation-2026` | 258 | 0 | **41.6** | 64 distinct queries, almost none above pos 20 (`teacher parent communication app` 36 @37.3, `teacher and parent communication apps` 22 @35.3, `school parent communication apps` 16 @27.4). Not a page that is close; competing against institutional incumbents. The "reposition toward documentation phrasing" note above has either not been executed or has not taken. **Suggest dropping from the target list** until there is a reason to think a rewrite would rank. |
+| `how-to-track-student-behavior-in-the-classroom` | 95 | 0 | 48.9 | Weakest. `behavioral pattern tracking` is 54 imp (57%) @49.2 and may not be teacher intent. Informational query set. Deprioritise. |
+
+Sitewide US context for the same window: **10 clicks across 47 pages.** Most pages with real impressions sit at pos 15-50. Any conclusion drawn from a single page's US clicks in this window is drawing on near-zero events.
 
 ---
 
