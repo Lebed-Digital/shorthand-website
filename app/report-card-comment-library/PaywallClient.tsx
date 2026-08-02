@@ -73,7 +73,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
             <span style={introPriceBadgeStyle}>Introductory price</span>
           </div>
           <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 16px' }}>
-            One-time payment, no additional cost later. Restore access on any device by email.
+            One-time payment. No subscription. Restore access on any device by email.
           </p>
           <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
@@ -96,7 +96,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
         </p>
 
         <div style={filterPreviewStyle} aria-hidden="true">
-          <span style={filterPreviewLabelStyle}>Example filters available in the full library</span>
+          <span style={filterPreviewLabelStyle}>Find comments by grade, tone, or keyword</span>
           <div style={filterPreviewRowStyle}>
             <span style={filterChipStyle}>Grade band: Elementary</span>
             <span style={filterChipStyle}>Tone: Growth</span>
