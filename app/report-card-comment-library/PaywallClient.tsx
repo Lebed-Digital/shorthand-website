@@ -61,7 +61,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
             <span style={introPriceBadgeStyle}>Introductory price</span>
           </div>
           <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 16px' }}>
-            One-time payment, no additional cost later. Lifetime access on this device, restorable by email.
+            One-time payment, no additional cost later. Restore access on any device by email.
           </p>
           <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
@@ -80,7 +80,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
         </div>
 
         <p style={personalizeCalloutStyle}>
-          Type a student&apos;s name once. It automatically appears in every comment you copy for that student, across every section and tone.
+          Type a student&apos;s name once. It automatically appears in every comment across the entire library.
         </p>
 
         <h2 style={sectionHeadingStyle}>What is inside</h2>
@@ -111,7 +111,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
                   </div>
 
                   <p style={sampleLabelStyle}>Sample comments</p>
-                  {section.samples.map((s) => (
+                  {section.samples.map((s, sampleIndex) => (
                     <div key={s.id} style={sampleCardStyle}>
                       <span style={toneBadgeStyle(s.tone === 'positive' ? '#0d9488' : '#d97706')}>
                         {s.tone === 'positive' ? 'Positive' : 'Growth'}
@@ -124,7 +124,9 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
                           </React.Fragment>
                         ))}
                       </p>
-                      <p style={nameCaptionStyle}>&uarr; Student name automatically filled from the name field</p>
+                      {sampleIndex === 0 && (
+                        <p style={nameCaptionStyle}>Student name automatically filled from the name field</p>
+                      )}
                     </div>
                   ))}
 
