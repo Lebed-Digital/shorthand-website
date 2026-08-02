@@ -13,6 +13,15 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [openSection, setOpenSection] = useState<string>(teaser.sections[0]?.id ?? '');
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  function copySample(id: string, text: string) {
+    const jordanText = text.split('[Student]').join('Jordan');
+    navigator.clipboard.writeText(jordanText).then(() => {
+      setCopiedId(id);
+      setTimeout(() => setCopiedId((current) => (current === id ? null : current)), 2000);
+    });
+  }
 
   async function startCheckout() {
     setStarting(true);
@@ -45,7 +54,10 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
             Report Card Comment Library
           </h1>
-          <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.8)', margin: '0 0 4px' }}>
+          <p style={{ fontSize: 16, color: '#fff', fontWeight: 600, margin: '0 0 6px' }}>
+            Finish report card comments faster, without starting from a blank page.
+          </p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: '0 0 4px' }}>
             {teaser.totalCount} ready-to-use comments across {teaser.sections.length} sections.
           </p>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
@@ -56,9 +68,12 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px 48px' }}>
         <div style={buyCardStyle}>
-          <div style={{ fontSize: 32, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>$4.99</div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+            <div style={{ fontSize: 32, fontWeight: 700, color: '#0f172a' }}>$4.99</div>
+            <span style={introPriceBadgeStyle}>Introductory price</span>
+          </div>
           <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 16px' }}>
-            One-time payment. Lifetime access on this device, restorable by email.
+            One-time payment. No subscription. Restore access on any device by email.
           </p>
           <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
@@ -74,6 +89,19 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
               Restore your access
             </Link>
           </p>
+        </div>
+
+        <p style={personalizeCalloutStyle}>
+          Type a student&apos;s name once. It automatically appears in every comment across the entire library.
+        </p>
+
+        <div style={filterPreviewStyle} aria-hidden="true">
+          <span style={filterPreviewLabelStyle}>Find comments by grade, tone, or keyword</span>
+          <div style={filterPreviewRowStyle}>
+            <span style={filterChipStyle}>Grade band: Elementary</span>
+            <span style={filterChipStyle}>Tone: Growth</span>
+            <span style={filterChipStyle}>Search: &quot;focus&quot;</span>
+          </div>
         </div>
 
         <h2 style={sectionHeadingStyle}>What is inside</h2>
@@ -104,14 +132,30 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
                   </div>
 
                   <p style={sampleLabelStyle}>Sample comments</p>
-                  {section.samples.map((s) => (
+                  {section.samples.map((s, sampleIndex) => (
                     <div key={s.id} style={sampleCardStyle}>
-                      <span style={toneBadgeStyle(s.tone === 'positive' ? '#0d9488' : '#d97706')}>
-                        {s.tone === 'positive' ? 'Positive' : 'Growth'}
-                      </span>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+                        <span style={toneBadgeStyle(s.tone === 'positive' ? '#0d9488' : '#d97706')}>
+                          {s.tone === 'positive' ? 'Positive' : 'Growth'}
+                        </span>
+                        <button
+                          onClick={() => copySample(s.id, s.text)}
+                          style={copyButtonStyle(copiedId === s.id)}
+                        >
+                          {copiedId === s.id ? 'Copied' : 'Copy comment'}
+                        </button>
+                      </div>
                       <p style={{ fontSize: 14, lineHeight: 1.6, color: '#1e293b', margin: '8px 0 0' }}>
-                        {s.text.split('[Student]').join('Jordan')}
+                        {s.text.split('[Student]').map((part, i, arr) => (
+                          <React.Fragment key={i}>
+                            {part}
+                            {i < arr.length - 1 && <span style={nameHighlightStyle}>Jordan</span>}
+                          </React.Fragment>
+                        ))}
                       </p>
+                      {sampleIndex === 0 && (
+                        <p style={nameCaptionStyle}>Student name automatically filled from the name field</p>
+                      )}
                     </div>
                   ))}
 
@@ -180,6 +224,94 @@ function buyButtonStyle(disabled: boolean): React.CSSProperties {
     border: 'none',
     cursor: disabled ? 'default' : 'pointer',
     fontFamily: 'inherit',
+  };
+}
+
+const introPriceBadgeStyle: React.CSSProperties = {
+  fontSize: 11,
+  fontWeight: 700,
+  color: '#0d9488',
+  background: '#ccfbf1',
+  borderRadius: 999,
+  padding: '3px 10px',
+  textTransform: 'uppercase',
+  letterSpacing: '0.04em',
+};
+
+const personalizeCalloutStyle: React.CSSProperties = {
+  fontSize: 13,
+  color: 'rgba(255,255,255,0.85)',
+  background: 'rgba(255,255,255,0.08)',
+  border: '1px solid rgba(255,255,255,0.15)',
+  borderRadius: 10,
+  padding: '10px 14px',
+  margin: '12px 0 0',
+  lineHeight: 1.5,
+  textAlign: 'center',
+};
+
+const nameHighlightStyle: React.CSSProperties = {
+  background: '#ccfbf1',
+  color: '#0d9488',
+  fontWeight: 700,
+  borderRadius: 4,
+  padding: '0 3px',
+};
+
+const nameCaptionStyle: React.CSSProperties = {
+  fontSize: 11,
+  color: '#0d9488',
+  fontWeight: 600,
+  margin: '6px 0 0',
+};
+
+const filterPreviewStyle: React.CSSProperties = {
+  background: 'rgba(255,255,255,0.04)',
+  border: '1px solid rgba(255,255,255,0.1)',
+  borderRadius: 12,
+  padding: '12px 14px',
+  margin: '10px 0 0',
+};
+
+const filterPreviewLabelStyle: React.CSSProperties = {
+  display: 'block',
+  fontSize: 11,
+  fontWeight: 700,
+  color: 'rgba(255,255,255,0.5)',
+  textTransform: 'uppercase',
+  letterSpacing: '0.06em',
+  margin: '0 0 8px',
+};
+
+const filterPreviewRowStyle: React.CSSProperties = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: 8,
+};
+
+const filterChipStyle: React.CSSProperties = {
+  fontSize: 12,
+  fontWeight: 600,
+  color: 'rgba(255,255,255,0.85)',
+  background: 'rgba(255,255,255,0.08)',
+  border: '1px solid rgba(255,255,255,0.15)',
+  borderRadius: 8,
+  padding: '5px 10px',
+};
+
+function copyButtonStyle(copied: boolean): React.CSSProperties {
+  return {
+    flexShrink: 0,
+    fontSize: 11,
+    fontWeight: 600,
+    color: copied ? '#0d9488' : '#334155',
+    background: copied ? '#ccfbf1' : '#fff',
+    border: `1px solid ${copied ? '#0d9488' : '#cbd5e1'}`,
+    borderRadius: 8,
+    padding: '4px 9px',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    whiteSpace: 'nowrap',
   };
 }
 
