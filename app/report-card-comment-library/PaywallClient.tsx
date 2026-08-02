@@ -13,6 +13,15 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
   const [starting, setStarting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [openSection, setOpenSection] = useState<string>(teaser.sections[0]?.id ?? '');
+  const [copiedId, setCopiedId] = useState<string | null>(null);
+
+  function copySample(id: string, text: string) {
+    const jordanText = text.split('[Student]').join('Jordan');
+    navigator.clipboard.writeText(jordanText).then(() => {
+      setCopiedId(id);
+      setTimeout(() => setCopiedId((current) => (current === id ? null : current)), 2000);
+    });
+  }
 
   async function startCheckout() {
     setStarting(true);
@@ -48,8 +57,11 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.8)', margin: '0 0 4px' }}>
             {teaser.totalCount} ready-to-use comments across {teaser.sections.length} sections.
           </p>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 10px' }}>
             Search, filter by grade band and tone, personalize with a student name, copy in one click.
+          </p>
+          <p style={{ fontSize: 15, color: '#fff', fontWeight: 600, margin: 0 }}>
+            Finish report card comments faster, without starting from a blank page.
           </p>
         </div>
       </div>
@@ -83,6 +95,15 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           Type a student&apos;s name once. It automatically appears in every comment across the entire library.
         </p>
 
+        <div style={filterPreviewStyle} aria-hidden="true">
+          <span style={filterPreviewLabelStyle}>What you&apos;ll see inside</span>
+          <div style={filterPreviewRowStyle}>
+            <span style={filterChipStyle}>Grade band: Elementary</span>
+            <span style={filterChipStyle}>Tone: Growth</span>
+            <span style={filterChipStyle}>Search: focus</span>
+          </div>
+        </div>
+
         <h2 style={sectionHeadingStyle}>What is inside</h2>
 
         {teaser.sections.map((section) => {
@@ -113,9 +134,17 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
                   <p style={sampleLabelStyle}>Sample comments</p>
                   {section.samples.map((s, sampleIndex) => (
                     <div key={s.id} style={sampleCardStyle}>
-                      <span style={toneBadgeStyle(s.tone === 'positive' ? '#0d9488' : '#d97706')}>
-                        {s.tone === 'positive' ? 'Positive' : 'Growth'}
-                      </span>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 }}>
+                        <span style={toneBadgeStyle(s.tone === 'positive' ? '#0d9488' : '#d97706')}>
+                          {s.tone === 'positive' ? 'Positive' : 'Growth'}
+                        </span>
+                        <button
+                          onClick={() => copySample(s.id, s.text)}
+                          style={copyButtonStyle(copiedId === s.id)}
+                        >
+                          {copiedId === s.id ? 'Copied' : 'Copy comment'}
+                        </button>
+                      </div>
                       <p style={{ fontSize: 14, lineHeight: 1.6, color: '#1e293b', margin: '8px 0 0' }}>
                         {s.text.split('[Student]').map((part, i, arr) => (
                           <React.Fragment key={i}>
@@ -235,6 +264,56 @@ const nameCaptionStyle: React.CSSProperties = {
   fontWeight: 600,
   margin: '6px 0 0',
 };
+
+const filterPreviewStyle: React.CSSProperties = {
+  background: 'rgba(255,255,255,0.04)',
+  border: '1px solid rgba(255,255,255,0.1)',
+  borderRadius: 12,
+  padding: '12px 14px',
+  margin: '10px 0 0',
+};
+
+const filterPreviewLabelStyle: React.CSSProperties = {
+  display: 'block',
+  fontSize: 11,
+  fontWeight: 700,
+  color: 'rgba(255,255,255,0.5)',
+  textTransform: 'uppercase',
+  letterSpacing: '0.06em',
+  margin: '0 0 8px',
+};
+
+const filterPreviewRowStyle: React.CSSProperties = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  gap: 8,
+};
+
+const filterChipStyle: React.CSSProperties = {
+  fontSize: 12,
+  fontWeight: 600,
+  color: 'rgba(255,255,255,0.85)',
+  background: 'rgba(255,255,255,0.08)',
+  border: '1px solid rgba(255,255,255,0.15)',
+  borderRadius: 8,
+  padding: '5px 10px',
+};
+
+function copyButtonStyle(copied: boolean): React.CSSProperties {
+  return {
+    flexShrink: 0,
+    fontSize: 11,
+    fontWeight: 600,
+    color: copied ? '#0d9488' : '#334155',
+    background: copied ? '#ccfbf1' : '#fff',
+    border: `1px solid ${copied ? '#0d9488' : '#cbd5e1'}`,
+    borderRadius: 8,
+    padding: '4px 9px',
+    cursor: 'pointer',
+    fontFamily: 'inherit',
+    whiteSpace: 'nowrap',
+  };
+}
 
 const sectionHeadingStyle: React.CSSProperties = {
   fontSize: 13,
