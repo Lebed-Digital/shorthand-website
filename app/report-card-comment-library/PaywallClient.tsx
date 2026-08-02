@@ -54,14 +54,14 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
             Report Card Comment Library
           </h1>
-          <p style={{ fontSize: 15, color: 'rgba(255,255,255,0.8)', margin: '0 0 4px' }}>
+          <p style={{ fontSize: 16, color: '#fff', fontWeight: 600, margin: '0 0 6px' }}>
+            Finish report card comments faster, without starting from a blank page.
+          </p>
+          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: '0 0 4px' }}>
             {teaser.totalCount} ready-to-use comments across {teaser.sections.length} sections.
           </p>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 10px' }}>
+          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: 0 }}>
             Search, filter by grade band and tone, personalize with a student name, copy in one click.
-          </p>
-          <p style={{ fontSize: 15, color: '#fff', fontWeight: 600, margin: 0 }}>
-            Finish report card comments faster, without starting from a blank page.
           </p>
         </div>
       </div>
@@ -96,11 +96,11 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
         </p>
 
         <div style={filterPreviewStyle} aria-hidden="true">
-          <span style={filterPreviewLabelStyle}>What you&apos;ll see inside</span>
+          <span style={filterPreviewLabelStyle}>Example filters available in the full library</span>
           <div style={filterPreviewRowStyle}>
             <span style={filterChipStyle}>Grade band: Elementary</span>
             <span style={filterChipStyle}>Tone: Growth</span>
-            <span style={filterChipStyle}>Search: focus</span>
+            <span style={filterChipStyle}>Search: &quot;focus&quot;</span>
           </div>
         </div>
 
