@@ -56,6 +56,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/features/remember-what-happened',
+        destination: '/features/quick-note',
+        permanent: true,
+      },
+      {
         source: '/ig',
         destination: 'https://app.getshorthandapp.com?demo=true&utm_source=instagram&utm_medium=organic_social&utm_campaign=guided_demo',
         permanent: false,

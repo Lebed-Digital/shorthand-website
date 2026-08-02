@@ -62,7 +62,10 @@ export default function QuickNotePage() {
           and Growth, so you can spot patterns without any extra work.
         </p>
         <p className="detail-desc">
-          The faster it is to log, the more you&apos;ll actually do it.
+          The faster it is to log, the more you&apos;ll actually do it. And because every note is
+          saved and searchable, you walk into parent conferences, IEP meetings, and conversations
+          with admin already knowing what happened, and you can turn any note into a clear parent
+          message in one click.
         </p>
 
         <FeatureVideo videoId="lZkyGdULBtM" title="Quick Note walkthrough" hideControls />
