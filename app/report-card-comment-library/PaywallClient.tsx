@@ -56,9 +56,12 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px 48px' }}>
         <div style={buyCardStyle}>
-          <div style={{ fontSize: 32, fontWeight: 700, color: '#0f172a', marginBottom: 4 }}>$4.99</div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, flexWrap: 'wrap', marginBottom: 4 }}>
+            <div style={{ fontSize: 32, fontWeight: 700, color: '#0f172a' }}>$4.99</div>
+            <span style={introPriceBadgeStyle}>Introductory price</span>
+          </div>
           <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 16px' }}>
-            One-time payment. Lifetime access on this device, restorable by email.
+            One-time payment, no additional cost later. Lifetime access on this device, restorable by email.
           </p>
           <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
@@ -192,6 +195,17 @@ function buyButtonStyle(disabled: boolean): React.CSSProperties {
     fontFamily: 'inherit',
   };
 }
+
+const introPriceBadgeStyle: React.CSSProperties = {
+  fontSize: 11,
+  fontWeight: 700,
+  color: '#0d9488',
+  background: '#ccfbf1',
+  borderRadius: 999,
+  padding: '3px 10px',
+  textTransform: 'uppercase',
+  letterSpacing: '0.04em',
+};
 
 const personalizeCalloutStyle: React.CSSProperties = {
   fontSize: 13,
