@@ -76,6 +76,10 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           </p>
         </div>
 
+        <p style={personalizeCalloutStyle}>
+          Type a student&apos;s name once. It automatically appears in every comment you copy for that student, across every section and tone.
+        </p>
+
         <h2 style={sectionHeadingStyle}>What is inside</h2>
 
         {teaser.sections.map((section) => {
@@ -110,8 +114,14 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
                         {s.tone === 'positive' ? 'Positive' : 'Growth'}
                       </span>
                       <p style={{ fontSize: 14, lineHeight: 1.6, color: '#1e293b', margin: '8px 0 0' }}>
-                        {s.text.split('[Student]').join('Jordan')}
+                        {s.text.split('[Student]').map((part, i, arr) => (
+                          <React.Fragment key={i}>
+                            {part}
+                            {i < arr.length - 1 && <span style={nameHighlightStyle}>Jordan</span>}
+                          </React.Fragment>
+                        ))}
                       </p>
+                      <p style={nameCaptionStyle}>&uarr; Student name automatically filled from the name field</p>
                     </div>
                   ))}
 
@@ -182,6 +192,33 @@ function buyButtonStyle(disabled: boolean): React.CSSProperties {
     fontFamily: 'inherit',
   };
 }
+
+const personalizeCalloutStyle: React.CSSProperties = {
+  fontSize: 13,
+  color: 'rgba(255,255,255,0.85)',
+  background: 'rgba(255,255,255,0.08)',
+  border: '1px solid rgba(255,255,255,0.15)',
+  borderRadius: 10,
+  padding: '10px 14px',
+  margin: '12px 0 0',
+  lineHeight: 1.5,
+  textAlign: 'center',
+};
+
+const nameHighlightStyle: React.CSSProperties = {
+  background: '#ccfbf1',
+  color: '#0d9488',
+  fontWeight: 700,
+  borderRadius: 4,
+  padding: '0 3px',
+};
+
+const nameCaptionStyle: React.CSSProperties = {
+  fontSize: 11,
+  color: '#0d9488',
+  fontWeight: 600,
+  margin: '6px 0 0',
+};
 
 const sectionHeadingStyle: React.CSSProperties = {
   fontSize: 13,
