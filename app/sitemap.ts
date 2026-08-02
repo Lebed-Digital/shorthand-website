@@ -32,6 +32,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/back-to-school-toolkit`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/tools/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/press`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${base}/tools`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPosts,
     { url: `${base}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
