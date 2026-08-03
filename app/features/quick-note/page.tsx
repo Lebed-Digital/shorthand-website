@@ -59,7 +59,7 @@ export default function QuickNotePage() {
           Smart Shorthand lets you set custom abbreviations that expand instantly.
           So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
           Your notes are automatically organized into categories like Kindness, Participation,
-          and Growth, so you can spot patterns without any extra work.
+          and Growth, either from the tags you choose or, when it&apos;s clear, with help from AI.
         </p>
         <p className="detail-desc">
           The faster it is to log, the more you&apos;ll actually do it. And because every note is
