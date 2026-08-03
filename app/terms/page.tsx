@@ -42,7 +42,7 @@ export default function TermsPage() {
         <h2>2. Description of Service</h2>
         <p>ShortHand is an education technology tool built for K–12 teachers. It provides tools for:</p>
         <ul>
-          <li>Behavior documentation and student observation logging</li>
+          <li>Student observation and incident logging</li>
           <li>Student progress tracking and behavior documentation</li>
           <li>Parent and guardian communication logs</li>
           <li>AI-assisted report generation based on teacher notes</li>
