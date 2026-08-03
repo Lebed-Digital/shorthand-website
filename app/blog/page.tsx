@@ -5,10 +5,10 @@ import { getAllPosts } from '../../lib/posts';
 
 export const metadata: Metadata = {
   title: 'Blog | ShortHand',
-  description: 'Teaching tips, classroom management strategies, and honest stories from a K-12 teacher who built his own productivity app.',
+  description: 'Practical guides on documenting student behavior, spotting patterns, and communicating with parents, from a K-12 teacher who built ShortHand to solve his own paperwork problem.',
   openGraph: {
     title: 'Blog | ShortHand',
-    description: 'Teaching tips, classroom management strategies, and honest stories from a K-12 teacher who built his own productivity app.',
+    description: 'Practical guides on documenting student behavior, spotting patterns, and communicating with parents, from a K-12 teacher who built ShortHand to solve his own paperwork problem.',
     url: 'https://getshorthandapp.com/blog',
     type: 'website',
   },
