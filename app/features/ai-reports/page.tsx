@@ -47,6 +47,10 @@ export default function AIReportsPage() {
           the tone, shorten it, or shift the focus. It rewrites on the spot until it sounds right.
         </p>
         <p className="detail-desc">
+          Need a clean incident summary for your SIS? Use the Documentation option to strip away
+          conversational wording and copy a concise, objective record into your school system.
+        </p>
+        <p className="detail-desc">
           Once the report looks right, you can log it directly to the parent communication
           record with one tap. So you have proof it was shared with the family, right
           alongside your notes and call history.
