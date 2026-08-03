@@ -41,8 +41,8 @@ export default function NeverMissPage() {
           ShortHand makes that invisible problem visible.
         </p>
         <p className="detail-desc">
-          Every student card on your roster glows <strong>Green</strong> if you&apos;ve logged in the last 8 days,
-          {' '}<strong>Amber</strong> if it&apos;s been 9–15 days, and <strong>Red</strong> if it&apos;s been
+          Every student card on your roster glows <strong>Green</strong> if you&apos;ve logged in the last 8 days,{' '}
+          <strong>Amber</strong> if it&apos;s been 9–15 days, and <strong>Red</strong> if it&apos;s been
           16 or more. The dashboard flags anyone who needs attention automatically, every time you open the app.
         </p>
         <p className="detail-desc">
