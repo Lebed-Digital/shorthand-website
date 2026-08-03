@@ -51,7 +51,7 @@ export default function QuickNotePage() {
           under 5 seconds. No menus to navigate, no forms to fill out.
           You can even skip the text entirely: select a student, tap a behavior tag like
           Disruption or Kindness, and hit save. That&apos;s it.
-          Every note is timestamped and stored automatically, building a picture of
+          Every note is automatically dated and saved, building a picture of
           each student over time.
         </p>
         <p className="detail-desc">
@@ -59,7 +59,7 @@ export default function QuickNotePage() {
           Smart Shorthand lets you set custom abbreviations that expand instantly.
           So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
           Your notes are automatically organized into categories like Kindness, Participation,
-          and Growth, so you can spot patterns without any extra work.
+          and Growth, either from the tags you choose or, when it&apos;s clear, with help from AI.
         </p>
         <p className="detail-desc">
           The faster it is to log, the more you&apos;ll actually do it. And because every note is
