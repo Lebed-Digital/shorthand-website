@@ -51,7 +51,7 @@ export default function QuickNotePage() {
           under 5 seconds. No menus to navigate, no forms to fill out.
           You can even skip the text entirely: select a student, tap a behavior tag like
           Disruption or Kindness, and hit save. That&apos;s it.
-          Every note is timestamped and stored automatically, building a picture of
+          Every note is automatically dated and saved, building a picture of
           each student over time.
         </p>
         <p className="detail-desc">
