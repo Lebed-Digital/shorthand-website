@@ -59,7 +59,7 @@ export default function PrivacyPage() {
             <div className="privacy-icon">👤</div>
             <div className="privacy-title">Who This Applies To</div>
             <div className="privacy-desc">
-              ShortHand is a classroom management tool for teachers. When you create an account,
+              ShortHand is a documentation tool for teachers. When you create an account,
               you are the user. Student data you enter (names, notes, parent communications) is entered
               by you, the teacher, and is stored under your account only.
             </div>

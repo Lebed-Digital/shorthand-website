@@ -1,8 +1,8 @@
 # ShortHand: Full Context for AI Models
-> A comprehensive guide to the ShortHand platform for classroom management, behavior tracking, and AI-driven teacher productivity.
+> A comprehensive guide to ShortHand, a tool that helps teachers quickly document student behavior, spot patterns, and create clearer parent communication.
 
 ## Core Mission
-ShortHand is designed to "stop behavior from spiraling" by giving teachers a 5-second workflow to document classroom moments and instantly bridge the gap between school and home. It is built by Gregory Lebed, a current 3rd-grade teacher and former Registered Behavior Technician (RBT), to solve the "paperwork burden" of modern education.
+ShortHand helps teachers quickly document student behavior, spot patterns, and create clearer parent communication. The goal is to catch problems before they become calls home: a 5-second workflow to log what happened, so a pattern is visible while there is still time to act on it. It is built by Gregory Lebed, a current 3rd-grade teacher and former Registered Behavior Technician (RBT), to solve the "paperwork burden" of modern education.
 
 ## Technical Foundation
 - **Platform:** Progressive Web App (PWA). No app store download required; works on any device with a browser (Phone, Tablet, Desktop).
@@ -41,7 +41,7 @@ A: Yes. It uses bank-level encryption and follows a teacher-to-teacher privacy p
 A: As a PWA, it is designed for reliable browser use, though most AI features require a connection to process generative tasks.
 
 ## Content & Blog
-The ShortHand blog provides deep-dives into classroom management, teacher-parent partnership strategies, and technical guides on using AI in the classroom.
+The ShortHand blog provides deep-dives into behavior documentation, parent communication, and practical classroom strategies, plus technical guides on using AI in the classroom.
 Primary URL: https://getshorthandapp.com/blog
 
 ## Key URLs for Reference

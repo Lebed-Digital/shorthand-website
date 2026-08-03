@@ -234,9 +234,6 @@ export default function Home() {
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; No App Store &nbsp;·&nbsp; Works on Any Device</div>
             <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
-            <p style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
-              ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds. Built by a teacher, for teachers.
-            </p>
             <p className="hero-sub">
               Log a behavior note in 5 seconds. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
             </p>
@@ -801,7 +798,7 @@ export default function Home() {
               <div className="section-label">Get started</div>
               <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
               <p className="cta-sub">
-                ShortHand is completely free. Open it on any device and start using it in minutes. Nothing to install from an app store.
+                Catch problems before they become calls home. ShortHand is completely free. Open it on any device and start using it in minutes. Nothing to install from an app store.
               </p>
               <div className="cta-btns">
                 <motion.a

@@ -88,7 +88,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "applicationCategory": "EducationApplication",
           "operatingSystem": "Web, iOS, Android",
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "ShortHand is a behavior tracking app that helps K-12 teachers generate AI progress reports, manage classroom data, and send parent communication in seconds.",
+          "description": "ShortHand helps K-12 teachers quickly document student behavior, spot patterns over time, and create clearer parent communication.",
           "creator": {
             "@type": "Person",
             "name": "Gregory Lebed",

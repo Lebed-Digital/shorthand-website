@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | ShortHand',
-  description: 'Terms of Service for ShortHand, the teacher productivity app for classroom management, student progress tracking, and parent communication.',
+  description: 'Terms of Service for ShortHand, the app teachers use to document student behavior, track patterns, and communicate with parents.',
   alternates: { canonical: 'https://getshorthandapp.com/terms' },
 };
 
@@ -37,18 +37,18 @@ export default function TermsPage() {
       <div className="detail-body" style={{ maxWidth: '720px', margin: '0 auto', padding: '0 1.5rem 4rem' }}>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using ShortHand ("the App"), you agree to be bound by these Terms of Service. ShortHand is a teacher productivity application designed to support classroom management, student progress tracking, and parent communication. If you do not agree to these terms, please do not use the App.</p>
+        <p>By accessing or using ShortHand ("the App"), you agree to be bound by these Terms of Service. ShortHand is an application for K-12 teachers designed to support behavior documentation, student progress tracking, and parent communication. If you do not agree to these terms, please do not use the App.</p>
 
         <h2>2. Description of Service</h2>
         <p>ShortHand is an education technology tool built for K–12 teachers. It provides tools for:</p>
         <ul>
-          <li>Classroom management and student observation logging</li>
+          <li>Student observation and incident logging</li>
           <li>Student progress tracking and behavior documentation</li>
           <li>Parent and guardian communication logs</li>
           <li>AI-assisted report generation based on teacher notes</li>
           <li>Social-Emotional Learning (SEL) support tools</li>
         </ul>
-        <p>ShortHand is designed to support teacher productivity and pedagogy, not to replace professional educator judgment.</p>
+        <p>ShortHand is designed to support teacher documentation and pedagogy, not to replace professional educator judgment.</p>
 
         <h2>3. Eligibility</h2>
         <p>ShortHand is intended for use by educators, school staff, and authorized educational professionals. Users must be 18 years of age or older. The App is not intended for direct use by students.</p>
