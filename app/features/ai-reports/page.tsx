@@ -43,8 +43,9 @@ export default function AIReportsPage() {
         </p>
         <p className="detail-desc">
           It works only from what you actually logged. Your observations, your language,
-          with just the hard part done for you. Not happy with the first draft? Tell it to adjust
-          the tone, shorten it, or shift the focus. It rewrites on the spot until it sounds right.
+          with just the hard part done for you. Not happy with the first draft? Edit it directly,
+          or ask ShortHand to adjust the tone, shorten it, or shift the focus. It rewrites on the
+          spot until it sounds right.
         </p>
         <p className="detail-desc">
           Need a clean incident summary for your SIS? Use the Documentation option to strip away
@@ -59,7 +60,7 @@ export default function AIReportsPage() {
           Your voice. Your observations. No more Sunday paperwork.
         </p>
 
-        <FeatureVideo videoId="VsuP_59xxT0" title="AI Reports walkthrough" start={21} hideControls />
+        <FeatureVideo videoId="JO7_S9EamC0" title="AI Reports walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
