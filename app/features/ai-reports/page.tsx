@@ -43,10 +43,9 @@ export default function AIReportsPage() {
         </p>
         <p className="detail-desc">
           It works only from what you actually logged. Your observations, your language,
-          with just the hard part done for you. Not happy with the first draft? Tell it to adjust
-          the tone, shorten it, or shift the focus. It rewrites on the spot until it sounds right.
-          Need to make a small change yourself? Click directly into the report and edit any word
-          or sentence before you copy, save, or share it.
+          with just the hard part done for you. Not happy with the first draft? Edit it directly,
+          or ask ShortHand to adjust the tone, shorten it, or shift the focus. It rewrites on the
+          spot until it sounds right.
         </p>
         <p className="detail-desc">
           Need a clean incident summary for your SIS? Use the Documentation option to strip away
