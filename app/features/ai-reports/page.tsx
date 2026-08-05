@@ -7,11 +7,11 @@ import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'AI Reports | ShortHand',
+  title: 'Write Reports | ShortHand',
   description: 'Turn months of raw classroom notes into polished, parent-ready progress reports in seconds. Your voice, your observations, with the hard part done for you.',
   alternates: { canonical: 'https://getshorthandapp.com/features/ai-reports' },
   openGraph: {
-    title: 'AI Reports | ShortHand',
+    title: 'Write Reports | ShortHand',
     description: 'Turn months of raw classroom notes into polished, parent-ready progress reports in seconds. Your voice, your observations, with the hard part done for you.',
     url: 'https://getshorthandapp.com/features/ai-reports',
     type: 'website',
@@ -34,7 +34,7 @@ export default function AIReportsPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <h1 className="detail-title">AI <em>Reports</em></h1>
+        <h1 className="detail-title">Write <em>Reports</em></h1>
         <p className="detail-desc">
           Report writing used to eat entire Sunday evenings. With ShortHand, your notes
           become the source material and ShortHand does the drafting. Select a student, pick a
@@ -60,7 +60,7 @@ export default function AIReportsPage() {
           Your voice. Your observations. No more Sunday paperwork.
         </p>
 
-        <FeatureVideo videoId="UfCOOsTW8fQ" title="AI Reports walkthrough" hideControls />
+        <FeatureVideo videoId="UfCOOsTW8fQ" title="Write Reports walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
