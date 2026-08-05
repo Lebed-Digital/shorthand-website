@@ -11,8 +11,11 @@ interface FeatureVideoProps {
 
 export default function FeatureVideo({ videoId, title, start, hideControls }: FeatureVideoProps) {
   const [playing, setPlaying] = useState(false);
+  const [thumbFallback, setThumbFallback] = useState(false);
 
-  const thumbUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+  const thumbUrl = thumbFallback
+    ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
+    : `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
   const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${hideControls ? '&controls=0' : ''}${start ? `&start=${start}` : ''}`;
 
   return (
@@ -26,7 +29,7 @@ export default function FeatureVideo({ videoId, title, start, hideControls }: Fe
         />
       ) : (
         <button className="feature-video-facade" onClick={() => setPlaying(true)} aria-label={`Play ${title}`}>
-          <img src={thumbUrl} alt={title} />
+          <img src={thumbUrl} alt={title} onError={() => setThumbFallback(true)} />
           <span className="feature-video-play">▶</span>
         </button>
       )}

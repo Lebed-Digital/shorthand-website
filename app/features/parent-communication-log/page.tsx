@@ -36,22 +36,22 @@ export default function ParentCommunicationLogPage() {
       <div className="detail-hero">
         <h1 className="detail-title">Parent Communication <em>Log</em></h1>
         <p className="detail-desc">
-          Every phone call, email, and meeting logged in seconds, timestamped, and
-          organized by student. No more searching through sent emails or trying to
-          remember when you last reached out.
+          Keep every phone call, email, and meeting organized by student, with the date,
+          contact type, and a short summary all in one place. No more searching through
+          sent emails or trying to remember when you last reached out.
         </p>
         <p className="detail-desc">
-          If admin ever questions whether you contacted a family, you pull up the log
-          and show them exactly what happened, when it happened, and what was discussed.
-          Your paper trail is always ready.
+          When you need to review a family&apos;s communication history, everything is easy
+          to find. You can quickly see what happened, when it happened, and what was
+          discussed.
         </p>
         <p className="detail-desc">
-          Mark entries as IEP-related or urgent. Set follow-up reminders with overdue
-          warnings. When an IEP meeting comes up, export the full communication history
-          formatted and ready to paste into official documents.
+          Mark entries as IEP-related or urgent, set follow-up reminders, and export a
+          student&apos;s communication history when you need it for a meeting or school
+          documentation.
         </p>
 
-        <FeatureVideo videoId="5pbtWJCKDjs" title="Parent Communication Log walkthrough" hideControls />
+        <FeatureVideo videoId="-9ruZPkjIpU" title="Parent Communication Log walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
