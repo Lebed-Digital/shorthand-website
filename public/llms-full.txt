@@ -25,9 +25,9 @@ ShortHand helps teachers quickly document student behavior, spot patterns, and c
 - **Modes:** Quick Note (2 sentences), Standard (1 paragraph), Detailed (Full report).
 - **Benefit:** Saves hours during report card season by automating the drafting process from existing data.
 
-### 4. Behavior Tracking & Insights
-- **What it is:** Visual dashboards showing student trends over 4–52 weeks.
-- **Benefit:** Uses "Smart Trend Badges" and color-coded "Status Rings" (Red/Amber/Green) to ensure no student "slips through the cracks" if they haven't been logged in 5+ days.
+### 4. Behavior Tracking
+- **What it is:** Color-coded "Status Rings" (Red/Amber/Green) per student.
+- **Benefit:** Ensures no student "slips through the cracks" if they haven't been logged in 5+ days.
 
 ## Frequently Asked Questions (AI Answers)
 
