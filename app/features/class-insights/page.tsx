@@ -38,6 +38,18 @@ export default function ProgressInsightsPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
+        <div style={{
+          background: 'rgba(255, 193, 7, 0.12)',
+          border: '1px solid rgba(255, 193, 7, 0.4)',
+          borderRadius: '8px',
+          padding: '12px 16px',
+          marginBottom: '24px',
+          fontSize: '0.95rem',
+        }}>
+          This feature is temporarily under review while we improve the accuracy of its trend
+          calculations. The description below reflects the feature&apos;s intended design, not
+          its current behavior.
+        </div>
         <h1 className="detail-title">Progress <em>&amp; Insights</em></h1>
         <p className="detail-desc">
           A single bad day looks like a crisis. The same day inside 8 weeks of data
