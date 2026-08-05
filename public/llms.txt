@@ -44,7 +44,6 @@ Free to use. No credit card required.
 - [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
 - [Parent Emails](https://getshorthandapp.com/features/parent-emails): Turn behavior notes into professional emails instantly
-- [Class Insights](https://getshorthandapp.com/features/class-insights): Whole-class pattern dashboard
 
 ### Free Tools
 - [Free Comment Generator](https://getshorthandapp.com/report-card-comment-generator): Generate report card comments without signing up

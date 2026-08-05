@@ -6,7 +6,6 @@ const features = [
   { slug: 'parent-emails',          label: 'Parent Communication' },
   { slug: 'parent-communication-log', label: 'Parent Communication Log' },
   { slug: 'behavior-tracking', label: 'Never Miss a Student' },
-  { slug: 'class-insights',    label: 'Progress & Insights' },
 ];
 
 export default function FeatureNav({ current }: { current: string }) {

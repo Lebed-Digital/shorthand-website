@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Progress & Insights | ShortHand',
   description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
   alternates: { canonical: 'https://getshorthandapp.com/features/class-insights' },
+  robots: { index: false, follow: false },
   openGraph: {
     title: 'Progress & Insights | ShortHand',
     description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
