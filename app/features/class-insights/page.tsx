@@ -1,3 +1,6 @@
+// Feature hidden 2026-08-05: calculation unreliable, underlying value unvalidated.
+// Unlinked from FeatureNav/sitemap/llms.txt and noindexed below, but left live at this URL.
+// Decision later: repair, simplify, or delete.
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
@@ -10,6 +13,7 @@ export const metadata: Metadata = {
   title: 'Progress & Insights | ShortHand',
   description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
   alternates: { canonical: 'https://getshorthandapp.com/features/class-insights' },
+  robots: { index: false, follow: false },
   openGraph: {
     title: 'Progress & Insights | ShortHand',
     description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
@@ -34,6 +38,18 @@ export default function ProgressInsightsPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
+        <div style={{
+          background: 'rgba(255, 193, 7, 0.12)',
+          border: '1px solid rgba(255, 193, 7, 0.4)',
+          borderRadius: '8px',
+          padding: '12px 16px',
+          marginBottom: '24px',
+          fontSize: '0.95rem',
+        }}>
+          This feature is temporarily under review while we improve the accuracy of its trend
+          calculations. The description below reflects the feature&apos;s intended design, not
+          its current behavior.
+        </div>
         <h1 className="detail-title">Progress <em>&amp; Insights</em></h1>
         <p className="detail-desc">
           A single bad day looks like a crisis. The same day inside 8 weeks of data

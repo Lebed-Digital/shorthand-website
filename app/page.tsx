@@ -646,10 +646,6 @@ export default function Home() {
                 a: 'ShortHand keeps your parent communication history organized in one place, including dates, details, and follow-ups. When you need to reach out, it can turn an existing note into a parent-ready draft. You review it, make any changes, and send it through your own email.',
               },
               {
-                q: 'Can ShortHand help me spot behavior patterns?',
-                a: 'Yes. ShortHand tracks behavior from 1 day to 52 weeks and shows visual trend charts for each student. Smart badges highlight who\'s improving and who may need attention, so you\'re not relying on memory.',
-              },
-              {
                 q: 'Does ShortHand alert me if I haven\'t checked in on a student?',
                 a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 16 or more days, amber at 9 to 15 days, and green if you\'ve logged in the last 8 days. No student quietly slips through the cracks.',
               },

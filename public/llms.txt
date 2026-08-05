@@ -10,7 +10,6 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 - AI Parent Messages: turn behavior notes into professional parent emails instantly
 - Write Reports: auto-generate progress reports and report card comments from logged notes
 - Behavior Tracking: spot trends over 4-52 weeks, prepare for IEP meetings and parent conferences
-- Class Insights: visual dashboard showing patterns across the whole class
 - Never Miss a Student: color-coded alerts when a student hasn't been logged in 5+ days
 
 ## Who It's For
@@ -44,7 +43,6 @@ Free to use. No credit card required.
 - [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
 - [Parent Emails](https://getshorthandapp.com/features/parent-emails): Turn behavior notes into professional emails instantly
-- [Class Insights](https://getshorthandapp.com/features/class-insights): Whole-class pattern dashboard
 
 ### Free Tools
 - [Free Comment Generator](https://getshorthandapp.com/report-card-comment-generator): Generate report card comments without signing up
