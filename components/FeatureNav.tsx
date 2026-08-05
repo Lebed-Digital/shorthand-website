@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const features = [
   { slug: 'quick-note',        label: 'Quick Note' },
-  { slug: 'ai-reports',             label: 'AI Reports' },
+  { slug: 'ai-reports',             label: 'Write Reports' },
   { slug: 'parent-emails',          label: 'Parent Communication' },
   { slug: 'parent-communication-log', label: 'Parent Communication Log' },
   { slug: 'behavior-tracking', label: 'Never Miss a Student' },
