@@ -1,3 +1,6 @@
+// Feature hidden 2026-08-05: calculation unreliable, underlying value unvalidated.
+// Unlinked from FeatureNav/sitemap/llms.txt and noindexed below, but left live at this URL.
+// Decision later: repair, simplify, or delete.
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
