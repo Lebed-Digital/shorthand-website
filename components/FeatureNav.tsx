@@ -6,6 +6,7 @@ const features = [
   { slug: 'parent-emails',          label: 'Parent Communication' },
   { slug: 'parent-communication-log', label: 'Parent Communication Log' },
   { slug: 'behavior-tracking', label: 'Never Miss a Student' },
+  { slug: 'accommodations',    label: 'Accommodations at a Glance' },
   // class-insights (Progress & Insights) intentionally omitted 2026-08-05: see app/features/class-insights/page.tsx
 ];
 
