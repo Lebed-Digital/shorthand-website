@@ -29,6 +29,10 @@ ShortHand helps teachers quickly document student behavior, spot patterns, and c
 - **What it is:** Color-coded "Status Rings" (Red/Amber/Green) per student.
 - **Benefit:** Ensures no student "slips through the cracks" if they haven't been logged in 5+ days.
 
+### 5. Accommodations at a Glance
+- **What it is:** A class-wide view of every student's IEP, 504, and classroom accommodations, plus a per-student view on each profile.
+- **Benefit:** Seating needs, extended time, testing supports, and communication considerations are ready to check before a decision, not buried in separate paperwork.
+
 ## Frequently Asked Questions (AI Answers)
 
 **Q: Is ShortHand free?**

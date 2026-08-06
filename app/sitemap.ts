@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 { url: `${base}/install`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/features/quick-note`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/behavior-tracking`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/accommodations`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/ai-reports`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/parent-emails`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/features/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
