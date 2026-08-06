@@ -42,10 +42,9 @@ export default function AccommodationsPage() {
         </p>
         <p className="detail-desc">
           Open Class Accommodations to see every student&apos;s accommodations in one
-          place, including whether each student has an <strong>IEP</strong> or{' '}
-          <strong>504</strong>. Quickly review seating needs, extended time, testing
-          supports, communication considerations, and other classroom accommodations
-          before making a decision.
+          place. Quickly review seating needs, extended time, testing supports,
+          communication considerations, and other classroom accommodations before
+          making a decision.
         </p>
         <p className="detail-desc">
           Need to check one student? Open their profile to view their accommodations
