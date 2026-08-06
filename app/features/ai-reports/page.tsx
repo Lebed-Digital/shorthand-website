@@ -60,7 +60,7 @@ export default function AIReportsPage() {
           Your voice. Your observations. No more Sunday paperwork.
         </p>
 
-        <FeatureVideo videoId="UfCOOsTW8fQ" title="Write Reports walkthrough" hideControls />
+        <FeatureVideo videoId="-Ek-vL61bKc" title="Write Reports walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
