@@ -476,6 +476,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MORE FEATURES — compact grid linking to secondary feature pages */}
+      <section style={{ padding: '0 0 80px' }}>
+        <div className="section-inner">
+          <p style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: '1.25rem' }}>
+            More ways ShortHand helps
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.875rem', maxWidth: '920px', margin: '0 auto' }}>
+            {[
+              { emoji: '🟢', title: 'Never Miss a Student', desc: 'Color-coded alerts for who needs a check-in.', href: '/features/behavior-tracking' },
+              { emoji: '✉️', title: 'Parent Emails', desc: 'Turn notes into professional messages instantly.', href: '/features/parent-emails' },
+              { emoji: '🗂️', title: 'Accommodations at a Glance', desc: 'Every student\'s IEP, 504, and classroom accommodations, in one place.', href: '/features/accommodations' },
+            ].map(({ emoji, title, desc, href }) => (
+              <Link
+                key={href}
+                href={href}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '0.5rem',
+                  padding: '1.25rem 1.25rem 1.5rem',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(255,255,255,0.09)',
+                  background: 'rgba(255,255,255,0.03)',
+                  textDecoration: 'none',
+                  color: 'var(--text)',
+                  transition: 'border-color 0.2s, background 0.2s',
+                }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(249,115,22,0.4)';
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.06)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.09)';
+                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)';
+                }}
+              >
+                <span style={{ fontSize: '1.4rem' }}>{emoji}</span>
+                <span style={{ fontSize: '1rem', fontWeight: 600 }}>{title}</span>
+                <span style={{ fontSize: '0.875rem', lineHeight: 1.5, color: 'var(--text-dim)' }}>{desc}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* STATS */}
       <section className="stats-section">
         <div className="section-inner">
