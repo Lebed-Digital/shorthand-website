@@ -111,6 +111,12 @@ const nextConfig: NextConfig = {
         destination: '/blog/teacher-introduction-letter-to-parents?utm_source=social&utm_medium=organic_social&utm_campaign=teacher_intro_letter',
         permanent: false,
       },
+      // Heads up: these social shortlinks reserve top-level words. A redirect
+      // beats a real page of the same name silently, so if you ever add
+      // app/welcome/page.tsx (or /letters, /install, etc.), the page will look
+      // fine locally and then 307 away in production. Rename or remove the
+      // redirect here first. All of these are permanent: false precisely so
+      // they stay cheap to repoint or retire.
       {
         source: '/welcome',
         destination: '/blog/welcome-letter-to-parents-from-teacher?utm_source=social&utm_medium=organic_social&utm_campaign=welcome_letter',
