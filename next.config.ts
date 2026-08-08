@@ -122,6 +122,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/welcome-letter-to-parents-from-teacher?utm_source=social&utm_medium=organic_social&utm_campaign=welcome_letter',
         permanent: false,
       },
+      {
+        source: '/dojo',
+        destination: '/blog/best-classdojo-alternatives-2026?utm_source=social&utm_medium=organic_social&utm_campaign=classdojo_alternatives',
+        permanent: false,
+      },
     ];
   },
   async headers() {
