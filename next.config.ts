@@ -111,6 +111,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/teacher-introduction-letter-to-parents?utm_source=social&utm_medium=organic_social&utm_campaign=teacher_intro_letter',
         permanent: false,
       },
+      {
+        source: '/welcome',
+        destination: '/blog/welcome-letter-to-parents-from-teacher?utm_source=social&utm_medium=organic_social&utm_campaign=welcome_letter',
+        permanent: false,
+      },
     ];
   },
   async headers() {
