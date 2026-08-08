@@ -7,6 +7,11 @@ Canonical workflow lives in Brain/blog_illustration_workflow.md (C:\Users\doubl\
 ## Before merging, redirecting, or deleting any blog post
 Check the post's frontmatter for a `mergeNote` field first. If present, it points to a prior decision in Brain/Decisions Log.md (C:\Users\doubl\GOOGLE DRIVE\My Drive\Google AI Studio\ShortHand\Brain\Decisions Log.md) explaining why similar-looking posts were kept separate. Do not merge/redirect on topic-similarity alone, pull fresh GSC query-level data first to check for actual cannibalization (same query, multiple pages, split clicks), not just similar titles.
 
+## Before adding a new top-level page or route
+Check the `redirects()` block in `next.config.ts` first. Social shortlinks live there and reserve top-level words (`/welcome`, `/letters`, `/letter`, `/ig`, `/tt`, `/yt`, `/fb`, `/sub`, `/x`, `/li`, `/how-it-works`). A redirect silently takes precedence over a real page at the same path, so adding `app/welcome/page.tsx` while `/welcome` is a redirect gives you a page that works locally and 307s away in production, with no build error to warn you.
+
+If the word is taken and you want the real page, retire or rename the redirect in the same PR. These are all `permanent: false` so browsers have not cached them hard and repointing is safe. Shortlinks get printed in social video descriptions, so if one is already published, prefer moving the shortlink to a new word over silently breaking it: check with Greg on which are live.
+
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
