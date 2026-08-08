@@ -51,7 +51,7 @@ export default function ParentCommunicationLogPage() {
           documentation.
         </p>
 
-        <FeatureVideo videoId="-9ruZPkjIpU" title="Parent Communication Log walkthrough" hideControls />
+        <FeatureVideo videoId="y72XmJboR7k" title="Parent Communication Log walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
