@@ -239,22 +239,22 @@ export default function Home() {
             </p>
             <div className="hero-ctas">
               <motion.a
-                href="https://app.getshorthandapp.com?demo=true"
+                href="https://app.getshorthandapp.com/?demo=true"
                 className="btn-primary"
                 whileHover={btnHover}
                 whileTap={btnTap}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_try_free_demo', 'https://app.getshorthandapp.com?demo=true', e)}
+                onClick={(e) => trackCta('hero_try_free_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
               >
                 Try the Free Demo →
               </motion.a>
               <motion.a
-                href="https://app.getshorthandapp.com?demo=true"
+                href="#features"
                 className="btn-ghost"
                 whileHover={{ scale: 1.03, y: -1 }}
                 whileTap={btnTap}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_see_how_it_works', 'https://app.getshorthandapp.com?demo=true', e)}
+                onClick={(e) => trackCta('hero_see_how_it_works', '#features', e)}
               >
                 See How It Works
               </motion.a>
@@ -843,12 +843,12 @@ export default function Home() {
               </p>
               <div className="cta-btns">
                 <motion.a
-                  href="https://app.getshorthandapp.com?demo=true"
+                  href="https://app.getshorthandapp.com/?demo=true"
                   className="btn-primary btn-primary--lg"
                   whileHover={btnHover}
                   whileTap={btnTap}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  onClick={(e) => trackCta('cta_get_shorthand', 'https://app.getshorthandapp.com', e)}
+                  onClick={(e) => trackCta('cta_get_shorthand', 'https://app.getshorthandapp.com/?demo=true', e)}
                 >
                   Open ShortHand →
                 </motion.a>
