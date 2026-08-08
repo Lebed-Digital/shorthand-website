@@ -101,7 +101,7 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
-        source: '/til',
+        source: '/letters',
         destination: '/blog/teacher-introduction-letter-to-parents?utm_source=social&utm_medium=organic_social&utm_campaign=teacher_intro_letter',
         permanent: false,
       },
