@@ -127,6 +127,11 @@ const nextConfig: NextConfig = {
         destination: '/blog/best-classdojo-alternatives-2026?utm_source=social&utm_medium=organic_social&utm_campaign=classdojo_alternatives',
         permanent: false,
       },
+      {
+        source: '/comm',
+        destination: '/blog/best-apps-for-teacher-parent-communication-2026?utm_source=social&utm_medium=organic_social&utm_campaign=parent_communication_apps',
+        permanent: false,
+      },
     ];
   },
   async headers() {
