@@ -287,7 +287,9 @@ section { position: relative; z-index: 1; }
 .section-sub { font-size: 1rem; font-weight: 300; color: var(--text-dim); line-height: 1.8; max-width: 520px; margin: 0 auto; }
 
 /* FEATURES */
-.features-section { padding: 120px 0; position: relative; }
+/* scroll-margin-top offsets the 120px top padding so the #features anchor
+   lands on the cards, not on empty space above the heading. */
+.features-section { padding: 120px 0; position: relative; scroll-margin-top: -110px; }
 .features-section::before {
   content: '';
   position: absolute;
