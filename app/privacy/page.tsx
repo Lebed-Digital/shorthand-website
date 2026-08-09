@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           This policy explains exactly what we collect, why, and how we protect it.
         </p>
         <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          Last updated: June 2026
+          Last updated: August 2026
         </p>
       </div>
 
@@ -117,7 +117,12 @@ export default function PrivacyPage() {
               You can delete all your data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
               You can permanently delete your account, your notes, and your student data from within the app (Settings → Danger Zone → Delete My Account).<br /><br />
               You can export a copy of all your data at any time (Settings → Your Data → Export My Data).<br /><br />
-              You can disconnect Google Classroom at any time, which removes your stored Google tokens.
+              You can disconnect Google Classroom at any time, which removes your stored Google tokens.<br /><br />
+              If you cannot sign in to the app, you can also request account deletion by emailing{' '}
+              <a href="mailto:info@getshorthandapp.com?subject=Account%20deletion%20request" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a>{' '}
+              from the email address associated with your ShortHand account. For account security,
+              we may ask you for additional verification before processing the deletion.{' '}
+              <Link href="/delete-account" style={{ color: 'var(--accent)' }}>See all account deletion options →</Link>
             </div>
           </div>
 
