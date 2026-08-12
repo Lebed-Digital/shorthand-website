@@ -115,7 +115,7 @@ export default function InstallPage() {
           </div>
           <div className="videos-grid">
             {[
-              { id: 'vxgDMU3qpn4', title: 'Install on iPhone' },
+              { id: 'fef65Q9xlvk', title: 'Install on iPhone' },
               { id: 'cJ-PlHk0diw', title: 'Install on Android' },
             ].map((v) => (
               <div key={v.id} className="video-card">
