@@ -107,7 +107,9 @@ export default function DeleteAccountPage() {
               Your app settings and preferences<br />
               Your Google Classroom connection tokens, if you connected it<br /><br />
               This is a permanent deletion, not a deactivation. Once it is done, the data
-              cannot be restored, so export anything you want to keep beforehand.
+              cannot be restored, so export anything you want to keep beforehand. Billing
+              and subscription records are handled separately, see &ldquo;What May Be
+              Retained&rdquo; below.
             </div>
           </div>
 
@@ -118,7 +120,13 @@ export default function DeleteAccountPage() {
               Anonymous usage analytics may remain after deletion, but they are no longer
               connected to you. When your account is deleted, the user identifier is removed
               from those analytics records. These records never contained student names, notes,
-              or parent communications. Other information may be retained only where required
+              or parent communications.<br /><br />
+              If you purchased a Pro subscription, Stripe processes your payments, and limited
+              billing and subscription records may also be retained in our systems after
+              deletion, where needed for accounting, dispute resolution, fraud prevention,
+              legal compliance, or other legitimate business records. These records never
+              contain student data.<br /><br />
+              Other information may be retained only where required
               for security, fraud prevention, legal compliance, or legitimate business records.
             </div>
           </div>
