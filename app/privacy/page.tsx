@@ -70,6 +70,10 @@ export default function PrivacyPage() {
             <div className="privacy-title">What We Collect</div>
             <div className="privacy-desc">
               <strong style={{ color: 'var(--text)' }}>Your account:</strong> Your email address and password (managed securely by Supabase Auth).<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Billing and subscription information (Pro subscribers only):</strong> If you
+              subscribe to ShortHand Pro, your payment is processed by Stripe. We do not store
+              your card details ourselves; we store only your subscription status and Stripe&apos;s
+              reference IDs for your account.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Student data you enter:</strong> Student names, class periods, behavioral notes, birthday info, parent contact details, and photo URLs, all entered or imported by you.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Google Classroom (optional):</strong> If you connect Google Classroom, we access your course list and student names, emails, and profile photos to help you import your roster. We store a token to keep you connected. You can disconnect at any time.<br /><br />
               <strong style={{ color: 'var(--text)' }}>AI features:</strong> Some features use AI to turn your notes into polished text. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
@@ -115,7 +119,7 @@ export default function PrivacyPage() {
             <div className="privacy-title">Your Rights</div>
             <div className="privacy-desc">
               You can delete all your data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
-              You can permanently delete your account, your notes, and your student data from within the app (Settings → Danger Zone → Delete My Account).<br /><br />
+              You can permanently delete your account, your notes, and your student data from within the app (Settings → Danger Zone → Delete My Account). Billing and subscription records may be retained after deletion where needed for accounting, disputes, fraud prevention, or legal compliance; see our <Link href="/delete-account" style={{ color: 'var(--accent)' }}>account deletion page</Link> for details.<br /><br />
               You can export a copy of all your data at any time (Settings → Your Data → Export My Data).<br /><br />
               You can disconnect Google Classroom at any time, which removes your stored Google tokens.<br /><br />
               If you cannot sign in to the app, you can also request account deletion by emailing{' '}
@@ -132,6 +136,8 @@ export default function PrivacyPage() {
             <div className="privacy-desc">
               ShortHand uses the following third-party services to operate:<br /><br />
               <strong style={{ color: 'var(--text)' }}>Supabase:</strong> database and authentication (<a href="https://supabase.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>Stripe:</strong> payment processing for Pro
+              subscriptions (<a href="https://stripe.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Groq:</strong> AI language model processing (<a href="https://groq.com/privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Together AI:</strong> backup AI provider for report and message generation (<a href="https://www.together.ai/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Vercel:</strong> hosting and deployment (<a href="https://vercel.com/legal/privacy-policy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
