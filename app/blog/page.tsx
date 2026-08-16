@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import { getAllPosts } from '../../lib/posts';
+import BlogSearch from './BlogSearch';
 
 export const metadata: Metadata = {
   title: 'Blog | ShortHand',
@@ -43,11 +44,11 @@ export default function BlogIndex() {
         <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '0.5rem' }}>
           The ShortHand <em>Blog</em>
         </h1>
-        <p style={{ color: 'var(--text-dim)', marginBottom: '3rem', fontSize: '1.1rem' }}>
+        <p style={{ color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
           Real stories from a teacher who got tired of the paperwork and built something about it.
         </p>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+        <BlogSearch posts={posts.map(({ title, subtitle, excerpt }) => ({ title, subtitle, excerpt }))}>
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card-link">
               <article className="blog-card">
@@ -65,7 +66,7 @@ export default function BlogIndex() {
               </article>
             </Link>
           ))}
-        </div>
+        </BlogSearch>
       </div>
 
       <footer>
