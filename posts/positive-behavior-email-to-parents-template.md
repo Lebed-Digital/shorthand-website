@@ -18,6 +18,8 @@ That is why I make it a priority to send positive emails home.
 
 Getting a positive note from a teacher is a great feeling for parents. It is like finding a twenty-dollar bill in a coat pocket. It builds goodwill that can make future difficult conversations a little easier.
 
+![A teacher noticing a student's kindness and sending a positive message home that builds trust with the family](/blog-illustrations/positive-parent-email-goodwill.png)
+
 Below are five copy-and-paste templates you can use to celebrate your students and build strong partnerships with their families.
 
 ## The Power of the Positive Email Bank Account

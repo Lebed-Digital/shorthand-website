@@ -25,6 +25,8 @@ Writing a letter that introduces yourself to thirty families you have never met 
 
 I have written this letter as a brand-new teacher, and I have read plenty of them as a parent. The ones that work all do the same small thing: they make the parent think "okay, my kid is in good hands, and I know how to reach this person." That is the whole job.
 
+![A teacher finding the right balance between a formal introduction and a warm letter that helps families feel connected](/blog-illustrations/teacher-introduction-letter-right-tone.png)
+
 Below are three complete examples for the three situations where you actually need a pure introduction letter, plus the five lines every version needs. Copy any of them into a doc and swap in your own details; they are written to be adapted, not admired. And if your school calls this a meet the teacher letter, you are in the right place: same assignment, same rules. If what you really want is the full back-to-school letter with routines and expectations, that is a different animal, and our [welcome letter examples post](/blog/welcome-letter-to-parents-from-teacher) covers it with four real letters.
 
 ## The five lines every introduction letter needs
