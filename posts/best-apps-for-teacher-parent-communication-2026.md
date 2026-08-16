@@ -31,6 +31,8 @@ So when I rechecked all of these tools for 2026, I sorted them by the question t
 
 That question turned out to matter more than I expected.
 
+![A teacher sorting through parent communication app overload to find one practical way to reach families and keep a dated record](/blog-illustrations/parent-communication-app-overload.png)
+
 ---
 
 ## The thing that changed in 2026

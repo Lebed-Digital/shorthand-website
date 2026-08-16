@@ -27,6 +27,8 @@ As a third-grade teacher, this was something I used to overthink all the time. I
 
 The good news is that there is a simple approach that makes these emails faster and more effective. Once you have the structure, the blank page stops being so intimidating.
 
+![A teacher turning emotional reactions and fuzzy behavior memories into a short factual and empathetic parent email](/blog-illustrations/behavior-email-facts-and-empathy.png)
+
 ## Why Behavior Emails Feel So Hard
 
 The problem isn't really the writing. It's the stakes.

@@ -23,6 +23,8 @@ Three weeks after the IEP meeting, a parent emailed asking why the accommodation
 
 That gap is not uncommon. IEP meetings move fast. You are tracking multiple specialists, fielding parent questions, and trying to hold your own classroom observations in your head at the same time. The details that feel obvious in the moment are gone by Friday. This template is what keeps that from happening.
 
+![A general education teacher turning a fast-moving IEP discussion into organized notes that carry the team's decisions into the classroom](/blog-illustrations/iep-meeting-notes-follow-through.png)
+
 ## Why Taking Your Own Notes is Non-Negotiable
 
 You might assume the special education case manager is taking official notes, so you do not need to bother. This is a dangerous assumption. The official notes are often broad summaries. As the general education teacher, you need to know exactly how the meeting impacts your daily instruction.
