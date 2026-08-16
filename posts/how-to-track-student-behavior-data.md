@@ -18,6 +18,8 @@ And memory is not data.
 
 By 3:30 PM, the specific details of what happened at 9:45 are already gone. You remember the general shape of the day, but not the specifics that actually matter when you're sitting in a meeting trying to explain a pattern.
 
+![A teacher after school trying to recover a fading classroom memory while a few quick notes preserve the useful behavior details](/blog-illustrations/behavior-data-fading-memory-notes.png)
+
 If you're trying to figure out how to track student behavior data in a way that's consistent, fast, and actually useful, here's what works.
 
 ## Why Most Behavior Tracking Systems Fail

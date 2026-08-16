@@ -31,6 +31,8 @@ This is the hidden curriculum of teaching. It is the invisible, relentless work 
 
 When you have twenty-five students, the math is absolutely brutal. If you spend just two minutes documenting something for each kid, that is almost an hour of pure paperwork. Every single day. It adds up to a mountain of administrative debt that you can never quite pay off.
 
+![An exhausted teacher facing the after-school paperwork shift while a simpler system makes the workload manageable enough to go home](/blog-illustrations/teacher-burnout-after-school-paperwork.png)
+
 ## Why Fixing Your Mindset is Bad Advice
 Telling a teacher to fix their mindset when they are drowning in data entry is honestly insulting.
 

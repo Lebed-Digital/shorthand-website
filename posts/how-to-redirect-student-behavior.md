@@ -16,6 +16,8 @@ Then, you see it. Two students in the back row are whispering. One of them is sh
 
 You have a choice to make. You can stop your entire lesson, call them out across the room, and derail the momentum you just spent twenty minutes building. Or, you can figure out how to redirect student behavior without losing the rest of the class.
 
+![A teacher calmly using proximity to redirect two off-task students while the lesson and the rest of the class keep moving](/blog-illustrations/silent-student-behavior-redirection.png)
+
 I teach third grade. I have been in this classroom for over twenty years. If I stopped my lesson every time a student was off-task, I would never finish a single math problem. You have to learn how to keep the train moving while simultaneously dealing with the distractions in the back car.
 
 There is a lot of educational jargon out there about behavior management. You hear words like positive behavior interventions and restorative practices. Those are great concepts. But when you are standing in front of twenty-five kids and someone is making armpit noises, you do not need theory. You need practical strategies.

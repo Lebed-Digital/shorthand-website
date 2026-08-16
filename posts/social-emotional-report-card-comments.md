@@ -23,6 +23,8 @@ You can knock out the math comments in an afternoon. Reading, fine. But then you
 
 That box is where report card writing actually gets hard. Say too little and the parent learns nothing. Say it wrong and you have labeled a seven-year-old in a permanent school record.
 
+![A teacher turning social-emotional observations into a balanced report card comment that names a strength, a developing skill, and helpful support](/blog-illustrations/social-emotional-comments-growth-language.png)
+
 I spent years as a Registered Behavior Technician before I became a classroom teacher, which means I have written thousands of notes about exactly these skills: regulation, peer interaction, frustration tolerance. The one rule that carried over from that work to report cards: describe the behavior, never the child.
 
 These 50 comments all follow that rule, and they work whatever your report card calls this section: social emotional learning (SEL), habits and attitudes, or learner qualities. Swap in the name, adjust the details, and they are ready to send.

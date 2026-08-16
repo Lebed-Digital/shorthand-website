@@ -12,6 +12,8 @@ excerpt: "Wondering exactly what to say at an IEP meeting? This highly practical
 
 Walking into an IEP meeting can feel incredibly intimidating. You are sitting across from parents who are often anxious or defensive, and you are expected to deliver a perfectly balanced report on their child's academic and behavioral progress. Knowing exactly what to say at an IEP meeting is half the battle. If you choose the wrong words, the meeting can quickly derail into an argument. If you choose the right words, you build a powerful alliance with the family.
 
+![A teacher moving from uncertainty in an IEP meeting to a calm conversation built around student strengths and a shared support plan](/blog-illustrations/iep-meeting-right-words-shared-plan.png)
+
 This guide provides practical scripts and phrasing strategies to help you navigate every stage of the meeting with confidence and professionalism.
 
 ## Opening the Conversation
