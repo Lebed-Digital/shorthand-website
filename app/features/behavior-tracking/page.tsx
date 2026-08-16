@@ -46,6 +46,11 @@ export default function NeverMissPage() {
           16 or more. The dashboard flags anyone who needs attention automatically, every time you open the app.
         </p>
         <p className="detail-desc">
+          Open any student and you&apos;ll see their full note history, plus an 8-week
+          activity view showing their recent documentation activity. It&apos;s a quick way
+          to spot patterns before a conference or parent call.
+        </p>
+        <p className="detail-desc">
           You don&apos;t have to remember who needs attention. The app tells you.
         </p>
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
