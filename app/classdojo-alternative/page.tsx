@@ -21,7 +21,7 @@ const rows = [
   { feature: 'Behavior visibility', dojo: 'Public points on a class display', sh: 'Private notes, never displayed to class' },
   { feature: 'Parent updates', dojo: 'Social-media style feed', sh: '2-click professional message, logged automatically' },
   { feature: 'Documentation', dojo: 'Basic activity log', sh: 'Timestamped notes, IEP flags, exportable history' },
-  { feature: 'Mood tracking', dojo: 'None', sh: 'Daily student check-ins with trend view' },
+  { feature: 'Mood tracking', dojo: 'None', sh: 'Quick behavior notes with an 8-week activity view' },
   { feature: 'Admin-ready paper trail', dojo: 'No', sh: 'Yes. Every contact logged with date and outcome.' },
   { feature: 'AI summaries', dojo: 'No', sh: 'One-tap behavior summary per student' },
   { feature: 'Cost', dojo: 'Free (with ads/upsells)', sh: 'Free to start, no ads' },
