@@ -211,8 +211,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         )}
 
+        <Link href="/blog" className="blog-back-link">
+          ← Back to all blog posts
+        </Link>
+
         {relatedPosts.length > 0 && (
-          <div style={{ marginTop: '3.5rem' }}>
+          <div style={{ marginTop: '2.5rem' }}>
             <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginBottom: '1.25rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-dim)' }}>
               Keep Reading
             </h2>

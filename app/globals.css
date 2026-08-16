@@ -1097,6 +1097,21 @@ footer {
   max-width: 520px;
 }
 
+.blog-back-link {
+  display: inline-block;
+  margin-top: 3rem;
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.blog-back-link:hover { color: var(--accent); }
+.blog-back-link:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .blog-card-link { text-decoration: none; display: block; }
 .blog-search {
   margin-bottom: 3rem;
