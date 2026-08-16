@@ -9,8 +9,8 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 - Parent Communication Log: maintain a timestamped record of every parent contact (calls, emails, meetings) so teachers always have documentation ready for conferences and IEP meetings
 - AI Parent Messages: turn behavior notes into professional parent emails instantly
 - Write Reports: auto-generate progress reports and report card comments from logged notes
-- Behavior Tracking: spot trends over 4-52 weeks, prepare for IEP meetings and parent conferences
-- Never Miss a Student: color-coded alerts when a student hasn't been logged in 5+ days
+- Behavior Tracking: review each student's note history and see an 8-week activity view to spot recent patterns
+- Never Miss a Student: color-coded status rings show green within 8 days, amber at 9-15 days, and red at 16+ days
 - Accommodations at a Glance: see every student's IEP, 504, and classroom accommodations in one place
 
 ## Who It's For
@@ -30,7 +30,7 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 K-12 teachers, primarily elementary school educators and special education teachers managing classroom behavior documentation, parent communication logs, and student reporting.
 
 ## Pricing
-Free to use. No credit card required.
+Currently in beta and free to join. No credit card required.
 
 ## URLs
 
@@ -38,8 +38,11 @@ Free to use. No credit card required.
 - [Homepage](https://getshorthandapp.com): What ShortHand is, who it's for, and how to get started
 - [Install](https://getshorthandapp.com/install): How to add ShortHand to any device (no app store needed)
 - [About the Creator](https://getshorthandapp.com/about): Gregory Lebed's background as a teacher and former RBT, and why he built ShortHand
+- [Free Teacher Resources](https://getshorthandapp.com/resources): Printable classroom documentation and intervention resources
+- [ClassDojo Alternative](https://getshorthandapp.com/classdojo-alternative): Private behavior notes and documentation for middle and high school teachers
 
 ### Feature Pages
+- [Quick Note](https://getshorthandapp.com/features/quick-note): Log a student note in under 5 seconds using voice or text
 - [Parent Communication Log](https://getshorthandapp.com/features/parent-communication-log): Timestamped record of every parent contact
 - [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
