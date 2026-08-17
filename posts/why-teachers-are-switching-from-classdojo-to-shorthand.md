@@ -22,11 +22,11 @@ faq:
 
 Let me be honest with you: ClassDojo didn't fail you. You just outgrew it.
 
-That happens. You also outgrew your first car, your first classroom management system, and probably a certain attitude toward hall passes that you had in year one. Growth is good. Switching tools when they stop working is not a failure. It's professionalism.
+That happens. You also outgrew your first car, your first classroom management system, and probably a certain attitude toward hall passes that you had in year one.
 
 But if you've typed "ClassDojo alternatives" into a search bar recently, you're probably not looking for a pep talk. You're looking for something better.
 
-Here's what's actually driving the switch in 2026, and what teachers are finding on the other side.
+Here's what's actually driving the switch in 2026.
 
 ## The Honest Truth About ClassDojo
 
@@ -42,7 +42,7 @@ The problem is that ClassDojo is a communication and engagement tool that got us
 
 ### 1. The Points Stopped Working
 
-By the time students hit 2nd or 3rd grade, or really any age where they've been using ClassDojo for more than a year, the gamification starts to lose its pull. The students who most need a behavior system are also the ones who checked out of the avatar economy in October.
+By the time students hit 2nd or 3rd grade, or really any age where they've been using ClassDojo for more than a year, the gamification starts to lose its pull. For some students, the avatar economy loses its pull by October.
 
 When the tool only works for the students who were already doing fine, it's not doing the job you need it to do. That problem becomes more pronounced after elementary school. Here's [what changes when you're documenting behavior for middle and high schoolers](/classdojo-alternative) instead of running a points board.
 
