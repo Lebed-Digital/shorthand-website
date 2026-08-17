@@ -122,7 +122,7 @@ There's no universal right answer. But there is a right answer for your specific
 
 ## Try ShortHand Free
 
-ShortHand is a Progressive Web App. Nothing to download, works on your phone, tablet, or school laptop. It's free during beta and takes about 30 seconds to install.
+ShortHand is a Progressive Web App. Nothing to download, works on your phone, tablet, or school laptop. It's free to start and takes about 30 seconds to install.
 
 [Try it here](https://app.getshorthandapp.com?demo=true). There's a live demo that requires no sign-up.
 
