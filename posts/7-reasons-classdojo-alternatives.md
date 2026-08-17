@@ -85,7 +85,7 @@ The criteria I applied when I built ShortHand:
 
 ## The Tool I Built (Because Nothing Else Fit)
 
-ShortHand is a Progressive Web App: no download, no app store, works on your phone or tablet or school laptop. It's free during beta.
+ShortHand is a Progressive Web App: no download, no app store, works on your phone or tablet or school laptop. It's free to start.
 
 It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](https://app.getshorthandapp.com?demo=true), there's a live demo that takes no sign-up and opens instantly. And if you want to see the whole field before deciding, I tested and ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) in a separate post.
 
