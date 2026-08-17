@@ -21,7 +21,7 @@ As a 3rd-grade teacher with 20+ years in K-8 classrooms and a former Registered 
 
 This is the most common reason, and the one nobody wants to say out loud: the monster avatars stop working.
 
-In kindergarten and 1st grade, earning points for a cartoon character is genuinely motivating. By 3rd grade, your most behaviorally complex students (the ones you most need a system for) are also the ones who stopped caring about their avatar in October. The tool that was designed to engage students ends up being ignored by the exact students you need it to reach.
+In kindergarten and 1st grade, earning points for a cartoon character is genuinely motivating. By October, some students have already checked out of the avatar economy. The tool that was designed to engage students ends up being ignored by the exact students you need it to reach.
 
 ClassDojo was built around engagement. But behavior documentation for older students isn't about engagement, it's about professional record-keeping. If you teach middle or high school, the gap is even wider. See what a [ClassDojo alternative built for older students](/classdojo-alternative) looks like.
 
