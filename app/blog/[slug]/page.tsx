@@ -14,6 +14,8 @@ const LIBRARY_CTA_MARKER = 'LIBRARYCTAMARKER';
 // Intro sentence is post-specific so the CTA speaks to what that page just
 // covered; the count always comes from REPORT_CARD_COMMENTS.length above, so
 // it can never silently go stale if the library grows.
+// Three intros were reworded 2026-08-20 so they hand off to a speed/findability
+// offer instead of a "more comments" one. See components/LibraryCtaBlock.tsx.
 const LIBRARY_CTA_INTROS: Record<string, string> = {
   'report-card-comments-for-behavior':
     'These 120+ examples cover behavior specifically.',
@@ -24,15 +26,15 @@ const LIBRARY_CTA_INTROS: Record<string, string> = {
   'report-card-comments-for-students-with-adhd':
     'Looking for more ADHD-specific language, plus every other section?',
   'report-card-comments-for-struggling-students':
-    'Need more, across every category?',
+    'Need to find the right one faster, across every category?',
   'social-emotional-report-card-comments':
     'These 50 comments cover social-emotional growth.',
   'student-progress-report-comments-for-teachers':
     'Want comments organized and searchable by category?',
   'second-grade-behavior-report-card-comments':
-    'Want more, beyond second grade behavior?',
+    'Writing comments beyond second grade behavior too?',
   'free-report-card-comment-generator':
-    'This generator creates one comment from what you select. If you would rather browse a large set of ready-made comments and copy what fits:',
+    'This generator creates one comment from what you select. If you would rather search ready-made comments and copy the one that fits:',
 };
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {

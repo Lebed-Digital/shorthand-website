@@ -3032,3 +3032,100 @@ date.
 - **No code changed.** This was a one-time manual data correction using
   machinery that already existed; §22.1 is the reusable procedure for any
   future refund, real or test.
+
+---
+
+## 23. Inline blog CTA repositioned: speed over volume (2026-08-20)
+
+**Status: shipped as an experiment, unproven.** This section is the baseline
+and change point for a later read, not a result. Do not describe it as a win
+until there is post-change click and sales data to compare against.
+
+### 23.1 Baseline being replaced
+
+Measured over the 31 days ending 2026-08-20:
+
+| Metric | Value |
+| --- | --- |
+| Posts carrying the inline CTA | 9 (all `LIBRARYCTAMARKER` posts) |
+| Reach | ~273 GSC clicks / ~350 GA4 sessions |
+| Inline CTA clicks | 2 |
+| CTA click-through rate | ~0.6% |
+| Sales from this funnel | 0 |
+
+### 23.2 Hypothesis
+
+The plumbing works (the marker splice, the tracking, the checkout, all verified
+in §14 to §21). The offer was the problem. The old block led with
+"has 374 comments organized by section and category," which competes directly
+with the free comments the reader has just finished scrolling through on the
+same page. A teacher who already has enough usable comments for tonight does
+not want more comments.
+
+So the CTA now sells **time and findability**: getting to the one comment that
+fits a specific student in seconds, instead of scrolling. Volume moved to a
+supporting proof line at the bottom.
+
+### 23.3 What changed
+
+Single edit in `components/LibraryCtaBlock.tsx`, so all 9 posts move together.
+
+- **Leads with the outcome**: right comment in seconds, not scrolling a long list.
+- **Names the real differentiators**: keyword search across every comment, plus
+  filters for section, category, tone, and grade band, then name
+  personalization and copy, then next student. Every one of those was verified
+  against `app/report-card-comment-library/LibraryClient.tsx` before being
+  claimed. Nothing in the copy describes a feature the product does not have.
+- **Count demoted** to a dim supporting line, still live from
+  `REPORT_CARD_COMMENTS.length`, so it cannot go stale.
+- **Free-generator off-ramp removed from inside the paid block.** The old
+  "Just need one custom comment right now? The free generator still does that,
+  no payment needed" line advertised the free alternative at the moment of
+  conversion. The generator itself is unchanged and still linked from the body
+  copy of all 9 of these posts, so nothing is hidden from readers.
+- **Added a button** below the paragraph copy, alongside the existing inline
+  text link. This is the one change that is not pure copy: a text-only link at
+  0.6% may be an affordance problem as much as a message problem. It also
+  preserves a second tracked click target now that the generator link is gone.
+  It confounds the experiment slightly; if the read afterwards is ambiguous,
+  that is why.
+
+Three entries in `LIBRARY_CTA_INTROS` (`app/blog/[slug]/page.tsx`) were
+reworded so the handoff into the new offer does not itself lead with volume:
+
+| Slug | Was | Now |
+| --- | --- | --- |
+| `report-card-comments-for-struggling-students` | "Need more, across every category?" | "Need to find the right one faster, across every category?" |
+| `second-grade-behavior-report-card-comments` | "Want more, beyond second grade behavior?" | "Writing comments beyond second grade behavior too?" |
+| `free-report-card-comment-generator` | "...browse a large set of ready-made comments and copy what fits:" | "...search ready-made comments and copy the one that fits:" |
+
+The other six intros are untouched.
+
+### 23.4 Deliberately not changed
+
+Blog body copy, the number of free comments in any post, marker position, CTA
+placement in the post, the library and paywall themselves, pricing, SEO titles
+and meta descriptions, the free generator, and the `cta_click` event name and
+`cta_source` values.
+
+### 23.5 Tracking note for the later read
+
+`cta_source` is still the post slug and the event is still `cta_click`, so
+before/after comparison by post is clean. `cta_destination` values changed:
+
+- `report-card-library-inline` — unchanged, still the inline text link.
+- `report-card-library-inline-button` — new, the button.
+- `report-card-library-inline-generator` — retired. Any hits after 2026-08-20
+  are stale sessions on cached pages.
+
+Total CTA clicks per post should be read as the sum of the first two.
+
+### 23.6 Verification performed
+
+`tsc --noEmit` clean, `next build` clean. All 9 marker posts confirmed in the
+built HTML to render the new block with the correct post-specific intro, the
+live 374 count, both links, and no leftover marker string. Both `PDF_GATES`
+posts confirmed unaffected (the gate branch is checked first and neither post
+has a library intro, so the two splices cannot collide). Both links fired
+`cta_click` with the expected payload under a stubbed `gtag` in a real browser
+on `preschool-report-card-comments` and `report-card-comments-for-behavior`.
