@@ -212,6 +212,7 @@ A few features stood out:
 - Parent communication support
 - Student accommodations and goals in one place
 - AI-assisted report generation
+- Ask ShortHand, a way to ask plain-language questions about the notes you've already logged for a student
 
 ### Where ShortHand Isn't the Best Fit
 

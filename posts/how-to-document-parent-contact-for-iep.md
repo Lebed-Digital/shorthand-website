@@ -74,7 +74,7 @@ As a classroom teacher, I know how tempting it is to assume you'll remember the 
 
 Managing this level of documentation on sticky notes or a messy spreadsheet is a fast track to burnout. You need a system that does the heavy lifting. A [parent communication log](/blog/free-parent-communication-log-for-teachers) gives you a simple structure for capturing every contact in one place, whether you use paper or a digital tool.
 
-The ShortHand app timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a searchable record of your outreach in seconds instead of reconstructing it from memory.
+The ShortHand app timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a searchable record of your outreach in seconds instead of reconstructing it from memory. You can also ask Ask ShortHand something like "how many times did I contact this family this semester?" and get a direct answer pulled from your logged entries, rather than counting them by hand.
 
 Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and go into your next annual review with a complete, organized record.
 

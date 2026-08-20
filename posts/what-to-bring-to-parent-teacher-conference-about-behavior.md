@@ -73,6 +73,8 @@ Memory is not a system. That is the lesson that eventually led me to build Short
 
 Instead of relying on sticky notes, scattered emails, or trying to remember what happened three weeks ago, ShortHand helps teachers keep behavior notes, parent communication records, and student documentation organized in one place.
 
+Once those notes are logged, Ask ShortHand can surface a quick pattern summary before you walk in, something like "how often has this happened this month?", instead of you rereading every note the night before the conference.
+
 [Start for free](https://app.getshorthandapp.com?demo=true)
 
 ---

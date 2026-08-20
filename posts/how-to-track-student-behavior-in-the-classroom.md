@@ -38,6 +38,8 @@ I've also learned that behavior tracking is often less about behavior and more a
 
 It also keeps you organized when questions come up. "Why wasn't I told about this sooner?" is a lot easier to answer when you have a log with dates and specific observations.
 
+Once you've got a few weeks of notes built up, a tool like Ask ShortHand lets you ask a question directly, something like "how has Marcus been doing during transitions lately?", and get an answer pulled from what you've actually logged, instead of scrolling back through entries yourself to spot the pattern.
+
 ---
 
 ## The Biggest Mistake Teachers Make With Behavior Tracking
