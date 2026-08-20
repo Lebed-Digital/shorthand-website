@@ -182,6 +182,8 @@ One more thing worth naming: when a behavior incident was genuinely hard, the fi
 
 The templates above are useful. But the real unlock is having the documentation to fill them with something specific.
 
+Once you've built up a few weeks of notes, you can use Ask ShortHand to find out something like "has this happened before with him?" without scrolling back through weeks of entries while you're trying to write the email.
+
 ---
 
 ## Quick Reference: Which Template to Use When
