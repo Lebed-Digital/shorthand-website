@@ -14,6 +14,7 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 - Accommodations at a Glance: see every student's IEP, 504, and classroom accommodations in one place
 - Ask ShortHand (Pro): ask a plain-language question and get a one-time answer pulled only from the notes a teacher has already logged, not a continuing chat and not connected to any outside data source
 - Student Documentation Report (Pro): export a clean PDF of a student's dated, logged notes for a chosen period, a direct export of the teacher's own documentation, not an AI summary
+- Meeting Prep Report (Pro): pulls a student's notes, recent parent communication, goals, and accommodations for a chosen period into one page, with a short AI summary that groups notes into themes without diagnosing or claiming trends
 
 ## Who It's For
 - Elementary and middle school classroom teachers
@@ -50,6 +51,9 @@ Currently in beta and free to join. No credit card required.
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
 - [Parent Emails](https://getshorthandapp.com/features/parent-emails): Turn behavior notes into professional emails instantly
 - [Accommodations at a Glance](https://getshorthandapp.com/features/accommodations): See every student's IEP, 504, and classroom accommodations in one place
+- [Ask ShortHand](https://getshorthandapp.com/features/ask-shorthand): Ask a plain-language question and get an answer pulled from logged notes
+- [Student Documentation Report](https://getshorthandapp.com/features/student-documentation-report): Export a clean PDF of a student's dated, logged notes
+- [Meeting Prep Report](https://getshorthandapp.com/features/meeting-prep-report): Organized summary of a student's notes, communications, goals, and accommodations for meeting prep
 
 ### Free Tools
 - [Free Comment Generator](https://getshorthandapp.com/report-card-comment-generator): Generate report card comments without signing up

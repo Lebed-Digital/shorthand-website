@@ -487,8 +487,11 @@ export default function Home() {
               { emoji: '🟢', title: 'Never Miss a Student', desc: 'Color-coded alerts for who needs a check-in.', href: '/features/behavior-tracking' },
               { emoji: '✉️', title: 'Parent Emails', desc: 'Turn notes into professional messages instantly.', href: '/features/parent-emails' },
               { emoji: '🗂️', title: 'Accommodations at a Glance', desc: 'Every student\'s IEP, 504, and classroom accommodations, in one place.', href: '/features/accommodations' },
-              { emoji: '🔍', title: 'Ask ShortHand', desc: 'Ask a question like "Who needs support this month?" and get an answer pulled straight from your own logged notes.', href: 'https://app.getshorthandapp.com' },
-              { emoji: '📄', title: 'Student Documentation Report', desc: 'Export a clean, dated PDF of a student\'s logged notes, ready to share or review when documentation is requested.', href: 'https://app.getshorthandapp.com' },
+              { emoji: '🔍', title: 'Ask ShortHand', desc: 'Ask a question like "Who needs support this month?" and get an answer pulled straight from your own logged notes.', href: '/features/ask-shorthand' },
+              { emoji: '🗒️', title: 'Meeting Prep Report', desc: 'Pull a student\'s notes, parent communication, goals, and accommodations together before a meeting, with a short AI summary of key themes.', href: '/features/meeting-prep-report' },
+              { emoji: '🎯', title: 'Student Goal Tracking', desc: 'Set AI-suggested goals for a student and track progress from Planted to Bloomed.', href: 'https://app.getshorthandapp.com' },
+              { emoji: '🧠', title: 'SEL Micro-Lessons', desc: 'AI-generated 15-minute Social-Emotional Learning plans based on your class\'s logged patterns.', href: 'https://app.getshorthandapp.com' },
+              { emoji: '🔄', title: 'Specials Rotation', desc: 'Set your school\'s rotation once and always know what\'s today: Art, Gym, Music, and more.', href: 'https://app.getshorthandapp.com' },
             ].map(({ emoji, title, desc, href }) => (
               <Link
                 key={href}
@@ -517,6 +520,9 @@ export default function Home() {
                 <span style={{ fontSize: '1.4rem' }}>{emoji}</span>
                 <span style={{ fontSize: '1rem', fontWeight: 600 }}>{title}</span>
                 <span style={{ fontSize: '0.875rem', lineHeight: 1.5, color: 'var(--text-dim)' }}>{desc}</span>
+                {href.startsWith('http') && (
+                  <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--accent, #a78bfa)', marginTop: '0.25rem' }}>Open ShortHand →</span>
+                )}
               </Link>
             ))}
           </div>
@@ -751,31 +757,14 @@ export default function Home() {
       <section className="coming-soon-section">
         <div className="section-inner">
           <div ref={comingSoonRef} className="coming-soon-inner">
-            <div className="section-label">There&apos;s More Inside</div>
-            <h2 className="section-heading">The three jobs above are just<br /><em>the beginning.</em></h2>
+            <div className="section-label">Always Improving</div>
+            <h2 className="section-heading">ShortHand keeps<br /><em>getting better.</em></h2>
             <p className="coming-soon-body">
-              Once you&apos;re in, you&apos;ll find tools that go even deeper, built from real classroom
-              experience, for the moments that actually matter.
+              New features ship regularly, built from real classroom experience and
+              feedback from teachers actually using it.
             </p>
-            <div className="coming-soon-grid">
-              <div className="coming-soon-card">
-                <div className="coming-soon-card-icon">🎯</div>
-                <div className="coming-soon-card-title">Student Goal Tracking</div>
-                <p className="coming-soon-card-desc">Set AI-suggested goals for individual students and track their growth from Planted to Bloomed, with every step documented.</p>
-              </div>
-              <div className="coming-soon-card">
-                <div className="coming-soon-card-icon">🧠</div>
-                <div className="coming-soon-card-title">SEL Micro-Lessons</div>
-                <p className="coming-soon-card-desc">AI generates Social-Emotional Learning plans tailored to the behavior patterns in your specific class, ready to drop into any spare five minutes.</p>
-              </div>
-              <div className="coming-soon-card">
-                <div className="coming-soon-card-icon">🔄</div>
-                <div className="coming-soon-card-title">Specials Rotation</div>
-                <p className="coming-soon-card-desc">Upload your school&apos;s rotation schedule and ShortHand always knows what&apos;s today: Art, Gym, Music and more, right on your home screen.</p>
-              </div>
-            </div>
             <div className="email-form-wrap">
-              <p className="email-form-label">Want to hear when new tools are ready? I&apos;ll only reach out when something worth your time is available.</p>
+              <p className="email-form-label">Want to hear when something new lands? I&apos;ll only reach out when it&apos;s worth your time.</p>
               {submitted ? (
                 <p className="email-submitted">✓ You&apos;re on the list. I&apos;ll be in touch!</p>
               ) : (
