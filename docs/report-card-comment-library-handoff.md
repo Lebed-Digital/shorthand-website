@@ -3129,3 +3129,32 @@ posts confirmed unaffected (the gate branch is checked first and neither post
 has a library intro, so the two splices cannot collide). Both links fired
 `cta_click` with the expected payload under a stubbed `gtag` in a real browser
 on `preschool-report-card-comments` and `report-card-comments-for-behavior`.
+
+### 23.7 Final shipped copy (post-review tweak)
+
+PR #60 merged to `main` 2026-08-20. Before merge, Greg flagged one sentence in
+`components/LibraryCtaBlock.tsx` as wordy: "...filter by section, category,
+tone, and grade band until what is on screen actually fits the student you
+are writing about." Tightened in the same PR (commit `f2d4744`) to:
+
+> "...filter by section, category, tone, and grade band to quickly find one
+> that fits the student you're writing about."
+
+Full block text as merged:
+
+> {post-specific intro} The **Report Card Comment Library** is built to get
+> you to the right comment in seconds instead of scrolling a long list.
+> Search every comment by keyword, or filter by section, category, tone, and
+> grade band to quickly find one that fits the student you're writing about.
+>
+> Type the student's name once and it drops into every comment. Copy the one
+> that fits, then move to the next student.
+>
+> **[ Find your comments faster ]**
+>
+> 374 comments, organized by section and category. One-time $4.99, no
+> subscription.
+
+No other wording, behavior, or tracking changed from §23.3 to §23.6 above;
+this section exists only so the doc records the exact sentence that actually
+shipped, not the pre-review draft.
