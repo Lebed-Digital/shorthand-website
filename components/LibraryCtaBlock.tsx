@@ -58,8 +58,8 @@ export default function LibraryCtaBlock({ sourceSlug, placement, totalCount, int
           Report Card Comment Library
         </a>{' '}
         is built to get you to the right comment in seconds instead of scrolling a long list. Search
-        every comment by keyword, or filter by section, category, tone, and grade band until what is
-        on screen actually fits the student you are writing about.
+        every comment by keyword, or filter by section, category, tone, and grade band to quickly find
+        one that fits the student you&rsquo;re writing about.
       </p>
       <p style={{ margin: '0.6rem 0 0', lineHeight: 1.6 }}>
         Type the student&rsquo;s name once and it drops into every comment. Copy the one that fits,
