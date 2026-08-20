@@ -487,6 +487,8 @@ export default function Home() {
               { emoji: '🟢', title: 'Never Miss a Student', desc: 'Color-coded alerts for who needs a check-in.', href: '/features/behavior-tracking' },
               { emoji: '✉️', title: 'Parent Emails', desc: 'Turn notes into professional messages instantly.', href: '/features/parent-emails' },
               { emoji: '🗂️', title: 'Accommodations at a Glance', desc: 'Every student\'s IEP, 504, and classroom accommodations, in one place.', href: '/features/accommodations' },
+              { emoji: '🔍', title: 'Ask ShortHand', desc: 'Ask a question like "Who needs support this month?" and get an answer pulled straight from your own logged notes.', href: 'https://app.getshorthandapp.com' },
+              { emoji: '📄', title: 'Student Documentation Report', desc: 'Export a clean, dated PDF of a student\'s logged notes, ready to share or review when documentation is requested.', href: 'https://app.getshorthandapp.com' },
             ].map(({ emoji, title, desc, href }) => (
               <Link
                 key={href}
@@ -760,11 +762,6 @@ export default function Home() {
                 <div className="coming-soon-card-icon">🎯</div>
                 <div className="coming-soon-card-title">Student Goal Tracking</div>
                 <p className="coming-soon-card-desc">Set AI-suggested goals for individual students and track their growth from Planted to Bloomed, with every step documented.</p>
-              </div>
-              <div className="coming-soon-card">
-                <div className="coming-soon-card-icon">🔍</div>
-                <div className="coming-soon-card-title">Ask Your Notes</div>
-                <p className="coming-soon-card-desc">Type a question like &quot;Who was struggling with focus this month?&quot; and get an instant, data-backed answer from your own notes.</p>
               </div>
               <div className="coming-soon-card">
                 <div className="coming-soon-card-icon">🧠</div>

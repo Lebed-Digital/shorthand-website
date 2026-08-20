@@ -12,6 +12,8 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 - Behavior Tracking: review each student's note history and see an 8-week activity view to spot recent patterns
 - Never Miss a Student: color-coded status rings show green within 8 days, amber at 9-15 days, and red at 16+ days
 - Accommodations at a Glance: see every student's IEP, 504, and classroom accommodations in one place
+- Ask ShortHand (Pro): ask a plain-language question and get a one-time answer pulled only from the notes a teacher has already logged, not a continuing chat and not connected to any outside data source
+- Student Documentation Report (Pro): export a clean PDF of a student's dated, logged notes for a chosen period, a direct export of the teacher's own documentation, not an AI summary
 
 ## Who It's For
 - Elementary and middle school classroom teachers
