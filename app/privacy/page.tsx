@@ -70,13 +70,14 @@ export default function PrivacyPage() {
             <div className="privacy-title">What We Collect</div>
             <div className="privacy-desc">
               <strong style={{ color: 'var(--text)' }}>Your account:</strong> Your email address and password (managed securely by Supabase Auth).<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Billing and subscription information (Pro subscribers only):</strong> If you
-              subscribe to ShortHand Pro, your payment is processed by Stripe. We do not store
+              <strong style={{ color: 'var(--text)' }}>Billing and subscription information (Pro subscribers only):</strong>{' '}
+              If you subscribe to ShortHand Pro, your payment is processed by Stripe. We do not store
               your card details ourselves; we store only your subscription status and Stripe&apos;s
               reference IDs for your account.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Student data you enter:</strong> Student names, class periods, behavioral notes, birthday info, parent contact details, and photo URLs, all entered or imported by you.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Google Classroom (optional):</strong> If you connect Google Classroom, we access your course list and student names, emails, and profile photos to help you import your roster. We store a token to keep you connected. You can disconnect at any time.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>AI features:</strong> Some features use AI to turn your notes into polished text. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
+              <strong style={{ color: 'var(--text)' }}>AI features:</strong>{' '}
+              Some features use AI to turn your notes into polished text. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
             </div>
           </div>
 
