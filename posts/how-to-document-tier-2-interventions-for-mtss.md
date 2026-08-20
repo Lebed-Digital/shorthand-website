@@ -154,7 +154,7 @@ Consistent documentation helps answer important questions:
 
 Without documentation, those conversations become guesswork. With documentation, teams can make decisions based on patterns instead of memories. If the data eventually points toward a referral or formal evaluation, see [How to Document Student Behavior for IEP Meetings](/blog/how-to-document-student-behavior-for-iep) for how to organize what you have collected.
 
-Once a few weeks of these notes are logged, that history becomes something you can actually query instead of re-reading every entry before a team meeting. Ask ShortHand lets you ask something like "how has work refusal during math changed this month?" and it pulls the answer directly from what you documented. It only knows what you logged, so the documentation habit above is still what makes this useful.
+Once a few weeks of these notes are logged, that history becomes something you can actually use instead of re-reading every entry before a team meeting. Ask ShortHand can help you find out something like, "how has work refusal during math changed this month?" and it pulls the answer directly from what you documented. It only knows what you logged, so the documentation habit above is still what makes this useful.
 
 ## Final Thoughts
 

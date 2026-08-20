@@ -148,7 +148,7 @@ If you want a simple framework for what to track from the start of the year, [ho
 
 [ShortHand](https://getshorthandapp.com) was built to make this kind of tracking realistic. Log a quick note in seconds from your phone. Pull up a student's full history before a parent meeting. Let the notes do the remembering so you do not have to.
 
-Once that history exists, Ask ShortHand lets you ask about it directly, something like "has this been a pattern or a one-off?", and get an answer drawn only from the notes you've logged. It cannot spot a pattern you never wrote down. The documentation habit above is still what makes it useful.
+Once that history exists, Ask ShortHand can help you figure out something like "has this been a pattern or a one-off?" based only on the notes you've logged. It cannot spot a pattern you never wrote down. The documentation habit above is still what makes it useful.
 
 ---
 
