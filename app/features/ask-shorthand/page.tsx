@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -19,8 +20,19 @@ export const metadata: Metadata = {
 };
 
 export default function AskShortHandPage() {
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "ShortHand Ask ShortHand Walkthrough",
+    "description": "See how to ask a plain-language question in ShortHand and get an answer pulled straight from your logged notes.",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "uploadDate": "2026-08-20T00:00:00+00:00",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/Nkawyxj_yiA"
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       <nav>
         <div className="nav-inner">
           <div className="nav-left">
@@ -54,6 +66,8 @@ export default function AskShortHandPage() {
         <p className="detail-desc">
           A Pro feature, included with your ShortHand subscription.
         </p>
+
+        <FeatureVideo videoId="Nkawyxj_yiA" title="Ask ShortHand walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
