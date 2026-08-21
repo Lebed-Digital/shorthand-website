@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
+import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -19,8 +20,19 @@ export const metadata: Metadata = {
 };
 
 export default function MeetingPrepReportPage() {
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "ShortHand Meeting Prep Report Walkthrough",
+    "description": "See how ShortHand builds a Meeting Prep Report from your logged notes, communications, goals, and accommodations before a conference or IEP meeting.",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "uploadDate": "2026-08-20T00:00:00+00:00",
+    "embedUrl": "https://www.youtube-nocookie.com/embed/K5AZIYJGJ7U"
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
       <nav>
         <div className="nav-inner">
           <div className="nav-left">
@@ -58,6 +70,8 @@ export default function MeetingPrepReportPage() {
         <p className="detail-desc">
           A Pro feature, included with your ShortHand subscription.
         </p>
+
+        <FeatureVideo videoId="K5AZIYJGJ7U" title="Meeting Prep Report walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
