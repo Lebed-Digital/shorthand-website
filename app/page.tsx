@@ -12,6 +12,8 @@ import { fireCtaClick } from '../lib/gtag';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
+
 const jobs = [
   {
     slug: 'quick-note',
@@ -232,7 +234,7 @@ export default function Home() {
         <div className="hero-canvas"><SplineHero /></div>
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
-            <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; No App Store &nbsp;·&nbsp; Works on Any Device</div>
+            <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; Works on Any Device &nbsp;·&nbsp; Free to Start</div>
             <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
             <p className="hero-sub">
               Log a behavior note in 5 seconds. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
@@ -258,6 +260,22 @@ export default function Home() {
               >
                 See How It Works
               </motion.a>
+            </div>
+            {/* Secondary install option. Android teachers can get the real Play
+                listing instead of the Add to Home Screen workaround. */}
+            <div className="hero-play-badge">
+              <span className="play-badge-label">Android teachers:</span>
+              <a
+                href={PLAY_STORE_URL}
+                onClick={(e) => trackCta('google_play_badge', PLAY_STORE_URL, e)}
+              >
+                <Image
+                  src="/badges/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  width={162}
+                  height={63}
+                />
+              </a>
             </div>
             <div style={{
               display: 'flex',
@@ -825,7 +843,7 @@ export default function Home() {
               <div className="section-label">Get started</div>
               <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
               <p className="cta-sub">
-                Catch problems before they become calls home. ShortHand is completely free. Open it on any device and start using it in minutes. Nothing to install from an app store.
+                Catch problems before they become calls home. ShortHand is completely free. Open it in your browser on any device, or get it on Google Play for Android.
               </p>
               <div className="cta-btns">
                 <motion.a
@@ -838,6 +856,18 @@ export default function Home() {
                 >
                   Open ShortHand →
                 </motion.a>
+                <a
+                  href={PLAY_STORE_URL}
+                  className="cta-play-badge"
+                  onClick={(e) => trackCta('google_play_badge', PLAY_STORE_URL, e)}
+                >
+                  <Image
+                    src="/badges/google-play-badge.png"
+                    alt="Get it on Google Play"
+                    width={180}
+                    height={70}
+                  />
+                </a>
               </div>
             </div>
           </div>

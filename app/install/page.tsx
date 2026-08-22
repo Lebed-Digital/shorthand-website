@@ -1,8 +1,11 @@
 'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+
+const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 
 const tabs = ['iPhone', 'Android', 'Desktop'] as const;
 type Tab = typeof tabs[number];
@@ -16,11 +19,9 @@ const steps: Record<Tab, { icon: string; text: string }[]> = {
     { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app. Tap to open!' },
   ],
   Android: [
-    { icon: '🌐', text: 'Tap the "Open App" button at the top of this page to open ShortHand in Chrome' },
-    { icon: '⋮', text: 'Tap the three-dot menu in the top-right corner' },
-    { icon: '➕', text: 'Tap "Add to Home screen"' },
-    { icon: '✏️', text: 'Name it "ShortHand" and tap Add' },
-    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app. Tap to open!' },
+    { icon: '▶️', text: 'Tap the "Get it on Google Play" badge above to open the ShortHand listing' },
+    { icon: '⬇️', text: 'Tap Install and wait for the download to finish' },
+    { icon: '🎉', text: 'ShortHand appears in your app drawer and on your home screen. Tap to open!' },
   ],
   Desktop: [
     { icon: '🌐', text: 'Click the "Open App" button at the top of this page to open ShortHand in your browser' },
@@ -32,7 +33,7 @@ const steps: Record<Tab, { icon: string; text: string }[]> = {
 
 const notes: Record<Tab, string> = {
   iPhone: 'Must use Safari. Chrome on iPhone does not support Add to Home Screen.',
-  Android: 'Works best in Chrome. Some Android devices may show "Install app" instead of "Add to Home screen".',
+  Android: 'Prefer not to use the Play Store? You can still install from the browser: open ShortHand in Chrome, tap the three-dot menu, then tap "Add to Home screen". Some devices show "Install app" instead.',
   Desktop: 'Works in Chrome and Edge. Firefox does not support PWA install.',
 };
 
@@ -58,11 +59,12 @@ export default function InstallPage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="install-hero">
-        <div className="section-label">Free · No App Store · Any Device</div>
+        <div className="section-label">Works on Any Device · Free to Start</div>
         <h1 className="install-title">Add ShortHand<br />to Your <em>Home Screen</em></h1>
         <p className="install-sub">
-          ShortHand is a web app. Nothing to download. Follow the steps below
-          for your device and it will live on your home screen just like a regular app.
+          On Android, get ShortHand from Google Play. On iPhone and desktop, it installs
+          straight from your browser. Follow the steps below for your device and it will
+          live on your home screen just like a regular app.
         </p>
       </div>
 
@@ -91,6 +93,18 @@ export default function InstallPage() {
             transition={{ duration: 0.25, ease: 'easeOut' }}
             className="install-steps"
           >
+            {active === 'Android' && (
+              <a href={PLAY_STORE_URL} className="install-play-badge">
+                <Image
+                  src="/badges/google-play-badge.png"
+                  alt="Get it on Google Play"
+                  width={206}
+                  height={80}
+                  priority
+                />
+              </a>
+            )}
+
             {steps[active].map((step, i) => (
               <div key={i} className="install-step">
                 <div className="install-step-num">{i + 1}</div>
