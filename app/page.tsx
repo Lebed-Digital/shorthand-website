@@ -843,7 +843,7 @@ export default function Home() {
               <div className="section-label">Get started</div>
               <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
               <p className="cta-sub">
-                Catch problems before they become calls home. ShortHand is completely free. Open it in your browser on any device, or get it on Google Play for Android.
+                Catch problems before they become calls home. ShortHand is free to start. Open it in your browser on any device, or get it on Google Play for Android.
               </p>
               <div className="cta-btns">
                 <motion.a
