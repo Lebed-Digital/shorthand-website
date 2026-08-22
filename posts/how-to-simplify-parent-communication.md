@@ -59,7 +59,7 @@ You do not have to wonder how to contact parents about behavior. You just state 
 Done. Send. Go home. The parent gets the information they need, and you get your evening back. It removes the emotion and keeps the focus on the behavior.
 
 ## Finding the Right Tool for the Job
-This is exactly why I started relying on ShortHand. It is a completely free app built specifically for individual classroom teachers like us.
+This is exactly why I started relying on ShortHand. It is free to start and built specifically for individual classroom teachers like us.
 
 You do not need school buy-in. You do not need to ask the IT department for permission or wait for a district-wide rollout. You just pull out your phone or open your laptop and get to work.
 
