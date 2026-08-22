@@ -219,6 +219,15 @@ nav {
   display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
   opacity: 0; animation: fadeUp 0.8s 0.55s ease forwards;
 }
+/* Secondary install option under the hero buttons. Deliberately quiet: small
+   label, badge at minimum-legible size, so it reads below the primary CTAs. */
+.hero-play-badge {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  margin-top: 18px;
+  opacity: 0; animation: fadeUp 0.8s 0.65s ease forwards;
+}
+.hero-play-badge img { display: block; height: auto; margin-left: -8px; }
+.play-badge-label { font-size: 0.78rem; font-weight: 500; color: var(--text-dim); }
 /* HERO SPLIT LAYOUT */
 .hero--split { text-align: left; align-items: stretch; justify-content: center; }
 .hero-split-inner {
@@ -702,6 +711,9 @@ section { position: relative; z-index: 1; }
 .install-steps {
   display: flex; flex-direction: column; gap: 16px;
 }
+/* Primary Android install path, so it sits above the numbered steps. */
+.install-play-badge { display: flex; justify-content: center; margin-bottom: 4px; }
+.install-play-badge img { display: block; height: auto; max-width: 100%; }
 .install-step {
   display: flex; align-items: flex-start; gap: 16px;
   padding: 24px 28px; border-radius: 16px;
@@ -803,7 +815,11 @@ section { position: relative; z-index: 1; }
 }
 .cta-sub { font-size: 0.95rem; font-weight: 300; color: var(--text-dim); margin-bottom: 40px; line-height: 1.8; }
 .cta-fine { margin-top: 18px; font-size: 0.75rem; color: var(--text-faint); }
-.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 8px; }
+.cta-btns { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 8px; align-items: center; }
+/* Google Play badge ships with its own transparent padding, so it needs no
+   extra box styling. Negative margin cancels that padding for optical alignment. */
+.cta-play-badge { display: inline-flex; margin: 0 -8px; }
+.cta-play-badge img { display: block; height: auto; }
 
 /* FOOTER */
 footer {
@@ -993,6 +1009,7 @@ footer {
   .hero-content--left .hero-chips { justify-content: center; }
   .hero-content--left .hero-sub { margin: 0 auto 44px; }
   .hero-content--left .hero-ctas { justify-content: center; }
+  .hero-play-badge { justify-content: center; }
   .hero-phone-mockup { width: 260px; }
   /* Tighten hero content on small screens */
   .hero h1 {
