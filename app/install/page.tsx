@@ -125,12 +125,14 @@ export default function InstallPage() {
           <div className="videos-header">
             <div className="section-label">Install Walkthrough</div>
             <h2 className="section-heading">Watch the Install</h2>
-            <p className="section-sub">Step-by-step video for iPhone and Android.</p>
+            <p className="section-sub">Step-by-step video for iPhone, plus the browser install on Android.</p>
           </div>
           <div className="videos-grid">
             {[
               { id: 'fef65Q9xlvk', title: 'Install on iPhone' },
-              { id: 'cJ-PlHk0diw', title: 'Install on Android' },
+              // Android now installs from Google Play, so this walkthrough covers
+              // the browser fallback rather than the primary path.
+              { id: 'cJ-PlHk0diw', title: 'Android: Install From Your Browser' },
             ].map((v) => (
               <div key={v.id} className="video-card">
                 <div className="video-frame-wrap">
