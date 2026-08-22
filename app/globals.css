@@ -525,7 +525,11 @@ section { position: relative; z-index: 1; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  justify-content: center;
 }
+/* The install page has a single video, so center it instead of stranding it
+   in the first of four columns. */
+.videos-grid:has(> :only-child) { grid-template-columns: minmax(0, 320px); }
 .video-card { display: flex; flex-direction: column; gap: 14px; }
 .video-frame-wrap {
   position: relative;
