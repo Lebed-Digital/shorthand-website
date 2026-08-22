@@ -87,7 +87,7 @@ What it does instead is keep the record. Every parent contact is timestamped, ti
 
 That narrowness is the point. The reason the record is fast to search is that there is nothing else in it.
 
-You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and start immediately. It is free for individual teachers.
+You do not need school buy-in. You do not need a district training session. You go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and start immediately. It is free to start for individual teachers.
 
 ---
 
