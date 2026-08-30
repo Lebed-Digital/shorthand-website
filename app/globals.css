@@ -1118,6 +1118,58 @@ footer {
   max-width: 520px;
 }
 
+.classdojo-product-proof {
+  display: grid;
+  grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  margin: 2rem 0 1.75rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+}
+.blog-content .classdojo-product-proof__image {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.25);
+}
+.blog-content .classdojo-product-proof__image img {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.classdojo-product-proof__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.classdojo-product-proof__label {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .classdojo-product-proof {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .classdojo-product-proof__image {
+    width: min(72vw, 260px);
+    margin: 0 auto;
+  }
+}
+
 .blog-back-link {
   display: inline-block;
   margin-top: 3rem;

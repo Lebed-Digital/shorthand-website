@@ -60,6 +60,8 @@ It works without school buy-in. No IT ticket, no license, no waiting for an admi
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true)
 
+CLASSDOJOPRODUCTPROOFMARKER
+
 **Doesn't do:** Student-facing gamification, class announcement feeds, conference scheduling.
 
 ---

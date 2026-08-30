@@ -5,11 +5,13 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import PdfGate from '../../../components/PdfGate';
 import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
+import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
 const LIBRARY_CTA_MARKER = 'LIBRARYCTAMARKER';
+const CLASSDOJO_PRODUCT_PROOF_MARKER = '<p>CLASSDOJOPRODUCTPROOFMARKER</p>';
 
 // Intro sentence is post-specific so the CTA speaks to what that page just
 // covered; the count always comes from REPORT_CARD_COMMENTS.length above, so
@@ -174,6 +176,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               intro={LIBRARY_CTA_INTROS[slug]}
             />
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(LIBRARY_CTA_MARKER)[1] }} />
+          </div>
+        ) : slug === 'best-classdojo-alternatives-2026' && post.contentHtml.includes(CLASSDOJO_PRODUCT_PROOF_MARKER) ? (
+          <div className="blog-content">
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(CLASSDOJO_PRODUCT_PROOF_MARKER)[0] }} />
+            <ClassDojoProductProof />
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(CLASSDOJO_PRODUCT_PROOF_MARKER)[1] }} />
           </div>
         ) : (
           <div
