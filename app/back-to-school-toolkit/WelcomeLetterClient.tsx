@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { fireCtaClick } from '../../lib/gtag';
-import LeadGate from '../../components/LeadGate';
+import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
 const GRADES = [
   'Pre-K', 'Kindergarten', '1st Grade', '2nd Grade', '3rd Grade',
@@ -48,9 +48,7 @@ export default function WelcomeLetterClient() {
         </div>
       </div>
 
-      <LeadGate source="welcome-letter-generator">
-        <WelcomeLetterInner />
-      </LeadGate>
+      <WelcomeLetterInner />
     </div>
   );
 }
@@ -79,8 +77,8 @@ function WelcomeLetterInner() {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
       setResult(data.letter);
-    } catch (e: any) {
-      setError(e.message ?? 'Something went wrong. Please try again.');
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : 'Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -98,8 +96,8 @@ function WelcomeLetterInner() {
       const data = await res.json();
       if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
       setResult(data.letter);
-    } catch (e: any) {
-      setError(e.message ?? 'Something went wrong. Please try again.');
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : 'Something went wrong. Please try again.');
     } finally {
       setLoading(false);
     }
@@ -289,6 +287,8 @@ function WelcomeLetterInner() {
                 New
               </button>
             </div>
+
+            <OptionalEmailCapture source="welcome-letter-generator-post-result" />
 
             <div style={{ marginTop: 20, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid rgba(167,139,250,0.25)' }}>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: 8 }}>Want to stay organized all year?</div>
