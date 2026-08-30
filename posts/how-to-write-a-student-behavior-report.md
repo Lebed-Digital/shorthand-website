@@ -57,6 +57,8 @@ List what you have implemented, roughly when, and what happened, including the h
 
 Three or four sentences of factual wrap-up: overall trend, current status, and what you need. You are allowed to make a professional request ("I would welcome the team's guidance on supports for independent work time"). You are not writing recommendations for diagnosis, placement, or medication. Not your lane, and putting it in writing creates problems.
 
+WORKFLOWBRIDGEMARKER
+
 ## A complete example
 
 Here is what all five sections look like assembled. Details are invented; the shape is real.

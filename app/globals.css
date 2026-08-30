@@ -1118,6 +1118,75 @@ footer {
   max-width: 520px;
 }
 
+.blog-workflow-bridge {
+  margin: 2rem 0;
+  padding: 1.4rem;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(255, 255, 255, 0.035));
+}
+.blog-content .blog-workflow-bridge__eyebrow {
+  margin: 0 0 0.35rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.blog-content .blog-workflow-bridge__title {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.blog-content .blog-workflow-bridge__description {
+  margin: 0.55rem 0 1rem;
+}
+.blog-content .blog-workflow-bridge__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.1rem;
+  padding: 0;
+  list-style: none;
+}
+.blog-content .blog-workflow-bridge__steps li {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  margin: 0;
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+.blog-workflow-bridge__steps li > span {
+  display: grid;
+  flex: 0 0 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(249, 115, 22, 0.16);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.blog-content .blog-workflow-bridge__cta {
+  color: #0e0e0d;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .blog-workflow-bridge {
+    padding: 1.2rem;
+  }
+  .blog-content .blog-workflow-bridge__steps {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+}
+
 .classdojo-product-proof {
   display: grid;
   grid-template-columns: minmax(180px, 230px) minmax(0, 1fr);

@@ -91,6 +91,8 @@ When something is happening repeatedly, vague language makes parents defensive. 
 
 **Why it works:** It names a specific pattern, mentions what you're already doing, and invites the parent as a partner rather than informing them of a problem. The collaborative framing changes the entire tone. For the harder version of this conversation, when the behavior is serious and repeated, see [how to email parents about bad behavior](/blog/how-to-email-parents-about-bad-behavior).
 
+WORKFLOWBRIDGEMARKER
+
 ---
 
 ## Template 3: The Meeting Request

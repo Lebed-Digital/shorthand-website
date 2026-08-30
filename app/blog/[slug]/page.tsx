@@ -6,12 +6,45 @@ import TrackedLink from '../../../components/TrackedLink';
 import PdfGate from '../../../components/PdfGate';
 import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
 import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
+import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
 const LIBRARY_CTA_MARKER = 'LIBRARYCTAMARKER';
 const CLASSDOJO_PRODUCT_PROOF_MARKER = '<p>CLASSDOJOPRODUCTPROOFMARKER</p>';
+const WORKFLOW_BRIDGE_MARKER = '<p>WORKFLOWBRIDGEMARKER</p>';
+
+const WORKFLOW_BRIDGES: Record<string, {
+  title: string;
+  description: string;
+  steps: [string, string, string];
+  ctaCopy: string;
+  trackingLabel: string;
+}> = {
+  'how-to-write-a-student-behavior-report': {
+    title: 'Build the record before you need the report',
+    description: 'The five sections above are much easier to fill when each claim starts as a dated classroom note.',
+    steps: [
+      'Log what happened while it is fresh',
+      'Keep each student\'s history in one timeline',
+      'Use those records to draft the report when a meeting comes up',
+    ],
+    ctaCopy: 'Start a behavior record',
+    trackingLabel: 'behavior-report-workflow-bridge',
+  },
+  'sample-emails-to-parents-about-student-behavior': {
+    title: 'Start with the record, then write the email',
+    description: 'A template gives you the structure. ShortHand keeps the specific details ready so the message can stay factual.',
+    steps: [
+      'Log the behavior and context',
+      'Keep the dated notes with the student',
+      'Turn those notes into a parent email draft',
+    ],
+    ctaCopy: 'Draft from your notes',
+    trackingLabel: 'behavior-email-workflow-bridge',
+  },
+};
 
 // Intro sentence is post-specific so the CTA speaks to what that page just
 // covered; the count always comes from REPORT_CARD_COMMENTS.length above, so
@@ -160,7 +193,21 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </p>
         )}
 
-        {PDF_GATES[slug] && post.contentHtml.includes(PDF_GATE_MARKER) ? (
+        {WORKFLOW_BRIDGES[slug] && post.contentHtml.includes(WORKFLOW_BRIDGE_MARKER) ? (
+          <div className="blog-content">
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[0] }} />
+            <BlogWorkflowBridge {...WORKFLOW_BRIDGES[slug]} sourceSlug={slug} />
+            {PDF_GATES[slug] && post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[1].includes(PDF_GATE_MARKER) ? (
+              <>
+                <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[1].split(PDF_GATE_MARKER)[0] }} />
+                <PdfGate {...PDF_GATES[slug]} />
+                <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[1].split(PDF_GATE_MARKER)[1] }} />
+              </>
+            ) : (
+              <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[1] }} />
+            )}
+          </div>
+        ) : PDF_GATES[slug] && post.contentHtml.includes(PDF_GATE_MARKER) ? (
           <div className="blog-content">
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[0] }} />
             <PdfGate {...PDF_GATES[slug]} />
