@@ -1,10 +1,10 @@
-import { GROQ_CHAT_COMPLETIONS_URL, GROQ_TEXT_MODEL } from '@/lib/ai-config';
+import { OPENAI_CHAT_COMPLETIONS_URL, OPENAI_REASONING_EFFORT, OPENAI_TEXT_MODEL } from '@/lib/ai-config';
 import { checkRateLimit } from '@/lib/ratelimit';
 
 export const runtime = 'edge';
 
 export async function POST(req: Request): Promise<Response> {
-  const apiKey = process.env.GROQ_API_KEY;
+  const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
     return Response.json({ error: { message: 'Server misconfigured.' } }, { status: 500 });
   }
@@ -22,14 +22,15 @@ export async function POST(req: Request): Promise<Response> {
   }
 
   try {
-    const res = await fetch(GROQ_CHAT_COMPLETIONS_URL, {
+    const res = await fetch(OPENAI_CHAT_COMPLETIONS_URL, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: GROQ_TEXT_MODEL,
+        model: OPENAI_TEXT_MODEL,
+        reasoning_effort: OPENAI_REASONING_EFFORT,
         messages: [
           {
             role: 'system',
@@ -38,7 +39,7 @@ export async function POST(req: Request): Promise<Response> {
           },
           { role: 'user', content: prompt },
         ],
-        max_tokens: 200,
+        max_completion_tokens: 200,
         temperature: 0.7,
       }),
       signal: AbortSignal.timeout(30_000),
