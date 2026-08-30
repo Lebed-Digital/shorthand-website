@@ -605,6 +605,31 @@ export default function Home() {
         </div>
       </section>
 
+      {/* DEMO / FREE / PRO */}
+      <section className="plans-section" aria-labelledby="plans-heading">
+        <div className="section-inner">
+          <div className="section-label">Getting started</div>
+          <h2 id="plans-heading" className="section-heading">Demo, Free, and <em>Pro.</em></h2>
+          <p className="section-sub">Try it first. Use it free. Upgrade only if you want to.</p>
+          <div className="plans-grid">
+            <div className="plan-card">
+              <div className="plan-card-kicker">No account</div>
+              <h3 className="plan-card-title">Guided demo</h3>
+              <p className="plan-card-body">Open ShortHand with sample students and click through the app. No account needed.</p>
+            </div>
+            <div className="plan-card">
+              <div className="plan-card-kicker">Free</div>
+              <h3 className="plan-card-title">Your classroom</h3>
+              <p className="plan-card-body">Create a free account to use ShortHand with your own class. Core documentation stays free.</p>
+            </div>
+            <div className="plan-card plan-card--pro">
+              <div className="plan-card-kicker">Optional</div>
+              <h3 className="plan-card-title">Pro</h3>
+              <p className="plan-card-body">$4.99/month if you want extras like Ask ShortHand and Meeting Prep reports. New Pro users get a 30-day trial, no credit card.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Privacy Promise */}
       <section className="privacy-section">
@@ -722,7 +747,7 @@ export default function Home() {
               },
               {
                 q: 'Is ShortHand free to use?',
-                a: 'ShortHand is currently in beta and free to join. Sign up to get access and be notified when new features are ready.',
+                a: 'Yes. Try the guided demo with no account. Create a free account to use ShortHand with your own class. Pro is optional at $4.99/month, and new Pro users get a 30-day trial with no credit card.',
               },
             ].map(({ q, a }) => (
               <details key={q} style={{
@@ -841,9 +866,9 @@ export default function Home() {
           <div ref={ctaRef} className="cta-layout">
             <div className="cta-text">
               <div className="section-label">Get started</div>
-              <h2 className="cta-heading">Free to try.<br />No sign-up required.</h2>
+              <h2 className="cta-heading">Try the guided demo.<br />No account needed.</h2>
               <p className="cta-sub">
-                Catch problems before they become calls home. ShortHand is free to start. Open it in your browser on any device, or get it on Google Play for Android.
+                Catch problems before they become calls home. Open the demo in your browser, then create a free account when you want to use ShortHand with your class. Pro is optional.
               </p>
               <div className="cta-btns">
                 <motion.a

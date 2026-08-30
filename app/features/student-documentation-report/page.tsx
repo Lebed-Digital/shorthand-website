@@ -56,7 +56,7 @@ export default function StudentDocumentationReportPage() {
           in your own words, unedited.
         </p>
         <p className="detail-desc">
-          A Pro feature, included with your ShortHand subscription.
+          This is part of ShortHand Pro. Pro is $4.99/month, and new Pro users get a 30-day trial with no credit card.
         </p>
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
@@ -65,8 +65,8 @@ export default function StudentDocumentationReportPage() {
       <FeatureNav current="student-documentation-report" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
-        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_student-documentation-report">Get Started Free →</TrackedLink>
+        <p className="detail-cta-sub">Included with Pro. Works on any device.</p>
+        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_student-documentation-report">Get Started →</TrackedLink>
       </div>
 
       <Footer />

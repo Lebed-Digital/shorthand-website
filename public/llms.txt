@@ -33,7 +33,7 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 K-12 teachers, primarily elementary school educators and special education teachers managing classroom behavior documentation, parent communication logs, and student reporting.
 
 ## Pricing
-Currently in beta and free to join. No credit card required.
+Guided demo: no account required. Free plan: create an account to use ShortHand with your own class. Pro is optional at $4.99/month. New Pro users get a 30-day trial with no credit card.
 
 ## URLs
 

@@ -68,7 +68,7 @@ export default function MeetingPrepReportPage() {
           summarizes; the Documentation Report exports your notes exactly as written.
         </p>
         <p className="detail-desc">
-          A Pro feature, included with your ShortHand subscription.
+          This is part of ShortHand Pro. Pro is $4.99/month, and new Pro users get a 30-day trial with no credit card.
         </p>
 
         <FeatureVideo videoId="K5AZIYJGJ7U" title="Meeting Prep Report walkthrough" hideControls />
@@ -79,8 +79,8 @@ export default function MeetingPrepReportPage() {
       <FeatureNav current="meeting-prep-report" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
-        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_meeting-prep-report">Get Started Free →</TrackedLink>
+        <p className="detail-cta-sub">Included with Pro. Works on any device.</p>
+        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_meeting-prep-report">Get Started →</TrackedLink>
       </div>
 
       <Footer />
