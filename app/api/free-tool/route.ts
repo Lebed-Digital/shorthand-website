@@ -1,3 +1,4 @@
+import { GROQ_CHAT_COMPLETIONS_URL, GROQ_TEXT_MODEL } from '@/lib/ai-config';
 import { checkRateLimit } from '@/lib/ratelimit';
 
 export const runtime = 'edge';
@@ -21,14 +22,14 @@ export async function POST(req: Request): Promise<Response> {
   }
 
   try {
-    const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    const res = await fetch(GROQ_CHAT_COMPLETIONS_URL, {
       method: 'POST',
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: GROQ_TEXT_MODEL,
         messages: [
           {
             role: 'system',
