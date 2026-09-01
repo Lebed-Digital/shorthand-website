@@ -503,6 +503,7 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.875rem', maxWidth: '920px', margin: '0 auto' }}>
             {[
               { emoji: '🟢', title: 'Never Miss a Student', desc: 'Color-coded alerts for who needs a check-in.', href: '/features/behavior-tracking' },
+              { emoji: '📥', title: 'Import Your Class Roster', desc: 'Paste your whole class list and ShortHand sorts it automatically.', href: '/features/import-roster' },
               { emoji: '✉️', title: 'Parent Emails', desc: 'Turn notes into professional messages instantly.', href: '/features/parent-emails' },
               { emoji: '🗂️', title: 'Accommodations at a Glance', desc: 'Every student\'s IEP, 504, and classroom accommodations, in one place.', href: '/features/accommodations' },
               { emoji: '🔍', title: 'Ask ShortHand', desc: 'Ask a question like "Who needs support this month?" and get an answer pulled straight from your own logged notes.', href: '/features/ask-shorthand' },
