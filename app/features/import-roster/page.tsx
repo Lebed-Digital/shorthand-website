@@ -8,11 +8,11 @@ import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Import Your Class Roster | ShortHand',
-  description: 'Paste student names, parent names, emails, and phone numbers straight from a spreadsheet. ShortHand organizes everything automatically, and you choose how much of each name gets stored.',
+  description: 'Copy your class list from a spreadsheet, student names, parent names, emails, and phone numbers, and paste it into ShortHand. It sorts everything automatically, and you choose how much of each name gets stored.',
   alternates: { canonical: 'https://getshorthandapp.com/features/import-roster' },
   openGraph: {
     title: 'Import Your Class Roster | ShortHand',
-    description: 'Paste student names, parent names, emails, and phone numbers straight from a spreadsheet. ShortHand organizes everything automatically, and you choose how much of each name gets stored.',
+    description: 'Copy your class list from a spreadsheet, student names, parent names, emails, and phone numbers, and paste it into ShortHand. It sorts everything automatically, and you choose how much of each name gets stored.',
     url: 'https://getshorthandapp.com/features/import-roster',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -47,19 +47,19 @@ export default function ImportRosterPage() {
       <div className="detail-hero">
         <h1 className="detail-title">Import Your Class <em>Roster</em></h1>
         <p className="detail-desc">
-          Copy your class list straight out of a spreadsheet, student names, parent
-          names, emails, and phone numbers, and paste it into ShortHand. It sorts
-          everything into the right spots automatically. No template to fill out,
-          no adding students one at a time.
+          Copy your class list straight from a spreadsheet, student names, parent
+          names, emails, and phone numbers, and paste it into ShortHand. It
+          automatically sorts everything into the right places. No template. No
+          adding students one at a time.
         </p>
         <p className="detail-desc">
-          You also choose how much of each student&apos;s name ShortHand keeps: initials
-          only (recommended), first name and last initial, or full name. Pick whatever
-          fits how much identifying information you&apos;re comfortable storing, and
-          change it later if you want.
+          You also choose how much of each student&apos;s name ShortHand stores:
+          initials only (recommended), first name and last initial, or full name.
+          Pick the level you&apos;re comfortable with, and change it later if you want.
         </p>
         <p className="detail-desc">
-          A whole class list, set up correctly, in the time it takes to copy and paste.
+          A whole class roster, set up correctly, in about the time it takes to
+          copy and paste.
         </p>
 
         <FeatureVideo videoId="KP8J5_kcHr0" title="Import Your Class Roster walkthrough" hideControls />
