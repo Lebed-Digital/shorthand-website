@@ -9,6 +9,7 @@ import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
 import { fireCtaClick } from '../lib/gtag';
+import { withAttribution } from '../lib/attribution';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
@@ -62,11 +63,12 @@ export default function Home() {
 
   function trackCta(label: string, url: string, e?: React.MouseEvent) {
     e?.preventDefault();
-    const navigate = () => { window.location.href = url; };
+    const destination = withAttribution(url, window.location.pathname, window.location.search);
+    const navigate = () => { window.location.href = destination; };
     fireCtaClick({
       cta_source: 'homepage',
       cta_destination: label,
-      link_url: url,
+      link_url: destination,
       event_callback: navigate,
     });
     setTimeout(navigate, 300);

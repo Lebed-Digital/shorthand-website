@@ -36,6 +36,16 @@ This was a signup-first approach that required account creation before seeing th
 
 Prior to 2026-07-15, this doc described the split as strictly "body CTAs → demo, nav/discovery CTAs → `/install`," and listed the homepage hero as one of the CTAs left on `/install`. That was already stale relative to the code: the homepage hero has used `?demo=true` directly since the 2026-06-26 migration (never routed through `/install`), and nav CTAs across the site link straight to the bare app URL, not to `/install`. The six feature pages and `classdojo-alternative` were also missing from the doc entirely. The "Current standard" section above reflects what the code actually does and why, verified against `app/page.tsx`, the six `app/features/*/page.tsx` files, and `app/classdojo-alternative/page.tsx`.
 
+### First-touch attribution on app-bound CTAs (added 2026-09-03)
+
+App-bound links fired through the tracked click paths (`TrackedLink`, `LibraryCtaBlock`, the homepage's `trackCta`, and the free-tool's "Try ShortHand free" CTA) now pass through `lib/attribution.ts`'s `withAttribution()` before navigating. It appends two things to the outbound `app.getshorthandapp.com` URL, only if not already present on the destination:
+- `lp` — the current page's pathname, so organic CTAs that carry no UTM (most blog/body CTAs) still tell the app which page sent the click.
+- `utm_source` / `utm_medium` / `utm_campaign` — forwarded through if the visitor arrived on the current page via a UTM'd link (e.g. a social shortlink from `next.config.ts`'s `redirects()`), so a click further into the same visit doesn't lose it.
+
+This does not change CTA destinations or the demo-first/signup-first split above, only appends query params to the existing URLs. See `pulse 2.0`'s `.claude/docs/demo-conversion-flow.md` and `docs/activation-plan.md` for how the app reads and freezes this on the other side.
+
+**Known limitation:** only the click-tracked paths above carry attribution. The many static `<a href="https://app.getshorthandapp.com...">` / `<Link href="...">` links across feature pages, `/install`, `/about`, etc. (server-rendered, no click handler) do not get `lp`/UTM appended — converting those to client-tracked links was judged out of scope for this pass. If you want full coverage later, either add click handlers to those pages or accept `first_touch_landing_page` staying null for that share of signups.
+
 ### Applied as of 2026-06-17 (original)
 - Shared blog bottom CTA (`app/blog/[slug]/page.tsx`) — updated to app signup URL
 - All inline blog post links (`posts/*.md`, 56 files) — updated to app signup URL
