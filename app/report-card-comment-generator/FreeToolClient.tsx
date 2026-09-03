@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { fireCtaClick } from '../../lib/gtag';
+import { withAttribution } from '../../lib/attribution';
 import LeadGate from '../../components/LeadGate';
 
 const SECTIONS = [
@@ -373,8 +374,11 @@ function FreeToolInner() {
               <Link
                 href="https://app.getshorthandapp.com"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
-                onClick={() => {
-                  fireCtaClick({ cta_source: 'free_tool', cta_destination: 'app' });
+                onClick={(e) => {
+                  e.preventDefault();
+                  const destination = withAttribution('https://app.getshorthandapp.com', window.location.pathname, window.location.search);
+                  fireCtaClick({ cta_source: 'free_tool', cta_destination: 'app', link_url: destination, event_callback: () => { window.location.href = destination; } });
+                  setTimeout(() => { window.location.href = destination; }, 300);
                 }}
               >
                 Try ShortHand free →

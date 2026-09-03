@@ -1,6 +1,7 @@
 'use client';
 
 import { fireCtaClick } from '../lib/gtag';
+import { withAttribution } from '../lib/attribution';
 
 interface LibraryCtaBlockProps {
   sourceSlug: string;
@@ -28,13 +29,14 @@ export default function LibraryCtaBlock({ sourceSlug, placement, totalCount, int
   function trackAndGo(destination: string, href: string) {
     return (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
+      const target = withAttribution(href, window.location.pathname, window.location.search);
       fireCtaClick({
         cta_source: sourceSlug,
         cta_destination: destination,
-        link_url: href,
-        event_callback: () => { window.location.href = href; },
+        link_url: target,
+        event_callback: () => { window.location.href = target; },
       });
-      setTimeout(() => { window.location.href = href; }, 300);
+      setTimeout(() => { window.location.href = target; }, 300);
     };
   }
 
