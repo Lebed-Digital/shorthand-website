@@ -116,6 +116,8 @@ The team trusts you more. The parent feels like their child is actually being se
 
 ## Why I Built ShortHand for Exactly This
 
+If you want to see how ShortHand stacks up against tools built specifically for formal IEP data collection, [this comparison of special education behavior tracking software](/blog/special-education-behavior-tracking-software) lays out the tradeoffs honestly.
+
 I got tired of the data stress. I needed a way to track behavior in the 10 seconds between passing out papers and starting a mini-lesson.
 
 ShortHand captures notes in the moment using voice or text, automatically timestamps and categorizes them, and charts patterns over time. When an IEP meeting comes up, the data is already organized. You're not spending the night before a meeting reconstructing a month of observations. You're reviewing something that's already there.

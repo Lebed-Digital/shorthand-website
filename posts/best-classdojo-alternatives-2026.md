@@ -138,7 +138,7 @@ Look at ShortHand for solo classroom use, or Class Charts if your school has alr
 
 ### If you need parent communication
 
-If messaging families was the only part of ClassDojo you actually used, you don't need a behavior app at all. Remind and TalkingPoints both handle teacher-to-parent messaging without asking parents to manage another account, and TalkingPoints handles translation well if that matters in your community. Seesaw and Bloomz are better fits if you also want to share photos and student work.
+If messaging families was the only part of ClassDojo you actually used, you don't need a behavior app at all. Remind and TalkingPoints both handle teacher-to-parent messaging without asking parents to manage another account, and TalkingPoints handles translation well if that matters in your community. Seesaw and Bloomz are better fits if you also want to share photos and student work. If documentation matters as much as sending the message, [this comparison of parent communication apps](/blog/best-parent-communication-apps-for-documentation-2026) breaks down which ones actually keep a record you can pull up later.
 
 ### If you need points and rewards
 
