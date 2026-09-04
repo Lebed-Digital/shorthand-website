@@ -36,7 +36,9 @@ This was a signup-first approach that required account creation before seeing th
 
 Prior to 2026-07-15, this doc described the split as strictly "body CTAs → demo, nav/discovery CTAs → `/install`," and listed the homepage hero as one of the CTAs left on `/install`. That was already stale relative to the code: the homepage hero has used `?demo=true` directly since the 2026-06-26 migration (never routed through `/install`), and nav CTAs across the site link straight to the bare app URL, not to `/install`. The six feature pages and `classdojo-alternative` were also missing from the doc entirely. The "Current standard" section above reflects what the code actually does and why, verified against `app/page.tsx`, the six `app/features/*/page.tsx` files, and `app/classdojo-alternative/page.tsx`.
 
-### First-touch attribution on app-bound CTAs (added 2026-09-03)
+### First-touch attribution on app-bound CTAs (added 2026-09-03, SHIPPED and verified in production 2026-09-04)
+
+**Status: live.** PR [#70](https://github.com/Lebed-Digital/shorthand-website/pull/70) merged and deployed; `getshorthandapp.com` confirmed serving the merged commit. A real production signup through this path (`app.getshorthandapp.com/?lp=/blog/attribution-test&utm_source=test&utm_medium=manual&utm_campaign=first-touch-test`) confirmed all four values land correctly in `pulse 2.0`'s `first_touch_attribution` table. Full record: Brain `Feature Idea - First-Touch User Attribution.md`.
 
 App-bound links fired through the tracked click paths (`TrackedLink`, `LibraryCtaBlock`, the homepage's `trackCta`, and the free-tool's "Try ShortHand free" CTA) now pass through `lib/attribution.ts`'s `withAttribution()` before navigating. It appends two things to the outbound `app.getshorthandapp.com` URL, only if not already present on the destination:
 - `lp` — the current page's pathname, so organic CTAs that carry no UTM (most blog/body CTAs) still tell the app which page sent the click.
