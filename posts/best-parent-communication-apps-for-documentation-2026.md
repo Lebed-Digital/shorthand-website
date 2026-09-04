@@ -1,5 +1,5 @@
 ---
-title: "Parent Teacher Communication Apps Compared: Which One Actually Documents What You Send (2026)"
+title: "Best Parent Teacher Communication Apps for Documentation (2026)"
 subtitle: "Most of these apps are great for announcements. Only one gives you a complete, searchable contact record when a parent says 'nobody ever called me.'"
 date: "2026-05-02"
 lastModified: "2026-09-03"
@@ -34,11 +34,11 @@ I have spent twenty years in K-8 classrooms. Here is my honest breakdown of wher
 
 | App | Best For | Documentation Record |
 |---|---|---|
-| ClassDojo | Classroom culture and points | Points only, no context |
-| Remind | Mass announcements | No per-student log |
-| Bloomz | All-in-one school features | Searchable, but slow under pressure |
-| Seesaw | Student work portfolios | Parent-facing, not private |
-| ShortHand | A timestamped, provable contact record | Built around it |
+| ClassDojo | Classroom culture and points | Messaging history exists; behavior documentation is primarily points and classroom activity, not a detailed teacher note log |
+| Remind | Mass announcements | Exportable message history; not built around teacher-created behavior or contact notes |
+| Bloomz | All-in-one school features | Messaging within a broader school communication platform; not primarily a teacher documentation log |
+| Seesaw | Student work portfolios | Messaging and student portfolio tools; not primarily a private teacher documentation system |
+| ShortHand | Student documentation and parent communication together | Built from the same teacher record; logs the contact and can generate the message from it |
 
 ---
 
