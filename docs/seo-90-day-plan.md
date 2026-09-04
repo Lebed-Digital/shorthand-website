@@ -165,7 +165,7 @@ Pull `gsc_page_performance` + `gsc_query_for_page` for every redirecting URL lis
 - The 5 ClassDojo posts: no merges/redirects (mergeNote frontmatter + Decisions Log 2026-07-13).
 - The two preschool report-card posts: differentiate-only decision already executed; hands off until Oct 15.
 - The two app roundups: no merge (evidence bar not met).
-- `/blog/special-education-behavior-tracking-software`: parked until Aug 13.
+- `/blog/special-education-behavior-tracking-software`: unparked 2026-09-04, narrow content/internal-linking pass done. See `seo-query-ownership.md` section 8.
 - Redirected URLs (`/free-tool`, `/blog/classroom-behavior-tracking-apps`, `/blog/5-behavior-management-apps-for-teachers`, the merged report-card URLs): consolidation lag is normal; do nothing.
 - The LeadGate SSR structure on both tool pages (H1/header outside the gate) — regression here re-creates the position-79 disaster.
 - Frontmatter dates stay bare `YYYY-MM-DD` (a `T` crashes the sitemap build). No em dashes in any content. FAQPage schema stays out of new pages.
