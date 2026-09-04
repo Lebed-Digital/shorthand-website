@@ -1,13 +1,14 @@
 ---
-title: "Missing Assignment Email to Parents: Copy-and-Paste Templates"
-subtitle: "Real-world strategies and copy-paste templates for chronic homework avoidance and missing work."
+title: "Missing Homework Email to Parents: 3 Copy-Paste Templates"
+subtitle: "Copy-paste email templates for a first missed assignment, a chronic pattern, or a student who has checked out."
 date: "2026-06-06"
+lastModified: "2026-09-03"
 author: "Gregory Lebed"
 relatedPosts:
   - "sample-emails-to-parents-about-student-behavior"
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
-excerpt: "Stop spending hours writing individual missing homework notes. Use these battle-tested strategies and email templates to get parents on your side and get the work turned in."
+excerpt: "Three ready-to-send email templates for missing homework, from a first reminder to a chronic pattern. Just add your student's name and send."
 faq:
   - q: "How do you write a professional email to parents about missing homework?"
     a: "Keep the email brief, objective, and solution-focused. State the specific names of the missing assignments, the final date they can be submitted for credit, and the current impact on the student's grade. Avoid using emotional language or labeling the student as lazy. Instead, ask the parents to help establish a nightly routine to review the child's backpack and planner."
@@ -25,7 +26,7 @@ It is 4:15 PM on a Thursday. You are sitting at your small kidney-shaped table w
 
 I have been there. In my years teaching third grade and working as a Registered Behavior Technician (RBT), I have written this exact parent email about missing assignments hundreds of times. In my early years, I either waited too long to reach out or sent emails that sounded too accusatory. Neither worked. When I used RBT principles of objective data and clear behavioral expectations, the responses changed. The parents stopped getting defensive and started helping.
 
-If you are struggling with missing work in your classroom, you do not have to guess at what works. Here is a practical guide to handling parent communication for missing homework, along with copy-paste templates you can use today.
+If you are struggling with missing work in your classroom, you do not have to guess at what works. Below are three copy-paste email templates, one for the first missed assignment, one for a chronic pattern, and one for a student who has checked out completely, along with the strategy behind when to send each one.
 
 ### The Mistake of the First Offense: When to Email
 
