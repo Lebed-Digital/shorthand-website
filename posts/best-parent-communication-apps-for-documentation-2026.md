@@ -8,10 +8,10 @@ relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"
   - "classdojo-vs-seesaw-2026"
-excerpt: "Five parent communication apps compared side by side: ClassDojo, Remind, Bloomz, Seesaw, and ShortHand. See which ones just send messages, and which one keeps a record you can prove."
+excerpt: "Five parent communication apps compared side by side: ClassDojo, Remind, Bloomz, Seesaw, and ShortHand. See how they differ when communication history and teacher documentation both matter."
 faq:
   - q: "What is the best parent communication app for teacher documentation in 2026?"
-    a: "For documentation you can pull up at an IEP meeting or parent conference, the best option is ShortHand. It logs every parent contact with a timestamp and ties it to a specific student, so you can pull up a complete contact history in seconds. ClassDojo, Remind, and Seesaw are better for broadcast communication but don't give you a reliable per-student contact record."
+    a: "For documentation you can pull up at an IEP meeting or parent conference, the best option is ShortHand. It logs every parent contact with a timestamp and ties it to a specific student, so you can pull up a complete contact history in seconds. ClassDojo, Remind, and Seesaw are built around communication first, with message history available inside each app, but they aren't built around a teacher's underlying documentation record the way ShortHand is."
   - q: "Which parent communication apps let teachers message without giving out their personal phone number?"
     a: "ClassDojo, Remind, Bloomz, and ShortHand all mask your personal phone number. With Remind, messages go through the app and parents only see your Remind contact. ClassDojo messages are app-to-app. None of these tools expose your personal number, which is one of the main reasons teachers use them over texting parents directly."
   - q: "Do parent communication apps work if parents don't have smartphones?"
