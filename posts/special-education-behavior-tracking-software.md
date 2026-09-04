@@ -90,6 +90,12 @@ Raw notes are helpful. Organized reports are even better.
 
 Whether you're preparing for a parent meeting, sharing information with your special education team, or getting ready for an IEP meeting, your documentation should tell a clear story without hours of extra work.
 
+### Show Patterns Over Time
+
+A single note about a rough Tuesday rarely tells the whole story. What matters more is whether that Tuesday was a one-time thing or part of a pattern that shows up every week.
+
+That's where day-to-day documentation earns its keep. Individual notes are useful in the moment, but the real value shows up weeks later, when you can look back and see that a behavior clusters around a specific time of day, a specific setting, or a specific transition. That kind of pattern is exactly what [IEP teams and MTSS teams](/blog/how-to-document-tier-2-interventions-for-mtss) look for when deciding whether a support is working or whether it's time to try something else.
+
 ## Quick Comparison
 
 > **AbleSpace**
@@ -206,6 +212,8 @@ I didn't need to fill out a form or select from a list of behaviors. I just type
 
 Notes stayed organized by student automatically, so finding what happened weeks earlier for a parent conference or MTSS meeting was straightforward instead of a search through old messages or spreadsheets.
 
+One area worth calling out on its own is parent contact. For a student on an IEP, [documenting parent contact](/blog/how-to-document-parent-contact-for-iep) is often as important as documenting the behavior itself, since a team needs to see what was communicated to the family and when. ShortHand keeps that contact history next to the behavior notes for the same student, so both pieces are in one place instead of split across an email inbox and a separate log.
+
 A few features stood out:
 
 - Voice or text note entry
@@ -213,6 +221,8 @@ A few features stood out:
 - Student accommodations and goals in one place
 - AI-assisted report generation
 - Ask ShortHand, a way to ask plain-language questions about the notes you've already logged for a student
+
+If you're building out a fuller documentation habit, the [IEP behavior documentation checklist](/blog/iep-behavior-documentation-checklist) is a useful reference for what to capture regardless of which tool you use.
 
 ### Where ShortHand Isn't the Best Fit
 
