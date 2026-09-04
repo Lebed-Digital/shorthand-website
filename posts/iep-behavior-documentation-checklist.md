@@ -99,6 +99,8 @@ Print this checklist. Keep it on your desk before every annual review.
 
 Tracking this data manually is exhausting. It is the number one reason teachers show up to meetings empty-handed.
 
+If you want to see how different tools handle this, [special education behavior tracking software](/blog/special-education-behavior-tracking-software) compares options built for classroom teachers against ones built for formal IEP goal data collection.
+
 That is why I created ShortHand. It tracks frequency, duration, and ABC data automatically.
 
 You just tap a button when an incident occurs. When it is time for the IEP meeting, you export a professional data report instantly.

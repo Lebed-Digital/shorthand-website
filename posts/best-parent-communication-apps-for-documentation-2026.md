@@ -110,4 +110,4 @@ If your main concern is broadcasting announcements, Remind is fine. If you want 
 
 ---
 
-*Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers)*
+*Related reading: [How to Document Parent Contact as a Teacher](/blog/how-to-document-parent-contact-as-a-teacher) | [Free Parent Communication Log for Teachers](/blog/free-parent-communication-log-for-teachers) | [8 Best Parent-Teacher Communication Apps in 2026](/blog/best-apps-for-teacher-parent-communication-2026)*

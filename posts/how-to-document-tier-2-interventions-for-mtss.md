@@ -156,6 +156,8 @@ Without documentation, those conversations become guesswork. With documentation,
 
 Once a few weeks of these notes are logged, that history becomes something you can actually use instead of re-reading every entry before a team meeting. Ask ShortHand can help you find out something like, "how has work refusal during math changed this month?" and it pulls the answer directly from what you documented. It only knows what you logged, so the documentation habit above is still what makes this useful.
 
+If you're weighing ShortHand against other options for this, [special education behavior tracking software](/blog/special-education-behavior-tracking-software) compares it against tools built for more formal IEP goal data collection.
+
 ## Final Thoughts
 
 Most MTSS problems are not intervention problems. They are documentation problems. Teachers are already doing the hard work. The challenge is capturing enough information to show what happened.

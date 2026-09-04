@@ -28,7 +28,7 @@ Memory alone is not going to save you. Teachers make thousands of micro-decision
 
 Expecting your brain to perfectly recall a five-minute phone call from a month ago is unreasonable. (My brain occasionally forgets where I put my coffee mug while I am currently holding it.)
 
-Vague notes are equally useless. A sticky note on your desk that says "called Mom" tells you nothing in a meeting with an administrator. A random entry in your planner that just says "behavior issue" gives you zero context. You need a complete, searchable contact record.
+Vague notes are equally useless. A sticky note on your desk that says "called Mom" tells you nothing in a meeting with an administrator. A random entry in your planner that just says "behavior issue" gives you zero context. You need a complete, searchable contact record. If you're still deciding what to log it in, [this comparison of parent communication apps](/blog/best-parent-communication-apps-for-documentation-2026) looks at which ones actually keep that kind of record versus which ones just send messages.
 
 ---
 
