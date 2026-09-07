@@ -4,7 +4,7 @@ import React, { useState, useRef } from 'react';
 import Link from 'next/link';
 import { fireCtaClick } from '../../lib/gtag';
 import { withAttribution } from '../../lib/attribution';
-import LeadGate from '../../components/LeadGate';
+import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
 const SECTIONS = [
   {
@@ -167,9 +167,7 @@ export default function FreeToolClient() {
         </div>
       </div>
 
-      <LeadGate source="report-card-generator">
-        <FreeToolInner />
-      </LeadGate>
+      <FreeToolInner />
     </div>
   );
 }
@@ -366,6 +364,9 @@ function FreeToolInner() {
                 New
               </button>
             </div>
+
+            <OptionalEmailCapture source="report-card-generator-post-result" />
+
             <div style={{ marginTop: 20, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid rgba(167,139,250,0.25)' }}>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: 8 }}>Want this for every student, all year?</div>
               <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 14px', lineHeight: 1.6 }}>
