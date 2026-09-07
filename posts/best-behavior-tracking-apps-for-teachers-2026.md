@@ -37,7 +37,7 @@ A note on context: I teach elementary school, third grade specifically. Most of 
 
 ## Why behavior tracking sheets aren't enough
 
-Most teachers start with a sheet: a paper form, a Google Sheet, a clipboard with a tally grid. Sheets work until you need the data to work *for* you.
+Most teachers start with a sheet: a paper form, a Google Sheet, a clipboard with a tally grid. (If you're still at this stage, our free [printable parent communication log](/tools/parent-communication-log) is a cleaner version of that same sheet.) Sheets work until you need the data to work *for* you.
 
 The moment a parent says "I never heard about this," or an administrator asks for documentation, or you're sitting in an IEP meeting trying to remember if the incident was October or November, that's when a sheet fails you. I've lived that feeling. Not because I wasn't paying attention, but because teaching is fast, messy, and full of interruptions. Memory is a terrible documentation system. The data is there, but it doesn't connect to anything. You still have to do all the work of retrieving it, explaining it, and proving what you communicated.
 

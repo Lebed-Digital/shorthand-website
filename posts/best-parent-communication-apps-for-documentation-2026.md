@@ -28,7 +28,7 @@ Finding the best parent teacher communication apps 2026 has to offer is not abou
 
 Most parent communication apps are built for school culture. They are designed for broadcast announcements, sharing photos of the science fair, and sending out reminders for spirit week. Those features are fine.
 
-But the question nobody asks when comparing these apps is simple: can I pull up a complete contact history for a specific student in under a minute? If you want the fuller case for why that record matters, [here is how to document parent contact as a teacher](https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher).
+But the question nobody asks when comparing these apps is simple: can I pull up a complete contact history for a specific student in under a minute? If you want the fuller case for why that record matters, [here is how to document parent contact as a teacher](https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher). If you'd rather start with pen and paper before picking an app, our free [printable parent communication log](/tools/parent-communication-log) covers the same basic contact-record habit.
 
 I have spent twenty years in K-8 classrooms. Here is my honest breakdown of where every major tool actually stands.
 
