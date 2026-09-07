@@ -293,7 +293,17 @@
     background: #fff;
   }
 
-  .header,
+  /* Keep the title/subtitle in .header, hide only the nav link and buttons. */
+  .header {
+    border-bottom: 0;
+    padding: 0 0 12px;
+  }
+
+  .backLink,
+  .headerActions {
+    display: none;
+  }
+
   .addMoreRow,
   .ctaSection {
     display: none;
