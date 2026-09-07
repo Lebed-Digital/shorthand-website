@@ -134,7 +134,7 @@ Most teachers searching for a ClassDojo replacement are really trying to replace
 
 This is the gap ClassDojo leaves most often. Points tell you a student got a "helping others" bubble sometime in October. They don't tell you what happened, when it happened, or who you contacted about it.
 
-Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and a clean way to get any of it back out: exported to hand across a table at a meeting, or stripped down and pasted straight into whatever system your district already makes you log things in. A tool that traps your notes inside itself has just become one more place to check.
+Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and a clean way to get any of it back out: exported to hand across a table at a meeting, or stripped down and pasted straight into whatever system your district already makes you log things in. A tool that traps your notes inside itself has just become one more place to check. Not ready to switch apps at all? A free [printable parent communication log](/tools/parent-communication-log) covers the same basic need on paper.
 
 ### If you need parent communication
 
