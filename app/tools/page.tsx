@@ -45,6 +45,17 @@ const tools = [
     tag: 'Free AI Tool',
     signals: ['Free to use', 'Works for Pre-K through 8th grade', 'Editable output'],
   },
+  {
+    title: 'Parent Communication Log',
+    description:
+      'Track every call, email, and note home in one printable log. Fill it in online and print, or print blank and fill by hand.',
+    href: '/tools/parent-communication-log',
+    label: 'Open Tool',
+    accent: '#7c3aed',
+    bg: '#f5f3ff',
+    tag: 'Free Printable',
+    signals: ['Free to use', 'No sign-up required', 'Print-ready'],
+  },
 ];
 
 export default function ToolsPage() {

@@ -1,0 +1,352 @@
+.page {
+  min-height: 100vh;
+  background: #0f172a;
+}
+
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 20px 24px;
+}
+
+.headerInner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.backLink {
+  font-size: 13px;
+  color: #0d9488;
+  text-decoration: none;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 14px;
+  margin: 4px 0 0;
+}
+
+.headerActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btnSecondary {
+  padding: 9px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: #334155;
+  cursor: pointer;
+}
+
+.btnSecondary:hover {
+  background: #f1f5f9;
+}
+
+.btnPrimary {
+  padding: 9px 18px;
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background: #0d9488;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background: #0f766e;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 24px;
+}
+
+.logHeaderCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logHeaderRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.field {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.fieldInput {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #cbd5e1;
+  font-size: 15px;
+  padding-bottom: 6px;
+  background: transparent;
+  color: #0f172a;
+  font-family: inherit;
+}
+
+.fieldInput:focus {
+  outline: none;
+  border-bottom-color: #0d9488;
+}
+
+.tableCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead tr {
+  background: #0d9488;
+  color: #fff;
+}
+
+.table th {
+  border: 1px solid #cbd5e1;
+  padding: 8px 8px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.table td {
+  border: 1px solid #e2e8f0;
+  padding: 4px;
+  vertical-align: top;
+}
+
+.cellInput,
+.cellSelect,
+.cellTextarea {
+  width: 100%;
+  font-size: 13px;
+  border: none;
+  background: transparent;
+  color: #0f172a;
+  font-family: inherit;
+}
+
+.cellInput:focus,
+.cellSelect:focus,
+.cellTextarea:focus {
+  outline: none;
+}
+
+.cellTextarea {
+  resize: none;
+}
+
+.addMoreRow {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.addMoreLink {
+  font-size: 13px;
+  color: #0d9488;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addMoreLink:hover {
+  text-decoration: underline;
+}
+
+.footerNote {
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 20px;
+}
+
+.footerNoteText {
+  font-size: 12px;
+  color: #64748b;
+  text-align: center;
+}
+
+.footerNoteLink {
+  color: #2dd4bf;
+  text-decoration: none;
+}
+
+.footerNoteLink:hover {
+  text-decoration: underline;
+}
+
+.printOnly {
+  display: none;
+}
+
+.ctaSection {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+.ctaCard {
+  background: rgba(13, 148, 136, 0.15);
+  border: 1px solid rgba(13, 148, 136, 0.3);
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.ctaDescription {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 auto 20px;
+  max-width: 460px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: linear-gradient(135deg, #0d9488, #0891b2);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.4);
+}
+
+.ctaFootnote {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 12px 0 0;
+}
+
+@media (min-width: 640px) {
+  .headerInner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logHeaderRow {
+    flex-wrap: nowrap;
+  }
+}
+
+@media print {
+  .page {
+    background: #fff;
+  }
+
+  /* Keep the title/subtitle in .header, hide only the nav link and buttons. */
+  .header {
+    border-bottom: 0;
+    padding: 0 0 12px;
+  }
+
+  .backLink,
+  .headerActions {
+    display: none;
+  }
+
+  .addMoreRow,
+  .ctaSection {
+    display: none;
+  }
+
+  .content {
+    padding: 0;
+    max-width: none;
+  }
+
+  .logHeaderCard,
+  .tableCard {
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .table th {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    border-color: #94a3b8;
+  }
+
+  .table td {
+    border-color: #cbd5e1;
+  }
+
+  .footerNote {
+    border-top-color: #e2e8f0;
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+
+  .footerNoteText {
+    color: #475569;
+  }
+
+  .printOnly {
+    display: inline;
+  }
+
+  .screenOnly {
+    display: none;
+  }
+}

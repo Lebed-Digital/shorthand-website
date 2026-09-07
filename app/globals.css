@@ -51,6 +51,14 @@ body::after {
   z-index: 9999;
 }
 
+@media print {
+  /* Fixed, full-viewport decorative overlay — Chrome's print engine paints it
+     over printed page content instead of discarding it like on screen. */
+  body::after {
+    display: none;
+  }
+}
+
 .glow-field {
   position: fixed;
   inset: 0;
