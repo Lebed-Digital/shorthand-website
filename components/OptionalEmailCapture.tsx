@@ -47,7 +47,7 @@ export default function OptionalEmailCapture({ source }: { source: string }) {
       ) : (
         <>
           <p style={{ fontSize: 14, color: '#475569', margin: '0 0 12px', lineHeight: 1.6 }}>
-            Want future teacher tools and resources by email? Leave your address here. Your letter is already ready to use.
+            Want future teacher tools and resources by email? Leave your address here. What you made is already ready to use.
           </p>
           <form onSubmit={handleSubmit}>
             <div style={{ display: 'flex', gap: 8, alignItems: 'stretch' }}>

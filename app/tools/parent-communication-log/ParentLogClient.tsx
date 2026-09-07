@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import TrackedLink from '../../../components/TrackedLink';
 
 const COLUMNS = ['Date', 'Student Name', 'Method', 'Reached?', 'Summary / Notes', 'Follow-up?'];
 const METHOD_OPTIONS = ['Call', 'Email', 'Note Home', 'In Person', 'Text'];
@@ -179,9 +180,14 @@ export default function ParentLogClient() {
           <p className="text-xs text-gray-400 text-center print:text-gray-500">
             Want your parent communication log built into your daily routine?{' '}
             <span className="print:hidden">
-              <Link href="https://getshorthandapp.com" className="text-teal-600 hover:underline">
+              <TrackedLink
+                href="https://app.getshorthandapp.com"
+                label="app"
+                ctaSource="parent-communication-log-footer"
+                className="text-teal-600 hover:underline"
+              >
                 Try ShortHand free
-              </Link>{' '}
+              </TrackedLink>{' '}
 . Log behavior notes, mood check-ins, and parent contacts from your phone.
             </span>
             <span className="hidden print:inline">
@@ -198,12 +204,14 @@ export default function ParentLogClient() {
           <p className="text-gray-600 mb-5 max-w-md mx-auto text-sm">
             ShortHand logs every parent contact you make: timestamped, tied to the student, searchable. No separate spreadsheet. No trying to remember what you said in October.
           </p>
-          <a
-            href="https://getshorthandapp.com"
+          <TrackedLink
+            href="https://app.getshorthandapp.com"
+            label="app"
+            ctaSource="parent-communication-log-bottom"
             className="inline-block bg-teal-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-teal-700 transition text-sm"
           >
             Try ShortHand Free
-          </a>
+          </TrackedLink>
           <p className="text-xs text-gray-400 mt-3">No credit card. No setup. Works on your phone.</p>
         </div>
       </div>
