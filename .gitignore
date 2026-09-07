@@ -49,3 +49,6 @@ excalidraw.log
 next-env.d.ts
 
 .vercel
+
+# playwright
+/test-results/
