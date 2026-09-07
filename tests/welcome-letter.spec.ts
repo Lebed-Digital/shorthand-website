@@ -26,7 +26,7 @@ test('generates a first welcome letter without requiring an email', async ({ pag
   await expect(page.locator('textarea').first()).toHaveValue('Dear Families,\n\nWelcome to our classroom!');
   await expect(page.getByText('Optional', { exact: true })).toBeVisible();
   await expect(page.getByLabel('Email address')).toBeVisible();
-  await expect(page.getByText('Your letter is already ready to use.')).toBeVisible();
+  await expect(page.getByText('What you made is already ready to use.')).toBeVisible();
 
   await page.getByLabel('Email address').fill('teacher@example.com');
   await page.getByRole('button', { name: 'Keep me posted' }).click();
