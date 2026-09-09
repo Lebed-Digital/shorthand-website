@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { firePurchase } from '../../../lib/gtag';
 
 // Confirms the purchase server-side, then sends the buyer into the library.
 //
@@ -10,12 +11,40 @@ import Link from 'next/link';
 // Edge Function; that function retrieves the session from Stripe and checks
 // the real payment status, line item, amount, and currency before any token is
 // minted. Nothing here treats the redirect itself as proof of purchase.
+//
+// The GA4 purchase event is fired from exactly one place: the granted branch
+// below, after the server said granted:true. It is guarded twice:
+//
+//   1. `started` (a ref) prevents React StrictMode double-invocation and any
+//      re-render from starting a second verify cycle at all.
+//   2. `markPurchaseReported` records the session id in sessionStorage, so a
+//      manual refresh or a back-navigation to this URL re-verifies (which is
+//      idempotent server-side and must stay that way) without emitting a
+//      second purchase event.
+//
+// The session id is used ONLY as a local dedupe key. It is never sent to GA4.
 
 type State =
   | { kind: 'verifying' }
   | { kind: 'granted' }
   | { kind: 'retrying'; attempt: number }
   | { kind: 'failed'; reason: string };
+
+// Local, per-browser dedupe for the purchase event. Returns true the first
+// time it sees a session id and false afterwards. Wrapped in try/catch because
+// sessionStorage throws in some privacy modes; if it is unavailable the event
+// simply fires as it otherwise would, which is the safe direction (an
+// occasional duplicate is better than silently losing all purchase events).
+function markPurchaseReported(sessionId: string): boolean {
+  const key = `rccl_purchase_reported:${sessionId}`;
+  try {
+    if (window.sessionStorage.getItem(key)) return false;
+    window.sessionStorage.setItem(key, '1');
+    return true;
+  } catch {
+    return true;
+  }
+}
 
 const MAX_ATTEMPTS = 3;
 const RETRY_DELAY_MS = 2000;
@@ -67,6 +96,8 @@ export default function SuccessClient({ sessionId }: { sessionId: string | null 
 
         if (res.ok && data?.granted === true) {
           setState({ kind: 'granted' });
+          // Fulfillment is confirmed at this point, and only at this point.
+          if (markPurchaseReported(sessionId!)) firePurchase();
           // Full reload, not a client navigation: the access cookie was just
           // set, and the gate reads it server-side on a fresh request.
           window.location.href = '/report-card-comment-library';

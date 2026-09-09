@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import RestoreFailureAnalytics from './RestoreFailureAnalytics';
 
 export const metadata: Metadata = {
   title: 'Restore link problem',
@@ -47,6 +48,7 @@ export default async function RestoreFailedPage({
         padding: 20,
       }}
     >
+      <RestoreFailureAnalytics reason={transient ? 'busy' : 'link'} />
       <div
         style={{
           background: '#fff',

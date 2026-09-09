@@ -3158,3 +3158,193 @@ Full block text as merged:
 No other wording, behavior, or tracking changed from §23.3 to §23.6 above;
 this section exists only so the doc records the exact sentence that actually
 shipped, not the pre-review draft.
+
+
+## 24. Funnel analytics and automated payment-path tests (2026-09-09)
+
+**Scope: observability and testing only.** No change to the payment
+architecture, the entitlement model, or any security guarantee. `STRIPE_PRICE_ID`
+was not generalized, no product registry was added, no `product_key` column was
+added, and no env var was renamed. Sections 13-23 above remain accurate.
+
+### 24.1 Why
+
+The 2026-09-09 payment-architecture audit
+(`docs/micro-product-payment-architecture-audit-2026-09.md`) found that the live
+paid path had **no purchase analytics and no automated tests**. `fireCtaClick`
+was the only helper in `lib/gtag.ts`, so the only evidence a purchase had
+happened was a row in `report_card_purchases`. This section closes that gap
+before report card season.
+
+### 24.2 Events added (all in `lib/gtag.ts`)
+
+| Event | Fires where | Parameters |
+|---|---|---|
+| `begin_checkout` | `PaywallClient.startCheckout()`, before the create-session request | `product_key`, `value` (4.99), `currency` (USD), `cta_source`, `cta_page` |
+| `checkout_start_failed` | `PaywallClient.startCheckout()`, when session creation fails | `product_key`, `reason` (`rate_limited` / `session_create_failed` / `network`) |
+| `purchase` | `SuccessClient`, ONLY on `granted:true` from `/verify-session` | `product_key`, `value`, `currency` |
+| `restore_purchase_attempt` | `RestoreRequestClient`, after local email validation | `product_key` |
+| `restore_purchase_success` | `RestoreSuccessAnalytics`, on the library page when reached with `?restored=1` | `product_key` |
+| `restore_purchase_failure` | `RestoreFailureAnalytics`, on the restore-failed page | `product_key`, `reason` (`busy` / `link`) |
+
+`cta_source` is `paywall-hero` or `paywall-bottom`, distinguishing the two buy
+buttons that both call `startCheckout`.
+
+### 24.3 The `purchase` event fires only on confirmed fulfillment
+
+This was the main correctness requirement. A Stripe redirect to the success URL
+is **not** treated as proof of purchase, exactly as §13.8 requires of the rest of
+the flow. `firePurchase()` is called from a single place: the branch in
+`SuccessClient` that has already received `granted: true` from
+`/api/report-card-checkout/verify-session`, which only returns that after the
+fulfill Edge Function retrieved the session from Stripe and verified payment
+status, line item, quantity, amount, and currency.
+
+A `not_paid`, `product_mismatch`, `temporarily_unavailable`, or network outcome
+fires nothing. Both directions are covered by tests.
+
+### 24.4 Duplicate protection
+
+Two independent guards:
+
+1. **`started` (existing ref).** Already prevented a second verify cycle per
+   mount, including under React StrictMode. Untouched.
+2. **`markPurchaseReported(sessionId)` (new).** Writes
+   `rccl_purchase_reported:<sessionId>` to `sessionStorage`. A refresh or
+   back-navigation to the same success URL still re-verifies server-side, which
+   must stay idempotent (§13.8), but emits no second `purchase` event.
+
+The session id is used **only** as a local dedupe key and is never sent to GA4.
+`sessionStorage` access is wrapped in try/catch; if it throws (private modes)
+the event fires anyway, which is the safe direction: an occasional duplicate
+beats losing all purchase data.
+
+**No `transaction_id` is sent.** The only stable id available client-side is the
+Stripe Checkout Session id, which is a payment identifier with no analytics
+value here. This means GA4's built-in duplicate-transaction suppression is not
+in play, which is why the explicit guard above exists.
+
+### 24.5 The `?restored=1` marker is not an entitlement
+
+`restore/confirm` now redirects to `/report-card-comment-library?restored=1`
+instead of the bare path. The flag exists because that route is a Route Handler
+returning a 303 with the access cookie attached, so no client code runs there
+and it cannot call gtag.
+
+The flag grants nothing. `page.tsx` renders `RestoreSuccessAnalytics` only on
+the branch where the server-side gate **already granted access from the
+cookie**, so visiting `?restored=1` while unauthenticated shows the paywall and
+fires nothing (tested). The component strips the parameter via `replaceState`
+so a bookmark or refresh does not double-count.
+
+### 24.6 PII and failure-isolation guarantees
+
+- **No PII reaches GA4.** No email addresses, Stripe session/customer/payment-intent
+  ids, entitlement tokens, or purchase row ids. The helpers do not accept them as
+  parameters. Tests assert the email never appears in a restore event and that
+  `cs_test` never appears in a purchase event.
+- **Restore anti-enumeration is preserved.** `restore_purchase_failure` reports
+  only the coarse `busy` / `link` bucket already public in the URL. Internal
+  reasons (`not_paid`, `lookup_failed`, `invalid_or_expired_token`) are never
+  forwarded, and a test asserts this. There is deliberately **no**
+  "restore request succeeded" event: the route answers identically for every
+  well-formed address by design (§17.5), so the client genuinely cannot know.
+- **Analytics cannot break checkout or access.** Every helper routes through
+  `fireEvent()`, which no-ops when `gtag` is absent and swallows any throw. A
+  blocked analytics script or ad blocker cannot affect the payment path.
+
+### 24.7 `checkout_cancel` was deliberately NOT implemented
+
+`cancel_url` in `create-session/route.ts` is the bare
+`/report-card-comment-library` path, byte-identical to a normal visit. There is
+no marker, no referrer guarantee (Stripe's redirect back does not reliably carry
+one), and no session state to consult, so a visitor returning from a cancelled
+checkout cannot be distinguished from an ordinary page view.
+
+Adding a `?cancelled=1` marker to `cancel_url` would work, but it changes live
+checkout configuration for an analytics nicety, and the same number is already
+derivable as `begin_checkout` minus `purchase` minus `checkout_start_failed`.
+Per the instruction not to invent fragile behavior just to produce an event,
+this was left alone. If cancel rate ever needs measuring directly, adding that
+query parameter to `cancel_url` is the honest one-line change.
+
+### 24.8 The recommended GA4 funnel
+
+| Step | Event | Answers |
+|---|---|---|
+| 1 | `page_view` on `/report-card-comment-library` | How many saw the paid offer |
+| 2 | `begin_checkout` | How many clicked purchase |
+| 3 | `begin_checkout` minus `checkout_start_failed` | How many actually reached Stripe |
+| 4 | `purchase` | How many completed a verified purchase |
+
+- **Offer-view to checkout** = `begin_checkout` / `page_view`
+- **Checkout to purchase** = `purchase` / (`begin_checkout` - `checkout_start_failed`)
+- **Implied abandonment** = reached Stripe minus `purchase` (see §24.7)
+- **CTA comparison** = `begin_checkout` split by `cta_source`
+- **Restore usage** = `restore_purchase_attempt`
+- **Restore outcome** = `restore_purchase_success` vs `restore_purchase_failure`,
+  the latter split by `reason` to separate "our fault" (`busy`) from
+  "expired link" (`link`)
+
+Top of funnel reuses the existing automatic `page_view`; no new view event was
+added. Note the page is `robots: noindex` and `force-dynamic`, so its page_view
+count is real traffic, not crawlers.
+
+### 24.9 Tests added
+
+`tests/report-card-payment-path.spec.ts`, 16 tests. **No real Stripe charges:**
+`create-session` and `verify-session` are intercepted with `page.route()` and
+served fixtures, and nothing navigates to Stripe's hosted UI.
+
+Covered: CTA calls create-session with correct product context; both CTAs report
+distinct sources; failed and rate-limited session creation report the right
+reason and never a purchase; confirmed fulfillment fires exactly one purchase;
+a non-granted success redirect fires none; transient failures still retry and
+fire none; missing `session_id` fires none; re-visiting the same success URL
+re-verifies but does not double-count; paywall shown without a cookie; a forged
+cookie does not unlock; restore attempt fires without leaking the email; an
+invalid email is not counted; the restore form looks identical on server error
+(anti-enumeration); the failure page reports only coarse reasons; `?restored=1`
+fires nothing without real access.
+
+`playwright.config.ts` was added. The existing four specs had no config in the
+repo and assumed a manually started server on :3000; the config makes that
+reproducible (`reuseExistingServer` locally) without changing their behavior.
+
+> **Gotcha for the next person.** `reuseExistingServer` means a dev server left
+> running from before your edits will serve **stale code**, and new tests will
+> fail for no visible reason. Nine tests failed this way during this work before
+> the cause was found. If a new analytics assertion fails while the event is
+> obviously wired up, `curl` the page and grep for your own string before
+> debugging the test.
+
+### 24.10 What remains unobservable or untested
+
+- **Edge Function internals.** Fulfillment idempotency, the 23505 race
+  read-back, webhook signature verification, HMAC signing, and the purchase
+  upsert run under Deno against live Stripe/Supabase. They cannot be reached
+  from the website test harness. The website-side contract is tested instead.
+- **The real webhook/success-page race.** Only the client's handling of a
+  transient response is tested, not two concurrent fulfillers.
+- **Real Stripe Checkout.** Never automated, by choice.
+- **Refund-driven revocation.** Still manual (§22.1) and still unautomated.
+- **Cross-device restore.** The email hop is not automatable here.
+- **`checkout_cancel`.** See §24.7.
+- **GA4 delivery itself.** Tests assert `gtag` is called with the right payload.
+  That GA4 ingests and reports it must be confirmed in the GA4 UI (§24.11).
+
+### 24.11 Manual production verification still required
+
+1. **GA4 DebugView, preview or production.** Load the library page, click buy,
+   and confirm `begin_checkout` arrives with `value: 4.99`, `currency: USD`, and
+   the expected `cta_source`. This is the one thing the tests cannot prove.
+2. **After the next real purchase**, confirm exactly one `purchase` event with
+   `value: 4.99`, and that it correlates 1:1 with the new
+   `report_card_purchases` row. Refresh the success page once and confirm no
+   second event appears.
+3. **Restore round trip in production:** request a link, follow it, confirm
+   `restore_purchase_success` fires once and that `?restored=1` disappears from
+   the address bar.
+4. **Confirm no PII in GA4** by inspecting an event's parameters in DebugView.
+5. Register the new events as GA4 conversions/key events if they should appear
+   in reporting, and build the §24.8 funnel exploration.

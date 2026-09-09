@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import type { TeaserData } from '../../lib/report-card-teaser';
+import { fireBeginCheckout, fireCheckoutStartFailed } from '../../lib/gtag';
 
 // Unauthenticated view. Receives ONLY the teaser payload built server-side:
 // counts, section/category names, and two sample comments per section. The
@@ -23,21 +24,29 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
     });
   }
 
-  async function startCheckout() {
+  // `source` identifies which of the two buy buttons was used, so the hero CTA
+  // and the bottom CTA can be compared in GA4 instead of collapsing into one.
+  async function startCheckout(source: string) {
     setStarting(true);
     setError(null);
+    // Fired before the request, so it counts intent even if session creation
+    // then fails. The drop is visible as begin_checkout without a matching
+    // Stripe arrival, and checkout_start_failed below names the reason.
+    fireBeginCheckout(source);
     try {
       const res = await fetch('/api/report-card-checkout/create-session', { method: 'POST' });
       const data = await res.json();
       if (!res.ok || !data?.url) {
         setError(data?.error?.message ?? 'Could not start checkout. Please try again.');
         setStarting(false);
+        fireCheckoutStartFailed(res.status === 429 ? 'rate_limited' : 'session_create_failed');
         return;
       }
       window.location.href = data.url;
     } catch {
       setError('Could not start checkout. Please try again.');
       setStarting(false);
+      fireCheckoutStartFailed('network');
     }
   }
 
@@ -75,7 +84,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
           <p style={{ fontSize: 13, color: '#64748b', margin: '0 0 16px' }}>
             One-time payment. No subscription. Restore access on any device by email.
           </p>
-          <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
+          <button onClick={() => startCheckout('paywall-hero')} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
           </button>
           {error && (
@@ -173,7 +182,7 @@ export default function PaywallClient({ teaser }: { teaser: TeaserData }) {
             Written by a teacher, for report card season. Every comment is specific, parent-ready, and
             editable before you copy it.
           </p>
-          <button onClick={startCheckout} disabled={starting} style={buyButtonStyle(starting)}>
+          <button onClick={() => startCheckout('paywall-bottom')} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get all ' + teaser.totalCount + ' comments for $4.99'}
           </button>
         </div>

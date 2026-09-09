@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import LibraryClient from './LibraryClient';
 import PaywallClient from './PaywallClient';
 import AccessRefresher from './AccessRefresher';
+import RestoreSuccessAnalytics from './RestoreSuccessAnalytics';
 import { evaluateAccess } from '@/lib/report-card-gate';
 import { getFullLibrary, getTeaserData } from '@/lib/report-card-teaser';
 
@@ -14,8 +15,12 @@ export const metadata: Metadata = {
 // render served to an unauthenticated visitor would hand over the full dataset.
 export const dynamic = 'force-dynamic';
 
-export default async function ReportCardCommentLibraryPage() {
-  const decision = await evaluateAccess();
+export default async function ReportCardCommentLibraryPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ restored?: string }>;
+}) {
+  const [decision, { restored }] = await Promise.all([evaluateAccess(), searchParams]);
 
   if (!decision.access) {
     // Only the teaser payload crosses to the client here. The full library is
@@ -39,6 +44,9 @@ export default async function ReportCardCommentLibraryPage() {
       {/* Persists a refreshed token, or clears a revoked one, via a Route
           Handler. Rendered whenever the gate touched revalidation. */}
       {decision.freshToken ? <AccessRefresher /> : null}
+      {/* Only on the granted branch, so ?restored=1 cannot report a success
+          for someone who does not actually have access. */}
+      {restored === '1' ? <RestoreSuccessAnalytics /> : null}
       <LibraryClient comments={getFullLibrary()} />
     </>
   );
