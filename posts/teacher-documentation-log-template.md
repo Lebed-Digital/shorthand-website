@@ -55,6 +55,8 @@ The action taken column is equally critical. You must show that you attempted to
 
 If you are using paper, this log must live somewhere accessible but totally private. You cannot leave a clipboard with behavior notes sitting on your desk where other students can read it. That is a privacy violation. Keep it in a locked desk drawer or a specific, dedicated folder that never leaves your bag.
 
+RESOURCEOFFERMARKER
+
 ## Why a Template Alone Will Not Save You
 
 Having a template is only ten percent of the battle. The other ninety percent is building the habit. Countless teachers print out beautiful templates in August and have completely blank logs by November. If you want to set yourself up to actually use it, read the guide on [how to document student behavior from day one](/blog/how-to-document-student-behavior-from-day-one) before the school year starts.

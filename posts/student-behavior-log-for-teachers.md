@@ -63,6 +63,8 @@ Never use labels. Do not call a student lazy. Do not call them defiant. Do not c
 
 I once saw a teacher write that a student was acting like a monster. I had to gently remind her that unless the student grew fangs and started howling at the moon, she needed to change her wording. I asked her what kind of monster, because if it was a mummy, we should wrap up the meeting. She did not laugh. My humor is often wasted on adults. Stick to the facts. The facts are undeniable. A judge or an administrator cannot argue with a time and a specific action.
 
+RESOURCEOFFERMARKER
+
 ## When You Should Log the Behavior
 
 You have to log the event immediately. Do not wait until the end of the day. Do not wait until Friday afternoon.

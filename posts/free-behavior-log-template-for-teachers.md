@@ -77,6 +77,8 @@ Elementary classrooms are fast-paced. You are teaching multiple subjects, managi
 
 This simpler log allows you to quickly note who had a great day and who needs a little extra support tomorrow. It ensures you do not forget the positive moments, which are just as important to document as the challenging ones.
 
+RESOURCEOFFERMARKER
+
 ## Moving Beyond Paper and Clunky Templates
 
 While paper logs and printable templates are a great starting point, they have major limitations:

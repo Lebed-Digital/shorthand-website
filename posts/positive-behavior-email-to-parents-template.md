@@ -128,6 +128,8 @@ Best,
 
 [Your Name]
 
+RESOURCEOFFERMARKER
+
 ## How to Make Positive Emails a Habit
 
 Teachers are busy. If you do not have a system, positive emails will fall off your to-do list. Here is how I make it manageable in my classroom:
