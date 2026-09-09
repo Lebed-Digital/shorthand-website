@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import PdfGate from '../../../components/PdfGate';
+import ResourceOffer from '../../../components/ResourceOffer';
 import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
 import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
@@ -11,6 +12,10 @@ import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
+// Includes the <p> wrapper remark emits around a standalone marker paragraph,
+// so splitting on it leaves no empty <p></p> behind, matching
+// CLASSDOJO_PRODUCT_PROOF_MARKER and WORKFLOW_BRIDGE_MARKER.
+const RESOURCE_OFFER_MARKER = '<p>RESOURCEOFFERMARKER</p>';
 const LIBRARY_CTA_MARKER = 'LIBRARYCTAMARKER';
 const CLASSDOJO_PRODUCT_PROOF_MARKER = '<p>CLASSDOJOPRODUCTPROOFMARKER</p>';
 const WORKFLOW_BRIDGE_MARKER = '<p>WORKFLOWBRIDGEMARKER</p>';
@@ -70,6 +75,79 @@ const LIBRARY_CTA_INTROS: Record<string, string> = {
     'Writing comments beyond second grade behavior too?',
   'free-report-card-comment-generator':
     'This generator creates one comment from what you select. If you would rather search ready-made comments and copy the one that fits:',
+};
+
+// Ungated resource placements. Unlike PDF_GATES below, these hand over the file
+// immediately and only then offer an optional email, matching the "No sign-up
+// required" promise already made on /resources.
+//
+// `source` is the tracking key for the article/resource pairing. It is sent as
+// `resource_source` on the GA4 `resource_download` event and as `source` on any
+// optional email_leads row, so a placement's downloads and its leads can be
+// joined. Keep these ids stable once live; changing one splits its history.
+const RESOURCE_OFFERS: Record<
+  string,
+  { source: string; href: string; linkText: string; blurb: string; buttonLabel?: string }
+> = {
+  // Step 2 — highest-value placement. Head query "positive email home to parents
+  // template" converts at 25% CTR from position 4.2 and the page offered nothing.
+  // Copy leads with the positive template explicitly: the PDF's own title says
+  // "Behavior Emails", which reads as off-topic on a good-news page.
+  'positive-behavior-email-to-parents-template': {
+    source: 'positive-email-post',
+    href: '/Ready_to_Send_Behavior_Emails_x7k2.pdf',
+    linkText: '10 fill-in-the-blank parent emails, including the positive behavior note',
+    blurb:
+      'Template 8 in this free PDF is the positive behavior note, ready to fill in and send. The other nine cover the harder conversations, from a first small incident to the end of a rough week.',
+    buttonLabel: 'Get the free email templates',
+  },
+
+  // Step 3 — log/template pages whose titles promise a printable and deliver prose.
+  'teacher-documentation-log-template': {
+    source: 'documentation-log-post',
+    href: '/classroom-behavior-documentation-log.pdf',
+    linkText: 'One page, six columns, print as many as you need',
+    blurb:
+      'Here is the log itself as a print-ready PDF: date and time, student, what happened, what you did, whether you contacted home, and the follow-up.',
+    buttonLabel: 'Download the documentation log',
+  },
+  'student-behavior-log-for-teachers': {
+    source: 'behavior-log-post',
+    href: '/classroom-behavior-documentation-log.pdf',
+    linkText: 'Print-ready, no account needed',
+    blurb:
+      'If you want to start logging today, this is the same six-column log as a printable PDF. Keep it on a clipboard or in the binder you already carry.',
+    buttonLabel: 'Download the behavior log',
+  },
+  'free-behavior-log-template-for-teachers': {
+    source: 'free-behavior-log-post',
+    href: '/classroom-behavior-documentation-log.pdf',
+    linkText: 'Free, print-ready, no sign-up',
+    blurb:
+      'Here is the free template. Print a stack at the start of the week and fill them in as things happen, while the details are still exact.',
+    buttonLabel: 'Download the free log template',
+  },
+
+  // Step 4 — placed ahead of the inferred late-October conference season. Both
+  // pages are near-zero traffic today; the point is that the asset is already in
+  // place if and when that traffic arrives. Doubles as the first real test of
+  // whether the calendar model holds on this domain.
+  'how-to-prepare-for-parent-teacher-conference': {
+    source: 'conference-prep-post',
+    href: '/parent-teacher-conference-notes.pdf',
+    linkText: 'Five sections, one page per student',
+    blurb:
+      'This is the prep sheet version: strengths first, then academic and behavior concerns, room for what the family tells you, and an action plan you both agree to before anyone leaves.',
+    buttonLabel: 'Download the conference notes sheet',
+  },
+  'parent-teacher-conference-comments-for-teachers': {
+    source: 'conference-comments-post',
+    href: '/parent-teacher-conference-notes.pdf',
+    linkText: 'Fill it in before the conference, write on it during',
+    blurb:
+      'If you would rather walk in with the conversation already mapped out, this free one-page sheet gives each student a place for strengths, concerns, parent input, and agreed next steps.',
+    buttonLabel: 'Download the conference notes sheet',
+  },
 };
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
@@ -206,6 +284,12 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             ) : (
               <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(WORKFLOW_BRIDGE_MARKER)[1] }} />
             )}
+          </div>
+        ) : RESOURCE_OFFERS[slug] && post.contentHtml.includes(RESOURCE_OFFER_MARKER) ? (
+          <div className="blog-content">
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(RESOURCE_OFFER_MARKER)[0] }} />
+            <ResourceOffer {...RESOURCE_OFFERS[slug]} />
+            <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(RESOURCE_OFFER_MARKER)[1] }} />
           </div>
         ) : PDF_GATES[slug] && post.contentHtml.includes(PDF_GATE_MARKER) ? (
           <div className="blog-content">

@@ -68,6 +68,8 @@ Use this language.
 
 David has a really solid understanding of the material. The issue we are running into is that he rushes to be the first one finished. Because he is moving so fast, he makes careless errors on concepts I know he understands. We are working on a new rule where he has to wait at least five minutes to turn in a test after he finishes it. He needs to use that time to review his answers.
 
+RESOURCEOFFERMARKER
+
 ## Don't Start From a Blank Page
 
 Conference season is exhausting. The only way to survive it is to be prepared. If you sit down to write your notes the night before, you will stare at a blank page for hours. You will not remember the specifics.

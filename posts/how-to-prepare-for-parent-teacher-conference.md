@@ -41,6 +41,8 @@ Before the first knock on your door, make sure every student folder contains:
 
 If you need pre-written templates or comments to organize your observations, check out our list of [parent teacher conference comments for teachers](/blog/parent-teacher-conference-comments-for-teachers).
 
+RESOURCEOFFERMARKER
+
 ## Lead with the Sandwich Method
 
 Every conference should follow a predictable structure. Start with the positive, present the academic reality, and end with a team plan.
