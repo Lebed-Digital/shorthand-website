@@ -30,7 +30,12 @@ import { callReportCardFunction } from '@/lib/report-card-functions';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-const LIBRARY_PATH = '/report-card-comment-library';
+// A restored session lands on the library with ?restored=1. This is purely an
+// analytics marker so restore_purchase_success can be counted; it grants
+// nothing. Access still comes solely from the access cookie set on this same
+// response and re-verified by the gate, so appending, removing, or forging
+// this parameter changes no entitlement.
+const LIBRARY_RESTORED_PATH = '/report-card-comment-library?restored=1';
 const FAILURE_PATH = '/report-card-comment-library/restore/failed';
 
 interface ConfirmResponse {
@@ -114,5 +119,5 @@ export async function GET(req: Request): Promise<Response> {
   }
 
   const { maxAge } = accessCookieOptions(payload);
-  return redirectTo(req, LIBRARY_PATH, serializeAccessCookie(accessToken, maxAge));
+  return redirectTo(req, LIBRARY_RESTORED_PATH, serializeAccessCookie(accessToken, maxAge));
 }

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { fireRestoreAttempt } from '../../../lib/gtag';
 
 // Restore-request form.
 //
@@ -42,6 +43,13 @@ export default function RestoreRequestClient() {
 
     setInvalid(false);
     setStatus('submitting');
+
+    // Counts the attempt, never the address. Fired after local validation so
+    // typos are not counted, and before the request so it is recorded even if
+    // the network call fails. There is deliberately no "restore request
+    // succeeded" counterpart: the route always answers identically to avoid
+    // becoming a purchase oracle, so the client genuinely cannot know.
+    fireRestoreAttempt();
 
     try {
       const res = await fetch('/api/report-card-access/restore', {
