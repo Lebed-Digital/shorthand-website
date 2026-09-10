@@ -56,8 +56,8 @@
 - **Accounts required:** No. There is no Supabase Auth user, no login, no password.
 - **Access key:** Entitlement is tied to a **purchase row id**, carried in a signed httpOnly cookie. So access is per-browser, with **email as the recovery channel** (restore-by-email re-mints a cookie on a new device).
 - **Vercel holds no Supabase key at all** for this feature, not even the anon key. All privileged DB access is inside Edge Functions. Vercel's Stripe key is *restricted* to "Checkout Sessions: Write" only.
-- **Analytics:** **None.** `lib/gtag.ts` exposes only `fireCtaClick`. Grep confirms no purchase, begin_checkout, or conversion event fires anywhere in the checkout or success path. This is a real gap, not a simplification.
-- **Automated tests:** **None for the paid flow.** `tests/` contains only `parent-communication-log`, `report-card-generator` (the free AI tool), `resource-offer`, and `welcome-letter`. All RCCL verification was manual (handoff §13.11, §16, §20).
+- **Analytics:** **None** *(at the time of this audit)*. `lib/gtag.ts` exposed only `fireCtaClick`. Grep confirmed no purchase, begin_checkout, or conversion event fired anywhere in the checkout or success path. **RESOLVED 2026-09-09 by PR #80**, see handoff §24.
+- **Automated tests:** **None for the paid flow** *(at the time of this audit)*. `tests/` contained only `parent-communication-log`, `report-card-generator` (the free AI tool), `resource-offer`, and `welcome-letter`. All RCCL verification was manual (handoff §13.11, §16, §20). **RESOLVED 2026-09-09 by PR #80**: `tests/report-card-payment-path.spec.ts`, 16 tests.
 - **Refunds:** Not automated. The webhook ignores `charge.refunded`. Schema and every read path already support `status in ('paid','refunded','revoked')`, but no writer for that transition was built. Manual SQL procedure documented at handoff §22.1.
 - **Test vs production:** Now fully live. Handoff §20.3 records the production verification pass.
 
@@ -189,7 +189,7 @@ Generalizing a payment system to sell products 2 through 4 when product 1 has so
 | Fulfillment emails | Not needed. Access is instant via cookie. |
 | Refund and revocation | Manual, unautomated. Tolerable at low volume. |
 | Support edge cases | Restore-by-email is the whole support surface. Well designed. |
-| Test burden | **Zero automated tests exist today.** Every product currently costs a full manual production test pass including a real charge and refund. This is the largest hidden recurring cost and it is not visible in the code. |
+| Test burden | **Zero automated tests existed at audit time.** Every product cost a full manual production test pass including a real charge and refund. **Partly resolved 2026-09-09 (PR #80)**: 16 website-side tests now cover the paid path, so a second product would inherit the harness rather than build one. Edge Function internals remain manual-only. |
 | Tax | Stripe Tax not enabled. At $3.99 US-only this is a deferred concern, not a blocker. |
 | Stripe fees | 2.9% + $0.30 on $3.99 is roughly 10.4%. On $2.99 it is roughly 12.9%. Real, but not disqualifying. |
 
@@ -211,6 +211,19 @@ The architecture is not a bad fit (not D). It is genuinely well built for exactl
 **The qualification:** the moment there is a *decision to build product #2*, do the Section 4 refactor **first**, as a separate PR, before writing product #2's page. Do not copy-paste the four Edge Functions. The §19 incident is the evidence: duplicated single-valued price config across two secret stores silently ate a real payment once already, and copy-paste would institutionalize that failure mode.
 
 **The higher-value move right now** is the gap this audit found that is not about reuse at all: **there are no purchase analytics and no automated tests on a live payment path.** `fireCtaClick` is the only event in `lib/gtag.ts`, and nothing fires on begin_checkout, purchase, or restore. Product #1 could be converting at some non-zero rate and there would be no instrumented way to know, only the Supabase row count. That is worth fixing before any second product, and it is a prerequisite for judging whether a product #2 is warranted at all.
+
+> **UPDATE 2026-09-09 — this recommendation was acted on the same day.** PR #80
+> (squash-merged as `7d0f2a8`) added the six funnel events and 16 payment-path
+> tests, deliberately WITHOUT generalizing the architecture: no product
+> registry, no `product_key` column, no `STRIPE_PRICE_ID` change, no env
+> renames. The Phase 6 recommendation below (**C, do not generalize yet**)
+> therefore still stands unchanged, and its qualification is now the live
+> instruction: when product #2 is actually decided on, do the Section 4
+> refactor first, as its own PR. Full record in handoff §24.
+>
+> What this changes for a future product-#2 decision: the conversion data
+> needed to judge whether one is warranted is now being collected, where before
+> it was not. Give it a report-card season before reading anything into it.
 
 ---
 
