@@ -27,24 +27,20 @@ const SECTIONS = Object.keys(CATEGORIES_BY_SECTION) as Section[];
 
 function CommentCard({ comment, name }: { comment: Comment; name: string }) {
   const [editing, setEditing] = useState(false);
-  const [draft, setDraft] = useState(() => personalize(comment.text, name));
   const [copied, setCopied] = useState(false);
-  const [dirty, setDirty] = useState(false);
-  const [dirtyForName, setDirtyForName] = useState(name);
 
-  if (dirty && dirtyForName !== name) {
-    setDirty(false);
-  }
+  // An edit is stored WITH the name it was written against, so a render for a
+  // different name simply does not see it. That is what makes the previous
+  // student's name impossible to display: there is no window between the name
+  // changing and the edit being discarded, not even a single render, and it
+  // holds while the textarea is open. See the same note in PaywallClient.
+  const [edit, setEdit] = useState<{ forName: string; text: string } | null>(null);
 
-  const displayText = dirty ? draft : personalize(comment.text, name);
-
-  function startEditing() {
-    if (!dirty) setDraft(personalize(comment.text, name));
-    setEditing(true);
-  }
+  const editForThisName = edit && edit.forName === name ? edit.text : null;
+  const displayText = editForThisName ?? personalize(comment.text, name);
 
   async function copy() {
-    const toCopy = dirty ? draft : finalizeForCopy(comment.text, name);
+    const toCopy = editForThisName ?? finalizeForCopy(comment.text, name);
     await navigator.clipboard.writeText(toCopy);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -73,13 +69,10 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
 
       {editing ? (
         <textarea
-          value={draft}
-          onChange={(e) => {
-            setDraft(e.target.value);
-            setDirty(true);
-            setDirtyForName(name);
-          }}
+          value={displayText}
+          onChange={(e) => setEdit({ forName: name, text: e.target.value })}
           rows={4}
+          aria-label="Edit this comment"
           style={{
             width: '100%',
             fontSize: 14,
@@ -97,7 +90,7 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
         />
       ) : (
         <p
-          onClick={startEditing}
+          onClick={() => setEditing(true)}
           style={{
             fontSize: 14,
             lineHeight: 1.6,
@@ -115,7 +108,7 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
         <button onClick={copy} style={primaryButtonStyle}>
           {copied ? 'Copied!' : 'Copy'}
         </button>
-        <button onClick={() => (editing ? setEditing(false) : startEditing())} style={secondaryButtonStyle}>
+        <button onClick={() => setEditing(!editing)} style={secondaryButtonStyle}>
           {editing ? 'Done' : 'Edit'}
         </button>
       </div>

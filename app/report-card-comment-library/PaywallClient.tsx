@@ -351,25 +351,23 @@ function FreeCommentCard({
   copied: boolean;
   onCopied: (comment: Comment) => void;
 }) {
-  const [draft, setDraft] = useState('');
-  const [dirty, setDirty] = useState(false);
-  const [dirtyForName, setDirtyForName] = useState(name);
+  // An edit belongs to the name it was written against, so the draft is stored
+  // WITH that name rather than reset by a side effect. Any render for a
+  // different name simply does not see this draft, which is what makes the
+  // previous student's name impossible to display: there is no window between
+  // the name changing and the edit being discarded, not even a single render,
+  // and it holds while the textarea is open.
+  //
+  // Deliberately not a reset-in-render (`if (stale) setDirty(false)`) or an
+  // effect: both leave one render showing text built from the old name.
+  const [edit, setEdit] = useState<{ forName: string; text: string } | null>(null);
   const [editing, setEditing] = useState(false);
 
-  // An edit belongs to the name it was written against. Typing a new name
-  // invalidates it, otherwise the previous child's name would survive inside
-  // the edited text.
-  if (dirty && dirtyForName !== name) setDirty(false);
-
-  const displayText = dirty ? draft : personalize(comment.text, name);
-
-  function startEditing() {
-    if (!dirty) setDraft(personalize(comment.text, name));
-    setEditing(true);
-  }
+  const editForThisName = edit && edit.forName === name ? edit.text : null;
+  const displayText = editForThisName ?? personalize(comment.text, name);
 
   async function copy() {
-    const toCopy = dirty ? draft : finalizeForCopy(comment.text, name);
+    const toCopy = editForThisName ?? finalizeForCopy(comment.text, name);
     await navigator.clipboard.writeText(toCopy);
     onCopied(comment);
   }
@@ -389,18 +387,14 @@ function FreeCommentCard({
 
       {editing ? (
         <textarea
-          value={draft}
-          onChange={(e) => {
-            setDraft(e.target.value);
-            setDirty(true);
-            setDirtyForName(name);
-          }}
+          value={displayText}
+          onChange={(e) => setEdit({ forName: name, text: e.target.value })}
           rows={4}
           aria-label="Edit this comment"
           style={editAreaStyle}
         />
       ) : (
-        <p onClick={startEditing} style={commentTextStyle} title="Click to edit">
+        <p onClick={() => setEditing(true)} style={commentTextStyle} title="Click to edit">
           {displayText}
         </p>
       )}
@@ -409,7 +403,7 @@ function FreeCommentCard({
         <button onClick={copy} style={copyPrimaryStyle}>
           {copied ? 'Copied!' : 'Copy'}
         </button>
-        <button onClick={() => (editing ? setEditing(false) : startEditing())} style={editButtonStyle}>
+        <button onClick={() => setEditing(!editing)} style={editButtonStyle}>
           {editing ? 'Done' : 'Edit'}
         </button>
       </div>

@@ -132,6 +132,78 @@ test.describe('free slice', () => {
     expect(copied).not.toContain('[Student]');
   });
 
+  test('changing the name discards an edit made for the previous name', async ({ page }) => {
+    await page.goto(LIBRARY);
+
+    const nameField = page.getByLabel(/Student name/);
+    await nameField.fill('Beatrix');
+
+    // Edit the first comment while its name is Beatrix.
+    const firstComment = page.locator('p[title="Click to edit"]').first();
+    await firstComment.click();
+    const editor = page.getByLabel('Edit this comment');
+    await expect(editor).toBeVisible();
+    await editor.fill('Beatrix did something I typed by hand.');
+    await expect(editor).toHaveValue(/Beatrix did something I typed by hand\./);
+
+    // Change the name WITHOUT closing the editor. This is the case that used to
+    // leave the previous student's name on screen: the open textarea kept
+    // rendering the old draft.
+    await nameField.fill('Cassius');
+
+    // The editor is still open, and Beatrix is gone from it immediately.
+    await expect(editor).toBeVisible();
+    await expect(editor).not.toHaveValue(/Beatrix/);
+    await expect(editor).toHaveValue(/Cassius/);
+
+    // And nowhere else on the page either. A report card comment carrying
+    // another child's name is the one failure that reaches a parent.
+    await expect(page.locator('body')).not.toContainText('Beatrix');
+  });
+
+  test('an edit discarded by a name change does not come back on the clipboard', async ({
+    page,
+    context,
+  }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto(LIBRARY);
+
+    const nameField = page.getByLabel(/Student name/);
+    await nameField.fill('Beatrix');
+
+    await page.locator('p[title="Click to edit"]').first().click();
+    const editor = page.getByLabel('Edit this comment');
+    await editor.fill('Beatrix did something I typed by hand.');
+
+    await nameField.fill('Cassius');
+
+    // Copy straight from the still-open editor.
+    await page.getByRole('button', { name: /^(Copy|Copied!)$/ }).first().click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(copied).not.toContain('Beatrix');
+    expect(copied).toContain('Cassius');
+  });
+
+  test('an edit survives while the name is unchanged', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto(LIBRARY);
+
+    // The discard above must not be so eager that ordinary editing breaks: an
+    // edit has to survive everything that is not a name change.
+    await page.getByLabel(/Student name/).fill('Cassius');
+    await page.locator('p[title="Click to edit"]').first().click();
+    const editor = page.getByLabel('Edit this comment');
+    await editor.fill('Cassius wrote this himself.');
+
+    // Close the editor, reopen it, and the edit is still there.
+    await page.getByRole('button', { name: 'Done' }).first().click();
+    await expect(page.locator('body')).toContainText('Cassius wrote this himself.');
+
+    await page.getByRole('button', { name: /^(Copy|Copied!)$/ }).first().click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(copied).toBe('Cassius wrote this himself.');
+  });
+
   test('fires the free-slice funnel events, without duplicates', async ({ page, context }) => {
     await context.grantPermissions(['clipboard-read', 'clipboard-write']);
     const captured = await captureEvents(page);
