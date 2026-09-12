@@ -48,6 +48,14 @@ This does not change CTA destinations or the demo-first/signup-first split above
 
 **Known limitation:** only the click-tracked paths above carry attribution. The many static `<a href="https://app.getshorthandapp.com...">` / `<Link href="...">` links across feature pages, `/install`, `/about`, etc. (server-rendered, no click handler) do not get `lp`/UTM appended — converting those to client-tracked links was judged out of scope for this pass. If you want full coverage later, either add click handlers to those pages or accept `first_touch_landing_page` staying null for that share of signups.
 
+> **Measured 2026-09-12 — the limitation above is now the single biggest gap in attribution, and the blog is where it bites.**
+>
+> Scope, counted directly from the repo: **85 in-body `https://app.getshorthandapp.com?demo=true` links across 74 of 87 posts.** All of them render through `dangerouslySetInnerHTML` in `app/blog/[slug]/page.tsx`, so they are plain `<a>` tags with no click handler — they cannot carry `lp` or UTM by construction. Only the single footer `TrackedLink` per post is instrumented.
+>
+> Why it matters more now than when this limitation was written: the blog is **~97% of organic traffic** (28-day GSC: homepage 62 clicks of ~2,000; the top four pages are all posts). Consequence in live data — of the 7 real signups since first-touch attribution went live 2026-09-04, **7 of 7 were captured, and every one records `landing_page = "/"`. Zero record a `/blog/...` page.** Attribution capture is working correctly; a blog-attributed signup is simply impossible to record today. So the homepage receives credit for acquisition the blog is actually doing, and any decision to invest less in the blog based on attribution data would be reading an artifact.
+>
+> Previously flagged qualitatively in `docs/gsc-ga4-cross-source-analysis-2026-09.md` §0.2 (blog = 6% of `cta_click` despite driving most traffic). **The decision this doc already framed — add click handlers, or accept null attribution for that share — is still unmade.** Note the sample is small (7 signups, 8 days); the finding rests on the verifiable mechanism in source, not on the counts.
+
 ### Applied as of 2026-06-17 (original)
 - Shared blog bottom CTA (`app/blog/[slug]/page.tsx`) — updated to app signup URL
 - All inline blog post links (`posts/*.md`, 56 files) — updated to app signup URL
