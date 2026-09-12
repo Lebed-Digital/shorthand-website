@@ -181,13 +181,25 @@ export async function checkRateLimit(
 ): Promise<{ blocked: boolean; response?: Response }> {
   const ip = getIP(req);
   const identifier = `${ip}`;
-  const { success } = await limiters[tool].limit(identifier);
 
-  if (!success) {
-    console.log(`[ratelimit] blocked | tool=${tool} | ip_prefix=${ip.slice(0, 8)} | ${new Date().toISOString()}`);
-    return { blocked: true, response: rateLimitExceededResponse(tool) };
+  try {
+    const { success } = await limiters[tool].limit(identifier);
+
+    if (!success) {
+      console.log(`[ratelimit] blocked | tool=${tool} | ip_prefix=${ip.slice(0, 8)} | ${new Date().toISOString()}`);
+      return { blocked: true, response: rateLimitExceededResponse(tool) };
+    }
+
+    console.log(`[ratelimit] allowed | tool=${tool} | ${new Date().toISOString()}`);
+    return { blocked: false };
+  } catch (e) {
+    // Redis unreachable. Fail open, for the same reason as checkPurchaseRateLimit
+    // and checkRestoreConfirmRateLimit above: this guard exists to bound cost,
+    // not to enforce access, and the per-call cost is still bounded by the 30s
+    // upstream timeout and the output token caps on every route behind it.
+    // Failing closed here turned an Upstash blip into a bare 500 on both free
+    // generators, refine, checkout-session creation and restore at once.
+    console.error(`[ratelimit] limiter unavailable | tool=${tool}:`, e instanceof Error ? e.message : String(e));
+    return { blocked: false };
   }
-
-  console.log(`[ratelimit] allowed | tool=${tool} | ${new Date().toISOString()}`);
-  return { blocked: false };
 }
