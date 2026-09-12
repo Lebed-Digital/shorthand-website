@@ -340,6 +340,7 @@ function FreeToolInner() {
               value={result}
               onChange={(e) => setResult(e.target.value)}
               rows={6}
+              aria-label="Generated comment"
               style={{ width: '100%', fontSize: 15, color: '#1e293b', lineHeight: 1.7, marginBottom: 20, borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
               onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
               onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
@@ -366,6 +367,24 @@ function FreeToolInner() {
             </div>
 
             <OptionalEmailCapture source="report-card-generator-post-result" />
+
+            {/* One-comment vs whole-class. The generator stays free and
+                unweakened; this only names the case it does not cover. */}
+            <div style={{ marginTop: 16, background: '#f0fdfa', borderRadius: 14, padding: '18px 20px', border: '1px solid #99f6e4' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0d9488', marginBottom: 6 }}>Still have the rest of the class?</div>
+              <p style={{ fontSize: 14, color: '#1e293b', margin: '0 0 12px', lineHeight: 1.6 }}>
+                That was one comment. If you have the rest of the class to write, the Report Card Comment
+                Library is $4.99 once: search, filter, name fill, 374 comments.
+              </p>
+              <Link
+                href="/report-card-comment-library"
+                style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none' }}
+                onClick={() => fireCtaClick({ cta_source: 'free_tool_result', cta_destination: 'report-card-comment-library', link_url: '/report-card-comment-library' })}
+              >
+                See the library &rarr;
+              </Link>
+            </div>
+
 
             <div style={{ marginTop: 20, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid rgba(167,139,250,0.25)' }}>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: 8 }}>Want this for every student, all year?</div>

@@ -249,7 +249,18 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <Link href="/#features" className="nav-link">Features</Link>
             <Link href="/blog" className="nav-link">Blog</Link>
           </div>
-          <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
+          {/* Report-card comment posts only, never sitewide: on those pages the
+              library is what the reader is most likely to want next, and the app
+              becomes the secondary link. LIBRARY_CTA_INTROS already enumerates
+              exactly that set of posts, so the two cannot drift apart. */}
+          {LIBRARY_CTA_INTROS[slug] ? (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+              <Link href="https://app.getshorthandapp.com?demo=true" className="nav-link">Get ShortHand</Link>
+              <Link href="/report-card-comment-library" className="btn-primary">Comment library: $4.99</Link>
+            </div>
+          ) : (
+            <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
+          )}
         </div>
       </nav>
 

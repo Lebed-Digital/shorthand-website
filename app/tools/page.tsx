@@ -112,6 +112,33 @@ export default function ToolsPage() {
           </div>
         ))}
 
+        {/* Deliberately not in the `tools` array above: that list is the free
+            tools, and this one is paid. Placed after them so the free tools stay
+            the page's first answer. */}
+        <div style={{ background: '#f0fdfa', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0d9488' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <span style={{ fontSize: 11, fontWeight: 700, color: '#0d9488', textTransform: 'uppercase', letterSpacing: '0.08em' }}>$4.99 one-time</span>
+          </div>
+          <h2 style={{ fontSize: 17, fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.3 }}>Report Card Comment Library</h2>
+          <p style={{ fontSize: 14, color: '#475569', margin: '0 0 16px', lineHeight: 1.6 }}>
+            The generator above writes one comment. If you have the rest of the class to write, this is
+            374 comments you can search, filter, and copy with the student name already filled in.
+          </p>
+          <Link
+            href="/report-card-comment-library"
+            style={{ display: 'inline-block', background: '#0d9488', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
+          >
+            See the library &rarr;
+          </Link>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
+            {['Try a free sample first', 'No sign-up to buy', 'One-time, no subscription'].map((signal) => (
+              <span key={signal} style={{ fontSize: 12, color: '#475569', display: 'flex', alignItems: 'center', gap: 4 }}>
+                <span style={{ color: '#0d9488', fontWeight: 700 }}>&#10003;</span> {signal}
+              </span>
+            ))}
+          </div>
+        </div>
+
         <div style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: 24, marginTop: 8, border: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', margin: '0 0 6px' }}>More tools coming soon.</p>
           <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', margin: 0 }}>Follow along at <a href="https://www.instagram.com/getshorthand_app" target="_blank" rel="noopener noreferrer" style={{ color: '#34d399', textDecoration: 'none' }}>@getshorthand_app</a> on Instagram.</p>
