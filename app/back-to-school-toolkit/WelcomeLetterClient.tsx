@@ -2,7 +2,13 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { fireCtaClick } from '../../lib/gtag';
+import {
+  fireCtaClick,
+  fireGenerationAttempt,
+  fireGenerationSuccess,
+  fireGenerationBlocked,
+  fireGenerationFailed,
+} from '../../lib/gtag';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
 const GRADES = [
@@ -68,6 +74,7 @@ function WelcomeLetterInner() {
     if (!teacherName.trim()) { setError('Please enter your name.'); return; }
     if (!grade) { setError('Please select a grade level.'); return; }
     setError(''); setResult(''); setLoading(true);
+    fireGenerationAttempt('welcome-letter', 'generate');
     try {
       const res = await fetch('/api/welcome-letter', {
         method: 'POST',
@@ -75,9 +82,24 @@ function WelcomeLetterInner() {
         body: JSON.stringify({ teacherName, grade, subject, tone }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
+      if (!res.ok) {
+        // Status is read before the body is used, so a 429 can never be
+        // counted as a success or as a generic failure. The message shown to
+        // the teacher is unchanged.
+        if (res.status === 429) fireGenerationBlocked('welcome-letter', 'generate');
+        else fireGenerationFailed('welcome-letter', 'generate', 'http_error');
+        throw new Error(data?.error?.message ?? 'Something went wrong.');
+      }
       setResult(data.letter);
+      // The route guarantees a non-empty letter on 200 (it throws otherwise),
+      // so this branch is belt-and-braces: report, never a success, but do not
+      // change what the user sees.
+      if (data.letter) fireGenerationSuccess('welcome-letter', 'generate');
+      else fireGenerationFailed('welcome-letter', 'generate', 'empty_response');
     } catch (e: unknown) {
+      // Only a fetch/parse rejection reaches here uncounted; the branches above
+      // have already fired for every response the server actually returned.
+      if (e instanceof TypeError) fireGenerationFailed('welcome-letter', 'generate', 'network');
       setError(e instanceof Error ? e.message : 'Something went wrong. Please try again.');
     } finally {
       setLoading(false);
@@ -87,6 +109,7 @@ function WelcomeLetterInner() {
   async function refine() {
     if (!result) return;
     setError(''); setLoading(true);
+    fireGenerationAttempt('welcome-letter', 'refine');
     try {
       const res = await fetch('/api/welcome-letter-refine', {
         method: 'POST',
@@ -94,9 +117,16 @@ function WelcomeLetterInner() {
         body: JSON.stringify({ letter: result, instructions: refineInstructions }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
+      if (!res.ok) {
+        if (res.status === 429) fireGenerationBlocked('welcome-letter', 'refine');
+        else fireGenerationFailed('welcome-letter', 'refine', 'http_error');
+        throw new Error(data?.error?.message ?? 'Something went wrong.');
+      }
       setResult(data.letter);
+      if (data.letter) fireGenerationSuccess('welcome-letter', 'refine');
+      else fireGenerationFailed('welcome-letter', 'refine', 'empty_response');
     } catch (e: unknown) {
+      if (e instanceof TypeError) fireGenerationFailed('welcome-letter', 'refine', 'network');
       setError(e instanceof Error ? e.message : 'Something went wrong. Please try again.');
     } finally {
       setLoading(false);
