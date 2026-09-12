@@ -4,7 +4,7 @@ import PaywallClient from './PaywallClient';
 import AccessRefresher from './AccessRefresher';
 import RestoreSuccessAnalytics from './RestoreSuccessAnalytics';
 import { evaluateAccess } from '@/lib/report-card-gate';
-import { getFullLibrary, getTeaserData } from '@/lib/report-card-teaser';
+import { getFreeSliceData, getFullLibrary } from '@/lib/report-card-teaser';
 
 export const metadata: Metadata = {
   title: 'Report Card Comment Library',
@@ -23,8 +23,8 @@ export default async function ReportCardCommentLibraryPage({
   const [decision, { restored }] = await Promise.all([evaluateAccess(), searchParams]);
 
   if (!decision.access) {
-    // Only the teaser payload crosses to the client here. The full library is
-    // never read on this branch, so it cannot appear in the RSC payload.
+    // Only the free-slice payload crosses to the client here. The full library
+    // is never read on this branch, so it cannot appear in the RSC payload.
     //
     // When the gate rejected an existing cookie (expired, tampered, or a
     // purchase that came back not_paid), also ping the refresh route so the
@@ -34,7 +34,7 @@ export default async function ReportCardCommentLibraryPage({
     return (
       <>
         {decision.clearCookie ? <AccessRefresher /> : null}
-        <PaywallClient teaser={getTeaserData()} />
+        <PaywallClient slice={getFreeSliceData()} />
       </>
     );
   }

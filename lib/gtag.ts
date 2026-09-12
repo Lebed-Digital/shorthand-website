@@ -112,3 +112,41 @@ export function fireRestoreFailure(reason: 'busy' | 'link'): void {
     reason,
   });
 }
+
+// ---------------------------------------------------------------------------
+// Free-slice interaction events (Report Card Comment Library paywall)
+// ---------------------------------------------------------------------------
+//
+// These measure whether the free slice does its job: does a visitor actually
+// use it (name, filter, copy) before deciding, and does hitting a locked
+// comment move them to checkout.
+//
+// checkout_clicked and purchase_completed from the brief are deliberately NOT
+// new events. begin_checkout and purchase above already cover those two steps
+// and are the GA4-standard names the existing Stripe funnel reports on;
+// duplicating them under a second name would double-count the funnel. Same PII
+// rule as above: no comment text, no names typed by the user, no ids.
+
+export function fireLibraryPageView(variant: 'free' | 'paid'): void {
+  fireEvent('library_page_view', { product_key: RCCL_PRODUCT_KEY, variant });
+}
+
+// Fired once per page, on the first name keystroke, not per character.
+export function fireNameEntered(): void {
+  fireEvent('name_entered', { product_key: RCCL_PRODUCT_KEY });
+}
+
+// `filter` is the control used ('search' | 'section' | 'tone'), never the
+// query text the visitor typed.
+export function fireFilterUsed(filter: string): void {
+  fireEvent('filter_used', { product_key: RCCL_PRODUCT_KEY, filter });
+}
+
+// Comment section only, never the comment text or id.
+export function fireFreeCommentCopied(section: string): void {
+  fireEvent('free_comment_copied', { product_key: RCCL_PRODUCT_KEY, section });
+}
+
+export function fireLockedCommentClicked(section: string): void {
+  fireEvent('locked_comment_clicked', { product_key: RCCL_PRODUCT_KEY, section });
+}

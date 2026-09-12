@@ -123,6 +123,8 @@ Notice what those five comments never do: guess at a cause, use diagnostic langu
 49. "makes our classroom a better place to be"
 50. "has a genuine gift for making others feel included"
 
+If you are writing more than a couple of students, the [Report Card Comment Library](/report-card-comment-library) has 374 comments you can search and filter, with the student name filled in. One-time $4.99.
+
 ## Where the specifics come from
 
 The difference between "demonstrates growth in self-regulation" and "recovery that used to take a lesson now takes a few minutes" is not writing talent. It is whether you have notes.
@@ -131,9 +133,11 @@ Social-emotional growth is slow and quiet. Nobody remembers in June that the cha
 
 These comments also work for mid-term check-ins. If you are writing progress reports rather than report cards, the [student progress report comments for teachers](/blog/student-progress-report-comments-for-teachers) collection covers that shorter format.
 
-ShortHand was built for exactly this. Log a ten-second note on your phone when something happens ("used calm corner on his own, first time"), and at report card time every note is waiting, sorted by student. It can even draft the comment from your own observations, in your voice, with the specifics already in place.
+If you still have most of a class to get through, that is what the [Report Card Comment Library](/report-card-comment-library) is for. 374 comments across behavior, ADHD and attention, preschool, academics, and social-emotional, all searchable and filterable, with the student name filled in automatically. You are not scrolling a blog post and swapping the name in by hand. One-time $4.99, and you can try a sample of it before you buy.
 
-The kid worked hard all year for that growth. [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and make sure the report card actually shows it. And if reports are due tomorrow morning, the [free report card comment generator](/report-card-comment-generator) works right now, no sign-up required.
+Need one comment right now with no purchase? The [free report card comment generator](/report-card-comment-generator) writes a single comment. If you have a whole class left, use the library.
+
+Worth knowing for next term: the reason a comment like "recovery that used to take a lesson now takes a few minutes" is possible at all is that somebody wrote it down in January. ShortHand is a ten-second note on your phone when it happens, sorted by student, waiting for you at report card time.
 
 ---
 

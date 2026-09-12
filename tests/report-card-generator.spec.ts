@@ -23,7 +23,10 @@ test('generates a report card comment without requiring an email', async ({ page
   await page.getByRole('button', { name: 'Math' }).first().click();
   await page.getByRole('button', { name: /Generate comment/ }).click();
 
-  await expect(page.getByText('Alex has had a strong term in reading and writing.')).toBeVisible();
+  // Scoped to the editable result, not getByText: the page also ships a static
+  // "Sample generated comments" section whose example begins with this same
+  // sentence, so a bare text match is ambiguous under strict mode.
+  await expect(page.getByLabel('Generated comment')).toHaveValue('Alex has had a strong term in reading and writing.');
 
   await expect(page.getByText('Optional', { exact: true })).toBeVisible();
   await expect(page.getByLabel('Email address')).toBeVisible();
