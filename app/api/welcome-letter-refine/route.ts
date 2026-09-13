@@ -1,4 +1,5 @@
 import { OPENAI_CHAT_COMPLETIONS_URL, OPENAI_REASONING_EFFORT, OPENAI_TEXT_MODEL } from '@/lib/ai-config';
+import { generatorErrorResponse, logUpstreamFailure } from '@/lib/api-errors';
 import { checkRateLimit } from '@/lib/ratelimit';
 
 export const runtime = 'edge';
@@ -53,11 +54,9 @@ export async function POST(req: Request): Promise<Response> {
     });
 
     if (!res.ok) {
-      const err = await res.json().catch(() => ({}));
-      return Response.json(
-        { error: { message: err?.error?.message ?? 'AI request failed.' } },
-        { status: res.status }
-      );
+      const err = await res.text().catch(() => '');
+      logUpstreamFailure('welcome-letter-refine', `status=${res.status} ${err}`);
+      return generatorErrorResponse();
     }
 
     const data = await res.json();
@@ -65,10 +64,8 @@ export async function POST(req: Request): Promise<Response> {
     if (!letter) throw new Error('Empty response from AI.');
 
     return Response.json({ letter });
-  } catch (e: any) {
-    return Response.json(
-      { error: { message: e?.message ?? 'Something went wrong.' } },
-      { status: 500 }
-    );
+  } catch (e) {
+    logUpstreamFailure('welcome-letter-refine', e);
+    return generatorErrorResponse();
   }
 }
