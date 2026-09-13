@@ -150,3 +150,78 @@ export function fireFreeCommentCopied(section: string): void {
 export function fireLockedCommentClicked(section: string): void {
   fireEvent('locked_comment_clicked', { product_key: RCCL_PRODUCT_KEY, section });
 }
+
+// ---------------------------------------------------------------------------
+// Free AI generator events (report card comment + welcome letter)
+// ---------------------------------------------------------------------------
+//
+// Why these exist: nothing currently fires on generate, success, failure or
+// 429, so there is no way to answer "is the rate limit actually blocking
+// teachers" from data. These four events make that measurable without changing
+// any limit.
+//
+// PII rule, same as the paid funnel and enforced by these signatures: the only
+// parameters accepted are a fixed tool key, a fixed action, and a coarse
+// failure reason from a closed set. No prompts, letter text, teacher or student
+// names, subjects, tones, email addresses, generated output, upstream error
+// strings, or IPs can be passed through these functions even by mistake.
+//
+// HOW TO READ THE DATA (the point of writing it down here):
+//
+//   generation_attempt  - fired once per request actually sent to the server,
+//                         after client-side validation passes. This is the
+//                         denominator. It is NOT a page view and NOT a click on
+//                         a disabled button.
+//   generation_success  - the server returned 200 AND usable text was rendered.
+//   generation_blocked  - the server returned 429. This is the rate limiter
+//                         doing its job, and the number that tells us whether
+//                         F2 (5/hour on a shared school IP) is hurting anyone.
+//                         Deliberately a separate event, not a failure reason,
+//                         because it is the one we most need to watch.
+//   generation_failed   - anything else that prevented a result.
+//
+// Every attempt should resolve to exactly one of success / blocked / failed.
+// attempts - (success + blocked + failed) should be ~0; a persistent gap means
+// users are closing the tab mid-request. A blocked or failed generation must
+// never be recorded as a success, which is why the client branches on HTTP
+// status before it touches the response body.
+
+// Which generator fired the event. Stable, low-cardinality, and intentionally
+// NOT derived from the URL so that a page move does not fragment the history.
+export type GeneratorTool = 'report-card-comment' | 'welcome-letter';
+
+// Which action within that tool. Generate and refine are separate actions here
+// because they are separate rate-limit buckets server-side; keeping them
+// distinct is what makes F3 (refine budgeted at 2x generate) observable. This
+// is reporting only and changes no bucket.
+export type GeneratorAction = 'generate' | 'refine';
+
+// Coarse, closed set. 'http_error' covers any non-429 error status, 'network'
+// covers a fetch rejection or timeout, 'empty_response' covers a 200 that
+// carried no usable text. Upstream messages are deliberately not forwarded:
+// they can contain OpenAI org identifiers and quota phrasing (audit F5).
+export type GenerationFailureReason = 'http_error' | 'network' | 'empty_response';
+
+export function fireGenerationAttempt(tool: GeneratorTool, action: GeneratorAction): void {
+  fireEvent('generation_attempt', { tool, action });
+}
+
+export function fireGenerationSuccess(tool: GeneratorTool, action: GeneratorAction): void {
+  fireEvent('generation_success', { tool, action });
+}
+
+// Fired only on an HTTP 429 from our own route, i.e. our rate limiter blocked
+// the request. Note an upstream OpenAI 429 currently also surfaces as a 429
+// (audit F5), so this counts both; that is a known limit of reading this
+// number, not a bug introduced here.
+export function fireGenerationBlocked(tool: GeneratorTool, action: GeneratorAction): void {
+  fireEvent('generation_blocked', { tool, action });
+}
+
+export function fireGenerationFailed(
+  tool: GeneratorTool,
+  action: GeneratorAction,
+  reason: GenerationFailureReason
+): void {
+  fireEvent('generation_failed', { tool, action, reason });
+}

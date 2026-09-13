@@ -2,7 +2,14 @@
 
 import React, { useState, useRef } from 'react';
 import Link from 'next/link';
-import { fireCtaClick } from '../../lib/gtag';
+import {
+  fireCtaClick,
+  fireGenerationAttempt,
+  fireGenerationSuccess,
+  fireGenerationBlocked,
+  fireGenerationFailed,
+  type GeneratorAction,
+} from '../../lib/gtag';
 import { withAttribution } from '../../lib/attribution';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
@@ -195,21 +202,41 @@ function FreeToolInner() {
     });
   }
 
-  async function callApi(prompt: string) {
-    const res = await fetch('/api/free-tool', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prompt }),
-    });
+  // `action` is used for analytics only. The outcome is reported here rather
+  // than at the two call sites because the HTTP status is only available
+  // inside this function: it throws a plain Error, so by the time generate()
+  // or refine() catches, a 429 is indistinguishable from any other failure.
+  // The prompt itself is never sent to analytics.
+  async function callApi(prompt: string, action: GeneratorAction) {
+    let res: Response;
+    try {
+      res = await fetch('/api/free-tool', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ prompt }),
+      });
+    } catch (e) {
+      fireGenerationFailed('report-card-comment', action, 'network');
+      throw e;
+    }
     const data = await res.json();
-    if (!res.ok) throw new Error(data?.error?.message ?? 'Something went wrong.');
+    if (!res.ok) {
+      if (res.status === 429) fireGenerationBlocked('report-card-comment', action);
+      else fireGenerationFailed('report-card-comment', action, 'http_error');
+      throw new Error(data?.error?.message ?? 'Something went wrong.');
+    }
+    // The route guarantees a non-empty comment on 200, so the else is
+    // belt-and-braces. Either way the returned value is unchanged.
+    if (data.comment) fireGenerationSuccess('report-card-comment', action);
+    else fireGenerationFailed('report-card-comment', action, 'empty_response');
     return data.comment as string;
   }
 
   async function generate() {
     if (selected.size === 0) { setError('Please select at least one option.'); return; }
     setError(''); setResult(''); setLoading(true);
-    try { setResult(await callApi(buildPrompt(name, selected, extra, length, tone))); }
+    fireGenerationAttempt('report-card-comment', 'generate');
+    try { setResult(await callApi(buildPrompt(name, selected, extra, length, tone), 'generate')); }
     catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
@@ -217,12 +244,13 @@ function FreeToolInner() {
   async function refine() {
     if (!result) return;
     setError(''); setLoading(true);
+    fireGenerationAttempt('report-card-comment', 'refine');
     try {
       const instructions = refineInstructions.trim()
         ? `Teacher instructions: ${refineInstructions.trim()}`
         : 'Make it sound more natural and human. Less generic.';
       const prompt = `Here is a report card comment: "${result}"\n\nRewrite it based on these instructions: ${instructions}\n\nKeep the same student name (if any) and same length. Never use em dashes under any circumstances.`;
-      setResult(await callApi(prompt));
+      setResult(await callApi(prompt, 'refine'));
     } catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
