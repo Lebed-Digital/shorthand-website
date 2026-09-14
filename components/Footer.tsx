@@ -10,6 +10,9 @@ export default function Footer() {
         info@getshorthandapp.com
       </a>
       <div className="footer-copy">
+        ShortHand is a product of Lebed Digital LLC.
+      </div>
+      <div className="footer-copy">
         © 2026 Lebed Digital LLC. All rights reserved. ·{' '}
         <Link href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Privacy Policy
