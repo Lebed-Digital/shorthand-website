@@ -224,6 +224,8 @@ export default function Home() {
           <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
             <a href="/blog" className="nav-mobile-link">Blog</a>
+            <a href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
+            <a href="/resources" className="nav-mobile-link">Resources</a>
             <a href="/privacy" className="nav-mobile-link">🔒 Privacy</a>
             <a href="/terms" className="nav-mobile-link">Terms</a>
             <a href="https://app.getshorthandapp.com" className="nav-mobile-link nav-mobile-cta">Open ShortHand →</a>

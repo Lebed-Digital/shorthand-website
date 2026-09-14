@@ -14,6 +14,14 @@ export default function Footer() {
       </div>
       <div className="footer-copy">
         © 2026 Lebed Digital LLC. All rights reserved. ·{' '}
+        <Link href="/tools" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          Free Tools
+        </Link>{' '}
+        ·{' '}
+        <Link href="/resources" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          Resources
+        </Link>{' '}
+        ·{' '}
         <Link href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Privacy Policy
         </Link>{' '}
