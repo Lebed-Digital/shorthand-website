@@ -22,6 +22,10 @@ export default function Footer() {
           Terms of Service
         </Link>{' '}
         ·{' '}
+        <Link href="/support" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          Support
+        </Link>{' '}
+        ·{' '}
         <Link href="/install" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Add to Home Screen
         </Link>{' '}
