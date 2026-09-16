@@ -45,7 +45,13 @@ type Handler = (req: Request) => Promise<Response>;
 const routes: { name: string; tool: keyof RateLimitModule['limiters']; handler: Handler; body: unknown; ok: unknown; field: string }[] = [
   {
     name: 'welcome-letter generate',
-    tool: 'welcome-letter-generator',
+    // Both welcome-letter routes now go through checkWelcomeLetterRateLimit's
+    // two-tier pool (F2/F3) rather than checkRateLimit. post() below sends no
+    // x-shorthand-anon-id header, so only the per-IP tier is consulted;
+    // blocking it is enough to prove the route surfaces its own 429
+    // unchanged. The tier split itself has dedicated coverage in
+    // ratelimit.test.ts.
+    tool: 'welcome-letter-ip',
     handler: (await import('../app/api/welcome-letter/route.ts')).POST,
     body: { teacherName: 'Ms. Johnson', grade: '3rd Grade', subject: '', tone: 'Warm' },
     ok: { choices: [{ message: { content: 'Dear Families, welcome.' } }] },
@@ -53,7 +59,7 @@ const routes: { name: string; tool: keyof RateLimitModule['limiters']; handler: 
   },
   {
     name: 'welcome-letter refine',
-    tool: 'welcome-letter-refine',
+    tool: 'welcome-letter-ip',
     handler: (await import('../app/api/welcome-letter-refine/route.ts')).POST,
     body: { letter: 'Dear Families, welcome.', instructions: 'Shorter please.' },
     ok: { choices: [{ message: { content: 'Dear Families, hello.' } }] },

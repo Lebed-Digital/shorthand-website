@@ -4,19 +4,21 @@ Read-only audit. Date: 2026-09-12. No code or production data was modified.
 
 Scope: every publicly reachable tool, generator, and anonymous endpoint on getshorthandapp.com, plus the anonymous-facing parts of the paid Report Card Comment Library.
 
-## Remediation status (updated 2026-09-13)
+## Remediation status (updated 2026-09-16)
 
 | Finding | Status | Shipped in |
 |---|---|---|
 | F1. `checkRateLimit()` fails closed on an Upstash outage | **Fixed** | PR #84 |
 | F4. No analytics on generation at all | **Fixed** | PR #85 |
 | F5. Raw OpenAI error messages forwarded to teachers | **Fixed** | PR #86, merge `c139d51` |
-| F2. Welcome letter limit too tight for a school | Open | |
-| F3. Refine has its own separate bucket | Open | |
-| F6. A failed OpenAI call still consumes a rate-limit token | Open | |
+| F2. Welcome letter limit too tight for a school | **Fixed** | pending PR |
+| F3. Refine has its own separate bucket | **Fixed** | pending PR |
+| F6. A failed OpenAI call still consumes a rate-limit token | **Deliberately deferred**, see note | |
 | F7. Email capture writes to Supabase from the browser | Open | |
 
-The three fixed items were the ones the audit recommended doing first, in that order. What remains is the tuning work (F2, F3, F6), which needs F4's data to settle, plus F7.
+**F2/F3 fix, in brief:** `welcome-letter-generator` (5/h) and `welcome-letter-refine` (10/h) are replaced by one shared `welcome-letter` pool (15/h) consumed by both actions, keyed on a hashed client-generated anonymous browser id, with a wide hashed-IP secondary tier (120/h) sized for a school building underneath it, same two-tier shape as `checkRestoreConfirmRateLimit`. A missing or malformed anon id (private browsing, blocked storage, tampering) falls back to IP-only rather than blocking the request. See `lib/ratelimit.ts`'s `checkWelcomeLetterRateLimit`.
+
+**F6 was deliberately left out of the F2/F3 PR, not missed.** The clean fix would be to consume quota only after a successful OpenAI response rather than before. Upstash's sliding-window limiter (`@upstash/ratelimit`) has no supported peek-then-commit or refund primitive; the only way to "give back" a token would be reaching into the limiter's own Redis keys and decrementing its internal current/previous window counters directly. That couples this codebase to `@upstash/ratelimit`'s internal key format, which is undocumented and can change across versions, for a Medium-severity finding. Not worth that coupling in the same change as F2/F3. Revisit if a future `@upstash/ratelimit` version adds a real refund/peek API, or if F6's cost (teachers losing quota to outages) becomes large enough to justify a bespoke solution.
 
 F4's instrumentation has been live since 2026-09-12 but had not accumulated meaningful data as of this update. Read it before deciding F2, per the audit's own reasoning: the limit question is unmeasurable without it.
 
