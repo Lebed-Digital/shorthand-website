@@ -8,6 +8,7 @@ import ResourceOffer from '../../../components/ResourceOffer';
 import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
 import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
+import TrackedBlogContent from '../../../components/TrackedBlogContent';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
 
@@ -308,10 +309,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(CLASSDOJO_PRODUCT_PROOF_MARKER)[1] }} />
           </div>
         ) : (
-          <div
-            className="blog-content"
-            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-          />
+          <TrackedBlogContent className="blog-content" html={post.contentHtml} />
         )}
 
         {post.faq && post.faq.length > 0 && (
@@ -403,7 +401,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <TrackedLink
             href="https://app.getshorthandapp.com?demo=true"
             label="guided_demo"
-            ctaSource="blog"
+            ctaSource={slug}
             className="btn-primary"
             style={{ display: 'inline-block' }}
           >

@@ -3,13 +3,13 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import {
-  fireCtaClick,
   fireGenerationAttempt,
   fireGenerationSuccess,
   fireGenerationBlocked,
   fireGenerationFailed,
 } from '../../lib/gtag';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
+import TrackedLink from '../../components/TrackedLink';
 
 const ANON_ID_STORAGE_KEY = 'sh_anon_id';
 
@@ -352,15 +352,14 @@ function WelcomeLetterInner() {
               <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 14px', lineHeight: 1.6 }}>
                 ShortHand helps you log quick notes on students throughout the year and turn them into polished reports in one tap. No more starting from scratch each term.
               </p>
-              <Link
+              <TrackedLink
                 href="https://app.getshorthandapp.com?demo=true"
+                label="app"
+                ctaSource="welcome_letter_toolkit"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
-                onClick={() => {
-                  fireCtaClick({ cta_source: 'welcome_letter_toolkit', cta_destination: 'app' });
-                }}
               >
                 Try ShortHand free →
-              </Link>
+              </TrackedLink>
               <span style={{ display: 'inline-block', marginLeft: 12, fontSize: 12, color: '#64748b' }}>No app store. Opens instantly.</span>
             </div>
           </div>
