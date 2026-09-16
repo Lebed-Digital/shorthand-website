@@ -1,12 +1,16 @@
 'use client';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import AnimatedLogo from '../../components/AnimatedLogo';
 
 const btnHover = { scale: 1.04, y: -2 };
 const btnTap   = { scale: 0.96 };
 
 export default function HowItWorksPage() {
+  const reduceMotion = useReducedMotion();
+  const hoverMotion = reduceMotion ? undefined : btnHover;
+  const tapMotion = reduceMotion ? undefined : btnTap;
+
   return (
     <>
       <div className="glow-field" aria-hidden>
@@ -22,8 +26,8 @@ export default function HowItWorksPage() {
           <motion.a
             href="https://app.getshorthandapp.com/onboarding"
             className="btn-primary"
-            whileHover={btnHover}
-            whileTap={btnTap}
+            whileHover={hoverMotion}
+            whileTap={tapMotion}
             transition={{ type: 'spring', stiffness: 400, damping: 20 }}
           >
             Get ShortHand
@@ -85,8 +89,8 @@ export default function HowItWorksPage() {
         <motion.a
           href="https://app.getshorthandapp.com/onboarding"
           className="btn-primary"
-          whileHover={btnHover}
-          whileTap={btnTap}
+          whileHover={hoverMotion}
+          whileTap={tapMotion}
           transition={{ type: 'spring', stiffness: 400, damping: 20 }}
         >
           Get ShortHand →

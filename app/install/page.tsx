@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 
@@ -39,6 +39,7 @@ const notes: Record<Tab, string> = {
 
 export default function InstallPage() {
   const [active, setActive] = useState<Tab>('iPhone');
+  const reduceMotion = useReducedMotion();
 
   return (
     <>
@@ -87,10 +88,10 @@ export default function InstallPage() {
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
-            initial={{ opacity: 0, y: 16 }}
+            initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -16 }}
-            transition={{ duration: 0.25, ease: 'easeOut' }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: -16 }}
+            transition={reduceMotion ? { duration: 0 } : { duration: 0.25, ease: 'easeOut' }}
             className="install-steps"
           >
             {active === 'Android' && (
