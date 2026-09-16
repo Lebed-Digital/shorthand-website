@@ -13,16 +13,23 @@ export const limiters = {
     prefix: 'rl:report-card-generator',
     analytics: false,
   }),
-  'welcome-letter-generator': new Ratelimit({
+  // Shared pool for the welcome-letter tool's generate AND refine actions.
+  // They used to be two separate buckets (5/h generate, 10/h refine), which
+  // gated the scarce action (generate) tighter than the one that depends on
+  // it (refine). One pool, keyed per browser, removes that inversion.
+  'welcome-letter': new Ratelimit({
     redis,
-    limiter: Ratelimit.slidingWindow(5, '1 h'),
-    prefix: 'rl:welcome-letter-generator',
+    limiter: Ratelimit.slidingWindow(15, '1 h'),
+    prefix: 'rl:welcome-letter',
     analytics: false,
   }),
-  'welcome-letter-refine': new Ratelimit({
+  // Secondary, wide per-IP bound for the welcome-letter tool. Sized for a
+  // school building, not a person: teachers at one school share a single
+  // outbound NAT address, same reasoning as report-card-restore-confirm-ip.
+  'welcome-letter-ip': new Ratelimit({
     redis,
-    limiter: Ratelimit.slidingWindow(10, '1 h'),
-    prefix: 'rl:welcome-letter-refine',
+    limiter: Ratelimit.slidingWindow(120, '1 h'),
+    prefix: 'rl:welcome-letter-ip',
     analytics: false,
   }),
   'report-card-checkout': new Ratelimit({
@@ -171,6 +178,66 @@ export async function checkRestoreConfirmRateLimit(
     // verifies the link's signature, expiry and the live purchase status, so
     // an Upstash outage must not break restoration for paying customers.
     console.error('[ratelimit] limiter unavailable | tool=report-card-restore-confirm:', e instanceof Error ? e.message : String(e));
+    return { blocked: false };
+  }
+}
+
+// A client-generated anonymous id is only trustworthy as a rate-limit key if
+// it actually looks like the id we asked for. This does not defend against a
+// determined spoofer (nothing can, it is client-supplied), it only stops a
+// malformed or oversized value from being hashed and used as-is, and stops
+// someone passing something with PII in it that we'd otherwise hash and
+// forever associate with a bucket. A v4 UUID is exactly 36 characters.
+function isValidAnonId(value: string | null): value is string {
+  return typeof value === 'string' && /^[0-9a-f-]{8,64}$/i.test(value);
+}
+
+// Rate limit for the welcome-letter tool (generate and refine both call this
+// with the same 'welcome-letter' pool, see the comment on that limiter).
+//
+// Two tiers, same shape as checkRestoreConfirmRateLimit: a per-browser bound
+// keyed on a client-supplied anonymous id when present, generous enough that
+// one teacher exploring every tone and refining a few times never notices
+// it, and a wide per-IP bound sized for a school building underneath it as
+// the real bound. If the browser could not supply an id (storage blocked,
+// private browsing), only the per-IP tier applies; a missing id never blocks
+// a request by itself.
+//
+// The anon id contains no PII by construction (a random UUID minted
+// client-side, nothing derived from the user), and it is hashed before it
+// touches a Redis key or a log line anyway, matching every other identifier
+// in this file. It exists only to separate honest users behind one NAT from
+// each other; it is not sent to analytics and must not be joined to
+// anything else.
+export async function checkWelcomeLetterRateLimit(
+  req: Request,
+  anonId: string | null
+): Promise<{ blocked: boolean; response?: Response }> {
+  const ip = getIP(req);
+  const validAnonId = isValidAnonId(anonId) ? anonId : null;
+
+  try {
+    const [hashedAnonId, hashedIp] = await Promise.all([
+      validAnonId ? hashedRateLimitKey(validAnonId) : Promise.resolve(null),
+      hashedRateLimitKey(ip),
+    ]);
+
+    const [byBrowser, byIp] = await Promise.all([
+      hashedAnonId ? limiters['welcome-letter'].limit(hashedAnonId) : Promise.resolve({ success: true }),
+      limiters['welcome-letter-ip'].limit(hashedIp),
+    ]);
+
+    if (!byBrowser.success || !byIp.success) {
+      console.log(`[ratelimit] blocked | tool=welcome-letter | keyed=${!byBrowser.success ? 'browser' : 'ip'} | ${new Date().toISOString()}`);
+      return { blocked: true, response: rateLimitExceededResponse('welcome-letter') };
+    }
+    return { blocked: false };
+  } catch (e) {
+    // Fail open, for the same reason as every other limiter in this file:
+    // the guard bounds cost, it does not enforce access, and the per-call
+    // cost is still bounded by the 30s upstream timeout and the output
+    // token cap on both routes behind it.
+    console.error('[ratelimit] limiter unavailable | tool=welcome-letter:', e instanceof Error ? e.message : String(e));
     return { blocked: false };
   }
 }

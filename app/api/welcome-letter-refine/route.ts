@@ -1,6 +1,6 @@
 import { OPENAI_CHAT_COMPLETIONS_URL, OPENAI_REASONING_EFFORT, OPENAI_TEXT_MODEL } from '@/lib/ai-config';
 import { generatorErrorResponse, logUpstreamFailure } from '@/lib/api-errors';
-import { checkRateLimit } from '@/lib/ratelimit';
+import { checkWelcomeLetterRateLimit } from '@/lib/ratelimit';
 
 export const runtime = 'edge';
 
@@ -10,7 +10,7 @@ export async function POST(req: Request): Promise<Response> {
     return Response.json({ error: { message: 'Server misconfigured.' } }, { status: 500 });
   }
 
-  const rl = await checkRateLimit(req, 'welcome-letter-refine');
+  const rl = await checkWelcomeLetterRateLimit(req, req.headers.get('x-shorthand-anon-id'));
   if (rl.blocked) return rl.response!;
 
   let letter: string, instructions: string;

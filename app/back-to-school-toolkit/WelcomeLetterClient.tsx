@@ -11,6 +11,25 @@ import {
 } from '../../lib/gtag';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
+const ANON_ID_STORAGE_KEY = 'sh_anon_id';
+
+// A random id used only to separate honest users behind one shared IP (e.g.
+// a school network) from each other for rate-limiting. Not PII, not sent to
+// analytics, never joined to anything else. Returns null if storage is
+// unavailable (private browsing, blocked storage) or crypto.randomUUID is
+// missing; the server falls back to IP-only limiting in that case.
+function getAnonId(): string | null {
+  try {
+    const existing = localStorage.getItem(ANON_ID_STORAGE_KEY);
+    if (existing) return existing;
+    const fresh = crypto.randomUUID();
+    localStorage.setItem(ANON_ID_STORAGE_KEY, fresh);
+    return fresh;
+  } catch {
+    return null;
+  }
+}
+
 const GRADES = [
   'Pre-K', 'Kindergarten', '1st Grade', '2nd Grade', '3rd Grade',
   '4th Grade', '5th Grade', '6th Grade', '7th Grade', '8th Grade',
@@ -76,9 +95,13 @@ function WelcomeLetterInner() {
     setError(''); setResult(''); setLoading(true);
     fireGenerationAttempt('welcome-letter', 'generate');
     try {
+      const anonId = getAnonId();
       const res = await fetch('/api/welcome-letter', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(anonId ? { 'x-shorthand-anon-id': anonId } : {}),
+        },
         body: JSON.stringify({ teacherName, grade, subject, tone }),
       });
       const data = await res.json();
@@ -111,9 +134,13 @@ function WelcomeLetterInner() {
     setError(''); setLoading(true);
     fireGenerationAttempt('welcome-letter', 'refine');
     try {
+      const anonId = getAnonId();
       const res = await fetch('/api/welcome-letter-refine', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(anonId ? { 'x-shorthand-anon-id': anonId } : {}),
+        },
         body: JSON.stringify({ letter: result, instructions: refineInstructions }),
       });
       const data = await res.json();
