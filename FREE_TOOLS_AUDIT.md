@@ -249,6 +249,8 @@ An unauthenticated client-side insert into `email_leads`, no server route, no li
 
 Not higher severity because the damage is table noise rather than cost or outage, and RLS presumably restricts this to insert-only. Worth confirming the RLS policy actually does restrict it to insert.
 
+**Usage checked 2026-09-16:** `email_leads` currently has 35 rows, all from tools/content offers, no generic "ShortHand updates/newsletter" signups observed. F7 stays low priority / not worth active work right now on that evidence, not by default deprioritization.
+
 ---
 
 ### F8. `/api/free-tool` accepts a fully client-constructed prompt
