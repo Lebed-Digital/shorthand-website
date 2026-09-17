@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import AnimatedLogo from '../components/AnimatedLogo';
 import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
@@ -60,6 +60,9 @@ export default function Home() {
   const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen]   = useState(false);
   const [videoPlaying, setVideoPlaying] = useState(false);
+  const reduceMotion = useReducedMotion();
+  const hoverMotion = reduceMotion ? undefined : btnHover;
+  const tapMotion = reduceMotion ? undefined : btnTap;
 
   function trackCta(label: string, url: string, e?: React.MouseEvent) {
     e?.preventDefault();
@@ -93,6 +96,8 @@ export default function Home() {
     let ctx: { revert: () => void } | null = null;
 
     async function initGSAP() {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
       const { gsap } = await import('gsap');
       const { ScrollTrigger } = await import('gsap/ScrollTrigger');
       gsap.registerPlugin(ScrollTrigger);
@@ -208,8 +213,8 @@ export default function Home() {
             <motion.a
               href="https://app.getshorthandapp.com"
               className="btn-primary"
-              whileHover={btnHover}
-              whileTap={btnTap}
+              whileHover={hoverMotion}
+              whileTap={tapMotion}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
               onClick={(e) => trackCta('nav_get_shorthand', 'https://app.getshorthandapp.com', e)}
             >
@@ -247,8 +252,8 @@ export default function Home() {
               <motion.a
                 href="https://app.getshorthandapp.com/?demo=true"
                 className="btn-primary"
-                whileHover={btnHover}
-                whileTap={btnTap}
+                whileHover={hoverMotion}
+                whileTap={tapMotion}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                 onClick={(e) => trackCta('hero_try_free_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
               >
@@ -257,8 +262,8 @@ export default function Home() {
               <motion.a
                 href="#features"
                 className="btn-ghost"
-                whileHover={{ scale: 1.03, y: -1 }}
-                whileTap={btnTap}
+                whileHover={reduceMotion ? undefined : { scale: 1.03, y: -1 }}
+                whileTap={tapMotion}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                 onClick={(e) => trackCta('hero_see_how_it_works', '#features', e)}
               >
@@ -468,7 +473,7 @@ export default function Home() {
           </div>
           <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
             {jobs.map((j) => (
-              <motion.div key={j.slug} whileHover={{ y: -6, scale: 1.02 }} whileTap={{ scale: 0.98 }}
+              <motion.div key={j.slug} whileHover={reduceMotion ? undefined : { y: -6, scale: 1.02 }} whileTap={reduceMotion ? undefined : { scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
                 <Link href={`/features/${j.slug}`} className="feature-card" style={{ gap: 0 }}>
                   <div style={{
@@ -828,8 +833,8 @@ export default function Home() {
                   <motion.button
                     type="submit"
                     className="btn-primary"
-                    whileHover={btnHover}
-                    whileTap={btnTap}
+                    whileHover={hoverMotion}
+                    whileTap={tapMotion}
                     transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                   >
                     Keep Me Posted →
@@ -879,8 +884,8 @@ export default function Home() {
                 <motion.a
                   href="https://app.getshorthandapp.com/?demo=true"
                   className="btn-primary btn-primary--lg"
-                  whileHover={btnHover}
-                  whileTap={btnTap}
+                  whileHover={hoverMotion}
+                  whileTap={tapMotion}
                   transition={{ type: 'spring', stiffness: 400, damping: 20 }}
                   onClick={(e) => trackCta('cta_get_shorthand', 'https://app.getshorthandapp.com/?demo=true', e)}
                 >

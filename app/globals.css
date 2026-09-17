@@ -1045,6 +1045,40 @@ footer {
   animation: pulse 2.2s ease-in-out infinite;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  .hero-eyebrow,
+  .hero h1,
+  .hero-sub,
+  .hero-chips,
+  .hero-ctas,
+  .hero-play-badge,
+  .hero-demo-wrap,
+  .hero-scroll {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .scroll-line,
+  .ai-arrow,
+  .status-dot {
+    animation: none;
+  }
+
+  .btn-primary,
+  .btn-ghost,
+  .feature-card {
+    transition: color 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  }
+
+  .btn-primary:hover,
+  .btn-ghost:hover {
+    transform: none;
+  }
+}
+
 /* GSAP animates these — no CSS opacity:0 so they're visible if JS fails */
 
 /* RESPONSIVE */

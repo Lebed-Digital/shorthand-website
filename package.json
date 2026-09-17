@@ -11,8 +11,6 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@splinetool/react-spline": "^4.1.0",
-    "@splinetool/runtime": "^1.12.71",
     "@supabase/supabase-js": "^2.110.0",
     "@upstash/ratelimit": "^2.0.8",
     "@upstash/redis": "^1.38.0",

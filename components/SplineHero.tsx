@@ -29,8 +29,10 @@ export default function HeroBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ready, setReady] = useState(false);
 
-  // Defer starting the animation so it doesn't compete with LCP/TBT on first paint
+  // Defer starting the animation so it doesn't compete with LCP/TBT on first paint.
+  // Skip the rAF loop entirely when the user prefers reduced motion.
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const t = setTimeout(() => setReady(true), MOUNT_DELAY_MS);
     return () => clearTimeout(t);
   }, []);
