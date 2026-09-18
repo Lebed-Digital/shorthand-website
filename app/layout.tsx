@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Analytics } from '@vercel/analytics/react';
+import AnalyticsGate from './AnalyticsGate';
 import { Space_Grotesk, Inter, Fredoka } from 'next/font/google';
 import './globals.css';
 
@@ -64,6 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Google Analytics (production hostname only, and only for real users — skips headless/automated browsers and Greg's dev flag) */}
         <script dangerouslySetInnerHTML={{ __html: `
           if (
+            window.location.pathname !== '/auth/confirmed' &&
             window.location.hostname === 'getshorthandapp.com' &&
             !navigator.webdriver &&
             window.localStorage.getItem('sh_dev') !== '1'
@@ -121,9 +122,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }
         })}} />
         {/* Metricool */}
-        <script defer dangerouslySetInnerHTML={{ __html: `function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"70e9d586aaa068ee70b5eb8c25ffa853"})});` }} />
+        <script defer dangerouslySetInnerHTML={{ __html: `if(window.location.pathname!=='/auth/confirmed'){function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"70e9d586aaa068ee70b5eb8c25ffa853"})})}` }} />
       </head>
-      <body>{children}<Analytics /></body>
+      <body>{children}<AnalyticsGate /></body>
     </html>
   );
 }
