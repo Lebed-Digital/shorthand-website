@@ -25,7 +25,7 @@ Before I taught 3rd grade, I spent years working with young children as a Regist
 
 Every comment below is built to do exactly that. They are organized by developmental domain, so grab what you need, swap in a name, and adjust the details to match the actual kid. The same comments work whether your school calls these preschool report cards, Pre-K progress reports, or daycare and nursery progress notes.
 
-![A preschool teacher turning small classroom observations into warm progress report comments](/blog-illustrations/preschool-progress-comments-observations.png)
+![A preschool teacher turning small classroom observations into warm progress report comments](/blog-illustrations/preschool-progress-comments-observations.webp)
 
 If you're looking for behavior-focused language, routines, transitions, or self-regulation comments, we have a dedicated post: [preschool behavior report card comments](/blog/report-card-comments-behavior-preschool). This page sticks to development, academics, and general growth. And if reports are due tonight, the [free report card comment generator](/report-card-comment-generator) builds a polished comment in seconds with no sign-up.
 

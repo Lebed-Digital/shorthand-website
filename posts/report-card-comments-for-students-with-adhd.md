@@ -14,7 +14,7 @@ As a parent of a neurodiverse child, I've learned how much wording matters. I've
 
 As a teacher and former Registered Behavior Technician, I know what phrases like "frequently off task" usually mean. As a parent, I know how rarely that translation lands the way the teacher intended.
 
-![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.png)
+![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.webp)
 
 A student with ADHD is not simply choosing to be unfocused. ADHD can make attention regulation, task initiation, and impulse control much harder, especially during tasks that are lengthy, repetitive, or overwhelming. Report card language that treats those challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what every parent of a neurodiverse kid is actually hoping to read.
 

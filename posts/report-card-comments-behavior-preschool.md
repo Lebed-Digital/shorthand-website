@@ -23,7 +23,7 @@ You are not grading math tests when you write preschool report card comments. Yo
 
 My years as a Registered Behavior Technician reinforced something preschool teachers already know: most behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing or emotional regulation is practicing a skill, not displaying a character flaw. That reframe changes everything about how you write these comments. If you use K-8 language on a Pre-K family, you will cause panic. Here is how to write preschool behavior comments that are honest without being alarming. (This post covers behavior: routines, transitions, sharing, and self-regulation. For development and academics, from early literacy to motor skills to end-of-year wrap-ups, see our [preschool report card comments for every domain](/blog/preschool-report-card-comments).)
 
-![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.png)
+![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.webp)
 
 ## Why preschool behavior comments are different
 
