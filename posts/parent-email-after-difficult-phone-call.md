@@ -23,7 +23,7 @@ Difficult parent calls are exhausting. A parent raises their voice, questions yo
 
 It is the last thing you want to do when you are emotionally exhausted. Your brain is telling you to document the call in your personal notebook and walk away. But a personal note is only half the job. You also need to send a follow-up email to the parent. This creates a shared, written record of what transpired, and it ensures there are no misunderstandings later about what was said or agreed upon.
 
-![A tired teacher after a tense parent phone call turning messy notes into a calm factual follow-up email](/blog-illustrations/difficult-parent-call-follow-up-email.png)
+![A tired teacher after a tense parent phone call turning messy notes into a calm factual follow-up email](/blog-illustrations/difficult-parent-call-follow-up-email.webp)
 
 ### Why a Written Summary Matters
 

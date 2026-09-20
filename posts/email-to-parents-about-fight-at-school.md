@@ -22,7 +22,7 @@ Instead, pick up the phone to deliver the news and discuss the immediate steps. 
 
 Below are guidelines and templates to help you write follow-up emails after a physical altercation.
 
-![A teacher making a calm parent phone call after a school fight before writing a clear follow-up record](/blog-illustrations/school-fight-call-first-follow-up.png)
+![A teacher making a calm parent phone call after a school fight before writing a clear follow-up record](/blog-illustrations/school-fight-call-first-follow-up.webp)
 
 ## The Golden Rule: Call First, Email Second
 

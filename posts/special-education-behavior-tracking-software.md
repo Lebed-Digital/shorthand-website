@@ -122,7 +122,7 @@ After spending time exploring AbleSpace, one thing became obvious very quickly: 
 
 Unlike general classroom behavior tracking apps, AbleSpace is designed around collecting data tied to student goals. If your day revolves around discrete trials, prompt levels, progress monitoring, and documenting IEP objectives, the workflow makes a lot of sense.
 
-![Recording structured IEP goal data in AbleSpace using the Capture screen with correct, incorrect, and prompt buttons](/blog-illustrations/ablespace-data-capture-screen.png)
+![Recording structured IEP goal data in AbleSpace using the Capture screen with correct, incorrect, and prompt buttons](/blog-illustrations/ablespace-data-capture-screen.webp)
 
 ### What I Liked
 
@@ -132,7 +132,7 @@ Once inside, I found the organization impressive. Students, goals, notes, report
 
 I also appreciated the reporting tools. AbleSpace generates clean graphs and progress reports that would be useful during IEP meetings or when discussing student progress with administrators or families.
 
-![An AbleSpace progress graph showing correct percentage by trial across multiple session dates](/blog-illustrations/ablespace-progress-graph.png)
+![An AbleSpace progress graph showing correct percentage by trial across multiple session dates](/blog-illustrations/ablespace-progress-graph.webp)
 
 One feature that stood out was the AI note summary. After entering notes, I could have the software automatically summarize them. That's a thoughtful addition that could save time for teachers writing longer observations.
 
@@ -206,7 +206,7 @@ ShortHand wasn't built as a parent communication tool. It was built for teachers
 
 The biggest strength of ShortHand is how little friction there is to capturing a note. I could type or dictate what happened, save it, and get back to teaching without feeling like documentation had become another task competing for my attention.
 
-![Recording a behavior note in under 15 seconds using ShortHand's Log Notes screen with quick-tap positive, neutral, and growth area tags](/blog-illustrations/shorthand-log-notes-quick-tags-screenshot.png)
+![Recording a behavior note in under 15 seconds using ShortHand's Log Notes screen with quick-tap positive, neutral, and growth area tags](/blog-illustrations/shorthand-log-notes-quick-tags-screenshot.webp)
 
 I didn't need to fill out a form or select from a list of behaviors. I just typed or spoke what happened, and it was saved. When I needed a parent-ready report, I could generate one from those same unfiltered notes in seconds, without rewriting anything myself.
 

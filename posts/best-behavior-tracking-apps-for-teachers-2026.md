@@ -23,7 +23,7 @@ faq:
 
 There are roughly four stages of teacher behavior tracking. Stage one: mental notes. Stage two: sticky notes. Stage three: a behavior tracking sheet you update every three weeks. Stage four: an actual app. (Stage five is being asked at an IEP meeting to produce documentation from October and realizing you're still in stage two.)
 
-![A teacher moving from mental notes and sticky notes to an organized behavior record timeline](/blog-illustrations/behavior-tracking-stages-to-record.png)
+![A teacher moving from mental notes and sticky notes to an organized behavior record timeline](/blog-illustrations/behavior-tracking-stages-to-record.webp)
 
 If you're ready for stage four, here's what's actually worth your time in 2026.
 

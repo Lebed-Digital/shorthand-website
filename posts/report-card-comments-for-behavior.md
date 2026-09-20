@@ -29,7 +29,7 @@ The hardest report card comments to write are always the behavior ones. Academic
 
 As both a teacher and a parent of a neurodiverse child, I've seen these comments from both sides. I've written them at the end of a long school day, and I've read them wondering what they actually meant for my own child. That's one reason I've become so careful about the language I use. A good behavior comment should help a family understand what is happening and what support looks like moving forward, not leave them feeling judged.
 
-![A tired teacher turning messy October behavior notes into a clear report card comment draft](/blog-illustrations/report-card-behavior-october-notes.png)
+![A tired teacher turning messy October behavior notes into a clear report card comment draft](/blog-illustrations/report-card-behavior-october-notes.webp)
 
 ## Behavior is communication, not a character flaw
 

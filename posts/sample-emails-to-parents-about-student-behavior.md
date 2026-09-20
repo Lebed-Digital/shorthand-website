@@ -31,7 +31,7 @@ Before any of these emails, there's one message worth sending first: a welcome l
 
 Here are five copy-paste templates for sample emails to parents about student behavior, so you can clear your inbox and get home on time.
 
-![An exhausted teacher staring at a blank parent behavior email while classroom notes become an organized message](/blog-illustrations/parent-behavior-email-blank-cursor.png)
+![An exhausted teacher staring at a blank parent behavior email while classroom notes become an organized message](/blog-illustrations/parent-behavior-email-blank-cursor.webp)
 
 ## Why Parent Behavior Emails Matter More Than You Think
 

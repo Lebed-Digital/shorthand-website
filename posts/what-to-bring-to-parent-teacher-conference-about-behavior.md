@@ -31,7 +31,7 @@ The teachers who walk into conferences feeling confident are rarely the ones wit
 
 They are the ones with the best records.
 
-![An elementary teacher preparing organized behavior notes and student work samples before a parent conference](/blog-illustrations/behavior-conference-preparation-table.png)
+![An elementary teacher preparing organized behavior notes and student work samples before a parent conference](/blog-illustrations/behavior-conference-preparation-table.webp)
 
 ## Why Documentation Matters During Conferences
 

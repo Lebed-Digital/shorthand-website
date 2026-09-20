@@ -47,7 +47,7 @@ But when you have twenty or more students and seven hours of teaching, those mom
 
 I would reach the end of the week knowing that something had happened multiple times, but I could not always remember exactly when, how often, what preceded it, what followed it, or what I had already communicated to families.
 
-![An overwhelmed elementary teacher watches classroom behavior notes drift away](/blog-illustrations/student-behavior-day-one-sticky-notes.png)
+![An overwhelmed elementary teacher watches classroom behavior notes drift away](/blog-illustrations/student-behavior-day-one-sticky-notes.webp)
 
 It did not take long for me to realize something important:
 

@@ -138,7 +138,7 @@ Looking forward to a great year.
 
 ---
 
-![Welcome Letter Generator tool showing grade and tone options](/blog-illustrations/welcome-letter-generator-screenshot.png)
+![Welcome Letter Generator tool showing grade and tone options](/blog-illustrations/welcome-letter-generator-screenshot.webp)
 
 Tired of rewriting the same letter every August? The [Welcome Letter Generator](/back-to-school-toolkit) takes four inputs and returns a ready-to-send letter in about 30 seconds. Free, no sign-up.
 

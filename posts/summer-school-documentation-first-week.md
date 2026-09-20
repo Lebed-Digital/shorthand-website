@@ -45,7 +45,7 @@ I did not realize that until I was sitting across from the director, the head be
 
 The problem was not that I lacked information. The problem was that the information was scattered across my head, sticky notes, and random scraps of paper.
 
-![A summer school teacher turning scattered first week student notes into organized documentation cards](/blog-illustrations/summer-school-first-week-documentation.png)
+![A summer school teacher turning scattered first week student notes into organized documentation cards](/blog-illustrations/summer-school-first-week-documentation.webp)
 
 ---
 

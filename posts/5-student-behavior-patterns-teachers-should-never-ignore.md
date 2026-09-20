@@ -29,7 +29,7 @@ A single incident rarely tells the whole story.
 
 Patterns do.
 
-![A thoughtful teacher turning scattered classroom incident notes into a clear behavior pattern timeline](/blog-illustrations/behavior-patterns-scattered-incidents.png)
+![A thoughtful teacher turning scattered classroom incident notes into a clear behavior pattern timeline](/blog-illustrations/behavior-patterns-scattered-incidents.webp)
 
 We know the days are long, but the years move fast. By the time you realize a pattern has been developing, you might already be deep into the school year. That is why it matters to start paying attention early.
 

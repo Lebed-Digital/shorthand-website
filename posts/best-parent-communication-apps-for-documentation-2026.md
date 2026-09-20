@@ -22,7 +22,7 @@ faq:
 
 You are sitting in an IEP meeting. A parent looks across the table and says they were never contacted about their child failing math. They claim they had no idea there was a problem. You know you sent messages. You tried to reach out. But as you scramble to find anything on your phone, you realize your classroom app only shows a messy feed of announcements and deleted notifications. You look disorganized. You look unprepared.
 
-![A teacher in an IEP meeting searching through a messy parent communication feed while a clean contact history creates a clear record](/blog-illustrations/parent-communication-app-messy-feed.png)
+![A teacher in an IEP meeting searching through a messy parent communication feed while a clean contact history creates a clear record](/blog-illustrations/parent-communication-app-messy-feed.webp)
 
 Finding the best parent teacher communication apps 2026 has to offer is not about finding the cutest interface. It is about finding a tool that gives you a clear, organized record when you need it.
 

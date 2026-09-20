@@ -35,7 +35,7 @@ That may not be the inspiring line people expect, but it is the truth. Special e
 
 They can also become the places where you do the most meaningful work of your life.
 
-![A first-year special education paraprofessional moving from classroom confusion to calm, collaborative support beside a student](/blog-illustrations/paraprofessional-first-year-confusion-to-calm.png)
+![A first-year special education paraprofessional moving from classroom confusion to calm, collaborative support beside a student](/blog-illustrations/paraprofessional-first-year-confusion-to-calm.webp)
 
 Here are the five lessons I wish someone had explained to me when I started.
 
