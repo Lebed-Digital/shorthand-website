@@ -21,10 +21,9 @@ const jobs = [
     title: 'Capture It',
     subtitle: 'Stop relying on memory.',
     desc: 'Document behavior incidents, parent conversations, accommodations, interventions, and classroom observations in seconds while they\'re still fresh.',
-    img: '/screenshot1.png',
-    imgAlt: 'Quick note screen with behavior tags',
-    // crop: show top portion — note text + behavior tags, skip bottom nav
-    objectPosition: 'center 15%',
+    img: '/quick grid SS.jpg',
+    imgAlt: 'ShortHand Quick Grid quick-note sheet showing behavior indicators, an optional note field, and a Save button',
+    objectPosition: 'center top',
   },
   {
     slug: 'parent-communication-log',
