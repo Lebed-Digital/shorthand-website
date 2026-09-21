@@ -15,8 +15,8 @@ export default function ClassDojoProductProof() {
       <figcaption className="classdojo-product-proof__caption">
         <span className="classdojo-product-proof__label">Here is what this actually looks like.</span>
         <span>
-          Select the student, add the detail, choose any useful behavior tags, and save the note with
-          the date. The record stays private to the teacher.
+          Tap the student, tap the behavior you saw, and save. Add a note if you want more
+          detail. The record stays private to the teacher.
         </span>
       </figcaption>
     </figure>

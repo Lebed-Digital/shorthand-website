@@ -7,12 +7,12 @@ import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Quick Note | ShortHand',
-  description: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.',
+  title: 'Quick Grid | ShortHand',
+  description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes classroom behavior notes fast enough to log while you’re still teaching.',
   alternates: { canonical: 'https://getshorthandapp.com/features/quick-note' },
   openGraph: {
-    title: 'Quick Note | ShortHand',
-    description: 'Tap a student, speak or type a note, done in under 5 seconds. Voice-to-text, auto-tagging, and smart shortcuts built in.',
+    title: 'Quick Grid | ShortHand',
+    description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes classroom behavior notes fast enough to log while you’re still teaching.',
     url: 'https://getshorthandapp.com/features/quick-note',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -23,11 +23,11 @@ export default function QuickNotePage() {
   const videoSchema = {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "ShortHand Quick Note Walkthrough",
-    "description": "See how to log a student behavior note in under 5 seconds using ShortHand's Quick Note feature.",
+    "name": "ShortHand Quick Grid Walkthrough",
+    "description": "See how to log a student behavior note in seconds using ShortHand's Quick Grid.",
     "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
     "uploadDate": "2026-04-26T00:00:00+00:00",
-    "embedUrl": "https://www.youtube-nocookie.com/embed/qo84eGiNINs"
+    "embedUrl": "https://www.youtube-nocookie.com/embed/7fQrX5eHAsc"
   };
 
   return (
@@ -45,30 +45,25 @@ export default function QuickNotePage() {
       <Link href="/" className="detail-back">← Back to home</Link>
 
       <div className="detail-hero">
-        <h1 className="detail-title">Quick <em>Note</em></h1>
+        <h1 className="detail-title">Quick <em>Grid</em></h1>
         <p className="detail-desc">
-          Tap a student&apos;s name, speak or type what you observed, and you&apos;re done in
-          under 5 seconds. No menus to navigate, no forms to fill out.
-          You can even skip the text entirely: select a student, tap a behavior tag like
-          Disruption or Kindness, and hit save. That&apos;s it.
-          Every note is automatically dated and saved, building a picture of
-          each student over time.
+          Open your class and see your students in a simple grid. Tap a student, tap the
+          behavior you saw, and hit Save. Need more context? Add a quick note before saving.
+          Your most-used indicators are right up front, with more just a swipe away.
         </p>
         <p className="detail-desc">
-          Voice-to-text lets you log hands-free while you&apos;re still moving around the room.
-          Smart Shorthand lets you set custom abbreviations that expand instantly.
-          So &quot;ss&quot; becomes &quot;Social Studies&quot; before you even finish typing.
-          Your notes are automatically organized into categories like Kindness, Participation,
-          and Growth, either from the tags you choose or, when it&apos;s clear, with help from AI.
+          Most notes take just a few taps, so you can document what happened and get right
+          back to teaching. When you need more detail, open Full Note from the same screen
+          and write as much as you need. Either way, every note is dated and saved to that
+          student&apos;s record.
         </p>
         <p className="detail-desc">
-          The faster it is to log, the more you&apos;ll actually do it. And because every note is
-          saved and searchable, you walk into parent conferences, IEP meetings, and conversations
-          with admin already knowing what happened, and you can turn any note into a clear parent
-          message in one click.
+          The faster it is to log, the more likely you are to actually do it. Over time,
+          those quick notes give you a clearer picture of each student and better information
+          for parent conversations, meetings, and reports.
         </p>
 
-        <FeatureVideo videoId="qo84eGiNINs" title="Quick Note walkthrough" hideControls />
+        <FeatureVideo videoId="7fQrX5eHAsc" title="Quick Grid walkthrough" hideControls />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
