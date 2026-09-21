@@ -63,7 +63,7 @@ This is exactly why I started relying on ShortHand. It is free to start and buil
 
 You do not need school buy-in. You do not need to ask the IT department for permission or wait for a district-wide rollout. You just pull out your phone or open your laptop and get to work.
 
-When something happens in my classroom, I tap the student's name. I use voice-to-text to drop a quick note. I say "Struggled with the math worksheet, needs extra help tomorrow." The app saves it instantly with a timestamp. It is out of my brain and secured in a system.
+When something happens in my classroom, I tap the student's name and tap what I saw. If I want to say more, I open the full note and use voice-to-text: "Struggled with the math worksheet, needs extra help tomorrow." The app saves it instantly with a timestamp. It is out of my brain and secured in a system.
 
 ## From Notes to Parent Messages
 Here is the absolute best part of the entire process. When I sit down on Friday afternoon to send my weekly updates, I am not starting from a blank page.

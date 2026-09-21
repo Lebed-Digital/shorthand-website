@@ -37,7 +37,7 @@ Points are a feedback mechanism for students. They aren't documentation for teac
 
 Here's the math: if a behavior happens during a math block and it takes you 90 seconds to log it in an app, you're probably not logging it. By the time you've navigated to the student, added a note, and gotten back to teaching, you've lost the room.
 
-The only documentation system that actually gets used is one that takes under 10 seconds. Voice-to-text. One tap to select a student. Done before the class notices you stopped.
+The only documentation system that actually gets used is one that takes a few taps. Tap the student, tap what you saw. Done before the class notices you stopped.
 
 If your system isn't that fast, it will gradually stop being your system. You'll drift back to sticky notes, mental notes, or nothing at all, and then spend Fridays trying to reconstruct a week you can barely remember.
 
@@ -77,8 +77,8 @@ The system has to be faster than the thought. If it takes longer to log somethin
 
 The criteria I applied when I built ShortHand:
 
-- **Under 10 seconds** to log any observation
-- **Voice-to-text** so you can log while walking
+- **A few taps** to log any observation
+- **Voice-to-text** in the full note view, for when you want to say more than you can tap
 - **Auto-tagging** so you're not manually categorizing
 - **AI reporting** so the notes turn into something useful without extra work
 - **No app store** so you can install it on any device in 30 seconds

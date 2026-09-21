@@ -212,7 +212,7 @@ To write a good behavior email, even with the best template, you need the detail
 
 If you're logging notes during the day, that information is there when you need it. If you're relying on memory at 4 PM, you're writing vague emails, and vague emails don't build trust or create useful records.
 
-This is exactly the problem [ShortHand](https://app.getshorthandapp.com?demo=true) was built to solve. You log a note in under 10 seconds during the school day, voice-to-text while walking, one tap to select the student. By the time you open your email, ShortHand has already drafted the parent message from your notes. You review it, adjust if needed, and send.
+This is exactly the problem [ShortHand](https://app.getshorthandapp.com?demo=true) was built to solve. You log a note in a few taps during the school day, one tap to select the student, one tap for what you saw. By the time you open your email, ShortHand has already drafted the parent message from your notes. You review it, adjust if needed, and send.
 
 The templates above are useful. The real unlock is having the documentation to fill them with something specific.
 

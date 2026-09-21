@@ -51,8 +51,8 @@ The problems tend to show up around 3rd grade and above, and they compound the l
 | Student engagement (gamification) | Yes (avatars and points) | No, built for teachers, not students |
 | Class announcements and family feed | Yes | No |
 | Parent-facing app families already have | Yes | No |
-| Speed of logging | 60–90 seconds | Under 10 seconds |
-| Voice-to-text logging | No | Yes |
+| Speed of logging | 60–90 seconds | A few taps |
+| Voice-to-text logging | No | Yes, in the full note view |
 | AI-generated behavior reports | No | Yes |
 | IEP-ready documentation | Limited | Built for it |
 | Parent communication drafting | Manual | AI-assisted from your notes |
@@ -64,9 +64,9 @@ The problems tend to show up around 3rd grade and above, and they compound the l
 
 This is the one that doesn't get talked about enough.
 
-If your documentation system takes more than 10 seconds per entry, you will gradually stop using it. Not because you're lazy. Because you're teaching 25 kids at the same time and every second you spend on an app is a second you're not watching the room.
+If your documentation system takes more than a few seconds per entry, you will gradually stop using it. Not because you're lazy. Because you're teaching 25 kids at the same time and every second you spend on an app is a second you're not watching the room.
 
-ShortHand is built around this constraint. Voice-to-text while you're walking between desks. One tap to select the student. The note is timestamped and saved before you've taken three steps. You don't have to stop. You don't have to navigate. You don't have to remember later.
+ShortHand is built around this constraint. Tap the student, tap the behavior you saw, and save. The note is timestamped and saved before you've taken three steps. You don't have to stop. You don't have to navigate. You don't have to remember later.
 
 The behavior you log at 10:23 AM is still accurate at 4:00 PM. The behavior you meant to log at 10:23 AM is a blur by lunch.
 
@@ -88,7 +88,7 @@ The features that ClassDojo alternatives tend to add fall into three categories:
 
 **Private, timestamped documentation.** ClassDojo records points and messages, but not a behavioral timeline you can hand to an administrator or use in an IEP meeting. Alternatives built for older students log notes with timestamps, behavioral categories, and exportable history. The record exists in a format that holds up in a professional context.
 
-**Faster in-class logging.** ClassDojo requires navigating to a student profile, selecting a point type, and confirming. In a live classroom, that is 60 to 90 seconds you do not have. Alternatives like ShortHand are built around under-10-second logging, with voice-to-text support so you never have to stop moving.
+**Faster in-class logging.** ClassDojo requires navigating to a student profile, selecting a point type, and confirming. In a live classroom, that is 60 to 90 seconds you do not have. Alternatives like ShortHand are built around logging in a few taps, so you never have to stop moving.
 
 **AI-assisted parent communication.** ClassDojo has a messaging feature, but writing the message is still manual. ShortHand pulls from your logged notes and drafts a parent message in your voice, which you review and send. The communication is also logged automatically so you have a record of every contact.
 
@@ -116,7 +116,7 @@ This is not about holding anyone accountable. It is about being able to contribu
 - You teach 3rd grade and up and the avatar system has lost its effect
 - You need behavior records that hold up in IEP or admin conversations
 - You're spending too much time writing parent emails from scratch
-- You want logging that takes under 10 seconds during a live lesson
+- You want logging that takes a few taps during a live lesson
 
 There's no universal right answer. But there is a right answer for your specific situation.
 

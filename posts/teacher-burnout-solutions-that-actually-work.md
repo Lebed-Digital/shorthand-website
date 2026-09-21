@@ -57,14 +57,14 @@ You need systems that capture information at the exact point of friction.
 ## Teacher Stress Solutions That Actually Work
 Real teacher stress solutions involve concrete, practical tools.
 
-If a student has a rough transition coming in from recess, you need to be able to document it in three seconds. Not three minutes. Not on a sticky note that you will lose before the end of the day.
+If a student has a rough transition coming in from recess, you need to be able to document it in a few taps. Not three minutes. Not on a sticky note that you will lose before the end of the day.
 
 You need tools that do the heavy lifting for you. Technology should not give you more menus to click through. It should not require a training manual. It should take the raw data of your chaotic day and automatically turn it into something genuinely useful.
 
 ## Removing One Friction Point at a Time
 This is the exact reason I started using ShortHand in my own classroom. It does not solve every single problem in education. It will not grade your spelling tests or write your lesson plans. But it completely removes one specific, massive point of friction from my day.
 
-ShortHand is free to start and built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and dictate a quick note. The app handles the logging securely.
+ShortHand is free to start and built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and tap what I saw. The app handles the logging securely.
 
 More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 

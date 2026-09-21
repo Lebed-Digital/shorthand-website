@@ -64,7 +64,7 @@ You need something that:
 - Doesn't require navigation or multiple taps
 - Can be done with a voice note or a single tap
 
-Voice-to-text was the change that made everything click for me. Speaking a quick note while walking between desks takes about four seconds and doesn't interrupt the class at all.
+Voice-to-text was the change that made everything click for me. When I want more than a tap, I open the full note and speak it while walking between desks, and it doesn't interrupt the class at all.
 
 ## Step 3: Capture Context, Not Just the Behavior
 
@@ -121,7 +121,7 @@ After trying paper notes, spreadsheets, and a few apps, I realized something: if
 
 I wrote about [some ClassDojo alternatives I tested](/blog/classdojo-alternative) and why none of them quite fit. What I needed was something faster than thought -- something that captured the note before the moment was gone.
 
-That's why I built ShortHand. It lets me log behavior in seconds using voice or text, automatically organizes and tags entries, tracks patterns over time, and generates reports without extra work at the end. It doesn't add anything new to my plate. It just makes something I already have to do a lot easier.
+That's why I built ShortHand. It lets me log behavior in a few taps, with voice or text when I need more detail, automatically organizes and tags entries, tracks patterns over time, and generates reports without extra work at the end. It doesn't add anything new to my plate. It just makes something I already have to do a lot easier.
 
 If you're comparing options, here's a full breakdown of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
 
