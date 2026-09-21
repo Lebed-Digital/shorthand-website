@@ -47,7 +47,7 @@ I tried the sticky notes. Students would ask why I had them all over my desk, wh
 
 I tried the teacher planner. But a planner doesn't live in your pocket when you're walking between desks. You have to stop, go find it, open it, write something, and get back to what you were doing. By then, you've lost the thread.
 
-I needed something that worked at the speed of a 9-year-old's meltdown. I needed to be able to capture a note in three seconds without stopping teaching.
+I needed something that worked at the speed of a 9-year-old's meltdown. I needed to be able to capture a note in a couple of taps without stopping teaching.
 
 Nothing I found actually did that. So I started building it myself.
 
@@ -55,7 +55,7 @@ Nothing I found actually did that. So I started building it myself.
 
 I'm not a software engineer. I'm a 3rd-grade math and science teacher who learned to code by building something I actually needed.
 
-ShortHand started as a way to fix my own memory problem. Tap a student's name, speak a quick note, done in under five seconds. No stopping the lesson. No digging for a planner. The note is timestamped and saved automatically.
+ShortHand started as a way to fix my own memory problem. Tap a student's name, tap what you saw, done in a few taps. No stopping the lesson. No digging for a planner. The note is timestamped and saved automatically.
 
 From there it grew into something bigger. The notes started accumulating. Patterns became visible. I could see that certain students struggled most on Monday mornings or during transitions after specials. I could see who hadn't been logged in a week, which usually meant I was unconsciously avoiding a problem instead of addressing it.
 
@@ -67,7 +67,7 @@ Suddenly I wasn't dreading Friday afternoons. I wasn't sending vague emails buil
 
 I'm a dad. I don't have extra time. The honest answer is that I spend about an hour most evenings working on ShortHand, and I do it because the math makes sense: one hour of building a better system saves ten hours of stress during the week.
 
-Every feature in ShortHand came from a real problem I experienced in my own classroom. The five-second logging. The pattern tracking. The AI-generated parent messages. The communication log that makes IEP meetings easier. None of it was invented by a product team guessing at what teachers need. All of it was built by someone who was in the classroom the next morning testing whether it actually worked.
+Every feature in ShortHand came from a real problem I experienced in my own classroom. The fast logging. The pattern tracking. The AI-generated parent messages. The communication log that makes IEP meetings easier. None of it was invented by a product team guessing at what teachers need. All of it was built by someone who was in the classroom the next morning testing whether it actually worked.
 
 That's the only way I know how to build something worth using.
 

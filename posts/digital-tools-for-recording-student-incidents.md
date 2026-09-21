@@ -10,7 +10,7 @@ relatedPosts:
 excerpt: "Still logging student incidents on paper or a tracking sheet? Here's an honest look at digital tools for recording student incidents and progress: what works, what's overkill, and what I actually use in my classroom."
 faq:
   - q: "What is the best digital tool for recording student incidents?"
-    a: "The best tool for recording student incidents is one you'll actually use during a live classroom. That means it needs to be fast: open the app, tap a student, type a note, done in under 15 seconds. ShortHand is built for exactly this use case and logs the timestamp automatically. Google Forms, spreadsheets, and most behavior apps require too many taps to be practical mid-lesson."
+    a: "The best tool for recording student incidents is one you'll actually use during a live classroom. That means it needs to be fast: open the app, tap a student, tap what you saw, done in a few taps. ShortHand is built for exactly this use case and logs the timestamp automatically. Google Forms, spreadsheets, and most behavior apps require too many taps to be practical mid-lesson."
   - q: "How do teachers record student incidents without disrupting the class?"
     a: "The key is having the tool open and ready before anything happens. Teachers who are successful at consistent logging keep their phone or tablet on their desk during transitions, not buried in a bag. Apps that require login, navigation, or more than three taps per entry tend to get abandoned. A tool like ShortHand is designed to log from the home screen in one tap."
   - q: "Do student incident records need to be shared with administrators?"
@@ -91,7 +91,7 @@ For general education teachers, it's overkill. The interface is built around beh
 
 ShortHand is the tool I ended up building because none of the above solved the specific problem I kept running into: the gap between noticing something, logging it fast, and actually communicating with a parent about it.
 
-The workflow looks like this. A student has an incident during class. I tap their name, tap a pre-set behavior tag (no typing from scratch mid-lesson), add a quick note, and I'm done in under 15 seconds. Later that day, or that week, or in three months when a parent says "this is the first I'm hearing of this," I can pull up every logged note for that student, see the pattern, and show exactly when I reached out and what was said.
+The workflow looks like this. A student has an incident during class. I tap their name, tap the behavior indicator I need (no typing from scratch mid-lesson), add a short note if it helps, and I'm done in a few taps. Later that day, or that week, or in three months when a parent says "this is the first I'm hearing of this," I can pull up every logged note for that student, see the pattern, and show exactly when I reached out and what was said.
 
 A few things that make it different from the other options:
 
