@@ -245,7 +245,7 @@ export default function Home() {
             <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; Works on Any Device &nbsp;·&nbsp; Free to Start</div>
             <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
             <p className="hero-sub">
-              Log a behavior note in 5 seconds. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
+              Log a behavior note in a few taps. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
             </p>
             <div className="hero-ctas">
               <motion.a
@@ -599,7 +599,7 @@ export default function Home() {
             <div className="after-card">
               <div className="ba-label">After</div>
               {[
-                'Tap, speak, saved. In 5 seconds.',
+                'Tap the student, tap what you saw, saved.',
                 'A full parent communication log with follow-ups surfaced',
                 'Reports generated while you drink coffee',
                 'Red rings show who may be slipping through',
