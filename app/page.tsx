@@ -21,7 +21,7 @@ const jobs = [
     title: 'Capture It',
     subtitle: 'Stop relying on memory.',
     desc: 'Document behavior incidents, parent conversations, accommodations, interventions, and classroom observations in seconds while they\'re still fresh.',
-    img: '/quick grid SS.jpg',
+    img: '/quick-grid-note-sheet.jpg',
     imgAlt: 'ShortHand Quick Grid quick-note sheet showing behavior indicators, an optional note field, and a Save button',
     objectPosition: 'center top',
   },

@@ -5,7 +5,7 @@ export default function ClassDojoProductProof() {
     <figure className="classdojo-product-proof">
       <div className="classdojo-product-proof__image">
         <Image
-          src="/quick grid SS.jpg"
+          src="/quick-grid-note-sheet.jpg"
           alt="ShortHand Quick Grid quick-note sheet showing behavior indicators, an optional note field, and a Save button"
           width={1080}
           height={2119}
