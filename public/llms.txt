@@ -5,7 +5,7 @@
 ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Technician) and current 3rd grade teacher, to solve the daily paperwork burden teachers face. It runs in the browser on any device with no app store download required. ShortHand is built specifically for classroom teachers (not administrators, not district IT) and is designed to be usable mid-lesson without interrupting instruction.
 
 ## Core Features
-- Quick Note: log student behavior in under 5 seconds using voice-to-text or typing
+- Quick Grid: tap a student in the class grid, tap a behavior indicator, and save in seconds
 - Parent Communication Log: maintain a timestamped record of every parent contact (calls, emails, meetings) so teachers always have documentation ready for conferences and IEP meetings
 - AI Parent Messages: turn behavior notes into professional parent emails instantly
 - Write Reports: auto-generate progress reports and report card comments from logged notes
@@ -45,7 +45,7 @@ Guided demo: no account required. Free plan: create an account to use ShortHand 
 - [ClassDojo Alternative](https://getshorthandapp.com/classdojo-alternative): Private behavior notes and documentation for middle and high school teachers
 
 ### Feature Pages
-- [Quick Note](https://getshorthandapp.com/features/quick-note): Log a student note in under 5 seconds using voice or text
+- [Quick Grid](https://getshorthandapp.com/features/quick-note): Tap a student, tap an indicator, save in seconds
 - [Parent Communication Log](https://getshorthandapp.com/features/parent-communication-log): Timestamped record of every parent contact
 - [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
