@@ -8,13 +8,24 @@ relatedPosts:
   - "how-to-prepare-for-parent-teacher-conference"
   - "parent-teacher-conference-comments-for-teachers"
 excerpt: "Wondering exactly what to say during a parent teacher conference? Here is how to run the meeting, share concerns, and keep the conversation on track."
+faq:
+  - q: "What questions should teachers ask parents at a parent teacher conference?"
+    a: "Teachers can ask what the child enjoys outside of school, what helps when the child gets frustrated, whether a concern has come up before, and what the family would most like the child to work on. Pick two or three questions that fit the student, then give the parent time to answer and listen carefully."
+  - q: "How do you share a concern at a parent teacher conference without making parents defensive?"
+    a: "Stick to observable facts and specific numbers instead of labels such as lazy or defiant. Describe what you are seeing, frame the concern as a problem you want to solve together, and ask whether the family has noticed anything similar at home."
+  - q: "What do you say when a parent gets off topic during a conference?"
+    a: "Acknowledge what the parent said briefly, then mention the limited time and steer the conversation back to the student. You do not need to apologize for redirecting. The goal is to make sure the most important concerns, questions, and next steps are covered before the meeting ends."
+  - q: "How should a teacher end a parent teacher conference?"
+    a: "End with one specific next step for the teacher and one for the parent. Summarize the plan out loud, make sure both sides understand what happens next, and confirm that the parent agrees before the meeting ends."
 ---
 
 You can search the internet for hours and find a thousand articles telling parents exactly what to ask their child's teacher. There are lists of questions they should bring. There are guides on how they should advocate for their kid.
 
 Nobody ever writes an article for the person sitting on the other side of the small rectangular table.
 
-I have been teaching third-grade math and science for over twenty years. I have sat through more conferences than I can count. Early in my career, I let the parents run the show. I would sit back, answer their questions, and hope the clock moved quickly. I realized pretty fast that reacting to a meeting is a terrible strategy. You are the professional. You are the one who spends forty hours a week with their child. You need to be the one driving the conversation.
+I spent more than twenty years working in education before I had a classroom of my own. Now I teach third grade and run my own conferences. I remember how nervous I was during my first round of parent-teacher conferences. I did not have student work samples ready to show families, and by the end of the night I was even forgetting some of my students' names. I learned pretty quickly that going into conferences without a clear plan makes an already busy night much harder.
+
+You are the professional. You are the one who spends forty hours a week with their child. You need to be the one driving the conversation.
 
 This is a guide on exactly what to say at a parent teacher conference. If you want to know how to gather your data before you sit down, I wrote a separate post on [how to prepare for a parent teacher conference](/blog/how-to-prepare-for-parent-teacher-conference). For now, let us focus on the words coming out of your mouth.
 
@@ -31,6 +42,52 @@ Parents are nervous. They are walking into a building that often brings up their
 I usually say something like this. Thank you so much for coming in. I really enjoy having Leo in class. He always makes sure his classmates have what they need during group work. I want to spend our time today going over where he is excelling and where we can work together to help him grow.
 
 You just set the agenda. You are focusing on growth, and you are establishing that this is a team effort.
+
+## Questions to Ask Parents at a Parent Teacher Conference
+
+After you open with something positive, give the parent a chance to talk.
+
+They know parts of their child that you never see at school. Asking a couple of real questions early can also make the harder parts of the conversation easier, because the parent already feels like they are part of the discussion instead of just being talked at.
+
+You do not need to ask all 12 of these. Pick two or three that fit the student and the conversation.
+
+### Getting to Know the Child
+
+- What is your child really into outside of school right now?
+- What does homework or reading time look like at home?
+- What does your child say about their friends at school?
+
+These are useful early in the meeting because they help you see the student outside of the classroom.
+
+### Finding Out What Already Works
+
+- When your child gets frustrated at home, what helps them reset?
+- What kind of encouragement works best for your child?
+- Has a past teacher tried something that really worked?
+
+Parents have usually been helping their child solve problems much longer than you have known the student. If something already works at home or worked with a previous teacher, you do not need to start from scratch.
+
+### When You Raise a Concern
+
+- Have you noticed anything like this at home?
+- Has this come up in past school years?
+- Is anything going on right now that would help me understand what I'm seeing?
+
+Ask these after you have shared the facts. The next section covers how to raise the concern itself without using labels or putting the parent on the defensive.
+
+That last question is one I would ask once, gently, and then leave alone. Families decide what they want to share. You do not need to press for details.
+
+### Before You Wrap Up
+
+- What is one thing you would most like your child to work on this year?
+- What is the best way to reach you, and how often would you like updates?
+- Is there one small thing we could try at home this week?
+
+Asking about one small step at home helps turn the meeting into an actual plan instead of ending with everyone agreeing that they will "keep working on it."
+
+The biggest thing is to ask one question and then stop talking. Give the parent time to answer. If they tell you something important, jot it down instead of trusting yourself to remember it after five more conferences.
+
+If you want families to think about a few questions before they arrive, the [parent teacher conference form](/blog/parent-teacher-conference-form) post has a short list you can send home ahead of time. The questions here are for the conversation in the room.
 
 ## Sharing Concerns Without Triggering Defensiveness
 
@@ -51,8 +108,6 @@ You are not accusing Leo of anything. You are just observing a behavior and aski
 ## Handling the Parent Who Derails the Conversation
 
 You will inevitably encounter a parent who wants to talk about everything except their child's academic progress. They will complain about the cafeteria food. They will bring up drama with another family in the neighborhood.
-
-I once had a parent talk for twenty straight minutes about their recent vacation to Florida. I learned a lot about the wait times at Disney World. I did not learn anything about their son's reading comprehension.
 
 You have to politely interrupt and steer the ship back on course. You only have a limited amount of time.
 

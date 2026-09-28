@@ -185,8 +185,9 @@ Across those 8 SERPs, the pattern in where we rank organically:
 ## 10. MTSS / interventions
 
 - **Pages:** `how-to-document-tier-2-interventions-for-mtss` (8.7% CTR — overperformer), `behavior-intervention-plan-template`, `behavior-intervention-plan-vs-iep`, `behavior-intervention-plan-for-off-task-behavior`
-- **Owns:** tier 2 intervention documentation, MTSS documentation, BIP template/vs IEP
+- **Owns:** tier 2 intervention documentation, MTSS documentation, **tier 2 intervention examples / list** (added 2026-09-28), BIP template/vs IEP
 - **Recommendation:** leave alone; ensure the behavior-documentation hub links all four.
+- **2026-09-28 update:** added a "Tier 2 Intervention Examples (and What to Document for Each)" section (6 academic, 6 behavior, each with what to record) plus a matching first FAQ. Title, H1 and excerpt deliberately unchanged (best CTR in the cluster). The hub `teacher-behavior-documentation-guide` now links to the tier 2 page (it had no link before), and the tier 2 page now carries the hub's `*Part of*` line. **Guardrail:** the tier 2 page stays at Tier 2. No FBA, BIP, replacement behaviors, IEP goals or "intensive/individualized" wording, since the BIP pages own Tier 3. Evidence (GSC 2026-08-30 to 09-26): 38 clicks / 723 imp / 5.26% CTR / pos 16.2, impressions up from 176 the prior 28 days, GA4 39 of 40 sessions US; "tier 2 interventions examples/list" queries at pos 37-80. OpenSEO US: "tier 2 interventions" ~1,000/mo (Oct ~1,900), "tier 2 interventions examples" ~480. **Re-read 2026-11-15.**
 
 ## 11. Classroom management
 
@@ -199,7 +200,7 @@ Across those 8 SERPs, the pattern in where we rank organically:
   - `parent-teacher-conference-form`: form, notes, template, sheet, printable/pdf. The canonical home of `parent-teacher-conference-notes.pdf`.
   - `how-to-prepare-for-parent-teacher-conference`: how to prepare, checklist, how long a conference lasts, sandwich method.
   - `what-to-bring-to-parent-teacher-conference-about-behavior`: what to bring, behavior documentation for conferences (best position in the cluster, 7.9).
-  - `what-to-say-at-parent-teacher-conference`: what to say, opening/closing scripts, defensive parents.
+  - `what-to-say-at-parent-teacher-conference`: what to say, opening/closing scripts, defensive parents, and **questions to ask parents, asked during the meeting** (section + FAQ added 2026-09-28; OpenSEO US ~590/mo, ~2,400 in Oct and Nov). The form page's "Questions to send home before conference night" list stays pre-meeting only, and the two pages link to each other on that split. Do not put a question list on the prepare page.
   - `parent-teacher-conference-comments-for-teachers`: comments, glow and grow (also a supporting page in cluster 1).
 - **Avoid:** "checklist" in form-page headings, comment lists or scripts on the form page, IEP meeting notes phrasing (owned by `iep-meeting-notes-template`), sign-up/scheduling sheets (nobody owns these, don't chase them).
 - **Why the form page exists:** OpenSEO (US, 2026-09-28) shows "parent teacher conference form" at ~1,600/mo peaking at ~6,600 in October (that figure groups close variants together), "template" at 880, and "notes" at 170, all KD 0. GSC showed zero site impressions for any form/notes/template query before this page. The SERP mixes marketplaces (Canva, TpT, Pinterest, Etsy) with teacher blogs offering free forms, with an image pack at #1.

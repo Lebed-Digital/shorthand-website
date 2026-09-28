@@ -8,6 +8,8 @@ relatedPosts:
   - "how-to-document-student-behavior-for-iep"
 excerpt: "Most teachers are not struggling to provide Tier 2 interventions. They are struggling to document them consistently. Here is a simple system that actually works."
 faq:
+  - q: "What are examples of Tier 2 interventions?"
+    a: "Academic Tier 2 interventions can include small-group reteaching, repeated reading, targeted phonics practice, and math fact fluency practice. Behavior Tier 2 interventions can include check-in/check-out, daily behavior goals, social skills groups, and self-monitoring checklists. For each intervention, teachers should record what support was used, how often it occurred, and how the student responded over time."
   - q: "What data should a teacher collect for Tier 2 MTSS interventions?"
     a: "Focus on four things: how often the target behavior occurs (frequency), how long it lasts (duration), which intervention you used, and whether the student's response changed. You do not need a complicated system. A simple four-column log with date, behavior, intervention, and outcome is enough for most MTSS team reviews."
   - q: "Who is responsible for documenting Tier 2 MTSS interventions?"
@@ -101,6 +103,64 @@ Examples:
 
 For a deeper look at building a consistent tracking habit around this data, [How to Track Student Behavior Data](/blog/how-to-track-student-behavior-data) covers the practical steps.
 
+## Tier 2 Intervention Examples (and What to Document for Each)
+
+The four data points above become much easier to use when you connect them to the intervention you are actually running. The team may decide which Tier 2 support a student receives, but your notes are what help everyone see whether that support is working.
+
+### Academic Tier 2 Interventions
+
+**Small-group reteaching.** A few students who missed the same skill get another chance to learn it in a smaller group, with the lesson narrowed down to that specific skill.
+
+*What to document:* the skill taught, the date and duration of the group, the number of students, and the student's response on a quick check, such as 4 of 5 two-digit subtraction problems correct.
+
+**Repeated reading for fluency.** The student reads the same short passage several times and gets feedback between attempts.
+
+*What to document:* the passage level, words correct per minute on a short timed read, and the number of sessions completed.
+
+**Phonics or decoding practice.** The student gets extra practice with one specific sound or spelling pattern, such as short vowels or one vowel team.
+
+*What to document:* the pattern practiced and the student's accuracy on a short word list, such as 7 of 10 vowel-team words read correctly.
+
+**Math fact fluency practice.** The student works on one set of facts in short practice sessions.
+
+*What to document:* the fact set, the number answered correctly on a short timed check, and the trend from week to week.
+
+**Pre-teaching.** Before the whole-class lesson, the student gets a quick introduction to the vocabulary, steps, or ideas that are likely to cause trouble. This gives the student something familiar to connect to during the full lesson.
+
+*What to document:* the lesson, what was pre-taught, and the student's response during the whole-class lesson, such as whether they used the vocabulary or participated successfully.
+
+**Targeted writing practice.** You pick one writing skill, such as writing complete sentences or adding details, and practice only that.
+
+*What to document:* the skill practiced and a count from a short writing sample, such as 3 complete sentences out of 5.
+
+### Behavior Tier 2 Interventions
+
+**Check-in/check-out (CICO).** The student checks in with an adult at the beginning of the day, carries a point card that teachers rate during the day, and checks out again before leaving.
+
+*What to document:* whether check-in and check-out happened, the percentage of points earned, and whether the daily goal was met.
+
+**Daily behavior goal.** The student works on one or two clearly stated goals that are rated at set points during the day. Keeping the goal narrow makes the data much easier to understand later.
+
+*What to document:* the exact goal wording, the rating for each time block, and the number of days the goal was met out of the days tracked.
+
+**Social skills group.** A small group practices one specific skill, such as joining a game, taking turns, or handling a disagreement. The important part is watching for whether the skill starts showing up outside the group.
+
+*What to document:* the skill taught, the sessions attended, and how often you saw the student use the skill in class, at lunch, or at recess.
+
+**Self-monitoring checklist.** At set times, the student quickly rates their own behavior while the teacher records a rating too. For example, the student might answer, "Was I working?" at the end of each work period.
+
+*What to document:* the student's rating next to the teacher's rating and the frequency of the target behavior during the same period.
+
+**Break card.** The student has a clear way to request a short break instead of walking away from the task or stopping work without communicating.
+
+*What to document:* the number of breaks requested, the duration of each break, and whether the student returned to the task afterward and how long that took.
+
+**Adult mentor check-ins.** A staff member meets briefly with the student on a regular schedule to review how things are going and reinforce the same expectations.
+
+*What to document:* the dates the check-ins occurred and a weekly frequency count of the target behavior so the team can see whether it is changing.
+
+You do not need Frequency, Duration, Intervention Used, and Student Response for every intervention. Choose the one or two measures that best answer "Is this working?" and record them consistently.
+
 ## Keep Notes Objective
 
 Avoid:
@@ -175,3 +235,5 @@ If your current system depends on remembering everything at the end of the day, 
 - [How to Track Student Behavior Data](/blog/how-to-track-student-behavior-data)
 - [IEP Meeting Checklist for Teachers](/blog/iep-meeting-checklist-for-teachers)
 - [IEP Meeting Notes Template for Teachers](/blog/iep-meeting-notes-template)
+
+*Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*
