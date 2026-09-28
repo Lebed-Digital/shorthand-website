@@ -95,3 +95,5 @@ ShortHand was built to solve this problem.
 ShortHand allows primary teachers to log behavior notes, track transitions, and record positive wins in seconds. Since it is mobile-friendly, you can log notes during recess, center rotations, or line-up times. When it is time to write report cards, you will have a detailed history of every student's behavioral growth, allowing you to copy, paste, and customize your comments in minutes.
 
 [Try ShortHand](https://app.getshorthandapp.com?demo=true) today and spend less time documenting and more time teaching.
+
+*Part of [Report Card Comments: The Teacher's Complete Guide](/blog/report-card-comments-guide).*

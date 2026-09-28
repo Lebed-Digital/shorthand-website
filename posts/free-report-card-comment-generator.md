@@ -97,3 +97,5 @@ If you find it useful, the full ShortHand app is where the same idea goes deeper
 ---
 
 *ShortHand is a free classroom app for logging student behavior and academic observations by voice or text. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or jump straight to the [free report card comment generator](/report-card-comment-generator).*
+
+*Part of [Report Card Comments: The Teacher's Complete Guide](/blog/report-card-comments-guide).*
