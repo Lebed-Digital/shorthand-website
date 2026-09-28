@@ -203,6 +203,8 @@ Before every behavior conference, make sure you have:
 
 If you have these six items, you will be more prepared than most teachers walking into a difficult conversation. A [teacher documentation log template](/blog/teacher-documentation-log-template) can help you build the habit of capturing this information consistently throughout the year so it is ready when you need it.
 
+To keep it all on one page per student, this free [parent teacher conference notes sheet](/blog/parent-teacher-conference-form) has room for behavior concerns, what the family tells you, and the action plan you agree on.
+
 ## Final Thoughts
 
 Successful conferences are rarely about having the perfect words.

@@ -80,6 +80,8 @@ You can say all the right things, but words fade. A parent might remember the co
 
 You have to have notes to back up what was discussed. If you do not have a record, you are relying on memory, and so is the parent.
 
+A one-page [conference notes form](/blog/parent-teacher-conference-form) with space for parent input and the agreed action plan is the simplest place to start.
+
 ShortHand gives you the documented notes to back up everything you say in that room. You can log the parent communication the second they walk out the door. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
 ---

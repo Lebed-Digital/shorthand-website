@@ -193,6 +193,18 @@ Across those 8 SERPs, the pattern in where we rank organically:
 - **Pages:** `classroom-management-plan-template` (pos 20.7), `classroom-management-without-yelling` (pos 21.5), `classroom-management-for-disruptive-students`, `how-to-redirect-student-behavior`, `student-behavior-problems-in-the-classroom`
 - **Reality check:** big competitive arena, thin authority, no hub. **Recommendation:** leave alone in 2026; revisit as a 2027 cluster decision. Do not add posts here while report-card and back-to-school clusters have open work.
 
+## 12. Parent-teacher conferences
+
+- **Pages and what each owns (added 2026-09-28):**
+  - `parent-teacher-conference-form`: form, notes, template, sheet, printable/pdf. The canonical home of `parent-teacher-conference-notes.pdf`.
+  - `how-to-prepare-for-parent-teacher-conference`: how to prepare, checklist, how long a conference lasts, sandwich method.
+  - `what-to-bring-to-parent-teacher-conference-about-behavior`: what to bring, behavior documentation for conferences (best position in the cluster, 7.9).
+  - `what-to-say-at-parent-teacher-conference`: what to say, opening/closing scripts, defensive parents.
+  - `parent-teacher-conference-comments-for-teachers`: comments, glow and grow (also a supporting page in cluster 1).
+- **Avoid:** "checklist" in form-page headings, comment lists or scripts on the form page, IEP meeting notes phrasing (owned by `iep-meeting-notes-template`), sign-up/scheduling sheets (nobody owns these, don't chase them).
+- **Why the form page exists:** OpenSEO (US, 2026-09-28) shows "parent teacher conference form" at ~1,600/mo peaking at ~6,600 in October (that figure groups close variants together), "template" at 880, and "notes" at 170, all KD 0. GSC showed zero site impressions for any form/notes/template query before this page. The SERP mixes marketplaces (Canva, TpT, Pinterest, Etsy) with teacher blogs offering free forms, with an image pack at #1.
+- **The same PDF sits on three pages on purpose** (`conference-form-post`, `conference-prep-post`, `conference-comments-post`), so page vs asset can be compared. Do not rename those source ids.
+
 ---
 
 # App-roundup consolidation plan (cluster 5/6/7)
@@ -243,6 +255,7 @@ Sitewide US context for the same window: **10 clicks across 47 pages.** Most pag
 - **2026-08-13:** special-ed audit (pre-existing commitment) — fold AI-query routing into it.
 - **2026-09-15:** back-to-school cluster review — clicks on welcome/intro/toolkit pages; decide whether the intro post's in-person section captures "how to introduce yourself" clicks.
 - **2026-10-15:** report-card season pre-check — preschool differentiation results (generic "preschool report card comments" should have ONE page ranking, position <15), hub build decision, generator page position.
+- **2026-11-15:** conference cluster, first fall-season read (cluster 12). `gsc_query_for_page` for `/blog/parent-teacher-conference-form`: indexed? any form/notes/template impressions, and at what position? Compare `resource_download` counts across the three conference source ids for 2026-10-15 to 11-15. Zero impressions means the page was not indexed in time: spring (March-April) is the next read, not a verdict.
 - **2026-11-05:** report-card cluster, first US-season read. Segment `country = usa`. Baseline to beat is the 2026-05-15 to 06-20 table in cluster 1 (six pages, 138 US imp, 0 US clicks, positions 35-75). Any US clicks at all is new information. Also check whether the two worst pages (66.2, 74.9) have moved.
 - **2027-05-25:** the decisive report-card read, same window as the original measurement. This is the first apples-to-apples US season comparison and the point at which "is this cluster worth more investment" can honestly be answered.
 - **2027-04-08:** one full year of data. First point at which seasonality can be separated from the new-domain indexing curve. Before this date, treat all year-over-nothing trend claims as confounded.

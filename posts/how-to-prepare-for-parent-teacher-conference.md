@@ -43,6 +43,8 @@ If you need pre-written templates or comments to organize your observations, che
 
 RESOURCEOFFERMARKER
 
+For a section-by-section walkthrough of what to write on it, see this guide to the [parent teacher conference form](/blog/parent-teacher-conference-form).
+
 ## Lead with the Sandwich Method
 
 Every conference should follow a predictable structure. Start with the positive, present the academic reality, and end with a team plan.
