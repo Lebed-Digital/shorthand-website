@@ -78,6 +78,8 @@ You need a system that captures these observations in the moment, all year long.
 
 ShortHand keeps notes on each student so when conference season comes around, you are not starting from a blank page. You have the comments and data ready to go. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
+If you want something on paper for the conference itself, this free one-page [parent teacher conference form](/blog/parent-teacher-conference-form) gives each student a spot for these comments, plus room for what the family tells you.
+
 If report cards are the next thing on your desk after conferences, the [Report Card Comment Library](/report-card-comment-library) has 374 searchable comments with the student name filled in, $4.99 once.
 
 ---

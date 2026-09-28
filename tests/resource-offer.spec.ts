@@ -40,6 +40,11 @@ const PLACEMENTS = [
     source: 'conference-comments-post',
     file: 'parent-teacher-conference-notes.pdf',
   },
+  {
+    slug: 'parent-teacher-conference-form',
+    source: 'conference-form-post',
+    file: 'parent-teacher-conference-notes.pdf',
+  },
 ];
 
 for (const { slug, source, file } of PLACEMENTS) {
@@ -66,7 +71,7 @@ for (const { slug, source, file } of PLACEMENTS) {
 
     // The optional capture appears only after the download has started.
     await expect(page.locator('input[type="email"]')).toHaveCount(1);
-    await expect(page.getByText('Optional')).toBeVisible();
+    await expect(page.getByText('Optional', { exact: true })).toBeVisible();
 
     const event = captured.find((e) => e[1] === 'resource_download');
     expect(event, 'resource_download should fire').toBeTruthy();

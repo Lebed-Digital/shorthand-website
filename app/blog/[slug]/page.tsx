@@ -149,6 +149,17 @@ const RESOURCE_OFFERS: Record<
       'If you would rather walk in with the conversation already mapped out, this free one-page sheet gives each student a place for strengths, concerns, parent input, and agreed next steps.',
     buttonLabel: 'Download the conference notes sheet',
   },
+  // The form's own page, targeting "parent teacher conference form" queries.
+  // Same PDF as the two posts above, separate source id so all three
+  // placements stay comparable.
+  'parent-teacher-conference-form': {
+    source: 'conference-form-post',
+    href: '/parent-teacher-conference-notes.pdf',
+    linkText: 'One page per student, print and handwrite',
+    blurb:
+      'Five sections in the order you use them: strengths, academic concerns, and behavior concerns before the meeting, then parent input and an action plan during it, with four follow-up checkboxes at the bottom.',
+    buttonLabel: 'Download the free conference form',
+  },
 };
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
