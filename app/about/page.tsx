@@ -29,15 +29,6 @@ const personSchema = {
     name: 'ShortHand',
     url: 'https://getshorthandapp.com',
   },
-  hasCredential: {
-    '@type': 'EducationalOccupationalCredential',
-    name: 'Registered Behavior Technician (RBT)',
-    credentialCategory: 'Professional Certification',
-    recognizedBy: {
-      '@type': 'Organization',
-      name: 'Behavior Analyst Certification Board (BACB)',
-    },
-  },
   knowsAbout: [
     'Classroom behavior tracking',
     'Applied behavior analysis',
@@ -116,7 +107,7 @@ export default function AboutPage() {
             I teach third grade, and I have worked in education for over twenty years. In that time I&apos;ve sat through more IEP meetings, written more parent emails, and filled out more behavior logs than I can count. And for most of that time, I did it the hard way: sticky notes, spreadsheets, mental gymnastics at the end of a long day trying to remember what happened with which student.
           </p>
           <p style={{ marginBottom: '1.25rem' }}>
-            I&apos;m also a Registered Behavior Technician (RBT). That training changed how I see behavior. Not as something to punish, but as communication. It made me a better teacher, but it also made me more aware of how much data we lose when documentation is slow or painful. If logging a note takes two minutes, you stop doing it. And when you stop doing it, you lose the pattern. You lose the story.
+            I&apos;m a former Registered Behavior Technician (RBT). That training changed how I see behavior. Not as something to punish, but as communication. It made me a better teacher, but it also made me more aware of how much data we lose when documentation is slow or painful. If logging a note takes two minutes, you stop doing it. And when you stop doing it, you lose the pattern. You lose the story.
           </p>
           <p style={{ marginBottom: '1.25rem' }}>
             I built ShortHand because I couldn&apos;t find a tool that worked the way a real classroom works. Every app I tried was either built for administrators or designed by people who hadn&apos;t been in front of 25 third-graders on a Tuesday afternoon. I needed something I could actually use while also teaching: fast, quiet, one-handed.
