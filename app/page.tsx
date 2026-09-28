@@ -685,7 +685,7 @@ export default function Home() {
               drowning in paperwork while trying to keep my head above water.
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', margin: '1rem 0 1.25rem' }}>
-              {['20+ Years K–8 Experience', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
+              {['20+ Years in Education', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
                 <span key={badge} style={{
                   background: 'rgba(167,139,250,0.12)',
                   border: '1px solid rgba(167,139,250,0.3)',
@@ -701,7 +701,7 @@ export default function Home() {
               ))}
             </div>
             <p className="creator-body">
-              I have spent over 20 years in the classroom. Before I became a 3rd grade teacher,
+              I have worked in education for over twenty years. Before I became a 3rd grade teacher,
               I worked as a one-to-one aide and a Registered Behavior Technician. I know exactly
               how loud, fast, and overwhelming a school day can be. This tool was created
               with love to assist my fellow teachers who are looking for a better way to track
@@ -852,7 +852,7 @@ export default function Home() {
           <div className="perspective-grid">
             <div className="perspective-card perspective-card--accent">
               <div className="perspective-icon"><CalendarDays size={28} strokeWidth={1.75} /></div>
-              <div className="perspective-title">20+ Years of Experience</div>
+              <div className="perspective-title">20+ Years in Education</div>
               <p className="perspective-desc">I&apos;ve seen every classroom trend and every type of paperwork. This app is the solution to problems that actually exist in a real school.</p>
             </div>
             <div className="perspective-card">
