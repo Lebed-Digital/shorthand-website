@@ -71,6 +71,8 @@ If you are documenting for IEP purposes, for a behavior intervention plan, or ju
 
 [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) covers the day-to-day habit: what to write, when to write it, and how to keep it going when things are busy.
 
+If a student is getting Tier 2 support through your school's MTSS process, [How to Document Tier 2 Interventions for MTSS](/blog/how-to-document-tier-2-interventions-for-mtss) lists common Tier 2 interventions and what to record for each one so the team can tell whether it is working.
+
 ---
 
 ## Documenting behavior for digital records

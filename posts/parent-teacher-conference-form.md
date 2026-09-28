@@ -170,6 +170,8 @@ You can also make the meeting easier by asking families for input ahead of time.
 
 These questions are not printed on the PDF. They are just an optional way to collect information before the meeting. If families answer ahead of time, you can jot the important points in the Parent Questions & Input section before the conference even starts.
 
+Looking for questions to ask during the conference itself? See [questions to ask parents at a parent teacher conference](/blog/what-to-say-at-parent-teacher-conference).
+
 ## When the paper form is not enough
 
 The paper form works. The harder part is filling in those first three sections with useful information instead of trying to reconstruct the last six weeks from memory.
