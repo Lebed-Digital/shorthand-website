@@ -21,7 +21,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Gregory Lebed',
   jobTitle: '3rd Grade Teacher',
-  description: 'K-8 classroom teacher, former Registered Behavior Technician (RBT), and creator of ShortHand, a behavior tracking and parent communication app built for teachers.',
+  description: '3rd grade teacher with 20+ years in education, former Registered Behavior Technician (RBT), and creator of ShortHand, a behavior tracking and parent communication app built for teachers.',
   url: 'https://getshorthandapp.com/about',
   email: 'info@getshorthandapp.com',
   worksFor: {
@@ -94,7 +94,7 @@ export default function AboutPage() {
               Gregory Lebed
             </h1>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
-              {['20+ Years K–8 Experience', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
+              {['20+ Years in Education', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
                 <span key={badge} style={{
                   background: 'rgba(167,139,250,0.12)',
                   border: '1px solid rgba(167,139,250,0.3)',
@@ -113,7 +113,7 @@ export default function AboutPage() {
 
         <div style={{ lineHeight: 1.75, color: 'var(--text)', fontSize: '1.05rem' }}>
           <p style={{ marginBottom: '1.25rem' }}>
-            I&apos;ve been teaching K-8 for over twenty years. In that time I&apos;ve sat through more IEP meetings, written more parent emails, and filled out more behavior logs than I can count. And for most of that time, I did it the hard way: sticky notes, spreadsheets, mental gymnastics at the end of a long day trying to remember what happened with which student.
+            I teach third grade, and I have worked in education for over twenty years. In that time I&apos;ve sat through more IEP meetings, written more parent emails, and filled out more behavior logs than I can count. And for most of that time, I did it the hard way: sticky notes, spreadsheets, mental gymnastics at the end of a long day trying to remember what happened with which student.
           </p>
           <p style={{ marginBottom: '1.25rem' }}>
             I&apos;m also a Registered Behavior Technician (RBT). That training changed how I see behavior. Not as something to punish, but as communication. It made me a better teacher, but it also made me more aware of how much data we lose when documentation is slow or painful. If logging a note takes two minutes, you stop doing it. And when you stop doing it, you lose the pattern. You lose the story.
@@ -122,7 +122,7 @@ export default function AboutPage() {
             I built ShortHand because I couldn&apos;t find a tool that worked the way a real classroom works. Every app I tried was either built for administrators or designed by people who hadn&apos;t been in front of 25 third-graders on a Tuesday afternoon. I needed something I could actually use while also teaching: fast, quiet, one-handed.
           </p>
           <p style={{ marginBottom: '2rem' }}>
-            So I built it myself. ShortHand is the tool I wish I&apos;d had twenty years ago. I&apos;m still a full-time teacher. I still use it every day. Every feature in this app came from a real problem I or another teacher actually faced.
+            So I built it myself. ShortHand is the tool I wish I&apos;d had years ago. I&apos;m still a full-time teacher. I still use it every day. Every feature in this app came from a real problem I or another teacher actually faced.
           </p>
 
           <div style={{
