@@ -129,4 +129,4 @@ If you want your notes already organized when report card season hits, [ShortHan
 
 If you are heading into a new school year with Pre-K families, a welcome letter is often the first thing those parents read from you. The [Welcome Letter Generator](/back-to-school-toolkit) has a Pre-K option and takes about 30 seconds.
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

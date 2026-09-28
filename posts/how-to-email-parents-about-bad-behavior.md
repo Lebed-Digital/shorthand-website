@@ -14,7 +14,7 @@ It is 3:45 PM. You are exhausted. Your coffee is a cold memory. You are staring 
 
 The blank screen fatigue is incredibly real. You want to be honest without being alarming. You want to be professional without sounding like a robot. Figuring out how to email parents about bad behavior is a skill they do not teach you in college. You are just expected to pick it up along the way. 
 
-I have been teaching 3rd grade for over 20 years. I also hold an RBT certification. I have sent thousands of messages home over my career. Early on, my emails caused more problems than they solved. I would write them while I was still annoyed. I would use vague terms. The parents would naturally get defensive.
+I have worked in education for over 20 years, and now I teach 3rd grade. I also hold an RBT certification. I have sent thousands of messages home over my career. Early on, my emails caused more problems than they solved. I would write them while I was still annoyed. I would use vague terms. The parents would naturally get defensive.
 
 Now, I look at parent communication entirely differently. A good email builds trust. A bad one breaks it. 
 
@@ -116,4 +116,4 @@ Instead of trying to remember exactly what happened at 9:15 AM during reading gr
 
 Try it out with your next tough message at [Try ShortHand free →](https://app.getshorthandapp.com?demo=true).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

@@ -206,4 +206,4 @@ The honest summary: most teachers don't need a better way to send messages. They
 
 If you want more on the documentation side, I wrote about [how to document parent contact as a teacher](/blog/how-to-document-parent-contact-as-a-teacher) and the [best parent communication apps for documentation](/blog/best-parent-communication-apps-for-documentation-2026) specifically.
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*

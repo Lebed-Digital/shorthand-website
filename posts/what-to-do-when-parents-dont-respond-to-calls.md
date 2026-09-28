@@ -21,7 +21,7 @@ faq:
 
 You have called three times. You left two voicemails. You sent a detailed email on Tuesday. Nothing. Absolute silence. Meanwhile, the student is continuing to struggle in your classroom, their behavior is escalating, and you are feeling completely isolated. You start wondering if you are doing something wrong. You might even consider just giving up and moving on. Figuring out what to do when parents don't respond to teacher calls is one of the most frustrating parts of this profession.
 
-I have spent twenty years in K-8 classrooms. I know exactly how infuriating it is to shout into a void. It feels personal. It feels like they do not care.
+I have spent twenty years working in education. I know exactly how infuriating it is to shout into a void. It feels personal. It feels like they do not care.
 
 But you cannot give up, and you cannot stop documenting. Here is exactly what to do when a parent goes completely silent, and how to stay organized when they eventually do reach out.
 

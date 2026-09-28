@@ -14,7 +14,7 @@ It is 3:45 PM. You are exhausted. Your coffee is a cold memory.
 
 The classroom is finally quiet. The dismissal buses have pulled away. You look at your to-do list and there it is. The dreaded task. You have to call a parent.
 
-I have been teaching third grade for over twenty years. I also hold an RBT certification. You would think picking up the phone gets easier. It does not. The anxiety is still there. My stomach still does that little flip when the phone starts to ring.
+I teach third grade, and I have worked in education for over twenty years. I also hold an RBT certification. You would think picking up the phone gets easier. It does not. The anxiety is still there. My stomach still does that little flip when the phone starts to ring.
 
 We dread these calls because they are unpredictable. We do not know who is going to answer. We do not know what kind of day they are having. They might be at work. They might be stressed out about bills. They might immediately think we are attacking their child.
 

@@ -12,7 +12,7 @@ excerpt: "Looking for honest parent teacher conference comments? Here is exactly
 
 Sitting across from a parent and talking about their child is one of the most unnatural things we do as teachers. You are trying to condense months of observation into a twenty-minute window. You want to be honest, but you do not want to sound harsh. You want to be encouraging, but you cannot sugarcoat serious issues.
 
-I have been teaching third-grade math and science for over two decades. Finding the right words is hard. I once told a parent their child was very energetic. They asked if that meant he was bouncing off the walls. I told them yes, occasionally the ceiling too. They appreciated the honesty, but I learned I needed to be much more specific.
+I teach third-grade math and science, and I have worked in education for over two decades. Finding the right words is hard. I once told a parent their child was very energetic. They asked if that meant he was bouncing off the walls. I told them yes, occasionally the ceiling too. They appreciated the honesty, but I learned I needed to be much more specific.
 
 Teachers constantly search the internet for sample language because we freeze up in the moment. We need phrases we can lean on when the conversation gets tricky. If you are looking for advice on how to actually structure the meeting itself, I wrote a separate guide on [what to say at a parent teacher conference](/blog/what-to-say-at-parent-teacher-conference) to keep it on track.
 

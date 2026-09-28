@@ -8,14 +8,14 @@ relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"
   - "classdojo-vs-seesaw-2026"
-excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are switching, and what actually works instead, from a 3rd grade teacher with 20+ years in K-8 classrooms."
+excerpt: "Looking for a ClassDojo alternative? Here are 7 reasons teachers are switching, and what actually works instead, from a 3rd grade teacher with 20+ years in education."
 ---
 
 If you've ever found yourself staring at a search bar typing "ClassDojo alternatives" at 7:00 PM on a Tuesday, you aren't doing anything wrong. You're just dealing with the same reality I was:
 
 You're expected to track every behavior, mood, and academic win, but you don't actually have the time or the brain-space to do it.
 
-As a 3rd-grade teacher with 20+ years in K-8 classrooms and a former Registered Behavior Technician, I hit a wall where my system wasn't just failing, it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
+As a 3rd-grade teacher with 20+ years in education and a former Registered Behavior Technician, I hit a wall where my system wasn't just failing, it was non-existent. Here are the seven reasons teachers search for a ClassDojo alternative, and what actually works instead.
 
 ## 1. Your Students Outgrew the Gamification
 
@@ -93,7 +93,7 @@ It isn't a ClassDojo replacement in the sense of trying to do everything ClassDo
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to solve the documentation problems he faced in his own classroom.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to solve the documentation problems he faced in his own classroom.*
 
 
 *Part of [ShortHand vs ClassDojo: An Honest Comparison](/blog/classdojo-alternative).*

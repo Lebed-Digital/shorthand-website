@@ -12,7 +12,7 @@ excerpt: "Most 'teacher apps' are just extra chores. Here's the no-fluff stack I
 
 Let's be honest: most "teacher apps" are just extra chores. If a tool requires a three-hour professional development session to learn the interface, I'm out.
 
-I've been teaching K-8 for over 20 years. I've tried a lot of tools. Most of them sounded great in a PD meeting and disappeared from my workflow by November. The ones that stuck are the ones that work at the speed of a real classroom -- the ones that help me get out of the building before the janitor starts locking the doors.
+I've worked in education for over 20 years. I've tried a lot of tools. Most of them sounded great in a PD meeting and disappeared from my workflow by November. The ones that stuck are the ones that work at the speed of a real classroom -- the ones that help me get out of the building before the janitor starts locking the doors.
 
 Here's the stack I'm actually using in 2026.
 
@@ -104,7 +104,7 @@ The goal isn't a bigger toolkit. It's getting your time back. Pick the tools tha
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 
 
 *Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

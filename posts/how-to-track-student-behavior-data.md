@@ -137,7 +137,7 @@ The easier your system is to use, the more consistent you'll be. And consistency
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 
 
 *Related reading: [5 Student Behavior Patterns Teachers Should Never Ignore](/blog/5-student-behavior-patterns-teachers-should-never-ignore)*
