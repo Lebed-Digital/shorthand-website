@@ -79,6 +79,12 @@ For behavior specifically, [Preschool Behavior Report Card Comments](/blog/repor
 
 ---
 
+## Kindergarten comments
+
+[Kindergarten Report Card Comments: 75+ Examples by Skill](/blog/kindergarten-report-card-comments) is organized by skill: reading and letter sounds, writing and fine motor, math, social skills, routines, and behavior. It also includes comments for students who need more support, plus separate first-report-card and end-of-year comments.
+
+---
+
 ## Progress reports and conferences
 
 Report cards are not the only time you need the right words. Mid-quarter progress reports and parent-teacher conferences call for the same skills, just in a different format.
