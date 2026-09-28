@@ -22,7 +22,7 @@
 | 5 | 2026-08-13 special-ed audit (pre-committed) | Audit/decision | Aug 13 | Medium | Medium |
 | 6 | 2026-08-15 consolidation check + app-roundup differentiation | Consolidation | ~Aug 15 | Medium | Medium |
 | 7 | Report-card comments HUB build (DONE 2026-09-28, late: missed the Oct 1 indexing target) | New content | Sept | **High** | High |
-| 8 | New post: Kindergarten Report Card Comments | New content | Late Sept/early Oct | Medium | Medium-High |
+| 8 | New post: Kindergarten Report Card Comments (DONE 2026-09-28) | New content | Late Sept/early Oct | Medium | Medium-High |
 | 9 | 2026-09-15 back-to-school review | Measurement | Sept 15 | n/a | n/a |
 | 10 | 2026-10-15 report-card pre-season check | Measurement | Oct 15 | n/a | n/a |
 
@@ -119,6 +119,8 @@ Parked (do NOT start in this window): classroom-management cluster, admin-observ
   > In c:\Projects\Shorthand-website: build the report-card comments hub. First read docs/seo-query-ownership.md cluster 1 and study how the existing hub `teacher-parent-communication-guide` is structured (find it in posts/ or app/). Create the hub following that exact pattern, linking ALL of these with 2-3 sentence descriptions each: report-card-comments-for-behavior, report-card-comments-for-students-with-adhd, report-card-comments-for-struggling-students, second-grade-behavior-report-card-comments, social-emotional-report-card-comments, student-progress-report-comments-for-teachers, parent-teacher-conference-comments-for-teachers, preschool-report-card-comments, report-card-comments-behavior-preschool, /report-card-comment-generator, and /blog/free-report-card-comment-generator. The hub must NOT contain lists of actual report card comments (the spokes own the artifacts). Then edit every one of those spoke posts to link back to the hub in their related-links/internal-link areas. No em dashes, bare YYYY-MM-DD date. Build, verify no post lost existing links, commit, push. Update docs/seo-query-ownership.md cluster 1 (it flags this hub as the known gap). Ask Greg to request indexing for the new hub URL.
 
 ### Project 8 — "Kindergarten Report Card Comments" post
+
+> **STATUS 2026-09-28: DONE.** Shipped at `/blog/kindergarten-report-card-comments` (76 comments, every H2 carries "Kindergarten", no preschool/pre-k headings). Written by ChatGPT from Claude's brief, reviewed by Claude (authenticity + AI-slop + conventions). Links: hub, behavior primary, struggling students, generator tool. **Deviation from the execution prompt below:** links to `report-card-comments-for-struggling-students` instead of `preschool-report-card-comments`, so the kindergarten page carries no preschool anchor text (Greg approved). Hub now has a "Kindergarten comments" section linking to it, and the post carries the hub "Part of" line. Not in `LIBRARY_CTA_INTROS` (the paid library has no kindergarten section yet; that is a separate product decision). Measure 2026-11-15 as planned.
 - **Expected impact:** Medium. Extends the winning cluster into an uncontested age modifier before season; planned in the map.
 - **Confidence:** Medium-High (same artifact+modifier formula).
 - **Primary URL (new):** `/blog/kindergarten-report-card-comments`.
