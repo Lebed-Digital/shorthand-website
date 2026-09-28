@@ -14,7 +14,7 @@ Learning how to tell a parent their child is disruptive in class is one of the m
 
 Parents hear the word "disruptive" and they immediately get defensive. They think you are calling their child a bad kid. They think you are blaming them for bad parenting. 
 
-I have seen it happen a hundred times in my 20 years of teaching 3rd grade. You send a quick note home about talking during a lesson. The next morning, you have a furious parent in the front office demanding a meeting. 
+I have seen it happen a hundred times in my 20 years in education. You send a quick note home about talking during a lesson. The next morning, you have a furious parent in the front office demanding a meeting. 
 
 It does not have to be this way. You can communicate the problem clearly without starting a war. It is all about the words you choose. 
 
@@ -99,7 +99,7 @@ It takes the stress out of parent communication. You can see how it works and [i
 
 Try it out. Your mental health will thank you. Get started at [Try ShortHand free →](https://app.getshorthandapp.com?demo=true).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 ---
 

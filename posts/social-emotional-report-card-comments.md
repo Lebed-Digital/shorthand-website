@@ -141,6 +141,6 @@ Worth knowing for next term: the reason a comment like "recovery that used to ta
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 *Part of [Report Card Comments: The Teacher's Complete Guide](/blog/report-card-comments-guide).*

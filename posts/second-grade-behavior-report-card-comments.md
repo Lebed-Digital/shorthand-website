@@ -14,7 +14,7 @@ Second grade is a magical, transitional year. Seven and eight-year-olds are leav
 
 But with that growth comes a unique set of behavioral challenges.
 
-As a veteran K-8 teacher and former Registered Behavior Technician, I know that second-grade behavior is highly dynamic. One minute they are working quietly like seasoned scholars, and the next they are giggling hysterically because someone said the word "button."
+As a 3rd grade teacher and former Registered Behavior Technician, I know that second-grade behavior is highly dynamic. One minute they are working quietly like seasoned scholars, and the next they are giggling hysterically because someone said the word "button."
 
 When we write report card comments for this age group, they need to reflect these specific developmental milestones. Generic comments like "good student" do not help parents understand how their child is growing socially and behaviorally.
 

@@ -23,7 +23,7 @@ You are looking at the math intervention tracker at 4:30 PM on a Tuesday. The sp
 
 ![A teacher reviewing academic data and drafting a parent email that frames the concern as a team plan](/blog-illustrations/academic-concern-parent-email-team-plan.webp)
 
-As a veteran teacher and former RBT, I know that sharing academic struggles requires a specific strategy. You must frame the conversation as a team challenge, back it up with objective data, and present a clear path forward. Here is how to navigate this conversation without causing defensiveness.
+As a teacher and former RBT, I know that sharing academic struggles requires a specific strategy. You must frame the conversation as a team challenge, back it up with objective data, and present a clear path forward. Here is how to navigate this conversation without causing defensiveness.
 
 ### Shift the Frame: From Blame to Teamwork
 

@@ -23,7 +23,7 @@ It is 3:45 PM. You are exhausted, your coffee is a cold memory, and you are star
 
 The blank screen fatigue is real. You want to be honest without being alarming, and professional without sounding like a robot.
 
-After 20+ years in K-8 classrooms and my time as a Registered Behavior Technician, I learned that the best parent behavior emails are short, objective, and collaborative. I stopped reinventing the wheel and started using scripts.
+After 20+ years in education, including my time as a Registered Behavior Technician, I learned that the best parent behavior emails are short, objective, and collaborative. I stopped reinventing the wheel and started using scripts.
 
 As a parent of a neurodiverse child, I've also experienced these emails from the other side. The messages that helped me most were the ones that described what happened clearly, avoided labels, and focused on solutions. Parents do not need perfection. They need information they can understand and act on.
 
@@ -206,7 +206,7 @@ Once you've built up a few weeks of notes, you can use Ask ShortHand to find out
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 ---
 

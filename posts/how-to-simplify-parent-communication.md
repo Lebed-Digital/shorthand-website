@@ -11,7 +11,7 @@ excerpt: "I used to stare at a blank email screen at 4:00 PM and just sigh. Here
 ---
 
 ## The 4:00 PM Stare
-I have been teaching for over two decades. That is over twenty years of recess duty, forgotten pencils, and tying shoes that are inexplicably wet. I have seen every new curriculum fad come and go. I have survived state testing seasons and full moon Fridays. But the part of the job that always gave me the most anxiety was never the kids in the classroom. It was the parents.
+I have worked in education for over two decades. That is over twenty years of recess duty, forgotten pencils, and tying shoes that are inexplicably wet. I have seen every new curriculum fad come and go. I have survived state testing seasons and full moon Fridays. But the part of the job that always gave me the most anxiety was never the kids in the classroom. It was the parents.
 
 Not because parents are bad. Most are wonderful. Most just want to know that their child is safe and learning. But the sheer volume of communication required to keep thirty different families informed is staggering. It is a full-time job tacked onto the end of our actual full-time job.
 
@@ -72,7 +72,7 @@ ShortHand drafts the message right from my notes. It looks at the log I have bui
 
 If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or head directly over to the [install page](https://app.getshorthandapp.com?demo=true) to set it up right now. It runs perfectly on any device without going through an app store. You can also read more of my thoughts on classroom survival over on the [blog](/blog).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 
 
 *Part of [The Teacher's Survival Guide to Workload and Burnout](/blog/teacher-workload-survival-guide).*

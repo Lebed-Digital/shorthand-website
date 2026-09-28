@@ -109,4 +109,4 @@ Or skip the tracking spreadsheet entirely. ShortHand logs every parent contact a
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician. He built ShortHand to help teachers spend less time on paperwork and more time teaching.*

@@ -130,7 +130,7 @@ It's built for real classrooms, real schedules, and teachers who don't have time
 
 ---
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT).*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 
 
 *Part of [The Teacher's Complete Guide to Documenting Student Behavior](/blog/teacher-behavior-documentation-guide).*

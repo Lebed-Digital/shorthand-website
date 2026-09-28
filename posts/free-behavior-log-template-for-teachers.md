@@ -26,7 +26,7 @@ Below, you will find a free behavior log template for teachers that you can copy
 
 ## Why You Need a Structured Behavior Log
 
-During my twenty years in K-8 classrooms and my work as a Registered Behavior Technician, I learned that behavior does not happen in a vacuum. Every behavior has a trigger and a consequence.
+During my twenty years in education, including my work as a Registered Behavior Technician, I learned that behavior does not happen in a vacuum. Every behavior has a trigger and a consequence.
 
 If you only log the behavior itself, you are only seeing half the picture.
 

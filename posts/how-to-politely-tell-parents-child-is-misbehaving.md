@@ -14,7 +14,7 @@ Wondering how to politely tell a parent their child is misbehaving is a daily st
 
 The result is a strange dialect I like to call "Teacher Speak." It is a mix of vague educational buzzwords and masked frustration. We use phrases that we think sound professional. In reality, they just confuse or anger parents. 
 
-I have been guilty of this. After 20 years in a 3rd grade classroom, I have written my fair share of terrible emails. I would use phrases that were entirely subjective. When a parent pushed back, I had no data to support my claims. 
+I have been guilty of this. After 20 years in education, I have written my fair share of terrible emails. I would use phrases that were entirely subjective. When a parent pushed back, I had no data to support my claims. 
 
 Getting my RBT certification changed everything. I learned that subjective language is useless. If you want to communicate effectively, you have to describe the actual events. 
 
@@ -110,7 +110,7 @@ Then, when you are ready, the app's AI uses those facts to draft a perfectly pol
 
 Start sending better emails without the stress. Try it out at [Try ShortHand free →](https://app.getshorthandapp.com?demo=true).
 
-*Gregory Lebed is a 3rd grade teacher with 20+ years of K-8 experience and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
+*Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT). He built ShortHand to help teachers spend less time on paperwork and more time teaching.*
 
 ---
 
