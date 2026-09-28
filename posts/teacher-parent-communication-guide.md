@@ -93,6 +93,8 @@ Conferences feel high-stakes because they are. You have 15 minutes, a parent who
 
 The preparation phase matters more than most teachers realize. [How to Prepare for a Parent-Teacher Conference](/blog/how-to-prepare-for-parent-teacher-conference) covers what to pull together before you sit down: behavior notes, work samples, attendance patterns, and a clear picture of both strengths and struggles.
 
+If behavior is the main concern, [What to Bring to a Parent-Teacher Conference About Behavior](/blog/what-to-bring-to-parent-teacher-conference-about-behavior) covers the specific examples, pattern notes, parent contact records, and interventions to have in front of you.
+
 For the actual conversation, [What to Say at a Parent-Teacher Conference](/blog/what-to-say-at-parent-teacher-conference) gives you the language for opening the meeting, naming concerns, handling a parent who gets defensive, and closing with a concrete next step.
 
 If you need to write comments ahead of the conference, [Parent-Teacher Conference Comments for Teachers](/blog/parent-teacher-conference-comments-for-teachers) has examples organized by common situations.

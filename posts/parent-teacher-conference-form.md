@@ -155,7 +155,7 @@ Afterward, document the meeting as a parent contact using your school's normal s
 
 Keep the sheet somewhere you can find it again. It can be especially useful when spring conferences arrive and you want to look back at what everyone agreed to earlier in the year. At the end of the night, add any reminders or calendar entries you need so those follow-ups do not get lost.
 
-I planned on following up with several families after my first year of parent-teacher conferences. For some of those tasks, I trusted my memory.
+I planned on following up with several families after my first round of parent-teacher conferences. For some of those tasks, I trusted my memory.
 
 Not the best idea.
 
