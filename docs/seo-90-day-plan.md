@@ -21,7 +21,7 @@
 | 4 | New post: Daily Behavior Report for Preschool (Free Template) | New content | Early Aug | Medium | Medium-High |
 | 5 | 2026-08-13 special-ed audit (pre-committed) | Audit/decision | Aug 13 | Medium | Medium |
 | 6 | 2026-08-15 consolidation check + app-roundup differentiation | Consolidation | ~Aug 15 | Medium | Medium |
-| 7 | Report-card comments HUB build | New content | Sept | **High** | High |
+| 7 | Report-card comments HUB build (DONE 2026-09-28, late: missed the Oct 1 indexing target) | New content | Sept | **High** | High |
 | 8 | New post: Kindergarten Report Card Comments | New content | Late Sept/early Oct | Medium | Medium-High |
 | 9 | 2026-09-15 back-to-school review | Measurement | Sept 15 | n/a | n/a |
 | 10 | 2026-10-15 report-card pre-season check | Measurement | Oct 15 | n/a | n/a |
@@ -101,6 +101,8 @@ Parked (do NOT start in this window): classroom-management cluster, admin-observ
   > Follow the blog post workflow in global CLAUDE.md (Step 3) to write a Gemini prompt for a post targeting "daily behavior report for preschool", a free-template post in the preschool cluster. Requirements beyond the standard rules: the post must contain an actual copyable daily behavior report template (the artifact itself); it must never use the phrase "report card" in the title or any heading (that belongs to the two existing preschool report-card posts, see docs/seo-query-ownership.md cluster 2); internal links to /blog/preschool-report-card-comments, /blog/report-card-comments-behavior-preschool, and the behavior-documentation hub. After Greg returns the draft, save as posts/daily-behavior-report-for-preschool.md with bare YYYY-MM-DD date, build, commit, push, and add the new URL to docs/seo-query-ownership.md cluster 2.
 
 ### Project 7 — Report-card comments HUB (the single highest-impact project in this plan)
+
+> **STATUS 2026-09-28: DONE, about four weeks late.** Hub shipped at `/blog/report-card-comments-guide`. Backlinks and the deliberate exceptions (preschool pair, conference comments, generator tool page) are recorded in `seo-query-ownership.md` cluster 1. The "indexed by Oct 1" success criterion cannot be met; judge it at the 2026-10-15 check on indexing and cluster clicks instead.
 - **Expected impact:** **High.** Report-card comments is the site's #1 clicking cluster (primary alone: 50 clicks, 2,480 imp, pos 8.2) and the ONLY major cluster without a hub. Hubs on this site demonstrably concentrate authority (the 4 existing hubs anchor their clusters). Built in September, it compounds through Oct-Dec report-card season.
 - **Confidence:** High. Proven pattern on this exact site.
 - **Primary URL (new):** a hub page, e.g. `/blog/report-card-comments-guide` or a dedicated route like the existing hub pages (match whatever pattern `teacher-parent-communication-guide` uses).

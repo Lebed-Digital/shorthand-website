@@ -130,3 +130,5 @@ If you want next term's progress reports to be easier, start logging now. It tak
 ---
 
 *Related reading: [Report Card Comments for Behavior: 100+ Examples](/blog/report-card-comments-for-behavior) · [Digital Tools for Recording Student Incidents and Progress](/blog/digital-tools-for-recording-student-incidents) · [Free Report Card Comment Generator](/report-card-comment-generator)*
+
+*Part of [Report Card Comments: The Teacher's Complete Guide](/blog/report-card-comments-guide).*

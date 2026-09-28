@@ -88,3 +88,5 @@ ShortHand allows you to log specific student behaviors, accommodations used, and
 With ShortHand, you have a searchable timeline of exactly how a student responded to visual schedules, movement breaks, or reminders, so the comment you write reflects what actually happened, not what you can still remember in June.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and write report card comments from real classroom notes instead of relying on memory.
+
+*Part of [Report Card Comments: The Teacher's Complete Guide](/blog/report-card-comments-guide).*
