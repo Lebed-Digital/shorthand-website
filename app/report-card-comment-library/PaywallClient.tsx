@@ -326,7 +326,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
 
         <div style={{ ...buyCardStyle, marginTop: 24 }}>
           <p style={{ fontSize: 14, color: '#334155', margin: '0 0 14px', lineHeight: 1.6 }}>
-            Written by a teacher, for report card season. Every comment is specific, parent-ready, and
+            Reviewed and edited by a 3rd grade teacher, for report card season. Every comment is specific, parent-ready, and
             editable before you copy it.
           </p>
           <button onClick={() => startCheckout('paywall-bottom')} disabled={starting} style={buyButtonStyle(starting)}>
