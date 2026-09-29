@@ -235,6 +235,7 @@ export default function Home() {
         {menuOpen && (
           <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
+            <a href="#walkthrough" className="nav-mobile-link">Walkthrough</a>
             <a href="/blog" className="nav-mobile-link">Blog</a>
             <a href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
             <a href="/resources" className="nav-mobile-link">Resources</a>

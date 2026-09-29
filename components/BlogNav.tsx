@@ -36,6 +36,7 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
       {menuOpen && (
         <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
           <Link href="/#features" className="nav-mobile-link">Features</Link>
+          <Link href="/#walkthrough" className="nav-mobile-link">Walkthrough</Link>
           <Link href="/blog" className="nav-mobile-link">Blog</Link>
           <Link href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</Link>
           <Link href="/resources" className="nav-mobile-link">Resources</Link>

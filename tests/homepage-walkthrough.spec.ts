@@ -132,6 +132,81 @@ test('existing vertical feature videos keep the 9:16 layout and click-to-play be
   await expect(frame.locator('iframe')).toHaveAttribute('src', /7fQrX5eHAsc\?autoplay=1.*controls=0/);
 });
 
+// --- Safari / mobile: player API path -----------------------------------------
+
+const IPHONE_UA =
+  'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1';
+
+/** Stand-in for youtube.com/iframe_api: records what FeatureVideo asks for, then "plays". */
+const FAKE_API = `window.YT = { ready: (cb) => cb(), Player: function (el, opts) {
+  window.__yt = { videoId: opts.videoId, host: opts.host, playerVars: opts.playerVars };
+  const f = document.createElement('iframe');
+  f.src = opts.host + '/embed/' + opts.videoId;
+  el.replaceWith(f);
+  opts.events.onReady({ target: { playVideo: () => { window.__yt.played = true; } } });
+} };`;
+
+async function fakePlayerApi(page: Page): Promise<string[]> {
+  const hits: string[] = [];
+  await page.route(/youtube(-nocookie)?\.com/, (route) => {
+    const url = route.request().url();
+    hits.push(url);
+    const api = url.includes('/iframe_api');
+    return route.fulfill({ status: 200, contentType: api ? 'text/javascript' : 'text/html', body: api ? FAKE_API : '<html></html>' });
+  });
+  return hits;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const ytState = (page: Page) => page.evaluate(() => (window as any).__yt);
+
+test.describe('Safari and mobile (one tap to play)', () => {
+  test.use({ userAgent: IPHONE_UA, viewport: { width: 390, height: 844 } });
+
+  test('one tap loads the player API only then, and starts playback', async ({ page }) => {
+    const events = await captureEvents(page);
+    const youtube = await fakePlayerApi(page);
+
+    await page.goto('/#walkthrough');
+    const play = page.locator('#walkthrough').getByRole('button', { name: 'Play ShortHand full walkthrough' });
+    await expect(play).toBeVisible();
+    expect(youtube).toEqual([]);
+
+    await play.click();
+
+    await expect.poll(async () => (await ytState(page))?.played).toBe(true);
+    expect(await ytState(page)).toMatchObject({
+      videoId: 'FGeXjIG_c8c',
+      host: 'https://www.youtube-nocookie.com',
+      playerVars: { autoplay: 1, playsinline: 1 },
+    });
+    const iframe = (await page.locator(`${FRAME} iframe`).boundingBox())!;
+    expect(iframe.width).toBeGreaterThan((await page.locator(FRAME).boundingBox())!.width - 4);
+    expect(eventsNamed(events, 'video_play')).toHaveLength(1);
+  });
+
+  test('vertical feature videos keep controls hidden on this path', async ({ page }) => {
+    await fakePlayerApi(page);
+    await page.goto('/features/quick-note');
+    await page.locator('.video-frame-wrap').first().getByRole('button').click();
+
+    await expect.poll(async () => (await ytState(page))?.played).toBe(true);
+    expect((await ytState(page)).playerVars).toMatchObject({ controls: 0 });
+  });
+
+  test('falls back to the plain embed if the player API script is blocked', async ({ page }) => {
+    await page.route(/youtube\.com\/iframe_api/, (route) => route.abort());
+    await page.route(/youtube-nocookie\.com/, (route) =>
+      route.fulfill({ status: 200, contentType: 'text/html', body: '<html></html>' })
+    );
+
+    await page.goto('/#walkthrough');
+    await page.locator('#walkthrough').getByRole('button', { name: 'Play ShortHand full walkthrough' }).click();
+
+    await expect(page.locator(`${FRAME} iframe`)).toHaveAttribute('src', /FGeXjIG_c8c\?autoplay=1/);
+  });
+});
+
 test.describe('phone width', () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
@@ -150,6 +225,16 @@ test.describe('phone width', () => {
     await expect(cta).toBeVisible();
     // Measure both after the same scroll so the comparison is layout, not timing.
     expect((await cta.boundingBox())!.y).toBeGreaterThan((await frame.boundingBox())!.y);
+  });
+
+  test('hamburger menu "Walkthrough" lands on the walkthrough from the homepage and a blog post', async ({ page }) => {
+    for (const path of ['/', '/blog/welcome-letter-to-parents-from-teacher']) {
+      await page.goto(path);
+      await page.getByRole('button', { name: 'Menu' }).click();
+      await page.locator('.nav-mobile-menu').getByRole('link', { name: 'Walkthrough' }).click();
+      await expect(page).toHaveURL(/\/#walkthrough$/);
+      await expect(page.locator(FRAME)).toBeInViewport();
+    }
   });
 
   test('hero tap and the ClassDojo link both land on the walkthrough', async ({ page }) => {
