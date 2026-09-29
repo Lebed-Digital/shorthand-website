@@ -12,7 +12,7 @@ excerpt: "Learn how to document parent contact for IEP students the right way. I
 
 Parent communication for students with Individualized Education Programs is not an optional best practice. It is a core expectation under the Individuals with Disabilities Education Act. And when an IEP meeting starts, people are going to ask what you have seen in your classroom. If your notes live only in your memory, that is the moment you will wish you had written them down. Knowing how to document parent contact for IEP students is a straightforward part of the job once you have a system.
 
-I have spent over twenty years in education, including work as a Registered Behavior Technician.
+I have spent over twenty years in education, including work as a Registered Behavior Technician. I have sat through more IEP meetings than I can count.
 
 One thing those years taught me is that people rarely disagree about events that were documented clearly. They disagree about events that everyone remembers differently. Good documentation protects the school, but it also protects the family and the student because everyone is working from the same facts.
 
