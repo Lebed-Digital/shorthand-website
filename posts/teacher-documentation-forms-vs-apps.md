@@ -16,7 +16,7 @@ For decades, the paper documentation form has been the gold standard for teacher
 
 It is time to have an honest conversation about how we track student behavior. We need to look closely at the classic paper binder and compare it to modern documentation apps. Because when you are exhausted on a Friday afternoon, the tool you use determines whether you go home on time or stay until six o'clock deciphering your own handwriting.
 
-I used the binder system for years. Like most teachers, I started with the best intentions. Every August, I had a fresh set of forms, neatly organized tabs, and a plan to document everything. By November, reality had taken over. Notes were scattered across sticky notes, scraps of paper, and the backs of worksheets. The issue wasn't laziness. The issue was that the system required more organization than a normal school day allows.
+I used the binder system. Like most teachers, I started with the best intentions. I had a fresh set of forms, neatly organized tabs, and a plan to document everything. By November, reality had taken over. Notes were scattered across sticky notes, scraps of paper, and the backs of worksheets. The issue wasn't laziness. The issue was that the system required more organization than a normal school day allows.
 
 ## The Appeal of the Classic Documentation Binder
 
