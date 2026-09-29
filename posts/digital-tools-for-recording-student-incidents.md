@@ -124,7 +124,7 @@ Paper documentation has one real problem: it's only useful when you're holding i
 
 Digital tools for recording student incidents give you the same information in your pocket. The timestamp is automatic. The student name is already linked. The parent contact record is attached. You don't have to remember anything because you already logged it.
 
-I'm a 20-year classroom teacher. I resisted going digital longer than I should have. When I finally did, the thing that surprised me most wasn't the efficiency. It was the confidence. Walking into a parent meeting knowing exactly what happened, exactly when, and exactly what I'd already communicated. That's worth more than any feature list.
+I've worked in education for over 20 years, and I resisted going digital longer than I should have. When I finally did, the thing that surprised me most wasn't the efficiency. It was the confidence. Walking into a parent meeting knowing exactly what happened, exactly when, and exactly what I'd already communicated. That's worth more than any feature list.
 
 If you want to try ShortHand, it takes about five minutes to set up your class and log your first note. No IT ticket required.
 

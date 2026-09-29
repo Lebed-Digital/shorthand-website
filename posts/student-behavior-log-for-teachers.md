@@ -31,7 +31,7 @@ That is the exact moment you lose the room. The parent gets defensive. The princ
 
 I teach third grade, and I have worked in education for over two decades. If there is one golden rule in education, it is this. If it is not written down, it did not happen. A memory is not a data point. A feeling is not evidence. You have to have a record.
 
-I learned that lesson repeatedly over the years. I'd walk into a parent meeting knowing a pattern existed, but struggle to remember the exact dates, wording, or sequence of events. The issue was never that I wasn't paying attention. The issue was that I was trying to rely on memory while teaching all day. Eventually I realized I didn't have a behavior problem. I had a documentation problem.
+I learned that lesson the hard way. I'd walk into a parent meeting knowing a pattern existed, but struggle to remember the exact dates, wording, or sequence of events. The issue was never that I wasn't paying attention. The issue was that I was trying to rely on memory while teaching all day. Eventually I realized I didn't have a behavior problem. I had a documentation problem.
 
 Keeping a log sounds like just one more chore to add to your endless list. It does not have to be a giant spreadsheet. It just has to be consistent. Here is what you actually need to know about keeping a record that works.
 
