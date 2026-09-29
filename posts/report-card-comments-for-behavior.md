@@ -54,7 +54,7 @@ For the social-emotional learning section of the report, we have a dedicated set
 - [For social interactions and peer relationships](#for-social-interactions-and-peer-relationships)
 - [For students with IEPs or behavior plans](#for-students-with-ieps-or-behavior-plans)
 - [Rules I follow](#a-few-rules-i-follow-when-writing-behavior-comments)
-- [The comment that landed me in the principal's office](#the-comment-that-landed-me-in-the-principals-office)
+- [The message that landed me in the principal's office](#the-message-that-landed-me-in-the-principals-office)
 
 ---
 
@@ -192,9 +192,9 @@ It makes these comments faster to write, more specific, and a lot easier to defe
 
 ---
 
-## The comment that landed me in the principal's office
+## The message that landed me in the principal's office
 
-A few years into my teaching career, I wrote a report card comment that felt beautifully, wonderfully honest. I wrote that a certain student was a constant social disruption who prioritized his friends over his math worksheets. By Tuesday morning, I was sitting in the principal's office with an incredibly angry parent who felt I was personally targeting her child. That was the day I learned that while honesty is essential, the way we package that honesty is what keeps us from spending our prep periods in administrative meetings.
+I once sent a parent a message in writing. It was either an email or a ParentSquare message, and I honestly can't remember which. The parent read my tone differently from how I meant it and got upset, and I ended up in the principal's office trying to untangle the situation. After a quick phone call, the misunderstanding was cleared up and everything was fine. But it stuck with me: in writing, a parent only gets your words, not your tone.
 
 When a teacher writes, "He has a bad attitude in class," the parent does not hear that their child is struggling with task aversion. They hear that the teacher dislikes their kid. Blunt language creates an emotional wall, and the second a parent becomes defensive, you have lost any chance of partnering with them to fix the actual issue.
 
