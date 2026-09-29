@@ -16,7 +16,7 @@ You know for a fact you called them three weeks ago. You even left a voicemail. 
 
 If you want to survive this job, you need to know exactly how to document parent contact as a teacher.
 
-I have spent twenty years in education, including work as a Registered Behavior Technician. The one universal truth in education is this: if it is not written down, it did not happen.
+I have spent twenty years in education, including work as a Registered Behavior Technician. I have sat through more IEP meetings than I can count. The one universal truth in education is this: if it is not written down, it did not happen.
 
 ![A teacher in a tense parent conference finding relief when dated contact records show calls, emails, and follow-up attempts](/blog-illustrations/parent-contact-conference-proof.webp)
 

@@ -47,7 +47,7 @@ ClassDojo isn't built for special education documentation. When you're sitting i
 
 Real documentation means timestamped notes, behavioral categories, trend data, and a format that can be exported or printed without looking unprofessional. If you're serving students with IEPs, 504s, or behavior intervention plans, you need a system that produces the kind of records those processes require.
 
-This is one of the reasons I built ShortHand. I was tired of being the least-prepared person in the room during IEP meetings, not because I hadn't been watching, but because I hadn't been documenting in a way that translated to the table.
+This is one of the reasons I built ShortHand. I had been in an IEP meeting where I knew what had happened but couldn't show the dates or details, not because I hadn't been watching, but because I hadn't been documenting in a way that translated to the table.
 
 ## 5. Parent Emails Take Way Too Long
 
