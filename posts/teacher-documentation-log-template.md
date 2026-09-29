@@ -31,7 +31,7 @@ A teacher documentation log does not need to be pretty. It needs to be functiona
 
 Relying on your memory is the most dangerous game you can play as a teacher. When you are standing in front of a classroom, you make thousands of micro-decisions a day. You cannot possibly remember exactly what a student said on a Tuesday three weeks ago.
 
-That lesson is one of the main reasons I built ShortHand. For years, I convinced myself I would remember the important details. Then a parent meeting, SST meeting, or report card would come around and I'd realize I was trying to reconstruct weeks of events from memory. The problem wasn't that I wasn't paying attention. The problem was that I was teaching all day. Human memory was never designed to track dozens of students, hundreds of interactions, and months of history without a system.
+That lesson is one of the main reasons I built ShortHand. At first, I convinced myself I would remember the important details. Then a parent meeting, SST meeting, or report card would come around and I'd realize I was trying to reconstruct weeks of events from memory. The problem wasn't that I wasn't paying attention. The problem was that I was teaching all day. Human memory was never designed to track dozens of students, hundreds of interactions, and months of history without a system.
 
 A documentation log gives you something better than memory. It gives you a record. When a parent asks about a concern, an administrator wants context, or a student support meeting comes around, you are working from facts instead of trying to piece together what happened weeks earlier.
 

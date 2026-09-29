@@ -27,7 +27,7 @@ It is the last thing you want to do when you are emotionally exhausted. Your bra
 
 ### Why a Written Summary Matters
 
-In my early years of teaching, I thought a phone call was the best way to handle conflict because it was more personal. While phone calls are great for dialogue, they are terrible for documentation. Memory is highly subjective. Under stress, people hear what they want to hear. A parent who was shouting on the phone might later tell the principal that you were aggressive, or they might claim you promised to waive a classroom rule when you did no such thing.
+When I started teaching, I thought a phone call was the best way to handle conflict because it was more personal. While phone calls are great for dialogue, they are terrible for documentation. Memory is highly subjective. Under stress, people hear what they want to hear. A parent who was shouting on the phone might later tell the principal that you were aggressive, or they might claim you promised to waive a classroom rule when you did no such thing.
 
 A written follow-up sent within an hour of the call establishes a shared record while the conversation is still fresh. If there is confusion later about what was said or agreed upon, the email is the reference point for everyone. It keeps your administrator informed and gives the parent a clear summary they can refer back to. Learning [how to document parent contact as a teacher](https://getshorthandapp.com/blog/how-to-document-parent-contact-as-a-teacher) is a vital skill for surviving the school year.
 

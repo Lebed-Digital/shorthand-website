@@ -14,7 +14,7 @@ It is 3:45 PM. You are exhausted. Your coffee is a cold memory. You are staring 
 
 The blank screen fatigue is incredibly real. You want to be honest without being alarming. You want to be professional without sounding like a robot. Figuring out how to email parents about bad behavior is a skill they do not teach you in college. You are just expected to pick it up along the way. 
 
-I have worked in education for over 20 years, and now I teach 3rd grade. I also hold an RBT certification. I have sent thousands of messages home over my career. Early on, my emails caused more problems than they solved. I would write them while I was still annoyed. I would use vague terms. The parents would naturally get defensive.
+I have worked in education for over 20 years, and now I teach 3rd grade. I'm also a former Registered Behavior Technician (RBT). I have sent thousands of messages home over my career. Early on, my emails caused more problems than they solved. I would write them while I was still annoyed. I would use vague terms. The parents would naturally get defensive.
 
 Now, I look at parent communication entirely differently. A good email builds trust. A bad one breaks it. 
 

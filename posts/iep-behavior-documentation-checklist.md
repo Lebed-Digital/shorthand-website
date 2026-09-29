@@ -14,9 +14,9 @@ IEP behavior documentation is incredibly overwhelming for general ed teachers. Y
 
 Now you have to pull together data for an annual review. It can feel like a lot.
 
-I teach 3rd grade and have worked in education for over 20 years. I also hold an RBT certification.
+I teach 3rd grade and have worked in education for over 20 years. I'm also a former Registered Behavior Technician (RBT).
 
-I have sat in hundreds of IEP meetings. Most teachers show up completely underprepared.
+A lot of teachers walk into IEP meetings underprepared.
 
 They bring feelings instead of facts. Here is exactly what you need to bring to survive your next meeting.
 
