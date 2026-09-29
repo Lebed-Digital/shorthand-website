@@ -7,9 +7,12 @@ interface FeatureVideoProps {
   title: string;
   start?: number;
   hideControls?: boolean;
+  // 16:9 layout for long-form horizontal videos. Default stays the 9:16 Shorts layout.
+  wide?: boolean;
+  onPlay?: () => void;
 }
 
-export default function FeatureVideo({ videoId, title, start, hideControls }: FeatureVideoProps) {
+export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay }: FeatureVideoProps) {
   const [playing, setPlaying] = useState(false);
   const [thumbFallback, setThumbFallback] = useState(false);
 
@@ -19,7 +22,10 @@ export default function FeatureVideo({ videoId, title, start, hideControls }: Fe
   const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${hideControls ? '&controls=0' : ''}${start ? `&start=${start}` : ''}`;
 
   return (
-    <div className="video-frame-wrap" style={{ maxWidth: 360, marginBottom: 80 }}>
+    <div
+      className={wide ? 'video-frame-wrap video-frame-wrap--wide' : 'video-frame-wrap'}
+      style={wide ? { maxWidth: 860, margin: '0 auto' } : { maxWidth: 360, marginBottom: 80 }}
+    >
       {playing ? (
         <iframe
           src={embedSrc}
@@ -28,8 +34,17 @@ export default function FeatureVideo({ videoId, title, start, hideControls }: Fe
           allowFullScreen
         />
       ) : (
-        <button className="feature-video-facade" onClick={() => setPlaying(true)} aria-label={`Play ${title}`}>
-          <img src={thumbUrl} alt={title} onError={() => setThumbFallback(true)} />
+        <button
+          className="feature-video-facade"
+          onClick={() => { setPlaying(true); onPlay?.(); }}
+          aria-label={`Play ${title}`}
+        >
+          <img
+            src={thumbUrl}
+            alt={title}
+            loading={wide ? 'lazy' : undefined}
+            onError={() => setThumbFallback(true)}
+          />
           <span className="feature-video-play">▶</span>
         </button>
       )}

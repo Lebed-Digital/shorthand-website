@@ -110,6 +110,9 @@ export default function ClassDojoAlternativePage() {
         <h2 className="detail-cta-heading">Try ShortHand free</h2>
         <p className="detail-cta-sub">No credit card. Works on any device. Set up in under 2 minutes.</p>
         <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_classdojo-alternative">Get Started Free →</TrackedLink>
+        <p style={{ marginTop: '1.5rem', fontSize: '0.9rem' }}>
+          <Link href="/#walkthrough" style={{ color: 'var(--accent, #a78bfa)' }}>Want to see it first? Watch the 6-minute walkthrough.</Link>
+        </p>
       </div>
 
       <footer>

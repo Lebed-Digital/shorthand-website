@@ -97,7 +97,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/how-it-works',
-        destination: '/',
+        destination: '/#walkthrough',
         permanent: false,
       },
       {
