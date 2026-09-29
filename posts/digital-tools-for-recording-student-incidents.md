@@ -19,7 +19,7 @@ faq:
     a: "Yes, and this is actually the most efficient setup. When an incident and a parent call are logged in the same place and tied to the same student, you have a complete picture without cross-referencing. ShortHand combines behavior notes and parent contact logs in a single per-student timeline. Most behavior apps track one without the other, which creates gaps in your documentation."
 ---
 
-For most of my teaching career, my student incident log was a spiral notebook with my own shorthand scrawled in the margins. (Hence the name of the app I eventually built, but more on that later.)
+I keep a notebook with me at work for notes, and for most of my teaching career it was also my student incident log.
 
 The problem with paper isn't that it doesn't work. It works fine until you need it to work *for* you. Until a parent says "I never heard about this." Until an administrator asks for documentation. Until you're sitting in an IEP meeting trying to remember if that incident was October or November, and all you have is a notebook with three different handwriting styles because you switched pens twice.
 
