@@ -8,7 +8,8 @@ import AnimatedLogo from '../components/AnimatedLogo';
 import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
-import { fireCtaClick } from '../lib/gtag';
+import FeatureVideo from '../components/FeatureVideo';
+import { fireCtaClick, fireVideoPlay } from '../lib/gtag';
 import { withAttribution } from '../lib/attribution';
 
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
@@ -92,6 +93,13 @@ export default function Home() {
   }
 
   useEffect(() => {
+    // A direct load of a hash URL (e.g. /how-it-works -> /#walkthrough) starts a
+    // smooth scroll that ScrollTrigger's setup below cancels partway on phones.
+    // Jump there instantly first so ScrollTrigger records the right position.
+    if (window.location.hash) {
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView({ behavior: 'instant' });
+    }
+
     let ctx: { revert: () => void } | null = null;
 
     async function initGSAP() {
@@ -227,6 +235,7 @@ export default function Home() {
         {menuOpen && (
           <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
+            <a href="#walkthrough" className="nav-mobile-link">Walkthrough</a>
             <a href="/blog" className="nav-mobile-link">Blog</a>
             <a href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
             <a href="/resources" className="nav-mobile-link">Resources</a>
@@ -259,12 +268,12 @@ export default function Home() {
                 Try the Free Demo →
               </motion.a>
               <motion.a
-                href="#features"
+                href="#walkthrough"
                 className="btn-ghost"
                 whileHover={reduceMotion ? undefined : { scale: 1.03, y: -1 }}
                 whileTap={tapMotion}
                 transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_see_how_it_works', '#features', e)}
+                onClick={(e) => trackCta('hero_see_how_it_works', '#walkthrough', e)}
               >
                 See How It Works
               </motion.a>
@@ -552,6 +561,38 @@ export default function Home() {
                 )}
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FULL WALKTHROUGH: the hero "See How It Works" button jumps here */}
+      <section id="walkthrough" className="walkthrough-section" aria-labelledby="walkthrough-heading">
+        <div className="section-inner">
+          <div className="section-label">Full walkthrough · 6 min</div>
+          <h2 id="walkthrough-heading" className="section-heading">See ShortHand from sign-up<br /><em>to finished report.</em></h2>
+          <p className="section-sub">
+            A real walkthrough from a brand-new account: importing students, logging notes with the Quick Grid, parent communication, accommodations, reports, and Ask ShortHand.
+          </p>
+          <div className="walkthrough-video">
+            <FeatureVideo
+              videoId="FGeXjIG_c8c"
+              title="ShortHand full walkthrough"
+              wide
+              onPlay={() => fireVideoPlay('FGeXjIG_c8c', 'homepage_walkthrough')}
+            />
+          </div>
+          <div className="walkthrough-cta">
+            <motion.a
+              href="https://app.getshorthandapp.com/?demo=true"
+              className="btn-primary"
+              whileHover={hoverMotion}
+              whileTap={tapMotion}
+              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              onClick={(e) => trackCta('walkthrough_try_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
+            >
+              Try the guided demo →
+            </motion.a>
+            <p className="walkthrough-cta-note">No account, no credit card. Click through it yourself with sample students.</p>
           </div>
         </div>
       </section>

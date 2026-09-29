@@ -114,6 +114,17 @@ export function fireRestoreFailure(reason: 'busy' | 'link'): void {
 }
 
 // ---------------------------------------------------------------------------
+// Video plays
+// ---------------------------------------------------------------------------
+//
+// Fired when a visitor clicks a click-to-play video facade, i.e. the moment the
+// YouTube player is actually requested. `placement` says which embed it was,
+// so a second tracked video later does not blur the first one's count.
+export function fireVideoPlay(videoId: string, placement: string): void {
+  fireEvent('video_play', { video_id: videoId, video_placement: placement });
+}
+
+// ---------------------------------------------------------------------------
 // Free-slice interaction events (Report Card Comment Library paywall)
 // ---------------------------------------------------------------------------
 //
