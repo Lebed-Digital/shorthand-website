@@ -108,7 +108,7 @@ Here is the system I eventually landed on after years of trying things that didn
 
 ## What Happens When You Get This Right
 
-I sat in an IEP meeting once where I had to say "I know it happened, I just can't show you the exact dates." That is not a good feeling. The parent looked at the case manager. The case manager looked at me. And we moved on without the data point I knew was real.
+I sat in an IEP meeting once where I knew something had happened with a student, but I couldn't show the dates or details because I hadn't documented it well enough. That is not a good feeling.
 
 That doesn't happen when you have a log. When I walk into a meeting now and someone asks about a specific behavior, I can pull up a timeline. I can show when it started, when it peaked, and what we tried. That changes the whole room.
 

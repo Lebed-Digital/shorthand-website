@@ -48,7 +48,7 @@ The reasons tend to cluster into a few categories:
 
 **Best for:** Teachers who need fast behavior logging, parent contact records, and documentation that holds up in meetings.
 
-I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who kept showing up to IEP meetings with nothing useful written down. I couldn't find it, so I made it.
+I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who had been in an IEP meeting without the dates or details to back up what I knew. I couldn't find it, so I made it.
 
 ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood check-in, parent contact log, AI-drafted follow-up email.
 
