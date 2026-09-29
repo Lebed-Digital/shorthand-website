@@ -64,7 +64,7 @@ If a student is refusing to work, a direct command will often lead to a power st
 
 Walk over and quietly ask if they want to do the even numbers or the odd numbers. Ask them which one they want to start with.
 
-You do not care which one they pick. The goal is just to get them working. Giving them a choice gives them a sense of control over the situation. It bypasses the power struggle entirely. I use this trick at home with my own kids. I ask if they want to put their shoes on now or in two minutes. Either way, the shoes are going on. I also ask them if they want to hear a joke about construction. They usually say no, but I tell them I am still working on it anyway.
+You do not care which one they pick. The goal is just to get them working. Giving them a choice gives them a sense of control over the situation. It bypasses the power struggle entirely. I use this trick at home too: shoes on now, or in two minutes? Either way, the shoes are going on. I also offer a joke about construction. The answer is usually no, but I say I am still working on it anyway.
 
 ## Track the Triggers
 

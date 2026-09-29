@@ -19,7 +19,7 @@ faq:
     a: "Frame every concern as a skill in progress with a support attached. Instead of \"struggles to share,\" write \"is learning to take turns with preferred toys and does best with a timer and adult support.\" Never diagnose, never compare to classmates, and never surprise a parent: any real concern should come up in a conversation before it appears in writing."
 ---
 
-The first time I had to write progress reports for preschool-age kids, I stared at the blank comment box for a long time. What do you even say about a 4-year-old? "Shows strong emerging scissor skills"? "Continues to develop as a snack-time citizen"?
+Writing progress reports for preschool-age kids is its own kind of hard. What do you even say about a 4-year-old? "Shows strong emerging scissor skills"? "Continues to develop as a snack-time citizen"?
 
 Before I taught 3rd grade, I spent years working with young children as a Registered Behavior Technician, and progress notes were a daily part of that job. The lesson that stuck with me: parents of little kids do not want jargon. They want proof that you actually know their child.
 

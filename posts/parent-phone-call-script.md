@@ -84,7 +84,7 @@ Do not argue. If the conversation becomes completely unproductive or aggressive,
 
 I want to make sure we are both on the same page. It sounds like we might need to sit down together to figure this out. Let us schedule a time to meet next week with the counselor so we can get Sarah the best support possible. I will email you some times tomorrow.
 
-You are the professional in the room. Even when the room is a phone call. I once had a parent yell at me for ten minutes about how I graded spelling tests. I just listened and asked if they wanted to come in and take the test themselves. They declined. I guess they realized third-grade phonics is harder than it looks.
+You are the professional in the room. Even when the room is a phone call. I have had parents repeatedly question how I graded spelling assessments, enough that I would get nervous when I had to mark their child's tests.
 
 ## Document Everything Immediately
 

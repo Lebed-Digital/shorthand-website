@@ -15,7 +15,7 @@ I used ClassDojo for years. I'm not here to trash it.
 
 ClassDojo does what it was designed to do. If you're in K-2 and your students respond to avatar points and parent-facing updates, it works. I've seen it work. I used it myself and liked it. For a while.
 
-But somewhere around 3rd grade, the gamification stopped landing. My most behaviorally complex students had mentally checked out of their monster avatars by November. And when I sat in an IEP meeting and someone asked me for documentation, I had a screen full of colored bubbles and nothing I could actually hand across the table.
+But somewhere around 3rd grade, the gamification stopped landing. My most behaviorally complex students had mentally checked out of their monster avatars by November. And when I sat in an IEP meeting, I knew something had happened with a student but couldn't show the dates or details, because I hadn't documented it well enough.
 
 That's when I started looking. And when I couldn't find what I needed, I built it. That's ShortHand.
 
@@ -78,7 +78,7 @@ ClassDojo wasn't built for special education documentation. When someone asks fo
 
 ShortHand logs are timestamped, categorized by behavioral theme, and exportable. When you need to show that a student's aggressive behavior increased after a schedule change, or that their on-task rate improved after a seating adjustment, that data is there. You don't have to reconstruct it from memory.
 
-I built this feature specifically because I was tired of being the least-prepared person in the room during IEP meetings. Not because I hadn't been watching, but because I hadn't been documenting in a format that translated to the table.
+I built this feature because I had been in an IEP meeting where I knew what had happened but couldn't show the dates or details. Not because I hadn't been watching, but because I hadn't been documenting in a format that translated to the table.
 
 ## What Features Do ClassDojo Alternatives Offer That ClassDojo Does Not?
 
