@@ -853,7 +853,7 @@ export default function Home() {
             <div className="perspective-card perspective-card--accent">
               <div className="perspective-icon"><CalendarDays size={28} strokeWidth={1.75} /></div>
               <div className="perspective-title">20+ Years in Education</div>
-              <p className="perspective-desc">I&apos;ve seen every classroom trend and every type of paperwork. This app is the solution to problems that actually exist in a real school.</p>
+              <p className="perspective-desc">I&apos;ve worked in classrooms as an aide, a behavior tech, a sub, and now a 3rd grade teacher. This app is the solution to problems that actually exist in a real school.</p>
             </div>
             <div className="perspective-card">
               <div className="perspective-icon"><Brain size={28} strokeWidth={1.75} /></div>
