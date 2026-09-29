@@ -14,7 +14,7 @@ If you have been teaching for more than a week, you already know the feeling. Yo
 
 But when the parent asks for specific examples, your mind goes blank. You stammer out something vague about them being off-task. The parent crosses their arms. You look like you are exaggerating. In that moment, you realize the hardest truth of teaching. If it is not written down, it simply did not happen.
 
-I learned that lesson the hard way. Early in my teaching career, I relied almost entirely on memory. I always assumed I would remember the important incidents, the parent phone calls, and the patterns that seemed obvious in the moment. Then a meeting would come around weeks later and I would realize I was trying to reconstruct events from memory alone. That frustration eventually became one of the main reasons I built ShortHand.
+I learned that lesson the hard way. When I started teaching, I relied almost entirely on memory. I always assumed I would remember the important incidents, the parent phone calls, and the patterns that seemed obvious in the moment. Then a meeting would come around weeks later and I would realize I was trying to reconstruct events from memory alone. That frustration eventually became one of the main reasons I built ShortHand.
 
 Learning how to document student behavior is not something they teach you in your education program. They teach you theories about classroom management. They do not teach you how to keep a clear, organized behavior record while simultaneously teaching thirty-two middle schoolers how to find the area of a circle.
 

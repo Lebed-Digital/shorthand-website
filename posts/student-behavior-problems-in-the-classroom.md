@@ -14,7 +14,7 @@ It is ten in the morning. You are in the middle of a math lesson. You have final
 
 You take a deep breath. You are a teacher. You deal with student behavior problems every single day. It is the most exhausting part of the job. You can spend hours planning a lesson, but a single disruption can ruin the entire period.
 
-I teach third grade, and I have worked in education for over twenty years. I also have an RBT certification. I have seen almost every variation of classroom disruption you can imagine. Early in my career, I looked at these disruptions as simply bad choices. I thought the kids just needed to try harder to be good. I thought I just needed to be stricter.
+I teach third grade, and I have worked in education for over twenty years. I'm also a former Registered Behavior Technician (RBT). I have seen almost every variation of classroom disruption you can imagine. Early in my career, I looked at these disruptions as simply bad choices. I thought the kids just needed to try harder to be good. I thought I just needed to be stricter.
 
 That mindset only led to me feeling frustrated and the kids feeling misunderstood.
 

@@ -48,7 +48,7 @@ The key difference from a general AI tool is that it works from your documents. 
 
 When the class energy hits a wall -- the 2:00 PM slump, a rainy day schedule, the day before a holiday -- I open Curipod. You type in a topic and it generates an interactive lesson with polls, drawing prompts, and word clouds in about 30 seconds.
 
-A lesson that was going to be a lecture becomes something students are moving around for. The difference in engagement is immediate. I've pulled this out more times than I can count when I could feel the room slipping.
+A lesson that was going to be a lecture becomes something students are moving around for. The difference in engagement is immediate.
 
 **The win:** Instant interactivity when you need it most.
 

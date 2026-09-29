@@ -11,18 +11,18 @@ excerpt: "I used to stare at a blank email screen at 4:00 PM and just sigh. Here
 ---
 
 ## The 4:00 PM Stare
-I have worked in education for over two decades. That is over twenty years of recess duty, forgotten pencils, and tying shoes that are inexplicably wet. I have seen every new curriculum fad come and go. I have survived state testing seasons and full moon Fridays. But the part of the job that always gave me the most anxiety was never the kids in the classroom. It was the parents.
+I have worked in education for over two decades. That is over twenty years of recess duty, forgotten pencils, and tying shoes that are inexplicably wet. I have watched plenty of curriculum fads come and go. I have survived state testing seasons and full moon Fridays. But the part of the job that always gave me the most anxiety was never the kids in the classroom. It was the parents.
 
 Not because parents are bad. Most are wonderful. Most just want to know that their child is safe and learning. But the sheer volume of communication required to keep thirty different families informed is staggering. It is a full-time job tacked onto the end of our actual full-time job.
 
-When I first started teaching, we made phone calls. You would sit by the dusty phone in the teacher's lounge and hope nobody answered so you could just leave a voicemail. Now, the expectations are so much higher. We are expected to be constantly accessible. We are expected to provide real-time updates.
+Parent communication used to mean sitting by the dusty phone in the teacher's lounge, hoping nobody answered so you could just leave a voicemail. Now, the expectations are so much higher. We are expected to be constantly accessible. We are expected to provide real-time updates.
 
 ## The Guilt Trip We Take Every Day
 We know we should be reaching out constantly. We know the research says positive parent contact changes student behavior. We know that building a bridge between the classroom and the living room is the foundation of student success.
 
 But the reality is that we are exhausted.
 
-At the end of the day, I would sit down at my desk in my empty classroom. The silence was always deafening. I would pull up my email client. And I would just stare at the blinking cursor. I knew I needed to message Sarah's mom about the reading issue. She had been struggling with her phonics blends all week. I knew I needed to tell David's dad that he had a great day and finally shared his blocks. But the physical and mental energy required to compose those messages was completely gone. I had spent all my words teaching math and mediating playground disputes.
+At the end of the day, I would sit down at my desk in my empty classroom. The silence was always deafening. I would pull up my email client. And I would just stare at the blinking cursor. I knew I needed to message Sarah's mom about the reading issue. She had been struggling with her phonics blends all week. I knew I needed to tell David's dad that he had a great day. But the physical and mental energy required to compose those messages was completely gone. I had spent all my words teaching math and mediating playground disputes.
 
 I would tell myself I would do it tomorrow morning. Then tomorrow morning would bring a spilled milk carton and a lost permission slip, and the emails would get pushed back again.
 

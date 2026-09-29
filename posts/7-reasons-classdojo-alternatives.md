@@ -71,7 +71,7 @@ The teachers who manage complex classrooms well aren't necessarily better at rea
 
 ## What Actually Works: The Frictionless System
 
-After years of sticky notes, spiral notebooks, and apps that sounded great in a PD meeting but fell apart in real life, here's what I've learned:
+After sticky notes, spiral notebooks, and apps that sounded great in a PD meeting but fell apart in real life, here's what I've learned:
 
 The system has to be faster than the thought. If it takes longer to log something than it takes to notice it, you will stop logging.
 

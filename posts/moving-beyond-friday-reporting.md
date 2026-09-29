@@ -30,7 +30,7 @@ One Friday I was still at my desk at 5:00 PM. My daughter was calling. I had two
 
 ## The Gap Between Tracking and Telling
 
-As both a teacher and a Registered Behavior Technician, I've been trained to track behavior precisely. The irony is that none of the tools I was given made it easy to actually do that in a real classroom.
+As a teacher and a former Registered Behavior Technician, I've been trained to track behavior precisely. The irony is that none of the tools I was given made it easy to actually do that in a real classroom.
 
 Most apps and systems are designed for the tracking part: the quick logging of a behavior in the heat of the moment. But they fall short on the telling part. Converting raw logs into a professional, helpful narrative for a family takes time that teachers simply don't have.
 
