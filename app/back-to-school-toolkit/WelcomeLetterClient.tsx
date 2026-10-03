@@ -43,7 +43,8 @@ const TONES = [
 
 export default function WelcomeLetterClient() {
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+    // ph-mask: Session Replay masks all text in here. See lib/posthog-privacy.ts.
+    <div className="ph-mask" style={{ minHeight: '100vh', background: '#0f172a' }}>
 
       <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
         <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>

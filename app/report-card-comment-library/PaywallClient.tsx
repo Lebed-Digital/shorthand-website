@@ -136,7 +136,9 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
   }
 
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+    // ph-mask: Session Replay masks all text in here, including the typed
+    // student name once it is substituted into the comments. See lib/posthog-privacy.ts.
+    <div className="ph-mask" style={{ minHeight: '100vh', background: '#0f172a' }}>
       <div style={topBarStyle}>
         <Link href="/" style={backLinkStyle}>
           <span style={{ fontSize: 16 }}>&larr;</span> Back to ShortHand
