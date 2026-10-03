@@ -121,8 +121,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "jobTitle": "3rd Grade Teacher & Former Registered Behavior Technician (RBT)"
           }
         })}} />
-        {/* Metricool */}
-        <script defer dangerouslySetInnerHTML={{ __html: `if(window.location.pathname!=='/auth/confirmed'){function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"70e9d586aaa068ee70b5eb8c25ffa853"})})}` }} />
       </head>
       <body>{children}<AnalyticsGate /></body>
     </html>
