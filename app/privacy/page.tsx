@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           This policy explains exactly what we collect, why, and how we protect it.
         </p>
         <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          Last updated: September 2026
+          Last updated: October 2026
         </p>
       </div>
 
@@ -101,6 +101,8 @@ export default function PrivacyPage() {
             <div className="privacy-title">Web Analytics and Crash Reporting</div>
             <div className="privacy-desc">
               The ShortHand website and the web app at app.getshorthandapp.com use Google Analytics (GA4) and Vercel Analytics to understand how pages and features are used. The web app also uses Sentry for crash reporting, and first-party usage analytics and marketing attribution so we can see which features are used and how people found ShortHand. These tools may use cookies or similar identifiers. They are used to operate and improve the service, not to advertise to students or parents.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>PostHog, on the public website only.</strong> The public website at getshorthandapp.com also uses PostHog for website analytics and session replay. Session replay records how a visit to the website looks and moves (page layout, clicks, and scrolling) so we can find and fix confusing pages. PostHog is not used inside the ShortHand app at app.getshorthandapp.com or in the native iOS app, so it does not record your classroom records, student notes, or parent communications.<br /><br />
+              Session replay is set up to hide what you enter. Anything typed into a form field is masked on every page of the website. On the free tool pages (the report card comment generator, the report card comment library, the back-to-school toolkit, and the tools pages such as the parent communication log), all on-screen text is masked as well, so a student name you type there is not readable in a recording. On other pages, the public page text is recorded as it appears. We do not send your name or email address to PostHog to identify you. PostHog does receive standard technical information such as your IP address, browser, device type, and the pages you view, and it stores an identifier in your browser to recognize a returning visit.<br /><br />
               These analytics and crash-reporting systems are web behavior. They are not used in the native iOS app. See the next section.
             </div>
           </div>
@@ -172,6 +174,7 @@ export default function PrivacyPage() {
               <strong style={{ color: 'var(--text)' }}>Google:</strong> Google sign-in and optional Google Classroom integration (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Apple:</strong> Sign in with Apple in the native iOS app, including Apple Private Email Relay when you hide your email (<a href="https://www.apple.com/legal/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Google Analytics:</strong> website and web-app analytics. Not used in the native iOS app (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>PostHog:</strong> website analytics and session replay on the public website (getshorthandapp.com) only. Not used in the ShortHand app or the native iOS app (<a href="https://posthog.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Sentry:</strong> crash reporting for the web app. Not used in the native iOS app (<a href="https://sentry.io/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Resend:</strong> transactional email, such as purchase-restore messages (<a href="https://resend.com/legal/privacy-policy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Upstash:</strong> rate limiting for API routes (<a href="https://upstash.com/trust/privacy.pdf" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)

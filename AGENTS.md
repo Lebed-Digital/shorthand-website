@@ -26,3 +26,8 @@ Why it matters: two open PRs in August 2026 each held the correct intended chang
 
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
+
+## Before adding a page where a visitor can type personal information
+PostHog Session Replay runs on this site (`instrumentation-client.ts`). Typed form values are masked on every page, but on-screen text is masked only on the paths in `SENSITIVE_PATH_PREFIXES` (`lib/posthog-privacy.ts`) and inside elements with the `ph-mask` class. A new tool or form page that can show typed data back as ordinary text must be added to that list and get `ph-mask` on its root element.
+
+Do not call `posthog.identify()` anywhere on this site. Do not loosen the settings in `instrumentation-client.ts` without reading its comments: several exist because a PostHog dashboard toggle would otherwise override the code. The privacy policy describes this behavior, so that file and `app/privacy/page.tsx` change together. After any such change, and after upgrading `posthog-js`, run the browser check described at the top of `tests/manual/posthog-privacy-check.mjs`: the masking depends on SDK behavior that unit tests cannot see.

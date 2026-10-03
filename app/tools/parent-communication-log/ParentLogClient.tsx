@@ -89,7 +89,8 @@ export default function ParentLogClient() {
   }
 
   return (
-    <main className={styles.page}>
+    // ph-mask: Session Replay masks all text in here. See lib/posthog-privacy.ts.
+    <main className={`${styles.page} ph-mask`}>
       {/* Screen header — hidden on print */}
       <div className={styles.header}>
         <div className={styles.headerInner}>
