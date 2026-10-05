@@ -8,6 +8,7 @@ import {
   fireGenerationBlocked,
   fireGenerationFailed,
 } from '../../lib/gtag';
+import { captureEvent } from '../../lib/posthog-events';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 import TrackedLink from '../../components/TrackedLink';
 
@@ -163,6 +164,9 @@ function WelcomeLetterInner() {
 
   async function copy() {
     await navigator.clipboard.writeText(result);
+    // The tool name only. `result` holds the teacher's name and must never
+    // be passed to analytics.
+    captureEvent('tool_output_copied', { tool: 'welcome-letter' });
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }

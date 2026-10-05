@@ -10,6 +10,7 @@ import {
   fireGenerationFailed,
   type GeneratorAction,
 } from '../../lib/gtag';
+import { captureEvent } from '../../lib/posthog-events';
 import { withAttribution } from '../../lib/attribution';
 import OptionalEmailCapture from '../../components/OptionalEmailCapture';
 
@@ -258,6 +259,9 @@ function FreeToolInner() {
 
   async function copy() {
     await navigator.clipboard.writeText(result);
+    // The tool name only. `result` holds the student's name and must never
+    // be passed to analytics.
+    captureEvent('tool_output_copied', { tool: 'report-card-comment' });
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   }

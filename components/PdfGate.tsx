@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { supabase } from '../lib/supabase';
+import { captureEvent, pdfResource } from '../lib/posthog-events';
 
 export default function PdfGate({
   source,
@@ -40,6 +41,9 @@ export default function PdfGate({
     }
 
     setUnlocked(true);
+    // The PDF opens by script here, not by a link click, so the site-wide
+    // link listener cannot see it. Which file, and never the email address.
+    captureEvent('resource_downloaded', { resource: pdfResource(href), resource_type: 'pdf' });
     window.open(href, '_blank');
   }
 

@@ -1,4 +1,5 @@
-// PostHog on the public website: Web Analytics and Session Replay only.
+// PostHog on the public website: Web Analytics, Session Replay, and the four
+// custom events listed in lib/posthog-events.ts. Autocapture stays off.
 //
 // This is getshorthandapp.com only. PostHog is NOT in the ShortHand app
 // (app.getshorthandapp.com is a separate repo), and the privacy policy says so.
@@ -8,6 +9,7 @@
 // If you add a page where a visitor can type a student name or anything else
 // personal, add it to SENSITIVE_PATH_PREFIXES there and put the `ph-mask` class
 // on the page's root element.
+import { classifyLinkClick, filterCustomEvent } from './lib/posthog-events';
 import { isSensitivePath, maskText, sanitizeEventUrls, sanitizeUrl, shouldInitPostHog } from './lib/posthog-privacy';
 
 const token = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
@@ -41,7 +43,8 @@ if (
         defaults: '2026-05-30',
 
         // Web Analytics: pageviews (including client-side navigations) and
-        // pageleaves. Nothing else is captured as an event.
+        // pageleaves. The only other events are the four custom ones sent
+        // through window.__shTrack below; before_send drops anything else.
         capture_pageview: 'history_change',
         capture_pageleave: true,
         autocapture: false,
@@ -74,8 +77,10 @@ if (
         // their own properties. This masks them.
         mask_personal_data_properties: true,
 
-        // Strips query strings and fragments from every URL on every event.
-        before_send: (event) => (event ? sanitizeEventUrls(event) : event),
+        // Strips query strings and fragments from every URL on every event,
+        // then drops any custom event or property that is not on the list in
+        // lib/posthog-events.ts.
+        before_send: (event) => (event ? filterCustomEvent(sanitizeEventUrls(event)) : event),
 
         disable_session_recording: false,
         enable_recording_console_log: false,
@@ -110,6 +115,45 @@ if (
           },
         },
       });
+
+      // The one way a custom event reaches PostHog. Call sites use
+      // captureEvent() in lib/posthog-events.ts, which finds this function.
+      // Only capture is exposed, never the SDK itself, so nothing on a page
+      // can reach identify().
+      //
+      // send_instantly: a click on a link to the app is the last thing the
+      // page does. Queued, the event would depend on the send PostHog makes
+      // while the page unloads, which is best effort and which the manual
+      // privacy check cannot observe: queued, that check never saw an app
+      // link click arrive. Sent at once, the request leaves while the page is
+      // still alive. before_send still runs on these.
+      window.__shTrack = (name, props) => {
+        posthog.capture(name, props as Record<string, string>, { send_instantly: true });
+      };
+
+      // One listener covers every link to the app and every PDF on the site,
+      // including pages added later, so no link has to opt in. This is not
+      // autocapture: it reads where a clicked link points and whether it sits
+      // in the nav, the footer or a blog post body, and never its text.
+      // Capture phase, so it runs before a link's own handler navigates away.
+      document.addEventListener(
+        'click',
+        (e) => {
+          const link = e.target instanceof Element ? e.target.closest('a[href]') : null;
+          if (!(link instanceof HTMLAnchorElement)) return;
+          const hit = classifyLinkClick({
+            hostname: link.hostname,
+            pathname: link.pathname,
+            search: link.search,
+            sameSite: link.origin === window.location.origin,
+            inNav: Boolean(link.closest('nav')),
+            inFooter: Boolean(link.closest('footer')),
+            inBlogBody: Boolean(link.closest('.blog-content')),
+          });
+          if (hit) window.__shTrack?.(hit.name, hit.props);
+        },
+        true,
+      );
     })
     .catch(() => {
       // Analytics must never break the page.

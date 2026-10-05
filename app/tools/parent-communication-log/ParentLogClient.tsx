@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import TrackedLink from '../../../components/TrackedLink';
+import { captureEvent } from '../../../lib/posthog-events';
 import styles from './ParentLogClient.module.css';
 
 const COLUMNS = ['Date', 'Student Name', 'Method', 'Reached?', 'Summary / Notes', 'Follow-up?'];
@@ -85,6 +86,8 @@ export default function ParentLogClient() {
   }
 
   function handlePrint() {
+    // Fixed values only: nothing typed into the log is sent.
+    captureEvent('free_tool_completed', { tool: 'parent-communication-log', action: 'print' });
     window.print();
   }
 
