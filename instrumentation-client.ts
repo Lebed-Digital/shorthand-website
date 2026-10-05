@@ -1,4 +1,4 @@
-// PostHog on the public website: Web Analytics, Session Replay, and the four
+// PostHog on the public website: Web Analytics, Session Replay, and the five
 // custom events listed in lib/posthog-events.ts. Autocapture stays off.
 //
 // This is getshorthandapp.com only. PostHog is NOT in the ShortHand app
@@ -43,7 +43,7 @@ if (
         defaults: '2026-05-30',
 
         // Web Analytics: pageviews (including client-side navigations) and
-        // pageleaves. The only other events are the four custom ones sent
+        // pageleaves. The only other events are the five custom ones sent
         // through window.__shTrack below; before_send drops anything else.
         capture_pageview: 'history_change',
         capture_pageleave: true,

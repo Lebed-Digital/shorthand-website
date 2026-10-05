@@ -1,6 +1,15 @@
 import { test, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
-import { CUSTOM_EVENTS, captureEvent, classifyLinkClick, filterCustomEvent, pdfResource } from './posthog-events.ts';
+import fs from 'node:fs';
+import {
+  BLOG_EXAMPLE_POSTS,
+  CUSTOM_EVENTS,
+  blogExampleType,
+  captureEvent,
+  classifyLinkClick,
+  filterCustomEvent,
+  pdfResource,
+} from './posthog-events.ts';
 import { fireFreeCommentCopied, fireGenerationSuccess } from './gtag.ts';
 
 const marketingLink = {
@@ -111,6 +120,48 @@ test('a listed property holding an unlisted value is removed', () => {
     properties: { tool: 'Zorblaxina', action: 'generate' },
   });
   assert.deepEqual(filtered?.properties, { action: 'generate' });
+});
+
+// The copied example is the one thing this event must never carry, and the
+// post's title is a sentence, so neither can ride along.
+test('a copied blog example keeps its kind and position, and nothing else', () => {
+  const filtered = filterCustomEvent({
+    event: 'blog_example_copied',
+    properties: {
+      example_type: 'email',
+      example_number: '3',
+      copy_method: 'text_selection',
+      text: 'Hi [Parent/Guardian Name], I just wanted to share a quick highlight from today.',
+      article_title: '5 Sample Emails to Parents About Student Behavior',
+      $pathname: '/blog/sample-emails-to-parents-about-student-behavior',
+    },
+  });
+  assert.deepEqual(filtered?.properties, {
+    example_type: 'email',
+    example_number: '3',
+    copy_method: 'text_selection',
+    $pathname: '/blog/sample-emails-to-parents-about-student-behavior',
+  });
+
+  const offTheList = filterCustomEvent({
+    event: 'blog_example_copied',
+    properties: { example_type: 'email', example_number: 'Dear families, welcome', copy_method: 'text_selection' },
+  });
+  assert.deepEqual(offTheList?.properties, { example_type: 'email', copy_method: 'text_selection' });
+});
+
+// A renamed or deleted post would otherwise stop being counted without any
+// error to say so.
+test('every blog post listed for example tracking exists', () => {
+  for (const slug of Object.keys(BLOG_EXAMPLE_POSTS)) {
+    assert.ok(fs.existsSync(`posts/${slug}.md`), `posts/${slug}.md is listed in BLOG_EXAMPLE_POSTS but does not exist`);
+  }
+});
+
+test('a post that is not listed has no example type', () => {
+  assert.equal(blogExampleType('sample-emails-to-parents-about-student-behavior'), 'email');
+  assert.equal(blogExampleType('why-im-building-shorthand'), null);
+  assert.equal(blogExampleType('constructor'), null);
 });
 
 test('every listed value is a short fixed word, never a sentence or a URL', () => {

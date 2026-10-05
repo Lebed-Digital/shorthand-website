@@ -1,5 +1,5 @@
 // Custom PostHog events on the public website. This file is the whole
-// vocabulary: four event names and, for each one, the property names and the
+// vocabulary: five event names and, for each one, the property names and the
 // exact values each property may take. Nothing else can be sent.
 //
 // Two layers enforce that. captureEvent() is typed from the table below, so a
@@ -55,6 +55,18 @@ export const CUSTOM_EVENTS = {
   tool_output_copied: {
     tool: ['report-card-comment', 'welcome-letter', 'comment-library'],
   },
+  // The visitor copied one of the examples a blog post publishes (an email
+  // template, a report card comment). Which kind and which one by position,
+  // never the copied text. The post is already on the event as PostHog's own
+  // $pathname, so it is not repeated here.
+  blog_example_copied: {
+    example_type: ['email', 'report_card_comment', 'parent_message', 'behavior_report'],
+    // Position of the example in its post, counted from 1.
+    // ponytail: capped at 200. Past that the number is stripped and the event
+    // still counts. The longest post has 84; raise the cap if one gets close.
+    example_number: Array.from({ length: 200 }, (_, i) => String(i + 1)),
+    copy_method: ['text_selection'],
+  },
 } as const;
 
 export type CustomEventName = keyof typeof CUSTOM_EVENTS;
@@ -86,6 +98,39 @@ const PDF_RESOURCES: Record<string, Resource> = {
   '/parent-teacher-conference-notes.pdf': 'conference-notes',
   '/student-behavior-pattern-tracker.pdf': 'behavior-pattern-tracker',
 };
+
+type ExampleType = CustomEventProps<'blog_example_copied'>['example_type'];
+
+// The blog posts whose examples are counted, by slug, and the kind of example
+// each one holds. A post that is not listed sends nothing. What counts as an
+// example inside a listed post is decided by the markup, in
+// components/BlogExampleCopyTracker.tsx.
+export const BLOG_EXAMPLE_POSTS: Record<string, ExampleType> = {
+  'free-parent-email-templates-for-teachers': 'email',
+  'sample-emails-to-parents-about-student-behavior': 'email',
+  'how-to-write-behavior-emails-to-parents': 'email',
+  'positive-behavior-email-to-parents-template': 'email',
+  'email-to-parents-about-fight-at-school': 'email',
+  'sample-emails-to-parents-about-missing-homework': 'email',
+  'how-to-email-parents-about-academic-concerns': 'email',
+  'parent-email-after-difficult-phone-call': 'email',
+  'report-card-comments-for-behavior': 'report_card_comment',
+  'report-card-comments-behavior-preschool': 'report_card_comment',
+  'report-card-comments-for-struggling-students': 'report_card_comment',
+  'report-card-comments-for-students-with-adhd': 'report_card_comment',
+  'kindergarten-report-card-comments': 'report_card_comment',
+  'preschool-report-card-comments': 'report_card_comment',
+  'second-grade-behavior-report-card-comments': 'report_card_comment',
+  'social-emotional-report-card-comments': 'report_card_comment',
+  'student-progress-report-comments-for-teachers': 'report_card_comment',
+  'short-welcome-message-to-parents-from-teacher': 'parent_message',
+  'teacher-introduction-letter-to-parents': 'parent_message',
+  'how-to-write-a-student-behavior-report': 'behavior_report',
+};
+
+export function blogExampleType(slug: string): ExampleType | null {
+  return own(BLOG_EXAMPLE_POSTS, slug) ? BLOG_EXAMPLE_POSTS[slug] : null;
+}
 
 // Own-property check. A plain `table[key]` would also find inherited names
 // such as "constructor", and Object.hasOwn is missing on older school iPads.
@@ -139,7 +184,7 @@ const SDK_PROPERTIES = new Set(['token', 'distinct_id', 'utm_source', 'utm_mediu
 
 // Runs in before_send, on every event. PostHog's own events ("$pageview",
 // "$pageleave", "$snapshot") pass through untouched. Any other event must be
-// one of the four above or it is dropped, and on those four every property
+// one of the five above or it is dropped, and on those five every property
 // that is not PostHog's own must be a listed name holding a listed value or it
 // is removed.
 export function filterCustomEvent<T extends { event: string; properties?: Record<string, unknown> }>(event: T): T | null {
