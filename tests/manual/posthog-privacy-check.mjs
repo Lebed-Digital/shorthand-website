@@ -19,8 +19,16 @@
 //   The ingestion host is also mapped to 127.0.0.1, so a missed request cannot
 //   leave the machine. Only PostHog's public SDK script files are fetched.
 // - Blocks GA4, Supabase and every /api route, so nothing touches production.
+//   The two generator routes, the email-capture insert, the app and the Play
+//   Store are answered here with stand-ins, so the tools can be used for real
+//   (generate, copy, print, download, follow a link to the app) with nothing
+//   leaving the machine.
 // - Types made-up "canary" names into each tool, then searches everything
-//   PostHog would have received for them.
+//   PostHog would have received for them. The generated text and the copied
+//   text are canaries too.
+// - Checks the custom events (lib/posthog-events.ts): exactly the expected
+//   events arrive, each carrying only its listed properties, and an event or
+//   a property that is not on the list never leaves the browser.
 //
 // Why a real browser and not a unit test: every problem this caught was in how
 // the SDK behaves, not in our own logic. Examples: the dashboard can switch on
@@ -32,7 +40,10 @@ import zlib from 'node:zlib';
 const PORT = 3111;
 const ORIGIN = `http://getshorthandapp.com:${PORT}`;
 const TOKEN = 'phc_localtest'; // must match the token used for the build
-const RESOLVER = '--host-resolver-rules=MAP getshorthandapp.com 127.0.0.1, MAP us.i.posthog.com 127.0.0.1';
+// The app and the Play Store are stubbed below. Mapping them here as well means
+// a request that misses the stub fails instead of reaching the real thing.
+const RESOLVER =
+  '--host-resolver-rules=MAP getshorthandapp.com 127.0.0.1, MAP us.i.posthog.com 127.0.0.1, MAP app.getshorthandapp.com 127.0.0.1, MAP play.google.com 127.0.0.1';
 // posthog-js discards everything from a "HeadlessChrome" user agent as a bot,
 // so without an ordinary user agent every check below would pass vacuously.
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -49,6 +60,10 @@ const CANARY = {
   fbclid: 'CANARYFBCLID',
   consoleMsg: 'CANARYCONSOLE',
   urlSecret: 'CANARYURLSECRET',
+  generatedComment: 'CANARYCOMMENT shows steady growth',
+  generatedLetter: 'CANARYLETTER welcome to our class',
+  gateEmail: 'canary.gate@example.com',
+  hostileProp: 'CANARYHOSTILEPROP',
 };
 
 const hostileRemoteConfig = {
@@ -135,6 +150,18 @@ async function newSession(browser, { initScript } = {}) {
     return r.abort();
   });
 
+  // Stand-ins, registered after the blocks above so they win. They let the
+  // tools reach a real result without OpenAI, Supabase or the app being called.
+  const json = (body) => ({ status: 200, contentType: 'application/json', body: JSON.stringify(body) });
+  await context.route('**/api/free-tool', (r) => r.fulfill(json({ comment: CANARY.generatedComment })));
+  await context.route('**/api/welcome-letter', (r) => r.fulfill(json({ letter: CANARY.generatedLetter })));
+  await context.route(/supabase\.co\/rest\/v1\/email_leads/, (r) =>
+    r.fulfill({ status: 201, headers: { 'access-control-allow-origin': '*' }, body: '' }),
+  );
+  await context.route(/^https?:\/\/(app\.getshorthandapp\.com|play\.google\.com)\//, (r) =>
+    r.fulfill({ status: 200, contentType: 'text/html', body: '<title>stand-in</title>stand-in' }),
+  );
+
   await context.route(/posthog\.com/, async (route) => {
     const req = route.request();
     const url = new URL(req.url());
@@ -217,8 +244,22 @@ function check(name, pass, detail) {
 const browser = await chromium.launch({ args: [RESOLVER, '--disable-blink-features=AutomationControlled'] });
 
 // ---------- 1. A "real visitor" on the production hostname ----------
-const { context, rec } = await newSession(browser);
+// The test origin is plain http, where browsers do not offer the clipboard, and
+// a print dialog would hang the run. Both are replaced, and the clipboard
+// stand-in keeps what was "copied" so the test can show it held a canary.
+const { context, rec } = await newSession(browser, {
+  initScript: () => {
+    window.__copied = [];
+    Object.defineProperty(navigator, 'clipboard', {
+      configurable: true,
+      value: { writeText: async (text) => void window.__copied.push(text) },
+    });
+    window.print = () => {};
+  },
+});
 const page = await context.newPage();
+const copiedText = () => page.evaluate(() => window.__copied.join('\n'));
+const copied = {}; // tool -> [text that reached the clipboard, canary it should hold]
 const rest = (ms = 8000) => page.waitForTimeout(ms); // long enough for replay to flush before leaving a page
 const sensitive = {}; // page label -> visible texts
 let marketing = [];
@@ -253,6 +294,7 @@ await page.waitForTimeout(2500);
 await page.locator('input[placeholder="Student name"]').first().fill(CANARY.logStudent);
 await page.locator('textarea').first().fill(CANARY.logNote);
 sensitive['parent communication log (client-side navigation)'] = await pageTexts(page);
+await page.getByRole('button', { name: 'Print / Save as PDF' }).click();
 await rest();
 
 await page.goto(`${ORIGIN}/report-card-comment-generator`, { waitUntil: 'load' });
@@ -260,12 +302,22 @@ await page.waitForTimeout(2500);
 await page.locator('input[placeholder="e.g. Alex"]').first().fill(CANARY.generatorName);
 await page.locator('textarea').first().fill(CANARY.generatorExtra);
 sensitive['comment generator'] = await pageTexts(page);
+await page.getByRole('button', { name: 'Math', exact: true }).first().click();
+await page.getByRole('button', { name: 'Generate comment' }).click();
+await page.getByLabel('Generated comment').waitFor();
+await page.getByRole('button', { name: 'Copy', exact: true }).click();
+copied['comment generator'] = [await copiedText(), CANARY.generatedComment];
 await rest();
 
 await page.goto(`${ORIGIN}/back-to-school-toolkit`, { waitUntil: 'load' });
 await page.waitForTimeout(2500);
 await page.locator('input[placeholder="e.g. Ms. Johnson"]').first().fill(CANARY.letterTeacher);
 sensitive['back-to-school toolkit'] = await pageTexts(page);
+await page.locator('select').first().selectOption('3rd Grade');
+await page.getByRole('button', { name: 'Generate letter' }).click();
+await page.getByRole('button', { name: 'Copy', exact: true }).waitFor();
+await page.getByRole('button', { name: 'Copy', exact: true }).click();
+copied['welcome letter'] = [await copiedText(), CANARY.generatedLetter];
 await rest();
 
 // Comment library: the typed name is substituted into rendered comment TEXT.
@@ -277,6 +329,8 @@ const libTexts = await pageTexts(page);
 const nameNodes = libTexts.filter((t) => t.includes(CANARY.libraryName)).length;
 check('library: the typed name really is rendered as plain page text (the leak vector exists)', nameNodes > 0, `${nameNodes} distinct text nodes`);
 sensitive['comment library'] = libTexts;
+await page.getByRole('button', { name: 'Copy', exact: true }).first().click();
+copied['comment library'] = [await copiedText(), CANARY.libraryName];
 await rest();
 
 // Purchase success page, then the site's own full-page redirect into the library.
@@ -289,9 +343,56 @@ check(
 );
 await rest();
 
+// A plain PDF link, on a URL carrying a secret the event must not pick up.
+await page.goto(`${ORIGIN}/resources?token=${CANARY.urlSecret}`, { waitUntil: 'load' });
+await page.waitForTimeout(2500);
+// A marketing page: its text is readable in the replay by design, and some of
+// it ("No sign-up required") is repeated on the tool pages.
+marketing = marketing.concat(await pageTexts(page));
+const download = page.waitForEvent('download');
+await page.locator('a[download]').first().click();
+await (await download).cancel().catch(() => {});
+await rest();
+
+// The email-gated PDF, then the nav link to the app from the same post. The
+// second click really leaves the page, so it also shows the event survives.
+await page.goto(`${ORIGIN}/blog/sample-emails-to-parents-about-student-behavior`, { waitUntil: 'load' });
+await page.waitForTimeout(2500);
+marketing = marketing.concat(await pageTexts(page));
+await page.locator('.blog-content input[type="email"]').first().fill(CANARY.gateEmail);
+const pdfTab = context.waitForEvent('page', { timeout: 15000 }).catch(() => null);
+await page.getByRole('button', { name: 'Get the free PDF' }).click();
+const gateOpened = await pdfTab;
+check('email gate: the stand-in accepted the address and the PDF opened (the event path ran)', gateOpened !== null);
+if (gateOpened) await gateOpened.close().catch(() => {});
+await rest();
+await page.locator('nav a[href^="https://app.getshorthandapp.com"]').first().click();
+await page.waitForURL(/app\.getshorthandapp\.com/, { timeout: 15000 }).catch(() => {});
+check('app link: the click really left the site for the app stand-in', /app\.getshorthandapp\.com/.test(page.url()), page.url());
+await page.waitForTimeout(3000);
+
+// The Play Store badge, which navigates from its own click handler.
+await page.goto(`${ORIGIN}/`, { waitUntil: 'load' });
+await page.waitForTimeout(3000);
+await page.locator('a[href*="play.google.com"]').first().click();
+await page.waitForURL(/play\.google\.com/, { timeout: 15000 }).catch(() => {});
+check('Play Store badge: the click really left the site for the store stand-in', /play\.google\.com/.test(page.url()), page.url());
+await page.waitForTimeout(3000);
+
 await page.goto(`${ORIGIN}/privacy?token=${CANARY.urlSecret}&utm_medium=test_med#frag`, { waitUntil: 'load' });
 await page.waitForTimeout(2500);
 marketing = marketing.concat(await pageTexts(page));
+// What a careless or hostile call site could do: an event that is not on the
+// list, a listed event with extra properties, and a listed property holding
+// free text. The first must never arrive; the other two must arrive stripped.
+const trackerPresent = await page.evaluate((secret) => {
+  if (typeof window.__shTrack !== 'function') return false;
+  window.__shTrack('made_up_event', { note: secret });
+  window.__shTrack('tool_output_copied', { tool: 'welcome-letter', text: secret, email: secret });
+  window.__shTrack('free_tool_completed', { tool: secret, action: 'refine' });
+  return true;
+}, CANARY.hostileProp);
+check('the tracker is present where PostHog is running (the hostile calls were really made)', trackerPresent);
 await rest();
 // A real page unload sends its final batch by beacon after the test can see it,
 // so fire the same event by hand while the page is still alive.
@@ -357,9 +458,66 @@ check('replay page URLs carry no query other than utm and no fragment', pageUrls
 const hrefs = [...new Set(snapText.match(/"href":"http:\/\/getshorthandapp\.com[^"]*"/g) || [])];
 check('no link recorded in the replay carries the session id, fbclid or a fragment', hrefs.every((h) => !/session_id|fbclid|#/.test(h)), `${hrefs.length} distinct links`);
 
-const allowed = new Set(['$pageview', '$pageleave', '$snapshot']);
+// ---------- custom events (lib/posthog-events.ts) ----------
+// Written out by hand rather than imported from the app, so a mistake in the
+// app's own list cannot make this check agree with it.
+const CUSTOM = ['app_link_clicked', 'resource_downloaded', 'free_tool_completed', 'tool_output_copied'];
+const allowed = new Set(['$pageview', '$pageleave', '$snapshot', ...CUSTOM]);
 const extra = names.filter((n) => !allowed.has(n));
-check('only $pageview / $pageleave / $snapshot events are sent', names.length > 0 && extra.length === 0, extra.join(', ') || names.join(', '));
+check('only $pageview / $pageleave / $snapshot and the four custom events are sent', names.length > 0 && extra.length === 0, extra.join(', ') || names.join(', '));
+
+// PostHog's own properties: "$"-prefixed, plus these. Whatever is left on a
+// custom event is what the site itself chose to send.
+const SDK_KEYS = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
+const customEvents = nonSnap.filter((e) => CUSTOM.includes(e.event));
+const own = (e) => Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort());
+const sent = customEvents.map((e) => `${e.event} ${JSON.stringify(own(e))}`).sort();
+const expected = [
+  'app_link_clicked {"cta_location":"nav","destination":"web_app"}',
+  'app_link_clicked {"cta_location":"page","destination":"play_store"}',
+  'free_tool_completed {"action":"generate","tool":"report-card-comment"}',
+  'free_tool_completed {"action":"generate","tool":"welcome-letter"}',
+  'free_tool_completed {"action":"print","tool":"parent-communication-log"}',
+  // The hostile call: its free-text "tool" was removed, the event still counted.
+  'free_tool_completed {"action":"refine"}',
+  'resource_downloaded {"resource":"behavior-emails","resource_type":"pdf"}',
+  'resource_downloaded {"resource":"mtss-tier-2-tracking-sheet","resource_type":"pdf"}',
+  'tool_output_copied {"tool":"comment-library"}',
+  'tool_output_copied {"tool":"report-card-comment"}',
+  // Sent twice: once by the real Copy button, once by the hostile call with
+  // its "text" and "email" properties removed.
+  'tool_output_copied {"tool":"welcome-letter"}',
+  'tool_output_copied {"tool":"welcome-letter"}',
+].sort();
+console.log('INFO  custom events sent:\n  ' + (sent.join('\n  ') || '(none)'));
+check(
+  'custom events: exactly the expected events, each with exactly its listed properties',
+  JSON.stringify(sent) === JSON.stringify(expected),
+  `${sent.length} sent, ${expected.length} expected`,
+);
+for (const name of CUSTOM) check(`custom event fired: ${name}`, customEvents.some((e) => e.event === name));
+for (const [tool, [text, canary]] of Object.entries(copied)) {
+  check(`${tool}: the copied text really held a canary (the leak vector exists)`, text.includes(canary));
+}
+check('an event name that is not on the list never leaves the browser', !names.includes('made_up_event'));
+const unprefixed = [...new Set(customEvents.flatMap((e) => Object.keys(e.properties).filter((k) => !k.startsWith('$'))))].sort();
+console.log('INFO  non-$ property names on custom events:', unprefixed.join(', '));
+check('no page or link text on any event (no $elements / $el_text)', !nonSnap.some((e) => Object.keys(e.properties).some((k) => /^\$el/.test(k))));
+check('no autocapture events', !names.some((n) => /autocapture|rageclick|dead_click/.test(n)));
+check(
+  'custom events are anonymous (person processing off)',
+  customEvents.length > 0 && customEvents.every((e) => e.properties.$process_person_profile === false),
+  `${customEvents.length} custom events`,
+);
+check(
+  'custom events carry the page they happened on, with no query other than utm',
+  customEvents.length > 0 &&
+    customEvents.every((e) => {
+      const url = e.properties.$current_url;
+      return typeof e.properties.$pathname === 'string' && typeof url === 'string' && (!/[?#]/.test(url) || utmOnly.test(url));
+    }),
+  [...new Set(customEvents.map((e) => e.properties.$pathname))].join(', '),
+);
 check('pageleave events are captured (web analytics)', names.includes('$pageleave'));
 check('no logs upload (console capture) despite the dashboard switching it on', !Object.keys(uploadPaths).some((p) => /logs/.test(p)), Object.keys(uploadPaths).join(', '));
 const consoleEntries = rrweb.filter((r) => r.type === 6 && /console/.test(r.data.plugin || '')).map((r) => JSON.stringify(r.data.payload.payload));

@@ -1,3 +1,6 @@
+// The ".ts" extension is needed: `node --test` loads this file directly.
+import { captureEvent } from './posthog-events.ts';
+
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
@@ -153,9 +156,11 @@ export function fireFilterUsed(filter: string): void {
   fireEvent('filter_used', { product_key: RCCL_PRODUCT_KEY, filter });
 }
 
-// Comment section only, never the comment text or id.
+// Comment section only, never the comment text or id. Mirrored to PostHog
+// (see lib/posthog-events.ts), which gets the tool name and nothing else.
 export function fireFreeCommentCopied(section: string): void {
   fireEvent('free_comment_copied', { product_key: RCCL_PRODUCT_KEY, section });
+  captureEvent('tool_output_copied', { tool: 'comment-library' });
 }
 
 export function fireLockedCommentClicked(section: string): void {
@@ -217,8 +222,12 @@ export function fireGenerationAttempt(tool: GeneratorTool, action: GeneratorActi
   fireEvent('generation_attempt', { tool, action });
 }
 
+// Mirrored to PostHog as free_tool_completed (see lib/posthog-events.ts), so
+// both tools count the same moment. The mirror does not depend on gtag being
+// present.
 export function fireGenerationSuccess(tool: GeneratorTool, action: GeneratorAction): void {
   fireEvent('generation_success', { tool, action });
+  captureEvent('free_tool_completed', { tool, action });
 }
 
 // Fired only on an HTTP 429 from our own route, i.e. our rate limiter blocked
