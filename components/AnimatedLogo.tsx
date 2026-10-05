@@ -9,7 +9,7 @@ export default function AnimatedLogo() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <Link href="/" className="nav-logo" style={{ display: 'flex', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
+    <Link href="/" className="nav-logo ph-no-capture" style={{ display: 'flex', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
       {LETTERS.map((letter, i) => (
         <motion.span
           key={i}
