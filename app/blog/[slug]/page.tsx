@@ -9,8 +9,10 @@ import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
 import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
 import TrackedBlogContent from '../../../components/TrackedBlogContent';
+import BlogExampleCopyTracker from '../../../components/BlogExampleCopyTracker';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
+import { blogExampleType } from '../../../lib/posthog-events';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
 // Includes the <p> wrapper remark emits around a standalone marker paragraph,
@@ -208,6 +210,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
 
   const allPosts = getAllPosts();
   const relatedPosts = getRelatedPosts(slug, allPosts);
+  const exampleType = blogExampleType(slug);
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -257,6 +260,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           becomes the secondary link. LIBRARY_CTA_INTROS already enumerates
           exactly that set of posts, so the two cannot drift apart. */}
       <BlogNav showLibraryCta={Boolean(LIBRARY_CTA_INTROS[slug])} />
+      {exampleType && <BlogExampleCopyTracker exampleType={exampleType} />}
 
       <article style={{ maxWidth: '720px', margin: '0 auto', padding: '6rem 1.5rem 5rem' }}>
         <Link href="/blog" style={{ fontSize: '0.9rem', color: 'var(--text-dim)', textDecoration: 'none', display: 'inline-block', marginBottom: '2rem' }}>

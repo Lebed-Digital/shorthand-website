@@ -25,7 +25,8 @@
 //   leaving the machine.
 // - Types made-up "canary" names into each tool, then searches everything
 //   PostHog would have received for them. The generated text and the copied
-//   text are canaries too.
+//   text are canaries too. A blog post's email template is copied as well: it
+//   is public text, so the check there is that it rides on no event.
 // - Checks the custom events (lib/posthog-events.ts): exactly the expected
 //   events arrive, each carrying only its listed properties, and an event or
 //   a property that is not on the list never leaves the browser.
@@ -359,6 +360,23 @@ await rest();
 await page.goto(`${ORIGIN}/blog/sample-emails-to-parents-about-student-behavior`, { waitUntil: 'load' });
 await page.waitForTimeout(2500);
 marketing = marketing.concat(await pageTexts(page));
+// Copy from the post the way a visitor does: select, then Ctrl+C. A paragraph
+// of prose first, which must send nothing, then the first email template.
+const selectAndCopy = async (selector) => {
+  const selected = await page.locator(selector).first().evaluate((el) => {
+    const range = document.createRange();
+    range.selectNodeContents(el);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+    return selection.toString();
+  });
+  await page.keyboard.press('Control+C');
+  await page.waitForTimeout(500);
+  return selected.replace(/\s+/g, ' ').trim();
+};
+await selectAndCopy('.blog-content p');
+const copiedExample = await selectAndCopy('.blog-content blockquote');
 await page.locator('.blog-content input[type="email"]').first().fill(CANARY.gateEmail);
 const pdfTab = context.waitForEvent('page', { timeout: 15000 }).catch(() => null);
 await page.getByRole('button', { name: 'Get the free PDF' }).click();
@@ -461,10 +479,10 @@ check('no link recorded in the replay carries the session id, fbclid or a fragme
 // ---------- custom events (lib/posthog-events.ts) ----------
 // Written out by hand rather than imported from the app, so a mistake in the
 // app's own list cannot make this check agree with it.
-const CUSTOM = ['app_link_clicked', 'resource_downloaded', 'free_tool_completed', 'tool_output_copied'];
+const CUSTOM = ['app_link_clicked', 'resource_downloaded', 'free_tool_completed', 'tool_output_copied', 'blog_example_copied'];
 const allowed = new Set(['$pageview', '$pageleave', '$snapshot', ...CUSTOM]);
 const extra = names.filter((n) => !allowed.has(n));
-check('only $pageview / $pageleave / $snapshot and the four custom events are sent', names.length > 0 && extra.length === 0, extra.join(', ') || names.join(', '));
+check('only $pageview / $pageleave / $snapshot and the five custom events are sent', names.length > 0 && extra.length === 0, extra.join(', ') || names.join(', '));
 
 // PostHog's own properties: "$"-prefixed, plus these. Whatever is left on a
 // custom event is what the site itself chose to send.
@@ -475,6 +493,8 @@ const sent = customEvents.map((e) => `${e.event} ${JSON.stringify(own(e))}`).sor
 const expected = [
   'app_link_clicked {"cta_location":"nav","destination":"web_app"}',
   'app_link_clicked {"cta_location":"page","destination":"play_store"}',
+  // Once, for the template. The prose copied just before it sent nothing.
+  'blog_example_copied {"copy_method":"text_selection","example_number":"1","example_type":"email"}',
   'free_tool_completed {"action":"generate","tool":"report-card-comment"}',
   'free_tool_completed {"action":"generate","tool":"welcome-letter"}',
   'free_tool_completed {"action":"print","tool":"parent-communication-log"}',
@@ -496,6 +516,11 @@ check(
   `${sent.length} sent, ${expected.length} expected`,
 );
 for (const name of CUSTOM) check(`custom event fired: ${name}`, customEvents.some((e) => e.event === name));
+// The post is a public page, so its text is readable in the replay by design.
+// What must not happen is the copied template riding along on an event.
+const copiedProbe = copiedExample.slice(0, 40);
+check('blog example: the selection really held the template text (the leak vector exists)', copiedProbe.length === 40, copiedProbe);
+check('blog example: the copied text is on no event', !JSON.stringify(nonSnap).includes(copiedProbe));
 for (const [tool, [text, canary]] of Object.entries(copied)) {
   check(`${tool}: the copied text really held a canary (the leak vector exists)`, text.includes(canary));
 }
