@@ -81,7 +81,7 @@ export default function PrivacyPage() {
               <strong style={{ color: 'var(--text)' }}>Google Classroom (optional):</strong> If you connect Google Classroom, we access your course list and student names, emails, and profile photos to help you import your roster. We store a token to keep you connected. You can disconnect at any time.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Optional website emails:</strong> If you leave your email on getshorthandapp.com to request a resource or restore a purchase, we store that email to send what you asked for.<br /><br />
               <strong style={{ color: 'var(--text)' }}>AI features:</strong>{' '}
-              Some features use AI to help with drafting, summaries, import, and similar tasks. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
+              Some features use AI to help with tagging, drafting, summaries, import, and similar tasks. See the &ldquo;How ShortHand Uses AI&rdquo; section below for full details.
             </div>
           </div>
 
@@ -89,8 +89,10 @@ export default function PrivacyPage() {
             <div className="privacy-icon">🤖</div>
             <div className="privacy-title">How ShortHand Uses AI</div>
             <div className="privacy-desc">
-              Some ShortHand features can send the information needed for that request to third-party AI providers. ShortHand uses OpenAI as the primary provider, with Groq as an approved fallback if OpenAI is temporarily unavailable. Both providers are configured so your data is not used to train their models.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>What may be sent depends on the feature you use.</strong> That can include notes, first names, and other content needed for the selected feature. Some flows may also include parent or guardian information, accommodation information, goals, or birthday-matching data. ShortHand does not limit AI input to first names only.<br /><br />
+              Some ShortHand features can send the information needed for that request to third-party AI providers. ShortHand uses OpenAI as the primary provider. If an OpenAI request fails, is rate limited, or times out, the same request goes to Groq, an approved fallback. Both providers are configured so your data is not used to train their models.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>What may be sent depends on the feature you use.</strong> That can include notes, first names, and other content needed for the selected feature. Roster and birthday imports send the text you paste, which can include full student names and parent or guardian names, email addresses, and phone numbers. Anything you type into a note, including accommodation or goal details, is part of that note&apos;s text. ShortHand does not limit AI input to first names only.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Automatic tagging.</strong> When you save a note without choosing tags yourself, ShortHand sends that note&apos;s text to the AI provider in the background so it can suggest tags. This happens for each such note unless you are offline.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Voice dictation on the web.</strong> If you tap the microphone in the web app, your browser&apos;s built-in speech recognition turns your speech into text. Depending on your browser, the audio may be processed by the browser maker, such as Google or Apple, and not by ShortHand. ShortHand receives only the resulting text, which is then handled like a typed note.<br /><br />
               <strong style={{ color: 'var(--text)' }}>In the native iOS app, AI consent is explicit and fails closed.</strong> Before AI data is shared, ShortHand asks for your permission and names the providers. If you decline, that request is not sent. You can withdraw consent later in Settings, and no further AI requests are sent until you allow them again. If the approved providers are unavailable, the AI request is not sent to another unapproved provider.<br /><br />
               We never send student or parent data to AI for advertising, and we don&apos;t sell your data.
             </div>
@@ -128,7 +130,7 @@ export default function PrivacyPage() {
               We do not sell your data or student data to anyone. Ever.<br /><br />
               We do not use student data for advertising.<br /><br />
               We do not use data for advertising tracking, including IDFA-based tracking.<br /><br />
-              We do not share your data with third parties except the services required to run ShortHand, listed in Third-Party Services below.<br /><br />
+              We only share data with service providers when needed to operate ShortHand, provide requested features, or maintain the service.<br /><br />
               No other teacher can access your students&apos; information. As the operator, I can access the database directly if needed for support, but I will never do so without your request.
             </div>
           </div>
@@ -140,7 +142,7 @@ export default function PrivacyPage() {
               All student data is stored on Supabase, which is SOC 2 Type II certified and encrypts all data at rest with AES-256.<br /><br />
               All data is stored with Row Level Security (RLS) enabled, meaning every query is scoped to your account only: no other teacher can see your data. As the operator, I technically have access to the database, but I commit to never looking at your data unless you ask me to (for example, to help fix a problem).<br /><br />
               All communication between the app and our servers uses HTTPS encryption.<br /><br />
-              API endpoints require authentication. Your session token is verified on every request.
+              API endpoints that read or write your account data require authentication. Your session token is verified on every request. The free public tools on getshorthandapp.com do not require an account and are rate limited instead.
             </div>
           </div>
 
@@ -169,7 +171,7 @@ export default function PrivacyPage() {
               <strong style={{ color: 'var(--text)' }}>Supabase:</strong> database and authentication (<a href="https://supabase.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Stripe:</strong> payment processing for web purchases and Pro subscriptions (<a href="https://stripe.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>OpenAI:</strong> primary AI language model processing (<a href="https://openai.com/policies/us-privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
-              <strong style={{ color: 'var(--text)' }}>Groq:</strong> fallback AI language model processing, used if OpenAI is temporarily unavailable (<a href="https://groq.com/privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>Groq:</strong> fallback AI language model processing, used if an OpenAI request fails (<a href="https://groq.com/privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Vercel:</strong> hosting, and web analytics on the website and web app (<a href="https://vercel.com/legal/privacy-policy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Google:</strong> Google sign-in and optional Google Classroom integration (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Apple:</strong> Sign in with Apple in the native iOS app, including Apple Private Email Relay when you hide your email (<a href="https://www.apple.com/legal/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
