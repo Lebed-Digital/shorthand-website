@@ -218,12 +218,18 @@ for (const route of routes) {
 }
 
 // The table above is what makes "every OpenAI request" true. A new route that
-// calls OpenAI without being added to it would ship with no store check.
-test('every API route that calls OpenAI is in the table above', () => {
+// calls OpenAI without being added to it would ship with no store check. The
+// routes are pinned by path, not counted: a count still matches if one route
+// is swapped for an untested one. Adding a route that calls OpenAI means
+// adding it here and to the table.
+const OPENAI_ROUTES = ['free-tool/route.ts', 'welcome-letter/route.ts', 'welcome-letter-refine/route.ts'];
+
+test('the API routes that call OpenAI are exactly the ones in the table above', () => {
   const apiDir = new URL('../app/api/', import.meta.url);
   const callers = (readdirSync(apiDir, { recursive: true }) as string[])
     .map((file) => file.replaceAll('\\', '/'))
     .filter((file) => file.endsWith('route.ts'))
     .filter((file) => readFileSync(new URL(file, apiDir), 'utf8').includes('OPENAI_CHAT_COMPLETIONS_URL'));
-  assert.equal(callers.length, routes.length, `routes that call OpenAI: ${callers.join(', ')}`);
+  assert.deepEqual(callers.sort(), [...OPENAI_ROUTES].sort());
+  assert.equal(routes.length, OPENAI_ROUTES.length, 'each of those routes needs a row in the table');
 });
