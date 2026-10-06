@@ -36,7 +36,7 @@ export default function DpaPage() {
           in compliance with FERPA, COPPA, and applicable state privacy laws.
         </p>
         <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          Last updated: March 2026
+          Last updated: October 2026
         </p>
       </div>
 
@@ -67,7 +67,7 @@ export default function DpaPage() {
             <div className="privacy-icon">2️⃣</div>
             <div className="privacy-title">Scope and Purpose</div>
             <div className="privacy-desc">
-              ShortHand processes Student Data solely to provide the services described in the ShortHand application: classroom note-taking, behavior tracking, AI-assisted report generation, and related teacher productivity features.<br /><br />
+              ShortHand processes Student Data solely to provide the services described in the ShortHand application: classroom note-taking, behavior tracking, AI-assisted features (automatic note tagging, report and message drafting, summaries, and roster and calendar imports), and related teacher productivity features.<br /><br />
               ShortHand acts as a "School Official" under FERPA with a legitimate educational interest, processing Student Data only on behalf of and under the instructions of the School.
             </div>
           </div>
@@ -113,12 +113,15 @@ export default function DpaPage() {
             <div className="privacy-icon">6️⃣</div>
             <div className="privacy-title">Subprocessors</div>
             <div className="privacy-desc">
-              ShortHand uses the following subprocessors to deliver the service. Each has been evaluated for FERPA compliance:<br /><br />
+              ShortHand uses the following subprocessors to process Student Data:<br /><br />
               <strong style={{ color: 'var(--text)' }}>Supabase:</strong> database and authentication. Data stored in AWS us-east-1 (Virginia, USA). SOC 2 Type II certified. Schools in provinces with data residency requirements (such as British Columbia or Nova Scotia) should contact us to discuss options before signing up.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>OpenAI:</strong> primary AI language model processing for report generation. OpenAI processes API customer data to provide the service and does not use API data to train its models by default. Standard API inputs and outputs may be retained for up to 30 days under OpenAI&apos;s published data controls, primarily for abuse monitoring. OpenAI offers a DPA and states that its business and API controls support customers&apos; FERPA compliance.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Groq:</strong> fallback AI language model processing, used if OpenAI is temporarily unavailable. Groq does not use customer data to train models and offers a DPA. ShortHand configures Groq with Zero Data Retention, so student-derived inputs and outputs are not retained by Groq after processing.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>OpenAI:</strong> primary AI language model processing for all AI features. This includes automatic tagging of saved notes, report and parent message drafting, summaries, questions a teacher asks about their notes, and roster, birthday, and calendar imports. Depending on the feature, OpenAI may receive note text, student first names, and, for imports, full student names and parent or guardian names, email addresses, and phone numbers as pasted by the teacher. ShortHand uses the OpenAI API under the OpenAI Services Agreement, which incorporates OpenAI&apos;s Data Processing Addendum. OpenAI does not use API data to train its models by default, and ShortHand has turned off all optional data sharing with OpenAI. Standard API inputs and outputs may be retained by OpenAI for up to 30 days under its published data controls, primarily for abuse monitoring.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Groq:</strong> fallback AI language model processing. If an OpenAI request fails, is rate limited, or times out, the same request is sent to Groq instead, so Groq can receive the same categories of data as OpenAI. Groq does not use customer data to train models and offers a DPA. ShortHand configures Groq with Zero Data Retention, so student-derived inputs and outputs are not retained by Groq after processing.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Vercel:</strong> application hosting. SOC 2 Type II certified.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>Google:</strong> optional Google Classroom integration only. Used solely to import class rosters when the teacher explicitly connects their account.
+              <strong style={{ color: 'var(--text)' }}>Google:</strong> optional Google Classroom integration only. Used solely to import class rosters when the teacher explicitly connects their account.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Other service providers.</strong> ShortHand also uses Stripe (payments), Resend (transactional email to teachers), Upstash (rate limiting by IP address), Google Analytics and Vercel Analytics (usage analytics), PostHog (public website only), and Apple (Sign in with Apple). These support operating the service and are not used to store or process student records.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>Sentry:</strong> crash reporting for the web app. ShortHand does not send notes, reports, or other student records to Sentry. An error report includes a short technical log of recent activity in the app, and that log can incidentally contain a limited label or request detail, such as a student, parent, or class name. Sentry is not used in the native iOS app.<br /><br />
+              These providers are also listed in our <Link href="/privacy" style={{ color: 'var(--accent)' }}>Privacy Policy</Link>.
             </div>
           </div>
 
@@ -139,7 +142,7 @@ export default function DpaPage() {
               ShortHand is used by teachers across Canada. Canadian privacy law (PIPEDA and provincial equivalents such as BC's FIPPA and Quebec's Law 25) imposes stricter requirements than US federal law in some areas.<br /><br />
               Key points for Canadian schools:<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Data location:</strong> Student data is stored on US servers (AWS us-east-1). Schools in provinces with strict data residency rules should review this with their IT department before using ShortHand. Contact us to discuss options.<br /><br />
-              • <strong style={{ color: 'var(--text)' }}>AI processing:</strong> When AI features are used, notes are sent to OpenAI (a US-based provider) for processing, with Groq (also US-based) as an approved fallback if OpenAI is temporarily unavailable. No student PII is used to train AI models.<br /><br />
+              • <strong style={{ color: 'var(--text)' }}>AI processing:</strong> Note text is sent to OpenAI (a US-based provider) when a note is saved without manually chosen tags, and when a teacher uses an AI feature such as a report, summary, or import. Imports can include full student names and parent or guardian contact details. Groq (also US-based) is an approved fallback if an OpenAI request fails. No student PII is used to train AI models.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Data minimization:</strong> ShortHand collects only the information a teacher actively enters. Nothing is collected passively beyond what is necessary to operate the service.<br /><br />
               Questions about Canadian compliance? Email <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a>.
             </div>

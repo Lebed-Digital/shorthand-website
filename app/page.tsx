@@ -765,7 +765,7 @@ export default function Home() {
             {[
               {
                 q: 'Is student data safe?',
-                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no surveillance, no sharing with third parties. AI processing is handled by providers who are contractually prohibited from using your data for anything beyond providing the service. Just your notes, locked to your account.',
+                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no advertising, no surveillance. The only companies that touch your data are the services required to run ShortHand, listed in our Privacy Policy. AI features are processed by OpenAI, with Groq as a backup. Both are bound by data processing terms, and neither uses your data to train its models. Just your notes, locked to your account.',
               },
               {
                 q: 'Will this add to my workload?',
