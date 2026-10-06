@@ -30,6 +30,14 @@
 // - Checks the custom events (lib/posthog-events.ts): exactly the expected
 //   events arrive, each carrying only its listed properties, and an event or
 //   a property that is not on the list never leaves the browser.
+// - Checks the one experiment (EXPERIMENTS in lib/posthog-events.ts). The fake
+//   "dashboard" answers the flag request with the experiment's variant plus
+//   flags the site never listed. The checks: a flag request is made only from
+//   the experiment's post, never on page load anywhere else and never again
+//   in the background; it asks for the one listed key; it carries no URL
+//   secret, although the SDK would put the first URL the browser ever opened
+//   in it; an unlisted flag reaches no event; and seeing, pausing on and
+//   clicking the call to action are recorded in that order with no text.
 //
 // Why a real browser and not a unit test: every problem this caught was in how
 // the SDK behaves, not in our own logic. Examples: the dashboard can switch on
@@ -135,9 +143,14 @@ function inflateDeep(v) {
   return v;
 }
 
-async function newSession(browser, { initScript } = {}) {
+// `flags` is what the fake dashboard answers a flag request with. `flagsFail`
+// makes that request fail instead: 'abort' as an ad blocker would, or 'error'
+// for a 500. `clock` installs Playwright's clock so a test can jump minutes
+// ahead; it has to go in before the page creates its timers.
+async function newSession(browser, { initScript, flags = {}, flagsFail, clock } = {}) {
   const context = await browser.newContext({ userAgent: UA });
-  const rec = { phRequests: [], uploads: [], scripts: [] };
+  const rec = { phRequests: [], uploads: [], scripts: [], flagRequests: [] };
+  if (clock) await context.clock.install();
   if (initScript) await context.addInitScript(initScript);
 
   await context.route(/googletagmanager\.com|google-analytics\.com|doubleclick\.net/, (r) => r.abort());
@@ -180,10 +193,18 @@ async function newSession(browser, { initScript } = {}) {
       return route.continue(); // PostHog's public SDK script files only
     }
     if (url.pathname.startsWith('/flags') || url.pathname.startsWith('/decide')) {
+      let from = '';
+      try {
+        from = new URL(req.frame().url()).pathname;
+      } catch {}
+      // Kept apart from the uploads: this request does not pass through
+      // before_send, so it gets its own checks.
+      rec.flagRequests.push({ from, body: decodeBody(req.postDataBuffer()) });
+      if (flagsFail === 'abort') return route.abort();
       return route.fulfill({
-        status: 200,
+        status: flagsFail === 'error' ? 500 : 200,
         contentType: 'application/json',
-        body: JSON.stringify({ ...hostileRemoteConfig, featureFlags: {}, featureFlagPayloads: {} }),
+        body: JSON.stringify({ ...hostileRemoteConfig, featureFlags: flags, featureFlagPayloads: {} }),
       });
     }
     // Everything else is an upload (events, replay, logs). Capture, never forward.
@@ -240,6 +261,78 @@ const results = [];
 function check(name, pass, detail) {
   results.push({ name, pass });
   console.log(`${pass ? 'PASS' : 'FAIL'}  ${name}${detail ? `  [${detail}]` : ''}`);
+}
+
+// ---------- the experiment (EXPERIMENTS in lib/posthog-events.ts) ----------
+// Written out by hand, like the event list further down, so a mistake in the
+// app's own list cannot make this check agree with it.
+const EXPERIMENT = 'blog-cta-presentation';
+const EXPERIMENT_POST = '/blog/sample-emails-to-parents-about-student-behavior';
+const CTA = '.blog-workflow-bridge';
+const VARIANT_CLASS = 'blog-workflow-bridge--editorial';
+// What a careless or hostile dashboard could add: flags the site never listed.
+const HOSTILE_FLAGS = { 'hostile-unlisted-flag': true, 'hostile-survey-targeting': 'CANARYFLAGVALUE' };
+const UTM_ONLY = /\?utm_[a-z]+=[^&#]*(&utm_[a-z]+=[^&#]*)*$/;
+// Everything the SDK puts in a flag request. A field that is not here fails
+// the check, so an SDK upgrade that starts sending more is noticed.
+const FLAG_REQUEST_FIELDS = new Set([
+  'token',
+  'distinct_id',
+  '$anon_distinct_id',
+  '$device_id',
+  'groups',
+  'person_properties',
+  'group_properties',
+  'timezone',
+  'flag_keys',
+  'sent_at',
+]);
+
+function stringsIn(value, out = []) {
+  if (typeof value === 'string') out.push(value);
+  else if (Array.isArray(value)) for (const v of value) stringsIn(v, out);
+  else if (value && typeof value === 'object') for (const v of Object.values(value)) stringsIn(v, out);
+  return out;
+}
+
+// The flag request never passes through before_send, so the allowlist that
+// protects every event does not protect it. These are its own checks.
+function checkFlagRequests(label, rec, expectedCount) {
+  const reqs = rec.flagRequests;
+  check(
+    `${label}: ${expectedCount} flag request${expectedCount === 1 ? '' : 's'}, and only from the experiment post`,
+    reqs.length === expectedCount && reqs.every((r) => r.from === EXPERIMENT_POST),
+    `${reqs.length} made${reqs.length ? ', from ' + [...new Set(reqs.map((r) => r.from))].join(', ') : ''}`,
+  );
+  if (reqs.length === 0) return;
+  const bodies = reqs.map((r) => r.body);
+  const text = JSON.stringify(bodies);
+  check(`${label}: the flag request was decoded (the checks below really read it)`, bodies.every((b) => b && !b.__undecoded && typeof b.distinct_id === 'string'));
+  check(
+    `${label}: the flag request asks for the one listed experiment and nothing else`,
+    bodies.every((b) => JSON.stringify(b.flag_keys) === JSON.stringify([EXPERIMENT])),
+    JSON.stringify(bodies[0].flag_keys),
+  );
+  const unexpected = [...new Set(bodies.flatMap((b) => Object.keys(b)))].filter((k) => !FLAG_REQUEST_FIELDS.has(k));
+  check(`${label}: the flag request carries only the fields the SDK is known to send`, unexpected.length === 0, unexpected.join(', ') || Object.keys(bodies[0]).sort().join(', '));
+  const leaked = Object.entries(CANARY).filter(([, v]) => text.includes(v)).map(([k]) => k);
+  check(`${label}: no canary in the flag request`, leaked.length === 0, leaked.join(', ') || `${text.length} bytes`);
+  const urls = stringsIn(bodies).filter((s) => /^(https?:\/\/|\/)/.test(s));
+  const bad = urls.filter((u) => /[?#]/.test(u) && !UTM_ONLY.test(u));
+  check(`${label}: every URL in the flag request has only utm params (no other query, no fragment)`, bad.length === 0, bad.slice(0, 2).join(' ; ') || `${urls.length} URL values checked`);
+  check(`${label}: no person or group targeting data beyond what the SDK adds itself`, bodies.every((b) => Object.keys(b.groups ?? {}).length === 0 && !b.group_properties));
+}
+
+// Nothing a flag could switch on is loaded, with flags being evaluated.
+function checkNoOtherProducts(label, rec) {
+  const scripts = [...new Set(rec.scripts)];
+  check(
+    `${label}: no surveys / tours / conversations / web-experiments / toolbar / exception / dead-click / web-vitals scripts`,
+    !scripts.some((s) => /survey|tour|conversation|experiment|toolbar|exception|dead-click|web-vitals/.test(s)),
+    scripts.join(', ') || 'none',
+  );
+  const apis = rec.phRequests.filter((r) => /web_experiments|surveys|early_access|product_tours|conversations/.test(r));
+  check(`${label}: no request to the surveys, web experiments, tours or early access endpoints`, apis.length === 0, apis.join(', '));
 }
 
 const browser = await chromium.launch({ args: [RESOLVER, '--disable-blink-features=AutomationControlled'] });
@@ -551,16 +644,206 @@ check('no page console output in the replay (only the recorder own diagnostics, 
 const netReqs = rrweb.filter((r) => r.type === 6 && /network/.test(r.data.plugin || '')).flatMap((r) => (r.data.payload && r.data.payload.requests) || []);
 const netWithUrl = netReqs.filter((r) => r.name);
 check('no network requests recorded with a URL, headers or body', netWithUrl.length === 0 && !/"(request|response)(Headers|Body)"/.test(snapText), `${netReqs.length} timing-only entries, ${netWithUrl.length} with a URL`);
-const scripts = [...new Set(rec.scripts)];
-check('no surveys / tours / conversations / dead-click / exception / web-vitals / toolbar scripts loaded', !scripts.some((s) => /survey|tour|conversation|dead-click|exception|web-vitals|toolbar/.test(s)), scripts.join(', '));
-check('no feature flag requests', rec.phRequests.filter((r) => /\/flags|\/decide/.test(r)).length === 0);
+checkNoOtherProducts('whole visit', rec);
+// This visit opened a dozen pages, by full load and by client-side navigation,
+// and stayed on several for many seconds. It opened the experiment post once.
+// So: one flag request, from that post. The dashboard answered it with no
+// experiment, so the control stayed and nothing about it was recorded.
+checkFlagRequests('whole visit', rec, 1);
+check('no experiment running: no "$feature_flag_called" and no pause event', !names.includes('$feature_flag_called') && !names.includes('blog_cta_paused'));
 check('no identify / alias / person-property events', !events.some((e) => ['$identify', '$create_alias', '$set', '$groupidentify'].includes(e.event)));
 const pvs = nonSnap.filter((e) => e.event === '$pageview');
 check('pageviews are anonymous (person processing off)', pvs.length > 0 && pvs.every((e) => e.properties.$process_person_profile === false), `${pvs.length} pageviews`);
 console.log('INFO  pageview paths:', pvs.map((e) => e.properties.$pathname).join(' > '));
 console.log('INFO  fbclid property values seen:', JSON.stringify([...new Set(nonSnap.map((e) => e.properties.fbclid).filter((v) => v !== undefined))]));
 
-// ---------- 2. Gates: none of these may contact PostHog at all ----------
+// ---------- 2. The experiment, answered by a hostile dashboard ----------
+// A new browser whose FIRST page carries a secret in its URL. The SDK keeps
+// that first URL and sends it with every flag request, so this is the visit
+// that would leak it.
+const postUrl = `${ORIGIN}${EXPERIMENT_POST}`;
+const ctaState = (p) =>
+  p.evaluate(
+    ([sel, cls]) => {
+      const el = document.querySelector(sel);
+      return { variant: el.classList.contains(cls), badge: document.querySelectorAll('[data-cta-preview]').length };
+    },
+    [CTA, VARIANT_CLASS],
+  );
+const showCta = (p) => p.locator(CTA).evaluate((el) => el.scrollIntoView({ block: 'center' }));
+const toTop = (p) => p.evaluate(() => window.scrollTo(0, 0));
+const named = (r, name) => eventsOf(r).filter((e) => e.event === name);
+
+const exp = await newSession(browser, { flags: { [EXPERIMENT]: 'test', ...HOSTILE_FLAGS } });
+const ep = await exp.context.newPage();
+await ep.goto(`${ORIGIN}/privacy?token=${CANARY.urlSecret}&utm_medium=test_med#frag`, { waitUntil: 'load' });
+await ep.waitForTimeout(4000);
+const storedFirstUrl = await ep.evaluate(() => {
+  let cookies = document.cookie;
+  try {
+    cookies = decodeURIComponent(cookies);
+  } catch {}
+  return cookies + JSON.stringify({ ...localStorage });
+});
+check('experiment: the SDK stored the first URL with its secret (the leak vector exists)', storedFirstUrl.includes(CANARY.urlSecret));
+check('experiment: no flag request on a page that is not the experiment post', exp.rec.flagRequests.length === 0, `${exp.rec.flagRequests.length} made`);
+
+await ep.goto(`${postUrl}?token=${CANARY.urlSecret}&utm_campaign=test_camp`, { waitUntil: 'load' });
+await ep.waitForFunction(([sel, cls]) => document.querySelector(sel)?.classList.contains(cls), [CTA, VARIANT_CLASS], { timeout: 15000 }).catch(() => {});
+check('experiment: the real flag put this visitor in the variant before they reached it', (await ctaState(ep)).variant);
+await ep.waitForTimeout(5000); // longer than a pause, and long enough for a batch to be sent
+check('experiment: loading the page is not taking part (no "$feature_flag_called" yet)', named(exp.rec, '$feature_flag_called').length === 0);
+check('experiment: nothing is recorded while the call to action is off screen', named(exp.rec, 'blog_cta_paused').length === 0);
+
+// A quick pass: on screen for well under two seconds, then gone.
+await showCta(ep);
+await ep.waitForTimeout(700);
+await toTop(ep);
+await ep.waitForTimeout(5000);
+check('experiment: scrolling it into view is taking part, recorded once', named(exp.rec, '$feature_flag_called').length === 1, `${named(exp.rec, '$feature_flag_called').length} sent`);
+check('experiment: a quick scroll past it is not a pause', named(exp.rec, 'blog_cta_paused').length === 0);
+
+// A real look, then a copy from the post (the guardrail event), then the click.
+await showCta(ep);
+await ep.waitForTimeout(3500);
+check('experiment: two seconds on screen is a pause, recorded once', named(exp.rec, 'blog_cta_paused').length === 1, `${named(exp.rec, 'blog_cta_paused').length} sent`);
+const expCopied = await ep.locator('.blog-content blockquote').first().evaluate((el) => {
+  const range = document.createRange();
+  range.selectNodeContents(el);
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+  return selection.toString().replace(/\s+/g, ' ').trim();
+});
+await ep.keyboard.press('Control+C');
+await ep.waitForTimeout(1000);
+await showCta(ep);
+await ep.waitForTimeout(3500);
+check('experiment: coming back to it on the same page view is not a second pause', named(exp.rec, 'blog_cta_paused').length === 1);
+const ctaText = await ep.locator(CTA).evaluate((el) => [...el.querySelectorAll('p, li, a')].map((n) => n.textContent.trim()));
+await ep.locator(`${CTA} a`).click();
+await ep.waitForURL(/app\.getshorthandapp\.com/, { timeout: 15000 }).catch(() => {});
+check('experiment: the click really left the site for the app stand-in', /app\.getshorthandapp\.com/.test(ep.url()), ep.url());
+await ep.waitForTimeout(3000);
+await exp.context.close();
+
+{
+  const all = JSON.stringify(exp.rec.uploads);
+  const events = eventsOf(exp.rec).filter((e) => e.event !== '$snapshot');
+  const names = [...new Set(events.map((e) => e.event))].sort();
+  const SDK_KEYS = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
+  const own = (e) => Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort());
+  const SITE_EVENTS = ['app_link_clicked', 'blog_cta_paused', 'blog_example_copied'];
+  const sent = events.filter((e) => SITE_EVENTS.includes(e.event)).map((e) => `${e.event} ${JSON.stringify(own(e))}`).sort();
+  const expected = [
+    'app_link_clicked {"cta_location":"blog_body","destination":"web_app"}',
+    'blog_cta_paused {"cta_type":"workflow_bridge","variant":"test"}',
+    'blog_example_copied {"copy_method":"text_selection","example_number":"1","example_type":"email"}',
+  ];
+  console.log('\nINFO  experiment visit, events sent: ' + names.join(', '));
+  console.log('INFO  experiment visit, site events:\n  ' + (sent.join('\n  ') || '(none)'));
+  check('experiment: exactly the pause, the copy and the click, each with exactly its listed properties', JSON.stringify(sent) === JSON.stringify(expected), `${sent.length} sent`);
+  const allowed = new Set(['$pageview', '$pageleave', '$feature_flag_called', ...SITE_EVENTS]);
+  check('experiment: no event beyond pageviews, the three above and "$feature_flag_called"', names.every((n) => allowed.has(n)), names.filter((n) => !allowed.has(n)).join(', '));
+
+  const [seen] = named(exp.rec, '$feature_flag_called');
+  const [paused] = named(exp.rec, 'blog_cta_paused');
+  const [clicked] = named(exp.rec, 'app_link_clicked');
+  check(
+    'experiment: taking part names the listed experiment and its variant',
+    seen?.properties.$feature_flag === EXPERIMENT && seen?.properties.$feature_flag_response === 'test',
+    `${seen?.properties.$feature_flag} = ${seen?.properties.$feature_flag_response}`,
+  );
+  const at = (e) => (e ? new Date(e.timestamp).getTime() : NaN);
+  check('experiment: seen, then paused, then clicked, in that order', at(seen) < at(paused) && at(paused) < at(clicked), [seen, paused, clicked].map(at).join(' < '));
+  check('experiment: the pause came at least two seconds after a look began', at(paused) - at(seen) >= 2000, `${at(paused) - at(seen)} ms after first seen`);
+  check(
+    'experiment: the pause, the copy and the click each carry the variant, so PostHog can split them',
+    events.filter((e) => SITE_EVENTS.includes(e.event)).every((e) => e.properties[`$feature/${EXPERIMENT}`] === 'test'),
+  );
+  check('experiment: an unlisted flag from the dashboard is on no event', !/hostile-|CANARYFLAGVALUE/.test(all));
+  const activeFlags = [...new Set(events.flatMap((e) => e.properties.$active_feature_flags ?? []))];
+  check('experiment: the only flag any event names as active is the listed one', activeFlags.length === 1 && activeFlags[0] === EXPERIMENT, activeFlags.join(', '));
+  check(
+    'experiment: taking part is anonymous (person processing off)',
+    seen?.properties.$process_person_profile === false && events.every((e) => e.properties.$process_person_profile === false),
+  );
+  check('experiment: no identify / alias / person-property events', !events.some((e) => ['$identify', '$create_alias', '$set', '$groupidentify'].includes(e.event)));
+  const leaked = Object.entries(CANARY).filter(([, v]) => all.includes(v)).map(([k]) => k);
+  check('experiment: no canary in any upload, though two of its URLs carried one', leaked.length === 0, leaked.join(', '));
+  const withoutReplay = JSON.stringify(events);
+  check('experiment: the copied template is on no event', expCopied.length > 40 && !withoutReplay.includes(expCopied.slice(0, 40)), expCopied.slice(0, 40));
+  // The call to action is public page text, readable in the replay by design.
+  // What must not happen is its words riding along on an event.
+  const ctaWords = ctaText.filter((t) => t.length >= 14);
+  check('experiment: the words of the call to action are on no event', ctaWords.length >= 5 && !ctaWords.some((t) => withoutReplay.includes(t)), `${ctaWords.length} strings checked`);
+  const flagText = JSON.stringify(exp.rec.flagRequests);
+  check('experiment: neither the copied template nor the call to action is in the flag request', !flagText.includes(expCopied.slice(0, 40)) && !ctaWords.some((t) => flagText.includes(t)));
+  checkFlagRequests('experiment', exp.rec, 1);
+  checkNoOtherProducts('experiment', exp.rec);
+}
+
+// Production ignores the preview switch: the dashboard says control, the URL
+// says variant, and the dashboard wins.
+{
+  const s = await newSession(browser, { flags: { [EXPERIMENT]: 'control' } });
+  const p = await s.context.newPage();
+  await p.goto(`${postUrl}?cta=variant`, { waitUntil: 'load' });
+  await p.waitForTimeout(5000);
+  const state = await ctaState(p);
+  check('preview switch: ?cta=variant does nothing on the production hostname', s.rec.flagRequests.length === 1 && !state.variant && state.badge === 0, JSON.stringify(state));
+  await showCta(p);
+  await p.waitForTimeout(6000);
+  await s.context.close();
+  const [seen] = named(s.rec, '$feature_flag_called');
+  const [paused] = named(s.rec, 'blog_cta_paused');
+  check('control: taking part and pausing are recorded for the control too', seen?.properties.$feature_flag_response === 'control' && paused?.properties.variant === 'control');
+  check('preview switch: the ?cta= parameter is on no event and not in the flag request', !/cta=/.test(JSON.stringify(s.rec.uploads) + JSON.stringify(s.rec.flagRequests)));
+}
+
+// PostHog reachable but the flag request blocked or failing: the control, and
+// nothing recorded about it.
+for (const [label, flagsFail] of [['blocked, as by an ad blocker', 'abort'], ['answered with an error', 'error']]) {
+  const s = await newSession(browser, { flags: { [EXPERIMENT]: 'test' }, flagsFail });
+  const p = await s.context.newPage();
+  await p.goto(postUrl, { waitUntil: 'load' });
+  await p.waitForTimeout(6000);
+  await showCta(p);
+  await p.waitForTimeout(6000);
+  const state = await ctaState(p);
+  await s.context.close();
+  const recorded = named(s.rec, '$feature_flag_called').length + named(s.rec, 'blog_cta_paused').length;
+  check(
+    `flag request ${label}: the control stays and nothing is recorded about it`,
+    s.rec.flagRequests.length >= 1 && !state.variant && recorded === 0 && named(s.rec, '$pageview').length > 0,
+    `${s.rec.flagRequests.length} attempt(s), ${recorded} experiment events`,
+  );
+}
+
+// The SDK's default is to ask for flags again every five minutes on any open
+// page. Jump eleven minutes ahead on an ordinary page, and on the experiment
+// post after its one request, and count.
+for (const [label, path, expectedCount] of [['an ordinary page', '/', 0], ['the experiment post', EXPERIMENT_POST, 1]]) {
+  const s = await newSession(browser, { flags: { [EXPERIMENT]: 'test' }, clock: true });
+  const p = await s.context.newPage();
+  await p.goto(`${ORIGIN}${path}`, { waitUntil: 'load' });
+  await p.waitForTimeout(5000);
+  const before = s.rec.flagRequests.length;
+  await p.clock.fastForward(11 * 60 * 1000);
+  // The SDK backs off on a page nobody touches, so touch it.
+  await p.mouse.move(200, 200);
+  await p.mouse.wheel(0, 300);
+  await p.waitForTimeout(3000);
+  const jumped = await p.evaluate(() => Date.now());
+  await s.context.close();
+  check(
+    `no background flag refresh on ${label}, eleven minutes on`,
+    before === expectedCount && s.rec.flagRequests.length === expectedCount && jumped - Date.now() > 10 * 60 * 1000,
+    `${s.rec.flagRequests.length} flag request(s), page clock ${Math.round((jumped - Date.now()) / 60000)} min ahead`,
+  );
+}
+
+// ---------- 3. Gates: none of these may contact PostHog at all ----------
 async function gateRun(label, urlPath, opts = {}) {
   const s = await newSession(opts.browser || browser, { initScript: opts.initScript });
   const p = await s.context.newPage();

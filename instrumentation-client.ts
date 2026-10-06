@@ -1,5 +1,6 @@
-// PostHog on the public website: Web Analytics, Session Replay, and the five
-// custom events listed in lib/posthog-events.ts. Autocapture stays off.
+// PostHog on the public website: Web Analytics, Session Replay, and the six
+// custom events and the experiments listed in lib/posthog-events.ts.
+// Autocapture stays off.
 //
 // This is getshorthandapp.com only. PostHog is NOT in the ShortHand app
 // (app.getshorthandapp.com is a separate repo), and the privacy policy says so.
@@ -9,7 +10,7 @@
 // If you add a page where a visitor can type a student name or anything else
 // personal, add it to SENSITIVE_PATH_PREFIXES there and put the `ph-mask` class
 // on the page's root element.
-import { classifyLinkClick, filterCustomEvent } from './lib/posthog-events';
+import { EXPERIMENTS, POSTHOG_READY_EVENT, classifyLinkClick, filterCustomEvent } from './lib/posthog-events';
 import { isSensitivePath, maskText, sanitizeEventUrls, sanitizeUrl, shouldInitPostHog } from './lib/posthog-privacy';
 
 const token = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
@@ -43,8 +44,9 @@ if (
         defaults: '2026-05-30',
 
         // Web Analytics: pageviews (including client-side navigations) and
-        // pageleaves. The only other events are the five custom ones sent
-        // through window.__shTrack below; before_send drops anything else.
+        // pageleaves. The only other events are the six custom ones sent
+        // through window.__shTrack below, and the record PostHog makes when a
+        // visitor sees an experiment; before_send drops anything else.
         capture_pageview: 'history_change',
         capture_pageleave: true,
         autocapture: false,
@@ -60,9 +62,21 @@ if (
         // would set it on .getshorthandapp.com and send it to the app too.
         cross_subdomain_cookie: false,
 
-        // Keeps remote config loading (Session Replay needs it) but evaluates
-        // no feature flags, which also keeps surveys and experiments off.
-        advanced_disable_feature_flags: true,
+        // Feature flags, for the experiments listed in lib/posthog-events.ts
+        // and nothing else. Three settings keep that narrow:
+        // - No flag request when a page loads. One is made only when a page
+        //   asks for its experiment, through window.__shFlag below.
+        // - No background refresh. Left at its default the SDK asks again
+        //   every five minutes, on every page, for as long as it is open.
+        // - Only the listed keys are evaluated, whatever else exists in the
+        //   PostHog project.
+        // Evaluating no flags at all used to be what kept surveys off. Now the
+        // switches below are what does, along with the no-code "web
+        // experiments", which could rewrite a page from the dashboard. An
+        // experiment here is a flag read by a component, never that.
+        advanced_disable_feature_flags_on_first_load: true,
+        remote_config_refresh_interval_ms: 0,
+        flag_keys: Object.keys(EXPERIMENTS),
         disable_surveys: true,
         disable_web_experiments: true,
         // These products are switched on from the PostHog dashboard, not from
@@ -130,6 +144,58 @@ if (
       window.__shTrack = (name, props) => {
         posthog.capture(name, props as Record<string, string>, { send_instantly: true });
       };
+
+      // Feature flags, exposed as narrowly as the tracker: a page can ask
+      // which variant of a listed experiment the visitor is in, and can say
+      // the visitor has seen it. Call sites use experimentVariant() and
+      // experimentSeen() in lib/posthog-events.ts. No other flag can be read.
+      const listed = (key: string) => Object.prototype.hasOwnProperty.call(EXPERIMENTS, key);
+
+      // The flag request is the one thing here that does not pass through
+      // before_send, and the SDK puts in it the first URL this browser ever
+      // opened on this site and that page's referrer. So those two stored
+      // values get the same rule as every URL on every event before the
+      // request is made. set_initial_person_info() stores them if the first
+      // pageview has not yet, and never overwrites, so what is cleaned here
+      // is what the request reads.
+      let flagsRequested = false;
+      const requestFlags = () => {
+        if (flagsRequested) return;
+        flagsRequested = true;
+        const store = posthog.persistence;
+        store?.set_initial_person_info();
+        const first = store?.props.$initial_person_info;
+        if (first) {
+          const clean = (url: unknown) => (typeof url === 'string' ? sanitizeUrl(url) : url);
+          store.register({ $initial_person_info: { ...first, r: clean(first.r), u: clean(first.u) } });
+        }
+        posthog.reloadFeatureFlags();
+      };
+
+      window.__shFlag = (key, onValue) => {
+        if (!listed(key)) return;
+        let told = false;
+        // Runs when the answer arrives, and at once if it already has.
+        posthog.onFeatureFlags(() => {
+          if (told) return;
+          // `fresh`: only what PostHog answered on this page, never a value
+          // remembered from an earlier visit. Ending an experiment in PostHog
+          // therefore takes effect on the next page view, and a request that
+          // fails or is blocked leaves the value undefined, which is control.
+          const value = posthog.getFeatureFlag(key, { send_event: false, fresh: true });
+          if (value === undefined) return;
+          told = true;
+          onValue(value);
+        });
+        requestFlags();
+      };
+      // Reading a flag this way is what sends "$feature_flag_called", the
+      // record PostHog counts as taking part. The SDK sends it once per
+      // browser for a given variant, however often this is called.
+      window.__shFlagSeen = (key) => {
+        if (listed(key)) posthog.getFeatureFlag(key);
+      };
+      window.dispatchEvent(new Event(POSTHOG_READY_EVENT));
 
       // One listener covers every link to the app and every PDF on the site,
       // including pages added later, so no link has to opt in. This is not

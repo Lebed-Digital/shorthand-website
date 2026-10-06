@@ -1,6 +1,7 @@
 // Custom PostHog events on the public website. This file is the whole
-// vocabulary: five event names and, for each one, the property names and the
-// exact values each property may take. Nothing else can be sent.
+// vocabulary: six event names and, for each one, the property names and the
+// exact values each property may take. Nothing else can be sent. It also lists
+// the experiments (feature flags) the site may read: see EXPERIMENTS.
 //
 // Two layers enforce that. captureEvent() is typed from the table below, so a
 // call site cannot pass a free-form string. filterCustomEvent() then runs
@@ -14,8 +15,11 @@
 // (app/privacy/page.tsx) and tests/manual/posthog-privacy-check.mjs, and run
 // that check.
 //
-// No imports and no DOM access outside captureEvent(), so everything here runs
-// under `node --test` (see posthog-events.test.ts).
+// One import, itself free of imports, and no DOM access outside the helpers
+// that talk to PostHog (captureEvent, experimentVariant, experimentSeen), so
+// everything here runs under `node --test` (see posthog-events.test.ts).
+// The ".ts" extension is needed: `node --test` loads this file directly.
+import { PRODUCTION_HOSTNAME } from './posthog-privacy.ts';
 
 declare global {
   interface Window {
@@ -23,6 +27,11 @@ declare global {
     // previews, localhost, automated browsers and with the sh_dev flag, which
     // is what makes captureEvent() a no-op everywhere PostHog is not running.
     __shTrack?: (name: string, props: unknown) => void;
+    // Set alongside __shTrack, and absent in the same places. The only two
+    // things a page can do with a feature flag: ask which variant of a listed
+    // experiment this visitor is in, and say the visitor has now seen it.
+    __shFlag?: (key: string, onValue: (value: unknown) => void) => void;
+    __shFlagSeen?: (key: string) => void;
   }
 }
 
@@ -67,6 +76,14 @@ export const CUSTOM_EVENTS = {
     example_number: Array.from({ length: 200 }, (_, i) => String(i + 1)),
     copy_method: ['text_selection'],
   },
+  // The call to action in the middle of a blog post stayed on screen for two
+  // seconds. Sent only to a visitor who is in an experiment on it, once per
+  // page view (components/BlogCtaExperiment.tsx). Which kind of call to action
+  // and which variant, never its text.
+  blog_cta_paused: {
+    cta_type: ['workflow_bridge'],
+    variant: ['control', 'test'],
+  },
 } as const;
 
 export type CustomEventName = keyof typeof CUSTOM_EVENTS;
@@ -76,6 +93,85 @@ export type CustomEventProps<N extends CustomEventName> = {
 };
 
 type Resource = CustomEventProps<'resource_downloaded'>['resource'];
+
+// Experiments: every feature flag this site reads, and the values each may
+// take. The key is the flag's key in PostHog. instrumentation-client.ts asks
+// PostHog to evaluate these keys and no others, a page can only read a key
+// that is listed, and filterCustomEvent() removes any other flag from every
+// event. So a flag created in the PostHog dashboard does nothing here until it
+// is added to this list.
+//
+// To add one: list it here, then update the privacy policy
+// (app/privacy/page.tsx) and tests/manual/posthog-privacy-check.mjs, and run
+// that check.
+export const EXPERIMENTS = {
+  // Is the call to action in the middle of a post skipped because of how it
+  // looks? Same words, link and position in both: the boxed card ('control')
+  // against an unboxed section set like the article ('test').
+  'blog-cta-presentation': ['control', 'test'],
+} as const;
+
+export type ExperimentKey = keyof typeof EXPERIMENTS;
+export type ExperimentVariant<K extends ExperimentKey> = (typeof EXPERIMENTS)[K][number];
+
+// The one post `blog-cta-presentation` runs on.
+export const BLOG_CTA_EXPERIMENT_POST = 'sample-emails-to-parents-about-student-behavior';
+
+// Fired on `window` by instrumentation-client.ts once __shTrack and __shFlag
+// exist. PostHog loads after the page hydrates, so a component that mounts
+// first waits for this.
+export const POSTHOG_READY_EVENT = 'sh:posthog-ready';
+
+// Asks which variant of an experiment this visitor is in. Calls back at most
+// once, and only with a listed value. No PostHog, a blocked or failed request,
+// a flag that does not exist and a value that is not listed all mean no call,
+// so the caller goes on showing the control. Asking does not count as taking
+// part: see experimentSeen(). Returns a function that withdraws the question.
+export function experimentVariant<K extends ExperimentKey>(
+  key: K,
+  onVariant: (variant: ExperimentVariant<K>) => void,
+): () => void {
+  if (typeof window === 'undefined') return () => {};
+  let open = true;
+  const ask = () => {
+    try {
+      window.__shFlag?.(key, (value) => {
+        if (!open || !(EXPERIMENTS[key] as readonly unknown[]).includes(value)) return;
+        open = false;
+        onVariant(value as ExperimentVariant<K>);
+      });
+    } catch {
+      // Analytics must never break the page.
+    }
+  };
+  if (window.__shFlag) ask();
+  else window.addEventListener(POSTHOG_READY_EVENT, ask, { once: true });
+  return () => {
+    open = false;
+    window.removeEventListener(POSTHOG_READY_EVENT, ask);
+  };
+}
+
+// Records that the visitor has actually seen the thing under test. This is
+// what PostHog counts as taking part in the experiment, so call it when that
+// thing is on screen, not when the page loads.
+export function experimentSeen(key: ExperimentKey): void {
+  if (typeof window === 'undefined') return;
+  try {
+    window.__shFlagSeen?.(key);
+  } catch {
+    // Analytics must never break the page.
+  }
+}
+
+// Preview deployments only. PostHog never runs off the production hostname, so
+// a preview has no flag to read. There, ?cta=variant or ?cta=control picks the
+// variant by hand. On production this is null whatever the URL says.
+export function previewVariant(hostname: string, search: string): ExperimentVariant<'blog-cta-presentation'> | null {
+  if (hostname === PRODUCTION_HOSTNAME) return null;
+  const forced = new URLSearchParams(search).get('cta');
+  return forced === 'variant' ? 'test' : forced === 'control' ? 'control' : null;
+}
 
 export function captureEvent<N extends CustomEventName>(name: N, props: CustomEventProps<N>): void {
   if (typeof window === 'undefined') return;
@@ -182,17 +278,32 @@ export function classifyLinkClick(link: LinkClick): ClassifiedClick | null {
 // keeps. The utm list matches ALLOWED_QUERY_PARAMS in posthog-privacy.ts.
 const SDK_PROPERTIES = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
 
+const FLAG_PROPERTY = '$feature/';
+
 // Runs in before_send, on every event. PostHog's own events ("$pageview",
-// "$pageleave", "$snapshot") pass through untouched. Any other event must be
-// one of the five above or it is dropped, and on those five every property
-// that is not PostHog's own must be a listed name holding a listed value or it
-// is removed.
+// "$pageleave", "$snapshot") pass through, and any other event must be one of
+// the six above or it is dropped. On those six every property that is not
+// PostHog's own must be a listed name holding a listed value or it is removed.
+//
+// Feature flags are the exception to "PostHog's own passes through". PostHog
+// names every flag it evaluated on every event, and records a
+// "$feature_flag_called" when one is read. Both are kept for a listed
+// experiment and removed for anything else.
 export function filterCustomEvent<T extends { event: string; properties?: Record<string, unknown> }>(event: T): T | null {
+  const props = event.properties ?? {};
+  for (const key of Object.keys(props)) {
+    if (key.startsWith(FLAG_PROPERTY) && !own(EXPERIMENTS, key.slice(FLAG_PROPERTY.length))) delete props[key];
+  }
+  const active = props.$active_feature_flags;
+  if (Array.isArray(active)) props.$active_feature_flags = active.filter((key) => typeof key === 'string' && own(EXPERIMENTS, key));
+  if (event.event === '$feature_flag_called') {
+    return typeof props.$feature_flag === 'string' && own(EXPERIMENTS, props.$feature_flag) ? event : null;
+  }
+
   if (event.event.startsWith('$')) return event;
   if (!own(CUSTOM_EVENTS, event.event)) return null;
 
   const allowed: Record<string, readonly string[]> = CUSTOM_EVENTS[event.event as CustomEventName];
-  const props = event.properties ?? {};
   for (const key of Object.keys(props)) {
     if (key.startsWith('$') || SDK_PROPERTIES.has(key)) continue;
     if (!own(allowed, key) || !allowed[key].includes(props[key] as string)) delete props[key];
