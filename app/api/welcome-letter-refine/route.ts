@@ -40,6 +40,8 @@ export async function POST(req: Request): Promise<Response> {
       body: JSON.stringify({
         model: OPENAI_TEXT_MODEL,
         reasoning_effort: OPENAI_REASONING_EFFORT,
+        // Opts out of OpenAI's stored completions. Asserted in lib/api-errors.test.ts.
+        store: false,
         messages: [
           {
             role: 'system',
