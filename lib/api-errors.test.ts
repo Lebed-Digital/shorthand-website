@@ -1,5 +1,6 @@
 import { test, beforeEach, afterEach } from 'node:test';
 import assert from 'node:assert/strict';
+import { readdirSync, readFileSync } from 'node:fs';
 import * as nodeModule from 'node:module';
 
 // registerHooks is Node >= 22.15 / 24; @types/node@20 does not declare it yet.
@@ -195,4 +196,34 @@ for (const route of routes) {
     const res = await route.handler(post({ nonsense: true }));
     assert.equal(res.status, 400);
   });
+
+  // Every OpenAI request opts out of stored completions, and nothing a caller
+  // sends may change that. The routes build the upstream payload field by
+  // field and never copy the client body into it; the `store: true` sent here
+  // is what would get through if one ever did.
+  test(`${route.name}: the OpenAI request sends store: false, whatever the client sends`, async () => {
+    const calls: { url: string; body: Record<string, unknown> }[] = [];
+    globalThis.fetch = (async (url: RequestInfo | URL, init?: RequestInit) => {
+      calls.push({ url: String(url), body: JSON.parse(String(init?.body)) });
+      return new Response(JSON.stringify(route.ok), { status: 200, headers: { 'content-type': 'application/json' } });
+    }) as typeof globalThis.fetch;
+
+    const res = await route.handler(post({ ...(route.body as Record<string, unknown>), store: true }));
+
+    assert.equal(res.status, 200);
+    assert.equal(calls.length, 1, 'exactly one upstream request');
+    assert.equal(calls[0].url, 'https://api.openai.com/v1/chat/completions');
+    assert.equal(calls[0].body.store, false);
+  });
 }
+
+// The table above is what makes "every OpenAI request" true. A new route that
+// calls OpenAI without being added to it would ship with no store check.
+test('every API route that calls OpenAI is in the table above', () => {
+  const apiDir = new URL('../app/api/', import.meta.url);
+  const callers = (readdirSync(apiDir, { recursive: true }) as string[])
+    .map((file) => file.replaceAll('\\', '/'))
+    .filter((file) => file.endsWith('route.ts'))
+    .filter((file) => readFileSync(new URL(file, apiDir), 'utf8').includes('OPENAI_CHAT_COMPLETIONS_URL'));
+  assert.equal(callers.length, routes.length, `routes that call OpenAI: ${callers.join(', ')}`);
+});
