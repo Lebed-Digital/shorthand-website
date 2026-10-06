@@ -130,7 +130,7 @@ export default function PrivacyPage() {
               We do not sell your data or student data to anyone. Ever.<br /><br />
               We do not use student data for advertising.<br /><br />
               We do not use data for advertising tracking, including IDFA-based tracking.<br /><br />
-              We do not share your data with third parties except the services required to run ShortHand, listed in Third-Party Services below.<br /><br />
+              We only share data with service providers when needed to operate ShortHand, provide requested features, or maintain the service.<br /><br />
               No other teacher can access your students&apos; information. As the operator, I can access the database directly if needed for support, but I will never do so without your request.
             </div>
           </div>
