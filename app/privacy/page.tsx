@@ -46,17 +46,21 @@ export default function PrivacyPage() {
 
           {/* Plain-language summary */}
           <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
-            <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', marginBottom: '1rem' }}>The short version</div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem' }}>Privacy at a Glance</div>
+            <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', lineHeight: 1.6, margin: '0 0 1rem' }}>A quick summary in plain language. The full policy below has the details.</p>
             <ul style={{ margin: 0, padding: '0 0 0 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.6rem', color: 'var(--text-dim)', lineHeight: 1.6 }}>
-              <li><strong style={{ color: 'var(--text)' }}>Classroom records come from you.</strong> You type or import student notes, parent contacts, accommodations, and related classroom information. We also store the account information needed to sign you in.</li>
-              <li><strong style={{ color: 'var(--text)' }}>We do not use data for advertising tracking.</strong> ShortHand does not sell student data, does not use it to advertise, and does not use advertising identifiers to track you.</li>
-              <li><strong style={{ color: 'var(--text)' }}>Web analytics stay on the web.</strong> The website and web app use analytics and crash-reporting tools described below. Those tools are turned off in the native iOS app.</li>
-              <li><strong style={{ color: 'var(--text)' }}>Your data is encrypted.</strong> All data is stored on Supabase, which is SOC 2 Type II certified and encrypts data at rest with AES-256. Data in transit is protected by HTTPS.</li>
-              <li><strong style={{ color: 'var(--text)' }}>Other teachers can&apos;t see your students.</strong> Row-level security means every query is scoped to your account only: no other teacher can access your data. As the operator, I technically have access to the database, but I commit to never looking at your data unless you ask me to (for example, to help fix a problem).</li>
+              <li><strong style={{ color: 'var(--text)' }}>You decide what goes in.</strong> Only you add student information. Students never create accounts or use ShortHand themselves. <a href="#applies-to" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>Who this applies to</a></li>
+              <li><strong style={{ color: 'var(--text)' }}>Other teachers can&apos;t see your students.</strong> Your records are tied to your account only. <a href="#protection" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>How we protect your data</a></li>
+              <li><strong style={{ color: 'var(--text)' }}>AI features share information with AI providers.</strong> When you use an AI feature, or save a note without choosing tags, the text needed for that task goes to our approved AI providers (currently OpenAI, with Groq as a backup). That text can include student names. Both are set up so your data is not used to train their models. <a href="#ai" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>How ShortHand uses AI</a></li>
+              <li><strong style={{ color: 'var(--text)' }}>No selling, no advertising.</strong> We never sell student information or use it for ads. The website and web app use analytics to operate and improve ShortHand, not to advertise. <a href="#dont-do" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>What we don&apos;t do</a></li>
+              <li><strong style={{ color: 'var(--text)' }}>Encrypted and protected.</strong> Your records are encrypted in storage and whenever they travel between your device and our servers. <a href="#protection" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>How we protect your data</a></li>
+              <li><strong style={{ color: 'var(--text)' }}>You can delete your data.</strong> Export it, erase your student records, or delete your account from Settings at any time. Some billing records may be kept where required. <a href="#your-rights" style={{ color: 'var(--accent)', fontSize: '0.85rem', whiteSpace: 'nowrap' }}>Your rights</a></li>
             </ul>
           </div>
 
-          <div className="privacy-card">
+          {/* The ids below are the jump targets for "Privacy at a Glance".
+              scrollMarginTop keeps the heading clear of the sticky nav. */}
+          <div className="privacy-card" id="applies-to" style={{ scrollMarginTop: '5.5rem' }}>
             <div className="privacy-icon">👤</div>
             <div className="privacy-title">Who This Applies To</div>
             <div className="privacy-desc">
@@ -74,7 +78,7 @@ export default function PrivacyPage() {
             <div className="privacy-desc">
               <strong style={{ color: 'var(--text)' }}>Your account:</strong> Your email address and, if you use email sign-in, your password (managed securely by Supabase Auth). ShortHand also supports Google sign-in and Sign in with Apple. Sign in with Apple is available in the native iOS app and may provide an Apple Private Email Relay address instead of your personal email. We store your name when Google, Apple, or your profile provides it.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Billing and subscription information:</strong>{' '}
-              If you buy ShortHand Pro or another paid feature on the website, Stripe processes the payment. We do not store your card details ourselves. We store subscription or entitlement status and Stripe&apos;s reference IDs for your account. The native iOS app does not sell subscriptions or other in-app purchases. If you already have a Pro subscription or other entitlement from the web, the iOS app can still read that status and give you the matching features.<br /><br />
+              If you buy ShortHand Pro or another paid feature on the website, Stripe processes the payment. We do not store your card details ourselves. We store subscription or entitlement status and Stripe&apos;s reference IDs for your account. A native iOS app is awaiting Apple&apos;s approval and is not yet available. When it is released, it will offer ShortHand Pro as an optional subscription through Apple&apos;s in-app purchase system. Apple will process that payment, and we will not receive your card details. We use RevenueCat to confirm the status of an Apple subscription. RevenueCat receives your ShortHand account ID, details of the Apple purchase such as the product and its renewal date, and basic technical information about the app and device. We do not send RevenueCat student records, notes, or parent information. We store the resulting subscription status with your account. A Pro subscription bought on the web will also work in the iOS app.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Student data you enter:</strong> Information you type or import about your students, which may include names, class periods, notes, behavior tags, goals, attendance, shoutouts, birthday information, calendar-related data, photo URLs, and parent communication logs.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Parent and guardian contact data:</strong> Parent or guardian names, email addresses, and phone numbers, when you enter or import them so you can use parent-communication features.<br /><br />
               <strong style={{ color: 'var(--text)' }}>Disability-related and special-education information:</strong> If you enter IEP, 504, RTI, or other accommodation information, that is stored with the student record. This can include disability-related information you choose to record for your own teaching and documentation.<br /><br />
@@ -85,7 +89,7 @@ export default function PrivacyPage() {
             </div>
           </div>
 
-          <div className="privacy-card">
+          <div className="privacy-card" id="ai" style={{ scrollMarginTop: '5.5rem' }}>
             <div className="privacy-icon">🤖</div>
             <div className="privacy-title">How ShortHand Uses AI</div>
             <div className="privacy-desc">
@@ -111,19 +115,20 @@ export default function PrivacyPage() {
 
           <div className="privacy-card">
             <div className="privacy-icon">📱</div>
-            <div className="privacy-title">The Native iOS App</div>
+            <div className="privacy-title">The Native iOS App (Pending Release)</div>
             <div className="privacy-desc">
+              The native iOS app has been submitted to Apple for review and is not yet available on the App Store. Today, ShortHand is available as the web app at app.getshorthandapp.com. This section, and every mention of the iOS app in this policy, describes the submitted version and applies once it is released.<br /><br />
               The native iOS app stores the same classroom and account data you enter, but it is set up more tightly than the web app:<br /><br />
               Google Analytics, Vercel Analytics, Sentry, and first-party usage analytics and attribution are turned off.<br /><br />
               The app does not write presence records or AI token-usage records.<br /><br />
               The in-app voice dictation controls are hidden.<br /><br />
               There is no advertising SDK, no Identifier for Advertisers (IDFA) tracking, no location collection, no access to device contacts, and no access to the iOS photo library.<br /><br />
-              There is no in-app purchase flow. Existing subscription or entitlement status from the web may still be read so Pro features you already have continue to work.<br /><br />
+              The only in-app purchase is the optional ShortHand Pro subscription, sold through Apple&apos;s in-app purchase system. Subscription status from the web is also read, so Pro features you already have continue to work.<br /><br />
               ShortHand does not use data for advertising tracking on iOS or anywhere else.
             </div>
           </div>
 
-          <div className="privacy-card">
+          <div className="privacy-card" id="dont-do" style={{ scrollMarginTop: '5.5rem' }}>
             <div className="privacy-icon">🚫</div>
             <div className="privacy-title">What We Don&apos;t Do</div>
             <div className="privacy-desc">
@@ -135,7 +140,7 @@ export default function PrivacyPage() {
             </div>
           </div>
 
-          <div className="privacy-card">
+          <div className="privacy-card" id="protection" style={{ scrollMarginTop: '5.5rem' }}>
             <div className="privacy-icon">🔐</div>
             <div className="privacy-title">How We Protect Your Data</div>
             <div className="privacy-desc">
@@ -146,12 +151,13 @@ export default function PrivacyPage() {
             </div>
           </div>
 
-          <div className="privacy-card">
+          <div className="privacy-card" id="your-rights" style={{ scrollMarginTop: '5.5rem' }}>
             <div className="privacy-icon">🗑️</div>
             <div className="privacy-title">Your Rights</div>
             <div className="privacy-desc">
               You can delete all your data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
               You can permanently delete your account, your notes, and your student data from within the app (Settings → Danger Zone → Delete My Account). Billing and subscription records may be retained after deletion where needed for accounting, disputes, fraud prevention, or legal compliance; see our <Link href="/delete-account" style={{ color: 'var(--accent)' }}>account deletion page</Link> for details.<br /><br />
+              An Apple subscription is managed by Apple. Deleting your ShortHand account does not cancel it. You can cancel in your Apple ID settings.<br /><br />
               You can export a copy of all your data at any time (Settings → Your Data → Export My Data).<br /><br />
               In the native iOS app, you can turn AI features off in Settings. After you turn them off, ShortHand does not send further AI requests until you allow them again.<br /><br />
               You can disconnect Google Classroom at any time, which removes your stored Google tokens.<br /><br />
@@ -174,7 +180,8 @@ export default function PrivacyPage() {
               <strong style={{ color: 'var(--text)' }}>Groq:</strong> fallback AI language model processing, used if an OpenAI request fails (<a href="https://groq.com/privacy-policy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Vercel:</strong> hosting, and web analytics on the website and web app (<a href="https://vercel.com/legal/privacy-policy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Google:</strong> Google sign-in and optional Google Classroom integration (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
-              <strong style={{ color: 'var(--text)' }}>Apple:</strong> Sign in with Apple in the native iOS app, including Apple Private Email Relay when you hide your email (<a href="https://www.apple.com/legal/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>Apple:</strong> Sign in with Apple in the native iOS app, including Apple Private Email Relay when you hide your email, and payment processing for in-app subscriptions (<a href="https://www.apple.com/legal/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
+              <strong style={{ color: 'var(--text)' }}>RevenueCat:</strong> confirms Apple subscription status for the native iOS app. Receives your ShortHand account ID and Apple purchase details, not student records (<a href="https://www.revenuecat.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Google Analytics:</strong> website and web-app analytics. Not used in the native iOS app (<a href="https://policies.google.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>PostHog:</strong> website analytics and session replay on the public website (getshorthandapp.com) only. Not used in the ShortHand app or the native iOS app (<a href="https://posthog.com/privacy" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
               <strong style={{ color: 'var(--text)' }}>Sentry:</strong> crash reporting for the web app. Not used in the native iOS app (<a href="https://sentry.io/privacy/" style={{ color: 'var(--accent)' }} target="_blank" rel="noopener noreferrer">privacy policy</a>)<br />
