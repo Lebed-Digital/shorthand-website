@@ -43,12 +43,20 @@ export default function DpaPage() {
       <div className="section-inner" style={{ maxWidth: 760, margin: '0 auto', padding: '0 1.5rem 5rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
-          {/* Download CTA */}
-          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)' }}>Need a signed DPA?</div>
-            <p style={{ color: 'var(--text-dim)', lineHeight: 1.6, margin: 0 }}>
-              Email us at <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a> with your district name and we'll
-              return a countersigned copy within 2 business days. The full agreement terms are below.
+          {/* Plain-language summary for teachers, with the signed-DPA request */}
+          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
+            <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem' }}>What Teachers Should Know</div>
+            <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', lineHeight: 1.6, margin: '0 0 1rem' }}>A plain-language summary for teachers. It does not replace the agreement below. If the two ever differ, the agreement applies.</p>
+            <ul style={{ margin: 0, padding: '0 0 0 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.6rem', color: 'var(--text-dim)', lineHeight: 1.6 }}>
+              <li><strong style={{ color: 'var(--text)' }}>This agreement protects student information.</strong> It sets out how ShortHand must handle the student information teachers enter.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Used only to provide ShortHand.</strong> Student information is never sold and never used for advertising. It is shared only with the service providers needed to run ShortHand, including the AI providers listed in Section 6.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Stored securely.</strong> Stored information is encrypted, and access controls keep each teacher&apos;s records separate.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Deletable.</strong> Teachers can delete their data in Settings at any time, and a school can request deletion under this agreement.</li>
+              <li><strong style={{ color: 'var(--text)' }}>Your school decides what&apos;s approved.</strong> This page does not replace your school or district&apos;s approval process. If your school needs a signed agreement, it can request one.</li>
+            </ul>
+            <p style={{ color: 'var(--text-dim)', lineHeight: 1.6, margin: '1rem 0 0' }}>
+              <a href="mailto:info@getshorthandapp.com?subject=Signed%20DPA%20request" style={{ color: 'var(--accent)', fontWeight: 600 }}>Request a signed DPA →</a>{' '}
+              Email <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a>{' '}with your district name and we&apos;ll return a countersigned copy within 2 business days. The full agreement terms are below.
             </p>
           </div>
 
