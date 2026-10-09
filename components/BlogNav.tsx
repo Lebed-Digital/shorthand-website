@@ -3,6 +3,18 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import AnimatedLogo from './AnimatedLogo';
+import { fireCtaClick } from '../lib/gtag';
+
+// Counted like the library links inside the post (see LibraryCtaBlock.tsx), so
+// the nav button's share of clicks can be read next to theirs. The link is a
+// client-side navigation, so the page stays alive long enough to send it.
+function trackLibraryNav() {
+  fireCtaClick({
+    cta_source: window.location.pathname.split('/').filter(Boolean).pop() ?? 'blog',
+    cta_destination: 'report-card-library-nav',
+    link_url: '/report-card-comment-library',
+  });
+}
 
 export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +35,7 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
           {showLibraryCta ? (
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
               <Link href="https://app.getshorthandapp.com?demo=true" className="nav-link">Get ShortHand</Link>
-              <Link href="/report-card-comment-library" className="btn-primary">Comment library: $4.99</Link>
+              <Link href="/report-card-comment-library" className="btn-primary" onClick={trackLibraryNav}>Comment library: $4.99</Link>
             </div>
           ) : (
             <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
@@ -41,7 +53,7 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
           <Link href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</Link>
           <Link href="/resources" className="nav-mobile-link">Resources</Link>
           {showLibraryCta && (
-            <Link href="/report-card-comment-library" className="nav-mobile-link">Comment library: $4.99</Link>
+            <Link href="/report-card-comment-library" className="nav-mobile-link" onClick={trackLibraryNav}>Comment library: $4.99</Link>
           )}
           <Link href="https://app.getshorthandapp.com?demo=true" className="nav-mobile-link nav-mobile-cta">Get ShortHand →</Link>
         </div>

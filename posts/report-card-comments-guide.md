@@ -103,6 +103,8 @@ The [free Report Card Comment Generator](/report-card-comment-generator) builds 
 
 Treat any generated comment as a draft. Read it, change the details, and make sure it sounds like something you would actually say to that family.
 
+LIBRARYCTAMARKER
+
 ---
 
 ## The comments are only as good as your notes
