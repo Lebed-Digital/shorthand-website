@@ -6,8 +6,39 @@ import RestoreSuccessAnalytics from './RestoreSuccessAnalytics';
 import { evaluateAccess } from '@/lib/report-card-gate';
 import { getFreeSliceData, getFullLibrary } from '@/lib/report-card-teaser';
 
+// Link-preview metadata only. Without it this page inherits the homepage's
+// title, description, og:url and canonical from app/layout.tsx, so a link to
+// the library shared on social previews as the ShortHand homepage. Still
+// noindex: whether this page should be indexed is a separate decision.
+const LIBRARY_URL = 'https://getshorthandapp.com/report-card-comment-library';
+const LIBRARY_TITLE = 'Report Card Comment Library | ShortHand';
+const LIBRARY_DESCRIPTION =
+  "Ready-to-use report card comments for Pre-K through grade 5. Type a student's name once, search or filter, and copy. Try a free sample with no sign-up. The full library is a one-time $4.99.";
+
 export const metadata: Metadata = {
-  title: 'Report Card Comment Library',
+  title: LIBRARY_TITLE,
+  description: LIBRARY_DESCRIPTION,
+  alternates: { canonical: LIBRARY_URL },
+  openGraph: {
+    title: LIBRARY_TITLE,
+    description: LIBRARY_DESCRIPTION,
+    url: LIBRARY_URL,
+    type: 'website',
+    images: [
+      {
+        url: 'https://getshorthandapp.com/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Report Card Comment Library from ShortHand',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: LIBRARY_TITLE,
+    description: LIBRARY_DESCRIPTION,
+    images: ['https://getshorthandapp.com/og-image.png'],
+  },
   robots: { index: false, follow: false },
 };
 

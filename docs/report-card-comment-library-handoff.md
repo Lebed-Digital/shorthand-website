@@ -3348,3 +3348,102 @@ reproducible (`reuseExistingServer` locally) without changing their behavior.
 4. **Confirm no PII in GA4** by inspecting an event's parameters in DebugView.
 5. Register the new events as GA4 conversions/key events if they should appear
    in reporting, and build the §24.8 funnel exploration.
+
+---
+
+## 25. Report card season CTA pass (2026-10-08)
+
+**Status: shipped as an experiment, unproven.** Same rule as §23: this section
+is the baseline and the change point for a later read, not a result.
+
+### 25.1 Baseline being replaced
+
+GA4, 2026-08-20 to 2026-10-07 (49 days, off season), measured after the §23
+rewrite:
+
+| Metric | Value |
+| --- | --- |
+| Sessions on the 9 posts carrying the inline CTA | 1,118 |
+| Inline CTA clicks (`report-card-library-inline` 6 + `-inline-button` 3) | 9 |
+| CTA click-through rate | ~0.8% |
+| `library_page_view` | 8 |
+| `name_entered` / `filter_used` / `free_comment_copied` | 1 / 1 / 2 |
+| `locked_comment_clicked` / `begin_checkout` / `purchase` | 0 / 0 / 0 |
+
+Sessions by post: behavior 393, preschool 353, struggling students 135,
+preschool behavior 84, ADHD 79, social-emotional 59, second grade 10, generator
+post 3, progress reports 2. Clicks by post: preschool 3, preschool behavior 2,
+ADHD 2, struggling students 1, social-emotional 1, **behavior 0**.
+
+So §23 moved the click rate from ~0.6% to ~0.8%, which is no real change, and
+the funnel still ends before the paywall: 8 library views in 7 weeks is too few
+to say anything about the paywall itself.
+
+### 25.2 Hypothesis
+
+Three things were holding the click back, none of them the plumbing:
+
+1. **One placement, a third of the way down.** A reader who took a comment from
+   the first section, or jumped to a later one, never met it. On a phone it was
+   the only library mention on the page: the nav button sits behind the
+   hamburger there.
+2. **The block never said the click was free.** The paywall has been a working
+   sample since 2026-09-12 (PR #82: search, filters, name fill and copy on
+   real comments, no sign-up). The blog block still read as a link to a
+   checkout: "Find your comments faster", then a price.
+3. **Free and paid were not told apart.** A reader on a page of 120 free
+   comments had to work out for themselves what $4.99 buys.
+
+### 25.3 What changed
+
+- **`components/LibraryCtaBlock.tsx`** rewritten. On comment-list posts the
+  mid-post block is now a side-by-side: "This page / Free" against "The library
+  / $4.99 once". Speed still leads (§23): name fill, then search and filters,
+  then the count. Button is "Try {free count} comments free". Counts and
+  section names are passed from `getFreeSliceData()`, not typed.
+- **New note under the subtitle** (`LibraryCtaLine`), one sentence, unboxed.
+- **New block at the end of the post**, before the FAQ. Skipped on a post whose
+  own body already links the library (today: the social-emotional post).
+- **`report-card-comments-guide`** added to `LIBRARY_CTA_INTROS` with a marker
+  in its "first draft" section. It and the generator post are in
+  `LIBRARY_CTA_SHORT_ONLY`: one short block, no comparison, no note, no end
+  block, because neither is itself a list of comments.
+- **Nav button tracked** (`components/BlogNav.tsx`). It was a plain link before,
+  so its clicks were invisible.
+- **Shortlinks** in `next.config.ts`: `/comments` and `/comment` to the library,
+  `/reportcards` and `/reportcard` to the guide, with UTMs.
+- **Link-preview metadata** on `/report-card-comment-library`. It was inheriting
+  the homepage's title, description, `og:url` and canonical. Still `noindex`.
+
+### 25.4 Deliberately not changed
+
+The free comments in every post, headings, titles, meta descriptions, marker
+positions, the per-post intros, the paywall and paid views, checkout, access,
+price, and the free generator. **The kindergarten post still has no library CTA:**
+that was deferred by Greg on 2026-09-28 pending a decision on a kindergarten
+section, and this pass did not reopen it.
+
+### 25.5 Tracking note for the later read
+
+Event is still `cta_click`, `cta_source` is still the post slug.
+`cta_destination` values:
+
+- `report-card-library-inline`, `report-card-library-inline-button`: unchanged,
+  the mid-post block. Comparable with §23 and §25.1.
+- `report-card-library-top`: new, the note under the subtitle.
+- `report-card-library-end`, `report-card-library-end-button`: new, the end block.
+- `report-card-library-nav`: new, the nav button.
+
+Read total clicks per post as the sum of all six. Compare the two `inline`
+values alone against §25.1 to see what the new copy did at the old position.
+Social arrivals carry `utm_campaign=report_card_library` (library) or
+`report_card_comments` (guide and posts).
+
+### 25.6 Verification performed
+
+`tsc --noEmit` clean, `next build` clean, 103 unit tests pass, eslint clean on
+every changed file. `tests/library-cta.spec.ts` (new, 11 tests) checks each
+placement, each `cta_destination`, the exclusions, and both shortlinks in a
+real browser. Built HTML checked for all 10 posts: correct placements, live 374
+and 20, no leftover marker, no tag glued to the next word. Client bundle
+re-checked for library comment text: unchanged from before this pass.
