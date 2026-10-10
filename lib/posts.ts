@@ -151,12 +151,43 @@ export function addInlineCtaTracking(contentHtml: string, slug: string): string 
   return html;
 }
 
+// Gives every heading an id, so a post's own "Jump to a section" links
+// (`[When behavior is strong](#when-behavior-is-strong)`) have somewhere to
+// land. remark-html emits a bare <h2>, so without this those links do nothing.
+//
+// Same rule GitHub uses for markdown headings, which is what the links in the
+// posts were written against: lowercase, punctuation dropped, each space to a
+// hyphen, and a repeated heading gets -1, -2. lib/posts.test.ts checks every
+// such link in every post against it.
+//
+// A heading can also name its own id, written `## Title {#my-id}`. remark does
+// not know that syntax and printed the braces as part of the heading, so here
+// the id is used and the marker is taken out of the visible text.
+export function addHeadingIds(contentHtml: string): string {
+  const seen = new Map<string, number>();
+  return contentHtml.replace(/<h([1-6])>([\s\S]*?)<\/h\1>/g, (whole, level: string, inner: string) => {
+    const named = inner.match(/\s*\{#([\w-]+)\}\s*$/);
+    if (named) return `<h${level} id="${named[1]}">${inner.slice(0, named.index)}</h${level}>`;
+    const base = inner
+      .replace(/<[^>]+>/g, '')
+      .replace(/&[#\w]+;/g, '')
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}\s_-]/gu, '')
+      .trim()
+      .replace(/\s/g, '-');
+    if (!base) return whole;
+    const count = seen.get(base) ?? 0;
+    seen.set(base, count + 1);
+    return `<h${level} id="${count === 0 ? base : `${base}-${count}`}">${inner}</h${level}>`;
+  });
+}
+
 export async function getPost(slug: string): Promise<Post> {
   const raw = fs.readFileSync(path.join(postsDir, `${slug}.md`), 'utf8');
   const { data, content } = matter(raw);
   const processed = await remark().use(remarkGfm).use(html).process(content);
   const contentHtml = addInlineCtaTracking(
-    processed.toString()
+    addHeadingIds(processed.toString())
       .replace(/<table>/g, '<div class="table-wrapper"><table>')
       .replace(/<\/table>/g, '</table></div>'),
     slug
