@@ -138,6 +138,31 @@ const nextConfig: NextConfig = {
         destination: '/blog/best-apps-for-teacher-parent-communication-2026?utm_source=social&utm_medium=organic_social&utm_campaign=parent_communication_apps',
         permanent: false,
       },
+      // Report card season, added 2026-10-08 ahead of the social campaign and
+      // not yet printed in any video or caption. /comments is the paid library
+      // (its page opens on the free sample), /reportcards is the guide that
+      // links every free comment list. Singular spellings for the same reason
+      // as /letter.
+      {
+        source: '/comments',
+        destination: '/report-card-comment-library?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_library',
+        permanent: false,
+      },
+      {
+        source: '/comment',
+        destination: '/report-card-comment-library?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_library',
+        permanent: false,
+      },
+      {
+        source: '/reportcards',
+        destination: '/blog/report-card-comments-guide?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_comments',
+        permanent: false,
+      },
+      {
+        source: '/reportcard',
+        destination: '/blog/report-card-comments-guide?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_comments',
+        permanent: false,
+      },
     ];
   },
   async headers() {

@@ -5,14 +5,14 @@ import BlogNav from '../../../components/BlogNav';
 import TrackedLink from '../../../components/TrackedLink';
 import PdfGate from '../../../components/PdfGate';
 import ResourceOffer from '../../../components/ResourceOffer';
-import LibraryCtaBlock from '../../../components/LibraryCtaBlock';
+import LibraryCtaBlock, { LibraryCtaLine, type LibraryFacts } from '../../../components/LibraryCtaBlock';
 import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
 import TrackedBlogContent from '../../../components/TrackedBlogContent';
 import BlogExampleCopyTracker from '../../../components/BlogExampleCopyTracker';
 import BlogCtaExperiment from '../../../components/BlogCtaExperiment';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
-import { REPORT_CARD_COMMENTS } from '../../../lib/report-card-comments';
+import { getFreeSliceData } from '../../../lib/report-card-teaser';
 import { BLOG_CTA_EXPERIMENT_POST, blogExampleType } from '../../../lib/posthog-events';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
@@ -56,8 +56,8 @@ const WORKFLOW_BRIDGES: Record<string, {
 };
 
 // Intro sentence is post-specific so the CTA speaks to what that page just
-// covered; the count always comes from REPORT_CARD_COMMENTS.length above, so
-// it can never silently go stale if the library grows.
+// covered; the counts always come from LIBRARY_FACTS below, so they can never
+// silently go stale if the library grows.
 // Three intros were reworded 2026-08-20 so they hand off to a speed/findability
 // offer instead of a "more comments" one. See components/LibraryCtaBlock.tsx.
 const LIBRARY_CTA_INTROS: Record<string, string> = {
@@ -79,7 +79,26 @@ const LIBRARY_CTA_INTROS: Record<string, string> = {
     'Writing comments beyond second grade behavior too?',
   'free-report-card-comment-generator':
     'This generator creates one comment from what you select. If you would rather search ready-made comments and copy the one that fits:',
+  'report-card-comments-guide':
+    'If you would rather pick a ready-made comment than edit a generated draft:',
 };
+
+// Posts in LIBRARY_CTA_INTROS that are not themselves a list of comments. They
+// keep the one short mid-post block. Every other post in the map is a comment
+// list and also gets the note under the subtitle, the "this page / the
+// library" comparison, and a block at the end of the post.
+const LIBRARY_CTA_SHORT_ONLY = new Set(['free-report-card-comment-generator', 'report-card-comments-guide']);
+
+// What the library CTAs quote, read from the same server-only module the
+// paywall uses. Counts and section names only cross to the client components.
+const LIBRARY_FACTS: LibraryFacts = (() => {
+  const { totalCount, freeCount, sections } = getFreeSliceData();
+  return { totalCount, freeCount, sections: sections.map((s) => s.label) };
+})();
+
+// A post body that already links the library in its own words (the
+// social-emotional post closes on it) does not get the end block as well.
+const LIBRARY_BODY_LINK = 'href="/report-card-comment-library"';
 
 // Ungated resource placements. Unlike PDF_GATES below, these hand over the file
 // immediately and only then offer an optional email, matching the "No sign-up
@@ -212,6 +231,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
   const allPosts = getAllPosts();
   const relatedPosts = getRelatedPosts(slug, allPosts);
   const exampleType = blogExampleType(slug);
+  const libraryIntro = LIBRARY_CTA_INTROS[slug];
+  const isCommentList = Boolean(libraryIntro) && !LIBRARY_CTA_SHORT_ONLY.has(slug);
 
   const blogPostingSchema = {
     "@context": "https://schema.org",
@@ -260,7 +281,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           library is what the reader is most likely to want next, and the app
           becomes the secondary link. LIBRARY_CTA_INTROS already enumerates
           exactly that set of posts, so the two cannot drift apart. */}
-      <BlogNav showLibraryCta={Boolean(LIBRARY_CTA_INTROS[slug])} />
+      <BlogNav showLibraryCta={Boolean(libraryIntro)} />
       {exampleType && <BlogExampleCopyTracker exampleType={exampleType} />}
       {slug === BLOG_CTA_EXPERIMENT_POST && <BlogCtaExperiment />}
 
@@ -281,6 +302,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             {post.subtitle}
           </p>
         )}
+
+        {isCommentList && <LibraryCtaLine sourceSlug={slug} library={LIBRARY_FACTS} />}
 
         {WORKFLOW_BRIDGES[slug] && post.contentHtml.includes(WORKFLOW_BRIDGE_MARKER) ? (
           <div className="blog-content">
@@ -308,14 +331,15 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <PdfGate {...PDF_GATES[slug]} />
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(PDF_GATE_MARKER)[1] }} />
           </div>
-        ) : LIBRARY_CTA_INTROS[slug] && post.contentHtml.includes(LIBRARY_CTA_MARKER) ? (
+        ) : libraryIntro && post.contentHtml.includes(LIBRARY_CTA_MARKER) ? (
           <div className="blog-content">
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(LIBRARY_CTA_MARKER)[0] }} />
             <LibraryCtaBlock
               sourceSlug={slug}
               placement="report-card-library-inline"
-              totalCount={REPORT_CARD_COMMENTS.length}
-              intro={LIBRARY_CTA_INTROS[slug]}
+              intro={libraryIntro}
+              library={LIBRARY_FACTS}
+              compare={isCommentList}
             />
             <div dangerouslySetInnerHTML={{ __html: post.contentHtml.split(LIBRARY_CTA_MARKER)[1] }} />
           </div>
@@ -327,6 +351,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </div>
         ) : (
           <TrackedBlogContent className="blog-content" html={post.contentHtml} />
+        )}
+
+        {isCommentList && !post.contentHtml.includes(LIBRARY_BODY_LINK) && (
+          <div className="blog-content">
+            <LibraryCtaBlock
+              sourceSlug={slug}
+              placement="report-card-library-end"
+              intro="Still have most of your class to write?"
+              library={LIBRARY_FACTS}
+            />
+          </div>
         )}
 
         {post.faq && post.faq.length > 0 && (
