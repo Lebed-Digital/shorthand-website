@@ -31,6 +31,8 @@ RESOURCEOFFERMARKER
 
 ![Free printable parent teacher conference form with sections for student strengths, academic concerns, behavior concerns, parent questions, and an action plan](/blog-illustrations/parent-teacher-conference-form-screenshot.webp)
 
+Dreading one conference in particular? There is a [practice prompt for ChatGPT's voice mode](#practice-prompt) further down this page.
+
 ## What's on this parent teacher conference form
 
 This template is one page per student on purpose. If you are preparing for 20 or 25 conferences, you do not need a packet for every child.
@@ -171,6 +173,34 @@ You can also make the meeting easier by asking families for input ahead of time.
 These questions are not printed on the PDF. They are just an optional way to collect information before the meeting. If families answer ahead of time, you can jot the important points in the Parent Questions & Input section before the conference even starts.
 
 Looking for questions to ask during the conference itself? See [questions to ask parents at a parent teacher conference](/blog/what-to-say-at-parent-teacher-conference).
+
+## Practice the hard conference out loud first {#practice-prompt}
+
+Most conferences go fine. It is usually one or two on the schedule that you keep thinking about the night before.
+
+One way to get ready is to say the hard part out loud before the real meeting. ChatGPT's voice mode can play the parent while you play yourself. Paste the prompt below into ChatGPT, switch to voice, and start talking.
+
+Use a made-up student. Do not enter a real student's name or details.
+
+> Let's do a voice role-play so I can practice a difficult parent-teacher conference. Everything here is fictional. Riley is a made-up third grader, not a real student.
+>
+> You play Riley's parent. I am Riley's teacher. I asked for this conference because Riley has been calling out and leaving their seat during math lessons for about three weeks.
+>
+> How to play the parent:
+>
+> - You are frustrated and a little defensive, never abusive. You love your kid and you feel blamed.
+> - Talk like a real person. One or two sentences at a time, then stop and let me answer.
+> - React to what I actually say. If I am vague, blame Riley, or get defensive, push back the way a real parent would. If I give a specific example and a clear next step, start to soften.
+> - Do not agree just to be polite, and do not calm down just because I apologized.
+> - Stay in character until I say "pause the role-play."
+>
+> When I say "pause the role-play," step out of character and tell me, in three short sentences: one thing I did well, the one thing I said that made you more defensive, and a better way to say it.
+>
+> Start now, in character, with your first line as the parent.
+
+Change the grade, the subject, and the concern to match the conference you are getting ready for, and keep the student made up.
+
+It is practice, not a prediction. A real parent will say things the practice round did not. When you find a way of saying it that works, write that specific example and next step on the real student's form.
 
 ## When the paper form is not enough
 

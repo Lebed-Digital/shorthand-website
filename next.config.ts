@@ -163,6 +163,19 @@ const nextConfig: NextConfig = {
         destination: '/blog/report-card-comments-guide?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_comments',
         permanent: false,
       },
+      // Conference season, added 2026-10-13 for the ChatGPT Voice practice
+      // Short and not yet printed in any video or caption. Plural spelling for
+      // the same reason as /letter.
+      {
+        source: '/conference',
+        destination: '/blog/parent-teacher-conference-form?utm_source=social&utm_medium=organic_social&utm_campaign=conference_form',
+        permanent: false,
+      },
+      {
+        source: '/conferences',
+        destination: '/blog/parent-teacher-conference-form?utm_source=social&utm_medium=organic_social&utm_campaign=conference_form',
+        permanent: false,
+      },
     ];
   },
   async headers() {
