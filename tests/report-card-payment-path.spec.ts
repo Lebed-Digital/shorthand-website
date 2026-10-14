@@ -114,6 +114,42 @@ test('the bottom CTA reports a distinct source so the two buttons can be compare
   expect(eventsNamed(captured, 'begin_checkout')[0].cta_source).toBe('paywall-bottom');
 });
 
+test('the buy strip under the sample filters starts checkout with its own source', async ({
+  page,
+}) => {
+  const captured = await captureEvents(page);
+  const createSession = await stubCreateSession(page);
+
+  await page.goto(LIBRARY);
+  await expect(page.getByText('$4.99 one-time purchase, no subscription.')).toBeVisible();
+  await page.getByRole('button', { name: /unlock all \d+ comments/i }).click();
+
+  await expect.poll(() => createSession.calls).toBe(1);
+  await expect.poll(() => eventsNamed(captured, 'begin_checkout').length).toBe(1);
+  expect(eventsNamed(captured, 'begin_checkout')[0].cta_source).toBe('paywall-sample');
+});
+
+test('a checkout error shows beside the button that was used, not further down the page', async ({
+  page,
+}) => {
+  await stubCreateSession(page, {
+    status: 500,
+    body: { error: { message: 'Could not start checkout. Please try again.' } },
+  });
+
+  await page.goto(LIBRARY);
+  await page.getByRole('button', { name: /unlock all \d+ comments/i }).click();
+
+  // Exactly one message, and it sits above the first free comment, which is
+  // where the strip is. The offer card far below must stay quiet.
+  const alert = page.locator('p[role="alert"]');
+  await expect(alert).toHaveCount(1);
+  await expect(alert).toContainText(/could not start checkout/i);
+  const alertBox = await alert.boundingBox();
+  const firstCopyBox = await page.getByRole('button', { name: /^Copy$/ }).first().boundingBox();
+  expect(alertBox!.y).toBeLessThan(firstCopyBox!.y);
+});
+
 test('a failed create-session reports checkout_start_failed and never a purchase', async ({
   page,
 }) => {

@@ -35,7 +35,9 @@ import {
 
 export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
   const [starting, setStarting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  // The error is kept with the buy button that caused it, so it renders next
+  // to that button instead of in a card that may be thousands of pixels away.
+  const [error, setError] = useState<{ source: string; message: string } | null>(null);
   const [name, setName] = useState('');
   const [search, setSearch] = useState('');
   const [section, setSection] = useState<Section | 'all'>('all');
@@ -96,12 +98,10 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
     setCopiedId(comment.id);
     setTimeout(() => setCopiedId((current) => (current === comment.id ? null : current)), 2000);
     fireFreeCommentCopied(comment.section);
-    // The first successful copy is the moment the slice has proven itself, so
-    // that is when the offer comes back, rather than on page load.
-    if (!hasCopied) {
-      setHasCopied(true);
-      revealCheckout();
-    }
+    // Drives the "one comment down" line in the offer card. It deliberately does
+    // not scroll there: the buy strip under the filters is already in reach, and
+    // pulling the visitor away from the comments interrupted the sample.
+    setHasCopied(true);
   }
 
   function onLockedClick() {
@@ -110,7 +110,8 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
   }
 
   // `source` identifies which buy button was used, so the CTAs can be compared
-  // in GA4 instead of collapsing into one.
+  // in GA4 instead of collapsing into one: paywall-sample (strip under the
+  // filters), paywall-hero (offer card), paywall-bottom.
   async function startCheckout(source: string) {
     setStarting(true);
     setError(null);
@@ -122,17 +123,26 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
       const res = await fetch('/api/report-card-checkout/create-session', { method: 'POST' });
       const data = await res.json();
       if (!res.ok || !data?.url) {
-        setError(data?.error?.message ?? 'Could not start checkout. Please try again.');
+        setError({ source, message: data?.error?.message ?? 'Could not start checkout. Please try again.' });
         setStarting(false);
         fireCheckoutStartFailed(res.status === 429 ? 'rate_limited' : 'session_create_failed');
         return;
       }
       window.location.href = data.url;
     } catch {
-      setError('Could not start checkout. Please try again.');
+      setError({ source, message: 'Could not start checkout. Please try again.' });
       setStarting(false);
       fireCheckoutStartFailed('network');
     }
+  }
+
+  function checkoutError(source: string) {
+    if (error?.source !== source) return null;
+    return (
+      <p style={{ fontSize: 13, color: '#dc2626', margin: '10px 0 0' }} role="alert">
+        {error.message}
+      </p>
+    );
   }
 
   return (
@@ -182,7 +192,8 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
             style={inputStyle}
           />
           <p style={{ fontSize: 12, color: '#64748b', margin: '6px 0 14px' }}>
-            The name fills into every comment below, and into all {slice.totalCount} after you buy.
+            The name fills into every comment below. The full library has the same name field, for all{' '}
+            {slice.totalCount} comments.
           </p>
 
           <input
@@ -235,6 +246,21 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
               </button>
             ))}
           </div>
+
+          <div style={buyStripStyle}>
+            <p style={{ flex: '999 1 200px', fontSize: 14, color: '#334155', margin: 0, lineHeight: 1.5 }}>
+              <strong style={{ color: '#0f172a' }}>Want all {slice.totalCount}?</strong>{' '}
+              $4.99 one-time purchase, no subscription.
+            </p>
+            <button
+              onClick={() => startCheckout('paywall-sample')}
+              disabled={starting}
+              style={{ ...buyButtonStyle(starting), width: 'auto', flex: '1 0 auto', fontSize: 14, padding: '10px 16px' }}
+            >
+              {starting ? 'Starting checkout...' : `Unlock all ${slice.totalCount} comments`}
+            </button>
+          </div>
+          {checkoutError('paywall-sample')}
 
           <p style={resultCountStyle}>
             {filtered.length} of {slice.freeCount} free comments
@@ -295,11 +321,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
           <button onClick={() => startCheckout('paywall-hero')} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : 'Get the full library'}
           </button>
-          {error && (
-            <p style={{ fontSize: 13, color: '#dc2626', margin: '10px 0 0' }} role="alert">
-              {error}
-            </p>
-          )}
+          {checkoutError('paywall-hero')}
           <p style={{ fontSize: 12, color: '#94a3b8', margin: '12px 0 0' }}>
             Already bought it?{' '}
             <Link href="/report-card-comment-library/restore" style={{ color: '#0d9488', fontWeight: 600 }}>
@@ -334,6 +356,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
           <button onClick={() => startCheckout('paywall-bottom')} disabled={starting} style={buyButtonStyle(starting)}>
             {starting ? 'Starting checkout...' : `Get all ${slice.totalCount} comments for $4.99`}
           </button>
+          {checkoutError('paywall-bottom')}
         </div>
       </div>
     </div>
@@ -498,6 +521,18 @@ function chipStyle(active: boolean): React.CSSProperties {
     color: active ? '#fff' : '#475569',
   };
 }
+
+const buyStripStyle: React.CSSProperties = {
+  display: 'flex',
+  flexWrap: 'wrap',
+  alignItems: 'center',
+  gap: 10,
+  background: '#f8fafc',
+  border: '1.5px solid #0d9488',
+  borderRadius: 12,
+  padding: '12px 14px',
+  margin: '16px 0 0',
+};
 
 const resultCountStyle: React.CSSProperties = {
   fontSize: 12,

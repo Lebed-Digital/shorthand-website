@@ -204,6 +204,20 @@ test.describe('free slice', () => {
     expect(copied).toBe('Cassius wrote this himself.');
   });
 
+  test('copying a comment leaves the visitor where they are', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto(LIBRARY);
+
+    // The first copy used to smooth-scroll to the offer card, thousands of
+    // pixels below on a phone. The buy strip under the filters replaced that.
+    await commentCards(page).first().click();
+    await expect(page.getByRole('button', { name: 'Copied!' })).toBeVisible();
+    const before = await page.evaluate(() => window.scrollY);
+    await page.waitForTimeout(800);
+    expect(await page.evaluate(() => window.scrollY)).toBe(before);
+    await expect(page.getByText(/That is one comment down/)).toBeAttached();
+  });
+
   test('fires the free-slice funnel events, without duplicates', async ({ page, context }) => {
     await context.grantPermissions(['clipboard-read', 'clipboard-write']);
     const captured = await captureEvents(page);

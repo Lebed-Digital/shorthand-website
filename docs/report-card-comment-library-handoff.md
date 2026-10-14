@@ -3187,8 +3187,15 @@ before report card season.
 | `restore_purchase_success` | `RestoreSuccessAnalytics`, on the library page when reached with `?restored=1` | `product_key` |
 | `restore_purchase_failure` | `RestoreFailureAnalytics`, on the restore-failed page | `product_key`, `reason` (`busy` / `link`) |
 
-`cta_source` is `paywall-hero` or `paywall-bottom`, distinguishing the two buy
-buttons that both call `startCheckout`.
+`cta_source` is `paywall-sample`, `paywall-hero` or `paywall-bottom`,
+distinguishing the three buy buttons that all call `startCheckout`.
+`paywall-sample` is the compact strip under the sample's filter chips, added
+2026-10-13 because the offer card (`paywall-hero`) sat about 5,674px down a
+390px-wide phone, after all 20 free comments. The same change removed the
+auto-scroll to the offer card after a visitor's first copy, corrected the name
+helper line (the typed name does not carry into the paid library, which starts
+with a blank name field), and made a checkout error render beside the button
+that was used.
 
 ### 24.3 The `purchase` event fires only on confirmed fulfillment
 
