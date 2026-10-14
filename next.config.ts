@@ -176,6 +176,21 @@ const nextConfig: NextConfig = {
         destination: '/blog/parent-teacher-conference-form?utm_source=social&utm_medium=organic_social&utm_campaign=conference_form',
         permanent: false,
       },
+      // Seating chart prompt, added 2026-10-14 for the "Comment CHART" video
+      // and meant to be typed from a caption. Next passes the incoming query
+      // through, so a link that already carries its own utm_source keeps it
+      // (second rule), and a bare typed /chart gets the house defaults (first).
+      {
+        source: '/chart',
+        missing: [{ type: 'query', key: 'utm_source' }],
+        destination: '/free-seating-chart-prompt?utm_source=social&utm_medium=organic_social&utm_campaign=seating_chart_prompt',
+        permanent: false,
+      },
+      {
+        source: '/chart',
+        destination: '/free-seating-chart-prompt',
+        permanent: false,
+      },
     ];
   },
   async headers() {

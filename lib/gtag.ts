@@ -163,6 +163,13 @@ export function fireFreeCommentCopied(section: string): void {
   captureEvent('tool_output_copied', { tool: 'comment-library' });
 }
 
+// The Copy button on /free-seating-chart-prompt. Never the prompt text.
+// Mirrored to PostHog as tool_output_copied, like the other free tools.
+export function fireSeatingChartPromptCopied(): void {
+  fireEvent('seating_chart_prompt_copied', { cta_page: window.location.pathname });
+  captureEvent('tool_output_copied', { tool: 'seating-chart-prompt' });
+}
+
 export function fireLockedCommentClicked(section: string): void {
   fireEvent('locked_comment_clicked', { product_key: RCCL_PRODUCT_KEY, section });
 }

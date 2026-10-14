@@ -62,7 +62,7 @@ export const CUSTOM_EVENTS = {
   },
   // The visitor pressed Copy on a tool's result. Never the copied text.
   tool_output_copied: {
-    tool: ['report-card-comment', 'welcome-letter', 'comment-library'],
+    tool: ['report-card-comment', 'welcome-letter', 'comment-library', 'seating-chart-prompt'],
   },
   // The visitor copied one of the examples a blog post publishes (an email
   // template, a report card comment). Which kind and which one by position,

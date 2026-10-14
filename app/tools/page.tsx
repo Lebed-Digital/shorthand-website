@@ -56,6 +56,17 @@ const tools = [
     tag: 'Free Printable',
     signals: ['Free to use', 'No sign-up required', 'Print-ready'],
   },
+  {
+    title: 'AI Seating Chart Prompt',
+    description:
+      'Snap a photo of your empty classroom, paste this prompt into ChatGPT, and get a clean seating chart to start from.',
+    href: '/free-seating-chart-prompt',
+    label: 'Get the Prompt',
+    accent: '#0369a1',
+    bg: '#f0f9ff',
+    tag: 'Free ChatGPT Prompt',
+    signals: ['Free to use', 'No sign-up required', 'Works with ChatGPT'],
+  },
 ];
 
 export default function ToolsPage() {
