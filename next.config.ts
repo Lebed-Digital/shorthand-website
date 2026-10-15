@@ -191,6 +191,19 @@ const nextConfig: NextConfig = {
         destination: '/free-seating-chart-prompt',
         permanent: false,
       },
+      // Week at a glance prompt, added 2026-10-15 for the "Comment GLANCE"
+      // video. Same two-rule pattern as /chart above.
+      {
+        source: '/glance',
+        missing: [{ type: 'query', key: 'utm_source' }],
+        destination: '/week-at-a-glance?utm_source=social&utm_medium=organic_social&utm_campaign=week_at_a_glance',
+        permanent: false,
+      },
+      {
+        source: '/glance',
+        destination: '/week-at-a-glance',
+        permanent: false,
+      },
     ];
   },
   async headers() {

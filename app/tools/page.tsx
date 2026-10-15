@@ -67,6 +67,17 @@ const tools = [
     tag: 'Free ChatGPT Prompt',
     signals: ['Free to use', 'No sign-up required', 'Works with ChatGPT'],
   },
+  {
+    title: 'Week at a Glance Prompt',
+    description:
+      'Paste your lesson plans, specials, homework, and reminders into ChatGPT and get a one-page Monday to Friday overview to print.',
+    href: '/week-at-a-glance',
+    label: 'Get the Prompt',
+    accent: '#b45309',
+    bg: '#fffbeb',
+    tag: 'Free ChatGPT Prompt',
+    signals: ['Free to use', 'No sign-up required', 'Works with ChatGPT'],
+  },
 ];
 
 export default function ToolsPage() {

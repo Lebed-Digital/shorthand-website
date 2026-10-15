@@ -37,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/back-to-school-toolkit`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/tools/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/free-seating-chart-prompt`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/week-at-a-glance`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/press`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/tools`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
