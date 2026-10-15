@@ -6,10 +6,10 @@ import RestoreSuccessAnalytics from './RestoreSuccessAnalytics';
 import { evaluateAccess } from '@/lib/report-card-gate';
 import { getFreeSliceData, getFullLibrary } from '@/lib/report-card-teaser';
 
-// Link-preview metadata only. Without it this page inherits the homepage's
-// title, description, og:url and canonical from app/layout.tsx, so a link to
-// the library shared on social previews as the ShortHand homepage. Still
-// noindex: whether this page should be indexed is a separate decision.
+// Without this metadata the page inherits the homepage's title, description,
+// og:url and canonical from app/layout.tsx. Robots is left to the layout
+// (index, follow): crawlers have no access cookie, so they only ever get the
+// free-slice paywall below, never the paid library.
 const LIBRARY_URL = 'https://getshorthandapp.com/report-card-comment-library';
 const LIBRARY_TITLE = 'Report Card Comment Library | ShortHand';
 const LIBRARY_DESCRIPTION =
@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     description: LIBRARY_DESCRIPTION,
     images: ['https://getshorthandapp.com/og-image.png'],
   },
-  robots: { index: false, follow: false },
 };
 
 // Reads cookies, so it must render per request. Never cache: a cached paid
