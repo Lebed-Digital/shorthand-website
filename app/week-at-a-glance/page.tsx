@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
-import TrackedLink from '../../components/TrackedLink';
+import FreeToolsCta from '../../components/FreeToolsCta';
 import { ChatGptLink, PrintButton, PromptBox } from './PromptClient';
 
 const PAGE_URL = 'https://getshorthandapp.com/week-at-a-glance';
@@ -33,15 +33,32 @@ const LETTER_COLORS = ['#e2725b', '#34d399', '#f59e0b', '#60a5fa', '#a78bfa', '#
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
-// Fictional third grade week. Generic skills only, no curriculum titles.
-const EXAMPLE_ROWS: [string, string[]][] = [
-  ['Reading', ['Main idea: anchor chart + model', 'Main idea vs. details practice', 'Small groups: nonfiction text', 'Text features scavenger hunt', 'Main idea quick check']],
-  ['Math', ['Arrays with counters', 'Arrays to multiplication sentences', 'Multiply by 2 and 5', 'Multiply by 10', 'Quiz: lessons 1 to 4']],
-  ['Writing', ['Opinion writing: pick a topic', 'Reasons and examples', 'Draft paragraph 1', 'Draft paragraph 2', 'Partner share + revise']],
-  ['Science', ['Life cycles: butterfly', 'Life cycle picture sort', 'No science (early dismissal)', 'Frog vs. butterfly chart', 'Life cycle exit ticket']],
-  ['Specials', ['Art', 'PE', 'Music', 'Library', 'PE']],
-  ['Homework', ['Spelling list 6', 'Math practice: arrays', 'Read 20 minutes', 'Math practice: x10', 'None']],
-  ['Reminders', ['Picture day forms go home', 'Staff meeting 3:15', 'Early dismissal 1:00', 'Book orders due', 'Field trip forms due']],
+// Fictional third grade week. Made-up lesson numbers and generic topics, no
+// curriculum titles. Each cell is [lesson, homework]; homework is optional.
+const EXAMPLE_ROWS: [string, [string, string?][]][] = [
+  ['ELA', [
+    ['Unit 2, Lesson 1: Animal Features', 'Read 20 minutes'],
+    ['Unit 2, Lesson 2: Classifying Animals', 'Read 20 minutes'],
+    ['Unit 2, Lesson 3: Main Idea and Details', 'Spelling practice'],
+    ['Unit 2, Lesson 4: Compare Two Texts', 'Read 20 minutes'],
+    ['Spelling test + Unit 2 check-in'],
+  ]],
+  ['Math', [
+    ['Lesson 20: Arrays and Equal Groups', 'pp. 125-126'],
+    ['Lesson 21: Arrays with Three Factors', 'pp. 129-130'],
+    ['Lesson 22: Multiply by 10', 'p. 133'],
+    ['Lesson 23: Multiplication Word Problems', 'pp. 135-136'],
+    ['Quiz: Lessons 20 to 23'],
+  ]],
+  ['Science / SS', [
+    ['Science, Lesson 5: Butterfly Life Cycle'],
+    ['SS, Lesson 3: Maps and Map Keys'],
+    ['No science (early dismissal)'],
+    ['Science, Lesson 6: Frog Life Cycle', 'Finish life cycle chart'],
+    ['SS, Lesson 4: Landforms'],
+  ]],
+  ['Specials', [['Art'], ['PE'], ['Music'], ['Library'], ['PE']]],
+  ['Reminders', [['Picture day forms go home'], ['Staff meeting 3:15'], ['Early dismissal 1:00'], ['Book orders due'], ['Field trip forms due']]],
 ];
 
 // Printing the page prints only the example sheet, on one landscape page.
@@ -150,8 +167,11 @@ export default function WeekAtAGlancePage() {
                 {EXAMPLE_ROWS.map(([label, cells], i) => (
                   <tr key={label} style={{ background: i % 2 ? '#f8fafc' : '#fff' }}>
                     <th scope="row" style={{ ...cellStyle, background: '#f0fdfa', color: '#0f766e', fontWeight: 700 }}>{label}</th>
-                    {cells.map((cell, j) => (
-                      <td key={j} style={cellStyle}>{cell}</td>
+                    {cells.map(([lesson, hw], j) => (
+                      <td key={j} style={cellStyle}>
+                        {lesson}
+                        {hw && <div style={{ marginTop: 4, color: '#475569' }}><strong>HW:</strong>{' '}{hw}</div>}
+                      </td>
                     ))}
                   </tr>
                 ))}
@@ -171,15 +191,16 @@ export default function WeekAtAGlancePage() {
         <h2 style={h2Style}>What to paste in</h2>
         <ul style={{ ...pStyle, paddingLeft: 22, margin: '0 0 16px' }}>
           <li style={{ marginBottom: 8 }}>
-            <strong style={strongStyle}>Lesson plans or notes.</strong> Full weekly plans work. Paste them as they are and
-            the prompt pulls out what fits on one page. A short list per subject works too.
+            <strong style={strongStyle}>Lesson plans or notes.</strong>{' '}Full weekly plans work. Paste them as they are and
+            the prompt pulls out the lesson number, topic, and homework for each day. A short list per subject works too.
+            Lesson numbers and page numbers only show up if they&apos;re in what you paste.
           </li>
           <li style={{ marginBottom: 8 }}>
             <strong style={strongStyle}>Specials.</strong> Which special is on which day.
           </li>
           <li style={{ marginBottom: 8 }}>
-            <strong style={strongStyle}>Homework.</strong> Put it under each lesson or list it separately, whichever you
-            prefer. ChatGPT keeps it where you put it.
+            <strong style={strongStyle}>Homework.</strong>{' '}By default it goes inside each subject&apos;s box, like the
+            example. Prefer a separate Homework row? Change the HOMEWORK LAYOUT line in the prompt.
           </li>
           <li style={{ marginBottom: 8 }}>
             <strong style={strongStyle}>Reminders and announcements.</strong> Early dismissal, assemblies, forms due,
@@ -195,8 +216,8 @@ export default function WeekAtAGlancePage() {
         <p style={pStyle}>Once the table looks right, send a follow-up like one of these:</p>
         <ul style={{ ...pStyle, paddingLeft: 22, margin: '0 0 16px' }}>
           <li style={quoteStyle}>&quot;Make it fit on one landscape page with text big enough to read.&quot;</li>
-          <li style={quoteStyle}>&quot;Shorten every cell to 6 words or less.&quot;</li>
-          <li style={quoteStyle}>&quot;Put homework under each lesson instead of in its own row.&quot;</li>
+          <li style={quoteStyle}>&quot;Shorten the lesson titles so everything fits on one page.&quot;</li>
+          <li style={quoteStyle}>&quot;Move homework into its own row at the bottom.&quot;</li>
           <li style={quoteStyle}>&quot;Make this a Word document I can print, in landscape.&quot;</li>
         </ul>
         <p style={pStyle}>
@@ -208,29 +229,10 @@ export default function WeekAtAGlancePage() {
         <p style={pStyle}>
           ChatGPT can drop a lesson, move something to the wrong day, or fill a gap with a guess, even when the prompt tells
           it not to. Take a minute to compare the table with your plans. If something is off, tell it exactly what to fix,
-          like &quot;Thursday math is multiply by 10, not 5.&quot;
+          like &quot;Thursday math is Lesson 23, not 24, and homework is pages 135 to 136.&quot;
         </p>
 
-        <div style={{ background: 'rgba(13,148,136,0.15)', borderRadius: 16, padding: 24, marginTop: 40, border: '1px solid rgba(13,148,136,0.3)', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 8px' }}>Like simple tools that make teaching easier?</h2>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 16px', lineHeight: 1.6 }}>
-            ShortHand is the app I built for my own classroom. Jot quick observations during the day, track how
-            students are progressing over time, and have your notes ready when it&apos;s time to talk with families.
-          </p>
-          <TrackedLink
-            href="https://app.getshorthandapp.com?demo=true"
-            label="app"
-            ctaSource="week_at_a_glance_prompt"
-            style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.4)' }}
-          >
-            Try the ShortHand demo
-          </TrackedLink>
-          <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', margin: '10px 0 0' }}>No sign-up needed to look around.</p>
-        </div>
-
-        <p style={{ fontSize: 13, color: '#94a3b8', textAlign: 'center', marginTop: 28 }}>
-          Built by a teacher, for teachers. <Link href="/tools" style={linkStyle}>More free tools</Link>
-        </p>
+        <FreeToolsCta ctaSource="week_at_a_glance_prompt" />
       </div>
       </main>
     </div>

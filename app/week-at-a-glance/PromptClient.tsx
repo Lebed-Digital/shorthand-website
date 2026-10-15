@@ -7,34 +7,38 @@ import { fireCtaClick, fireWeekGlancePromptCopied } from '../../lib/gtag';
 // live seating chart page is untouched.
 const WEEK_GLANCE_PROMPT = `I'm a teacher. Turn the information below into a one-page "Week at a Glance" I can print and keep on my desk.
 
-You can work from my full lesson plans or from short notes. Pull out only what I need to see at a glance: what I'm teaching each day, specials, homework, and reminders. Don't rewrite or improve my lessons.
+You can work from my full lesson plans or from short notes. Pull out only what I need to see at a glance. Don't rewrite or improve my lessons.
 
 Please follow these rules:
 
-1. Use only the information I give you. Don't add lessons, activities, dates, times, or reminders that aren't in it.
-2. If something is missing or unclear, leave the cell blank or write "?" and list your questions under the table. Don't guess.
+1. Use only the information I give you. Don't add or guess lesson numbers, lesson topics, homework, page numbers, dates, times, or reminders.
+2. If something is missing or unclear, leave it blank or write "?" and list your questions under the table. Don't guess.
 3. Make a table with these columns: Monday, Tuesday, Wednesday, Thursday, Friday.
-4. Make one row for each subject I teach, then rows for Specials, Homework, and Reminders.
-5. If my homework is listed with a lesson, keep it with that lesson and leave out the Homework row. If I list homework separately, use the Homework row.
-6. If I include a daily schedule, add the times to the subject rows. If I don't, leave times out.
-7. Keep each cell short (about 3 to 10 words) so the whole table fits on one landscape page with text that is easy to read.
+4. Make one row for each subject I teach, then rows for Specials and Reminders.
+5. In each subject's box, write the lesson number (if I gave one) and a short topic, like "Lesson 21: Arrays with Three Factors."
+6. Homework: follow my HOMEWORK LAYOUT choice below. "Inside each subject" means put that day's homework on its own line in the subject's box, starting with "HW:". "Separate row" means add a Homework row after the subjects instead.
+7. If I include a daily schedule, add the times to the subject rows. If I don't, leave times out.
+8. Keep every box short so the whole table fits on one landscape page with text that is easy to read.
 
 Week of: [DATE]
 
+HOMEWORK LAYOUT: Inside each subject
+[Change to "Separate row" if you'd rather have homework in its own row.]
+
 MY LESSON PLANS OR NOTES:
-[Paste your weekly lesson plans as they are, or a short list of what you're teaching in each subject each day.]
+[Paste your weekly lesson plans as they are, or list each subject's lesson number, topic, and homework for each day.]
+
+HOMEWORK (skip if it's already in your plans):
+[Example: Mon Math pp. 125-126, Tue Read 20 minutes]
 
 SPECIALS:
 [Example: Mon Art, Tue PE, Wed Music, Thu Library, Fri PE]
-
-HOMEWORK (skip if it's already in your plans):
-[Example: Mon spelling list, Tue math practice page]
 
 REMINDERS AND ANNOUNCEMENTS:
 [Example: Wed early dismissal 1:00, Fri field trip forms due. No student names.]
 
 DAILY SCHEDULE (optional):
-[Example: 9:00 Reading, 10:30 Math, 12:45 Writing]`;
+[Example: 9:00 ELA, 10:30 Math, 1:15 Science]`;
 
 const CHATGPT_URL = 'https://chatgpt.com/';
 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import type { CSSProperties } from 'react';
 import Link from 'next/link';
-import TrackedLink from '../../components/TrackedLink';
+import FreeToolsCta from '../../components/FreeToolsCta';
 import { ChatGptLink, PromptBox } from './PromptClient';
 
 const PAGE_URL = 'https://getshorthandapp.com/free-seating-chart-prompt';
@@ -95,26 +95,7 @@ export default function FreeSeatingChartPromptPage() {
           Add student names after you print it, by hand or in a tool your school approves, so names never go into ChatGPT.
         </p>
 
-        <div style={{ background: 'rgba(13,148,136,0.15)', borderRadius: 16, padding: 24, marginTop: 40, border: '1px solid rgba(13,148,136,0.3)', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 8px' }}>Like simple tools that make teaching easier?</h2>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.7)', margin: '0 0 16px', lineHeight: 1.6 }}>
-            ShortHand is the app I built for my own classroom. Jot quick observations during the day, track how
-            students are progressing over time, and have your notes ready when it&apos;s time to talk with families.
-          </p>
-          <TrackedLink
-            href="https://app.getshorthandapp.com?demo=true"
-            label="app"
-            ctaSource="seating_chart_prompt"
-            style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.4)' }}
-          >
-            Try the ShortHand demo
-          </TrackedLink>
-          <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', margin: '10px 0 0' }}>No sign-up needed to look around.</p>
-        </div>
-
-        <p style={{ fontSize: 13, color: '#94a3b8', textAlign: 'center', marginTop: 28 }}>
-          Built by a teacher, for teachers. <Link href="/tools" style={linkStyle}>More free tools</Link>
-        </p>
+        <FreeToolsCta ctaSource="seating_chart_prompt" />
       </main>
     </div>
   );
