@@ -170,6 +170,12 @@ export function fireSeatingChartPromptCopied(): void {
   captureEvent('tool_output_copied', { tool: 'seating-chart-prompt' });
 }
 
+// The Copy button on /week-at-a-glance. Never the prompt text.
+export function fireWeekGlancePromptCopied(): void {
+  fireEvent('week_glance_prompt_copied', { cta_page: window.location.pathname });
+  captureEvent('tool_output_copied', { tool: 'week-at-a-glance-prompt' });
+}
+
 export function fireLockedCommentClicked(section: string): void {
   fireEvent('locked_comment_clicked', { product_key: RCCL_PRODUCT_KEY, section });
 }
