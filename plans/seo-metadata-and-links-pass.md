@@ -1,5 +1,7 @@
 # Small SEO pass: blog share metadata, /tools metadata, 7 contextual links
 
+Status: MERGED and LIVE. PR #132 squash-merged as `e06b0fc` on 2026-10-16 (UTC); production deploy succeeded and live metadata + all 7 links verified. Records below that say "not pushed" describe the state when written.
+
 Date: 2026-10-15. Source: the read-only SEO indexing audit of 2026-10-14 (Claude, in a Codex
 session) and Codex's review of it. Both findings were re-checked against current `main`
 (`11a108f`) before writing this plan.
