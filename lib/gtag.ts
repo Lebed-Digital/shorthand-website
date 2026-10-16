@@ -176,6 +176,13 @@ export function fireWeekGlancePromptCopied(): void {
   captureEvent('tool_output_copied', { tool: 'week-at-a-glance-prompt' });
 }
 
+// The Copy buttons on /chatgpt-teacher-freebies: the main prompt (hero and
+// prompt box) or the optional Gmail add-on. Never the prompt text.
+export function fireFreebiePromptCopied(prompt: 'main' | 'gmail'): void {
+  fireEvent('freebie_prompt_copied', { prompt, cta_page: window.location.pathname });
+  captureEvent('tool_output_copied', { tool: prompt === 'main' ? 'freebie-hunter-prompt' : 'freebie-hunter-gmail-addon' });
+}
+
 export function fireLockedCommentClicked(section: string): void {
   fireEvent('locked_comment_clicked', { product_key: RCCL_PRODUCT_KEY, section });
 }
