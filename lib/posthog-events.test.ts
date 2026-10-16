@@ -15,7 +15,7 @@ import {
   pdfResource,
   previewVariant,
 } from './posthog-events.ts';
-import { fireFreeCommentCopied, fireGenerationSuccess } from './gtag.ts';
+import { fireFreebiePromptCopied, fireFreeCommentCopied, fireGenerationSuccess } from './gtag.ts';
 
 const marketingLink = {
   hostname: 'getshorthandapp.com',
@@ -208,6 +208,20 @@ test('a copied library comment is mirrored as tool_output_copied, without its se
   const tracked = recordTracked();
   fireFreeCommentCopied('behavior');
   assert.deepEqual(tracked, [['tool_output_copied', { tool: 'comment-library' }]]);
+});
+
+test('the freebie page tells its two prompts apart, and both pass the allowlist', () => {
+  const tracked = recordTracked();
+  Object.assign(globalWithWindow.window as object, { location: { pathname: '/chatgpt-teacher-freebies' } });
+  fireFreebiePromptCopied('main');
+  fireFreebiePromptCopied('gmail');
+  assert.deepEqual(tracked, [
+    ['tool_output_copied', { tool: 'freebie-hunter-prompt' }],
+    ['tool_output_copied', { tool: 'freebie-hunter-gmail-addon' }],
+  ]);
+  for (const [event, props] of tracked) {
+    assert.deepEqual(filterCustomEvent({ event, properties: { ...(props as object) } })?.properties, props);
+  }
 });
 
 // ---------------------------------------------------------------------------

@@ -86,6 +86,17 @@ const tools = [
     tag: 'Free ChatGPT Prompt',
     signals: ['Free to use', 'No sign-up required', 'Works with ChatGPT'],
   },
+  {
+    title: 'Teacher Freebie Finder Prompt',
+    description:
+      'Set up a daily ChatGPT task that searches for teacher discounts, free tools, and promotions, and only flags the ones worth your time.',
+    href: '/chatgpt-teacher-freebies',
+    label: 'Get the Prompt',
+    accent: '#be123c',
+    bg: '#fff1f2',
+    tag: 'Free ChatGPT Prompt',
+    signals: ['Free to use', 'No sign-up required', 'Works with ChatGPT'],
+  },
 ];
 
 export default function ToolsPage() {

@@ -427,6 +427,16 @@ await page.getByRole('button', { name: 'Copy', exact: true }).first().click();
 copied['comment library'] = [await copiedText(), CANARY.libraryName];
 await rest();
 
+// Freebies guide: two prompt Copy buttons, each a categorical tool value. The
+// copied prompt is public text, so the check is that it rides on no event.
+await page.goto(`${ORIGIN}/chatgpt-teacher-freebies`, { waitUntil: 'load' });
+await page.waitForTimeout(2500);
+await page.evaluate(() => { window.__copied = []; });
+await page.getByRole('button', { name: 'Copy the Setup Prompt' }).click();
+await page.locator('#prompt-gmail').locator('xpath=..').getByRole('button', { name: 'Copy', exact: true }).click();
+const freebiePrompts = await copiedText();
+await rest();
+
 // Purchase success page, then the site's own full-page redirect into the library.
 await page.goto(`${ORIGIN}/report-card-comment-library/success?session_id=${CANARY.session}`, { waitUntil: 'load' });
 await page.waitForURL(/\/report-card-comment-library$/, { timeout: 15000 }).catch(() => {});
@@ -596,6 +606,8 @@ const expected = [
   'resource_downloaded {"resource":"behavior-emails","resource_type":"pdf"}',
   'resource_downloaded {"resource":"mtss-tier-2-tracking-sheet","resource_type":"pdf"}',
   'tool_output_copied {"tool":"comment-library"}',
+  'tool_output_copied {"tool":"freebie-hunter-gmail-addon"}',
+  'tool_output_copied {"tool":"freebie-hunter-prompt"}',
   'tool_output_copied {"tool":"report-card-comment"}',
   // Sent twice: once by the real Copy button, once by the hostile call with
   // its "text" and "email" properties removed.
@@ -614,6 +626,8 @@ for (const name of CUSTOM) check(`custom event fired: ${name}`, customEvents.som
 const copiedProbe = copiedExample.slice(0, 40);
 check('blog example: the selection really held the template text (the leak vector exists)', copiedProbe.length === 40, copiedProbe);
 check('blog example: the copied text is on no event', !JSON.stringify(nonSnap).includes(copiedProbe));
+check('freebies: both prompts really reached the clipboard', /Set this up as a scheduled task/.test(freebiePrompts) && /Also check my connected Gmail/.test(freebiePrompts));
+check('freebies: the copied prompts are on no event', !JSON.stringify(nonSnap).includes('Set this up as a scheduled task') && !JSON.stringify(nonSnap).includes('Also check my connected Gmail'));
 for (const [tool, [text, canary]] of Object.entries(copied)) {
   check(`${tool}: the copied text really held a canary (the leak vector exists)`, text.includes(canary));
 }

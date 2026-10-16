@@ -204,6 +204,19 @@ const nextConfig: NextConfig = {
         destination: '/week-at-a-glance',
         permanent: false,
       },
+      // ChatGPT teacher freebies guide, added 2026-10-16 for the "Comment
+      // FREEBIES" video. Same two-rule pattern as /chart above.
+      {
+        source: '/freebies',
+        missing: [{ type: 'query', key: 'utm_source' }],
+        destination: '/chatgpt-teacher-freebies?utm_source=social&utm_medium=organic_social&utm_campaign=chatgpt_freebies',
+        permanent: false,
+      },
+      {
+        source: '/freebies',
+        destination: '/chatgpt-teacher-freebies',
+        permanent: false,
+      },
     ];
   },
   async headers() {
