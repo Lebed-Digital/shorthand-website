@@ -77,6 +77,8 @@ Elementary classrooms are fast-paced. You are teaching multiple subjects, managi
 
 This simpler log allows you to quickly note who had a great day and who needs a little extra support tomorrow. It ensures you do not forget the positive moments, which are just as important to document as the challenging ones.
 
+Whichever version you print, the template only helps if you fill it in. [How to actually use a student behavior log](/blog/how-to-use-a-student-behavior-log) covers when to write entries and how to avoid over-logging.
+
 RESOURCEOFFERMARKER
 
 ## Moving Beyond Paper and Clunky Templates

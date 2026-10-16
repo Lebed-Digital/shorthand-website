@@ -206,14 +206,25 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const posts = getAllPosts();
   const meta = posts.find((p) => p.slug === slug);
   if (!meta) return {};
+  const title = `${meta.title} | ShortHand Blog`;
+  // openGraph and twitter replace the layout's whole objects, so both have to
+  // carry their own image and the post's own title.
+  const image = { url: meta.image ?? 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: meta.title };
   return {
-    title: `${meta.title} | ShortHand Blog`,
+    title,
     description: meta.excerpt,
     openGraph: {
-      title: `${meta.title} | ShortHand Blog`,
+      title,
       description: meta.excerpt,
       url: `https://getshorthandapp.com/blog/${slug}`,
       type: 'article',
+      images: [image],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: meta.excerpt,
+      images: [image.url],
     },
     alternates: { canonical: `https://getshorthandapp.com/blog/${slug}` },
   };

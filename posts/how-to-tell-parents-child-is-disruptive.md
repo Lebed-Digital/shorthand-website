@@ -48,7 +48,7 @@ When you sit down to write the actual email, keep it brief. Long emails look lik
 
 State what you saw. State how it impacted the classroom. Ask for their help in solving it. 
 
-Always offer a phone call if they want to discuss it further. A lot of parents prefer to hear your tone of voice to ensure you are not angry with them.
+Always offer a phone call if they want to discuss it further. A lot of parents prefer to hear your tone of voice to ensure you are not angry with them. If they take you up on it, this [step-by-step guide to talking with parents about behavior](/blog/how-to-talk-to-parents-about-student-behavior) covers how to open the call and handle a defensive reaction.
 
 ## Quick Reference: Stop Saying "Disruptive"
 

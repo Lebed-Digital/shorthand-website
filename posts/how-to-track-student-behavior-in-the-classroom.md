@@ -64,7 +64,7 @@ Downside: hard to review later, easy to lose, and you end up with a pile of pape
 
 **2. Sticky Notes on a Seating Chart**
 
-Put a printed seating chart on your desk. Keep sticky notes nearby. When something happens, write a quick note and stick it on the student's spot. At the end of the day, transfer anything important somewhere permanent.
+Put a printed seating chart on your desk. If you need a fresh one, this [free AI seating chart prompt](/free-seating-chart-prompt) turns a photo of your empty room into a printable chart. Keep sticky notes nearby. When something happens, write a quick note and stick it on the student's spot. At the end of the day, transfer anything important somewhere permanent.
 
 Best for: quick in-the-moment capture without stopping the lesson.
 

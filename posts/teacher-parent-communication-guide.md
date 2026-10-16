@@ -57,6 +57,8 @@ The challenge is that most teachers have not been given a script. You pick up th
 
 Before you dial, [How to Politely Tell Parents Their Child Is Misbehaving](/blog/how-to-politely-tell-parents-child-is-misbehaving) covers the specific phrases to use (and the ones to avoid) when the conversation gets uncomfortable.
 
+For the call itself, [How to Talk to Parents About Student Behavior](/blog/how-to-talk-to-parents-about-student-behavior) walks through it step by step: how to open, what to say when a parent gets defensive, and what to write down afterward.
+
 After the call, send a brief written summary within 24 hours. It creates a shared record and reduces the chance of "I never heard about this" coming up later.
 
 ---
