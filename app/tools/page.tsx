@@ -1,14 +1,22 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const DESCRIPTION =
+  'Free teacher tools: report card comment and welcome letter generators, a printable parent communication log, and ChatGPT seating chart and weekly planning prompts.';
+
 export const metadata: Metadata = {
   title: 'Free Tools for Teachers | ShortHand',
-  description:
-    'Free AI tools for teachers. Generate report card comments and parent welcome letters in seconds.',
+  description: DESCRIPTION,
   alternates: { canonical: 'https://getshorthandapp.com/tools' },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Free Tools for Teachers | ShortHand',
+    description: DESCRIPTION,
+    images: ['https://getshorthandapp.com/og-image.png'],
+  },
   openGraph: {
     title: 'Free Tools for Teachers | ShortHand',
-    description: 'Free AI tools for teachers.',
+    description: DESCRIPTION,
     url: 'https://getshorthandapp.com/tools',
     type: 'website',
     images: [

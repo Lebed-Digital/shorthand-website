@@ -53,6 +53,8 @@ The best behavior log is the one you will actually maintain. That usually means 
 
 For a ready-to-use format, [The Only Teacher Documentation Log Template You Actually Need](/blog/teacher-documentation-log-template) gives you a simple structure that works whether you prefer paper, a spreadsheet, or an app.
 
+Once you have a format, [How to Actually Use a Student Behavior Log](/blog/how-to-use-a-student-behavior-log) covers the harder part: when to log, which details matter, and how to keep it from eating your prep period.
+
 If you are weighing your options, [Teacher Documentation Forms vs. Apps](/blog/teacher-documentation-forms-vs-apps) is an honest comparison of what actually works in a real classroom, not just in theory.
 
 ---

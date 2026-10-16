@@ -24,6 +24,8 @@ export interface PostMeta {
   tags?: string[];
   relatedPosts?: string[];
   faq?: { q: string; a: string }[];
+  /** Optional per-post share image, 1200x630. Path or absolute URL; defaults to /og-image.png. */
+  image?: string;
 }
 
 export interface Post extends PostMeta {
