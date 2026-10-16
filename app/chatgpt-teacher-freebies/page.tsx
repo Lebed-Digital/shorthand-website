@@ -166,6 +166,10 @@ export default function ChatGptTeacherFreebiesPage() {
 
         <h2 style={h2Style}>Copy the setup prompt</h2>
         <p style={pStyle}>
+          This is a starter version of the workflow I use. My personal setup includes additional tasks and connected email
+          accounts.
+        </p>
+        <p style={pStyle}>
           This works on its own with web search, no apps to connect. Replace the parts in [brackets] with your own details.
           Leave a line in brackets and ChatGPT skips it (it will ask once for your country).
         </p>
