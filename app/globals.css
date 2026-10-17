@@ -234,8 +234,9 @@ nav {
   margin-top: 18px;
   opacity: 0; animation: fadeUp 0.8s 0.65s ease forwards;
 }
-.hero-play-badge img { display: block; height: auto; margin-left: -8px; }
-.play-badge-label { font-size: 0.78rem; font-weight: 500; color: var(--text-dim); }
+/* App Store badge sits first with no built-in padding, so the row needs no
+   negative margin. The Play badge's own transparent padding adds to the gap. */
+.hero-play-badge img { display: block; height: auto; }
 /* HERO SPLIT LAYOUT */
 .hero--split { text-align: left; align-items: stretch; justify-content: center; }
 .hero-split-inner {
@@ -526,19 +527,7 @@ section { position: relative; z-index: 1; }
   .before-after-grid { grid-template-columns: 1fr; }
 }
 
-/* GETTING STARTED VIDEOS */
-.videos-section { padding: 80px 0 100px; border-top: 1px solid var(--border); }
-.videos-header { margin-bottom: 56px; }
-.videos-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  justify-content: center;
-}
-/* The install page has a single video, so center it instead of stranding it
-   in the first of four columns. */
-.videos-grid:has(> :only-child) { grid-template-columns: minmax(0, 320px); }
-.video-card { display: flex; flex-direction: column; gap: 14px; }
+/* FEATURE VIDEOS */
 .video-frame-wrap {
   position: relative;
   width: 100%;
@@ -554,11 +543,6 @@ section { position: relative; z-index: 1; }
   border: none;
 }
 .video-frame-wrap--wide { aspect-ratio: 16 / 9; }
-.video-title {
-  font-size: 0.85rem; font-weight: 600;
-  color: var(--text-dim); text-align: center;
-  letter-spacing: 0.01em;
-}
 .feature-video-facade {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -725,8 +709,8 @@ section { position: relative; z-index: 1; }
   display: flex; flex-direction: column; gap: 16px;
 }
 /* Primary Android install path, so it sits above the numbered steps. */
-.install-play-badge { display: flex; justify-content: center; margin-bottom: 4px; }
-.install-play-badge img { display: block; height: auto; max-width: 100%; }
+.install-store-badge { display: flex; justify-content: center; margin-bottom: 4px; }
+.install-store-badge img { display: block; height: auto; max-width: 100%; }
 .install-step {
   display: flex; align-items: flex-start; gap: 16px;
   padding: 24px 28px; border-radius: 16px;
@@ -896,6 +880,9 @@ section { position: relative; z-index: 1; }
    extra box styling. Negative margin cancels that padding for optical alignment. */
 .cta-play-badge { display: inline-flex; margin: 0 -8px; }
 .cta-play-badge img { display: block; height: auto; }
+/* Apple's badge has no padding, so it sizes to the Play badge's visible art. */
+.cta-app-store-badge { display: inline-flex; }
+.cta-app-store-badge img { display: block; }
 
 /* FOOTER */
 footer {
@@ -908,6 +895,8 @@ footer {
 .footer-email { font-size: 0.82rem; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
 .footer-email:hover { color: var(--accent); }
 .footer-copy { margin-top: 24px; font-size: 0.74rem; color: var(--text-faint); }
+/* Wrap between footer links, never inside one ("Simple / Teacher AI"). */
+.footer-copy a { white-space: nowrap; }
 
 /* DETAIL PAGE */
 .detail-back {

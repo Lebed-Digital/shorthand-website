@@ -35,7 +35,7 @@ export default function Footer() {
         </Link>{' '}
         ·{' '}
         <Link href="/install" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
-          Add to Home Screen
+          Get the App
         </Link>{' '}
         ·{' '}
         <Link href="/press" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>

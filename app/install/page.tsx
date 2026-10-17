@@ -6,17 +6,16 @@ import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
 
 const tabs = ['iPhone', 'Android', 'Desktop'] as const;
 type Tab = typeof tabs[number];
 
 const steps: Record<Tab, { icon: string; text: string }[]> = {
   iPhone: [
-    { icon: '🌐', text: 'Tap the "Open App" button at the top of this page to open ShortHand in Safari' },
-    { icon: '📤', text: 'Tap the Share button at the bottom of the screen (the box with an arrow pointing up)' },
-    { icon: '➕', text: 'Scroll down and tap "Add to Home Screen"' },
-    { icon: '✏️', text: 'Name it "ShortHand" and tap Add' },
-    { icon: '🎉', text: 'ShortHand now appears on your home screen like any other app. Tap to open!' },
+    { icon: '🍎', text: 'Tap the "Download on the App Store" badge above to open the ShortHand listing' },
+    { icon: '⬇️', text: 'Tap Get and wait for the download to finish' },
+    { icon: '🎉', text: 'ShortHand appears on your home screen. Tap to open!' },
   ],
   Android: [
     { icon: '▶️', text: 'Tap the "Get it on Google Play" badge above to open the ShortHand listing' },
@@ -32,7 +31,7 @@ const steps: Record<Tab, { icon: string; text: string }[]> = {
 };
 
 const notes: Record<Tab, string> = {
-  iPhone: 'Must use Safari. Chrome on iPhone does not support Add to Home Screen.',
+  iPhone: 'Prefer not to use the App Store? You can still install from the browser: open ShortHand in Safari, tap the Share button (the box with an arrow pointing up), then tap "Add to Home Screen".',
   Android: 'Prefer not to use the Play Store? You can still install from the browser: open ShortHand in Chrome, tap the three-dot menu, then tap "Add to Home screen". Some devices show "Install app" instead.',
   Desktop: 'Works in Chrome and Edge. Firefox does not support PWA install.',
 };
@@ -63,8 +62,8 @@ export default function InstallPage() {
         <div className="section-label">Works on Any Device · Free to Start</div>
         <h1 className="install-title">Add ShortHand<br />to Your <em>Home Screen</em></h1>
         <p className="install-sub">
-          On Android, get ShortHand from Google Play. On iPhone and desktop, it installs
-          straight from your browser. Follow the steps below for your device and it will
+          On iPhone, get ShortHand from the App Store. On Android, get it from Google Play.
+          On desktop, it installs straight from your browser. Follow the steps below for your device and it will
           live on your home screen just like a regular app.
         </p>
       </div>
@@ -94,8 +93,21 @@ export default function InstallPage() {
             transition={reduceMotion ? { duration: 0 } : { duration: 0.25, ease: 'easeOut' }}
             className="install-steps"
           >
+            {active === 'iPhone' && (
+              <a href={APP_STORE_URL} className="install-store-badge">
+                <Image
+                  src="/badges/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  width={161}
+                  height={54}
+                  priority
+                  unoptimized
+                />
+              </a>
+            )}
+
             {active === 'Android' && (
-              <a href={PLAY_STORE_URL} className="install-play-badge">
+              <a href={PLAY_STORE_URL} className="install-store-badge">
                 <Image
                   src="/badges/google-play-badge.png"
                   alt="Get it on Google Play"
@@ -119,36 +131,6 @@ export default function InstallPage() {
             </div>
           </motion.div>
         </AnimatePresence>
-      </div>
-
-      <div className="videos-section" style={{ paddingTop: '3rem' }}>
-        <div className="section-inner">
-          <div className="videos-header">
-            <div className="section-label">Install Walkthrough</div>
-            <h2 className="section-heading">Watch the Install</h2>
-            <p className="section-sub">Step-by-step video for adding ShortHand to your iPhone home screen.</p>
-          </div>
-          <div className="videos-grid">
-            {[
-              // Android is not here on purpose: it installs from Google Play now,
-              // so the badge above replaces the old home-screen walkthrough.
-              { id: 'fef65Q9xlvk', title: 'Install on iPhone' },
-            ].map((v) => (
-              <div key={v.id} className="video-card">
-                <div className="video-frame-wrap">
-                  <iframe
-                    src={`https://www.youtube-nocookie.com/embed/${v.id}?enablejsapi=1`}
-                    title={v.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                  />
-                </div>
-                <div className="video-title">{v.title}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className="detail-cta-section">

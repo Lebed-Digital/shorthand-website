@@ -38,7 +38,7 @@ declare global {
 export const CUSTOM_EVENTS = {
   // A click on any link to the app or to its store listing.
   app_link_clicked: {
-    destination: ['web_app', 'play_store'],
+    destination: ['web_app', 'play_store', 'app_store'],
     cta_location: ['nav', 'footer', 'blog_body', 'page'],
   },
   // A free PDF was downloaded. See PDF_RESOURCES for what 'other' means.
@@ -256,6 +256,7 @@ type ClassifiedClick = { [N in CustomEventName]: { name: N; props: CustomEventPr
 // Blog posts link to other apps' Play Store pages, so the store link only
 // counts when it is ShortHand's own listing.
 const PLAY_STORE_APP_ID = 'id=com.lebeddigital.shorthand';
+const APP_STORE_APP_ID = '/id6811725040';
 
 export function classifyLinkClick(link: LinkClick): ClassifiedClick | null {
   const destination =
@@ -263,7 +264,9 @@ export function classifyLinkClick(link: LinkClick): ClassifiedClick | null {
       ? 'web_app'
       : link.hostname === 'play.google.com' && link.search.includes(PLAY_STORE_APP_ID)
         ? 'play_store'
-        : null;
+        : link.hostname === 'apps.apple.com' && link.pathname.endsWith(APP_STORE_APP_ID)
+          ? 'app_store'
+          : null;
   if (destination) {
     const cta_location = link.inNav ? 'nav' : link.inFooter ? 'footer' : link.inBlogBody ? 'blog_body' : 'page';
     return { name: 'app_link_clicked', props: { destination, cta_location } };

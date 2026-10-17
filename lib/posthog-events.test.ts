@@ -60,6 +60,15 @@ test("only ShortHand's own Play Store listing counts as an app link", () => {
   assert.equal(classifyLinkClick({ ...store, search: '?id=com.classdojo.android' }), null);
 });
 
+test("only ShortHand's own App Store listing counts as an app link", () => {
+  const store = { ...appLink, hostname: 'apps.apple.com', search: '' };
+  assert.deepEqual(classifyLinkClick({ ...store, pathname: '/us/app/shorthand-for-teachers/id6811725040' })?.props, {
+    destination: 'app_store',
+    cta_location: 'page',
+  });
+  assert.equal(classifyLinkClick({ ...store, pathname: '/us/app/classdojo/id552602056' }), null);
+});
+
 test('a PDF on this site is a resource_downloaded with a stable key', () => {
   assert.deepEqual(classifyLinkClick({ ...marketingLink, pathname: '/parent-teacher-conference-notes.pdf' }), {
     name: 'resource_downloaded',

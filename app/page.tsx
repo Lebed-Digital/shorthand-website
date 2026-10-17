@@ -15,6 +15,7 @@ import { withAttribution } from '../lib/attribution';
 const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
+const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
 
 const jobs = [
   {
@@ -278,10 +279,21 @@ export default function Home() {
                 See How It Works
               </motion.a>
             </div>
-            {/* Secondary install option. Android teachers can get the real Play
-                listing instead of the Add to Home Screen workaround. */}
+            {/* Secondary install option: the native store listings. Apple's badge
+                is sized to the Play badge's visible art, not its padded box. */}
             <div className="hero-play-badge">
-              <span className="play-badge-label">Android teachers:</span>
+              <a
+                href={APP_STORE_URL}
+                onClick={(e) => trackCta('app_store_badge', APP_STORE_URL, e)}
+              >
+                <Image
+                  src="/badges/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  width={126}
+                  height={42}
+                  unoptimized
+                />
+              </a>
               <a
                 href={PLAY_STORE_URL}
                 onClick={(e) => trackCta('google_play_badge', PLAY_STORE_URL, e)}
@@ -785,7 +797,7 @@ export default function Home() {
               },
               {
                 q: 'Do I need to download anything?',
-                a: 'No. ShortHand is a Progressive Web App (PWA). It works in your browser on any device. You can add it to your home screen for a native app feel, but there\'s nothing to download from an app store.',
+                a: 'No. ShortHand works in your browser on any device, so there\'s nothing you have to install. If you prefer a regular app, you can get ShortHand from the App Store on iPhone or from Google Play on Android.',
               },
               {
                 q: 'How does ShortHand help with parent communication?',
@@ -931,6 +943,19 @@ export default function Home() {
                 >
                   Open ShortHand →
                 </motion.a>
+                <a
+                  href={APP_STORE_URL}
+                  className="cta-app-store-badge"
+                  onClick={(e) => trackCta('app_store_badge', APP_STORE_URL, e)}
+                >
+                  <Image
+                    src="/badges/app-store-badge.svg"
+                    alt="Download on the App Store"
+                    width={141}
+                    height={47}
+                    unoptimized
+                  />
+                </a>
                 <a
                   href={PLAY_STORE_URL}
                   className="cta-play-badge"
