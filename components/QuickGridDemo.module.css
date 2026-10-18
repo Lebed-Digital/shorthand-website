@@ -175,6 +175,20 @@
   text-decoration: none;
 }
 
+.frame .tryAgain {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px 16px;
+  border: 2px solid var(--slate-200);
+  border-radius: 16px;
+  color: var(--slate-700);
+  font-size: 0.8125rem;
+  font-weight: 900;
+  transition: border-color 150ms var(--ease);
+}
+.frame .tryAgain:hover { border-color: var(--sage); }
+
 /* Covers the demo only, not the page. */
 .scrim {
   position: absolute;

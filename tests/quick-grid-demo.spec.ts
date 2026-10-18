@@ -155,6 +155,68 @@ test.describe('timer', () => {
   });
 });
 
+test.describe('try again', () => {
+  const tryAgain = (page: Page) => page.getByRole('button', { name: 'Try Again' });
+  const checkedTiles = (page: Page) => allTiles(page).filter({ has: page.locator('[aria-hidden="true"] svg') });
+
+  test('appears after the first save and resets the whole practice session', async ({ page }) => {
+    await page.goto(PAGE);
+    await expect(tryAgain(page)).toHaveCount(0);
+    await logNote(page, 'Comet', ['On Task']);
+    await logNote(page, 'Comet', ['Kindness']);
+    await logNote(page, 'Nova', ['Check-In']);
+    await expect(page.getByText('3 logged', { exact: true })).toBeVisible();
+
+    await tryAgain(page).click();
+    await expect(page.getByText(/logged/)).toHaveCount(0);
+    await expect(checkedTiles(page)).toHaveCount(0);
+    await expect(page.getByText(/Your demo time/)).toHaveCount(0);
+    await expect(page.getByText(/You logged/)).toHaveCount(0);
+    await expect(tryAgain(page)).toHaveCount(0);
+    await expect(tile(page, 'Biscuit')).toBeFocused();
+
+    await tile(page, 'Comet').click();
+    await expect(sheet(page).locator('[aria-pressed="true"]')).toHaveCount(0);
+    await expect(saveButton(page)).toBeDisabled();
+  });
+
+  test('the second attempt is timed fresh from its own first tap', async ({ page }) => {
+    await page.clock.install({ time: new Date('2026-01-05T08:00:00') });
+    await page.goto(PAGE);
+    await page.clock.pauseAt(new Date('2026-01-05T09:00:00'));
+
+    await tile(page, 'Comet').click();
+    await page.clock.fastForward(2000);
+    await chip(page, 'On Task').click();
+    await saveButton(page).click();
+    await expect(page.getByText('Your demo time: 2.0 seconds')).toBeVisible();
+
+    await tryAgain(page).click();
+    await page.clock.fastForward(10_000); // idle time between attempts never counts
+    await tile(page, 'Maple').click();
+    await page.clock.fastForward(1500);
+    await chip(page, 'Teamwork').click();
+    await saveButton(page).click();
+    await expect(page.getByText('Your demo time: 1.5 seconds')).toBeVisible();
+
+    await page.clock.fastForward(4000);
+    await logNote(page, 'Nova', ['Kindness']);
+    await expect(page.getByText('Your demo time: 1.5 seconds')).toBeVisible();
+  });
+
+  test('can be repeated any number of times, and the guided demo link stays', async ({ page }) => {
+    await page.goto(PAGE);
+    for (let round = 0; round < 5; round++) {
+      await logNote(page, 'Pickle', ['Participation']);
+      await expect(page.getByText('1 logged', { exact: true })).toBeVisible();
+      await expect(page.getByText(/You logged 1 note for 1 student\./)).toBeVisible();
+      await expect(page.getByRole('link', { name: 'Try the guided demo →' })).toHaveAttribute('href', `${APP_HOST}/?demo=true`);
+      await tryAgain(page).click();
+      await expect(checkedTiles(page)).toHaveCount(0);
+    }
+  });
+});
+
 test.describe('persistence and network', () => {
   test('adds no storage, makes no app/API/Supabase requests, reload is fresh', async ({ page, context }) => {
     const blocked: string[] = [];

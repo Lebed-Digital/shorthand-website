@@ -6,6 +6,7 @@ Session 1 notes (small departures from the text below, all from implementation):
 - Frame `max-width` is **380px**, not 400px. At 400px the grid gets 376px and fits 5 columns on desktop, which breaks the 4-column acceptance check. 380px gives 356px, so 4.
 - Frame `line-height` is **1.5**, the app's real value (Tailwind preflight), instead of the 1.2 in section 6.
 - Overflow chips get `min-height: 36px` to meet the tap-target rule. In the app they are about 33px tall.
+- **Try Again (approved by Greg 2026-10-17, after testing the Session 1 preview).** See "Try Again" under section 4.
 - All analytics work moved to Session 2: the three `captureEvent()` calls, the `TrackedLink` `onClick` prop, and the `__shTrack` stub cases in the spec. `captureEvent()` is typed against `CUSTOM_EVENTS`, so the calls can't compile before the allowlist lands, and the allowlist belongs in the same commit as the privacy clause.
 Audited: 2026-10-17, against `pulse 2.0` origin/main `a2bcf8a` and `shorthand-website` origin/main `b011777`.
 
@@ -171,7 +172,7 @@ A valid Save means the sheet is open and at least one chip is selected. Save is 
 2. Keeps running through dismissals and reopens. Closing the sheet without saving doesn't reset it.
 3. Stops at the **first valid Save**: `elapsedMs = performance.now() - startedAt.current`. **Frozen**: later saves never change it.
 4. No live stopwatch. Nothing is shown until the first Save. Then the line reads: **"Your demo time: X seconds"**, with X = `(elapsedMs / 1000).toFixed(1)`.
-5. Resets only on remount or reload.
+5. Resets on Try Again (the next tile tap starts a fresh time, the next valid Save stops it), and on remount or reload.
 6. **Elapsed time is not included in any custom event property.** The started and completed events carry PostHog's standard timestamps, so an approximate duration can be inferred from them. The widget is excluded from replay, so the displayed time isn't recorded there either.
 
 ### Copy (no em dashes anywhere)
@@ -181,6 +182,16 @@ A valid Save means the sheet is open and at least one chip is selected. Save is 
 - Result row after the first Save: "You logged {noteCount} note(s) for {loggedIds.size} student(s). The guided demo in the app goes further: write a full note and turn it into a report." Link button: **"Try the guided demo →"** to `https://app.getshorthandapp.com/?demo=true`.
   - This copy describes the guided demo as it actually is (full composer and report, not this grid), so a visitor isn't surprised when the grid isn't there.
 - Header keeps the app's "Log Notes" and "N logged" (N = notes, as in the app).
+- Below "Try the guided demo →", a secondary **"Try Again"** button (see next section).
+
+### Try Again (approved 2026-10-17)
+
+- Shown in the result row, under the guided-demo CTA, after the first valid Save. The guided-demo CTA stays.
+- Clicking it resets the whole practice session: note count, checked tiles, selected chips, the result row and the timer (`startedAt` back to `null`, `elapsedMs` back to `null`). Focus moves to the first tile, since the button itself disappears.
+- The next tile tap starts a fresh timer, and the next valid Save stops and freezes it. Idle time between rounds never counts.
+- Unlimited rounds. No attempt cap.
+- Nothing new is stored, and no new event is added. The analytics refs (`startedSent`, `completedSent`) are **not** reset, so `quick_grid_demo_started` and `quick_grid_demo_completed` still fire at most once per component mount, however many rounds a visitor plays. Clicking Try Again sends nothing.
+- It's inside the `ph-no-capture` wrapper like the rest of the widget.
 
 ## 5. Analytics
 
@@ -194,8 +205,8 @@ quick_grid_demo_cta_clicked: { demo: ['quick_grid'] }
 
 | Event | Fires when | How often |
 |---|---|---|
-| `quick_grid_demo_started` | First student-tile activation (click, tap, Enter or Space) | Once per component mount (`startedSent` ref) |
-| `quick_grid_demo_completed` | First valid simulated Save | Once per component mount (`completedSent` ref) |
+| `quick_grid_demo_started` | First student-tile activation (click, tap, Enter or Space) | Once per component mount (`startedSent` ref), not reset by Try Again |
+| `quick_grid_demo_completed` | First valid simulated Save | Once per component mount (`completedSent` ref), not reset by Try Again |
 | `quick_grid_demo_cta_clicked` | Activation of a demo link to the app (result-row "Try the guided demo" or the sheet's "More options" link) | Every activation (the page navigates away anyway) |
 
 - The only **application-defined** property is the fixed `{ demo: 'quick_grid' }`. No student ids or names, chip labels, counts, text, or elapsed time. The types and `filterCustomEvent` both enforce this. Standard SDK metadata still rides along as on every event (timestamp, `distinct_id`, page and device `$` properties, allowed utm fields).
@@ -278,6 +289,12 @@ Timer (Playwright `page.clock`, which controls `performance.now()`):
 - [ ] Tap a tile, advance 2s, close, advance 1s, reopen, advance 0.5s, pick a chip, Save: shows "3.5 seconds".
 - [ ] Advance 5s, log another note: still "3.5 seconds".
 - [ ] No time text exists before the first Save.
+
+Try Again:
+- [ ] Not shown before the first Save. Clicking it clears the count, checks, chips, result row and time, and focuses the first tile.
+- [ ] Second round: idle time between rounds doesn't count, the new time runs from the round's first tap to its first Save, and later saves don't change it.
+- [ ] Five rounds in a row work, and the guided-demo link is there every round.
+- [ ] Started and completed still arrive once per mount across several rounds (analytics stub).
 
 Persistence and network:
 - [ ] The localStorage, sessionStorage and cookie keys are the same before and after the full flow (the demo adds none). Reload shows a fresh grid: no checks, no count, no time.

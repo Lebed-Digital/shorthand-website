@@ -121,6 +121,18 @@ export default function QuickGridDemo() {
     closeSheet();
   }
 
+  // A fresh practice round: counts, checks, chips and timer all reset, so the
+  // next tile tap starts a new time. Unlimited.
+  function tryAgain() {
+    startedAt.current = null;
+    setElapsedMs(null);
+    setNoteCount(0);
+    setLoggedIds(new Set());
+    setSelectedTags([]);
+    // This button is about to disappear, so put focus on the first tile.
+    frameRef.current?.querySelector<HTMLElement>('[data-student]')?.focus();
+  }
+
   const renderChip = (chip: (typeof CHIPS)[number], compact: boolean) => {
     const isSelected = selectedTags.includes(chip.label);
     return (
@@ -198,6 +210,9 @@ export default function QuickGridDemo() {
                 >
                   Try the guided demo →
                 </TrackedLink>
+                <button type="button" onClick={tryAgain} className={styles.tryAgain}>
+                  Try Again
+                </button>
               </div>
             )}
           </div>
