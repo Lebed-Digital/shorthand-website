@@ -1,0 +1,352 @@
+/* Tailwind classes from the app's Log Notes grid, translated by hand.
+   Colors are the app's own: Tailwind v4 tokens plus the app's sage
+   (#34d399) and sage-dark (#10b981). Sizes are rem so a visitor's browser
+   font-size setting scales them (11px = 0.6875rem). */
+
+.root {
+  --sage: #34d399;
+  --sage-dark: #10b981;
+  --slate-50: oklch(98.4% 0.003 247.858);
+  --slate-200: oklch(92.9% 0.013 255.508);
+  --slate-400: oklch(70.4% 0.04 256.788);
+  --slate-600: oklch(44.6% 0.043 257.281);
+  --slate-700: oklch(37.2% 0.044 257.287);
+  --slate-900: oklch(20.8% 0.042 265.755);
+  --blue-600: oklch(54.6% 0.245 262.881);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 100%;
+  /* Phone-sized: 356px of grid width keeps the app's 4 columns on desktop. */
+  max-width: 380px;
+  margin: 0 auto 60px;
+}
+
+/* White app card. Resets the site's white, thin, loose, centered body text. */
+.frame {
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 16px rgba(0, 0, 0, 0.06);
+  color: var(--slate-700);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.frame button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pane > * + * { margin-top: 12px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 4px;
+}
+
+.title {
+  font-size: 0.9375rem;
+  font-weight: 900;
+  color: var(--blue-600);
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+.status {
+  flex-shrink: 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--slate-400);
+}
+
+.hint {
+  padding: 0 4px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--slate-400);
+}
+
+/* Exactly the app's grid: 4 columns from a 290px content width, else 3. */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(68px, 1fr));
+  gap: 6px;
+  padding-bottom: 24px;
+}
+
+.frame .tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  min-height: 64px;
+  padding: 6px;
+  background: #fff;
+  border: 2px solid var(--slate-200);
+  border-radius: 16px;
+  transition: all 150ms var(--ease);
+}
+.frame .tile:hover { border-color: var(--sage); }
+.frame .tile:active { transform: scale(0.97); }
+.frame .tileLogged {
+  background: rgba(52, 211, 153, 0.05);
+  border-color: var(--sage);
+}
+
+.badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sage);
+  color: #fff;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(52, 211, 153, 0.15);
+  color: var(--sage-dark);
+  font-size: 0.625rem;
+  font-weight: 900;
+}
+
+.tileName {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--slate-700);
+}
+
+/* Shown after the first Save. */
+.result {
+  padding: 0 4px 4px;
+}
+.time {
+  font-size: 0.8125rem;
+  font-weight: 900;
+  color: var(--slate-900);
+}
+.summary {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--slate-600);
+}
+.cta {
+  display: block;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 16px;
+  background: var(--sage);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Covers the demo only, not the page. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: oklch(20.8% 0.042 265.755 / 0.4);
+}
+
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  outline: none;
+}
+
+/* Close and Save sit outside the scrolling chip area. */
+.sheetTop,
+.sheetBottom { flex-shrink: 0; }
+
+.handleRow {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 4px;
+}
+.handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 9999px;
+  background: var(--slate-200);
+}
+
+.sheetHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 16px;
+}
+.sheetName {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 1.0625rem;
+  font-weight: 900;
+  color: var(--slate-900);
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+.frame .close {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -12px;
+  color: var(--slate-400);
+  transition: color 150ms var(--ease);
+}
+.frame .close:hover { color: oklch(55.4% 0.046 257.417); }
+
+.sheetBody {
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 12px 16px 0;
+}
+
+.quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Inset past the padding so the cut-off chip reads as "more this way". */
+.overflowBleed {
+  margin: 12px -16px 0;
+  padding: 0 16px;
+  min-width: 0;
+}
+.overflowRow {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+.overflowRow::-webkit-scrollbar { display: none; }
+
+.frame .chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 2px solid;
+  border-radius: 9999px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: all 150ms var(--ease);
+}
+.frame .chipQuick { font-size: 0.75rem; }
+.frame .chipOverflow { font-size: 0.6875rem; flex-shrink: 0; }
+
+.frame .positive { background: oklch(97.9% 0.021 166.113); border-color: oklch(90.5% 0.093 164.15); color: oklch(50.8% 0.118 165.612); }
+.frame .growth { background: oklch(96.9% 0.015 12.422); border-color: oklch(89.2% 0.058 10.001); color: oklch(51.4% 0.222 16.935); }
+.frame .neutral { background: oklch(98.7% 0.022 95.277); border-color: oklch(92.4% 0.12 95.746); color: oklch(55.5% 0.163 48.998); }
+.frame .positive.selected { background: oklch(69.6% 0.17 162.48); border-color: oklch(69.6% 0.17 162.48); color: #fff; }
+.frame .growth.selected { background: oklch(64.5% 0.246 16.439); border-color: oklch(64.5% 0.246 16.439); color: #fff; }
+.frame .neutral.selected { background: oklch(82.8% 0.189 84.429); border-color: oklch(82.8% 0.189 84.429); color: #fff; }
+
+.chipCheck {
+  flex-shrink: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.sheetBottom {
+  padding: 12px 16px 16px;
+}
+.frame .save {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 16px;
+  background: var(--sage);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 150ms var(--ease);
+}
+.frame .save:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.moreOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 12px;
+  padding: 4px 0;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--slate-400);
+  text-decoration: none;
+  transition: color 150ms var(--ease);
+}
+.moreOptions:hover { color: var(--sage); }
+
+.disclaimer {
+  margin-top: 12px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-dim);
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .frame .tile:active { transform: none; }
+}

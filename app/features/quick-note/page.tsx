@@ -4,6 +4,7 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
+import QuickGridDemo from '../../../components/QuickGridDemo';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -62,6 +63,8 @@ export default function QuickNotePage() {
           those quick notes give you a clearer picture of each student and better information
           for parent conversations, meetings, and reports.
         </p>
+
+        <QuickGridDemo />
 
         <FeatureVideo videoId="7fQrX5eHAsc" title="Quick Grid walkthrough" hideControls />
 
