@@ -1,5 +1,5 @@
 // Custom PostHog events on the public website. This file is the whole
-// vocabulary: six event names and, for each one, the property names and the
+// vocabulary: nine event names and, for each one, the property names and the
 // exact values each property may take. Nothing else can be sent. It also lists
 // the experiments (feature flags) the site may read: see EXPERIMENTS.
 //
@@ -84,6 +84,14 @@ export const CUSTOM_EVENTS = {
     cta_type: ['workflow_bridge'],
     variant: ['control', 'test'],
   },
+  // The practice Quick Grid on /features/quick-note (components/QuickGridDemo.tsx).
+  // Started: the first student tapped. Completed: the first practice note
+  // saved. Each at most once per page load, however many times the visitor
+  // presses Try Again. Cta clicked: a click on one of its links to the app.
+  // Never a student, a chip, a count or a time.
+  quick_grid_demo_started: { demo: ['quick_grid'] },
+  quick_grid_demo_completed: { demo: ['quick_grid'] },
+  quick_grid_demo_cta_clicked: { demo: ['quick_grid'] },
 } as const;
 
 export type CustomEventName = keyof typeof CUSTOM_EVENTS;

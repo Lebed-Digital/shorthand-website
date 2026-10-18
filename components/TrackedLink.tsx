@@ -10,10 +10,13 @@ interface TrackedLinkProps {
   className?: string;
   children: React.ReactNode;
   style?: React.CSSProperties;
+  /** Runs first on click, before navigation. For a page's own analytics event. */
+  onClick?: () => void;
 }
 
-export default function TrackedLink({ href, label, ctaSource = 'homepage', className, children, style }: TrackedLinkProps) {
+export default function TrackedLink({ href, label, ctaSource = 'homepage', className, children, style, onClick }: TrackedLinkProps) {
   function handleClick(e: React.MouseEvent<HTMLAnchorElement>) {
+    onClick?.();
     e.preventDefault();
     const destination = withAttribution(href, window.location.pathname, window.location.search);
     fireCtaClick({
