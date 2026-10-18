@@ -1,11 +1,11 @@
 # Plan: interactive Quick Grid demo on the website
 
-Status: revision 3, approved. Session 1 and Try Again implemented on branch `feat/quick-grid-demo` (2026-10-17). Session 2 done except the privacy-page clause, which waits on Greg's approval of the exact wording.
+Status: revision 3, approved. Session 1 and Try Again implemented on branch `feat/quick-grid-demo` (2026-10-17). Session 2 done, including the privacy-page clause in Greg's approved wording (2026-10-17). Remaining before merge: Greg's iPhone pass on the preview, then a final Codex implementation review.
 
 Session 2 notes:
 - The manual privacy check plays the demo in **its own browser sessions** (an interaction run with a Try Again round, and a separate forged-event run), not inside the main visit. So the main visit's `CUSTOM` list and its "five custom events" label are unchanged.
 - The replay positive control is the page's description paragraph, not the "Quick Grid" heading, because the `h1` is split into two text nodes ("Quick " and `<em>Grid</em>`).
-- Result on 2026-10-17: all 13 Quick Grid checks pass. Overall 125/126. The one failure ("Frequently asked questions" readable on the comment generator) fails on `main` too (113/114) and isn't from this branch.
+- Result on 2026-10-17: all 13 Quick Grid checks pass. Overall 125/126. The one failure ("Frequently asked questions" readable on the comment generator) fails on `main` too (113/114) and isn't from this branch. Recorded in `Brain/Known Bugs.md` for later; likely a false positive in the script (the same heading is on `/chatgpt-teacher-freebies`, whose text the script doesn't treat as public).
 - Measured on local production builds of `/features/quick-note`: route JS 212.8 KB on `main` and 215.6 KB on the branch (compressed, **+2.8 KB**). Layout shift 0 on both, at 390x844 and 1280x800. Measured locally with a layout-shift observer, not Lighthouse on the preview (the preview is behind Vercel login).
 
 Session 1 notes (small departures from the text below, all from implementation):
