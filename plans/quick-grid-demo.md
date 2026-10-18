@@ -1,6 +1,14 @@
 # Plan: interactive Quick Grid demo on the website
 
-Status: revision 3, approved. Session 1 and Try Again implemented on branch `feat/quick-grid-demo` (2026-10-17). Session 2 done, including the privacy-page clause in Greg's approved wording (2026-10-17). Remaining before merge: Greg's iPhone pass on the preview, then a final Codex implementation review.
+Status: **SHIPPED 2026-10-17.** PR #135 squash-merged as `87e475480a434912e1e23619b6d681089453571e` (tree identical to the tested branch head `5b2bc8b`). Production deployment `dpl_3wrNb1J3NqnFf9dbn6EZjve8bDjR` is READY and aliased to getshorthandapp.com. Greg tested the preview on his iPhone first, and Codex's final implementation review returned GO with no blocking issues.
+
+Live verification on https://getshorthandapp.com/features/quick-note (2026-10-17, automated browser at 390x844, 18/18 checks): disclaimer, 12 tiles, `ph-no-capture` wrapper, sheet and Save state, timer (3.5s, frozen on later saves), repeat saves ("2 notes for 1 student"), Try Again reset and focus, a fresh second-round time (1.5s), CTA to `?demo=true` (with `lp` attribution), no `/api` or Supabase requests, no page errors, the privacy wording on /privacy, and all three event names in the deployed JS. GA, Vercel Analytics and PostHog were blocked, and the app host was stubbed, so the run added nothing to production analytics or app data.
+
+PostHog events: **configured and verified in code, not yet seen live.** The allowlist, the call sites and before_send filtering are verified by unit tests, the stub tests and the real-SDK manual check (local production build). Automated browsers never load PostHog on this site, so live delivery will first show up when a real visitor taps a tile. PostHog needs no dashboard setup: custom events appear on first arrival. To confirm, tap a tile and Save on a normal phone or desktop browser, then look for `quick_grid_demo_started` / `_completed` in PostHog's activity view.
+
+Deferred, not fixed (Greg 2026-10-17): Codex's final review raised **two nonblocking findings**. Their details weren't passed into the Claude session that shipped this, so add them here. Also open: the pre-existing comment-generator replay check failure (`Brain/Known Bugs.md`).
+
+History: Session 1 and Try Again were implemented on branch `feat/quick-grid-demo`. Session 2 included the privacy-page clause in Greg's approved wording.
 
 Session 2 notes:
 - The manual privacy check plays the demo in **its own browser sessions** (an interaction run with a Try Again round, and a separate forged-event run), not inside the main visit. So the main visit's `CUSTOM` list and its "five custom events" label are unchanged.
