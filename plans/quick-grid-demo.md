@@ -6,7 +6,11 @@ Live verification on https://getshorthandapp.com/features/quick-note (2026-10-17
 
 PostHog events: **configured and verified in code, not yet seen live.** The allowlist, the call sites and before_send filtering are verified by unit tests, the stub tests and the real-SDK manual check (local production build). Automated browsers never load PostHog on this site, so live delivery will first show up when a real visitor taps a tile. PostHog needs no dashboard setup: custom events appear on first arrival. To confirm, tap a tile and Save on a normal phone or desktop browser, then look for `quick_grid_demo_started` / `_completed` in PostHog's activity view.
 
-Deferred, not fixed (Greg 2026-10-17): Codex's final review raised **two nonblocking findings**. Their details weren't passed into the Claude session that shipped this, so add them here. Also open: the pre-existing comment-generator replay check failure (`Brain/Known Bugs.md`).
+Deferred, low priority, not fixed (Codex final review of PR #135, nonblocking; Greg 2026-10-18):
+1. **Storage test checks keys, not values.** `tests/quick-grid-demo.spec.ts` (the storage and network test, around line 300) compares localStorage, sessionStorage and cookie keys before and after the flow, but not their values. A future write to a key that already exists would go unnoticed. The component makes no storage writes today. Strengthen the test (compare values too) during future maintenance.
+2. **Early events can be lost before PostHog is ready.** `components/QuickGridDemo.tsx` (around line 108) marks started and completed as sent even when `window.__shTrack` isn't set yet. A visitor who taps or saves before PostHog finishes loading never has that event recorded, and it won't be retried in that page load. The demo itself still works. This matches how every other `captureEvent()` call on the site behaves, so a fix would belong in the shared helper, not just this component.
+
+Also open: the pre-existing comment-generator replay check failure (`Brain/Known Bugs.md`).
 
 History: Session 1 and Try Again were implemented on branch `feat/quick-grid-demo`. Session 2 included the privacy-page clause in Greg's approved wording.
 
