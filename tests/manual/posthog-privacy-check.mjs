@@ -38,6 +38,10 @@
 //   secret, although the SDK would put the first URL the browser ever opened
 //   in it; an unlisted flag reaches no event; and seeing, pausing on and
 //   clicking the call to action are recorded in that order with no text.
+// - Plays the Quick Grid practice demo on its own visit: exactly its three
+//   events plus the usual app link click arrive, none of its made-up students,
+//   chips or text reach the replay or any event, and a forged demo event is
+//   stripped down to its one listed property.
 //
 // Why a real browser and not a unit test: every problem this caught was in how
 // the SDK behaves, not in our own logic. Examples: the dashboard can switch on
@@ -855,6 +859,109 @@ for (const [label, path, expectedCount] of [['an ordinary page', '/', 0], ['the 
     before === expectedCount && s.rec.flagRequests.length === expectedCount && jumped - Date.now() > 10 * 60 * 1000,
     `${s.rec.flagRequests.length} flag request(s), page clock ${Math.round((jumped - Date.now()) / 60000)} min ahead`,
   );
+}
+
+// ---------- 2b. The Quick Grid practice demo (components/QuickGridDemo.tsx) ----------
+// Its own visits, so its events are counted apart from the main visit's. The
+// widget is wrapped in ph-no-capture: its made-up students, chips, demo time
+// and links must reach neither the replay nor any event. Written out by hand,
+// like the event list above.
+{
+  const QG_PAGE = '/features/quick-note';
+  const QG_STUDENTS = ['Biscuit', 'Blueberry', 'Comet', 'Falcon', 'Maple', 'Nova', 'Pebble', 'Pickle', 'Rocket', 'Sprout', 'Waffle', 'Zigzag'];
+  const QG_CHIPS = [
+    'On Task', 'Participation', 'Redirected', 'Off Task', 'Unprepared', 'Disruption', 'Peer Conflict', 'Kindness', 'Incomplete',
+    'Persistence', 'Independent Work', 'Teamwork', 'Leadership', 'Growth Mindset', 'Star Work', 'Self-Regulation', 'Check-In', 'Modified Work',
+  ];
+  const QG_WIDGET_TEXT = ['Your demo time', 'Try the guided demo', 'Try Again', 'More options are in the full app', 'Log a note for', 'Tap a student to log a note'];
+  const QG_EVENTS = ['quick_grid_demo_started', 'quick_grid_demo_completed', 'quick_grid_demo_cta_clicked'];
+  const SITE_EVENTS = ['app_link_clicked', ...QG_EVENTS];
+  const SDK_KEYS = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
+  const own = (e) => Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort());
+
+  // Interaction run: open and close, save twice, a second round via Try Again,
+  // then the guided-demo link. Started and completed must each arrive once.
+  const s = await newSession(browser);
+  const p = await s.context.newPage();
+  await p.goto(`${ORIGIN}${QG_PAGE}`, { waitUntil: 'load' });
+  await p.waitForTimeout(3000);
+  const qgTile = (name) => p.getByRole('button', { name: new RegExp(`^Log a note for ${name}`) });
+  const qgChip = (label) => p.getByRole('button', { name: label, exact: true });
+  const qgSave = () => p.getByRole('dialog').getByRole('button', { name: 'Save' }).click();
+  await qgTile('Comet').click();
+  await p.getByRole('dialog').getByRole('button', { name: 'Close' }).click();
+  await qgTile('Comet').click();
+  await qgChip('On Task').click();
+  await qgChip('Kindness').click();
+  await qgSave();
+  await qgTile('Zigzag').click();
+  await qgChip('Off Task').click();
+  await qgSave();
+  await p.getByRole('button', { name: 'Try Again' }).click();
+  await qgTile('Nova').click();
+  await qgChip('Check-In').click();
+  await qgSave();
+  const qgShown = await p.getByText(/^Your demo time/).isVisible();
+  check('quick grid: the sheet opened and the result row is showing (the replay had widget text to record)', qgShown);
+  await p.waitForTimeout(8000); // replay flush with the result row on screen
+  await p.getByRole('link', { name: 'Try the guided demo →' }).click();
+  await p.waitForURL(/app\.getshorthandapp\.com/, { timeout: 15000 }).catch(() => {});
+  check('quick grid: the guided demo link really left the site for the app stand-in', /app\.getshorthandapp\.com/.test(p.url()), p.url());
+  await p.waitForTimeout(3000);
+  await s.context.close();
+
+  const events = eventsOf(s.rec);
+  const nonSnap = events.filter((e) => e.event !== '$snapshot');
+  const names = [...new Set(events.map((e) => e.event))].sort();
+  const sent = nonSnap.filter((e) => SITE_EVENTS.includes(e.event)).map((e) => `${e.event} ${JSON.stringify(own(e))}`).sort();
+  const expected = [
+    'app_link_clicked {"cta_location":"page","destination":"web_app"}',
+    'quick_grid_demo_completed {"demo":"quick_grid"}',
+    'quick_grid_demo_cta_clicked {"demo":"quick_grid"}',
+    'quick_grid_demo_started {"demo":"quick_grid"}',
+  ];
+  console.log('\nINFO  quick grid visit, events sent: ' + names.join(', '));
+  console.log('INFO  quick grid visit, site events:\n  ' + (sent.join('\n  ') || '(none)'));
+  check('quick grid: exactly started, completed, cta_clicked and app_link_clicked, once each, with exactly their listed properties', JSON.stringify(sent) === JSON.stringify(expected), `${sent.length} sent`);
+  const allowed = new Set(['$pageview', '$pageleave', '$snapshot', ...SITE_EVENTS]);
+  check('quick grid: no event beyond pageviews, replay and the four above', names.every((n) => allowed.has(n)), names.filter((n) => !allowed.has(n)).join(', '));
+  check('quick grid: no autocapture events', !names.some((n) => /autocapture|rageclick|dead_click/.test(n)));
+
+  const rrweb = events.filter((e) => e.event === '$snapshot').flatMap((e) => e.properties.$snapshot_data || []);
+  const snapText = JSON.stringify(rrweb);
+  const texts = replayTexts(rrweb);
+  check('quick grid: recording really ran on the page', rrweb.some((r) => r.type === 2), `${rrweb.length} replay events`);
+  // Positive control: the page's own copy around the widget IS recorded.
+  check('quick grid: positive control, the page description is readable in the replay', texts.some((t) => t.includes('Open your class and see your students')));
+  const inReplay = [...QG_STUDENTS, ...QG_CHIPS, ...QG_WIDGET_TEXT].filter((t) => snapText.includes(t));
+  check('quick grid: no student, chip, demo time or demo link text anywhere in the replay', inReplay.length === 0, inReplay.join(', ') || `${QG_STUDENTS.length + QG_CHIPS.length + QG_WIDGET_TEXT.length} strings checked`);
+  const eventText = JSON.stringify(nonSnap);
+  const onEvents = [...QG_STUDENTS, ...QG_CHIPS, ...QG_WIDGET_TEXT].filter((t) => eventText.includes(t));
+  check('quick grid: no student, chip or widget text on any event', onEvents.length === 0, onEvents.join(', '));
+  check(
+    'quick grid: its events are anonymous (person processing off)',
+    nonSnap.filter((e) => QG_EVENTS.includes(e.event)).every((e) => e.properties.$process_person_profile === false),
+  );
+}
+{
+  // Forged-event run, on a fresh page and counted apart: a call site that
+  // tries to send the demo's details must have them stripped.
+  const s = await newSession(browser);
+  const p = await s.context.newPage();
+  await p.goto(`${ORIGIN}/features/quick-note`, { waitUntil: 'load' });
+  await p.waitForTimeout(3000);
+  const forged = await p.evaluate(() => {
+    if (typeof window.__shTrack !== 'function') return false;
+    window.__shTrack('quick_grid_demo_completed', { demo: 'quick_grid', student: 'Zigzag', tags: 'Off Task', elapsed_ms: '2300' });
+    return true;
+  });
+  check('quick grid forged event: the tracker was present and the call was made', forged);
+  await p.waitForTimeout(4000);
+  await s.context.close();
+  const SDK_KEYS = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
+  const got = eventsOf(s.rec).filter((e) => e.event === 'quick_grid_demo_completed');
+  const props = got.map((e) => JSON.stringify(Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort())));
+  check('quick grid forged event: arrives once, with exactly {"demo":"quick_grid"}', props.length === 1 && props[0] === '{"demo":"quick_grid"}', props.join(' ; ') || 'none arrived');
 }
 
 // ---------- 3. Gates: none of these may contact PostHog at all ----------

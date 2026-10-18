@@ -26,6 +26,7 @@
 import { useEffect, useId, useRef, useState } from 'react';
 import { Check, ChevronRight, X } from 'lucide-react';
 import TrackedLink from './TrackedLink';
+import { captureEvent } from '../lib/posthog-events';
 import styles from './QuickGridDemo.module.css';
 
 // The app's guided-demo names (WelcomeModal.tsx) plus eight more in the same
@@ -65,6 +66,10 @@ const OVERFLOW = CHIPS.slice(6);
 
 const GUIDED_DEMO_URL = 'https://app.getshorthandapp.com/?demo=true';
 
+// The only property any demo event carries. See CUSTOM_EVENTS.
+const DEMO = { demo: 'quick_grid' } as const;
+const ctaClicked = () => captureEvent('quick_grid_demo_cta_clicked', DEMO);
+
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
 export default function QuickGridDemo() {
@@ -76,6 +81,9 @@ export default function QuickGridDemo() {
   // never change it.
   const startedAt = useRef<number | null>(null);
   const [elapsedMs, setElapsedMs] = useState<number | null>(null);
+  // Once per mount each. Try Again deliberately leaves these alone.
+  const startedSent = useRef(false);
+  const completedSent = useRef(false);
   const returnFocusId = useRef<string | null>(null);
   const frameRef = useRef<HTMLDivElement>(null);
   const sheetRef = useRef<HTMLDivElement>(null);
@@ -97,6 +105,10 @@ export default function QuickGridDemo() {
   function openSheet(e: React.MouseEvent<HTMLButtonElement>) {
     const name = e.currentTarget.dataset.student!;
     if (startedAt.current === null) startedAt.current = performance.now();
+    if (!startedSent.current) {
+      startedSent.current = true;
+      captureEvent('quick_grid_demo_started', DEMO);
+    }
     returnFocusId.current = name;
     setSelectedTags([]);
     setSheetStudent(name);
@@ -115,6 +127,10 @@ export default function QuickGridDemo() {
     if (!sheetStudent || selectedTags.length === 0) return;
     if (elapsedMs === null && startedAt.current !== null) {
       setElapsedMs(performance.now() - startedAt.current);
+    }
+    if (!completedSent.current) {
+      completedSent.current = true;
+      captureEvent('quick_grid_demo_completed', DEMO);
     }
     setNoteCount(n => n + 1);
     setLoggedIds(ids => new Set(ids).add(sheetStudent));
@@ -206,6 +222,7 @@ export default function QuickGridDemo() {
                   href={GUIDED_DEMO_URL}
                   label="quick_grid_demo_cta"
                   ctaSource="features_quick_note"
+                  onClick={ctaClicked}
                   className={styles.cta}
                 >
                   Try the guided demo →
@@ -255,6 +272,7 @@ export default function QuickGridDemo() {
                   href={GUIDED_DEMO_URL}
                   label="quick_grid_demo_cta"
                   ctaSource="features_quick_note"
+                  onClick={ctaClicked}
                   className={styles.moreOptions}
                 >
                   More options are in the full app <ChevronRight size={12} aria-hidden="true" />

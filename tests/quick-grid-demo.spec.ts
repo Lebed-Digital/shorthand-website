@@ -217,6 +217,79 @@ test.describe('try again', () => {
   });
 });
 
+test.describe('analytics', () => {
+  // PostHog doesn't run on localhost, so this stands in for the tracker that
+  // captureEvent() looks for and records what it's handed (the same pattern as
+  // blog-example-copy.spec.ts). The site-wide app_link_clicked listener is only
+  // installed with real PostHog, so everything recorded here is the demo's own.
+  async function recordTracked(page: Page) {
+    const tracked: [string, unknown][] = [];
+    await page.exposeFunction('__recordTracked', (name: string, props: unknown) => { tracked.push([name, props]); });
+    await page.addInitScript(() => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).__shTrack = (name: string, props: unknown) => (window as any).__recordTracked(name, props);
+    });
+    return tracked;
+  }
+  const named = (tracked: [string, unknown][], name: string) => tracked.filter(([n]) => n === name);
+  const DEMO = { demo: 'quick_grid' };
+
+  test('started and completed fire once per mount, across rounds of Try Again', async ({ page }) => {
+    const tracked = await recordTracked(page);
+    await page.goto(PAGE);
+    await tile(page, 'Comet').click();
+    await closeButton(page).click();
+    await logNote(page, 'Comet', ['On Task', 'Kindness']);
+    await logNote(page, 'Nova', ['Check-In']);
+    for (let round = 0; round < 3; round++) {
+      await page.getByRole('button', { name: 'Try Again' }).click();
+      await logNote(page, 'Maple', ['Teamwork']);
+    }
+
+    await expect.poll(() => tracked.length).toBe(2);
+    expect(tracked).toEqual([['quick_grid_demo_started', DEMO], ['quick_grid_demo_completed', DEMO]]);
+  });
+
+  test('a demo link click sends one cta_clicked and never app_link_clicked', async ({ page }) => {
+    const tracked = await recordTracked(page);
+    await page.route(`${APP_HOST}/**`, route => route.fulfill({ contentType: 'text/html', body: '<p>app stub</p>' }));
+    await page.goto(PAGE);
+    await logNote(page, 'Comet', ['On Task']);
+    await page.getByRole('link', { name: 'Try the guided demo →' }).click();
+    await page.waitForURL(url => url.href.startsWith(APP_HOST));
+
+    expect(named(tracked, 'quick_grid_demo_cta_clicked')).toEqual([['quick_grid_demo_cta_clicked', DEMO]]);
+    expect(named(tracked, 'app_link_clicked')).toEqual([]);
+    expect(tracked.map(([, props]) => props)).toEqual([DEMO, DEMO, DEMO]);
+  });
+
+  test("the sheet's More options link is a demo CTA too", async ({ page }) => {
+    const tracked = await recordTracked(page);
+    await page.route(`${APP_HOST}/**`, route => route.fulfill({ contentType: 'text/html', body: '<p>app stub</p>' }));
+    await page.goto(PAGE);
+    await tile(page, 'Comet').click();
+    await sheet(page).getByRole('link', { name: /More options are in the full app/ }).click();
+    await page.waitForURL(url => url.href.startsWith(APP_HOST));
+    expect(tracked).toEqual([['quick_grid_demo_started', DEMO], ['quick_grid_demo_cta_clicked', DEMO]]);
+  });
+
+  test('a tracker that throws breaks nothing', async ({ page }) => {
+    const errors: string[] = [];
+    page.on('pageerror', e => errors.push(e.message));
+    await page.addInitScript(() => {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      (window as any).__shTrack = () => { throw new Error('tracker down'); };
+    });
+    await page.route(`${APP_HOST}/**`, route => route.fulfill({ contentType: 'text/html', body: '<p>app stub</p>' }));
+    await page.goto(PAGE);
+    await logNote(page, 'Comet', ['On Task']);
+    await expect(page.getByText('1 logged', { exact: true })).toBeVisible();
+    await page.getByRole('link', { name: 'Try the guided demo →' }).click();
+    await page.waitForURL(url => url.href.startsWith(APP_HOST));
+    expect(errors).toEqual([]);
+  });
+});
+
 test.describe('persistence and network', () => {
   test('adds no storage, makes no app/API/Supabase requests, reload is fresh', async ({ page, context }) => {
     const blocked: string[] = [];
@@ -251,7 +324,8 @@ test.describe('persistence and network', () => {
   test('with no analytics loaded, the flow works and the CTA still navigates', async ({ page }) => {
     const errors: string[] = [];
     page.on('pageerror', e => errors.push(e.message));
-    page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
+    // A resource cut off by the CTA's navigation is network noise, not an error.
+    page.on('console', m => { if (m.type() === 'error' && !m.text().startsWith('Failed to load resource')) errors.push(m.text()); });
     await page.route(`${APP_HOST}/**`, route => route.fulfill({ contentType: 'text/html', body: '<p>app stub</p>' }));
 
     await page.goto(PAGE);

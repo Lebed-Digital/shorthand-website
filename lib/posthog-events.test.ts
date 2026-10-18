@@ -136,6 +136,28 @@ test('a listed property holding an unlisted value is removed', () => {
   assert.deepEqual(filtered?.properties, { action: 'generate' });
 });
 
+// The practice demo uses made-up students, and still none of them, nor a chip,
+// a count or a time, may ride along. The fixed demo name is all that survives.
+test('the Quick Grid demo events carry only demo: quick_grid', () => {
+  for (const event of ['quick_grid_demo_started', 'quick_grid_demo_completed', 'quick_grid_demo_cta_clicked']) {
+    const filtered = filterCustomEvent({
+      event,
+      properties: {
+        demo: 'quick_grid',
+        student: 'Zigzag',
+        tags: 'Off Task',
+        elapsed_ms: '2300',
+        text: 'Comet was on task',
+        distinct_id: 'anon-1',
+        $pathname: '/features/quick-note',
+      },
+    });
+    assert.deepEqual(filtered?.properties, { demo: 'quick_grid', distinct_id: 'anon-1', $pathname: '/features/quick-note' }, event);
+    assert.deepEqual(filterCustomEvent({ event, properties: { demo: 'pulse_grid' } })?.properties, {}, event);
+  }
+  assert.equal(filterCustomEvent({ event: 'quick_grid_demo_saved', properties: { demo: 'quick_grid' } }), null);
+});
+
 // The copied example is the one thing this event must never carry, and the
 // post's title is a sentence, so neither can ride along.
 test('a copied blog example keeps its kind and position, and nothing else', () => {
