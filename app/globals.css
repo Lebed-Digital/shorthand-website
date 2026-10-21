@@ -101,6 +101,7 @@ nav {
   font-size: 2.5rem; font-weight: 800; color: var(--text);
   text-decoration: none; letter-spacing: -0.04em;
 }
+.nav-logo-icon { width: 40px; height: 40px; border-radius: 9px; margin-right: 10px; flex-shrink: 0; }
 .nav-badge {
   font-size: 0.65rem; font-weight: 500;
   padding: 3px 9px; border-radius: 99px;
@@ -1097,6 +1098,7 @@ footer {
   .nav-link { display: none !important; }
   .nav-inner { padding: 0 16px; }
   .nav-logo { font-size: 1.8rem; }
+  .nav-logo-icon { width: 32px; height: 32px; border-radius: 7px; margin-right: 8px; }
   .nav-right .btn-primary { display: none; }
   .nav-hamburger { display: flex; }
   /* Hero: shorter on mobile so Spline blank time is less painful */
@@ -1141,6 +1143,15 @@ footer {
   .detail-hero { padding: 40px 24px 60px; }
   /* Taller transition mask on mobile where Spline may not load */
   .features-section::before { height: 160px; }
+}
+/* Inner pages keep a CTA pill in the mobile nav; give it room next to the logo on small phones */
+@media (max-width: 370px) {
+  .nav-logo { font-size: 1.5rem; }
+  .nav-logo-icon { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
+}
+/* The homepage desktop nav already overflows just above the 768px collapse; don't add the icon's width there */
+@media (min-width: 769px) and (max-width: 950px) {
+  .nav-logo-icon { display: none; }
 }
 
 /* ── Blog ── */

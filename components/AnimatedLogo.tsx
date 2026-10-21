@@ -1,5 +1,6 @@
 'use client';
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const LETTERS = ['S','h','o','r','t','H','a','n','d'];
@@ -9,7 +10,8 @@ export default function AnimatedLogo() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <Link href="/" className="nav-logo ph-no-capture" style={{ display: 'flex', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
+    <Link href="/" className="nav-logo ph-no-capture" style={{ display: 'flex', alignItems: 'center', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
+      <Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority className="nav-logo-icon" />
       {LETTERS.map((letter, i) => (
         <motion.span
           key={i}
