@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://getshorthandapp.com/og-image.png',
+        url: 'https://getshorthandapp.com/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'Free Parent Communication Log for Teachers',

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes classroom behavior notes fast enough to log while you’re still teaching.',
     url: 'https://getshorthandapp.com/features/quick-note',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -26,7 +26,7 @@ export default function QuickNotePage() {
     "@type": "VideoObject",
     "name": "ShortHand Quick Grid Walkthrough",
     "description": "See how to log a student behavior note in seconds using ShortHand's Quick Grid.",
-    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image-v2.png",
     "uploadDate": "2026-04-26T00:00:00+00:00",
     "embedUrl": "https://www.youtube-nocookie.com/embed/7fQrX5eHAsc"
   };

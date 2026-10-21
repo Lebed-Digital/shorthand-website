@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Tools for Teachers | ShortHand',
     description: DESCRIPTION,
-    images: ['https://getshorthandapp.com/og-image.png'],
+    images: ['https://getshorthandapp.com/og-image-v2.png'],
   },
   openGraph: {
     title: 'Free Tools for Teachers | ShortHand',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://getshorthandapp.com/og-image.png',
+        url: 'https://getshorthandapp.com/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'Free Tools for Teachers from ShortHand',

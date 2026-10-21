@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Where ShortHand has been featured and listed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
     url: 'https://getshorthandapp.com/press',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
   alternates: { canonical: 'https://getshorthandapp.com/press' },
 };

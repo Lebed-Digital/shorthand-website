@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Copy your class list from a spreadsheet, student names, parent names, emails, and phone numbers, and paste it into ShortHand. It sorts everything automatically, and you choose how much of each name gets stored.',
     url: 'https://getshorthandapp.com/features/import-roster',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -25,7 +25,7 @@ export default function ImportRosterPage() {
     "@type": "VideoObject",
     "name": "ShortHand Import Your Class Roster Walkthrough",
     "description": "See how to paste an entire class roster, parent names, emails, and phone numbers included, into ShortHand in seconds.",
-    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image-v2.png",
     "uploadDate": "2026-08-31T00:00:00+00:00",
     "embedUrl": "https://www.youtube-nocookie.com/embed/KP8J5_kcHr0"
   };

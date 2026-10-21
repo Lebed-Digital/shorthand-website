@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://getshorthandapp.com/og-image.png',
+        url: 'https://getshorthandapp.com/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'Report Card Comment Library from ShortHand',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: LIBRARY_TITLE,
     description: LIBRARY_DESCRIPTION,
-    images: ['https://getshorthandapp.com/og-image.png'],
+    images: ['https://getshorthandapp.com/og-image-v2.png'],
   },
 };
 

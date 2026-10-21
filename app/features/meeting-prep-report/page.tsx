@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Walk into any meeting with an organized summary of a student\'s notes, communications, goals, and accommodations, built from what you\'ve already logged. Pro feature.',
     url: 'https://getshorthandapp.com/features/meeting-prep-report',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -25,7 +25,7 @@ export default function MeetingPrepReportPage() {
     "@type": "VideoObject",
     "name": "ShortHand Meeting Prep Report Walkthrough",
     "description": "See how ShortHand builds a Meeting Prep Report from your logged notes, communications, goals, and accommodations before a conference or IEP meeting.",
-    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image-v2.png",
     "uploadDate": "2026-08-20T00:00:00+00:00",
     "embedUrl": "https://www.youtube-nocookie.com/embed/K5AZIYJGJ7U"
   };

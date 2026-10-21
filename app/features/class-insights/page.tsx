@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: 'View student behavior trends over 4 to 52 weeks. Smart trend badges show who\'s improving and who needs attention, at a glance.',
     url: 'https://getshorthandapp.com/features/class-insights',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 

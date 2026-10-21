@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Ask a plain-language question and get an answer pulled straight from the notes you have already logged. Pro feature.',
     url: 'https://getshorthandapp.com/features/ask-shorthand',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
@@ -25,7 +25,7 @@ export default function AskShortHandPage() {
     "@type": "VideoObject",
     "name": "ShortHand Ask ShortHand Walkthrough",
     "description": "See how to ask a plain-language question in ShortHand and get an answer pulled straight from your logged notes.",
-    "thumbnailUrl": "https://getshorthandapp.com/og-image.png",
+    "thumbnailUrl": "https://getshorthandapp.com/og-image-v2.png",
     "uploadDate": "2026-08-20T00:00:00+00:00",
     "embedUrl": "https://www.youtube-nocookie.com/embed/Nkawyxj_yiA"
   };

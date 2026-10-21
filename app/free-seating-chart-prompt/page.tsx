@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     description: 'Turn a photo of your empty classroom into a clean seating chart with ChatGPT. Free prompt, no sign-up.',
     url: PAGE_URL,
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'Free AI seating chart prompt for teachers' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'Free AI seating chart prompt for teachers' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: 'Turn a photo of your empty classroom into a clean seating chart with ChatGPT. Free prompt, no sign-up.',
-    images: ['https://getshorthandapp.com/og-image.png'],
+    images: ['https://getshorthandapp.com/og-image-v2.png'],
   },
 };
 
