@@ -1149,6 +1149,10 @@ footer {
   .nav-logo { font-size: 1.5rem; }
   .nav-logo-icon { width: 28px; height: 28px; border-radius: 6px; margin-right: 6px; }
 }
+/* The homepage desktop nav already overflows just above the 768px collapse; don't add the icon's width there */
+@media (min-width: 769px) and (max-width: 950px) {
+  .nav-logo-icon { display: none; }
+}
 
 /* ── Blog ── */
 .blog-content {
