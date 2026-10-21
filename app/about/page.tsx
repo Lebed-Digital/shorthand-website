@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: 'Gregory Lebed is a 3rd grade teacher and former Registered Behavior Technician (RBT) who built ShortHand to solve the paperwork problem he lived every day.',
     url: 'https://getshorthandapp.com/about',
     type: 'profile',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
   alternates: { canonical: 'https://getshorthandapp.com/about' },
 };

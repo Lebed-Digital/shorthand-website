@@ -209,7 +209,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const title = `${meta.title} | ShortHand Blog`;
   // openGraph and twitter replace the layout's whole objects, so both have to
   // carry their own image and the post's own title.
-  const image = { url: meta.image ?? 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: meta.title };
+  const image = { url: meta.image ?? 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: meta.title };
   return {
     title,
     description: meta.excerpt,

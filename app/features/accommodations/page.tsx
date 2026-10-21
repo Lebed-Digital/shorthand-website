@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'See every student\'s IEP, 504, and classroom accommodations in one place. Quickly review seating, extended time, and testing supports before you need them.',
     url: 'https://getshorthandapp.com/features/accommodations',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 

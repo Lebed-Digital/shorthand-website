@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     description: SOCIAL_DESCRIPTION,
     url: PAGE_URL,
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'Free week at a glance prompt for teachers' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'Free week at a glance prompt for teachers' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: TITLE,
     description: SOCIAL_DESCRIPTION,
-    images: ['https://getshorthandapp.com/og-image.png'],
+    images: ['https://getshorthandapp.com/og-image-v2.png'],
   },
 };
 

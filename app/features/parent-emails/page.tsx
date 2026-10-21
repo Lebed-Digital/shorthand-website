@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: 'Turn behavior notes into parent-ready emails in seconds. ShortHand writes the message, fills in the subject line, and even adds the parent email address. You just hit send.',
     url: 'https://getshorthandapp.com/features/parent-emails',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 

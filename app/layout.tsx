@@ -39,14 +39,14 @@ export const metadata: Metadata = {
     title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
     description: 'Turn classroom notes into parent-ready messages in seconds. Log behavior, track parent contact, and generate AI reports. Built by a teacher, for teachers.',
     url: 'https://getshorthandapp.com',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: '/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
     description: 'Turn classroom notes into parent-ready messages in seconds. Free for teachers.',
-    images: ['/og-image.png'],
+    images: ['/og-image-v2.png'],
   },
   alternates: {
     canonical: 'https://getshorthandapp.com',

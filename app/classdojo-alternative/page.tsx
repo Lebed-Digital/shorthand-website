@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Looking for a ClassDojo alternative? ShortHand is built for older students: private behavior notes, parent communication logs, and no public point systems.',
     url: 'https://getshorthandapp.com/classdojo-alternative',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 

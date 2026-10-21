@@ -12,13 +12,13 @@ export const metadata: Metadata = {
     description: 'Create a personalized back-to-school welcome letter in seconds. Free for teachers.',
     url: 'https://getshorthandapp.com/back-to-school-toolkit',
     type: 'website',
-    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'ShortHand Welcome Letter Generator' }],
+    images: [{ url: '/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand Welcome Letter Generator' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Free Welcome Letter Generator for Teachers',
     description: 'Create a personalized back-to-school welcome letter in seconds. Free for teachers.',
-    images: ['/og-image.png'],
+    images: ['/og-image-v2.png'],
   },
 };
 

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://getshorthandapp.com/og-image.webp',
+        url: 'https://getshorthandapp.com/og-image-v2.png',
         width: 1200,
         height: 630,
         alt: 'ShortHand Report Card Comment Generator',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Report Card Comment Generator for Teachers',
     description: 'Generate polished report card comments in 10 seconds. Free, no sign-up required.',
-    images: ['https://getshorthandapp.com/og-image.webp'],
+    images: ['https://getshorthandapp.com/og-image-v2.png'],
   },
 };
 

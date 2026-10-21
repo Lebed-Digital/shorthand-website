@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description: 'Export a clean PDF of a student\'s dated, logged notes for any date range. A direct export of your own documentation, not an AI summary. Pro feature.',
     url: 'https://getshorthandapp.com/features/student-documentation-report',
     type: 'website',
-    images: [{ url: 'https://getshorthandapp.com/og-image.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
 };
 
