@@ -286,4 +286,4 @@ I do believe every teacher should use the tool that best fits the way they actua
 
 If this article helps you find that tool, then it accomplished exactly what I hoped it would.
 
-If you want to see what fast classroom documentation looks like, [the guided demo](https://app.getshorthandapp.com?demo=true) takes two minutes and doesn't require an account.
+If you want to see what fast classroom documentation looks like, [the demo](https://app.getshorthandapp.com?demo=true) opens with sample students already loaded and doesn't require an account.

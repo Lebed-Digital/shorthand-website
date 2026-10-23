@@ -19,7 +19,7 @@
  * - The sheet sits inside the demo frame, not the viewport, and has no
  *   aria-modal: it covers the demo only, so the rest of the page stays usable.
  * - No text field, class selector, "+ Multiple", "Full note" or offline state.
- * - "More options" links to the app's guided demo instead of opening the full
+ * - "More options" links to the app's demo instead of opening the full
  *   composer.
  */
 
@@ -29,7 +29,7 @@ import TrackedLink from './TrackedLink';
 import { captureEvent } from '../lib/posthog-events';
 import styles from './QuickGridDemo.module.css';
 
-// The app's guided-demo names (WelcomeModal.tsx) plus eight more in the same
+// The app's demo names (WelcomeModal.tsx) plus eight more in the same
 // style. One word each and all unique, so no name shortening is needed. Sorted
 // by name, as the app sorts its grid.
 const STUDENTS = [
@@ -64,7 +64,7 @@ const CHIPS: { label: string; type: ChipType }[] = [
 const QUICK = CHIPS.slice(0, 6);
 const OVERFLOW = CHIPS.slice(6);
 
-const GUIDED_DEMO_URL = 'https://app.getshorthandapp.com/?demo=true';
+const DEMO_URL = 'https://app.getshorthandapp.com/?demo=true';
 
 // The only property any demo event carries. See CUSTOM_EVENTS.
 const DEMO = { demo: 'quick_grid' } as const;
@@ -215,17 +215,17 @@ export default function QuickGridDemo() {
               <div className={styles.result}>
                 <p className={styles.time}>Your demo time: {(elapsedMs / 1000).toFixed(1)} seconds</p>
                 <p className={styles.summary}>
-                  You logged {plural(noteCount, 'note')} for {plural(loggedIds.size, 'student')}. The guided
-                  demo in the app goes further: write a full note and turn it into a report.
+                  You logged {plural(noteCount, 'note')} for {plural(loggedIds.size, 'student')}. The full
+                  demo has sample students ready, so you can write a full note and turn it into a report.
                 </p>
                 <TrackedLink
-                  href={GUIDED_DEMO_URL}
+                  href={DEMO_URL}
                   label="quick_grid_demo_cta"
                   ctaSource="features_quick_note"
                   onClick={ctaClicked}
                   className={styles.cta}
                 >
-                  Try the guided demo →
+                  Try the full demo →
                 </TrackedLink>
                 <button type="button" onClick={tryAgain} className={styles.tryAgain}>
                   Try Again
@@ -269,7 +269,7 @@ export default function QuickGridDemo() {
                   Save
                 </button>
                 <TrackedLink
-                  href={GUIDED_DEMO_URL}
+                  href={DEMO_URL}
                   label="quick_grid_demo_cta"
                   ctaSource="features_quick_note"
                   onClick={ctaClicked}

@@ -285,4 +285,4 @@ The student gets another chance.
 
 So do you.
 
-Years after learning these lessons, I built [ShortHand](https://getshorthandapp.com) to solve one of the biggest frustrations I kept running into: capturing accurate observations before they disappeared. If you're curious what that looks like in practice, you can try the [guided demo](https://app.getshorthandapp.com?demo=true) in about two minutes. No account required.
+Years after learning these lessons, I built [ShortHand](https://getshorthandapp.com) to solve one of the biggest frustrations I kept running into: capturing accurate observations before they disappeared. If you're curious what that looks like in practice, you can try the [demo](https://app.getshorthandapp.com?demo=true), which opens with sample students already loaded. No account required.

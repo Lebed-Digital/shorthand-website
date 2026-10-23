@@ -12,7 +12,7 @@ Current public CTA destination:
 https://app.getshorthandapp.com?demo=true
 
 Current strategy:
-Guided demo first, signup second. `?demo=true` bypasses signup and drops users directly into a live demo with pre-loaded student data.
+Demo first, signup second (the guided tour was removed in 2026-10; the demo is now free play with seeded data). `?demo=true` bypasses signup and drops users directly into a live demo with pre-loaded student data.
 
 Reference: docs/funnel-decisions.md for full implementation history.
 
