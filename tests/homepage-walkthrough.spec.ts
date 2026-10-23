@@ -83,7 +83,7 @@ test('hero "See How It Works" lands on the walkthrough heading, clear of the sti
   expect(eventsNamed(events, 'cta_click').map((e) => e.cta_destination)).toContain('hero_see_how_it_works');
 });
 
-test('walkthrough CTA fires its own cta_click and opens the guided demo', async ({ page }) => {
+test('walkthrough CTA fires its own cta_click and opens the demo', async ({ page }) => {
   const events = await captureEvents(page);
   await page.route('https://app.getshorthandapp.com/**', (route) =>
     route.fulfill({ status: 200, contentType: 'text/html', body: '<html>app</html>' })
@@ -92,7 +92,7 @@ test('walkthrough CTA fires its own cta_click and opens the guided demo', async 
   await page.goto('/');
   const section = page.locator('#walkthrough');
   await expect(section.getByText('No account, no credit card.')).toBeAttached();
-  await section.getByRole('link', { name: 'Try the guided demo' }).click();
+  await section.getByRole('link', { name: 'Try the demo' }).click();
 
   await expect(page).toHaveURL(/app\.getshorthandapp\.com\/\?demo=true/);
   const click = eventsNamed(events, 'cta_click').find((e) => e.cta_destination === 'walkthrough_try_demo');
@@ -220,7 +220,7 @@ test.describe('phone width', () => {
     expect(box.x + box.width).toBeLessThanOrEqual(390);
     expect(box.width / box.height).toBeCloseTo(16 / 9, 1);
 
-    const cta = page.locator('#walkthrough').getByRole('link', { name: 'Try the guided demo' });
+    const cta = page.locator('#walkthrough').getByRole('link', { name: 'Try the demo' });
     await cta.scrollIntoViewIfNeeded();
     await expect(cta).toBeVisible();
     // Measure both after the same scroll so the comparison is layout, not timing.

@@ -873,14 +873,14 @@ for (const [label, path, expectedCount] of [['an ordinary page', '/', 0], ['the 
     'On Task', 'Participation', 'Redirected', 'Off Task', 'Unprepared', 'Disruption', 'Peer Conflict', 'Kindness', 'Incomplete',
     'Persistence', 'Independent Work', 'Teamwork', 'Leadership', 'Growth Mindset', 'Star Work', 'Self-Regulation', 'Check-In', 'Modified Work',
   ];
-  const QG_WIDGET_TEXT = ['Your demo time', 'Try the guided demo', 'Try Again', 'More options are in the full app', 'Log a note for', 'Tap a student to log a note'];
+  const QG_WIDGET_TEXT = ['Your demo time', 'Try the full demo', 'Try Again', 'More options are in the full app', 'Log a note for', 'Tap a student to log a note'];
   const QG_EVENTS = ['quick_grid_demo_started', 'quick_grid_demo_completed', 'quick_grid_demo_cta_clicked'];
   const SITE_EVENTS = ['app_link_clicked', ...QG_EVENTS];
   const SDK_KEYS = new Set(['token', 'distinct_id', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term']);
   const own = (e) => Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort());
 
   // Interaction run: open and close, save twice, a second round via Try Again,
-  // then the guided-demo link. Started and completed must each arrive once.
+  // then the demo link. Started and completed must each arrive once.
   const s = await newSession(browser);
   const p = await s.context.newPage();
   await p.goto(`${ORIGIN}${QG_PAGE}`, { waitUntil: 'load' });
@@ -904,9 +904,9 @@ for (const [label, path, expectedCount] of [['an ordinary page', '/', 0], ['the 
   const qgShown = await p.getByText(/^Your demo time/).isVisible();
   check('quick grid: the sheet opened and the result row is showing (the replay had widget text to record)', qgShown);
   await p.waitForTimeout(8000); // replay flush with the result row on screen
-  await p.getByRole('link', { name: 'Try the guided demo →' }).click();
+  await p.getByRole('link', { name: 'Try the full demo →' }).click();
   await p.waitForURL(/app\.getshorthandapp\.com/, { timeout: 15000 }).catch(() => {});
-  check('quick grid: the guided demo link really left the site for the app stand-in', /app\.getshorthandapp\.com/.test(p.url()), p.url());
+  check('quick grid: the demo link really left the site for the app stand-in', /app\.getshorthandapp\.com/.test(p.url()), p.url());
   await p.waitForTimeout(3000);
   await s.context.close();
 

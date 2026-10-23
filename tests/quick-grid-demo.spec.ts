@@ -119,14 +119,14 @@ test.describe('behavior', () => {
     expect(row).toEqual({ wrap: 'nowrap', overflowX: 'auto', scrolls: true });
   });
 
-  test('both demo links go to the guided demo', async ({ page }) => {
+  test('both demo links go to the demo', async ({ page }) => {
     await page.goto(PAGE);
     await tile(page, 'Comet').click();
     await expect(sheet(page).getByRole('link', { name: /More options are in the full app/ }))
       .toHaveAttribute('href', `${APP_HOST}/?demo=true`);
     await chip(page, 'On Task').click();
     await saveButton(page).click();
-    await expect(page.getByRole('link', { name: 'Try the guided demo →' })).toHaveAttribute('href', `${APP_HOST}/?demo=true`);
+    await expect(page.getByRole('link', { name: 'Try the full demo →' })).toHaveAttribute('href', `${APP_HOST}/?demo=true`);
   });
 });
 
@@ -204,13 +204,13 @@ test.describe('try again', () => {
     await expect(page.getByText('Your demo time: 1.5 seconds')).toBeVisible();
   });
 
-  test('can be repeated any number of times, and the guided demo link stays', async ({ page }) => {
+  test('can be repeated any number of times, and the demo link stays', async ({ page }) => {
     await page.goto(PAGE);
     for (let round = 0; round < 5; round++) {
       await logNote(page, 'Pickle', ['Participation']);
       await expect(page.getByText('1 logged', { exact: true })).toBeVisible();
       await expect(page.getByText(/You logged 1 note for 1 student\./)).toBeVisible();
-      await expect(page.getByRole('link', { name: 'Try the guided demo →' })).toHaveAttribute('href', `${APP_HOST}/?demo=true`);
+      await expect(page.getByRole('link', { name: 'Try the full demo →' })).toHaveAttribute('href', `${APP_HOST}/?demo=true`);
       await tryAgain(page).click();
       await expect(checkedTiles(page)).toHaveCount(0);
     }
@@ -255,7 +255,7 @@ test.describe('analytics', () => {
     await page.route(`${APP_HOST}/**`, route => route.fulfill({ contentType: 'text/html', body: '<p>app stub</p>' }));
     await page.goto(PAGE);
     await logNote(page, 'Comet', ['On Task']);
-    await page.getByRole('link', { name: 'Try the guided demo →' }).click();
+    await page.getByRole('link', { name: 'Try the full demo →' }).click();
     await page.waitForURL(url => url.href.startsWith(APP_HOST));
 
     expect(named(tracked, 'quick_grid_demo_cta_clicked')).toEqual([['quick_grid_demo_cta_clicked', DEMO]]);
@@ -284,7 +284,7 @@ test.describe('analytics', () => {
     await page.goto(PAGE);
     await logNote(page, 'Comet', ['On Task']);
     await expect(page.getByText('1 logged', { exact: true })).toBeVisible();
-    await page.getByRole('link', { name: 'Try the guided demo →' }).click();
+    await page.getByRole('link', { name: 'Try the full demo →' }).click();
     await page.waitForURL(url => url.href.startsWith(APP_HOST));
     expect(errors).toEqual([]);
   });
@@ -330,7 +330,7 @@ test.describe('persistence and network', () => {
 
     await page.goto(PAGE);
     await logNote(page, 'Comet', ['On Task']);
-    await page.getByRole('link', { name: 'Try the guided demo →' }).click();
+    await page.getByRole('link', { name: 'Try the full demo →' }).click();
     await page.waitForURL(url => url.href.startsWith(APP_HOST));
     expect(new URL(page.url()).searchParams.get('demo')).toBe('true');
     expect(errors).toEqual([]);

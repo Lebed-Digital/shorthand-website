@@ -316,7 +316,7 @@ export default function Home() {
               color: 'var(--text-dim)',
               alignItems: 'center',
             }}>
-              {['FERPA-conscious', 'COPPA-conscious', 'Guided demo included', 'No credit card required'].map((item, i, arr) => (
+              {['FERPA-conscious', 'COPPA-conscious', 'No-signup demo', 'No credit card required'].map((item, i, arr) => (
                 <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                   <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                     <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>✓</span>
@@ -602,7 +602,7 @@ export default function Home() {
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
               onClick={(e) => trackCta('walkthrough_try_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
             >
-              Try the guided demo →
+              Try the demo →
             </motion.a>
             <p className="walkthrough-cta-note">No account, no credit card. Click through it yourself with sample students.</p>
           </div>
@@ -676,7 +676,7 @@ export default function Home() {
           <div className="plans-grid">
             <div className="plan-card">
               <div className="plan-card-kicker">No account</div>
-              <h3 className="plan-card-title">Guided demo</h3>
+              <h3 className="plan-card-title">Demo</h3>
               <p className="plan-card-body">Open ShortHand with sample students and click through the app. No account needed.</p>
             </div>
             <div className="plan-card">
@@ -809,7 +809,7 @@ export default function Home() {
               },
               {
                 q: 'Is ShortHand free to use?',
-                a: 'Yes. Try the guided demo with no account. Create a free account to use ShortHand with your own class. Pro is optional at $4.99/month, and new Pro users get a 30-day trial with no credit card.',
+                a: 'Yes. Try the demo with sample students, no account needed. Create a free account to use ShortHand with your own class. Pro is optional at $4.99/month, and new Pro users get a 30-day trial with no credit card.',
               },
             ].map(({ q, a }) => (
               <details key={q} style={{
@@ -928,7 +928,7 @@ export default function Home() {
           <div ref={ctaRef} className="cta-layout">
             <div className="cta-text">
               <div className="section-label">Get started</div>
-              <h2 className="cta-heading">Try the guided demo.<br />No account needed.</h2>
+              <h2 className="cta-heading">Try the demo.<br />No account needed.</h2>
               <p className="cta-sub">
                 Catch problems before they become calls home. Open the demo in your browser, then create a free account when you want to use ShortHand with your class. Pro is optional.
               </p>
