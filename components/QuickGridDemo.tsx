@@ -81,6 +81,8 @@ export default function QuickGridDemo() {
   // never change it.
   const startedAt = useRef<number | null>(null);
   const [elapsedMs, setElapsedMs] = useState<number | null>(null);
+  // Drives the "tap me" pulse on the first tile until the visitor taps any tile.
+  const [tapped, setTapped] = useState(false);
   // Once per mount each. Try Again deliberately leaves these alone.
   const startedSent = useRef(false);
   const completedSent = useRef(false);
@@ -110,6 +112,7 @@ export default function QuickGridDemo() {
       captureEvent('quick_grid_demo_started', DEMO);
     }
     returnFocusId.current = name;
+    setTapped(true);
     setSelectedTags([]);
     setSheetStudent(name);
   }
@@ -171,9 +174,16 @@ export default function QuickGridDemo() {
 
   return (
     <div className={`${styles.root} ph-no-capture`}>
+      <div className={styles.callout}>
+        <p className={styles.calloutBadge}>Interactive demo</p>
+        <p className={styles.calloutTitle}>Try it: tap any student below</p>
+        <p className={styles.calloutSub}>Pick a behavior, hit Save, and see how fast a note takes.</p>
+        <span className={styles.calloutArrow} aria-hidden="true">↓</span>
+      </div>
+
       <div
         ref={frameRef}
-        className={styles.frame}
+        className={`${styles.frame} ${tapped ? '' : styles.idle}`}
         onKeyDown={e => { if (e.key === 'Escape' && sheetStudent) closeSheet(); }}
       >
         <div className={styles.pane} inert={sheetStudent !== null}>
