@@ -364,3 +364,64 @@
 @media (prefers-reduced-motion: reduce) {
   .frame .tile:active { transform: none; }
 }
+
+/* Tells visitors the card below is live, not a screenshot. */
+.callout {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.calloutBadge {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--accent-border);
+  border-radius: 999px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.calloutTitle {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--text);
+}
+.calloutSub {
+  margin-top: 6px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--text-dim);
+}
+.calloutArrow {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: var(--accent);
+  animation: nudge 1.4s ease-in-out infinite;
+}
+@keyframes nudge {
+  50% { transform: translateY(6px); }
+}
+
+/* Until the first tap: an orange outline on the card and a pulse on the
+   first tile, so the grid reads as tappable. */
+.frame.idle {
+  box-shadow: 0 0 0 3px var(--accent), 0 0 32px rgba(249, 115, 22, 0.35);
+}
+.frame.idle .tile:first-child {
+  border-color: var(--accent);
+  animation: tapPulse 1.6s ease-out infinite;
+}
+@keyframes tapPulse {
+  0% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.55); }
+  100% { box-shadow: 0 0 0 12px rgba(249, 115, 22, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .calloutArrow,
+  .frame.idle .tile:first-child { animation: none; }
+}
