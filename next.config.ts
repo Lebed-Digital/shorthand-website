@@ -217,6 +217,20 @@ const nextConfig: NextConfig = {
         destination: '/chatgpt-teacher-freebies',
         permanent: false,
       },
+      // Behavior report card comments, added 2026-10-25 for the "Describe the
+      // Behavior, Not the Kid" video, which says the address out loud and
+      // shows it on screen. Same two-rule pattern as /chart above.
+      {
+        source: '/behavior',
+        missing: [{ type: 'query', key: 'utm_source' }],
+        destination: '/blog/report-card-comments-for-behavior?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_behavior',
+        permanent: false,
+      },
+      {
+        source: '/behavior',
+        destination: '/blog/report-card-comments-for-behavior',
+        permanent: false,
+      },
     ];
   },
   async headers() {
