@@ -75,6 +75,8 @@ const LIBRARY_CTA_INTROS: Record<string, string> = {
     'These 50 comments cover social-emotional growth.',
   'student-progress-report-comments-for-teachers':
     'Want comments organized and searchable by category?',
+  'kindergarten-report-card-comments':
+    'These 75+ examples cover kindergarten skill by skill.',
   'second-grade-behavior-report-card-comments':
     'Writing comments beyond second grade behavior too?',
   'free-report-card-comment-generator':

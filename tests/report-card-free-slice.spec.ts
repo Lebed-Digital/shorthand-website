@@ -270,4 +270,9 @@ test.describe('free slice', () => {
     expect(claimed).toBeGreaterThan(0);
     await expect(commentCards(page)).toHaveCount(claimed);
   });
+
+  test('the hero states the one-time price', async ({ page }) => {
+    await page.goto(LIBRARY);
+    await expect(page.getByText('The full library is a one-time $4.99. No subscription.')).toBeVisible();
+  });
 });
