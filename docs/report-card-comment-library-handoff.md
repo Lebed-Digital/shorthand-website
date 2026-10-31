@@ -3454,3 +3454,22 @@ placement, each `cta_destination`, the exclusions, and both shortlinks in a
 real browser. Built HTML checked for all 10 posts: correct placements, live 374
 and 20, no leftover marker, no tag glued to the next word. Client bundle
 re-checked for library comment text: unchanged from before this pass.
+
+## 26. Hero price, kindergarten CTA, conversion audit, and planned price test (2026-10-31)
+
+**Shipped:** PR #141 (squash `e25a89c`, live and verified on production 2026-10-31). The paywall hero now says "The full library is a one-time $4.99. No subscription." and `kindergarten-report-card-comments` gets the same three library placements as the other comment-list posts (the one `LIBRARY_CTA_INTROS` entry plus a `LIBRARYCTAMARKER` in the post). The free count (20), checkout, price and event names are unchanged. Tests added in `tests/library-cta.spec.ts` and `tests/report-card-free-slice.spec.ts`.
+
+**Why (conversion audit, 2026-10-31):** zero real customer purchases. The database holds one `cs_test` paid row (7/29), one refunded live row (7/30) and one live paid row (10/9, the owner test). GA4 had 58 library users from 9/16 to 10/31, 7 `begin_checkout` events from 7 different GA4 users (2 to 3 probably the owner), 1 `checkout_start_failed` on 10/27 with an unknown cause, and no internal-traffic filter. That is too little traffic to separate a product problem from a willingness-to-pay problem. Baseline for judging the changes starts 2026-11-01. Do not draw conclusions before about 300 qualified (non-owner) library visitors.
+
+**Planned: price test after November.** Once the November report-card window has been read, we may lower the price from $4.99 to $2.99 or $3.99 just to see whether price is the barrier. Decide it from the November data, not before. Not approved to ship yet.
+
+Things to know before changing the price (a Stripe price cannot be edited, so it means a new Price object and a deploy):
+- `supabase/functions/_shared/fulfillment.ts:16` hard-codes `EXPECTED_AMOUNT_TOTAL = 499`. A new price that is not 499 is rejected as a mismatch and a real payment would not be fulfilled (the failure mode in section 19). Change it in the same deploy, then test with a Stripe test-mode purchase.
+- `STRIPE_PRICE_ID` lives in two secret stores (Vercel and Supabase) and both must point at the new Price. See the payment audit in `docs/micro-product-payment-architecture-audit-2026-09.md`.
+- `lib/gtag.ts:41` (`RCCL_PRICE_USD`) feeds the `value` on `begin_checkout` and `purchase`. Update it, or GA4 revenue is wrong.
+- The typed "$4.99" copy: `PaywallClient.tsx` (hero, buy strip, buy card), `components/LibraryCtaBlock.tsx`, the page metadata in `app/report-card-comment-library/page.tsx`, `social-emotional-report-card-comments.md`, and the specs `tests/library-cta.spec.ts`, `tests/report-card-free-slice.spec.ts`, `tests/report-card-payment-path.spec.ts`. A repo grep for `4.99` and `499` also hits some app and feature pages that may be unrelated ShortHand pricing, so check each before editing.
+- Customers who already paid $4.99 are not affected, but a lower price right after a $4.99 sale may prompt refund or "price drop" emails. Decide the policy first.
+- Change one thing at a time. Change the price alone, run it for a fixed window, and do not move the free count or CTAs during the test.
+- Whatever happens, an unchanged conversion rate at a lower price points to value or traffic rather than price.
+
+**Still open from the audit:** the Stripe dashboard check (sessions created vs completed, the 10/27 failure, webhook deliveries), the GA4 internal-traffic filter, and registering the `reason` event parameter as a custom dimension.
