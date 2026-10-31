@@ -171,6 +171,8 @@ Many districts use standards-based kindergarten report cards, where families see
 
 If you need a larger list for challenging classroom situations, see these [report card comments for behavior](/blog/report-card-comments-for-behavior).
 
+LIBRARYCTAMARKER
+
 ## Kindergarten Comments for Students Who Need More Support
 
 59. "[Name] is working toward quicker recognition of letter sounds. Small-group practice and frequent review are helping build accuracy."

@@ -170,6 +170,9 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.85)', margin: 0 }}>
             Try {slice.freeCount} of them right here. Type a name, filter, copy. No sign-up.
           </p>
+          <p style={{ fontSize: 14, color: '#fff', fontWeight: 600, margin: '8px 0 0' }}>
+            The full library is a one-time $4.99. No subscription.
+          </p>
         </div>
       </div>
 

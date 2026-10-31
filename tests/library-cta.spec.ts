@@ -118,3 +118,15 @@ test('the social shortlinks land on the library and the guide with their UTMs', 
   await page.goto('/reportcards');
   await expect(page).toHaveURL(/\/blog\/report-card-comments-guide\?utm_source=social&utm_medium=organic_social&utm_campaign=report_card_comments$/);
 });
+
+test('the kindergarten post carries the same three library placements', async ({ page }) => {
+  await page.goto('/blog/kindergarten-report-card-comments');
+  const article = page.locator('article');
+
+  await expect(article.getByText('Writing these for a whole class?')).toBeVisible();
+  await expect(article.getByText('These 75+ examples cover kindergarten skill by skill.')).toBeVisible();
+  await expect(article.getByText('The library $4.99 once')).toBeVisible();
+  await expect(article.getByText('Still have most of your class to write?')).toBeVisible();
+  await expect(libraryLinks(page)).toHaveCount(5);
+  await expect(article.getByText('LIBRARYCTAMARKER')).toHaveCount(0);
+});
