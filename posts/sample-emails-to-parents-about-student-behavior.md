@@ -57,13 +57,13 @@ But for patterns, updates, and anything you want a written record of, a behavior
 
 The best time to contact a parent about behavior is before there's a problem. Teachers who only email when something goes wrong train parents to dread seeing a message from school. Build the relationship during the good moments so you have credit when you need it.
 
-**Subject:** Quick win for [Student Name]!
+**Subject:** A positive update about [Student Name]
 
 > Hi [Parent/Guardian Name],
 >
-> I just wanted to share a quick highlight from today. [Student Name] was a rockstar during [Subject/Activity]. I specifically noticed how they [specific action, e.g., helped a peer without being asked / stayed focused for the full lesson].
+> I wanted to share something positive from today. During [subject/activity], [Student Name] [describe a specific positive action, such as helping a classmate understand a math problem or completing a challenging assignment independently].
 >
-> It was great to see that level of effort, and I wanted to make sure you heard about it too.
+> I appreciate the positive contribution [Student Name] made to our classroom today and wanted to make sure you heard about it.
 >
 > Best,
 > [Your Name]
@@ -76,17 +76,19 @@ The best time to contact a parent about behavior is before there's a problem. Te
 
 **Use this when a behavior is becoming a pattern. Keep it objective and focus on the where and when.**
 
-When something is happening repeatedly, vague language makes parents defensive. "He's been disruptive" triggers a defensive response. "He's been having a hard time during transitions from math to reading, specifically when there's a change from the usual routine" is specific enough to be actionable and objective enough not to feel like an accusation.
+When something is happening repeatedly, vague language makes parents defensive. "He's been disruptive" triggers a defensive response. "During transitions from math to reading, [Name] has needed several reminders to put away materials and begin the next activity" is specific enough to be actionable and objective enough not to feel like an accusation.
 
-**Subject:** Following up on [Student Name]
+**Subject:** Checking in about [Student Name]
 
 > Hi [Parent/Guardian Name],
 >
-> I am reaching out to keep you in the loop on a pattern I have been seeing with [Student Name]. Lately, they have been struggling with [behavior], specifically during [transition/subject].
+> I wanted to share a pattern I've noticed with [Student Name]. Over the past [time period], [describe the specific behavior] has occurred during [subject/activity/transition].
 >
-> I have been supporting them by [briefly mention one strategy, e.g., providing a visual timer], but I wanted to see if you have any insight into what works best for them at home. I would love to make sure we are consistent so [Student Name] can get back to feeling successful in class.
+> I've been using [specific classroom strategy] to help [Student Name] during these situations. We've seen [briefly describe the result or progress, if any].
 >
-> Thanks for the support,
+> I'd appreciate hearing whether you've found any strategies that work well in similar situations at home. I'd like us to work together to support [Student Name].
+>
+> Thank you,
 > [Your Name]
 
 **Why it works:** It names a specific pattern, mentions what you're already doing, and invites the parent as a partner rather than informing them of a problem. The collaborative framing changes the entire tone. For the harder version of this conversation, when the behavior is serious and repeated, see [how to email parents about bad behavior](/blog/how-to-email-parents-about-bad-behavior).
@@ -101,15 +103,17 @@ WORKFLOWBRIDGEMARKER
 
 Some conversations shouldn't happen over email. If a student's behavior involves emotional regulation, potential learning challenges, family stressors, or anything that requires nuance, get on the phone or meet in person. Don't let a complex situation drag out in a slow email thread.
 
-**Subject:** Touching base regarding [Student Name]
+**Subject:** Meeting request regarding [Student Name]
 
 > Hi [Parent/Guardian Name],
 >
-> I would like to set up a quick 10–15 minute chat to discuss how we can better support [Student Name] with [specific concern]. I think a short conversation will be more productive than going back and forth over email.
+> I'd like to schedule a brief conversation to discuss how we can support [Student Name] with [specific concern].
 >
-> Are you available for a call or Zoom on [Day] at [Time]? If not, let me know what works for you.
+> Are you available for a 10-15 minute phone or video call on [Day] at [Time]? If that doesn't work for you, please let me know a convenient time.
 >
-> Looking forward to connecting,
+> I look forward to working together.
+>
+> Best,
 > [Your Name]
 
 **Why it works:** It's direct without being alarming. It signals that this matters without catastrophizing. And it moves the conversation to a format where tone, warmth, and back-and-forth are possible.
@@ -122,17 +126,20 @@ Some conversations shouldn't happen over email. If a student's behavior involves
 
 This is the most underused template on the list. After any verbal conversation about a student's behavior, send a brief summary email within 24 hours. It creates a shared record and holds both parties accountable to what was agreed.
 
-**Subject:** Summary of our conversation regarding [Student Name]
+**Subject:** Follow-up from our conversation about [Student Name]
 
 > Hi [Parent/Guardian Name],
 >
-> Thank you for chatting with me today. I really appreciate us being on the same page. Just to recap our plan:
+> Thank you for taking the time to speak with me today. I wanted to summarize the steps we discussed to support [Student Name].
 >
-> - We are going to try [Strategy 1].
-> - I will monitor [behavior] specifically during [time of day].
-> - We will touch base again on [Date].
+> - At school, I will [specific classroom strategy].
+> - We will monitor [specific observable behavior or goal] during [activity/time].
+> - We agreed to [additional action or support, if applicable].
+> - We will check in again on [Date] to review progress.
 >
-> I will keep you updated on how things progress here.
+> Please let me know if I've missed anything from our conversation.
+>
+> Thank you for working with me.
 >
 > Best,
 > [Your Name]
@@ -147,19 +154,21 @@ This is the most underused template on the list. After any verbal conversation a
 
 For students with IEPs, 504s, or behavior intervention plans, consistent communication isn't optional. It's expected. A weekly pulse check keeps parents informed, keeps you accountable, and creates a documented timeline that's invaluable at review meetings.
 
-**Subject:** Weekly Update: [Student Name]
+**Subject:** Weekly classroom update for [Student Name]
 
 > Hi [Parent/Guardian Name],
 >
-> Here is a quick look at how [Student Name] did this week:
+> Here's a quick update on [Student Name]'s progress this week.
 >
-> **The Wins:** [1–2 specific successes]
+> **What went well:** [Describe one or two specific successes.]
 >
-> **The Work:** [1–2 areas still needing growth]
+> **What we're still working on:** [Describe an observable behavior or skill that needs improvement.]
 >
-> **Next Steps:** We will be focusing on [goal] starting Monday.
+> **Our next goal:** [Identify one specific goal and how it will be supported in class.]
 >
-> Thanks for the partnership at home, it makes a huge difference.
+> I'll continue monitoring [Student Name]'s progress and share updates as we work toward this goal.
+>
+> Thank you for your support.
 >
 > Best,
 > [Your Name]
@@ -174,7 +183,7 @@ Templates solve the writing problem. They don't solve the memory problem.
 
 To write a good behavior email, even with a template, you need the details. The specific behavior. The time it happened. The context. What you tried. What worked.
 
-If you're relying on memory at 4 PM, you're going to write vague emails. "He was disruptive today" instead of "He had difficulty during the transition from reading to math at 10:20. He refused to put his book away and raised his voice when redirected. I gave him a two-minute warning for transitions for the rest of the day and it helped."
+If you're relying on memory at 4 PM, you're going to write vague emails. "He was disruptive today" instead of "During the transition from reading to math at 10:20, [Name] did not put his book away when directed and raised his voice after a reminder. I provided a two-minute warning before later transitions, and [Name] followed the directions for those transitions."
 
 That second version is a professional document. It's useful in a parent meeting. It's useful in an IEP. The first version is noise.
 
