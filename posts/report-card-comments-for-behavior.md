@@ -16,7 +16,7 @@ faq:
   - q: "How do you write a behavior comment for a difficult student?"
     a: "Describe the behavior, not the child. 'Has difficulty staying on task during independent work' is accurate and professional. Always include what is being done to support the student and invite the family into the conversation."
   - q: "What words should I avoid in a behavior comment?"
-    a: "Avoid labels like 'disrespectful,' 'aggressive,' 'lazy,' 'defiant,' and 'mean.' These read as character attacks to parents and offer no path forward. Replace them with an observable description: instead of 'defiant,' write 'struggles to comply with initial verbal directives during transitions.'"
+    a: "Avoid labels like 'disrespectful,' 'aggressive,' 'lazy,' 'defiant,' and 'mean.' These read as character attacks to parents and offer no path forward. Replace them with an observable description: instead of 'defiant,' write 'needs several reminders to follow directions during classroom transitions.'"
   - q: "Can I use AI to write report card behavior comments?"
     a: "Yes. The free report card comment generator at getshorthandapp.com/report-card-comment-generator lets you pick strengths, areas for growth, and behavior observations and generates a polished comment in seconds. No sign-up required."
 ---
@@ -61,30 +61,30 @@ For the social-emotional learning section of the report, we have a dedicated set
 ## When behavior is strong
 
 - "[Name] consistently demonstrates respect for classmates and contributes positively to our classroom community."
-- "[Name] is a natural leader who models expected behavior for peers."
-- "[Name] has shown remarkable growth in managing frustration this term. I'm proud of the progress."
+- "[Name] frequently helps classmates understand directions and get started on classroom activities. They explain instructions clearly and offer assistance when a peer needs help."
+- "[Name] uses classroom strategies to work through challenging situations and returns to activities with minimal teacher support."
 - "[Name] follows classroom expectations independently and rarely requires reminders."
-- "[Name]'s positive attitude is contagious. It's a pleasure to have them in class."
-- "[Name] demonstrates self-control and maturity beyond their years."
-- "[Name] takes responsibility for their actions and handles feedback gracefully."
-- "[Name] is kind, thoughtful, and consistently treats others with respect."
-- "[Name] sets a great example for their peers through their behavior and attitude."
-- "[Name] arrives ready to learn and maintains that focus throughout the day."
+- "[Name] participates actively in classroom activities and contributes positively during group discussions and collaborative work."
+- "[Name] completes classroom responsibilities, follows daily procedures, and takes care of learning materials independently."
+- "[Name] listens to teacher feedback and makes adjustments to their work or behavior when needed."
+- "[Name] consistently treats classmates with kindness and respect, offering help and including others during classroom activities."
+- "[Name] works cooperatively with classmates, takes turns during group activities, and listens when others are sharing ideas."
+- "[Name] arrives prepared for learning, follows classroom routines, and stays focused during lessons and independent work."
 
 ---
 
 ## When behavior is improving
 
-- "[Name] has made meaningful progress in [area] this term. With continued effort, I expect to see further growth."
-- "[Name] is working hard to manage [specific challenge]. The improvement since [month] has been noticeable."
-- "[Name] responds well to redirection and is developing stronger self-regulation skills."
-- "This has been a growth term for [Name] in the area of [behavior]. We are proud of the steps forward."
-- "[Name] is building the habits and routines that support their success in the classroom."
-- "With support, [Name] is learning to [specific skill]. We will continue to build on this progress next term."
-- "[Name] has put in real effort this term. That effort is showing."
-- "I have seen real growth in [Name]'s ability to [behavior]. We are heading in the right direction."
-- "[Name] is more consistent than they were in September. The work they're putting in is paying off."
-- "[Name] has surprised me in the best way this term. Keep it going."
+- "[Name] has made progress moving between classroom activities. They now follow transition directions with fewer reminders and begin the next activity more promptly."
+- "[Name] has shown improvement with [behavior] since [month]. Regular reminders and consistent classroom expectations have helped support this progress."
+- "[Name] is responding more consistently to teacher reminders and returning to classroom tasks with less assistance. We will continue practicing strategies that support independent work."
+- "[Name] has made progress completing classroom assignments. Breaking tasks into smaller steps and using a visual checklist have helped them finish more work independently."
+- "[Name] is making progress following classroom routines and completing daily responsibilities. Continued practice and consistent expectations are helping them become more independent."
+- "With classroom support, [Name] is making progress with [skill]. We will continue practicing this skill and providing reminders as needed to encourage greater independence."
+- "[Name] is participating more frequently in classroom discussions and group activities. They are volunteering answers and contributing ideas more consistently than earlier in the year."
+- "[Name] has made progress working cooperatively with classmates. They are taking turns, listening to others, and completing their part of group assignments more consistently."
+- "[Name] is beginning classroom assignments with fewer teacher prompts than earlier in the year. They are also making greater use of classroom resources before asking for assistance."
+- "[Name] has made progress following multi-step classroom directions. They are completing more steps independently and needing fewer reminders to finish assigned tasks."
 
 ---
 
@@ -92,16 +92,16 @@ LIBRARYCTAMARKER
 
 ## When there are ongoing concerns (honest but constructive)
 
-- "[Name] continues to work on [behavior]. We are collaborating on strategies to support continued growth."
-- "[Name] benefits from frequent check-ins and reminders to stay on task. This is an area of focus going forward."
-- "[Name] is developing the skills to manage [challenge] independently. Additional support at home would be beneficial."
-- "We are working together with [Name] to address [behavior]. I appreciate the family's partnership in this process."
-- "[Name] has difficulty with [specific situation] and is receiving additional support to build these skills."
-- "[Name] is working on making choices that support their learning and the learning of those around them."
-- "There have been some challenges this term around [behavior]. I'd welcome a conversation to align our approaches."
-- "[Name] sometimes struggles to [behavior]. We are using [strategy] to support them and will continue to monitor progress."
-- "[Name] is working on [behavior] and I am committed to supporting them. Family reinforcement at home goes a long way."
-- "This term has had some bumps. I believe [Name] has the ability to turn it around and I am here to help."
+- "[Name] continues to need support with [behavior], especially during [activity]. We are using [strategy] to help them practice the expected behavior more consistently."
+- "[Name] requires frequent reminders to remain focused during independent work. Regular check-ins and a visual checklist are helping them complete assignments with greater consistency."
+- "[Name] relies on adult guidance to complete [activity]. We are practicing [skill] and gradually reducing reminders as they become more independent."
+- "[Name] sometimes begins an activity before listening to all the directions. We are practicing listening to the full set of instructions and checking for understanding before starting work."
+- "[Name] often needs additional time and reminders when transitioning between classroom activities. Providing advance notice and using a visual schedule have helped them prepare for changes in the daily routine."
+- "[Name] sometimes calls out while others are speaking during lessons or group activities. We are practicing raising a hand, waiting for a turn, and contributing ideas at appropriate times."
+- "[Name] has had several missing or incomplete assignments this term. We are using a daily checklist to track completed work, and I would welcome a conversation about ways we can support more consistent assignment completion."
+- "[Name] continues to need support with [behavior]. We are using [strategy], and they are beginning to show improvement during [activity]."
+- "[Name] often needs reminders to put away materials and prepare for the next lesson. A visual schedule and consistent transition routine have helped reduce the number of reminders needed."
+- "[Name] has difficulty taking turns during small-group activities and sometimes speaks while classmates are sharing. We are practicing turn-taking and using visual reminders to support more cooperative participation."
 
 ---
 
@@ -109,16 +109,16 @@ LIBRARYCTAMARKER
 
 These are the hardest comments to write. You have a student with real, ongoing behavior concerns and you need to say something honest without it reading like a referral or a verdict. The key is to describe what you observe, name the support in place, and leave the door open.
 
-- "[Name] has experienced some significant behavioral challenges this term. We are working closely together to support their growth and build the skills they need."
-- "[Name] is receiving additional support to address ongoing behavior concerns. Progress is being made and we will continue to monitor closely."
-- "[Name] has had a difficult term in terms of behavior. We have strategies in place and I remain committed to helping them succeed."
-- "[Name] continues to struggle with [specific behavior]. We are addressing this with consistent supports and appreciate the family's partnership."
-- "Behavior has been a significant area of focus for [Name] this term. With continued effort and support, I believe they can make meaningful progress."
-- "[Name] has had challenges that have impacted their learning and the learning of those around them. We are working together to address this."
-- "[Name] is working through some behavioral difficulties. I am in regular contact with the family and we are aligned on next steps."
-- "[Name] benefits from a high level of structure and support. We are continuing to refine our approach to help them be successful."
-- "This has been a challenging term for [Name] behaviorally. I am committed to supporting them and will be reaching out to discuss a plan going forward."
-- "There have been repeated incidents this term involving [behavior]. We are taking this seriously and working with [Name] and their family on a path forward."
+- "[Name] has had repeated incidents of [behavior] during [activity], which have interrupted classroom instruction. We are using [support] to address these incidents and working toward fewer interruptions during lessons."
+- "[Name] is receiving additional behavioral support due to repeated difficulty with [behavior]. With [strategy], we have seen improvement in [skill], although consistent use of this skill remains an area of focus."
+- "[Name] has repeatedly left the assigned classroom area without permission during instructional time. We are providing additional supervision, reviewing classroom expectations, and using a consistent support plan to address this behavior."
+- "[Name] has had incidents involving pushing or grabbing materials from classmates during group activities. We are practicing keeping their hands to themselves, requesting materials appropriately, and asking an adult for assistance when needed."
+- "[Name] has had repeated difficulty following teacher directions after being redirected during classroom activities. We are using clear, brief directions and a consistent response plan to help reduce these incidents."
+- "[Name] has had repeated incidents involving [behavior] that have interrupted group activities and affected classmates' ability to complete their work. We are practicing [skill] and providing additional support during situations where these incidents commonly occur."
+- "[Name] has had several incidents involving [behavior] that have required additional adult support. We are communicating regularly with home and using consistent strategies to address these concerns."
+- "[Name] has needed extended teacher support to return to classroom activities following behavioral incidents. We are using a structured re-entry routine and practicing [skill] to help them resume participation more independently."
+- "[Name] continues to demonstrate [behavior] despite the classroom supports currently in place. I would like to schedule a conversation to review what we have tried and discuss additional ways to support improvement."
+- "[Name] has had repeated incidents involving [behavior] during [activity]. These incidents have required additional adult intervention and have affected classroom instruction. We are working with the family and school support team to implement a consistent plan."
 
 **A note on documenting these comments:** If you are writing something this direct, make sure you have the logs to back it up. Parent pushback on a tough comment is much easier to handle when you have dated notes, not just a memory. See [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) or [the complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) for the system that makes this sustainable. That is exactly the situation that led me to build ShortHand.
 
@@ -126,53 +126,53 @@ These are the hardest comments to write. You have a student with real, ongoing b
 
 ## For impulsivity and self-regulation
 
-- "[Name] is working on thinking before acting. We are using [strategy] to support this goal."
-- "[Name] has a lot of energy and enthusiasm. We are channeling this into positive classroom participation."
-- "[Name] is developing strategies to pause and self-regulate when frustrated."
-- "Impulsivity is an area of focus for [Name] this term. We are making progress with consistent support."
-- "[Name] is learning to recognize when they need a moment to reset, and that awareness is growing."
-- "[Name] responds well when given a quiet space to collect themselves. We are building on that."
-- "Self-regulation is something [Name] is actively working on. Progress is slow but real."
-- "[Name] is starting to catch themselves before reacting. That is a big step."
+- "[Name] sometimes begins assignments before reviewing all the directions and skips steps when completing work. We are practicing checking directions, completing each step, and reviewing finished assignments before turning them in."
+- "[Name] participates frequently during hands-on activities and classroom discussions. We are practicing raising a hand and waiting to be called on so classmates have opportunities to contribute."
+- "[Name] sometimes touches classmates or their belongings while waiting in line. We are practicing keeping their hands to themselves, respecting personal space, and following hallway expectations."
+- "[Name] has made progress reducing interruptions during lessons. A visual reminder and regular teacher check-ins have helped them wait for a turn to speak more consistently."
+- "[Name] is beginning to request a break instead of leaving an activity without notifying the teacher. We are practicing this routine and helping them return to the assigned task after the break."
+- "[Name] is making progress returning to classroom activities after a scheduled break. They are spending less time away from instruction and are resuming their assigned work more consistently."
+- "[Name] sometimes needs several reminders to stop an activity and follow a teacher's direction. Consistent cues and practice with classroom routines are helping them respond with fewer prompts."
+- "[Name] has begun using [strategy] before responding during [activity]. They are demonstrating this skill more consistently and requiring fewer teacher reminders."
 
 ---
 
 ## For attention and focus
 
-- "[Name] works best in a structured environment with clear expectations and frequent check-ins."
-- "[Name] has difficulty sustaining focus during independent work. We are exploring supports to help with this."
-- "[Name] benefits from movement breaks and hands-on tasks to stay engaged."
-- "[Name] is working on completing tasks independently. Encouragement and routine at home makes a big difference."
-- "Focus continues to be a challenge for [Name], particularly during longer work periods. We are addressing this together."
-- "[Name] does their best work in small groups or one-on-one settings. We are working on building stamina for independent tasks."
-- "Keeping [Name] on task requires more support than average. We are trying several strategies and will continue to adjust."
-- "[Name] is easily pulled off course but returns to work quickly with a reminder. Building that independence is the goal."
+- "[Name] sometimes loses their place in the text during whole-class reading activities. Using a reading guide and occasional teacher check-ins has helped them follow along more consistently."
+- "[Name] has difficulty staying focused during longer independent assignments. Shorter work periods and scheduled check-ins are helping them complete more tasks with fewer reminders."
+- "[Name] benefits from brief movement breaks between periods of independent work. Following these breaks, they are returning to assignments and completing more work during the allotted time."
+- "[Name] sometimes needs reminders to remain focused during classroom assessments. Providing a quieter workspace and dividing longer assessments into shorter sections have helped them complete more questions independently."
+- "[Name] sometimes needs reminders to follow along during longer lessons. Calling on them regularly and checking for understanding have helped them participate more consistently."
+- "[Name] completes assignments successfully with teacher guidance but continues to need support when working alone. We are practicing how to use classroom examples and reference materials before asking for assistance."
+- "[Name] requires frequent check-ins to complete independent assignments. We are using [strategy] to help them stay on task and gradually increase the amount of work completed without direct support."
+- "[Name] sometimes begins conversations or other activities during independent work time. With a teacher reminder, they return to the assigned task and are working toward doing so more independently."
 
 ---
 
 ## For social interactions and peer relationships
 
-- "[Name] is learning to navigate peer relationships with greater confidence."
-- "[Name] is working on conflict resolution skills and responding calmly in social situations."
-- "[Name] benefits from adult support during unstructured times such as recess and transitions."
-- "[Name] is developing the social skills that will serve them well throughout their school career."
-- "Peer interactions are an area of growth for [Name] this term. We are working on strategies together."
-- "[Name] does well one-on-one and is building the skills to apply that in group settings."
-- "Unstructured time is challenging for [Name]. We are working on giving them tools to navigate it more independently."
-- "[Name] is kind to adults and is working on extending that same patience to classmates."
+- "[Name] is making progress following playground expectations during recess. They are responding to adult reminders more consistently and participating in games with classmates while following agreed-upon rules."
+- "[Name] is practicing using words to express disagreements and listening when classmates share a different point of view. Teacher modeling and guided practice are helping them resolve minor conflicts with less assistance."
+- "[Name] needs additional adult reminders during recess and classroom transitions. We are practicing [skill] and using consistent expectations to support more independent participation during these activities."
+- "[Name] is practicing working with a variety of classmates during partner and group activities. Teacher-assigned partners and clear group roles are helping them participate more consistently and complete their share of the work."
+- "[Name] is making progress initiating conversations with classmates during classroom activities. They are beginning to greet peers, ask to join activities, and respond when classmates invite them to participate."
+- "[Name] sometimes needs support explaining their ideas when working with a partner. Practicing how to ask questions, explain a suggestion, and respond to a partner's ideas has helped them contribute more during shared assignments."
+- "[Name] sometimes needs reminders to follow agreed-upon rules during playground games. Reviewing the rules before recess and providing brief reminders have helped them participate in games more consistently."
+- "[Name] consistently follows directions and communicates respectfully with adults but sometimes needs reminders to use respectful language with classmates. We are practicing these skills during partner and group activities."
 
 ---
 
 ## For students with IEPs or behavior plans
 
-Keep these factual and neutral. Stick to what's observable and documented.
+These examples are for students with documented behavior goals or behavior plans. Keep comments factual, based on observed progress, and consistent with the student's plan. Check your school's guidance, since IEP progress may be reported separately.
 
-- "[Name] is working toward their behavior goals and has shown progress in [specific area]."
-- "[Name] continues to receive support in [area] and is making gains with consistent implementation of their plan."
-- "With the supports in place, [Name] is making progress. We will continue to monitor and adjust as needed."
-- "[Name]'s plan is in place and we are seeing [specific result]. We will review at the next meeting."
-- "[Name] engages well with the strategies in their plan. Consistency across settings is the key next step."
-- "Documentation of [Name]'s progress is ongoing. I look forward to discussing this with the team at our next meeting."
+- "[Name] has made progress toward their behavior goal of [skill]. Recent classroom observations show improvement in using this skill during [activity], and we will continue practicing it as outlined in their behavior plan."
+- "[Name] receives support through their behavior plan to address [behavior]. Consistent use of [support] has helped reduce the frequency of this behavior during [activity]."
+- "[Name] is making progress using [strategy] as part of their behavior plan. They are beginning to use this strategy with fewer teacher reminders while continuing to receive the supports outlined in their plan."
+- "[Name]'s behavior plan includes a goal related to [skill]. Recent progress records show [specific result], providing the team with information to evaluate the effectiveness of current supports."
+- "[Name] is learning to use [skill] instead of [behavior] during [activity]. With the supports outlined in their behavior plan, they are beginning to use this replacement skill more consistently."
+- "[Name] continues to receive support with [behavior] as outlined in their behavior plan. Classroom observations and progress records will help the team review the effectiveness of current supports at the next scheduled meeting."
 
 ---
 
@@ -182,7 +182,7 @@ Keep these factual and neutral. Stick to what's observable and documented.
 
 **2. Be specific about the behavior, not the kid.** "Has difficulty staying on task" beats "is easily distracted." One describes a behavior. The other describes a person.
 
-**3. Always end with something forward-looking.** Even a tough comment lands better with "we are working on strategies to support this" at the end.
+**3. Always end with something forward-looking.** Even a tough comment lands better when it ends with the support in place, like "A visual checklist is helping them finish independent work."
 
 **4. Keep your notes.** If you're writing a comment about a behavior pattern, make sure you have the observations to back it up. That's where a lot of teachers get caught: writing a comment about something they observed but never documented.
 
@@ -196,20 +196,20 @@ It makes these comments faster to write, more specific, and a lot easier to defe
 
 I once sent a parent a message in writing. It was either an email or a ParentSquare message, and I honestly can't remember which. The parent read my tone differently from how I meant it and got upset, and I ended up in the principal's office trying to untangle the situation. After a quick phone call, the misunderstanding was cleared up and everything was fine. But it stuck with me: in writing, a parent only gets your words, not your tone.
 
-When a teacher writes, "He has a bad attitude in class," the parent does not hear that their child is struggling with task aversion. They hear that the teacher dislikes their kid. Blunt language creates an emotional wall, and the second a parent becomes defensive, you have lost any chance of partnering with them to fix the actual issue.
+When a teacher writes, "He has a bad attitude in class," the parent does not hear a description of what their child actually does. They hear that the teacher dislikes their kid. Blunt language creates an emotional wall, and the second a parent becomes defensive, you have lost any chance of partnering with them to fix the actual issue.
 
 There are certain words that act like giant red flags for parents and administrators. If you want to avoid triggering a defensive phone call, swap out character judgments for objective descriptions:
 
 | Stop saying this | Start saying this |
 | :--- | :--- |
-| "He is disrespectful to peers." | "He is working on using kind words with classmates." |
-| "She refuses to do her work." | "She requires multiple prompts to begin independent tasks." |
-| "He is constantly out of his seat." | "He is learning to remain seated during instructional time." |
-| "She has a bad attitude." | "She is developing strategies to handle frustration appropriately." |
-| "He is too aggressive." | "He is working on keeping safe hands during recess." |
-| "She is disruptive during lessons." | "She is practicing quiet listening when others are speaking." |
+| "[Name] is disrespectful to peers." | "[Name] has called classmates names during group work. We are practicing using kind words when disagreeing." |
+| "[Name] refuses to do their work." | "[Name] needs multiple prompts to begin independent tasks." |
+| "[Name] is constantly out of their seat." | "[Name] often leaves their seat during lessons. Scheduled movement breaks are helping them stay seated during instruction." |
+| "[Name] has a bad attitude." | "[Name] sometimes puts their head down or pushes work away when beginning certain assignments. We are practicing asking for help instead." |
+| "[Name] is too aggressive." | "[Name] has pushed classmates during recess several times this term. We are practicing keeping their hands to themselves and asking an adult for help." |
+| "[Name] is disruptive during lessons." | "[Name] often calls out while others are speaking. We are practicing raising a hand and waiting for a turn." |
 
-Professional does not mean dishonest. Changing your phrasing from blunt to professional just means you are acting as the clinical expert in the room. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you reduce defensiveness from families and actually help the student move forward.
+Professional does not mean dishonest. It means describing what you saw instead of judging who the child is. Every sentence in the right-hand column still names the behavior. It just leaves out the verdict. By framing behavior as an objective skill that needs to be learned rather than a character flaw, you reduce defensiveness from families and actually help the student move forward.
 
 ---
 
@@ -218,8 +218,6 @@ Professional does not mean dishonest. Changing your phrasing from blunt to profe
 Good behavior comments are honest, specific, and constructive. Use the examples above as a starting point, but adapt them to the real kid in front of you. Parents can tell when a comment was written for their child versus pulled from a template.
 
 If you want to make next term's report cards easier, start logging behavior notes now. Even one sentence per student per week adds up to something you can actually use.
-
----
 
 ---
 
