@@ -31,7 +31,7 @@ The parent of a struggling student is not looking for a grade. They already susp
 2. How bad is it, really?
 3. Is anyone doing anything about it?
 
-Answer all three and you have written a great comment. Skip the first one and the parent stops reading. Skip the second and you have lied. Skip the third and you have handed them despair. Below are 29 complete comments that answer all three, plus 6 sentence starters for the first question.
+Answer all three and you have written a great comment. Skip the first one and the parent stops reading. Skip the second and you have lied. Skip the third and you have handed them despair. Below are 29 complete report card comments and 6 sentence starters. The examples describe student strengths, academic challenges, progress, and classroom supports that teachers can personalize.
 
 These are customizable examples. Adjust the details about student progress, classroom supports, and interventions to reflect your own observations and records.
 
@@ -67,7 +67,7 @@ LIBRARYCTAMARKER
 
 ## Confidence and Classroom Participation
 
-17. "[Name] has become more willing to attempt challenging assignments before asking for help. Although some academic skills still require additional practice, [Name] is beginning more tasks independently and using classroom resources when needed."
+17. "[Name] attempts challenging assignments more often before asking for help. Although some academic skills still require additional practice, [Name] is beginning more tasks independently and using classroom resources when needed."
 18. "[Name] is participating more frequently in class discussions, volunteering answers, and attempting challenging problems. Academic performance remains below grade-level expectations, but increased participation provides more opportunities for [Name] to practice and demonstrate developing skills."
 19. "[Name] has made progress with classroom participation and work completion since the beginning of the year. Although some academic skills are still developing, [Name] is completing more assignments and contributing more frequently during lessons."
 20. "[Name] continues working on challenging assignments and makes use of teacher support when needed. Although some academic skills remain below grade level, [Name] is completing more tasks and showing improvement with regular practice and guidance."
