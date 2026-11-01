@@ -37,137 +37,137 @@ A simple formula usually works:
 
 Instead of writing, "[Name] is doing well in reading," try something more useful:
 
-"[Name] recognizes most uppercase and lowercase letters and is beginning to blend simple words. Continued practice with letter sounds will help build reading confidence."
+"[Name] recognizes most uppercase and lowercase letters and is beginning to blend simple words. Continued practice with letter sounds will help them read new words with greater independence."
 
 Many districts use standards-based kindergarten report cards, where families see marks or performance levels for individual skills. The written comment gives those marks context by explaining what the student is actually doing in class.
 
 ## Kindergarten Reading and Letter Sound Comments
 
-1. "[Name] recognizes all 26 uppercase letters and nearly all lowercase letters. Continued practice with the few less familiar letters will help make recognition automatic."
+1. "[Name] recognizes all 26 uppercase letters and nearly all lowercase letters. We are practicing the remaining letters in different books and classroom materials to strengthen recognition."
 
-2. "[Name] can produce the correct sound for most consonants and is starting to use those sounds when reading unfamiliar words."
+2. "[Name] produces the sounds for most consonants and is beginning to use those sounds when reading unfamiliar short words."
 
-3. "[Name] listens carefully during read-alouds and can retell a story using important events in the correct order."
+3. "[Name] answers questions about who is in a story, where it takes place, and what happened during a read-aloud. They are beginning to use details from the story to support their answers."
 
-4. "[Name] recognizes several high-frequency words quickly and uses them to read simple sentences with growing confidence."
+4. "[Name] recognizes several high-frequency words without sounding them out and uses those words when reading simple sentences."
 
-5. "[Name] can blend three sounds to read simple words such as cat, map, and sit with limited support."
+5. "[Name] blends three sounds to read simple words such as cat, map, and sit with limited support."
 
-6. "[Name] identifies rhyming words accurately and can often produce another word that rhymes."
+6. "[Name] identifies words that rhyme and can often think of another rhyming word."
 
-7. "[Name] pays close attention to both pictures and print while reading and uses those clues to make sense of unfamiliar text."
+7. "[Name] describes how the illustrations connect to the story, such as pointing out a character or event from the page that was just read aloud."
 
-8. "[Name] can hear the first sound in most spoken words and is working on identifying middle and ending sounds."
+8. "[Name] identifies the first sound in most spoken words and is practicing listening for middle and ending sounds."
 
-9. "[Name] enjoys choosing books independently and often talks about favorite characters, events, or illustrations."
+9. "[Name] chooses books independently and often talks about the characters, events, or illustrations afterward."
 
-10. "[Name] uses words such as first, next, and last when retelling a familiar story and is adding more detail to each retelling."
+10. "[Name] uses words such as first, next, and last to retell a familiar story in order. They are adding details about the events as they retell it."
 
-11. "[Name] tracks print from left to right and understands that words are separated by spaces."
+11. "[Name] follows print from left to right and recognizes that spaces separate words in a sentence."
 
-12. "[Name] can clap the syllables in familiar two-syllable words and is starting to break longer words into parts."
+12. "[Name] claps the syllables in familiar two-syllable words and is working on breaking longer words into parts."
 
 ## Kindergarten Writing and Fine Motor Comments
 
-13. "[Name] writes their first name independently with recognizable letters and consistent left-to-right formation."
+13. "[Name] writes their first name independently, forming recognizable letters and placing them in the correct order from left to right."
 
-14. "[Name] uses drawings, labels, and simple words to communicate an idea clearly."
+14. "[Name] uses drawings, labels, and simple words to communicate an idea about a familiar topic."
 
-15. "[Name] can write a short three- or four-word sentence with support and is starting to leave spaces between words."
+15. "[Name] writes a short sentence of three or four words with support and is practicing leaving spaces between words."
 
-16. "[Name] listens for sounds in unfamiliar words and records the sounds they hear rather than waiting for the spelling."
+16. "[Name] draws and writes about something that happened to them, telling at least two events in order."
 
-17. "[Name] adds details to drawings and can explain how those details connect to the written message."
+17. "[Name] adds details to drawings and explains how those details connect to the words they have written."
 
-18. "[Name] forms most uppercase letters correctly and is continuing to practice consistent lowercase letter formation."
+18. "[Name] forms most uppercase letters correctly and is continuing to practice the shapes and starting points of lowercase letters."
 
-19. "[Name] uses beginning and ending sounds when spelling simple words and is starting to hear some middle vowel sounds."
+19. "[Name] uses beginning and ending sounds to spell simple words and is beginning to include middle vowel sounds."
 
-20. "[Name] holds a pencil with increasing control and can complete short writing tasks without tiring as quickly."
+20. "[Name] holds a pencil with increasing control and can complete longer portions of a writing activity before needing a break."
 
-21. "[Name] uses scissors safely and can cut along straight and gently curved lines with improving accuracy."
+21. "[Name] uses scissors safely and cuts along straight and gently curved lines with increasing accuracy."
 
-22. "[Name] stays with a writing task long enough to add a picture, labels, and at least one sentence."
+22. "[Name] stays with a writing task long enough to include a picture, labels, and at least one sentence."
 
 ## Kindergarten Math Comments
 
-23. "[Name] counts a group of 20 objects accurately by touching or moving each object once."
+23. "[Name] counts a group of 20 objects accurately, touching or moving each object once as they count."
 
-24. "[Name] recognizes numerals through 20 and can match most of them to the correct quantity."
+24. "[Name] recognizes numerals through 20 and matches most of them to groups with the corresponding number of objects."
 
-25. "[Name] counts forward from a number other than one and is beginning to count backward from 10."
+25. "[Name] counts forward starting from numbers other than one and is practicing counting backward from 10."
 
-26. "[Name] identifies common shapes such as circles, squares, rectangles, and triangles and can describe features such as sides and corners."
+26. "[Name] identifies circles, squares, rectangles, and triangles and describes features such as sides and corners."
 
-27. "[Name] extends repeating patterns such as red-blue-red-blue and can create a simple pattern independently."
+27. "[Name] continues simple repeating patterns and creates their own patterns with blocks, colors, or other classroom materials."
 
-28. "[Name] compares two groups and correctly uses words such as more, fewer, and equal to explain the difference."
+28. "[Name] compares two groups and uses more, fewer, and the same number to describe how their quantities compare."
 
-29. "[Name] solves simple addition problems within 10 by using counters, drawings, or fingers to show the parts."
+29. "[Name] solves addition problems within 10 using counters, drawings, or fingers to show the parts being combined."
 
-30. "[Name] can model subtraction within 10 by removing objects and counting how many remain."
+30. "[Name] models subtraction within 10 by taking away objects and counting those that remain."
 
-31. "[Name] represents the same number in several ways, including with objects, drawings, fingers, and a written numeral."
+31. "[Name] represents a number using objects, drawings, fingers, and a written numeral."
 
-32. "[Name] explains math thinking clearly and can show how an answer was found rather than giving only the answer."
+32. "[Name] explains how they found an answer during math activities and uses drawings or materials to show their thinking."
 
-33. "[Name] recognizes numbers more reliably when they are shown out of sequence and is relying less on counting from one."
+33. "[Name] is getting better at naming numerals 0-10 when they are shown out of order, not only when counting in sequence. We are practicing with number cards and classroom materials."
 
-34. "[Name] needs continued practice with addition and subtraction within 10. Using counters and drawings helps make the problems easier to understand."
+34. "[Name] is working on addition and subtraction within 10. Counters and drawings help them show what is being added or taken away before recording an answer."
 
 ## Kindergarten Social Skills Comments
 
-35. "[Name] regularly includes classmates in games and partner activities and helps others feel welcome."
+35. "[Name] invites classmates to join games and partner activities and makes room for others to participate."
 
-36. "[Name] shares classroom materials appropriately and usually waits for a turn without adult support."
+36. "[Name] shares classroom materials and usually waits for a turn without an adult reminder."
 
-37. "[Name] works well with different partners and listens when another student is sharing an idea."
+37. "[Name] works with different partners and listens while classmates explain their ideas."
 
-38. "[Name] uses simple phrases such as 'Can I have a turn?' or 'Please stop' to solve small peer problems with words."
+38. "[Name] is practicing phrases such as 'Can I have a turn?' and 'Please stop' to address small problems with classmates using words."
 
-39. "[Name] has become more comfortable joining group activities and contributes ideas during play and learning centers."
+39. "[Name] joins small-group games and learning centers and contributes ideas, such as suggesting a rule or a role."
 
-40. "[Name] handles changes in partners or activities with greater flexibility than earlier in the year."
+40. "[Name] adjusts when partners or activities change and now moves into the new activity with fewer reminders."
 
-41. "[Name] notices when classmates need help and often offers assistance without being asked."
+41. "[Name] notices when classmates need materials or help with a classroom task and often offers assistance without being asked."
 
-42. "[Name] is practicing how to disagree appropriately and is making progress solving small conflicts without immediate adult help."
+42. "[Name] is practicing expressing a different opinion without interrupting or raising their voice. During disagreements, they are beginning to explain their ideas and listen to a classmate's response."
 
 ## Kindergarten Routines, Independence, and Listening Comments
 
-43. "[Name] completes the morning routine by unpacking, putting away belongings, and beginning the first task with little prompting."
+43. "[Name] unpacks, puts away belongings, and begins the morning task with little prompting."
 
-44. "[Name] moves from one activity to the next efficiently and usually has the needed materials ready."
+44. "[Name] moves between classroom activities and gathers the needed materials with few reminders."
 
-45. "[Name] follows two-step directions consistently and can complete many three-step directions when they are given clearly."
+45. "[Name] follows two-step directions consistently and completes many three-step directions when they are given clearly."
 
-46. "[Name] cleans up materials, returns them to the correct place, and helps prepare the classroom for the next activity."
+46. "[Name] puts away materials in their assigned places and helps prepare the classroom for the next activity."
 
-47. "[Name] works independently for 10 to 15 minutes on familiar tasks and seeks help appropriately when needed."
+47. "[Name] works independently during familiar center activities and asks a specific question when they need help continuing."
 
-48. "[Name] listens during whole-group instruction and can often repeat the direction before beginning work."
+48. "[Name] listens during whole-group instruction and can restate the direction in their own words before beginning work."
 
-49. "[Name] checks the visual schedule or classroom routine before asking what to do next."
+49. "[Name] checks the visual schedule to find out what comes next before asking an adult."
 
-50. "[Name] needs occasional reminders to begin work promptly, but responds well to a clear first step."
+50. "[Name] sometimes needs a reminder to begin an assignment. Giving them one clear first step helps them get started."
 
 ## Kindergarten Behavior Comments
 
-51. "[Name] follows classroom expectations consistently and makes safe, respectful choices throughout the day."
+51. "[Name] follows classroom safety rules during transitions and uses classroom materials as directed during learning activities."
 
-52. "[Name] responds to a brief redirection and usually returns to the task without needing repeated reminders."
+52. "[Name] responds to a brief redirection by returning to the assigned activity without a second reminder."
 
-53. "[Name] is practicing pausing before reacting when frustrated and is increasingly able to explain the problem with words."
+53. "When a task is difficult, [Name] is practicing pausing and then asking for help or trying again instead of stopping work."
 
 54. "[Name] keeps hands, feet, and classroom materials in their own space during most activities."
 
-55. "[Name] waits for a turn to speak more consistently and is raising a hand or using the class signal during discussions."
+55. "[Name] increasingly waits for a turn to speak and uses the classroom hand signal during discussions."
 
-56. "[Name] does best when expectations are stated clearly before an activity and responds positively to brief reminders."
+56. "[Name] benefits from reviewing expectations before less structured activities. A visual cue or a brief reminder helps them follow the agreed-upon steps."
 
-57. "[Name] handles disappointment more calmly when a game, activity, or choice does not go as expected."
+57. "[Name] is beginning to stay with a game or group activity when the outcome is not what they expected. They are practicing using words to respond and continue playing."
 
-58. "[Name] has made noticeable progress making safe choices during recess, centers, and other less structured parts of the day."
+58. "[Name] is following playground and center-time safety expectations more consistently than earlier in the year. They need fewer reminders about moving safely and staying within designated play areas."
 
 If you need a larger list for challenging classroom situations, see these [report card comments for behavior](/blog/report-card-comments-for-behavior).
 
@@ -175,21 +175,21 @@ LIBRARYCTAMARKER
 
 ## Kindergarten Comments for Students Who Need More Support
 
-59. "[Name] is working toward quicker recognition of letter sounds. Small-group practice and frequent review are helping build accuracy."
+59. "[Name] is working toward recognizing letter sounds more quickly and accurately. Small-group practice and frequent review are helping them identify familiar sounds."
 
-60. "[Name] can count objects successfully with support but sometimes skips or recounts items. Touching each object once is helping improve one-to-one counting."
+60. "[Name] counts objects with support but sometimes skips or counts an item twice. Moving each object into a separate group after counting it is helping them keep track."
 
-61. "[Name] needs support to begin independent work and stay with a task. We are practicing choosing a first step and completing one part at a time."
+61. "[Name] needs support to begin independent work and remain with a task. We are practicing identifying the first step and completing one part at a time."
 
-62. "[Name] finds some writing and cutting tasks tiring. Short practice with drawing, tracing, and hands-on fine motor activities is helping build control."
+62. "[Name] sometimes stops during writing or cutting activities and asks for a break. Short periods of drawing, tracing, and hands-on fine-motor practice are helping them complete more of each task."
 
-63. "[Name] can follow one-step directions independently and is working toward completing two- and three-step directions without additional reminders."
+63. "[Name] follows one-step directions independently and is practicing completing two-step directions without an additional reminder."
 
-64. "[Name] sometimes needs adult support during peer conflicts. We are practicing specific words they can use to explain a problem and ask for what they need."
+64. "[Name] sometimes needs adult help resolving disagreements with classmates. We are practicing how to state the problem, listen to the other child, and suggest a next step."
 
-65. "[Name] learns new skills best with extra repetition and repeated opportunities to practice them in small groups."
+65. "[Name] is learning to apply newly introduced skills during independent work after practicing them with a teacher in a small group. We are providing brief review activities before they try similar tasks on their own."
 
-66. "[Name] is working toward completing classroom routines more independently. Visual reminders and consistent steps are helping reduce the number of adult prompts needed."
+66. "[Name] is working toward completing classroom routines with fewer adult prompts. A visual checklist is helping them follow the steps for unpacking and getting ready for the day."
 
 For more examples that balance concern with encouragement, see these [positive report card comments for struggling students](/blog/report-card-comments-for-struggling-students).
 
@@ -197,27 +197,27 @@ For more examples that balance concern with encouragement, see these [positive r
 
 Early in the year, your comments may focus more on adjustment, routines, and the first stages of academic growth.
 
-67. "[Name] is settling into kindergarten routines and now enters the classroom, unpacks, and begins the morning activity with growing confidence."
+67. "[Name] is adjusting to the start of kindergarten. They now enter the classroom, greet the teacher, and join the opening activity after putting away their belongings."
 
-68. "[Name] is learning classroom expectations and has made progress with transitions, cleanup, and listening during group lessons."
+68. "[Name] is learning classroom expectations and is making progress moving between activities, cleaning up, and listening during group lessons."
 
-69. "[Name] is building confidence with early reading and math skills and is increasingly willing to try an unfamiliar task."
+69. "[Name] now attempts new reading and math activities before asking for help. They use familiar classroom materials to work through the first steps."
 
-70. "[Name] is forming positive relationships with classmates and has become more comfortable sharing ideas during class."
+70. "[Name] is getting to know classmates and regularly plays and works with several different children during centers and recess."
 
 By the end of the year, comments can show how much has changed.
 
-71. "[Name] has grown into an independent classroom learner and now manages most daily routines without adult reminders."
+71. "[Name] began the year needing reminders during daily routines and now manages most classroom transitions and materials independently."
 
-72. "[Name] has made strong progress in early reading and can now use letter sounds, familiar words, and picture clues together when reading."
+72. "[Name] began the year identifying individual letter sounds and now uses those sounds to blend and read simple words."
 
-73. "[Name] approaches math tasks with greater confidence and can explain strategies for counting, comparing, adding, and subtracting."
+73. "[Name] now uses counters or drawings to solve addition and subtraction problems and explains how they reached an answer. Earlier in the year, they needed more support to show their thinking."
 
-74. "[Name] now solves many small classroom problems independently and knows when it is appropriate to ask an adult for help."
+74. "[Name] has learned to work through everyday classroom problems with classmates using words and to ask an adult for help when safety is a concern. They are using these skills more independently than they did at the start of the year."
 
-75. "[Name] has made noticeable progress working cooperatively with classmates, following routines, and participating in whole-group learning."
+75. "[Name] is contributing more often to group lessons and shared activities than at the beginning of the year. They now offer ideas, listen to classmates, and take part in collaborative work."
 
-76. "[Name] should be proud of the growth made this year and is ready to continue building these academic and independence skills in the next grade."
+76. "It has been a pleasure teaching [Name] this year. Their progress in [specific skill or area] stands out, especially [observable example]. I look forward to seeing them continue learning and growing."
 
 ## Phrases to Avoid on a Kindergarten Report Card
 
@@ -239,7 +239,7 @@ Comparisons to classmates or siblings are rarely useful. Instead of saying, "[Na
 
 Even positive phrases can be too vague. "A joy to have in class" is kind, but it tells a parent very little. Try something observable instead:
 
-"[Name] brings a positive attitude to class and often encourages classmates during partner activities."
+"[Name] greets classmates in the morning and often congratulates a partner after a game, win or lose."
 
 ## Kindergarten Comments Get Easier When You Have Notes
 
