@@ -1,13 +1,13 @@
 ---
 title: "Positive Report Card Comments for Struggling Students (That Stay Honest)"
-subtitle: "How to write comments that give parents hope without hiding the truth, with 35 examples by subject and situation."
+subtitle: "How to write comments that give parents hope without hiding the truth, with 35 examples by subject and situation: 29 complete comments and 6 sentence starters."
 date: "2026-07-02"
 author: "Gregory Lebed"
 relatedPosts:
   - "report-card-comments-for-behavior"
   - "report-card-comments-for-students-with-adhd"
   - "free-report-card-comment-generator"
-excerpt: "35 positive report card comments for struggling students, organized by reading, writing, math, work completion, confidence, and working below grade level. Honest about the struggle, specific about the plan, and safe to send home."
+excerpt: "35 positive report card examples for struggling students: 29 complete comments organized by reading, writing, math, work completion, participation, and working below grade level, plus 6 sentence starters. Honest about the struggle, specific about the plan, and safe to send home."
 faq:
   - q: "What do you write on a report card for a struggling student?"
     a: "Three things: one genuine strength, an honest description of the struggle in skill terms, and the specific support in place. For example: \"Sam participates eagerly in science discussions. He is reading below grade level and receives small-group instruction daily, where he is making measurable progress with decoding.\" Honest, specific, and hopeful all at once."
@@ -31,74 +31,76 @@ The parent of a struggling student is not looking for a grade. They already susp
 2. How bad is it, really?
 3. Is anyone doing anything about it?
 
-Answer all three and you have written a great comment. Skip the first one and the parent stops reading. Skip the second and you have lied. Skip the third and you have handed them despair. Every example below answers all three.
+Answer all three and you have written a great comment. Skip the first one and the parent stops reading. Skip the second and you have lied. Skip the third and you have handed them despair. Below are 29 complete report card comments and 6 sentence starters. The examples describe student strengths, academic challenges, progress, and classroom supports that teachers can personalize.
+
+These are customizable examples. Adjust the details about student progress, classroom supports, and interventions to reflect your own observations and records.
 
 ## Struggling readers
 
-1. "[Name] listens to read-alouds with real attention and has strong comprehension when text is read to them. Decoding is the current barrier: they are reading below grade level and work with me in a small group daily. Their sight word bank has grown steadily each month."
-2. "[Name] has not given up on reading, and that matters more than any score this term. They are working through our intervention program with genuine effort, and fluency is improving week over week, even though it is not yet where we want it."
-3. "[Name] shines during our class discussions of stories, offering ideas that show deep thinking. Getting those same ideas from the printed page is still hard work. We are targeting decoding daily, and I would love to talk about ways to keep reading low-pressure at home."
-4. "[Name] chose to reread a book from our intervention group during free reading last week, which tells me confidence is starting to grow alongside skill. Level-wise there is real ground to cover, and we have a plan for covering it."
+1. "[Name] listens attentively during read-alouds and demonstrates a good understanding of stories discussed in class. Reading unfamiliar words independently remains challenging. Small-group reading instruction has helped [Name] improve word recognition and decoding skills."
+2. "[Name] continues to work on reading accuracy and fluency. Reading familiar passages more than once and practicing high-frequency words have helped [Name] read with greater accuracy. Continued practice will help strengthen these skills."
+3. "[Name] contributes thoughtful ideas during class discussions and answers questions about stories read aloud. Reading unfamiliar words independently continues to be challenging. Targeted practice with decoding skills is helping [Name] become a more independent reader."
+4. "[Name] has begun choosing books to read independently during classroom reading time. Although [Name] continues to read below grade level, regular small-group instruction and practice with foundational reading skills are helping [Name] make progress."
 
 ## Struggling writers
 
-5. "[Name] has wonderful ideas and tells detailed stories out loud. Getting those ideas onto paper is the current challenge. We are using sentence starters and a graphic organizer, and their drafts are growing longer each month."
-6. "[Name]'s spelling makes their writing hard to read right now, but it should not hide the strong voice underneath. We practice high-frequency words daily, and at home I encourage letting them write freely without corrections."
-7. "[Name] used to write two words and stop. They now produce several sentences with support, and our next goal is a full paragraph, guided by a simple checklist they helped design."
-8. "[Name] finds writing time stressful, so our first project has been lowering the stakes: shorter prompts, drawing before drafting, and celebrating every finished piece. The dread is fading and the output is rising."
+5. "[Name] shares detailed ideas and stories during class discussions but has difficulty organizing those ideas in writing. Sentence starters and graphic organizers have helped [Name] write longer, more complete responses."
+6. "[Name] shares creative ideas through writing and contributes interesting details to stories. Spelling errors sometimes make written work difficult to understand. Regular practice with high-frequency words and spelling patterns is helping [Name] improve written communication."
+7. "[Name] has made progress writing more complete responses. Earlier in the year, [Name] often wrote only a few words before stopping. With the help of sentence starters and a writing checklist, [Name] is now producing several sentences and working toward writing a complete paragraph."
+8. "[Name] has difficulty getting started on independent writing assignments but contributes thoughtful ideas during class discussions. We are using shorter writing tasks and graphic organizers to help [Name] plan ideas and begin writing more independently."
 
 LIBRARYCTAMARKER
 
 ## Struggling math students
 
-9. "[Name] has a strong sense of numbers in real-world contexts, especially anything involving money. Multi-step problems on paper are the current challenge, and we are breaking them into single steps with a checklist that is starting to work."
-10. "[Name] asks for help now instead of hiding confusion, which is the single most important change this term. Math facts remain slow, and we practice daily. The effort is fully there; the automaticity will follow."
-11. "[Name] is below grade level in math this term, and I want to be direct about that because [Name] is working too hard for it to be glossed over. Small-group instruction is in place, progress is measurable, and my goal for next term is specific and reachable."
-12. "[Name] understands new math concepts during the lesson but has difficulty holding onto them by the next week. We have added spiral review and a reference notebook, and retention is beginning to improve."
+9. "[Name] demonstrates a good understanding of numbers during real-world activities, especially those involving money. Solving multi-step word problems remains challenging. Breaking problems into smaller steps and identifying important information have helped [Name] work through problems more successfully."
+10. "[Name] has become more consistent about asking questions when additional help is needed. Recalling basic math facts quickly and accurately remains an area for improvement. Daily practice and review are helping [Name] strengthen math fact fluency."
+11. "[Name] is currently performing below grade-level expectations in math. Small-group instruction and additional guided practice are helping [Name] strengthen foundational skills. We will continue reviewing previously taught concepts and monitoring progress toward grade-level expectations."
+12. "[Name] participates in math lessons and can demonstrate understanding of new concepts with guidance. Applying those same skills after several days without practice remains challenging. Regular review and a math reference notebook have helped [Name] remember and use previously learned strategies."
 
 ## Work completion and organization
 
-13. "[Name] produces thoughtful work when they finish, and finishing is what we are working on. A visual checklist and shorter chunks have raised their completion rate noticeably since the fall."
-14. "[Name] wants to do well, and I see it clearly in one-on-one moments. Independent work time is where things fall apart, so we have moved their seat, shortened the tasks, and added check-ins. Each change has helped a little; together they are helping a lot."
-15. "[Name]'s backpack, desk, and folder have been our term-long project, and there is real progress to report: assignments are making it home and back at a much higher rate. This unglamorous skill will pay off everywhere."
-16. "[Name] starts strong and fades mid-task. We are building stamina gradually, and what used to be five focused minutes is now closer to fifteen. That trajectory is the headline."
+13. "[Name] produces thoughtful, accurate work when assignments are completed. Finishing tasks within the allotted time remains challenging. Visual checklists and breaking assignments into smaller steps have helped [Name] complete more classroom work independently."
+14. "[Name] completes assignments successfully with individual guidance but has difficulty staying on task during independent work. Shorter assignments, visual reminders, and regular teacher check-ins have helped [Name] complete more work without direct assistance."
+15. "[Name] has made progress organizing classroom materials and remembering to bring assignments between home and school. Using a daily folder and following a consistent classroom routine have helped [Name] keep track of materials more independently."
+16. "[Name] has made noticeable progress staying on task during independent assignments. Earlier in the year, [Name] typically worked independently for about five minutes before needing a reminder. [Name] can now remain focused for approximately fifteen minutes, and we will continue working toward longer periods of independent work."
 
-## Confidence and effort
+## Confidence and Classroom Participation
 
-17. "[Name] has stopped saying 'I'm bad at this,' and that shift matters more than it sounds. The skills are coming along behind the confidence, exactly the order these things usually go."
-18. "[Name] takes academic risks now: raising a hand, trying the hard problem first, reading aloud. The scores do not yet show what these behaviors predict, but they will."
-19. "[Name] had a difficult start to the year and has quietly rebuilt since. Work habits, participation, and attitude have all turned around. Academics are following more slowly, and we will keep at it together."
-20. "[Name] shows up every day and tries every day, through material that is genuinely hard for them. I do not take that persistence for granted, and I hope you will celebrate it at home, because it is the foundation everything else gets built on."
+17. "[Name] attempts challenging assignments more often before asking for help. Although some academic skills still require additional practice, [Name] is beginning more tasks independently and using classroom resources when needed."
+18. "[Name] is participating more frequently in class discussions, volunteering answers, and attempting challenging problems. Academic performance remains below grade-level expectations, but increased participation provides more opportunities for [Name] to practice and demonstrate developing skills."
+19. "[Name] has made progress with classroom participation and work completion since the beginning of the year. Although some academic skills are still developing, [Name] is completing more assignments and contributing more frequently during lessons."
+20. "[Name] continues working on challenging assignments and makes use of teacher support when needed. Although some academic skills remain below grade level, [Name] is completing more tasks and showing improvement with regular practice and guidance."
 
 ## Comments for students working below grade level
 
 "Below grade level" is the phrase parents brace for, so it needs the same three answers wrapped around it: something good, the honest picture, and the plan.
 
-21. "[Name] is currently working below grade level in reading, and I want you to have the honest picture along with the plan: daily small-group instruction, a progress check every two weeks, and a folder of just-right books that comes home each Monday."
-22. "[Name] is working below grade level in both reading and math. We have prioritized reading first, because it unlocks everything else. Intervention is in place, and progress is being measured, not guessed at."
-23. "[Name] is closing the gap. They began the year well below grade level in [subject] and are now approaching it, the direct result of consistent intervention and their own daily effort."
-24. "[Name] succeeds with grade-level material when it is modified, and those supports are the reason for this term's progress. Our long-term goal is to fade them gradually as skills solidify."
-25. "[Name] is performing below grade-level expectations this term. The support team now includes [support staff or program], we meet regularly to review progress, and you will never be left guessing where things stand."
-26. "[Name] is below grade level in [subject], and their growth rate this term has been genuinely strong. They are learning quickly, from a starting point further back. Both of those facts belong on this report."
+21. "[Name] is currently reading below grade level but is making progress with foundational reading skills. Daily small-group instruction and regular practice with decoding and high-frequency words have helped [Name] improve reading accuracy. We will continue monitoring progress and targeting skills that need additional support."
+22. "[Name] is currently working below grade level in reading and math. Targeted small-group instruction and additional practice are helping [Name] strengthen foundational skills in both subjects. We will continue monitoring progress and providing support in areas of difficulty."
+23. "[Name] began the year performing significantly below grade-level expectations in [subject]. Recent classroom work and assessments show improvement, and [Name] is now approaching grade-level expectations. Continued instruction and practice will help build on this progress."
+24. "[Name] is making progress with grade-level concepts when provided with appropriate instructional supports. Breaking assignments into smaller steps and providing additional guidance have helped [Name] demonstrate understanding and complete classroom work more successfully. We will continue using supports that meet [Name]'s learning needs."
+25. "[Name] is currently working below grade-level expectations in [subject]. Additional instruction through [specific intervention or program] is helping [Name] develop foundational skills. We will continue monitoring progress and adjusting instruction based on [Name]'s individual needs."
+26. "[Name] continues to perform below grade-level expectations in [subject] but has made noticeable academic progress this term. Recent assignments and assessments show improvement in skills that were challenging earlier in the year. Continued targeted instruction will help [Name] build on this growth."
 
-## When effort is also the struggle
+## When Work Completion and Engagement Are Challenging
 
-The hardest comment to write is for the student who is behind and not currently trying. Manufactured praise fails here. Find what is true, and be plain about the rest:
+The hardest comment to write is for the student who is behind and also has missing or incomplete assignments, difficulty starting tasks, or inconsistent participation. Manufactured praise fails here. Find what is true, and be plain about the rest:
 
-27. "[Name] is capable of strong work, and I have seen flashes of it this term. Right now, effort is inconsistent, and the missing work is affecting every grade. I want to solve this with you rather than just report it: a short conference would be a great next step."
-28. "[Name] is well liked and often the first to help a classmate. Bringing that same energy to academic work is our current challenge. We have started a simple daily goal system, and the first week showed promise."
-29. "[Name] and I are still looking for the subject that lights them up, and I have not given up. In the meantime, we are holding a clear, consistent expectation for completed work, and I would value your partnership in holding it at home too."
+27. "[Name] has demonstrated the ability to complete quality work with teacher guidance. However, incomplete and missing assignments are affecting academic progress. We are working on a consistent routine for starting and finishing assignments and will continue monitoring work completion."
+28. "[Name] is a kind and helpful classmate who frequently assists others during classroom activities. Completing academic assignments consistently remains a challenge. Daily goals and regular feedback have helped [Name] make progress with work completion."
+29. "[Name] contributes positively during classroom activities but has difficulty staying on task during independent assignments. Clear expectations, shorter tasks, and regular teacher check-ins have helped [Name] complete more work independently."
 
 ## Quick lines to open any comment
 
-Every struggling student has something true and good to lead with. If you are stuck, one of these is usually honest:
+These six are sentence starters, not complete report card comments. Every struggling student has something true and good to lead with. If you are stuck, open with one of these, then add the honest picture and the plan:
 
-30. "brings a sense of humor that our classroom would be poorer without"
-31. "is unfailingly kind to classmates"
-32. "has excellent attendance and arrives ready to start the day"
-33. "cares deeply about doing well, even when the work is frustrating"
-34. "has grown in independence since the beginning of the year"
-35. "contributes ideas during discussion that raise the level of our class"
+30. "[Name] brings a wonderful sense of humor to our classroom."
+31. "[Name] consistently treats classmates with kindness and respect."
+32. "[Name] arrives prepared and ready to participate in classroom activities."
+33. "[Name] continues working on challenging assignments and asks for help when needed."
+34. "[Name] has become more independent with classroom routines since the beginning of the year."
+35. "[Name] contributes thoughtful ideas during classroom discussions."
 
 ## The phrases to avoid
 
@@ -117,7 +119,7 @@ One rule above all: the report card should never be breaking news. If a student 
 
 ## Where the specifics come from
 
-Every strong example above leans on a detail: the reread intervention book, the fifteen minutes of stamina, the sight word bank growing monthly. You cannot conjure those in June. You can only write them down when they happen, and the [teacher's complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) shows how to make that a habit that survives a full year.
+Every strong example above leans on a detail: the fifteen minutes of focused work, the move from a few words to several sentences, the math reference notebook. You cannot conjure those in June. You can only write them down when they happen, and the [teacher's complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) shows how to make that a habit that survives a full year.
 
 That is the entire idea behind ShortHand. A ten-second note on your phone in the moment ("finished the whole page independently, first time") becomes the raw material for report card comments, parent emails, and intervention documentation later. When it is time to write about a struggling student, you are not staring at a blank box trying to be fair from memory. Your own observations are right there, and they already tell the story: honestly, specifically, and with the progress visible.
 
