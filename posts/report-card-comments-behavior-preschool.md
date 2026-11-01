@@ -19,17 +19,15 @@ faq:
     a: "Common preschool behavior domains include: following classroom routines, taking turns and sharing, managing transitions, listening and following directions, regulating emotions, and interacting positively with peers. These are assessed as developmental continuums, not pass/fail grades. Most preschool report cards use language like 'emerging,' 'developing,' or 'demonstrating consistently' rather than letter grades."
 ---
 
-You are not grading math tests when you write preschool report card comments. You are describing a three-year-old's entire relationship with other humans, with frustration, with waiting, with the word "no." Preschool parents are often reading their first school document about their child, and they are going to read every word.
+Preschool behavior comments are not like grading a math test. You are describing how a three-year-old handles waiting, sharing, frustration, and the word "no." For many families, this is the first school report they have read about their child, and they will read every word.
 
-My years as a Registered Behavior Technician reinforced something preschool teachers already know: most behaviors that worry adults are completely developmentally appropriate. A three-year-old who struggles with sharing or emotional regulation is practicing a skill, not displaying a character flaw. That reframe changes everything about how you write these comments. If you use K-8 language on a Pre-K family, you will cause panic. Here is how to write preschool behavior comments that are honest without being alarming. (This post covers behavior: routines, transitions, sharing, and self-regulation. For development and academics, from early literacy to motor skills to end-of-year wrap-ups, see our [preschool report card comments for every domain](/blog/preschool-report-card-comments).)
+My years as a Registered Behavior Technician reinforced something preschool teachers already know: many behaviors that worry adults are typical for this age. A three-year-old who struggles with sharing or calming down is practicing a skill, not showing a character flaw. Writing from that angle changes how a comment lands. Language written for older students can sound alarming to a Pre-K family. Here is how to write preschool behavior comments that are honest without being alarming. (This post covers behavior: routines, transitions, sharing, and self-regulation. For development and academics, from early literacy to motor skills to end-of-year wrap-ups, see our [preschool report card comments for every domain](/blog/preschool-report-card-comments).)
 
 ![A preschool teacher turning blunt behavior concern cards into gentle developmental growth notes](/blog-illustrations/preschool-behavior-comments-growth-language.webp)
 
 ## Why preschool behavior comments are different
 
-A preschooler refusing to share is different from an older student deliberately ignoring an established classroom expectation. With young children, the behavior usually points to a social skill that is still developing. Framing it that way turns a complaint into a goal.
-
-Often, challenging preschool behaviors are signs of a skill still in progress rather than a character issue. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
+A preschooler refusing to share is different from an older student ignoring a classroom expectation they already know. With young children, the behavior usually points to a social skill that is still developing, and framing it that way turns a complaint into a goal. If you need help tracking these skills, read [how to track student behavior data](/blog/how-to-track-student-behavior-data).
 
 ## K-8 Language vs. Preschool-Appropriate Language
 
@@ -40,7 +38,7 @@ You have to translate traditional school language into early childhood terms. He
 | "Refuses to share." | "Is still developing turn-taking skills." |
 | "Throws tantrums when angry." | "Is learning to use words to express big feelings." |
 | "Will not follow directions." | "Benefits from visual cues to follow classroom routines." |
-| "Hits other children." | "Is practicing gentle touches with friends." |
+| "Hits other children." | "Is working on using words instead of hitting when upset." |
 | "Cannot sit still." | "Is very active and learning to participate in circle time." |
 
 ## Preschool behavior comment examples by skill
@@ -49,15 +47,12 @@ Here are categorized copy-paste examples you can use right now. For more ideas, 
 
 ### Sharing and turn-taking
 
-Sharing is genuinely hard at this age, and struggling with it is developmentally common.
+Sharing is hard at this age, and struggling with it is common.
 
-"Leo is working hard on taking turns with the classroom toys. He is learning to trade items with his friends."
-
-"Mia enjoys parallel play. She is beginning to share building blocks during center time."
-
-"Freya is learning to take turns with preferred toys. A sand timer has been a big help, and she now sometimes asks for it herself."
-
-"Elias is learning to ask for a turn with words instead of reaching for the toy. We practice the phrase 'Can I have a turn?' every day, and it is sticking."
+1. "[Name] is learning to share classroom materials during play. With reminders, they are beginning to offer a toy to a classmate when they finish using it."
+2. "[Name] often plays alongside classmates during center time. They are beginning to join classmates in building activities and share materials during play."
+3. "[Name] is learning to wait for a turn with favorite classroom toys. Using a sand timer has helped, and they are beginning to ask for the timer when they need to wait."
+4. "[Name] is practicing asking for a turn instead of reaching for a toy another child is using. We practice saying, 'Can I have a turn?' and they are beginning to use this phrase during play."
 
 LIBRARYCTAMARKER
 
@@ -65,67 +60,57 @@ LIBRARYCTAMARKER
 
 Routines are the scaffolding that makes the rest of the day possible. These comments cover transitions, calm-down strategies, and following classroom routines.
 
-"Mason has learned our classroom routines and transitions between activities smoothly most days. Cleanup time is a genuine strength."
-
-"Ruby is building strategies for big feelings. She is beginning to use the calm-down corner on her own, which is a significant step for this age."
-
-"Diego handles frustration best with a warning before transitions. With a two-minute heads-up, he finishes activities calmly and confidently."
-
-"Priya is learning that it is okay to feel disappointed when a choice is not available. She recovers more quickly each month, and we celebrate that growth."
-
-"Wyatt follows two-step directions consistently and is beginning to manage three-step directions with visual support."
-
-"Zoe has made real progress waiting in line and keeping hands to herself during transitions. We use a special line-leader job as motivation, and it works."
+5. "[Name] knows the order of our day and moves to the next activity with little help. At cleanup time, they often start putting materials away before a teacher asks."
+6. "[Name] is beginning to use the calm-down corner when they feel upset, sometimes going there before a teacher suggests it. They usually return to the activity after a few minutes."
+7. "[Name] benefits from advance notice before changing activities. A two-minute warning helps them finish what they are doing and move to the next part of our routine with fewer reminders."
+8. "[Name] is practicing choosing another activity when the one they wanted is full or unavailable. With teacher support, they are beginning to make another choice and return to play."
+9. "[Name] is learning the steps for getting ready to go outside: coat, shoes, then line up. A picture sequence by the cubbies helps them check what comes next."
+10. "[Name] has made progress waiting in line and keeping their hands to themselves during transitions. Having a classroom helper job gives them a specific responsibility while the group gets ready to move."
 
 ### Emotional regulation
 
 Big feelings are part of the daily routine at this age. How a child works through them is worth capturing.
 
-"Sam is learning to take deep breaths when he feels frustrated. He is making progress identifying his emotions."
-
-"Ava relies on teacher support to calm down. She is practicing using her words instead of crying."
+11. "[Name] is learning to recognize and communicate when they feel frustrated. With adult reminders, they are practicing taking deep breaths or asking for help before returning to an activity."
+12. "When [Name] is very upset, they often need a teacher nearby before they are ready to talk about it. They are beginning to accept comfort and rejoin the group after a short break."
 
 ### Following directions
 
 Following two-step directions is a real milestone, and not every child hits it on the same timeline.
 
-"Jackson does a wonderful job following simple routines. He is working on following two-step instructions."
-
-"Chloe needs frequent reminders during transitions. She benefits from warnings before activities end."
+13. "[Name] follows familiar one-step directions independently. They are working on completing two-step directions, such as putting away materials and joining the group, with fewer reminders."
+14. "[Name] benefits from short, clear directions and visual reminders during classroom activities. They are practicing completing the first step before receiving the next instruction."
 
 ### Social interaction with peers
 
-Learning how to join play, communicate with peers, and build friendships is a major part of early childhood development. These comments help capture that growth clearly.
+Learning how to join play, communicate with peers, and build friendships is a major part of early childhood development.
 
-"Noah loves playing alongside his classmates. He is practicing asking friends to join his games."
-
-"Emma is a kind friend. She is learning how to resolve minor conflicts during free play."
+15. "[Name] is beginning to invite classmates into their play, often asking, 'Do you want to play?' at the block area. They are practicing letting a friend take a turn leading the game."
+16. "[Name] is learning to work through disagreements during play. With teacher guidance, they are practicing telling classmates what they need and listening when another child responds."
 
 ### Separation and transitions
 
-Saying goodbye can be genuinely hard for a young child, and it's worth documenting that progress with a gentle touch.
+Saying goodbye can be hard for a young child, and progress here is worth documenting.
 
-"Liam is having an easier time separating from his caregiver in the morning. He settles into his morning work quickly."
-
-"Olivia still needs a hug at drop-off. She is becoming more confident entering the classroom."
+17. "[Name] is becoming more comfortable with the morning drop-off routine. After saying goodbye, they usually join a familiar classroom activity with little teacher assistance."
+18. "[Name] benefits from a consistent goodbye routine and a brief check-in with a teacher at arrival. Once settled, they are beginning to join classmates during morning activities."
 
 ### Areas needing growth
 
-Sometimes a behavior is significant enough that it needs to be named directly. The goal is not to soften it beyond recognition, but to describe it without labeling the child.
+Sometimes a behavior is significant enough that it needs to be named directly. The goal is not to soften it beyond recognition, but to describe it without labeling the child. Serious behaviors like hitting or biting should already have been discussed with the family before they appear on a report card.
 
-"Ethan is working on keeping a safe body when he is angry. We are practicing safe hands every day."
-
-"Sophia requires support to stay engaged during story time. She is learning to be a good listener."
+19. "[Name] is working on keeping their hands safe when disagreements happen during play. We are practicing asking for help and using words instead of hitting. They continue to need adult reminders and supervision during challenging peer interactions."
+20. "[Name] sometimes has difficulty remaining with the group during story time. They benefit from sitting near a teacher and having opportunities to respond to questions or participate in the story. We are working toward longer periods of group participation."
+21. "[Name] sometimes bites during disagreements with classmates. We supervise these interactions closely, help them communicate what they need, and practice safer ways to respond. They continue to need direct adult support during challenging peer interactions."
+22. "[Name] sometimes runs ahead of the group in the hallway or moves away from the group on the playground. We are practicing staying with a teacher during transitions, and they walk with an adult partner when needed."
+23. "[Name] sometimes tells classmates they cannot join a game. We are practicing ways to include others, such as offering a role in the activity, and they are beginning to allow classmates to join when asked."
+24. "[Name] often needs individual reminders to stop playing and begin cleanup. We are practicing a consistent cleanup routine, using a visual cue and giving one direction at a time to help them put materials away."
 
 ## Save time on your preschool comments
 
-Writing these comments takes hours. It is even harder when you cannot remember specific examples.
+Writing these comments takes hours, and it is harder when you cannot remember what actually happened two months ago. A specific comment needs a specific example, like the first morning a child went to the calm-down corner on their own.
 
-That is why I created ShortHand. You can log developmental milestones and incidents as they happen.
-
-When you sit down to write your report cards, all your data is ready. You can easily generate honest, professional comments.
-
-If you want your notes already organized when report card season hits, [ShortHand](https://app.getshorthandapp.com?demo=true) lets you log developmental observations in seconds throughout the term. Or if you just need to get through this week, the [free report card comment generator](/report-card-comment-generator) requires no sign-up and works immediately.
+That is why I built [ShortHand](https://app.getshorthandapp.com?demo=true). It lets you log developmental observations in seconds throughout the term, so your notes are already organized by child when report card season hits. Or if you just need to get through this week, the [free report card comment generator](/report-card-comment-generator) requires no sign-up and works immediately.
 
 If you are heading into a new school year with Pre-K families, a welcome letter is often the first thing those parents read from you. The [Welcome Letter Generator](/back-to-school-toolkit) has a Pre-K option and takes about 30 seconds.
 
