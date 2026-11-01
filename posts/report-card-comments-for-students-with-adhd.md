@@ -16,7 +16,7 @@ As a teacher and former Registered Behavior Technician, I know what phrases like
 
 ![A teacher arranging ADHD report card notes into strengths, supports, and a balanced comment draft](/blog-illustrations/adhd-report-card-strengths-supports.webp)
 
-A student with ADHD is not simply choosing to be unfocused. ADHD can make attention regulation, task initiation, and impulse control much harder, especially during tasks that are lengthy, repetitive, or overwhelming. Report card language that treats those challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what every parent of a neurodiverse kid is actually hoping to read.
+A student with ADHD is not simply choosing to be unfocused. ADHD can make attention regulation, task initiation, and impulse control much harder, especially during tasks that are lengthy, repetitive, or overwhelming. Report card language that treats those challenges as character flaws closes the door on the parent partnership you actually need. The comments below are built on observable behaviors, not judgments. They name what is happening and what the classroom is doing about it, which is what many parents of neurodiverse kids are hoping to read.
 
 Below are ten copy-and-paste comment templates that are honest, professional, and strength-based.
 
@@ -32,35 +32,37 @@ If you are looking to build a habit of sharing these wins throughout the term, c
 
 Here are ten templates categorized by the common areas we track on report cards. Replace the strategies and outcomes in each template with what you have actually observed. A strength-based comment should still be specific and accurate.
 
+Report card comments should describe what you observe in the classroom, not suggest or assign a diagnosis. Choose examples that accurately reflect the student's documented behaviors, supports, and progress. These examples can be adapted for different grade levels by changing the classroom routines, assignments, and supports to match the student's age and learning environment.
+
 ### Focus and Attention Struggles
 
-1. **The Creative Thinker:** "[Student] is a highly creative and enthusiastic learner who brings unique perspectives to our class discussions. While they can sometimes find independent tasks challenging to start, they benefit from using a visual checklist and verbal check-ins to stay focused on their daily assignments."
+1. **Getting Started Independently:** "[Student] often needs a reminder to begin independent assignments, even after directions have been explained. A short checklist and a teacher check-in help them identify the first step. We are continuing to work on starting tasks with less assistance."
 
-2. **The High-Energy Participator:** "[Student] brings wonderful energy and passion to our classroom. They are learning to manage distractions during instruction. They respond well to hands-on learning opportunities and quiet seating options that help them maintain focus."
+2. **Staying Focused During Instruction:** "[Student] often loses focus during longer lessons and sometimes misses important directions. Sitting closer to the teacher and hearing directions in shorter parts help them follow along. They continue to need reminders to return their attention to the lesson."
 
-3. **The Progressing Focus:** "[Student] has shown great effort in tracking their own focus this term. When they use their personalized timer, they are able to complete tasks independently. We will continue working on strategies to help them transition between activities smoothly."
+3. **Using a Focus Strategy:** "[Student] is beginning to use a personal timer to manage independent work periods. When the timer is in place, they are often able to stay with an assignment and complete it without additional reminders. We are working on using this strategy more consistently."
 
 ### Academic Effort and Work Habits
 
-4. **The Determined Learner:** "[Student] demonstrates commendable persistence when tackling new academic concepts. They are working on breaking down larger projects into smaller, manageable steps. Having a designated quiet study space helps them produce their best work."
+4. **Managing Longer Assignments:** "[Student] keeps trying when new material is challenging but often needs help organizing longer assignments. Breaking the work into smaller steps and checking progress along the way helps them complete each part without losing track of the task."
 
-5. **The Task Finisher:** "[Student] is eager to complete their work and show what they know. Sometimes, their enthusiasm leads them to rush through assignments. We are working on a routine of slowing down and reviewing their work for detail before submitting it."
+5. **Checking Work for Accuracy:** "[Student] often finishes assignments quickly but sometimes skips directions or overlooks mistakes. We are practicing a routine of rereading directions and checking answers before turning in work. When they use this routine, they catch more of their own mistakes."
 
-6. **The Strategy User:** "[Student] is learning to identify when they need a brief movement break to recharge. They are becoming more independent in utilizing these strategies, which has led to a noticeable improvement in the accuracy of their math work."
+6. **Using Movement Breaks:** "[Student] uses scheduled movement breaks during independent work and is beginning to ask for a break using our agreed signal. After a break, they return to their assignment with fewer reminders."
 
 LIBRARYCTAMARKER
 
 ### Social and Emotional Skills
 
-7. **The Collaborative Peer:** "[Student] is a kind and empathetic classmate who works well in group settings. They are very enthusiastic about sharing their ideas. We are working on strategies to help them practice active listening and wait for their turn to speak during peer discussions."
+7. **Waiting to Speak:** "[Student] contributes frequently to classroom discussions and has many ideas to share. They sometimes call out while others are speaking or interrupt classmates during group work. We are practicing raising a hand, waiting for a turn, and listening until another person has finished."
 
-8. **The Resilient Friend:** "[Student] has a great sense of humor and is a valued member of our classroom community. When faced with social conflicts, they are learning to use self-regulation strategies to manage their frustration and make positive choices."
+8. **Handling Peer Disagreements:** "[Student] works well with many classmates during group activities. When a disagreement comes up, they sometimes raise their voice or leave the group without telling an adult. With teacher guidance, they are practicing explaining what happened and asking for help when they cannot solve the problem on their own."
 
 ### Major Improvement and Turnaround
 
-9. **The Growth Milestone:** "[Student] has made significant progress in their executive functioning skills this term. By using a daily binder organizer, they have drastically reduced the number of missing assignments. I am incredibly proud of their growth."
+9. **Improving Organization:** "[Student] has made progress keeping track of assignments and classroom materials. Using a daily binder checklist, they remember what to bring home and have fewer missing assignments than at the start of the term. They are now managing more of this routine independently."
 
-10. **The Confidence Builder:** "[Student]'s confidence has grown tremendously this quarter. They are advocating for their own learning needs by asking for clarification when directions feel overwhelming. This proactive approach is reflected in their excellent reading progress."
+10. **Asking for Clarification:** "[Student] has made noticeable progress asking for help when directions are unclear. Earlier in the term, they often began assignments without understanding all the steps. They now ask questions before starting and are completing more assignments with fewer corrections."
 
 ## What NOT to Write on a Report Card
 
@@ -68,10 +70,10 @@ When writing report card comments for students with ADHD, it is vital to avoid v
 
 Here are a few common phrases to avoid, along with what to write instead:
 
-* **Instead of:** "Is lazy and refuses to do work." **Write:** "Benefits from tasks being broken down into smaller steps to prevent overwhelm."
-* **Instead of:** "Distracts others and talks too much." **Write:** "Is working on choosing appropriate times to socialize and practicing active listening during instruction."
-* **Instead of:** "Cannot sit still." **Write:** "Utilizes movement breaks and sensory tools to help regulate their energy level."
-* **Instead of:** "Forgetful and disorganized." **Write:** "Is developing organizational routines and benefits from a daily checklist to track materials."
+* **Instead of:** "Is lazy and refuses to do work." **Write:** "Often needs help getting started on independent assignments. Breaking tasks into smaller steps and checking in after the first step helps [Student] begin working."
+* **Instead of:** "Distracts others and talks too much." **Write:** "Often talks with nearby classmates during instruction. We are practicing saving conversations for partner time, and a quiet reminder usually helps [Student] refocus."
+* **Instead of:** "Cannot sit still." **Write:** "Frequently leaves their seat during lessons and needs reminders to return. We have added short, scheduled movement breaks, and [Student] is starting to return to their seat with fewer reminders."
+* **Instead of:** "Forgetful and disorganized." **Write:** "Often needs reminders to bring materials to class and turn in completed assignments. A take-home folder and a quick end-of-day check are helping [Student] keep track of their materials and work."
 
 Vague complaints do not help the student or the parent. Clear, behavioral descriptions tell the family exactly what is happening and how to help.
 
