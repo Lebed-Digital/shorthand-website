@@ -6,10 +6,10 @@ import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Press & Mentions | ShortHand',
-  description: 'Where ShortHand has been featured and listed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
+  description: 'Where ShortHand has been featured and listed, including Tech & Learning, SaaS Browser, Capterra, Software Advice, and GetApp.',
   openGraph: {
     title: 'Press & Mentions | ShortHand',
-    description: 'Where ShortHand has been featured and listed, including SaaS Browser, Capterra, Software Advice, and GetApp.',
+    description: 'Where ShortHand has been featured and listed, including Tech & Learning, SaaS Browser, Capterra, Software Advice, and GetApp.',
     url: 'https://getshorthandapp.com/press',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
 };
 
 const mentions = [
+  {
+    name: 'Tech & Learning',
+    desc: 'ShortHand was featured in Edtech Show & Tell, November 2026, a roundup of classroom tools from the editors of Tech & Learning.',
+    href: 'https://www.techlearning.com/learning/edtech/edtech-show-and-tell-november-2026',
+    cta: 'Read the feature',
+  },
   {
     name: 'SaaS Browser',
     desc: 'Featured case study on how ShortHand helps K-12 teachers document behavior and communicate with parents.',
