@@ -82,7 +82,7 @@ Do not rely on vague teacher speak. Simply state the truth.
 
 "I will begin tracking that behavior tomorrow and send you an update next week."
 
-The IEP process is universal. If you need a system for tracking, learn [how to track student behavior data](/blog/how-to-track-student-behavior-data) before your next meeting.
+Every state and district handles IEPs a little differently, but classroom data helps in almost any meeting. If you need a system for tracking, learn [how to track student behavior data](/blog/how-to-track-student-behavior-data) before your next meeting.
 
 ## Your IEP behavior checklist
 
