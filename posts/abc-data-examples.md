@@ -114,8 +114,8 @@ These students are made up. The situations are the kind every elementary teacher
 ### 7. Asking for a break (3rd grade)
 
 - **Antecedent:** Teacher handed out a reading passage with five comprehension questions.
-- **Behavior:** Maya raised her hand and asked, "Can I have a break card?" She used a three-minute break at the back table and came back on her own.
-- **Consequence:** Teacher said, "Thanks for asking," and set the timer. Maya finished three of the five questions.
+- **Behavior:** Maya raised her hand and asked, "Can I have a break card?"
+- **Consequence:** Teacher said, "Thanks for asking," and set a three-minute timer. Maya took her break at the back table, came back on her own when the timer went off, and finished three of the five questions.
 
 **Why it works:** ABC data isn't only for problem behavior. If a student is learning to ask for a break instead of ripping up the paper, recording the times it works is just as important as recording the times it doesn't.
 
@@ -145,20 +145,11 @@ Most ABC data problems aren't about format. They're about what ends up in the bo
 
 **Mixing observed and reported.** Anything you didn't see yourself should be labeled with who told you. "Reported by aide" is fine. Writing it as if you saw it is not.
 
-## Free ABC Data Sheet You Can Copy
+## Free Printable ABC Data Sheet
 
-Copy this table into a document, add as many rows as you need, and print. One sheet per student keeps it simple.
+Here's a one-page ABC data sheet you can print and handwrite on. It has columns for date and time, setting, antecedent, behavior, consequence, and whether you observed it or someone reported it to you. One sheet per student keeps it simple.
 
-**Student:** ____________________ **Teacher:** ____________________ **Week of:** __________
-
-| Date and time | Activity / setting | Antecedent (right before) | Behavior (what you saw or heard) | Consequence (right after) | Observed or reported? |
-|---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+RESOURCEOFFERMARKER
 
 A few tips that make this sheet easier to fill in:
 
@@ -178,7 +169,7 @@ If your student has an IEP or is being evaluated for one, [How to Document Stude
 
 ## Where ShortHand Fits (and Where It Doesn't)
 
-To be straight with you: ShortHand doesn't have an ABC data form, and it doesn't measure frequency or duration, and it doesn't analyze ABC data for you. If your team needs formal ABC data collection, use the form they give you or a tool built for structured observation.
+To be straight with you: ShortHand doesn't have an ABC data form, doesn't measure frequency or duration, and doesn't analyze ABC data for you. If your team needs formal ABC data collection, use the form they give you or a tool built for structured observation.
 
 What ShortHand does is make the quick note easy. You tap the student, pick a behavior indicator, and type a short note in the optional note field. If you write it as "Before: quiz handed out. Did: ripped quiz. After: calm corner, no quiz," you have the ABC details in a dated note that stays in that student's history. When the team asks what you've seen, the notes are already there instead of on a sticky note in your lanyard. Pro users can also export a student's dated notes as a PDF to bring to a meeting.
 

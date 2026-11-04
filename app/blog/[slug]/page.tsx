@@ -184,6 +184,16 @@ const RESOURCE_OFFERS: Record<
       'Five sections in the order you use them: strengths, academic concerns, and behavior concerns before the meeting, then parent input and an action plan during it, with four follow-up checkboxes at the bottom.',
     buttonLabel: 'Download the free conference form',
   },
+  // New post targeting "abc data examples" / "abc data sheet". Replaces the
+  // copy-the-table template with the same ungated download as the logs above.
+  'abc-data-examples': {
+    source: 'abc-data-examples-post',
+    href: '/abc-behavior-data-sheet.pdf',
+    linkText: 'One page, five rows, print and handwrite',
+    blurb:
+      'Columns for date and time, setting, antecedent, behavior, consequence, and observed or reported, with a reminder at the top to write what you saw, not what you assume.',
+    buttonLabel: 'Download the ABC data sheet',
+  },
 };
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
