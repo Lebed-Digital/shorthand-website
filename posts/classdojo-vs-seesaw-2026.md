@@ -36,7 +36,7 @@ However, it falls short when you just need a simple tool. The app has become blo
 
 Seesaw shines as a digital portfolio. It is incredibly easy for students to upload photos of their work, record voice memos, and show parents what they did in class. The interface is kid-friendly and intuitive.
 
-The problem is the sheer volume of approvals. Every single post, comment, and like needs your sign-off before parents see it. By Friday afternoon, you might have eighty notifications waiting in your queue. It also lacks a robust behavior tracking system, meaning you might end up using two different apps just to manage your day.
+The problem is the sheer volume of approvals. Post and comment approvals depend on your class and school settings; likes don't each require a teacher's sign-off. By Friday afternoon, you might have eighty notifications waiting in your queue. It also lacks a robust behavior tracking system, meaning you might end up using two different apps just to manage your day.
 
 ## ClassDojo vs Seesaw: Side by Side
 
@@ -44,9 +44,9 @@ The problem is the sheer volume of approvals. Every single post, comment, and li
 | :--- | :--- | :--- |
 | **Behavior tracking** | Point-based, very visual | Very basic, not the main focus |
 | **Parent messaging** | Text-style, instant translations | Announcement style, less conversational |
-| **Ease of use** | Simple to start, gets cluttered | Very easy for students, heavy on teacher approvals |
+| **Ease of use** | Simple to start, gets cluttered | Very easy for students; approvals depend on settings |
 | **Cost** | Free basic version, aggressive upsells to parents | Free basic, schools usually pay for premium |
-| **Privacy concerns** | Pushes parent subscriptions heavily | Very secure, everything needs approval |
+| **Privacy concerns** | Pushes parent subscriptions heavily | Privacy and approval controls are configurable |
 
 ## What Most Teachers Actually Need (That Neither App Gets Right)
 

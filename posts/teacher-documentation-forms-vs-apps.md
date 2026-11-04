@@ -62,9 +62,9 @@ This is the absolute game changer. When you use a digital system, you can instan
 
 If you are in an IEP meeting and a specialist asks about a student's behavior in October, you just type the student's name into your app. Every single interaction, behavior note, and parent phone call appears instantly on your screen. Using ShortHand means you can confidently read off exact quotes and dates without breaking a sweat. It allows you to answer questions with confidence because you're working from records instead of memory.
 
-### Undeniable Timestamps
+### Automatic Timestamps
 
-When you log an incident digitally, it is automatically timestamped by the system. You do not have to remember to write down the date and time. More importantly, an automatic timestamp confirms that you documented the behavior exactly when you said you did. There is no ambiguity about when the entry was created. The digital record stands on its own.
+When you log an incident digitally, it is automatically timestamped by the system. You do not have to remember to write down the date and time. The timestamp helps organize your record. ShortHand also lets you enter a note for an earlier date, so the displayed date is not independent proof of when you wrote the note.
 
 ## Making the Switch from Paper to Digital
 

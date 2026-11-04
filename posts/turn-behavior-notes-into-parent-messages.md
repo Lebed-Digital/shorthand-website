@@ -52,7 +52,7 @@ Here is a simple example of how this plays out in practice.
 
 During math, a student refuses to start work and becomes visibly frustrated. You tap the student's name in ShortHand and say: "Refused to start math assignment. Seemed frustrated during independent work." Four seconds. You're back to teaching.
 
-Later, instead of staring at a blank compose window, you open the parent communication tool and ShortHand has already drafted:
+Later, instead of staring at a blank compose window, you choose your notes in the parent communication tool and ask ShortHand to draft a message like this:
 
 "Hi, I wanted to share a quick update from today. During independent math work, your child had some difficulty getting started and seemed frustrated. We worked through it together, and I will continue to check in and support them during these tasks. Please let me know if you are seeing anything similar at home."
 

@@ -69,7 +69,7 @@ The real limitation: it doesn't do anything with the data after you log it. You 
 
 ClassDojo is the most widely used classroom behavior platform in elementary schools, and it's genuinely useful for what it was designed for. The parent communication feed, the points system, the class story: all well-built.
 
-Where it falls short for incident documentation: ClassDojo isn't a record-keeping tool. You can award and remove points, but there's no structured way to log a specific incident, attach notes to it, record what you said to a parent, and pull that up six weeks later. The data lives in ClassDojo's ecosystem, not in a format you can easily export or present.
+For incident documentation, ClassDojo supports notes attached to points and downloadable student reports, alongside parent messaging. Check whether the details you've recorded cover what your meeting or school's reporting system needs; a point total alone won't explain the incident.
 
 **Good for:** Daily classroom culture and parent engagement.
 **Not good for:** Building a documentation trail for IEPs, meetings, or pattern tracking.
@@ -97,10 +97,10 @@ A few things that make it different from the other options:
 
 - **Incident logging and parent contact are the same system.** You're not logging in one place and emailing from another. The note and the communication record live together, tied to the student.
 - **Phone-first.** Built to be used during a class transition, in the hallway, or in the parking lot after a call. Not at a desktop at 8 PM.
-- **No school buy-in required.** You don't need an IT ticket, a department license, or anyone else's permission. Set up your class and use it today.
+- **No school-wide purchase required.** You can set up your own account. Check your school or district's approval and student-data requirements before entering real student records.
 - **Free to start.** No credit card, no trial period countdown.
 
-It also runs a daily mood check-in, which sounds optional until you notice a student who's been flagging low three days in a row and you're glad you caught it early.
+You can also record mood observations as notes, so you have a dated record to review if a student seems withdrawn over several days.
 
 **Good for:** Individual classroom teachers who need fast logging, parent contact records, and a documentation trail, without a system-wide rollout.
 **Not good for:** Formal behavioral assessments or whole-school PBIS programs.
@@ -112,8 +112,8 @@ It also runs a daily mood check-in, which sounds optional until you notice a stu
 | Tool | Incident logging | Parent contact record | Retrievable history | Free |
 |---|---|---|---|---|
 | Google Sheets | Basic | Manual | Searchable but slow | Yes |
-| ClassDojo | Points only | Via messaging | Limited | Yes |
-| BehaviorSnap | Structured/formal | No | Yes | Limited |
+| ClassDojo | Points + notes | Via messaging | Student reports | Yes |
+| BehaviorSnap | Structured/formal | No | Yes | No; paid introductory version |
 | ShortHand | Fast + tagged | Built in | Yes, per student | Yes |
 
 ---
@@ -126,7 +126,7 @@ Digital tools for recording student incidents give you the same information in y
 
 I've worked in education for over 20 years, and I resisted going digital longer than I should have. When I finally did, the thing that surprised me most wasn't the efficiency. It was the confidence. Walking into a parent meeting knowing exactly what happened, exactly when, and exactly what I'd already communicated. That's worth more than any feature list.
 
-If you want to try ShortHand, it takes about five minutes to set up your class and log your first note. No IT ticket required.
+If you want to try ShortHand, it takes about five minutes to set up your class and log your first note. Check your school's approval requirements before entering real student records.
 
 [Try ShortHand free →](https://app.getshorthandapp.com?demo=true)
 

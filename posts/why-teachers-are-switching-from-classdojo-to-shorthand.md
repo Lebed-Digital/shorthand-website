@@ -11,13 +11,13 @@ relatedPosts:
 excerpt: "ClassDojo's points stop working by 3rd grade, and they were never built for IEP documentation. Here are the 5 real reasons teachers are switching in 2026, and what they're using instead."
 faq:
   - q: "Why are teachers switching from ClassDojo to ShortHand?"
-    a: "The main reasons are that ClassDojo's points system stops motivating older students, it doesn't produce IEP-ready documentation, and behavior data can't be easily exported or searched. ShortHand is built for documentation and parent communication rather than student engagement, which is what many teachers need by 3rd grade and above."
+    a: "The main reasons are that ClassDojo's points system stops motivating older students, it doesn't produce IEP-ready documentation, and they want a documentation workflow centered on notes and contacts. ClassDojo does offer downloadable student reports. ShortHand is built for documentation and parent communication rather than student engagement, which is what many teachers need by 3rd grade and above."
   - q: "Is ShortHand better than ClassDojo?"
     a: "It depends on what you need. ClassDojo is better for elementary classroom culture, parent photo updates, and student engagement through gamification. ShortHand is better for behavior documentation, parent contact logs, and IEP-ready records. They serve different purposes."
   - q: "What is a good ClassDojo alternative for documentation?"
-    a: "ShortHand is the strongest ClassDojo alternative for teachers who need actual documentation. It logs behavior in under 10 seconds, timestamps parent contact automatically, and generates reports from your notes. Unlike ClassDojo, it doesn't require parents to download an app."
+    a: "ShortHand is the strongest ClassDojo alternative for teachers who need actual documentation. It logs behavior in under 10 seconds, timestamps parent contact automatically, and generates reports from your notes. Parents don't need a ShortHand account. ClassDojo requires an account, but families can use its website without downloading an app."
   - q: "Does ShortHand require school approval or an IT ticket?"
-    a: "No. ShortHand is a Progressive Web App that works on any phone, tablet, or Chromebook without going through an app store or IT department. You can set up your class and start logging the same day."
+    a: "You can create an individual account without a school-wide purchase. ShortHand works in a browser, but you should check your school or district's approval and student-data requirements before entering real student records."
 ---
 
 Let me be honest with you: ClassDojo didn't fail you. You just outgrew it.
@@ -56,9 +56,9 @@ ClassDojo's point system is a feedback mechanism for students. It was never desi
 
 When that meeting comes, a screenshot of colored dots isn't going to cut it. And that is not ClassDojo's fault. It's just not what it was built for.
 
-### 3. You Can't Get the Data Out
+### 3. Getting Useful Data Out
 
-What happens to your ClassDojo records at the end of the year? For most teachers: nothing useful. The data doesn't travel. The next teacher doesn't get a behavioral timeline. You can't export a student's year in a format that's readable to a counselor or specialist.
+What happens to your ClassDojo records at the end of the year? You can download or print student reports. The useful question is whether the notes you've recorded give a next-year teacher, counselor, or specialist the context they need, beyond point totals.
 
 Behavior data should be portable. A system that works in isolation is a system that makes you start over every September.
 
@@ -88,7 +88,7 @@ Here's why it fits where ClassDojo doesn't.
 
 *(That blank screen has cost teachers more sleep than almost anything else in this job. You're welcome.)*
 
-**It works without an app store.** ShortHand is a Progressive Web App, no download, no approval process, works on your phone, your tablet, your school Chromebook. You can have a student set up in 30 seconds.
+**It works without an app store.** ShortHand is a Progressive Web App, no app-store download required, works on your phone, your tablet, your school Chromebook. Check your school's approval requirements before entering real student records. You can have a student set up in 30 seconds.
 
 **It's free to start.** Tap a student, log a note, see what it feels like to actually have the documentation you need. There's a live demo that requires no sign-up and opens instantly.
 

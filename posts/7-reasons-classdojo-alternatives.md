@@ -31,7 +31,7 @@ ClassDojo was built around engagement. But behavior documentation for older stud
 
 Nothing, really. It tells you he's been in class. It doesn't tell you whether his behavior improved after you changed his seat in February. It doesn't tell you whether he struggles more in the morning or after lunch. It won't help you in an IEP meeting when someone asks for documentation of a behavioral pattern.
 
-Points are a feedback mechanism for students. They aren't documentation for teachers. If you're using ClassDojo as your primary behavior record, you're building on a foundation that won't hold up when you actually need it.
+Point totals are a feedback mechanism for students. ClassDojo also supports notes and student reports, but totals alone aren't a detailed account of what happened. If you're using ClassDojo as your primary behavior record, include notes with enough detail to explain the incidents and supports you tried.
 
 ## 3. Logging Is Too Slow During a Live Lesson
 
@@ -57,9 +57,9 @@ The best behavior tracking systems close the loop automatically. Your logged not
 
 This sounds obvious, but very few tools actually do it. Most of them track behavior and then wave you toward your email client and wish you luck.
 
-## 6. The Data Doesn't Carry Forward
+## 6. Making the Data Carry Forward
 
-At the end of the school year, what happens to your ClassDojo data? For most teachers, the honest answer is: nothing useful. You can't easily hand a next-year teacher a behavioral timeline. You can't export a student's full year of behavior notes in a format that's readable to a counselor or specialist.
+At the end of the school year, what happens to your ClassDojo data? You can download or print student reports. Before handing one to a next-year teacher, counselor, or specialist, check that it includes the notes and context they need, rather than relying on point totals alone.
 
 Behavior data should be portable. A student's 4th-grade teacher should be able to see what you observed in 3rd grade, not because you printed something out and stuffed it in a cumulative folder, but because the system handles it automatically.
 

@@ -89,7 +89,7 @@ Every state and district handles IEPs a little differently, but classroom data h
 Print this checklist. Keep it on your desk before every annual review.
 
 - [ ] I have baseline frequency data for the targeted problem.
-- [ ] I have documented at least three attempted interventions.
+- [ ] I have documented the interventions attempted and the student's response, without waiting for a set number before seeking support.
 - [ ] I have an ABC data log for severe incidents.
 - [ ] I have organized my data into a readable one-page summary.
 - [ ] I have printed copies of all parent communication regarding the issue.

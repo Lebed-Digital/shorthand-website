@@ -187,7 +187,7 @@ If you're relying on memory at 4 PM, you're going to write vague emails. "He was
 
 That second version is a professional document. It's useful in a parent meeting. It's useful in an IEP. The first version is noise.
 
-This is exactly the problem I built [ShortHand](https://app.getshorthandapp.com?demo=true) to solve. You log notes in under 5 seconds during the day: voice-to-text while walking, one tap to select the student. By the time 4 PM rolls around, ShortHand has already drafted a parent email from your notes. You review it, adjust the tone if needed, and send.
+This is exactly the problem I built [ShortHand](https://app.getshorthandapp.com?demo=true) to solve. You log notes in under 5 seconds during the day: voice-to-text while walking, one tap to select the student. When 4 PM rolls around, choose your notes and ask ShortHand to draft a parent email. You review it, adjust the tone if needed, and send.
 
 If you're not ready for an app yet and just want somewhere to jot down every call and email as it happens, our free [parent communication log](/tools/parent-communication-log) is a printable option you can fill in on screen or by hand.
 
