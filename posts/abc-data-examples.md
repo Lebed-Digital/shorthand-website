@@ -1,7 +1,7 @@
 ---
 title: "ABC Data Examples for Teachers: 8 Filled-In Classroom Samples"
 subtitle: "Antecedent, behavior, consequence examples from elementary classrooms, the recording mistakes to avoid, and a blank ABC data sheet you can copy."
-date: "2026-11-04"
+date: "2026-10-28"
 author: "Gregory Lebed"
 relatedPosts:
   - "how-to-track-student-behavior-data"
