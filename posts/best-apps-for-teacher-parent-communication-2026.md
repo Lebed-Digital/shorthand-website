@@ -7,14 +7,14 @@ relatedPosts:
   - "best-classdojo-alternatives-2026"
   - "best-behavior-tracking-apps-for-teachers-2026"
   - "classdojo-vs-seesaw-2026"
-excerpt: "Eight parent communication apps compared by a 3rd grade teacher, with current pricing and the one detail most roundups skip: whether an individual teacher can actually adopt it without district approval."
+excerpt: "Eight parent communication apps compared by a 3rd grade teacher, with current pricing and the one detail most roundups skip: whether an individual teacher can create an account without a district purchase."
 faq:
   - q: "What is the best app for teacher-parent communication in 2026?"
-    a: "For an individual teacher who wants to start today, Remind is the strongest option. Remind Chat is free for teachers, translates into 90+ languages, and reaches families by text without requiring them to download anything. ClassDojo is the better fit for elementary classroom culture. If your district has already bought ParentSquare or SchoolStatus Connect, use what you have rather than adding a second system."
+    a: "For an individual teacher who wants to start today, Remind is the strongest option. Remind Chat is free for teachers and reaches families by text without requiring them to download anything. Preferred-language translation is a Remind Hub feature. ClassDojo is the better fit for elementary classroom culture. If your district has already bought ParentSquare or SchoolStatus Connect, use what you have rather than adding a second system."
   - q: "Which parent communication apps are free for individual teachers?"
-    a: "As of 2026, the list is shorter than it used to be. Remind Chat is free for teachers. ClassDojo's core experience (messaging, class points, class story) is free. Seesaw no longer sells individual teacher licenses and is school or district only. ClassTag's free teacher tier sunsetted in 2024 and is now the district product SchoolStatus Connect. Bloomz is priced per student and sold to schools."
+    a: "As of 2026, the list is shorter than it used to be. Remind Chat is free for teachers. ClassDojo's core experience (messaging, class points, class story) is free. Seesaw Starter is free for individual teachers; paid subscriptions are sold to schools and districts. TalkingPoints also has a free individual teacher offering. ClassTag's free teacher tier sunsetted in 2024 and is now the district product SchoolStatus Connect. Bloomz is priced per student and sold to schools."
   - q: "Do parents need to download an app to receive teacher messages?"
-    a: "It depends on the tool, and the distinction matters. TalkingPoints and Remind both default to text messaging, so families need no app and no Wi-Fi. ClassDojo does not use SMS at all, but parents can read and reply from the ClassDojo website instead of the app, so what it really requires is an account rather than an install. Any tool requiring a full app download will lose some portion of your families."
+    a: "It depends on the tool, and the distinction matters. Remind Chat reaches families by text. TalkingPoints offers free family app or web access, with text messaging available through a paid school plan. ClassDojo does not use SMS at all, but parents can read and reply from the ClassDojo website instead of the app, so what it really requires is an account rather than an install. Any tool requiring a full app download will lose some portion of your families."
   - q: "Which parent communication app is best for avoiding 'I was never contacted' disputes?"
     a: "You need a timestamped, per-student contact log you control, which most messaging apps do not give you. A message thread proves you sent something; it does not record the hallway conversation, the phone call, or what was decided. ShortHand logs each contact with a date and a summary tied to the student, which is the record that holds up at a conference or IEP meeting."
 ---
@@ -39,7 +39,7 @@ That question turned out to matter more than I expected.
 
 The free-for-teachers era is closing.
 
-Three of the eight tools below can no longer be adopted by an individual teacher at all. Seesaw states plainly that licenses are only available to schools or districts and that it does not offer paid teacher licenses. ClassTag, which was the go-to free option for years, sunsetted its free basic tier for individual educators in 2024 and now exists as SchoolStatus Connect, a district product. Bloomz is priced per student and sold to schools.
+Paid licenses and free individual accounts are different things. Seesaw sells paid licenses to schools and districts, but individual teachers can use Seesaw Starter for free. ClassTag, which was the go-to free option for years, sunsetted its free basic tier for individual educators in 2024 and now exists as SchoolStatus Connect, a district product. Bloomz is priced per student and sold to schools.
 
 If you've been away from this category for a few years and remember it as "everything has a free teacher tier," that's no longer the landscape. Plan accordingly, because it changes which of these is even a real option for you.
 
@@ -49,12 +49,12 @@ If you've been away from this category for a few years and remember it as "every
 
 | App | Best for | Individual teacher can adopt? | Parents need an app? | Translation | Starting price |
 |---|---|---|---|---|---|
-| Remind | Fast messaging that reaches everyone | Yes | No, works by text | 90+ languages | Free (Chat) |
+| Remind | Fast messaging that reaches everyone | Yes | No, works by text | Preferred-language translation with Hub | Free (Chat) |
 | ClassDojo | Elementary classroom culture | Yes | Account yes, app no | Yes | Free core |
-| TalkingPoints | Multilingual families | Quote only | No, text-first | 150+ languages | Quote |
+| TalkingPoints | Multilingual families | Yes | App or web free; SMS with a paid school plan | 150+ languages | Free teacher account; paid school plans |
 | ParentSquare | Districtwide communication | No, district only | No | Yes | Quote |
 | SchoolStatus Connect | Districtwide, former ClassTag | No, district only | No | Yes | Quote |
-| Seesaw | Student portfolios | No, school or district | Yes | Yes | Quote |
+| Seesaw | Student portfolios | Yes, Starter | No, account and invitation required; app optional | Yes | Free (Starter); paid school plans |
 | Bloomz | All-in-one school platform | No, per student | No, app optional | 250+ languages | $3/student/yr |
 | ShortHand | Documenting contacts you make | Yes | No, never | n/a | Free to start |
 
@@ -66,7 +66,7 @@ Prices and availability were checked against each company's own pricing page in 
 
 Seven questions, in the order they actually matter to a classroom teacher:
 
-1. **Can you adopt it yourself?** No IT ticket, no waiting for an admin decision.
+1. **Can you create an individual account?** A school-wide purchase and permission to enter student records are different questions; check your school's approval requirements.
 2. **Do parents need to install something?** Every install requirement costs you families.
 3. **Does it translate?** In many buildings this is the whole ballgame.
 4. **Is it fast enough to use during the day?**
@@ -82,9 +82,9 @@ I teach 3rd grade, so my read on all of this is elementary-flavored. A high scho
 
 **Best for:** Any teacher who wants messages that actually get read, starting today.
 
-Remind Chat is free for teachers, and it's the easiest yes on this list. Messages arrive as texts, so families don't download anything, don't create an account, and don't need Wi-Fi. It handles up to 100 classes with 5,000 participants each, and translates automatically into 90+ languages, including over text.
+Remind Chat is free for teachers, and it's the easiest yes on this list. Messages arrive as texts, so families don't download anything, don't create an account, and don't need Wi-Fi. Chat supports up to 10 classes with 150 participants each. The larger limits of 100 classes and 5,000 participants, plus preferred-language translation, belong to Remind Hub.
 
-That "over text" part is the underrated bit. A translated message that arrives in the same place as texts from grandma gets read. A translated message sitting behind an app login does not.
+That "over text" part is the underrated bit. Families can receive messages in the same place as texts from grandma. If you need automatic preferred-language translation, check the Hub plan rather than assuming it comes with free Chat.
 
 **Where it falls short:** It's a megaphone, not a record. You can't attach a private note to a student, track a pattern over time, or log the phone call you made Tuesday. Remind tells you a message was sent. It doesn't help you six months later when someone asks what you did about a problem in October.
 
@@ -110,11 +110,11 @@ One correction worth making, because it gets repeated a lot: ClassDojo doesn't r
 
 **Best for:** Classrooms where families speak languages you don't.
 
-TalkingPoints is built text-first specifically so it reaches families without apps, Wi-Fi, or email, and it covers 150+ languages using a mix of human and AI translation. If a meaningful share of your families are more comfortable in another language, this is the tool most obviously designed for your situation, and the text-first choice means the translation actually lands where people read.
+TalkingPoints offers free teacher accounts and communication in 150+ languages. Families can use its free app or website, with text messaging available through a paid school plan. If a meaningful share of your families are more comfortable in another language, this is the tool most obviously designed for your situation, and the delivery options depend on whether you're using the free offering or a paid school plan.
 
-**Where it falls short:** It doesn't publish pricing for individual teachers, and the site routes you to a demo or a quote. That usually means it's sold at the school or district level, so this may be a "bring it to your principal" option rather than something you start Sunday night.
+**Where it falls short:** Individual teachers can start free, but families need the app or web access unless their school has a paid plan with text messaging. Check that the available delivery method works for your families.
 
-**Choose it if:** Translation quality is your central problem and you have a path to getting your school to pay for it.
+**Choose it if:** Translation is your central need. You can start with a free teacher account; check school plans if families need text messaging.
 
 ---
 
@@ -148,9 +148,9 @@ Worth including mainly because so many teachers remember ClassTag as a free opti
 
 I teach third grade and I like Seesaw for student work. Kids photograph a math worksheet, draw on it, record themselves explaining their thinking, and families get a real window into the classroom. For that purpose it's excellent and well-loved for good reason.
 
-**Where it falls short:** Two things. It's now school-or-district licensed, with no individual teacher plan. And for private teacher-to-parent conversation about behavior or academic struggle, it's the wrong shape. When I need to document that a student has struggled with peer interactions three days running, that does not belong anywhere near a portfolio families browse.
+**Where it falls short:** Two things. Seesaw Starter gives individual teachers a free starting point, while paid features require a school or district subscription. And for private teacher-to-parent conversation about behavior or academic struggle, it's the wrong shape. When I need to document that a student has struggled with peer interactions three days running, that does not belong anywhere near a portfolio families browse.
 
-**Choose it if:** Your school has it and your goal is celebrating and sharing student work.
+**Choose it if:** Your goal is celebrating and sharing student work, using Starter or your school's subscription.
 
 ---
 
@@ -186,7 +186,7 @@ That narrowness is deliberate. The reason the record is fast to search is that t
 
 **Choose it if:** Your problem isn't sending messages, it's remembering what happened and proving what you communicated.
 
-[Try ShortHand free](https://app.getshorthandapp.com?demo=true). No IT approval, no credit card.
+[Try ShortHand free](https://app.getshorthandapp.com?demo=true). No credit card. Check your school's approval requirements before entering real student records.
 
 ---
 
@@ -194,7 +194,7 @@ That narrowness is deliberate. The reason the record is fast to search is that t
 
 **You want something today, for free, that reaches everyone.** Remind. Nothing else on this list clears that bar as cleanly in 2026.
 
-**Your families speak languages you don't.** TalkingPoints, if you can get it funded. Remind's 90+ languages over text is the free fallback and it's a good one.
+**Your families speak languages you don't.** TalkingPoints has free app and web access. For text delivery, check TalkingPoints' paid school plan or Remind Hub's preferred-language translation.
 
 **You teach K-2 and want classroom culture.** ClassDojo, same as it's been.
 

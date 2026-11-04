@@ -85,7 +85,7 @@ Taking the notes is only step one. A template is useless if it just sits in a fo
 |---|---|---|
 | Same day | Review notes, clarify shorthand | You |
 | Within 24 hours | Email parents a summary of action items | You |
-| Within 1 week | Implement new accommodations in class | You |
+| According to the IEP's effective date and applicable procedures | Implement accommodations promptly; confirm timing with the case manager | You |
 | Within 2 weeks | Check in with case manager on progress | You + case manager |
 | Ongoing | Log behavior data tied to IEP goals | You |
 | Before next meeting | Pull logs and trend data to share | You |
@@ -98,7 +98,7 @@ Take five minutes at the end of the day to read through your notes. Fix any ille
 
 This is the most critical step. Within twenty four hours of the meeting, you must send a message to the parents. Thank them for their time and explicitly list the action items you agreed upon. This creates a shared written record and ensures everyone is on exactly the same page.
 
-Sending this message does not have to be a chore. This is exactly why we built [ShortHand](https://app.getshorthandapp.com?demo=true). Instead of composing a lengthy, formal email from scratch, you can use ShortHand to quickly reference your meeting notes and fire off a professional follow up message directly to the parents. ShortHand keeps your communication logged and organized in one central place, completely separate from your chaotic email inbox.
+Sending this message does not have to be a chore. This is exactly why we built [ShortHand](https://app.getshorthandapp.com?demo=true). Instead of composing a lengthy, formal email from scratch, you can use ShortHand to draft a professional follow up message from your meeting notes, then send it through your usual email or school communication platform and log the contact. ShortHand keeps your communication logged and organized in one central place, completely separate from your chaotic email inbox.
 
 You can securely document the agreed upon accommodations directly in the app and follow up with the parents a few weeks later regarding the student's progress. Consistent, accurately documented communication is the best way to ensure an IEP is genuinely successful for everyone involved.
 

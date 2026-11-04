@@ -61,7 +61,7 @@ Done. Send. Go home. The parent gets the information they need, and you get your
 ## Finding the Right Tool for the Job
 This is exactly why I started relying on ShortHand. It is free to start and built specifically for individual classroom teachers like us.
 
-You do not need school buy-in. You do not need to ask the IT department for permission or wait for a district-wide rollout. You just pull out your phone or open your laptop and get to work.
+You do not need a district-wide purchase or rollout to create an account. Before entering real student records, check with your school or district about app approval and student-data requirements. Then you can use it from your phone or laptop.
 
 When something happens in my classroom, I tap the student's name and tap what I saw. If I want to say more, I open the full note and use voice-to-text: "Struggled with the math worksheet, needs extra help tomorrow." The app saves it instantly with a timestamp. It is out of my brain and secured in a system.
 

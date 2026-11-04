@@ -11,7 +11,7 @@ relatedPosts:
 excerpt: "ClassDojo works great in K-2. After that, teachers are quietly moving on. Here's an honest ranking of the best ClassDojo alternatives in 2026, based on what's actually frustrating you about Dojo."
 faq:
   - q: "What is the best ClassDojo alternative for upper elementary teachers?"
-    a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that points don't create a real documentation record for IEP meetings or parent conferences."
+    a: "For grades 3-6, the most popular ClassDojo alternatives are ShortHand (for behavior logging and parent communication), Seesaw (for portfolio-based documentation), and Remind (for simple parent messaging). ShortHand is the strongest fit if your main frustration with ClassDojo is that point totals alone don't give you enough context for IEP meetings or parent conferences."
   - q: "Is there a free ClassDojo alternative?"
     a: "Yes. Remind is free and handles parent messaging without requiring parents to create accounts. Seesaw has a free tier for individual teachers. ShortHand offers a free plan for individual classroom use. Most ClassDojo alternatives are free at the individual teacher level, but costs typically kick in at the school or district level."
   - q: "What ClassDojo alternative is best for behavior documentation?"
@@ -34,9 +34,9 @@ The reasons tend to cluster into a few categories:
 
 **Grade level.** The avatar and points system works well in K-2. By 3rd or 4th grade, the gamification stops landing. Your most complex students checked out of their monster avatar in October. (Somewhere out there a ClassDojo character is still waiting for points that are never coming.)
 
-**Documentation.** ClassDojo wasn't built for professional record-keeping. Points aren't a documentation record. When you need to show a behavioral pattern at an IEP meeting, a screenshot of colored bubbles won't give you what you need. The [teacher documentation log template](/blog/teacher-documentation-log-template) is a simple starting point for building a real record.
+**Documentation.** ClassDojo has notes and downloadable student reports. When you need to show a behavioral pattern at an IEP meeting, check that you've recorded the context as well as the points; a screenshot of colored bubbles alone won't give you that. The [teacher documentation log template](/blog/teacher-documentation-log-template) is a simple starting point for building a real record.
 
-**Parent dependency.** ClassDojo's communication features only work if parents download the app and actually use it. In some communities that happens. In others, you spend the year sending updates into a void.
+**Parent dependency.** ClassDojo's messaging requires parents to use an account on the website or app; an app download isn't required. In some communities that happens. In others, you spend the year sending updates into a void.
 
 **Logging speed.** Navigating to a student and adding a note during a live lesson takes 60-90 seconds minimum. For many teachers, that's too slow, and the system quietly stops being used by February.
 
@@ -50,13 +50,13 @@ The reasons tend to cluster into a few categories:
 
 I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who had been in an IEP meeting without the dates or details to back up what I knew. I couldn't find it, so I made it.
 
-ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood check-in, parent contact log, AI-drafted follow-up email.
+ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood observation, parent contact log, AI-drafted follow-up email.
 
 Logging takes under 10 seconds. Notes are timestamped and tied to the student. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in 30 seconds.
 
 And when a note has to end up somewhere else, one tap strips the conversational padding out of it so you can paste it straight into your district's system without rewriting it by hand. That's the part I care about most: ShortHand isn't trying to replace the platform your school already requires. It's trying to make feeding that platform take seconds instead of your prep period.
 
-It works without school buy-in. No IT ticket, no license, no waiting for an admin to set it up. Free to start, no credit card required.
+You can create an account without a school-wide purchase or rollout. Check your school or district's approval and student-data requirements before entering real student records. Free to start, no credit card required.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true)
 
@@ -74,7 +74,7 @@ Bloomz combines parent messaging, behavior tracking, class updates, and conferen
 
 The trade-offs: it's sold to schools per student, starting around $3 per student per year, so it isn't something you can adopt on your own the way you could a few years ago. Once a school buys it, it's free for teachers and families. Reach is genuinely good, since it sends by email, SMS, and voice rather than depending on parents installing the app.
 
-**Doesn't do:** AI-assisted parent email drafting, works-without-parent-sign-up logging.
+**AI-assisted parent email drafting:** Bloomz offers AI writing assistance on applicable paid tiers. **Doesn't do:** Works-without-parent-sign-up logging.
 
 ---
 
@@ -86,7 +86,7 @@ Class Charts is popular in middle and high school settings, particularly in the 
 
 As a solo classroom tool it's harder to justify. The setup curve is steep, the free tier is limited, and the tool works best when the whole school is using it together.
 
-**Doesn't do:** Parent communication, AI features, lightweight solo use.
+Class Charts supports parent announcements. **Doesn't do:** AI features, lightweight solo use.
 
 ---
 
@@ -132,13 +132,13 @@ Most teachers searching for a ClassDojo replacement are really trying to replace
 
 ### If you need behavior documentation
 
-This is the gap ClassDojo leaves most often. Points tell you a student got a "helping others" bubble sometime in October. They don't tell you what happened, when it happened, or who you contacted about it.
+This is the gap ClassDojo leaves most often. ClassDojo can record points with notes and provide student reports. A point total alone still won't tell you the details of what happened or who you contacted about it.
 
 Look at ShortHand for solo classroom use, or Class Charts if your school has already adopted it. What you want is timestamped notes tied to a student, parent contact logged with dates, and a clean way to get any of it back out: exported to hand across a table at a meeting, or stripped down and pasted straight into whatever system your district already makes you log things in. A tool that traps your notes inside itself has just become one more place to check. Not ready to switch apps at all? A free [printable parent communication log](/tools/parent-communication-log) covers the same basic need on paper.
 
 ### If you need parent communication
 
-If messaging families was the only part of ClassDojo you actually used, you don't need a behavior app at all. Remind and TalkingPoints both handle teacher-to-parent messaging without asking parents to manage another account, and TalkingPoints handles translation well if that matters in your community. Seesaw and Bloomz are better fits if you also want to share photos and student work. If documentation matters as much as sending the message, [this comparison of parent communication apps](/blog/best-parent-communication-apps-for-documentation-2026) breaks down which ones actually keep a record you can pull up later.
+If messaging families was the only part of ClassDojo you actually used, you don't need a behavior app at all. Remind handles teacher-to-parent messaging by text. TalkingPoints offers free family app or web access, with text messaging through a paid school plan, and TalkingPoints handles translation well if that matters in your community. Seesaw and Bloomz are better fits if you also want to share photos and student work. If documentation matters as much as sending the message, [this comparison of parent communication apps](/blog/best-parent-communication-apps-for-documentation-2026) breaks down which ones actually keep a record you can pull up later.
 
 ### If you need points and rewards
 

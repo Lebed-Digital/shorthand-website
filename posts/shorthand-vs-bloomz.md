@@ -49,11 +49,11 @@ Pricing has moved to a per-student model, starting at $3 per student per year fo
 
 ShortHand is built around one problem: the gap between noticing something, logging it, and communicating with the parent before it gets worse.
 
-You tap a student's name, log a behavior note with a pre-set tag, and mark the mood. After a parent call, you log it right there: timestamped, tied to the student, with a summary and a follow-up flag. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in seconds.
+You tap a student's name, log a behavior note with a pre-set tag, and add any mood observations to the note. After a parent call, you log it right there: timestamped, tied to the student, with a summary and a follow-up flag. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in seconds.
 
 ShortHand also drafts parent emails from your notes using AI, so you're not starting from a blank page after a hard day.
 
-It's free to start, works on your phone, and requires no school buy-in or IT approval.
+It's free to start, works on your phone, and doesn't require a school-wide purchase. Check your school or district's approval and student-data requirements before entering real student records.
 
 ---
 
@@ -64,7 +64,7 @@ It's free to start, works on your phone, and requires no school buy-in or IT app
 | Behavior logging | Yes, phone-first | Yes, part of broader platform |
 | Parent communication | Drafts messages, logs contacts | Sends via a parent-facing platform |
 | Contact log with timestamps | Yes | Implicit in chat history |
-| AI-drafted parent emails | Yes | No |
+| AI-drafted parent emails | Yes | AI writing assistance on applicable paid tiers |
 | Reaches families without the app | You send it yourself | Yes, via email, SMS, voice |
 | Translation | No | Yes, 250+ languages |
 | School dashboards | No | Yes |

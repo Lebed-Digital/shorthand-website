@@ -16,7 +16,7 @@ If you're a teacher in New Jersey, you know exactly where I was: SGO Hell.
 
 ## What the SGO Process Actually Looks Like
 
-For anyone outside New Jersey, SGO stands for Student Growth Objectives. Every teacher in the state has to set measurable goals for student growth at the start of the year and then prove, with data, whether those goals were met. It's tied to your evaluation. It matters.
+For anyone outside New Jersey, SGO stands for Student Growth Objectives. Teachers required to complete new SGOs set measurable goals for student growth and then show, with data, whether those goals were met. New Jersey paused new SGO requirements for qualifying tenured teachers in 2025-26 and continued that pause in 2026-27; non-tenured teachers still have SGO requirements. It's tied to your evaluation. It matters.
 
 The concept is reasonable. The execution is a nightmare.
 

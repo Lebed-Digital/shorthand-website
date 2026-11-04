@@ -37,11 +37,11 @@ If those are your priorities, ClassDojo is genuinely hard to beat.
 
 The problems tend to show up around 3rd grade and above, and they compound the longer you rely on the system.
 
-**The data doesn't hold up.** A point total tells you a student was present and got feedback. It doesn't tell you whether their behavior improved after a seat change, or what time of day they tend to struggle, or what happened in the three days before an IEP meeting. When documentation actually matters, points aren't documentation.
+**The data doesn't hold up.** A point total tells you a student was present and got feedback. It doesn't tell you whether their behavior improved after a seat change, or what time of day they tend to struggle, or what happened in the three days before an IEP meeting. When documentation actually matters, point totals alone aren't enough; ClassDojo's notes and student reports provide more detail.
 
 **Logging takes you out of the lesson.** Navigating to a student and adding a note during a live class costs you 60-90 seconds minimum. That's enough time to lose the room. Most teachers stop logging mid-year because the friction is too high.
 
-**The data doesn't travel.** At the end of the year, your ClassDojo data stays in ClassDojo. You can't easily hand a behavioral timeline to a next-year teacher, a counselor, or a specialist. The records exist in a format built for day-to-day engagement, not professional documentation.
+**The data needs context.** ClassDojo lets you download or print student reports. Before handing one to a next-year teacher, counselor, or specialist, check that the notes you've recorded explain the incidents and interventions, rather than relying on point totals alone.
 
 ## ShortHand vs ClassDojo: Side by Side
 
@@ -55,10 +55,10 @@ The problems tend to show up around 3rd grade and above, and they compound the l
 | Voice-to-text logging | No | Yes, in the full note view |
 | AI-generated behavior reports | No | Yes |
 | IEP-ready documentation | Limited | Built for it |
-| Parent communication drafting | Manual | AI-assisted from your notes |
-| Data export | Limited | Searchable, filterable, exportable |
+| Parent communication drafting | AI-assisted with Sidekick | AI-assisted from your notes |
+| Data export | Downloadable student reports | Searchable, filterable, exportable |
 | Works on any device | Yes | Yes (PWA, no app store) |
-| Free to use | Free tier available | Free during beta |
+| Free to use | Free tier available | Free plan available; additional features in Pro |
 
 ## The Logging Speed Problem
 
@@ -84,17 +84,17 @@ I built this feature because I had been in an IEP meeting where I knew what had 
 
 This is the question teachers search for most, so here is a direct answer.
 
-The features that ClassDojo alternatives tend to add fall into three categories:
+The main features to compare include ones ClassDojo also offers:
 
-**Private, timestamped documentation.** ClassDojo records points and messages, but not a behavioral timeline you can hand to an administrator or use in an IEP meeting. Alternatives built for older students log notes with timestamps, behavioral categories, and exportable history. The record exists in a format that holds up in a professional context.
+**Private, timestamped documentation.** ClassDojo records points, notes, and messages, and provides downloadable student reports. Alternatives built for older students log notes with timestamps, behavioral categories, and exportable history. The record exists in a format that holds up in a professional context.
 
 **Faster in-class logging.** ClassDojo requires navigating to a student profile, selecting a point type, and confirming. In a live classroom, that is 60 to 90 seconds you do not have. Alternatives like ShortHand are built around logging in a few taps, so you never have to stop moving.
 
-**AI-assisted parent communication.** ClassDojo has a messaging feature, but writing the message is still manual. ShortHand pulls from your logged notes and drafts a parent message in your voice, which you review and send. The communication is also logged automatically so you have a record of every contact.
+**AI-assisted parent communication.** ClassDojo's Sidekick can help write or respond to messages. ShortHand pulls from your logged notes and drafts a parent message in your voice, which you review and send. After contacting the family, you can log the contact in ShortHand so you have a dated record.
 
 **No public behavior display.** ClassDojo was built around visible point boards and class displays. For middle and high school students, being called out in front of peers backfires. Alternatives built for older grades keep all feedback private between teacher, student, and family.
 
-**Data that travels.** At the end of the year, ClassDojo data stays in ClassDojo. Alternatives with export features let you hand a behavioral summary to a next-year teacher, a counselor, or a specialist in a format they can actually use.
+**Data that travels.** ClassDojo offers downloadable student reports too. Compare what each tool includes in its export before handing a behavioral summary to a next-year teacher, counselor, or specialist.
 
 ## MTSS and the Charting Burden on General Education Teachers
 

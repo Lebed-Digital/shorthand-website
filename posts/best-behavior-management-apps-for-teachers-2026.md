@@ -1,6 +1,6 @@
 ---
 title: "Best Behavior Management Apps for Teachers in 2026"
-subtitle: "What actually works in a real classroom, without a school license or an IT ticket."
+subtitle: "What actually works in a real classroom, with options for individual teachers and school-wide programs."
 date: "2026-04-18"
 author: "Gregory Lebed"
 relatedPosts:
@@ -14,7 +14,7 @@ faq:
   - q: "Do behavior management apps require a school license?"
     a: "Most of the best options for individual teachers do not require a school license. ClassDojo, ShortHand, Seesaw, and Remind all offer free tiers for individual classroom use. School or district licenses unlock features like admin dashboards and school-wide reporting, but they are not required to get value as a classroom teacher."
   - q: "What behavior tracking app works best for IEP documentation?"
-    a: "For IEP documentation, you need an app that produces a timestamped, per-student record of behaviors and parent contacts. ClassDojo's points system doesn't meet this standard. ShortHand is built specifically for this: each note is dated, tied to a specific student, and paired with a parent communication log. That combination is what administrators and special ed teams actually need to see."
+    a: "For IEP documentation, you need an app that produces a timestamped, per-student record of behaviors and parent contacts. ClassDojo offers student reports with points and notes; check whether the detail you've recorded meets the team's needs. ShortHand is built specifically for this: each note is dated, tied to a specific student, and paired with a parent communication log. That combination is what administrators and special ed teams actually need to see."
   - q: "Can one app handle both behavior tracking and parent communication?"
     a: "Yes, but most apps do one well and the other poorly. ClassDojo handles parent communication well but behavior documentation is shallow. ShortHand combines per-student behavior notes with a parent contact log in a single timeline per student, which means you don't have to cross-reference two apps when a parent questions what you reported."
 ---
@@ -41,7 +41,7 @@ The best apps do both. Here's how the main options stack up in 2026.
 
 ClassDojo built its reputation on the points system. Award points for positive behavior, remove them for negative, and parents see it all in real time through the app. For elementary teachers in schools where parents are engaged with technology, it works well as a daily culture-builder.
 
-The limitation: ClassDojo is designed for visibility, not documentation. There's no easy way to pull a behavior history for a specific student and present it at a meeting. Parents have to actively use the app for communication to work, which varies enormously by school community.
+ClassDojo lets you download or print student reports, including the behavior records you've logged. Check whether those records include enough detail for your meeting. Parents need an account for messaging, but can use the website instead of installing the app.
 
 **Where it falls short:** When you need a searchable contact history, not just a point total.
 
@@ -85,17 +85,17 @@ For general education teachers doing day-to-day management, it's overkill. The i
 
 ## 5. ShortHand
 
-**Best for:** Individual classroom teachers who want fast logging, parent contact records, and a real documentation trail, without IT approval or a school license.
+**Best for:** Individual classroom teachers who want fast logging, parent contact records, and a real documentation trail, without a school-wide purchase.
 
 ShortHand is built around the gap most behavior management apps don't fill: the space between noticing a problem, documenting it, and communicating with the parent before it escalates.
 
-Here's how it works in practice: a student has a rough morning. You tap their name, log a quick note with a pre-set tag (so you're not typing from scratch mid-lesson), and mark the mood. After school, you call the parent. You log the call, timestamped and tied to the student, with a summary of what was discussed and whether a follow-up is needed. If you want a standalone record of every parent contact regardless of which app you use, the [free parent communication log](/blog/free-parent-communication-log-for-teachers) covers what to track and how to keep it simple. Three weeks later, at a parent conference, you pull up the full history in seconds.
+Here's how it works in practice: a student has a rough morning. You tap their name, log a quick note with a pre-set tag (so you're not typing from scratch mid-lesson), and add any mood observations to the note. After school, you call the parent. You log the call, timestamped and tied to the student, with a summary of what was discussed and whether a follow-up is needed. If you want a standalone record of every parent contact regardless of which app you use, the [free parent communication log](/blog/free-parent-communication-log-for-teachers) covers what to track and how to keep it simple. Three weeks later, at a parent conference, you pull up the full history in seconds.
 
-No one told you to use it. No IT ticket was filed. No school-wide rollout was required.
+No school-wide rollout is required to create an account. Check your school or district's approval and student-data requirements before entering real student records.
 
 A few things that make it different from the tools above:
 
-- **No school buy-in needed.** Set up your class, use it the same day.
+- **Individual accounts.** Set up your class once your school's approval requirements are met.
 - **Phone-first.** Designed for the parking lot after a call, not a desktop at 8 PM.
 - **Parent communication built in.** The behavior log and contact log are the same thing, not two separate systems.
 - **AI-assisted follow-up.** ShortHand can draft a parent email based on your notes, so you don't have to start from a blank page.
@@ -111,10 +111,10 @@ ShortHand won't run a formal behavioral assessment or manage a whole-school poin
 
 | App | Best for | Solo use? | Parent comms? | Free tier? |
 |---|---|---|---|---|
-| ClassDojo | Elementary culture-building | Yes | Yes (parent app required) | Yes |
+| ClassDojo | Elementary culture-building | Yes | Yes (account required, app optional) | Yes |
 | PBIS Rewards | School-wide PBIS programs | No | Via school system | No |
 | Class Charts | School or department-wide tracking | Hard | Yes | Limited |
-| BehaviorSnap | SPED / formal observation | Yes | Export only | Limited |
+| BehaviorSnap | SPED / formal observation | Yes | Export only | No; paid introductory version |
 | ShortHand | Individual classroom teachers | Yes | Built in | Yes |
 
 ---
@@ -127,7 +127,7 @@ If you're a SPED teacher doing formal behavioral assessment, BehaviorSnap is wor
 
 If you're a general education teacher who wants to actually manage behavior, document parent contact, and walk into a meeting with a real record, [ShortHand](https://app.getshorthandapp.com?demo=true) is the one built for how classroom days actually work.
 
-Download it, set up your class, and use it today. No approval needed.
+Check your school's approval requirements, then set up your class and start logging.
 
 Looking specifically at tracking tools? Here's the full breakdown: [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
 

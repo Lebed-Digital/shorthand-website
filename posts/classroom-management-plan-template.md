@@ -65,7 +65,7 @@ Copy this, replace the bracketed sections with your own details, and print it ou
 | 1 | Non-verbal reminder (look, proximity, hand signal) |
 | 2 | Quiet verbal warning: private, brief |
 | 3 | Seat change or 5-minute cool-down at the back table |
-| 4 | Parent contact + loss of privilege (recess, free choice) |
+| 4 | Parent contact + a consequence permitted by school policy, applicable law, and the student's individual plan |
 | 5 | Office referral with written incident documentation |
 
 **Positive Recognition System**
