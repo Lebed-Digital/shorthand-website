@@ -45,6 +45,11 @@ const PLACEMENTS = [
     source: 'conference-form-post',
     file: 'parent-teacher-conference-notes.pdf',
   },
+  {
+    slug: 'abc-data-examples',
+    source: 'abc-data-examples-post',
+    file: 'abc-behavior-data-sheet.pdf',
+  },
 ];
 
 for (const { slug, source, file } of PLACEMENTS) {
