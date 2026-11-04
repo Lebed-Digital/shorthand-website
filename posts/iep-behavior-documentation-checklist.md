@@ -34,7 +34,7 @@ Come prepared with organized evidence.
 
 ## The 5 things to document before every annual review
 
-You need specific types of IEP behavior documentation. This proves you are doing your job.
+These are the five types of IEP behavior documentation that come up most often. Not every student needs all five. What the team needs depends on the student, the behavior, and the goals being reviewed, so ask your case manager if you are not sure.
 
 If you are not sure how to collect this data, read my guide on [how to document student behavior for an IEP](/blog/how-to-document-student-behavior-for-iep).
 
@@ -101,9 +101,7 @@ Tracking this data manually is exhausting. It is the number one reason teachers 
 
 If you want to see how different tools handle this, [special education behavior tracking software](/blog/special-education-behavior-tracking-software) compares options built for classroom teachers against ones built for formal IEP goal data collection.
 
-That is why I created ShortHand. It tracks frequency, duration, and ABC data automatically.
-
-You just tap a button when an incident occurs. When it is time for the IEP meeting, you export a professional data report instantly.
+That is why I created ShortHand. It gives teachers a quick way to document classroom behavior, record what happened, and keep observations organized by student. When it's time for an IEP meeting, you can use those notes to prepare a professional student documentation report.
 
 Stop stressing over data collection. Get ready for your next IEP meeting at [Try ShortHand free →](https://app.getshorthandapp.com?demo=true).
 
