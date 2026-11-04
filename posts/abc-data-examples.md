@@ -25,7 +25,7 @@ I've been that teacher. Most of us have. The good news is that ABC data is not c
 
 I'd tell you a joke about antecedents, but you'd need to know what happened right before it.
 
-This post gives you plain-language definitions, eight completed ABC examples from elementary classrooms, the mistakes that make ABC data hard to use, and a blank template you can copy today. I'm a third grade teacher and a former RBT, not a behavior analyst, so this is written from the classroom side of the table: what to write down so the people who analyze it have something useful to work with.
+This post gives you plain-language definitions, eight completed ABC examples from elementary classrooms, the mistakes that make ABC data hard to use, and a free printable ABC data sheet. I'm a third grade teacher and a former RBT, not a behavior analyst, so this is written from the classroom side of the table: what to write down so the people who analyze it have something useful to work with.
 
 ## What Is ABC Data?
 
@@ -55,13 +55,13 @@ The behavior is what a video camera would have recorded. Something you could see
 
 ### Consequence: what happened right after
 
-This is the part teachers misread most often. **A consequence is not a punishment.** It's simply whatever happened next: what you did, what other students did, and what changed for the student.
+In my experience, this is the part teachers misread most often. **A consequence is not a punishment.** It's simply whatever happened next: what you did, what other students did, and what changed for the student.
 
-If classmates laughed, that's part of the consequence. If the hard worksheet went away, that's part of the consequence. If you said nothing and kept teaching, write that too. The consequence column is where teams often find the most useful information, so don't leave it as "redirected."
+If classmates laughed, that's part of the consequence. If the hard worksheet went away, that's part of the consequence. If you said nothing and kept teaching, write that too. The consequence column can hold some of the most useful information on the sheet, so don't leave it as "redirected."
 
 ## 8 Antecedent, Behavior, Consequence Examples From Elementary Classrooms
 
-These students are made up. The situations are the kind every elementary teacher will recognize. Each one includes a quick note on why it's written the way it is.
+These students are made up. The situations are ones most elementary teachers will recognize. Each one includes a quick note on why it's written the way it is.
 
 ### 1. Head down during independent writing (2nd grade)
 
@@ -129,7 +129,7 @@ These students are made up. The situations are the kind every elementary teacher
 
 ## Common ABC Recording Mistakes (and How to Fix Them)
 
-Most ABC data problems aren't about format. They're about what ends up in the boxes.
+In my experience, the trouble with ABC data is rarely the format. It's what ends up in the boxes.
 
 **Writing motivation as if it were behavior.** "He wanted attention." "She was trying to get out of work." You might be right, but you can't see a motive. Figuring out why a behavior keeps happening is the team's job, and it takes many entries. Your job is to give them clean observations. Write: "Called out four times during the read-aloud. Called on twice."
 
