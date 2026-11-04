@@ -76,7 +76,7 @@ If you serve students with IEPs, 504s, or behavior intervention plans, this one 
 
 ClassDojo wasn't built for special education documentation. When someone asks for a pattern of behavior over the last 60 days (in writing, with dates, in a format that can be printed or shared), a screenshot of colored bubbles isn't going to hold up.
 
-ShortHand logs are timestamped, categorized by behavioral theme, and exportable. When you need to show that a student's aggressive behavior increased after a schedule change, or that their on-task rate improved after a seating adjustment, that data is there. You don't have to reconstruct it from memory.
+ShortHand logs are timestamped, categorized by behavioral theme, and exportable. When you need to show what was happening before and after a schedule change or a seating adjustment, the dated notes are there. You don't have to reconstruct it from memory.
 
 I built this feature because I had been in an IEP meeting where I knew what had happened but couldn't show the dates or details. Not because I hadn't been watching, but because I hadn't been documenting in a format that translated to the table.
 

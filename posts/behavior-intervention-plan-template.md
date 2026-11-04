@@ -72,11 +72,11 @@ This works for exactly three days. On the fourth day, you leave the clipboard on
 
 To actually help the student, you have to transition away from paper tallies. You need a system that captures the context of the behavior. A tally mark does not tell the team that the student only threw the pencil after you asked them to read aloud. Context is everything when adjusting a behavior plan.
 
-## Making Data Collection Automatic
+## Making Data Collection Easier
 
 Because carrying a clipboard around a classroom is incompatible with actually teaching, you need something fast, discreet, and entirely digital. This is exactly where ShortHand fits into the BIP workflow. When a student exhibits a target behavior, pull out your phone and log the exact incident in seconds. No clipboard, no paper grid, just a timestamped note filed automatically under that student's name.
 
-When the special education team asks for your data at the end of the month, you do not have to spend your weekend counting tally marks. You just open ShortHand and pull up every single documented incident instantly. It proves beyond a shadow of a doubt that you are implementing the plan, and it provides the exact data the team needs to make meaningful adjustments.
+When the special education team asks for your data at the end of the month, you do not have to spend your weekend counting tally marks. You just open ShortHand and pull up every single documented incident instantly. That dated record shows the team how you have been implementing the plan and gives them something concrete to work from when they adjust it.
 
 A behavior intervention plan should not be a burden that breaks your spirit. With the right template and a digital tracking system, it becomes a powerful tool that actually transforms your classroom.
 

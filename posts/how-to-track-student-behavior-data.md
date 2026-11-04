@@ -121,7 +121,7 @@ After trying paper notes, spreadsheets, and a few apps, I realized something: if
 
 I wrote about [some ClassDojo alternatives I tested](/blog/classdojo-alternative) and why none of them quite fit. What I needed was something faster than thought -- something that captured the note before the moment was gone.
 
-That's why I built ShortHand. It lets me log behavior in a few taps, with voice or text when I need more detail, automatically organizes and tags entries, tracks patterns over time, and generates reports without extra work at the end. It doesn't add anything new to my plate. It just makes something I already have to do a lot easier.
+That's why I built ShortHand. It lets me log behavior in a few taps, with voice or text when I need more detail, automatically organizes and tags entries, shows each student's notes week by week, and generates reports without extra work at the end. It doesn't add anything new to my plate. It just makes something I already have to do a lot easier.
 
 If you're comparing options, here's a full breakdown of the [best behavior tracking apps for teachers in 2026](/blog/best-behavior-tracking-apps-for-teachers-2026).
 
