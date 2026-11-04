@@ -88,7 +88,7 @@ Downside: requires you to remember to look up at the right time, which is harder
 
 **5. ABC Logs (Antecedent-Behavior-Consequence)**
 
-For students with more significant behavior concerns, ABC logs track what happened before the behavior, the behavior itself, and what came after. This is the format most IEP teams and behavior specialists want to see.
+For students with more significant behavior concerns, ABC logs track what happened before the behavior, the behavior itself, and what came after. This is the format most IEP teams and behavior specialists want to see. For filled-in samples, see these [ABC data examples](/blog/abc-data-examples).
 
 Best for: building a case for extra support or a behavior plan.
 
