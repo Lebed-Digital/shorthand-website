@@ -10,7 +10,7 @@ relatedPosts:
 excerpt: "Learn how to use a student behavior log for teachers effectively. Discover what to log, how to avoid over-logging, and how to use data for IEPs."
 faq:
   - q: "How do you use a student behavior log without it taking over your day?"
-    a: "Set three check-in windows: before lunch, during independent work, and at the end of the day. Two to five minutes each is enough. Only log when the behavior meets the rule of three: redirect twice, then write it down on the third occurrence (or immediately for unsafe behavior). This keeps your log clean and your prep period intact."
+    a: "Set three check-in windows: before lunch, during independent work, and at the end of the day. Two to five minutes each is enough. For routine minor behaviors, use the rule of three: redirect twice, then write it down on the third occurrence (or immediately for unsafe behavior). If a student's IEP or BIP spells out how a behavior should be tracked, follow that plan instead. This keeps your log clean and your prep period intact."
   - q: "What should you write in a behavior log entry?"
     a: "Three things: the trigger (what was the student doing right before the behavior), the behavior itself in observable language (what they actually did), and your response (what you did about it). Avoid opinions and adjectives. Write 'refused to open notebook for ten minutes' instead of 'had a bad attitude.' Specific, factual entries are useful at meetings. Vague entries are not."
   - q: "How does behavior log data help at IEP meetings?"
@@ -61,7 +61,7 @@ The biggest mistake teachers make is trying to write down everything. If you doc
 
 To avoid over-logging, use the rule of three.
 
-If a student has a minor behavior, like calling out or fidgeting, redirect them. If it happens a second time, give a gentle warning. You only write it in the behavior log if it happens a third time, or if the behavior is highly disruptive or unsafe.
+If a student has a minor behavior, like calling out or fidgeting, redirect them. If it happens a second time, give a gentle warning. You only write it in the behavior log if it happens a third time, or if the behavior is highly disruptive or unsafe. The exception: if a student's IEP or BIP spells out how a behavior should be measured, such as counting every occurrence, follow that plan instead of the rule of three.
 
 This simple filter keeps your log clean and prevents you from spending your entire prep period writing reports.
 

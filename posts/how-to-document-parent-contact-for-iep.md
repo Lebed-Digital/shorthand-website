@@ -28,21 +28,21 @@ Here is what IDEA expects and how to handle your own documentation without losin
 
 The Individuals with Disabilities Education Act is very clear about parent participation. Schools must ensure parents have the opportunity to participate in meetings with respect to the identification, evaluation, and educational placement of their child.
 
-This means your communication cannot just be a generic newsletter or a broadcast message to the entire class. You have to prove you made a meaningful effort to include the parents of students with disabilities. Prior written notice is a formal administrative requirement, but day-to-day communication also falls under this umbrella of parent participation.
+Most of those federal requirements land on the school and district: scheduling IEP meetings so parents can attend, documenting attempts to involve them when they can't, giving prior written notice, and reporting progress on IEP goals the way the IEP specifies. IDEA does not spell out a teacher-by-teacher contact workflow. Your district, your case manager, and the IEP itself decide who reports what. Day-to-day communication still matters, because a generic newsletter does not keep parents informed enough to participate in a meaningful way.
 
-If a student with a learning disability is failing your class, you must inform the family. If a student with an emotional behavioral disability is exhibiting behaviors that impede their learning, you must inform the family. And you must document that effort.
+In practice, that leads to a good working rule. If a student with a learning disability is failing your class, make sure the family hears about it. If a student with an emotional behavioral disability is exhibiting behaviors that impede their learning, make sure the family hears about it. Confirm with the case manager who makes that contact, and document your part of it.
 
 ---
 
 ## "I Told the Case Manager" Is Not a Defense
 
-This is the single most common mistake general education teachers make. You notice an issue in your classroom. You shoot a quick email to the special education case manager. You walk away assuming your job is done.
+This is one of the most common gaps I see. You notice an issue in your classroom. You shoot a quick email to the special education case manager. You walk away assuming the family will hear about it.
 
-It is not.
+Sometimes that is exactly the agreed process. But don't assume it.
 
-Case managers carry massive caseloads. They are managing legal paperwork, coordinating related services, and tracking overall progress. They cannot be the sole point of contact for every single academic issue in your specific classroom.
+Case managers carry massive caseloads. They are managing legal paperwork, coordinating related services, and tracking overall progress. They often cannot be the main point of contact for every academic issue in your specific classroom.
 
-If a parent asks why their child failed your quarter three math benchmark, the case manager is not going to have those specific details. You are the teacher of record for that class. Your own records are what fill in that picture. Keeping your own communication log is part of doing that job well.
+If a parent asks why their child failed your quarter three math benchmark, the case manager may not have those specific details. You are the teacher of record for that class. Your own records are what fill in that picture. Keeping your own communication log is part of doing that job well.
 
 ---
 
@@ -74,7 +74,7 @@ As a classroom teacher, I know how tempting it is to assume you'll remember the 
 
 Managing this level of documentation on sticky notes or a messy spreadsheet is a fast track to burnout. You need a system that does the heavy lifting. A [parent communication log](/blog/free-parent-communication-log-for-teachers) gives you a simple structure for capturing every contact in one place, whether you use paper or a digital tool. If you want that structure right now, we built a free [printable version](/tools/parent-communication-log) you can fill in on screen or print blank for the binder. If your caseload also needs formal IEP goal data collection alongside parent contact, [this comparison of special education behavior tracking software](/blog/special-education-behavior-tracking-software) walks through which tools are built for that versus which are built for fast day-to-day documentation.
 
-The ShortHand app timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a searchable record of your outreach in seconds instead of reconstructing it from memory. You can use Ask ShortHand to quickly find out something like "how many times did I contact this family this semester?" rather than counting through your logged entries by hand.
+The ShortHand app timestamps every entry and ties every note directly to the student. You type your summary and save it. When the annual IEP meeting rolls around, you pull up a searchable record of your outreach in seconds instead of reconstructing it from memory. Because each contact is its own dated entry on the student's record, you can see how often you reached out this semester without reconstructing it from your inbox and call history.
 
 Stop piecing things together from memory before every IEP meeting. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and go into your next annual review with a complete, organized record.
 

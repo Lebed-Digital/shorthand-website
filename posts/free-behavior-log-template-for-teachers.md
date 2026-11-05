@@ -51,7 +51,7 @@ You can copy and paste this markdown table directly into your personal digital p
 To get the most out of this template, here is a quick guide on what to write in each column:
 
 * **Date / Time:** Be as specific as possible. Patterns often emerge around specific times of day, like right before lunch or during transitions.
-* **Student Name:** Use first name and last initial to maintain privacy.
+* **Student Name:** Use first name and last initial to keep full names off a sheet others might glimpse. That lowers exposure, but it does not make the record anonymous, so store the log as carefully as any other student record.
 * **Behavior Observed:** Focus on objective, observable actions. Write "screamed and pushed chair" rather than "was angry."
 * **Antecedent:** What was happening right before the behavior? Was it a peer interaction, a transition, or a difficult task?
 * **Consequence:** What was the immediate result of the behavior? Did the student get out of the task, receive adult attention, or lose a privilege?
@@ -95,6 +95,6 @@ If you are ready to ditch the clipboard and the messy spreadsheets, ShortHand is
 
 ShortHand is a digital behavior log designed by teachers, for teachers. It allows you to track student behaviors, positive wins, and parent communication in just a few taps on your phone or computer.
 
-With ShortHand, your data is securely stored and organized automatically. When you need to prepare for a parent conference or write report cards, you can view a clean, visual timeline of a student's history in seconds. It combines the power of a detailed behavior log with the speed of a simple checklist, saving you hours of paperwork every single week.
+With ShortHand, your data is securely stored and organized automatically. When you need to prepare for a parent conference or write report cards, you can view a clean, visual timeline of a student's history in seconds. It combines the power of a detailed behavior log with the speed of a simple checklist, so you spend less time digging through paperwork.
 
 Ditch the paper and start tracking with ShortHand today.

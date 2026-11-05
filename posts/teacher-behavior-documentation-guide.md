@@ -14,9 +14,9 @@ faq:
   - q: "What should teachers include in a student behavior log?"
     a: "Record the date, time, setting, what the behavior looked like (specific and observable, not vague), what happened before and after, and any intervention you used. Brief is fine. A two-sentence entry made the same day is worth more than a detailed account written a week later."
   - q: "How do teachers document behavior for IEP purposes?"
-    a: "IEP documentation needs to be specific, dated, and objective. Record frequency (how often), duration (how long), and intensity (how severe) when possible. Bring at least three to four weeks of consistent behavior data to any IEP meeting so the team has a real pattern, not a snapshot."
+    a: "IEP documentation needs to be specific, dated, and objective. Record frequency (how often), duration (how long), and intensity (how severe) when possible. When you can, bring three to four weeks of consistent behavior data so the team sees a real pattern, not a snapshot. If the IEP or BIP spells out how data should be collected, follow that, and don't hold off on raising a concern just to collect more."
   - q: "What is the difference between a behavior intervention plan and an IEP?"
-    a: "An IEP is a broader legal document covering a student's full special education program. A Behavior Intervention Plan (BIP) is a specific component that addresses a particular behavior, defines replacement behaviors, and outlines support strategies. A student can have an IEP without a BIP, but a BIP is always attached to an IEP."
+    a: "An IEP is a broader legal document covering a student's full special education program. A Behavior Intervention Plan (BIP) is a specific component that addresses a particular behavior, defines replacement behaviors, and outlines support strategies. A student can have an IEP without a BIP. A BIP is often part of an IEP, but it can also accompany a Section 504 plan or a school's general behavior support process, and which one it belongs to determines the obligations that apply."
   - q: "What tools do teachers use to track student behavior?"
     a: "Options range from paper logs and binder systems to spreadsheets and apps. The best system is the one you will actually use consistently. Apps like ShortHand let you log a behavior note in a few seconds from your phone, which makes daily documentation realistic instead of aspirational."
 ---
@@ -107,7 +107,7 @@ And when the team asks you to "put together a report on his behavior lately," [H
 
 ## Behavior Intervention Plans
 
-A Behavior Intervention Plan (BIP) is a formal document that identifies a specific problem behavior, defines replacement behaviors, and outlines the supports and strategies the team will use. It is attached to an IEP and is legally binding.
+A Behavior Intervention Plan (BIP) is a formal document that identifies a specific problem behavior, defines replacement behaviors, and outlines the supports and strategies the team will use. It is often part of an IEP, but it can also accompany a Section 504 plan or a school-level support process. When it is part of an IEP or 504 plan, it carries the legal weight of that plan.
 
 [The Behavior Intervention Plan Template That Actually Works](/blog/behavior-intervention-plan-template) gives you a practical structure for writing or reviewing a BIP, with language that translates into real classroom implementation.
 
