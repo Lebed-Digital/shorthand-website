@@ -14,7 +14,7 @@ faq:
   - q: "How do you politely tell a parent their child is struggling academically?"
     a: "Avoid vague labels like struggling or failing. Instead, share specific assessment numbers and classroom standards. For example, note that the student scored 50% on the reading check where the target is 80%. Frame the conversation around closing a specific skill gap, rather than focusing on character traits or intelligence."
   - q: "When should a teacher email parents about a student falling behind?"
-    a: "Email parents as soon as you observe a consistent trend of performance below grade level, typically after three consecutive low scores on assessments or classroom checks. Proactive outreach prevents surprises during report card season and allows you to implement support strategies before the student falls too far behind."
+    a: "Email parents once you see a consistent trend of performance below grade level. Some teachers use three consecutive low scores on assessments or classroom checks as a rough guideline, but reach out earlier if the drop is sudden or a student's plan or your school's policy calls for it. Proactive outreach prevents surprises during report card season and allows you to implement support strategies before the student falls too far behind."
   - q: "How do you frame academic concerns to parents without causing defensiveness?"
     a: "Use collaborative, team-oriented language instead of placing blame on the student or parent. Present the situation as a puzzle that you want to solve together. Back up your concerns with objective, observable data and suggest minor, manageable home-support tasks that fit easily into the family's daily routine."
 ---
