@@ -81,9 +81,9 @@ Hi [Parent Name],
 
 I am writing to summarize our phone call today regarding the recess incident involving [Student Name].
 
-During our conversation, I shared that [Student Name] received a time-out during recess today for pushing another student on the slide. You expressed your concern about the playground rules and stated that you felt the consequence was unfair.
+During our conversation, I shared what happened at recess today: [describe the actual incident and how staff responded, for example, that [Student Name] pushed another student on the slide and was asked to take a break from play]. You expressed your concern about the playground rules and stated that you felt the consequence was unfair.
 
-As we discussed, the playground safety policy requires a temporary loss of recess privilege for any physical contact that safety staff deems unsafe. We agreed on the following next steps:
+As we discussed, [explain how that response follows your school's behavior and recess policies and any state rules, without stating a rule your school does not have]. We agreed on the following next steps:
 
 * I will check in with the recess monitor daily to monitor [Student Name]'s interactions on the playground.
 * You will speak with [Student Name] tonight about the importance of keeping their hands to themselves.

@@ -181,7 +181,7 @@ An introduction letter opens a relationship; what you send over the next month d
 
 **Keep track of who you have contacted.** By week six, you will not remember which families you have actually written to and which you only meant to. A simple log solves it, and the [teacher's complete guide to parent communication](/blog/teacher-parent-communication-guide) covers how to set one up without adding paperwork to your life.
 
-This is also where ShortHand quietly earns its keep. It keeps a running log of every parent contact automatically, shows you which families you have not reached yet, and drafts those quick positive notes from the observations you have already jotted down. The introduction letter makes the first impression; ShortHand makes sure the second, third, and tenth impressions actually happen.
+This is also where ShortHand quietly earns its keep. You log each parent contact in a few taps (when it drafts a message for you, it saves the contact once you confirm), and it keeps a running log, shows you which families you have not reached yet, and drafts those quick positive notes from the observations you have already jotted down. The introduction letter makes the first impression; ShortHand makes sure the second, third, and tenth impressions actually happen.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true), and start the year with every family feeling like their child's teacher knows them.
 

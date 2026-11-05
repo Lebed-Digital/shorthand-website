@@ -41,7 +41,7 @@ Examples include:
 * Academic intervention groups
 * Additional progress monitoring
 
-Unlike Tier 1 supports, Tier 2 interventions require documentation. If a student's behavior is significant enough that the team is considering a formal plan, see the [Behavior Intervention Plan Template](/blog/behavior-intervention-plan-template) for what that next step looks like in writing.
+Tier 1 involves data collection too, usually universal screening and classroom assessment for the whole class. Tier 2 generally adds targeted, student-specific progress monitoring, so the documentation gets more detailed. Follow your school or district's documentation requirements. If a student's behavior is significant enough that the team is considering a formal plan, see the [Behavior Intervention Plan Template](/blog/behavior-intervention-plan-template) for what that next step looks like in writing.
 
 When a team asks whether an intervention is working, opinions are not enough. They need data.
 
@@ -220,7 +220,7 @@ If you're weighing ShortHand against other options for this, [special education 
 
 ## Final Thoughts
 
-Most MTSS problems are not intervention problems. They are documentation problems. Teachers are already doing the hard work. The challenge is capturing enough information to show what happened.
+Inconsistent documentation can make it difficult to tell whether an intervention is working. Teachers are often already doing the hard work of intervention. The challenge is capturing enough information to show what happened.
 
 A simple system that allows you to record observations in the moment will always be more effective than a perfect system that depends on your memory hours later.
 
