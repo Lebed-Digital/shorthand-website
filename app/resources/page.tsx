@@ -72,6 +72,20 @@ const resources = [
     signals: ['No sign-up required', 'Instant PDF download', 'Created by a classroom teacher'],
   },
   {
+    // Links to the post, not the PDF: the post's ResourceOffer download fires
+    // the GA4 resource_download event (source abc-data-examples-post).
+    title: 'ABC Behavior Data Collection Sheet',
+    description:
+      'Free printable ABC behavior data sheet, plus eight completed classroom examples to help you get started.',
+    href: '/blog/abc-data-examples',
+    download: false,
+    label: 'Get the Free Sheet',
+    accent: '#c2410c',
+    bg: '#fff7ed',
+    tag: 'Printable PDF',
+    signals: ['No sign-up required', '8 filled-in examples', 'Created by a classroom teacher'],
+  },
+  {
     title: 'Parent-Teacher Conference Notes',
     description:
       'Walk into every conference prepared. Walk out with a clear record of what was said, agreed to, and what happens next.',
