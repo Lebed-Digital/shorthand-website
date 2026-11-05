@@ -153,6 +153,8 @@ The four boxes at the bottom are there so follow-up does not disappear into the 
 
 **Parent requested additional support:** Write down who owns the next step so the request does not become "someone should probably handle that."
 
+If you want to send the family a short summary of the plan, these [parent-teacher conference follow-up email templates](/blog/parent-teacher-conference-follow-up-email) cover a routine recap, an academic or behavior plan, a hard conversation, a family who couldn't attend, and the two-week check-in.
+
 Afterward, document the meeting as a parent contact using your school's normal system. If you need a simple process for that, see [how to document parent contact as a teacher](/blog/how-to-document-parent-contact-as-a-teacher).
 
 Keep the sheet somewhere you can find it again. It can be especially useful when spring conferences arrive and you want to look back at what everyone agreed to earlier in the year. At the end of the night, add any reminders or calendar entries you need so those follow-ups do not get lost.

@@ -218,6 +218,7 @@ export const BLOG_EXAMPLE_POSTS: Record<string, ExampleType> = {
   'sample-emails-to-parents-about-missing-homework': 'email',
   'how-to-email-parents-about-academic-concerns': 'email',
   'parent-email-after-difficult-phone-call': 'email',
+  'parent-teacher-conference-follow-up-email': 'email',
   'report-card-comments-for-behavior': 'report_card_comment',
   'report-card-comments-behavior-preschool': 'report_card_comment',
   'report-card-comments-for-struggling-students': 'report_card_comment',
