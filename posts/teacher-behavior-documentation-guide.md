@@ -71,6 +71,8 @@ If you are documenting for IEP purposes, for a behavior intervention plan, or ju
 
 [ABC Data Examples for Teachers](/blog/abc-data-examples) shows eight filled-in antecedent, behavior, consequence entries from elementary classrooms, the recording mistakes that make ABC data hard to use, and a blank ABC data sheet you can copy.
 
+[Anecdotal Records Examples for Teachers](/blog/anecdotal-records-examples) covers the broader kind of observation note: ten filled-in examples across reading, math, writing, social skills, and behavior, how to keep facts separate from interpretation, and a free printable template.
+
 [5 Student Behavior Patterns Teachers Should Never Ignore](/blog/5-student-behavior-patterns-teachers-should-never-ignore) covers what to look for once your tracking is in place: task avoidance, time-of-day triggers, repeated peer conflicts, sudden behavioral shifts, and constant redirection that has become invisible.
 
 [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) covers the day-to-day habit: what to write, when to write it, and how to keep it going when things are busy.

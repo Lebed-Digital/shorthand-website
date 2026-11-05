@@ -50,6 +50,11 @@ const PLACEMENTS = [
     source: 'abc-data-examples-post',
     file: 'abc-behavior-data-sheet.pdf',
   },
+  {
+    slug: 'anecdotal-records-examples',
+    source: 'anecdotal-records-post',
+    file: 'anecdotal-records-template.pdf',
+  },
 ];
 
 for (const { slug, source, file } of PLACEMENTS) {

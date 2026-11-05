@@ -194,6 +194,15 @@ const RESOURCE_OFFERS: Record<
       'Columns for date and time, setting, antecedent, behavior, consequence, and observed or reported, with a reminder at the top to write what you saw, not what you assume.',
     buttonLabel: 'Download the ABC data sheet',
   },
+  // New post targeting "anecdotal records examples" / "anecdotal notes template".
+  'anecdotal-records-examples': {
+    source: 'anecdotal-records-post',
+    href: '/anecdotal-records-template.pdf',
+    linkText: 'One page, five rows, print and handwrite',
+    blurb:
+      'Columns for date and time, setting, area, the observation itself, and a separate column for interpretation or next steps, with a reminder at the top to write what you saw and heard.',
+    buttonLabel: 'Download the anecdotal records template',
+  },
 };
 
 const PDF_GATES: Record<string, { source: string; href: string; linkText: string }> = {
