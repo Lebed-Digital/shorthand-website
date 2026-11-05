@@ -101,6 +101,8 @@ For the actual conversation, [What to Say at a Parent-Teacher Conference](/blog/
 
 If you need to write comments ahead of the conference, [Parent-Teacher Conference Comments for Teachers](/blog/parent-teacher-conference-comments-for-teachers) has examples organized by common situations.
 
+After the meeting, [Parent-Teacher Conference Follow-Up Email: 6 Templates for Teachers](/blog/parent-teacher-conference-follow-up-email) gives you ready-to-personalize emails for putting the plan in writing, including one for a family who couldn't attend.
+
 For a printable place to keep all of it, the free [Parent Teacher Conference Form](/blog/parent-teacher-conference-form) gives you one page per student, with sections to fill in before the meeting and room for parent input and an action plan during it.
 
 ---
