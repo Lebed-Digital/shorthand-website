@@ -76,7 +76,7 @@ const resources = [
     // the GA4 resource_download event (source abc-data-examples-post).
     title: 'ABC Behavior Data Collection Sheet',
     description:
-      'Free printable ABC behavior data sheet with eight completed classroom examples to help you get started.',
+      'Free printable ABC behavior data sheet, plus eight completed classroom examples to help you get started.',
     href: '/blog/abc-data-examples',
     download: false,
     label: 'Get the Free Sheet',
