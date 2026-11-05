@@ -30,7 +30,7 @@ If you are struggling with missing work in your classroom, you do not have to gu
 
 ### The Mistake of the First Offense: When to Email
 
-One of the biggest mistakes teachers make is emailing parents the very first time a student forgets to turn in a sheet of paper. We do it out of a desire to be proactive, but it backfires. If you email a parent for every single forgotten worksheet, two things happen. First, you will spend your entire planning period typing emails in Outlook. Second, the parent will quickly develop email fatigue. They will stop opening your messages because they feel like you are micromanaging their child.
+One common mistake is emailing parents every single time a student forgets to turn in a sheet of paper. We do it out of a desire to be proactive, but it backfires. If you email a parent for every single forgotten worksheet, two things happen. First, you will spend your entire planning period typing emails in Outlook. Second, the parent will quickly develop email fatigue. They will stop opening your messages because they feel like you are micromanaging their child.
 
 On the flip side, waiting until report card season is a disaster. If a parent finds out their child has ten missing assignments only when they open the report card, they will be furious. And they have every right to be.
 

@@ -55,7 +55,7 @@ List what you have implemented, roughly when, and what happened, including the h
 
 ### 5. Summary
 
-Three or four sentences of factual wrap-up: overall trend, current status, and what you need. You are allowed to make a professional request ("I would welcome the team's guidance on supports for independent work time"). Your input on what you have seen work in your classroom matters, and IEP teams want it. But a behavior report is not the place to diagnose, suggest medication, or decide placement on your own. Diagnosis and medication belong to qualified professionals, and placement is a team decision.
+Three or four sentences of factual wrap-up: overall trend, current status, and what you need. You are allowed to make a professional request ("I would welcome the team's guidance on supports for independent work time"). Your input on what you have seen work in your classroom matters, and IEP teams want it. But a behavior report is not the place to diagnose, suggest medication, or decide placement on your own. Diagnosis and medication belong to qualified professionals, and placement is decided by the IEP team, which includes the parents.
 
 WORKFLOWBRIDGEMARKER
 
