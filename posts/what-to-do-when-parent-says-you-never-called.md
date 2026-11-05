@@ -68,7 +68,7 @@ Keep emotion out of the entries entirely. Do not write "mom was rude." Write "mo
 
 ---
 
-## How ShortHand Makes This Automatic
+## How ShortHand Keeps Your Records Organized
 
 You do not have time to manage a spreadsheet at the end of every school day. You need a system that is fast, private, and always with you.
 

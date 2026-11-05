@@ -34,7 +34,7 @@ In practice, that leads to a good working rule. If a student with a learning dis
 
 ---
 
-## "I Told the Case Manager" Is Not a Defense
+## Why Direct Parent Communication Still Matters
 
 This is one of the most common gaps I see. You notice an issue in your classroom. You shoot a quick email to the special education case manager. You walk away assuming the family will hear about it.
 

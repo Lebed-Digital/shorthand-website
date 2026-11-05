@@ -62,7 +62,7 @@ A minus point on its own is not a behavior record. It tells you something happen
 
 ---
 
-## Remind: A Great Megaphone, Nothing More
+## Remind: Strong Messaging, Different Documentation Focus
 
 Remind is fantastic at one specific thing. If you need to tell sixty parents that the field trip bus is running late, it is the best tool on the market. Open rates are incredible because messages land directly in text threads.
 
@@ -70,7 +70,7 @@ But it is not a record-keeping tool for everything outside Remind. It does keep 
 
 ---
 
-## Bloomz: Powerful but Impossible to Search Under Pressure
+## Bloomz: Powerful Communication With Tradeoffs
 
 Bloomz does almost everything. Scheduling, portfolios, messaging, behavior tracking. It is genuinely impressive in a demo.
 
