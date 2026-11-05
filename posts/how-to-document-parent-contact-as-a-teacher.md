@@ -68,7 +68,7 @@ Instead of scrambling or getting defensive, you calmly open your log. You turn y
 - October 15: Phone rang, no answer at 4:00 PM.
 - October 18: Email sent at 8:00 AM.
 
-The parent looks at the screen. The anger deflates. The conversation pivots from "why did you not tell me" to "how do we fix this." The confrontation is over in thirty seconds.
+The parent looks at the screen. The anger deflates. The conversation pivots from "why did you not tell me" to "how do we fix this." More often than not, the confrontation cools down fast.
 
 That is the power of a good log. It keeps the conversation grounded and keeps the focus on the student.
 

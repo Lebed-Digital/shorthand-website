@@ -83,7 +83,7 @@ Eventually that silent parent will show up. It usually happens after report card
 
 This is where your documentation habit pays off entirely.
 
-You do not argue. You open your phone and scroll through the log. You calmly show them the six contact attempts you made over three weeks: the exact dates and times, the voicemails, the emails. That conversation ends immediately. The anger deflates. The focus returns to helping the student.
+You do not argue. You open your phone and scroll through the log. You calmly show them the six contact attempts you made over three weeks: the exact dates and times, the voicemails, the emails. More often than not, that changes the conversation. The anger deflates. The focus returns to helping the student.
 
 ---
 
@@ -91,7 +91,7 @@ You do not argue. You open your phone and scroll through the log. You calmly sho
 
 Logging failed attempts feels like tedious busywork if you are using paper forms or spreadsheets. You need a tool that removes the friction.
 
-The ShortHand app automatically logs every attempt with precise timestamps and organizes everything by student. When you need to escalate to an administrator, you have a complete record ready in seconds. When the angry parent finally appears, your entire contact history is on your phone before they finish their sentence.
+In ShortHand, you log each attempt in a few taps, including the ones that went to voicemail, and every entry is timestamped and organized by student. When you need to escalate to an administrator, you have a complete record ready in seconds. When the angry parent finally appears, your entire contact history is on your phone before they finish their sentence.
 
 Stop letting unanswered calls stress you out. Turn that frustration into a clear, organized contact history. [Try ShortHand free at getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and know exactly where you stand with every family.
 

@@ -53,7 +53,7 @@ It's less useful if you need highly specific, individualized language for a stud
 
 ## How to get the most out of it
 
-**Pick precisely.** The tool only mentions what you select. If you check "reading" under strengths and "writing" under areas for growth, the comment will address those two things. It won't invent details you didn't give it. So the more accurately you pick, the better the first draft.
+**Pick precisely.** The tool only mentions what you select. If you check "reading" under strengths and "writing" under areas for growth, the comment will address those two things. It's instructed to stick to what you give it, but like any AI tool it can occasionally add something you didn't pick, so read every comment before you use it. So the more accurately you pick, the better the first draft.
 
 **Use the free-text field.** The "Anything else?" box is where you add context the checkboxes can't capture. Things like: "made a big improvement since January," "responds really well to one-on-one time," "tends to rush through written work." One sentence there changes the whole comment.
 

@@ -68,13 +68,13 @@ Keep emotion out of the entries entirely. Do not write "mom was rude." Write "mo
 
 ---
 
-## How ShortHand Makes This Automatic
+## How ShortHand Keeps Your Records Organized
 
 You do not have time to manage a spreadsheet at the end of every school day. You need a system that is fast, private, and always with you.
 
-The ShortHand app automatically creates timestamped entries for every parent contact. Each entry is tied to the student and fully searchable. When a parent makes a claim in a conference, you open the app on your phone right there at the table.
+In ShortHand, you log each parent contact in a few taps, and every entry is timestamped, tied to the student, and searchable. When ShortHand drafts a parent message for you, it asks how you sent it and saves the contact once you confirm. When a parent makes a claim in a conference, you open the app on your phone right there at the table.
 
-"I have here that I left a voicemail on Tuesday at 3:15 PM and sent a follow-up email Thursday morning." That is all you need to say. The conversation ends.
+"I have here that I left a voicemail on Tuesday at 3:15 PM and sent a follow-up email Thursday morning." Most of the time, that is all you need to say.
 
 The next time a parent says you never called, you open your log. That is the whole game.
 

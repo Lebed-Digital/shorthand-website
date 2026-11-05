@@ -14,9 +14,9 @@ faq:
   - q: "How do teachers keep a behavior log without disrupting the class?"
     a: "The fastest method is a phone-based app that lets you tap a student name and type a quick note in under 15 seconds. Apps like ShortHand are built for exactly this: you log during transitions, not mid-lesson. If you're using paper, keep a clipboard on your desk with a pre-printed sheet per student so you never have to search for the right page."
   - q: "Is a student behavior log confidential?"
-    a: "Your personal classroom log is a professional document, not a public record. It should not be shared with other students or parents of other students. However, it can and should be shared at IEP meetings, parent conferences, and with administrators when escalating a concern. Keep it factual and professional at all times since anything you write could be read by a parent or administrator."
+    a: "Your classroom log is a professional document. Whether it counts as a public record or part of the student's education record depends on your state and district rules and on how the log is kept and shared, so check your district's policy. Either way, it should not be shared with other students or parents of other students. However, it can and should be shared at IEP meetings, parent conferences, and with administrators when escalating a concern. Keep it factual and professional at all times since anything you write could be read by a parent or administrator."
   - q: "How long should teachers keep student behavior logs?"
-    a: "A general guideline is to keep records for the current school year plus one additional year. For students with IEPs or active behavior interventions, check with your school's special education coordinator, as documentation retention requirements are often longer. Digital logs are easier to archive and search than paper, which is another reason to move away from notebooks."
+    a: "Retention periods are set by your state and district, so check your district's records policy before you delete anything. If it doesn't address informal classroom logs, keeping them through the current school year plus one more year is a common personal habit, not a legal standard. For students with IEPs or active behavior interventions, check with your school's special education coordinator, as documentation retention requirements are often longer. Digital logs are easier to archive and search than paper, which is another reason to move away from notebooks."
 ---
 
 We have all been there. You are sitting in a parent-teacher conference. The parent is looking at you. The principal is looking at you. You are trying to explain that a student has been struggling with their behavior for weeks.
@@ -61,7 +61,7 @@ Never write down your emotions. Never write that you are frustrated or at your w
 
 Never use labels. Do not call a student lazy. Do not call them defiant. Do not call them a bully. Those are subjective interpretations.
 
-Stick to the facts. The facts are undeniable. A judge or an administrator cannot argue with a time and a specific action.
+Stick to the facts. Facts are much harder to dispute than labels. Anyone reviewing your log can argue with "he was defiant." It is much harder to argue with a time and a specific action.
 
 RESOURCEOFFERMARKER
 
