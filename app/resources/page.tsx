@@ -86,6 +86,20 @@ const resources = [
     signals: ['No sign-up required', '8 filled-in examples', 'Created by a classroom teacher'],
   },
   {
+    // Same as the ABC card: links to the post so downloads go through its
+    // ResourceOffer and fire GA4 resource_download (source anecdotal-records-post).
+    title: 'Anecdotal Records Template',
+    description:
+      'Free printable anecdotal records template, plus 10 filled-in classroom examples covering reading, math, writing, and behavior.',
+    href: '/blog/anecdotal-records-examples',
+    download: false,
+    label: 'Get the Free Template',
+    accent: '#15803d',
+    bg: '#f0fdf4',
+    tag: 'Printable PDF',
+    signals: ['No sign-up required', '10 filled-in examples', 'Created by a classroom teacher'],
+  },
+  {
     title: 'Parent-Teacher Conference Notes',
     description:
       'Walk into every conference prepared. Walk out with a clear record of what was said, agreed to, and what happens next.',
