@@ -101,7 +101,7 @@ The tool matters less than the habit, and the habit is simple: **facts, dated, i
 * "11/2, math: M. left seat 4x in 20 min, returned with one verbal prompt each time."
 * "1/9, recess: K. invited the new student into the four-square game unprompted."
 
-Notice: no interpretations, no diagnoses, no adjectives doing dishonest work. Just what happened. That is what holds up in an IEP meeting, fills a conference with substance, and turns into an accurate report card comment in June. The [teacher's complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) covers the full method.
+Notice: no interpretations, no diagnoses, no adjectives doing dishonest work. Just what happened. That is what holds up in an IEP meeting, fills a conference with substance, and turns into an accurate report card comment in June. For more filled-in samples, see these [anecdotal records examples](/blog/anecdotal-records-examples). The [teacher's complete guide to documenting student behavior](/blog/teacher-behavior-documentation-guide) covers the full method.
 
 ## The bottom line
 

@@ -69,7 +69,9 @@ If you are documenting for IEP purposes, for a behavior intervention plan, or ju
 
 [How to Track Student Behavior in the Classroom](/blog/how-to-track-student-behavior-in-the-classroom) gets into the practical systems: tally marks, ABC charts, interval recording, and which method fits which type of behavior.
 
-[ABC Data Examples for Teachers](/blog/abc-data-examples) shows eight filled-in antecedent, behavior, consequence entries from elementary classrooms, the recording mistakes that make ABC data hard to use, and a blank ABC data sheet you can copy.
+[ABC Data Examples for Teachers](/blog/abc-data-examples) shows eight filled-in antecedent, behavior, consequence entries from elementary classrooms, the recording mistakes that make ABC data hard to use, and a free printable ABC data sheet.
+
+[Anecdotal Records Examples for Teachers](/blog/anecdotal-records-examples) covers the broader kind of observation note: ten filled-in examples across reading, math, writing, social skills, and behavior, how to keep facts separate from interpretation, and a free printable template.
 
 [5 Student Behavior Patterns Teachers Should Never Ignore](/blog/5-student-behavior-patterns-teachers-should-never-ignore) covers what to look for once your tracking is in place: task avoidance, time-of-day triggers, repeated peer conflicts, sudden behavioral shifts, and constant redirection that has become invisible.
 
