@@ -112,7 +112,7 @@ Notice what those five comments never do: guess at a cause, use diagnostic langu
 41. "[Name]'s social-emotional growth is the story of their year. September's daily struggles are now occasional bumps, handled with strategies they chose themselves."
 42. "[Name] has transformed as a classmate this year: more patient, more flexible, and more generous. The work they put into this growth was real, and it shows."
 43. "[Name] ends the year with a full toolbox: they can name feelings, ask for breaks, solve small conflicts, and bounce back from disappointment. I am proud of every one of those skills."
-44. "[Name] needed a lot of adult support in the fall and now needs almost none. That independence is the single best predictor of a strong start next year."
+44. "[Name] needed a lot of adult support in the fall and now needs almost none. That growing independence will serve them well as they head into next year."
 45. "[Name] taught our class something about perseverance this year. The skills that came hardest are now the ones they demonstrate best."
 
 ## Quick strength lines to pair with any comment

@@ -16,7 +16,7 @@ faq:
   - q: "What should teachers record in student observations?"
     a: "Record what you saw and heard, not interpretations: the date, the context, the behavior or skill observed, and what happened next. \"10/14, during partner reading, J. read a full page aloud without stopping, first time this year\" is a strong observation. \"J. is improving\" is not. Objective, dated, specific notes hold up in IEP meetings and parent conferences; impressions do not."
   - q: "Are student observation apps okay to use with student data privacy laws?"
-    a: "Check three things before trusting any app with student names: whether it commits to FERPA compliance in writing, whether it signs data processing agreements for your district if required, and whether student data is used for advertising or AI training. Consumer note apps like Apple Notes or Google Keep have no student-data protections at all, which is why schools increasingly require education-specific tools."
+    a: "Check four things before entering identifiable student information into any app: whether your school or district has approved it, whether it commits to FERPA compliance in writing, whether it signs data processing agreements for your district if required, and whether student data is used for advertising or AI training. With general note apps like Apple Notes or Google Keep, protections depend on the account type, its settings, and any agreement your school has in place, so ask before you use one for student records."
 ---
 
 Here is how student observation actually works in most classrooms. You notice something worth remembering: a kid finally decodes a word that has been beating him for weeks, or two students have their third silent standoff of the morning. You think "I need to write that down." Then you teach for four more hours, and by 3:30 the observation lives only in the part of your brain that also lost your car keys.
@@ -87,7 +87,7 @@ ShortHand works like this: open the app on your phone, tap the student, tap what
 
 **Speed:** This is the entire design constraint. A few taps or it does not count.
 
-**Retrieval:** Per-student timeline, searchable, exportable when a meeting needs paper.
+**Retrieval:** Every note lands on a per-student timeline in date order. When a meeting needs paper, Pro adds a PDF Student Documentation Report.
 
 **Survival:** The honest answer is that survival depends on the first two. Systems die when capture is slow or retrieval is useless. Make both instant and the habit keeps itself, because the payoff arrives every time you walk into a meeting already prepared.
 

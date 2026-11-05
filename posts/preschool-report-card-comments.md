@@ -12,7 +12,7 @@ faq:
   - q: "What should I write on a preschool report card?"
     a: "Focus on developmental progress, not grades. Describe what the child can do now, what skill they are building next, and one specific example a parent would recognize. Cover the main domains: social skills, self-regulation, language and early literacy, early math, motor skills, and independence. Two to four sentences per comment is plenty."
   - q: "How do you write a progress report for a 3-year-old?"
-    a: "Keep it concrete and warm. Three-year-olds are measured against their own growth, not a standard. Name one thing the child loves doing, one skill that has grown since the last report, and one skill you are working on together. Avoid academic language entirely. Parents of 3-year-olds want to know their child is happy, safe, and developing."
+    a: "Keep it concrete and warm. Emphasize the child's own developmental growth, while following your program's age-appropriate standards and assessment requirements. Name one thing the child loves doing, one skill that has grown since the last report, and one skill you are working on together. Avoid academic language entirely. Parents of 3-year-olds want to know their child is happy, safe, and developing."
   - q: "What are examples of positive preschool report card comments?"
     a: "A strong positive comment names a specific behavior, not a trait. For example: \"Mia has become a helper during cleanup time and often invites classmates to join her.\" That lands better than \"Mia is a joy to have in class\" because the parent can picture it. Specific beats glowing every time."
   - q: "How do you mention concerns on a preschool report card?"
