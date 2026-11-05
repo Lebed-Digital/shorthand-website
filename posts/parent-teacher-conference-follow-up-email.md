@@ -1,7 +1,7 @@
 ---
 title: "Parent-Teacher Conference Follow-Up Email: 6 Templates for Teachers"
 subtitle: "Ready-to-personalize emails for a routine recap, an academic or behavior plan, a hard conversation, a family who couldn't make it, and the two-week check-in."
-date: "2026-11-05"
+date: "2026-11-04"
 author: "Gregory Lebed"
 relatedPosts:
   - "parent-teacher-conference-form"
