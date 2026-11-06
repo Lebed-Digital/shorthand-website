@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import TrackedLink from '../../components/TrackedLink';
@@ -7,10 +6,9 @@ import styles from './page.module.css';
 import QuickGridDemo from '../../components/QuickGridDemo';
 import ScrollMotion from './ScrollMotion';
 
-export const metadata: Metadata = {
-  title: 'ShortHand | Modern landing preview',
-  robots: { index: false, follow: false },
-};
+// No metadata of its own: proxy.ts serves this page at '/' to visitors in the
+// homepage experiment, so it inherits the homepage's title, description and
+// canonical from app/layout.tsx. A noindex here would reach the real homepage.
 
 const demo = 'https://app.getshorthandapp.com/?demo=true';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';

@@ -117,10 +117,35 @@ export const EXPERIMENTS = {
   // looks? Same words, link and position in both: the boxed card ('control')
   // against an unboxed section set like the article ('test').
   'blog-cta-presentation': ['control', 'test'],
+  // Does a more modern-looking homepage get more visitors into the app? The
+  // current homepage ('control') against the redesign in app/modern-preview
+  // ('test'), same headline and demo in both. Assigned by proxy.ts, not by a
+  // PostHog flag: see HOME_EXPERIMENT_COOKIE.
+  'homepage-modern': ['control', 'test'],
 } as const;
 
 export type ExperimentKey = keyof typeof EXPERIMENTS;
 export type ExperimentVariant<K extends ExperimentKey> = (typeof EXPERIMENTS)[K][number];
+
+// Experiments whose variant is picked on the server, so a whole page can differ
+// without swapping after it loads. PostHog never evaluates these as flags
+// (instrumentation-client.ts leaves them out of flag_keys). Instead before_send
+// puts the visitor's variant on every event as `$feature/<key>`, which is what
+// a PostHog experiment with a custom exposure event reads.
+export const SERVER_ASSIGNED_EXPERIMENTS: readonly ExperimentKey[] = ['homepage-modern'];
+
+// proxy.ts sets this cookie on a visitor's first homepage request, 'test' for
+// HOME_TEST_SHARE of visitors and 'control' for the rest, and rewrites '/' to
+// /modern-preview for 'test'. Readable by the page, so PostHog can be told.
+export const HOME_EXPERIMENT_COOKIE = 'sh_home';
+export const HOME_TEST_SHARE = 0.25;
+
+// The visitor's homepage variant from a cookie header or document.cookie, or
+// null if they have none (never been to the homepage, or a bot).
+export function homeVariantFromCookie(cookie: string): ExperimentVariant<'homepage-modern'> | null {
+  const match = /(?:^|;\s*)sh_home=(control|test)(?:;|$)/.exec(cookie);
+  return match ? (match[1] as ExperimentVariant<'homepage-modern'>) : null;
+}
 
 // The one post `blog-cta-presentation` runs on.
 export const BLOG_CTA_EXPERIMENT_POST = 'sample-emails-to-parents-about-student-behavior';

@@ -38,6 +38,10 @@
 //   secret, although the SDK would put the first URL the browser ever opened
 //   in it; an unlisted flag reaches no event; and seeing, pausing on and
 //   clicking the call to action are recorded in that order with no text.
+// - Checks the homepage experiment, which proxy.ts assigns with a cookie
+//   instead of a flag: a first visit gets a cookie and the matching page, its
+//   variant rides on every event, and no flag request is made for it. Every
+//   other session presets the cookie to 'control' so the homepage is stable.
 // - Plays the Quick Grid practice demo on its own visit: exactly its three
 //   events plus the usual app link click arrive, none of its made-up students,
 //   chips or text reach the replay or any event, and a forged demo event is
@@ -151,8 +155,12 @@ function inflateDeep(v) {
 // makes that request fail instead: 'abort' as an ad blocker would, or 'error'
 // for a 500. `clock` installs Playwright's clock so a test can jump minutes
 // ahead; it has to go in before the page creates its timers.
-async function newSession(browser, { initScript, flags = {}, flagsFail, clock } = {}) {
+// `home` presets the homepage experiment cookie (proxy.ts), 'control' unless
+// asked, so the homepage checks below always see the same page. null leaves it
+// unset, for a first visit.
+async function newSession(browser, { initScript, flags = {}, flagsFail, clock, home = 'control' } = {}) {
   const context = await browser.newContext({ userAgent: UA });
+  if (home) await context.addCookies([{ name: 'sh_home', value: home, url: ORIGIN }]);
   const rec = { phRequests: [], uploads: [], scripts: [], flagRequests: [] };
   if (clock) await context.clock.install();
   if (initScript) await context.addInitScript(initScript);
@@ -962,6 +970,38 @@ for (const [label, path, expectedCount] of [['an ordinary page', '/', 0], ['the 
   const got = eventsOf(s.rec).filter((e) => e.event === 'quick_grid_demo_completed');
   const props = got.map((e) => JSON.stringify(Object.fromEntries(Object.entries(e.properties).filter(([k]) => !k.startsWith('$') && !SDK_KEYS.has(k)).sort())));
   check('quick grid forged event: arrives once, with exactly {"demo":"quick_grid"}', props.length === 1 && props[0] === '{"demo":"quick_grid"}', props.join(' ; ') || 'none arrived');
+}
+
+// ---------- 2b. The homepage experiment (assigned by proxy.ts, not a flag) ----------
+{
+  // A first visit: the server picks a variant, and every event carries it.
+  const s = await newSession(browser, { home: null, flags: HOSTILE_FLAGS });
+  const p = await s.context.newPage();
+  await p.goto(`${ORIGIN}/`, { waitUntil: 'load' });
+  await p.waitForTimeout(5000);
+  const set = (await s.context.cookies()).find((c) => c.name === 'sh_home');
+  const modern = await p.evaluate(() => document.body.innerText.includes('Let the little things'));
+  await s.context.close();
+  check('homepage experiment: a first visit is given a variant cookie', set && ['control', 'test'].includes(set.value), set ? set.value : 'no cookie');
+  check('homepage experiment: the page served matches the cookie', set && modern === (set.value === 'test'), `cookie ${set && set.value}, modern page ${modern}`);
+  const pvs = eventsOf(s.rec).filter((e) => e.event === '$pageview');
+  check('homepage experiment: the pageview carries the variant', pvs.length > 0 && pvs.every((e) => e.properties['$feature/homepage-modern'] === set?.value), pvs.map((e) => e.properties['$feature/homepage-modern']).join(',') || 'no pageview');
+  check('homepage experiment: no flag request is made for it', s.rec.flagRequests.length === 0, `${s.rec.flagRequests.length} made`);
+}
+{
+  // A visitor already in 'test' gets the redesign at '/', and keeps the label on other pages.
+  const s = await newSession(browser, { home: 'test' });
+  const p = await s.context.newPage();
+  await p.goto(`${ORIGIN}/`, { waitUntil: 'load' });
+  const modern = await p.evaluate(() => document.body.innerText.includes('Let the little things'));
+  await p.goto(`${ORIGIN}/privacy`, { waitUntil: 'load' });
+  await p.waitForTimeout(5000);
+  await s.context.close();
+  check('homepage experiment: a "test" visitor is served the redesign at /', modern);
+  const pvs = eventsOf(s.rec).filter((e) => e.event === '$pageview');
+  check('homepage experiment: every pageview of a "test" visitor says "test"', pvs.length >= 2 && pvs.every((e) => e.properties['$feature/homepage-modern'] === 'test'), `${pvs.length} pageviews`);
+  const flagProps = [...new Set(eventsOf(s.rec).flatMap((e) => Object.keys(e.properties || {}).filter((k) => k.startsWith('$feature/'))))];
+  check('homepage experiment: no other flag property rides on any event', flagProps.every((k) => k === '$feature/homepage-modern'), flagProps.join(', '));
 }
 
 // ---------- 3. Gates: none of these may contact PostHog at all ----------

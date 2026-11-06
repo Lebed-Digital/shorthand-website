@@ -12,6 +12,8 @@ import {
   experimentSeen,
   experimentVariant,
   filterCustomEvent,
+  HOME_EXPERIMENT_COOKIE,
+  homeVariantFromCookie,
   pdfResource,
   previewVariant,
 } from './posthog-events.ts';
@@ -428,4 +430,22 @@ test('?cta= picks a variant on a preview and is ignored on production', () => {
     }
   }
   for (const search of ['?cta=variant', '?cta=control', '']) assert.equal(previewVariant('getshorthandapp.com', search), null, search);
+});
+
+test('homeVariantFromCookie reads only its own cookie and only a listed variant', () => {
+  assert.equal(HOME_EXPERIMENT_COOKIE, 'sh_home'); // the regex in homeVariantFromCookie spells it out
+  assert.equal(homeVariantFromCookie('sh_home=test'), 'test');
+  assert.equal(homeVariantFromCookie('ph_x=1; sh_home=control; other=2'), 'control');
+  assert.equal(homeVariantFromCookie(''), null);
+  assert.equal(homeVariantFromCookie('sh_home=evil'), null);
+  assert.equal(homeVariantFromCookie('sh_home=testing'), null);
+  assert.equal(homeVariantFromCookie('xsh_home=test'), null);
+});
+
+test('the homepage variant survives filtering, an unlisted flag does not', () => {
+  const event = filterCustomEvent({
+    event: '$pageview',
+    properties: { '$feature/homepage-modern': 'test', '$feature/hostile-unlisted-flag': true },
+  });
+  assert.deepEqual(event?.properties, { '$feature/homepage-modern': 'test' });
 });
