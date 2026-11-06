@@ -237,7 +237,7 @@ The point of all this is to use it.
 
 To be clear about what it doesn't do: ShortHand doesn't assess academic progress, measure mastery, calculate behavior rates, or analyze your anecdotal records for you. The interpretation is still yours.
 
-What it does is make the note itself fast enough to write in the moment. You tap the student, add a tag, and type the observation. Every note is dated and saved to that student's history. You can create your own tags in Settings, like "Reading" or "Math strategy," or skip the tag and let ShortHand's AI suggest tags for the note after it's saved.
+What it does is make the note itself fast enough to write in the moment. You tap the student, add a tag, and type the observation. Every note is dated and saved to that student's history. You can create your own tags in Settings, like "Reading" or "Math strategy," or skip the tag, and ShortHand's AI will automatically add tags to the note after it's saved. You can edit or remove them.
 
 Each student's page also shows an eight-week chart of how many notes you've written about them, which is a quick way to spot the students you haven't observed lately. You can log parent calls and emails in the same app. On Pro, you can export a student's documentation as a PDF report with the dates, note text, and tags for the period you choose, which is handy to bring to a conference or team meeting.
 
