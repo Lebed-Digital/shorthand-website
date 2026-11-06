@@ -1,18 +1,18 @@
 'use client';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import AnimatedLogo from '../components/AnimatedLogo';
-import { CalendarDays, Brain, Timer, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import featuredPost from '../posts/featured.json';
 import Footer from '../components/Footer';
 import FeatureVideo from '../components/FeatureVideo';
 import { fireCtaClick, fireVideoPlay } from '../lib/gtag';
 import { withAttribution } from '../lib/attribution';
 
-const SplineHero = dynamic(() => import('../components/SplineHero'), { ssr: false });
+import QuickGridDemo from '../components/QuickGridDemo';
+import TrackedLink from '../components/TrackedLink';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
@@ -52,21 +52,20 @@ const btnHover = { scale: 1.04, y: -2 };
 
 export default function Home() {
   const featuresRef      = useRef<HTMLDivElement>(null);
-  const statsRef         = useRef<HTMLDivElement>(null);
   const ctaRef           = useRef<HTMLDivElement>(null);
   const creatorRef       = useRef<HTMLDivElement>(null);
-  const comingSoonRef    = useRef<HTMLDivElement>(null);
 
-  const [email, setEmail]         = useState('');
-  const [submitted, setSubmitted] = useState(false);
   const [menuOpen, setMenuOpen]   = useState(false);
-  const [videoPlaying, setVideoPlaying] = useState(false);
   const reduceMotion = useReducedMotion();
   const hoverMotion = reduceMotion ? undefined : btnHover;
   const tapMotion = reduceMotion ? undefined : btnTap;
 
   function trackCta(label: string, url: string, e?: React.MouseEvent) {
     e?.preventDefault();
+    if (url === '#walkthrough') {
+      const walkthrough = document.querySelector<HTMLDetailsElement>('#walkthrough');
+      if (walkthrough) walkthrough.open = true;
+    }
     const destination = withAttribution(url, window.location.pathname, window.location.search);
     const navigate = () => { window.location.href = destination; };
     fireCtaClick({
@@ -78,25 +77,14 @@ export default function Home() {
     setTimeout(navigate, 300);
   }
 
-  async function handleEmailSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!email) return;
-    (window as Window & { gtag?: (...args: unknown[]) => void }).gtag?.('event', 'email_signup', {
-      event_category: 'engagement',
-      event_label: 'keep_me_posted',
-    });
-    await fetch('https://formspree.io/f/mreopvek', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email }),
-    });
-    setSubmitted(true);
-  }
-
   useEffect(() => {
     // A direct load of a hash URL (e.g. /how-it-works -> /#walkthrough) starts a
     // smooth scroll that ScrollTrigger's setup below cancels partway on phones.
     // Jump there instantly first so ScrollTrigger records the right position.
+    if (window.location.hash === '#walkthrough') {
+      const walkthrough = document.querySelector<HTMLDetailsElement>('#walkthrough');
+      if (walkthrough) walkthrough.open = true;
+    }
     if (window.location.hash) {
       document.getElementById(window.location.hash.slice(1))?.scrollIntoView({ behavior: 'instant' });
     }
@@ -133,35 +121,12 @@ export default function Home() {
           }
         }
 
-        // Stats — scale up from slightly small
-        if (statsRef.current) {
-          const items = statsRef.current.querySelectorAll<HTMLElement>('.stat-item');
-          gsap.fromTo(items,
-            { opacity: 0, scale: 0.92, y: 24 },
-            {
-              opacity: 1, scale: 1, y: 0,
-              duration: 0.6, ease: 'back.out(1.5)',
-              stagger: 0.12,
-              scrollTrigger: { trigger: statsRef.current, start: 'top 82%' },
-            }
-          );
-        }
-
         // Creator — fade + slide up
         if (creatorRef.current) {
           gsap.fromTo(creatorRef.current,
             { opacity: 0, y: 40 },
             { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
               scrollTrigger: { trigger: creatorRef.current, start: 'top 82%' } }
-          );
-        }
-
-        // Coming soon — fade + slide up
-        if (comingSoonRef.current) {
-          gsap.fromTo(comingSoonRef.current,
-            { opacity: 0, y: 40 },
-            { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
-              scrollTrigger: { trigger: comingSoonRef.current, start: 'top 82%' } }
           );
         }
 
@@ -205,28 +170,29 @@ export default function Home() {
       </div>
 
       {/* NAV */}
-      <nav>
+      <nav className="home-nav">
         <div className="nav-inner">
           <div className="nav-left">
             <AnimatedLogo />
           </div>
           <div className="nav-links">
             <a href="#features" className="nav-link">Features</a>
-            <a href="/blog" className="nav-link">Blog</a>
-            <a href="/tools" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
+            <Link href="/blog" className="nav-link">Blog</Link>
+            <a href="/tools" className="nav-link">Tools</a>
             <a href="/resources" className="nav-link">Resources</a>
             <a href="/privacy" className="nav-link" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>🔒 Privacy</a>
           </div>
           <div className="nav-right">
+            <a href="https://app.getshorthandapp.com" className="nav-link">Sign in</a>
             <motion.a
-              href="https://app.getshorthandapp.com"
+              href="https://app.getshorthandapp.com/?demo=true"
               className="btn-primary"
               whileHover={hoverMotion}
               whileTap={tapMotion}
               transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              onClick={(e) => trackCta('nav_get_shorthand', 'https://app.getshorthandapp.com', e)}
+              onClick={(e) => trackCta('nav_get_shorthand', 'https://app.getshorthandapp.com/?demo=true', e)}
             >
-              Open ShortHand →
+              Try the demo →
             </motion.a>
             <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -236,9 +202,9 @@ export default function Home() {
         {menuOpen && (
           <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
-            <a href="#walkthrough" className="nav-mobile-link">Walkthrough</a>
-            <a href="/blog" className="nav-mobile-link">Blog</a>
-            <a href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</a>
+            <a href="#walkthrough" className="nav-mobile-link" onClick={(e) => trackCta('hero_see_how_it_works', '#walkthrough', e)}>Walkthrough</a>
+            <Link href="/blog" className="nav-mobile-link">Blog</Link>
+            <a href="/tools" className="nav-mobile-link">Tools</a>
             <a href="/resources" className="nav-mobile-link">Resources</a>
             <a href="/privacy" className="nav-mobile-link">🔒 Privacy</a>
             <a href="/terms" className="nav-mobile-link">Terms</a>
@@ -249,7 +215,6 @@ export default function Home() {
 
       {/* HERO */}
       <section className="hero hero--split">
-        <div className="hero-canvas"><SplineHero /></div>
         <div className="hero-split-inner">
           <div className="hero-content hero-content--left">
             <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; Works on Any Device &nbsp;·&nbsp; Free to Start</div>
@@ -279,6 +244,31 @@ export default function Home() {
                 See How It Works
               </motion.a>
             </div>
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '0.5rem 1rem',
+              marginTop: '1rem',
+              fontSize: '0.78rem',
+              fontWeight: 500,
+              color: 'var(--text-dim)',
+              alignItems: 'center',
+            }}>
+              {['Use initials or nicknames', 'No-signup demo', 'No credit card required'].map((item, i, arr) => (
+                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>✓</span>
+                    {item}
+                  </span>
+                  {i < arr.length - 1 && <span style={{ color: 'rgba(255,255,255,0.15)', marginLeft: '-0.5rem' }}>·</span>}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="hero-quick-grid">
+            <QuickGridDemo />
+          </div>
+          <div className="hero-install-options">
             {/* Secondary install option: the native store listings. Apple's badge
                 is sized to the Play badge's visible art, not its padded box. */}
             <div className="hero-play-badge">
@@ -305,59 +295,6 @@ export default function Home() {
                   height={63}
                 />
               </a>
-            </div>
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.5rem 1rem',
-              marginTop: '1rem',
-              fontSize: '0.78rem',
-              fontWeight: 500,
-              color: 'var(--text-dim)',
-              alignItems: 'center',
-            }}>
-              {['FERPA-conscious', 'COPPA-conscious', 'No-signup demo', 'No credit card required'].map((item, i, arr) => (
-                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>✓</span>
-                    {item}
-                  </span>
-                  {i < arr.length - 1 && <span style={{ color: 'rgba(255,255,255,0.15)', marginLeft: '-0.5rem' }}>·</span>}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="hero-demo-wrap">
-            <div style={{ borderRadius: '16px', overflow: 'hidden', width: '315px', aspectRatio: '9/16', position: 'relative', boxShadow: '0 24px 60px rgba(0,0,0,0.35)', background: '#000' }}>
-              <video
-                src="/hero-video.mp4"
-                poster="/hero-video-poster.jpg"
-                preload="none"
-                playsInline
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', cursor: 'pointer' }}
-                onClick={(e) => {
-                  const v = e.currentTarget;
-                  if (v.paused) { v.play(); setVideoPlaying(true); }
-                  else { v.pause(); setVideoPlaying(false); }
-                }}
-                onEnded={() => setVideoPlaying(false)}
-              />
-              {!videoPlaying && (
-                <div style={{
-                  position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  background: 'rgba(0,0,0,0.25)', cursor: 'pointer', pointerEvents: 'none',
-                }}>
-                  <div style={{
-                    width: 64, height: 64, borderRadius: '50%', background: 'rgba(255,255,255,0.95)',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.4)',
-                  }}>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <polygon points="9,7 19,12 9,17" fill="#111" />
-                    </svg>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
         </div>
@@ -491,7 +428,7 @@ export default function Home() {
             <h2 className="section-heading">Three things every teacher needs.</h2>
             <p className="section-sub">Capture what happened. Find it when it matters. Turn it into something useful.</p>
           </div>
-          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))' }}>
+          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))' }}>
             {jobs.map((j) => (
               <motion.div key={j.slug} whileHover={reduceMotion ? undefined : { y: -6, scale: 1.02 }} whileTap={reduceMotion ? undefined : { scale: 0.98 }}
                 transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
@@ -519,112 +456,6 @@ export default function Home() {
                 </Link>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* MORE FEATURES — compact grid linking to secondary feature pages */}
-      <section style={{ padding: '0 0 80px' }}>
-        <div className="section-inner">
-          <p style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: '1.25rem' }}>
-            More ways ShortHand helps
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.875rem', maxWidth: '920px', margin: '0 auto' }}>
-            {[
-              { emoji: '🟢', title: 'Never Miss a Student', desc: 'Color-coded alerts for who needs a check-in.', href: '/features/behavior-tracking' },
-              { emoji: '📥', title: 'Import Your Class Roster', desc: 'Paste your whole class list and ShortHand sorts it automatically.', href: '/features/import-roster' },
-              { emoji: '✉️', title: 'Parent Emails', desc: 'Turn notes into professional messages instantly.', href: '/features/parent-emails' },
-              { emoji: '🗂️', title: 'Accommodations at a Glance', desc: 'Every student\'s IEP, 504, and classroom accommodations, in one place.', href: '/features/accommodations' },
-              { emoji: '🔍', title: 'Ask ShortHand', desc: 'Ask a question like "Who needs support this month?" and get an answer pulled straight from your own logged notes.', href: '/features/ask-shorthand' },
-              { emoji: '🗒️', title: 'Meeting Prep Report', desc: 'Pull a student\'s notes, parent communication, goals, and accommodations together before a meeting, with a short AI summary of key themes.', href: '/features/meeting-prep-report' },
-              { emoji: '🎯', title: 'Student Goal Tracking', desc: 'Set AI-suggested goals for a student and track progress from Planted to Bloomed.', href: 'https://app.getshorthandapp.com' },
-              { emoji: '🧠', title: 'SEL Micro-Lessons', desc: 'AI-generated 15-minute Social-Emotional Learning plans based on your class\'s logged patterns.', href: 'https://app.getshorthandapp.com' },
-              { emoji: '🔄', title: 'Specials Rotation', desc: 'Set your school\'s rotation once and always know what\'s today: Art, Gym, Music, and more.', href: 'https://app.getshorthandapp.com' },
-            ].map(({ emoji, title, desc, href }) => (
-              <Link
-                key={href}
-                href={href}
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '0.5rem',
-                  padding: '1.25rem 1.25rem 1.5rem',
-                  borderRadius: '12px',
-                  border: '1px solid rgba(255,255,255,0.09)',
-                  background: 'rgba(255,255,255,0.03)',
-                  textDecoration: 'none',
-                  color: 'var(--text)',
-                  transition: 'border-color 0.2s, background 0.2s',
-                }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(249,115,22,0.4)';
-                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.06)';
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.09)';
-                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)';
-                }}
-              >
-                <span style={{ fontSize: '1.4rem' }}>{emoji}</span>
-                <span style={{ fontSize: '1rem', fontWeight: 600 }}>{title}</span>
-                <span style={{ fontSize: '0.875rem', lineHeight: 1.5, color: 'var(--text-dim)' }}>{desc}</span>
-                {href.startsWith('http') && (
-                  <span style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--accent, #a78bfa)', marginTop: '0.25rem' }}>Open ShortHand →</span>
-                )}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FULL WALKTHROUGH: the hero "See How It Works" button jumps here */}
-      <section id="walkthrough" className="walkthrough-section" aria-labelledby="walkthrough-heading">
-        <div className="section-inner">
-          <div className="section-label">Full walkthrough · 6 min</div>
-          <h2 id="walkthrough-heading" className="section-heading">See ShortHand from sign-up<br /><em>to finished report.</em></h2>
-          <p className="section-sub">
-            A real walkthrough from a brand-new account: importing students, logging notes with the Quick Grid, parent communication, accommodations, reports, and Ask ShortHand.
-          </p>
-          <div className="walkthrough-video">
-            <FeatureVideo
-              videoId="FGeXjIG_c8c"
-              title="ShortHand full walkthrough"
-              wide
-              onPlay={() => fireVideoPlay('FGeXjIG_c8c', 'homepage_walkthrough')}
-            />
-          </div>
-          <div className="walkthrough-cta">
-            <motion.a
-              href="https://app.getshorthandapp.com/?demo=true"
-              className="btn-primary"
-              whileHover={hoverMotion}
-              whileTap={tapMotion}
-              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              onClick={(e) => trackCta('walkthrough_try_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
-            >
-              Try the demo →
-            </motion.a>
-            <p className="walkthrough-cta-note">No account, no credit card. Click through it yourself with sample students.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* STATS */}
-      <section className="stats-section">
-        <div className="section-inner">
-          <div className="stats-inner" ref={statsRef}>
-            <div className="stat-item">
-              <div className="stat-number"><span>&lt; 5</span> sec</div>
-              <div className="stat-label">to log a note</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">Any <span>device</span></div>
-              <div className="stat-label">phone, tablet, or computer</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number"><span>Zero</span> install</div>
-              <div className="stat-label">no app store required</div>
-            </div>
           </div>
         </div>
       </section>
@@ -678,34 +509,69 @@ export default function Home() {
               <div className="plan-card-kicker">No account</div>
               <h3 className="plan-card-title">Demo</h3>
               <p className="plan-card-body">Open ShortHand with sample students and click through the app. No account needed.</p>
+              <TrackedLink href="https://app.getshorthandapp.com/?demo=true" label="pricing_demo" className="btn-primary">Try the free demo</TrackedLink>
             </div>
             <div className="plan-card">
               <div className="plan-card-kicker">Free</div>
               <h3 className="plan-card-title">Your classroom</h3>
               <p className="plan-card-body">Create a free account to use ShortHand with your own class. Core documentation stays free.</p>
+              <TrackedLink href="https://app.getshorthandapp.com" label="pricing_free" className="btn-ghost">Create a free account</TrackedLink>
             </div>
             <div className="plan-card plan-card--pro">
               <div className="plan-card-kicker">Optional</div>
               <h3 className="plan-card-title">Pro</h3>
-              <p className="plan-card-body">$4.99/month if you want extras like Ask ShortHand and Meeting Prep reports. New Pro users get a 30-day trial, no credit card.</p>
+              <p className="plan-card-body">$4.99/month adds Ask ShortHand and Meeting Prep reports beyond the free core documentation. New Pro users get a 30-day trial, no credit card.</p>
+              <Link href="/features/meeting-prep-report" className="btn-ghost">Explore Meeting Prep</Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* FULL WALKTHROUGH: the hero "See How It Works" button jumps here */}
+      <details id="walkthrough" className="walkthrough-section" aria-labelledby="walkthrough-heading">
+        <summary className="section-inner walkthrough-summary">
+          <div className="section-label">Full walkthrough · 6 min</div>
+          <h2 id="walkthrough-heading" className="section-heading">See ShortHand from sign-up<br /><em>to finished report.</em></h2>
+        </summary>
+        <div className="section-inner">
+          <p className="section-sub">
+            A real walkthrough from a brand-new account: importing students, logging notes with the Quick Grid, parent communication, accommodations, reports, and Ask ShortHand.
+          </p>
+          <div className="walkthrough-video">
+            <FeatureVideo
+              videoId="FGeXjIG_c8c"
+              title="ShortHand full walkthrough"
+              wide
+              onPlay={() => fireVideoPlay('FGeXjIG_c8c', 'homepage_walkthrough')}
+            />
+          </div>
+          <div className="walkthrough-cta">
+            <motion.a
+              href="https://app.getshorthandapp.com/?demo=true"
+              className="btn-primary"
+              whileHover={hoverMotion}
+              whileTap={tapMotion}
+              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
+              onClick={(e) => trackCta('walkthrough_try_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
+            >
+              Try the demo →
+            </motion.a>
+            <p className="walkthrough-cta-note">No account, no credit card. Click through it yourself with sample students.</p>
+          </div>
+        </div>
+      </details>
+
       {/* Privacy Promise */}
       <section className="privacy-section">
         <div className="section-inner">
           <div className="section-label">Data & Privacy</div>
-          <h2 className="section-heading">Our Privacy Promise<br /><em>(Teacher-to-Teacher)</em></h2>
-          <p className="section-sub">You're trusting me with notes about real kids. Here's exactly how I protect that.</p>
+          <h2 className="section-heading">Your classroom. <em>Your notes.</em></h2>
+          <p className="section-sub">Use ShortHand with initials or nicknames. Read the full policy for storage, deletion, and AI processing details.</p>
           <div className="privacy-grid">
             {[
-              { icon: '🔒', title: 'Bank-Level Encryption', desc: 'All student data is stored with AES-256 encryption in a SOC 2 Type II certified data center, the same standard banks and hospitals use. Data in transit is protected by SSL/TLS.' },
-              { icon: '🚫', title: 'No Data Selling. Ever.', desc: "I'm a teacher, not a data broker. Your notes and student information are never sold, shared, or used for advertising. Period." },
-              { icon: '👤', title: 'The "First Name" Rule', desc: "The app doesn't require full legal names or student IDs. You can use initials or nicknames to keep your records even more private." },
-              { icon: '🗑️', title: 'You Own the Data', desc: "If you decide to stop using ShortHand, you can delete your account and every single note instantly. We don't keep a copy of your notes or student information." },
-              { icon: '🔐', title: 'Smart and Private', desc: 'ShortHand only reads your notes when you ask it to write a report. It doesn\'t watch you while you work.' },
+              { icon: '\u{1F464}', title: 'Use Initials or Nicknames', desc: 'Full legal names and student IDs are not required.' },
+              { icon: '\u{1F6AB}', title: 'No Data Selling', desc: 'Your notes and student information are never sold or used for advertising.' },
+              { icon: '\u{1F512}', title: 'Your Notes, Your Account', desc: 'Your classroom records are protected with encryption and account-level access controls. You can delete your account and notes when you stop using ShortHand.' },
             ].map((item) => (
               <div key={item.title} className="privacy-card">
                 <div className="privacy-icon">{item.icon}</div>
@@ -760,6 +626,10 @@ export default function Home() {
               with love to assist my fellow teachers who are looking for a better way to track
               progress and bridge the gap between school and home.
             </p>
+            <details className="creator-intro">
+              <summary>Watch my introduction</summary>
+              <video src="/hero-video.mp4" poster="/hero-video-poster.jpg" preload="none" controls playsInline aria-label="Introduction from the creator of ShortHand" />
+            </details>
             <blockquote className="creator-quote">
               &ldquo;Good data shouldn&apos;t be a chore. It should be the bridge that connects a
               teacher&apos;s observation to a parent&apos;s understanding.&rdquo;
@@ -858,70 +728,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MORE INSIDE */}
-      <section className="coming-soon-section">
-        <div className="section-inner">
-          <div ref={comingSoonRef} className="coming-soon-inner">
-            <div className="section-label">Always Improving</div>
-            <h2 className="section-heading">ShortHand keeps<br /><em>getting better.</em></h2>
-            <p className="coming-soon-body">
-              New features ship regularly, built from real classroom experience and
-              feedback from teachers actually using it.
-            </p>
-            <div className="email-form-wrap">
-              <p className="email-form-label">Want to hear when something new lands? I&apos;ll only reach out when it&apos;s worth your time.</p>
-              {submitted ? (
-                <p className="email-submitted">✓ You&apos;re on the list. I&apos;ll be in touch!</p>
-              ) : (
-                <form className="email-form" onSubmit={handleEmailSubmit}>
-                  <input
-                    className="email-input"
-                    type="email"
-                    required
-                    placeholder="Type your email"
-                    value={email}
-                    onChange={e => setEmail(e.target.value)}
-                  />
-                  <motion.button
-                    type="submit"
-                    className="btn-primary"
-                    whileHover={hoverMotion}
-                    whileTap={tapMotion}
-                    transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  >
-                    Keep Me Posted →
-                  </motion.button>
-                </form>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* WHY MY PERSPECTIVE */}
-      <section className="perspective-section">
-        <div className="section-inner">
-          <h2 className="perspective-heading">Why My Perspective Matters</h2>
-          <div className="perspective-grid">
-            <div className="perspective-card perspective-card--accent">
-              <div className="perspective-icon"><CalendarDays size={28} strokeWidth={1.75} /></div>
-              <div className="perspective-title">20+ Years in Education</div>
-              <p className="perspective-desc">I&apos;ve worked in classrooms as an aide, a behavior tech, a sub, and now a 3rd grade teacher. This app is the solution to problems that actually exist in a real school.</p>
-            </div>
-            <div className="perspective-card">
-              <div className="perspective-icon"><Brain size={28} strokeWidth={1.75} /></div>
-              <div className="perspective-title">RBT &amp; Aide Background</div>
-              <p className="perspective-desc">My experience in behavior intervention means this app captures the nuances of student behavior that standard gradebooks often miss.</p>
-            </div>
-            <div className="perspective-card">
-              <div className="perspective-icon"><Timer size={28} strokeWidth={1.75} /></div>
-              <div className="perspective-title">Classroom Reality</div>
-              <p className="perspective-desc">I know you don&apos;t have ten minutes to log a note. That&apos;s why every feature in this app is built to be finished in seconds.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="cta-section">
         <div className="section-inner">
@@ -970,43 +776,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog links — internal linking for SEO */}
-      <section style={{ padding: '3rem 1.5rem', borderTop: '1px solid rgba(255,255,255,0.06)' }}>
-        <div style={{ maxWidth: '860px', margin: '0 auto' }}>
-          <div className="section-label" style={{ marginBottom: '1rem' }}>From the Blog</div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem' }}>
-            <Link href="/blog/how-to-document-parent-contact-as-a-teacher" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Document Parent Contact as a Teacher (So You're Always Covered)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/how-to-document-parent-contact-for-iep" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>How to Document Parent Contact for IEP Students (What the Law Actually Requires)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/what-to-do-when-parents-dont-respond-to-calls" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>What to Do When Parents Don't Respond to Your Calls or Emails</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/what-to-do-when-parent-says-you-never-called" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>What to Do When a Parent Says You Never Called Them</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/best-parent-communication-apps-for-documentation-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Best Parent Teacher Communication Apps for Documentation (2026)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/parent-phone-call-script" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>The Ultimate Parent Phone Call Script for Teachers</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
-            <Link href="/blog/best-classdojo-alternatives-2026" style={{ padding: '1.25rem', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.08)', textDecoration: 'none', display: 'block' }}>
-              <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem', lineHeight: 1.4 }}>Best ClassDojo Alternatives in 2026 (Ranked by Real Teachers)</div>
-              <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>Read more →</div>
-            </Link>
           </div>
         </div>
       </section>

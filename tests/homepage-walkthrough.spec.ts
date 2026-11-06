@@ -48,6 +48,7 @@ test('walkthrough player does not load until clicked, then plays and fires video
 
   await page.goto('/');
   const section = page.locator('#walkthrough');
+  await section.locator('summary').click();
   await section.scrollIntoViewIfNeeded();
   await expect(section.getByRole('button', { name: 'Play ShortHand full walkthrough' })).toBeVisible();
 
@@ -91,6 +92,7 @@ test('walkthrough CTA fires its own cta_click and opens the demo', async ({ page
 
   await page.goto('/');
   const section = page.locator('#walkthrough');
+  await section.locator('summary').click();
   await expect(section.getByText('No account, no credit card.')).toBeAttached();
   await section.getByRole('link', { name: 'Try the demo' }).click();
 

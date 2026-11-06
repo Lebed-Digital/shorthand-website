@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Fragment } from 'react';
+import BlogNav from '../../components/BlogNav';
+import Footer from '../../components/Footer';
+import TrackedLink from '../../components/TrackedLink';
 
 const DESCRIPTION =
   'Free teacher tools: report card comment and welcome letter generators, a printable parent communication log, and ChatGPT seating chart and weekly planning prompts.';
@@ -101,42 +105,24 @@ const tools = [
 
 export default function ToolsPage() {
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+    <>
+      <BlogNav showLibraryCta={false} />
+      <header className="detail-hero" style={{ paddingBottom: 32 }}>
+        <h1 className="detail-title">Free Tools <em>for Teachers</em></h1>
+        <p className="detail-desc">Write a report card comment, welcome a family, or keep a printable contact log.</p>
+      </header>
 
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '6px 20px' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 22, letterSpacing: '0.02em' }}>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
-          {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-            <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
-          ))}
-        </Link>
-      </div>
+      <div style={{ maxWidth: 860, margin: '0 auto', padding: '24px 16px 48px' }}>
 
-      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
-        <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
-          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 24, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 48, letterSpacing: '0.02em' }}>
-            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
-            ))}
-          </Link>
-          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
-            Free Tools for Teachers
-          </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
-            AI tools that save real time.
-          </p>
-        </div>
-      </div>
-
-      <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
-
-        {tools.map((tool) => (
-          <div key={tool.href} style={{ background: tool.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: `4px solid ${tool.accent}` }}>
+        {tools.map((tool, index) => (
+          <Fragment key={tool.href}>
+          {index === 3 && <h2 style={{ fontSize: '1.25rem', margin: '40px 0 16px' }}>Prompts to use with ChatGPT</h2>}
+          <div style={{ background: tool.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: `4px solid ${tool.accent}` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
               <span style={{ fontSize: 11, fontWeight: 700, color: tool.accent, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{tool.tag}</span>
             </div>
             <h2 style={{ fontSize: 17, fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.3 }}>{tool.title}</h2>
-            <p style={{ fontSize: 14, color: '#475569', margin: '0 0 16px', lineHeight: 1.6 }}>{tool.description}</p>
+            <p style={{ fontSize: 14, color: '#334155', margin: '0 0 16px', lineHeight: 1.6 }}>{tool.description}</p>
             <Link
               href={tool.href}
               style={{ display: 'inline-block', background: tool.accent, color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
@@ -145,12 +131,13 @@ export default function ToolsPage() {
             </Link>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
               {tool.signals.map((signal) => (
-                <span key={signal} style={{ fontSize: 12, color: '#475569', display: 'flex', alignItems: 'center', gap: 4 }}>
+                <span key={signal} style={{ fontSize: 12, color: '#334155', display: 'flex', alignItems: 'center', gap: 4 }}>
                   <span style={{ color: tool.accent, fontWeight: 700 }}>✓</span> {signal}
                 </span>
               ))}
             </div>
           </div>
+          </Fragment>
         ))}
 
         {/* Deliberately not in the `tools` array above: that list is the free
@@ -161,7 +148,7 @@ export default function ToolsPage() {
             <span style={{ fontSize: 11, fontWeight: 700, color: '#0d9488', textTransform: 'uppercase', letterSpacing: '0.08em' }}>$4.99 one-time</span>
           </div>
           <h2 style={{ fontSize: 17, fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.3 }}>Report Card Comment Library</h2>
-          <p style={{ fontSize: 14, color: '#475569', margin: '0 0 16px', lineHeight: 1.6 }}>
+          <p style={{ fontSize: 14, color: '#334155', margin: '0 0 16px', lineHeight: 1.6 }}>
             The generator above writes one comment. If you have the rest of the class to write, this is
             374 comments you can search, filter, and copy with the student name already filled in.
           </p>
@@ -173,7 +160,7 @@ export default function ToolsPage() {
           </Link>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
             {['Try a free sample first', 'No sign-up to buy', 'One-time, no subscription'].map((signal) => (
-              <span key={signal} style={{ fontSize: 12, color: '#475569', display: 'flex', alignItems: 'center', gap: 4 }}>
+              <span key={signal} style={{ fontSize: 12, color: '#334155', display: 'flex', alignItems: 'center', gap: 4 }}>
                 <span style={{ color: '#0d9488', fontWeight: 700 }}>&#10003;</span> {signal}
               </span>
             ))}
@@ -190,25 +177,18 @@ export default function ToolsPage() {
           <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', margin: '0 0 16px', lineHeight: 1.6 }}>
             ShortHand automatically logs parent contacts, behavior notes, and follow-ups in one searchable timeline. No binders. No spreadsheets. No trying to remember what happened three months ago.
           </p>
-          <a
-            href="https://app.getshorthandapp.com"
+          <TrackedLink
+            href="https://app.getshorthandapp.com/?demo=true"
+            label="tools_try_demo" ctaSource="tools"
             style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.4)' }}
           >
-            Try ShortHand Free
-          </a>
+            Try the Free Demo
+          </TrackedLink>
           <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', margin: '10px 0 0' }}>No credit card. No setup. Works on your phone.</p>
         </div>
 
-        <div style={{ textAlign: 'center', marginTop: 32 }}>
-          <p style={{ fontSize: 13, color: '#94a3b8', marginBottom: 12 }}>Built by a teacher, for teachers.</p>
-          <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 2, background: 'rgba(255,255,255,0.08)', padding: '10px 20px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.12)', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 22, letterSpacing: '0.02em' }}>
-            {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
-            ))}
-            <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400, marginLeft: 6 }}>→</span>
-          </Link>
-        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
