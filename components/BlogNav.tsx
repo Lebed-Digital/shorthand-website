@@ -28,7 +28,7 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
         <div className="nav-links">
           <Link href="/#features" className="nav-link">Features</Link>
           <Link href="/blog" className="nav-link">Blog</Link>
-          <Link href="/tools" className="nav-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</Link>
+          <Link href="/tools" className="nav-link">Tools</Link>
           <Link href="/resources" className="nav-link">Resources</Link>
         </div>
         <div className="nav-right">
@@ -50,7 +50,7 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
           <Link href="/#features" className="nav-mobile-link">Features</Link>
           <Link href="/#walkthrough" className="nav-mobile-link">Walkthrough</Link>
           <Link href="/blog" className="nav-mobile-link">Blog</Link>
-          <Link href="/tools" className="nav-mobile-link" style={{ color: '#22c55e', fontWeight: 700 }}>Tools</Link>
+          <Link href="/tools" className="nav-mobile-link">Tools</Link>
           <Link href="/resources" className="nav-mobile-link">Resources</Link>
           {showLibraryCta && (
             <Link href="/report-card-comment-library" className="nav-mobile-link" onClick={trackLibraryNav}>Comment library: $4.99</Link>

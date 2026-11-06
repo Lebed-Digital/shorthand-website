@@ -1511,3 +1511,45 @@ footer {
   background: rgba(255,255,255,0.12);
   color: #fff;
 }
+
+/* Homepage: show the working product before secondary install options. */
+.home-nav { position: fixed; inset: 0 0 auto; }
+.hero--split .hero-split-inner { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 24px 48px; }
+.hero-quick-grid { grid-column: 2; grid-row: 1 / 3; min-width: 0; }
+.hero-quick-grid > div { margin-bottom: 0; }
+.hero-install-options { grid-column: 1; }
+.hero-install-options .hero-play-badge { margin-top: 0; }
+.plan-card .btn-primary, .plan-card .btn-ghost { margin-top: 20px; }
+.walkthrough-summary { cursor: pointer; }
+.walkthrough-summary::marker { color: var(--accent); }
+.walkthrough-summary .section-heading { display: inline; font-size: clamp(1.4rem, 3vw, 2rem); }
+.walkthrough-section[open] .walkthrough-summary { margin-bottom: 24px; }
+.creator-intro { margin: 24px 0; }
+.creator-intro summary { cursor: pointer; color: var(--text-dim); }
+.creator-intro video { display: block; width: 100%; max-width: 315px; margin: 20px auto; border-radius: 16px; }
+@media (max-width: 900px) {
+  .hero--split .hero-split-inner { grid-template-columns: minmax(0, 1fr); }
+  .hero-quick-grid { grid-column: 1; grid-row: auto; width: 100%; max-width: 380px; margin: 0 auto; }
+  .hero-content--left { text-align: center; }
+  .hero-content--left .hero-ctas, .hero-install-options .hero-play-badge { justify-content: center; }
+  .hero-content--left .hero-sub { margin: 0 auto 24px; }
+}
+
+@media (max-width: 1100px) {
+  .home-nav .nav-links { display: none; }
+  .home-nav .nav-hamburger { display: flex; }
+}
+@media (max-width: 480px) {
+  .home-nav .nav-right > .nav-link { display: none; }
+}
+
+@media (min-width: 901px) {
+  .hero--split h1 { font-size: clamp(2.5rem, 4.2vw, 3.8rem); line-height: 1.1; }
+}
+@media (max-width: 768px) {
+  .hero--split { padding: 96px 16px 48px; }
+  .hero--split .hero-split-inner { padding: 0; }
+  .home-nav .nav-right .btn-primary { display: inline-flex; padding: 10px 12px; font-size: 0.75rem; }
+}
+
+.privacy-section--plain .privacy-card { padding: 24px; }
