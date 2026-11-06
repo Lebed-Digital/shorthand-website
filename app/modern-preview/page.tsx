@@ -52,7 +52,11 @@ export default function ModernPreview() {
           <div className={styles.actions}><TrackedLink href={demo} label="hero_try_demo" className={styles.button}>Try the free demo <span>↗</span></TrackedLink><a href="#walkthrough">See how it works <span>↓</span></a></div>
           <ul className={styles.checks}><li>Use initials or nicknames</li><li>No-signup demo</li><li>No credit card required</li></ul>
         </div>
-        <div className={`${styles.heroDemo} ${styles.demo}`}><QuickGridDemo /></div>
+        <div className={`${styles.heroDemo} ${styles.demo}`}>
+          <span className={`${styles.float} ${styles.floatA}`} aria-hidden="true"><b>✓</b> Note saved</span>
+          <span className={`${styles.float} ${styles.floatB}`} aria-hidden="true"><b>✉</b> Parent email drafted</span>
+          <QuickGridDemo />
+        </div>
         <div className={styles.badges}>
           <TrackedLink href={APP_STORE_URL} label="app_store_badge"><Image src="/badges/app-store-badge.svg" alt="Download on the App Store" width={126} height={42} unoptimized /></TrackedLink>
           <TrackedLink href={PLAY_STORE_URL} label="google_play_badge"><Image src="/badges/google-play-badge.png" alt="Get it on Google Play" width={162} height={63} /></TrackedLink>
