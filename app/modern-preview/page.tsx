@@ -32,7 +32,7 @@ export default function ModernPreview() {
           <div className={styles.stageHeading}><span>YOUR DAY, A LITTLE LIGHTER</span><span>Built for real classroom life ↗</span></div>
           <div className={styles.product}>
             <div className={styles.productCopy}><span className={styles.pill}>01 / CAPTURE THE MOMENT</span><h2>It happened.<br />It’s recorded.<br /><em>Keep teaching.</em></h2><p>A few taps for a behavior note, a parent conversation, or a small win worth remembering.</p><Link href="/features/quick-note">Meet Quick Note ↗</Link></div>
-            <div className={styles.screenshot}><Image src="/quick-grid-note-sheet.jpg" alt="ShortHand Quick Grid with behavior indicators and a Save button" width={760} height={1000} priority /></div>
+            <div className={styles.screenshot}><div className={styles.screenViewport}><Image src="/quick-grid-note-sheet.jpg" alt="ShortHand Quick Grid with behavior indicators and a Save button" width={1044} height={2048} priority /></div></div>
           </div>
           <div className={styles.stageFoot}><span>Made for K–12 teachers</span><span>Phone, tablet, or laptop</span><span>Free to start</span></div>
         </div>

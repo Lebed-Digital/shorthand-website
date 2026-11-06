@@ -118,7 +118,7 @@
   align-items: center;
   justify-content: center;
   background: var(--sage);
-  color: #fff;
+  color: var(--quick-grid-on-accent, #fff);
 }
 
 .avatar {
@@ -168,7 +168,7 @@
   padding: 12px 16px;
   border-radius: 16px;
   background: var(--sage);
-  color: #fff;
+  color: var(--quick-grid-on-accent, #fff);
   font-size: 0.8125rem;
   font-weight: 900;
   text-align: center;
@@ -307,9 +307,9 @@
 .frame .positive { background: oklch(97.9% 0.021 166.113); border-color: oklch(90.5% 0.093 164.15); color: oklch(50.8% 0.118 165.612); }
 .frame .growth { background: oklch(96.9% 0.015 12.422); border-color: oklch(89.2% 0.058 10.001); color: oklch(51.4% 0.222 16.935); }
 .frame .neutral { background: oklch(98.7% 0.022 95.277); border-color: oklch(92.4% 0.12 95.746); color: oklch(55.5% 0.163 48.998); }
-.frame .positive.selected { background: oklch(69.6% 0.17 162.48); border-color: oklch(69.6% 0.17 162.48); color: #fff; }
-.frame .growth.selected { background: oklch(64.5% 0.246 16.439); border-color: oklch(64.5% 0.246 16.439); color: #fff; }
-.frame .neutral.selected { background: oklch(82.8% 0.189 84.429); border-color: oklch(82.8% 0.189 84.429); color: #fff; }
+.frame .positive.selected { background: oklch(69.6% 0.17 162.48); border-color: oklch(69.6% 0.17 162.48); color: var(--quick-grid-on-accent, #fff); }
+.frame .growth.selected { background: oklch(64.5% 0.246 16.439); border-color: oklch(64.5% 0.246 16.439); color: var(--quick-grid-on-accent, #fff); }
+.frame .neutral.selected { background: oklch(82.8% 0.189 84.429); border-color: oklch(82.8% 0.189 84.429); color: var(--quick-grid-on-accent, #fff); }
 
 .chipCheck {
   flex-shrink: 0;
@@ -325,7 +325,7 @@
   padding: 14px 0;
   border-radius: 16px;
   background: var(--sage);
-  color: #fff;
+  color: var(--quick-grid-on-accent, #fff);
   font-size: 0.8125rem;
   font-weight: 900;
   text-transform: uppercase;
