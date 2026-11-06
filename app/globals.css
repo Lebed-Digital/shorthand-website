@@ -1551,3 +1551,5 @@ footer {
   .hero--split .hero-split-inner { padding: 0; }
   .home-nav .nav-right .btn-primary { display: inline-flex; padding: 10px 12px; font-size: 0.75rem; }
 }
+
+.privacy-section--plain .privacy-card { padding: 24px; }

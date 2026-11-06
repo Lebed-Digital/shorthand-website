@@ -180,7 +180,7 @@ export default function Home() {
             <Link href="/blog" className="nav-link">Blog</Link>
             <a href="/tools" className="nav-link">Tools</a>
             <a href="/resources" className="nav-link">Resources</a>
-            <a href="/privacy" className="nav-link" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>🔒 Privacy</a>
+            <a href="/privacy" className="nav-link">Privacy</a>
           </div>
           <div className="nav-right">
             <a href="https://app.getshorthandapp.com" className="nav-link">Sign in</a>
@@ -206,7 +206,7 @@ export default function Home() {
             <Link href="/blog" className="nav-mobile-link">Blog</Link>
             <a href="/tools" className="nav-mobile-link">Tools</a>
             <a href="/resources" className="nav-mobile-link">Resources</a>
-            <a href="/privacy" className="nav-mobile-link">🔒 Privacy</a>
+            <a href="/privacy" className="nav-mobile-link">Privacy</a>
             <a href="/terms" className="nav-mobile-link">Terms</a>
             <a href="https://app.getshorthandapp.com" className="nav-mobile-link nav-mobile-cta">Open ShortHand →</a>
           </div>
@@ -379,11 +379,11 @@ export default function Home() {
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.875rem', maxWidth: '860px', margin: '0 auto' }}>
             {[
-              { emoji: '✉️', label: 'I need parent email help', href: '/features/parent-emails', track: null },
-              { emoji: '🔄', label: "I'm replacing ClassDojo", href: '/classdojo-alternative', track: null },
-              { emoji: '📋', label: 'I need behavior documentation', href: '/features/quick-note', track: null },
-              { emoji: '🧠', label: 'I keep forgetting what happened', href: 'https://app.getshorthandapp.com?demo=true&source=forgetting', track: 'intent_forgetting_demo' },
-            ].map(({ emoji, label, href, track }) => (
+              { label: 'I need parent email help', href: '/features/parent-emails', track: null },
+              { label: "I'm replacing ClassDojo", href: '/classdojo-alternative', track: null },
+              { label: 'I need behavior documentation', href: '/features/quick-note', track: null },
+              { label: 'I keep forgetting what happened', href: 'https://app.getshorthandapp.com?demo=true&source=forgetting', track: 'intent_forgetting_demo' },
+            ].map(({ label, href, track }) => (
               <a
                 key={href}
                 href={href}
@@ -412,7 +412,6 @@ export default function Home() {
                   (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)';
                 }}
               >
-                <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{emoji}</span>
                 <span>{label}</span>
               </a>
             ))}
@@ -562,19 +561,18 @@ export default function Home() {
       </details>
 
       {/* Privacy Promise */}
-      <section className="privacy-section">
+      <section className="privacy-section privacy-section--plain">
         <div className="section-inner">
           <div className="section-label">Data & Privacy</div>
           <h2 className="section-heading">Your classroom. <em>Your notes.</em></h2>
           <p className="section-sub">Use ShortHand with initials or nicknames. Read the full policy for storage, deletion, and AI processing details.</p>
           <div className="privacy-grid">
             {[
-              { icon: '\u{1F464}', title: 'Use Initials or Nicknames', desc: 'Full legal names and student IDs are not required.' },
-              { icon: '\u{1F6AB}', title: 'No Data Selling', desc: 'Your notes and student information are never sold or used for advertising.' },
-              { icon: '\u{1F512}', title: 'Your Notes, Your Account', desc: 'Your classroom records are protected with encryption and account-level access controls. You can delete your account and notes when you stop using ShortHand.' },
+              { title: 'Use Initials or Nicknames', desc: 'Full legal names and student IDs are not required.' },
+              { title: 'No Data Selling', desc: 'Your notes and student information are never sold or used for advertising.' },
+              { title: 'Your Notes, Your Account', desc: 'Your classroom records are protected with encryption and account-level access controls. You can delete your account and notes when you stop using ShortHand.' },
             ].map((item) => (
               <div key={item.title} className="privacy-card">
-                <div className="privacy-icon">{item.icon}</div>
                 <div className="privacy-title">{item.title}</div>
                 <p className="privacy-desc">{item.desc}</p>
               </div>
@@ -582,7 +580,7 @@ export default function Home() {
           </div>
           <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
             <Link href="/privacy" className="btn-ghost" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-              🔒 Read the Full Privacy Policy →
+              Read the Full Privacy Policy →
             </Link>
           </div>
         </div>
