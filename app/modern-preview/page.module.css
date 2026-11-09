@@ -1,0 +1,154 @@
+.page{background:#f8f7f2;color:#172d29;font-family:var(--font-body),system-ui,sans-serif;line-height:1.5;padding-top:100px}
+.page a{color:inherit;text-decoration:none}
+.page a:focus-visible{outline:3px solid #ba582f;outline-offset:6px}
+.page em{font-family:Georgia,serif;font-weight:400;color:#476d56;letter-spacing:-.01em}
+.page section[id]{scroll-margin-top:110px}
+
+/* Fixed nav; overrides the legacy global nav treatment. */
+.page .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:24px 40px;font-size:14px;background:#f8f7f2;color:#172d29;border-bottom:1px solid #d9dfd3;box-sizing:border-box;box-shadow:0 3px 18px #172d2908;backdrop-filter:none}
+.page .nav a:hover{color:#476d56}
+.logo{font-size:23px;font-weight:700;letter-spacing:-.03em;display:flex;align-items:center;gap:12px}
+.links{display:flex;gap:32px}
+
+.eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;display:inline-flex;gap:10px;align-items:center}
+.eyebrow>span{width:7px;height:7px;border-radius:50%;background:#be613e}
+
+/* Primary CTA: brand orange with dark text, so it is the loudest thing on the page. */
+.page .button{display:inline-flex;justify-content:space-between;gap:28px;align-items:center;padding:17px 26px;background:#f28c52;color:#172d29;border-radius:10px;font-weight:700;box-shadow:0 8px 24px #e0702f40;transition:background .2s,transform .2s}
+.page .button:hover{background:#ec7a3a;transform:translateY(-1px)}
+
+/* Hero: headline left, live demo right. Badges sit under the copy on desktop, after the demo on phones. */
+.hero{max-width:1240px;margin:auto;padding:70px 40px 40px;display:grid;grid-template-columns:1.1fr 1fr;grid-template-areas:"copy demo" "badges demo";column-gap:64px;align-items:start}
+.heroCopy{grid-area:copy;padding-top:30px}
+.heroDemo{grid-area:demo}
+.badges{grid-area:badges;display:flex;gap:14px;align-items:center;margin-top:28px}
+.badges img{display:block;height:44px;width:auto}
+.hero h1{font-size:clamp(42px,5.2vw,72px);line-height:1.05;letter-spacing:-.04em;font-weight:600;margin:24px 0}
+.heroCopy>p{max-width:520px;font-size:18px;color:#58645e}
+.actions{display:flex;align-items:center;gap:28px;margin:30px 0 18px;font-size:15px;font-weight:600}
+.checks{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:6px 20px;font-size:13px;color:#58645e}
+.checks li::before{content:"✓";color:#476d56;font-weight:700;margin-right:6px}
+
+/* Keep the shared demo readable on the light background. */
+.demo{--text:#172d29;--text-dim:#58645e;--quick-grid-on-accent:#102d27;--accent:#a74415}
+.demo>div{--slate-400:#576779}
+
+.features{max-width:1200px;margin:auto;padding:110px 40px}
+.sectionIntro h2,.walkthrough h2,.closing h2,.faq h2{font-size:clamp(36px,4vw,56px);font-weight:600;letter-spacing:-.035em;line-height:1.12;margin:22px 0 40px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cards article{background:#edece5;border-radius:18px;padding:35px 35px 0;overflow:hidden}
+.cards article:nth-child(2){background:#f0e3d9}
+.number{font-size:10px;letter-spacing:1.5px;font-weight:700}
+.cards h3{font-size:32px;line-height:1.15;font-weight:600;letter-spacing:-.03em;margin:22px 0 16px}
+.cards p{font-size:15px;color:#58645e;max-width:370px}
+.cards a{display:inline-block;font-weight:700;font-size:13px;margin:20px 0 30px}
+.cardImage{height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:white;padding:8px}
+.cardImage img{width:100%;height:auto;border-radius:8px}
+
+.walkthrough{max-width:1200px;margin:auto;padding:0 40px 100px;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:45px}
+.walkthrough p{color:#58645e}
+
+.faq{max-width:760px;margin:auto;padding:0 40px 100px}
+.faq details{border-bottom:1px solid #d9dfd3;padding:20px 0}
+.faq summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:#be613e;font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{margin:12px 0 0;color:#58645e;font-size:15px;line-height:1.7}
+
+.closing{text-align:center;background:#e5e9db;padding:90px 24px}
+.closing h2{font-size:clamp(42px,5vw,70px);margin-bottom:30px}
+.closing p{font-size:13px;color:#58645e;margin-top:24px}
+
+.footer{padding:35px 40px;display:flex;align-items:center;justify-content:space-between;max-width:1320px;margin:auto;font-size:12px}
+.footer>div{display:flex;gap:24px}
+.footer>span{color:#69736d}
+
+@media(max-width:900px){
+  .page{padding-top:80px}
+  .page section[id]{scroll-margin-top:85px}
+  .page .nav{padding:18px 20px}
+  .links{display:none}
+  .hero{grid-template-columns:1fr;grid-template-areas:"copy" "demo" "badges";padding:36px 20px 20px}
+  .heroCopy{padding-top:0;margin-bottom:36px}
+  .hero h1{letter-spacing:-.035em}
+  .heroCopy>p{font-size:16px}
+  .actions{gap:20px;font-size:14px}
+  .badges{justify-content:center}
+  .features{padding:65px 20px}
+  .cards{grid-template-columns:1fr}
+  .cards article{padding:28px 24px 0}
+  .walkthrough{grid-template-columns:1fr;padding:0 20px 60px;gap:15px}
+  .walkthrough h2{margin-bottom:20px}
+  .faq{padding:0 20px 60px}
+  .closing{padding:65px 20px}
+  .footer{padding:30px 20px;flex-wrap:wrap;gap:24px}
+  .footer>span{display:none}
+}
+@media(prefers-reduced-motion:reduce){.page .button{transition:none}.page .button:hover{transform:none}}
+/* The site's global body text is light weight; use regular for readability. Play badge PNG has built-in padding. */
+.heroCopy>p,.checks,.cards p,.walkthrough p,.faq p,.closing p{font-weight:400}
+.badges a:last-child img{height:62px;margin:-9px -6px}
+
+/* ---------- Premium layer: glow, glass, gradient, motion ---------- */
+.page{overflow-x:clip}
+.page .nav{background:#f8f7f2eb;backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom-color:#d9dfd380}
+
+/* Drifting color glow behind the hero, full viewport width. */
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;z-index:-1;top:-140px;bottom:-60px;left:50%;width:100vw;transform:translateX(-50%);pointer-events:none;
+  background:radial-gradient(38% 46% at 78% 30%,#f7b98d8c,transparent 70%),radial-gradient(34% 42% at 12% 22%,#bfe0a8a6,transparent 70%),radial-gradient(30% 36% at 55% 85%,#a9d8cf73,transparent 70%);
+  filter:blur(20px);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{0%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-48%) scale(1.06) rotate(1.5deg)}100%{transform:translateX(-52%) scale(1.02) rotate(-1.5deg)}}
+
+/* Gradient on the italic accent words. */
+.hero h1 em,.sectionIntro em,.closing em{background:linear-gradient(100deg,#3f7a5c 0%,#2f8f7a 45%,#e0743c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
+
+/* Staggered entrance for the hero copy. */
+.heroCopy>*{animation:rise .9s cubic-bezier(.22,1,.36,1) both}
+.heroCopy>*:nth-child(2){animation-delay:.08s}.heroCopy>*:nth-child(3){animation-delay:.16s}.heroCopy>*:nth-child(4){animation-delay:.24s}.heroCopy>*:nth-child(5){animation-delay:.32s}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* Eyebrow becomes a small glass pill. */
+.eyebrow{background:#ffffff8c;border:1px solid #ffffffd9;border-radius:999px;padding:8px 14px;box-shadow:0 2px 10px #172d290d}
+.eyebrow>span{background:linear-gradient(135deg,#e0743c,#2f8f7a);box-shadow:0 0 0 4px #e0743c22}
+
+/* Glossy CTA with a shine sweep. */
+.page .button{position:relative;overflow:hidden;background:linear-gradient(135deg,#f8a874,#ee7a3c);box-shadow:inset 0 1px 0 #ffffff80,0 10px 30px #e0702f55,0 2px 6px #e0702f40}
+.page .button:hover{background:linear-gradient(135deg,#f7a06a,#e86f2f);box-shadow:inset 0 1px 0 #ffffff80,0 14px 36px #e0702f66,0 2px 6px #e0702f40}
+.page .button::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,#ffffff8c,transparent);transform:skewX(-20deg);transition:left .7s ease}
+.page .button:hover::after{left:130%}
+
+/* Demo on a floating glass panel. */
+.heroDemo{position:relative;padding:28px 24px 18px;border-radius:32px;background:#ffffff66;border:1px solid #ffffffcc;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  box-shadow:0 40px 80px -20px #2f5a4a40,0 12px 30px -10px #e0743c33,inset 0 1px 0 #fff}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.float{position:absolute;z-index:2;display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:14px;font-size:13px;font-weight:700;white-space:nowrap;
+  background:#ffffffe6;border:1px solid #fff;box-shadow:0 14px 30px -8px #172d2933;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:bob 6s ease-in-out infinite}
+.float b{display:grid;place-items:center;width:24px;height:24px;border-radius:8px;font-size:13px;color:#102d27}
+.floatA{top:120px;left:-58px;animation-delay:-2s}.floatA b{background:#bfe8cf}
+.floatB{bottom:90px;right:-48px;animation-delay:-4s}.floatB b{background:#fbd3b6}
+
+/* Cards: glass, lift on hover, image depth. */
+.cards article{border:1px solid #ffffffb3;box-shadow:0 1px 0 #fff inset,0 20px 50px -30px #172d2940;transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s}
+.cards article:hover{transform:translateY(-6px);box-shadow:0 1px 0 #fff inset,0 34px 60px -30px #172d2959}
+.cards article{background:linear-gradient(160deg,#f3f2ea,#e6eadb)}
+.cards article:nth-child(2){background:linear-gradient(160deg,#f7ece3,#efd9c8)}
+.cardImage{box-shadow:0 -10px 30px -12px #172d2933}
+
+/* Closing band: layered gradient glow. */
+.closing{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(160deg,#e3ecd6,#f4e2d3)}
+.closing::before{content:"";position:absolute;z-index:-1;inset:-30%;background:radial-gradient(30% 40% at 30% 40%,#bfe0a8aa,transparent 70%),radial-gradient(30% 40% at 72% 60%,#f7b98d99,transparent 70%);filter:blur(30px);animation:drift2 16s ease-in-out infinite alternate}
+@keyframes drift2{to{transform:translate(4%,-3%) scale(1.08)}}
+
+@media(max-width:900px){
+  .float{display:none}
+  .heroDemo{padding:18px 12px 12px;border-radius:26px}
+}
+@media(prefers-reduced-motion:reduce){
+  .hero::before,.closing::before,.heroDemo,.float,.heroCopy>*{animation:none}
+  .page .button::after{display:none}
+  .cards article,.cards article:hover{transition:none;transform:none}
+}
+.floatB{bottom:200px}
+@media(max-width:900px){.hero .eyebrow{font-size:10px;letter-spacing:1.2px}}

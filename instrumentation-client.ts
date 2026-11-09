@@ -10,7 +10,7 @@
 // If you add a page where a visitor can type a student name or anything else
 // personal, add it to SENSITIVE_PATH_PREFIXES there and put the `ph-mask` class
 // on the page's root element.
-import { EXPERIMENTS, POSTHOG_READY_EVENT, classifyLinkClick, filterCustomEvent } from './lib/posthog-events';
+import { EXPERIMENTS, POSTHOG_READY_EVENT, SERVER_ASSIGNED_EXPERIMENTS, classifyLinkClick, filterCustomEvent, homeVariantFromCookie } from './lib/posthog-events';
 import { isSensitivePath, maskText, sanitizeEventUrls, sanitizeUrl, shouldInitPostHog } from './lib/posthog-privacy';
 
 const token = process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN;
@@ -76,7 +76,9 @@ if (
         // experiment here is a flag read by a component, never that.
         advanced_disable_feature_flags_on_first_load: true,
         remote_config_refresh_interval_ms: 0,
-        flag_keys: Object.keys(EXPERIMENTS),
+        // Server-assigned experiments are never evaluated as flags: see
+        // SERVER_ASSIGNED_EXPERIMENTS and before_send below.
+        flag_keys: Object.keys(EXPERIMENTS).filter((key) => !(SERVER_ASSIGNED_EXPERIMENTS as readonly string[]).includes(key)),
         disable_surveys: true,
         disable_web_experiments: true,
         // These products are switched on from the PostHog dashboard, not from
@@ -93,8 +95,15 @@ if (
 
         // Strips query strings and fragments from every URL on every event,
         // then drops any custom event or property that is not on the list in
-        // lib/posthog-events.ts.
-        before_send: (event) => (event ? filterCustomEvent(sanitizeEventUrls(event)) : event),
+        // lib/posthog-events.ts. Before that, a visitor proxy.ts has put in
+        // the homepage experiment gets their variant on every event, the way
+        // PostHog would add a flag it had evaluated itself.
+        before_send: (event) => {
+          if (!event) return event;
+          const home = homeVariantFromCookie(document.cookie);
+          if (home) event.properties = { ...event.properties, '$feature/homepage-modern': home };
+          return filterCustomEvent(sanitizeEventUrls(event));
+        },
 
         disable_session_recording: false,
         enable_recording_console_log: false,
