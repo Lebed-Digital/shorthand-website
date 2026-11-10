@@ -236,7 +236,7 @@ Describe the behavior, not the child. "Has difficulty staying on task during ind
 Good behavior comments are short, specific, and constructive. They describe something observable, acknowledge where the student is in their development, and point toward what comes next. The examples in this post are a starting point, but the best comments are always adapted to the real student in front of you.
 
 **Can I use AI to write report card behavior comments?**
-Yes. The [free report card comment generator](/report-card-comment-generator) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
+Yes. The [free report card comment generator](/report-card-comment-generator) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data. If you would rather use ChatGPT or Claude yourself, I keep a tested prompt for a [report card comment bank](https://www.simpleteacherai.com/ideas/a-report-card-comment-bank-no-student-data-needed) on Simple Teacher AI, my other site. You build the bank once, and no student information goes into the AI.
 
 ---
 

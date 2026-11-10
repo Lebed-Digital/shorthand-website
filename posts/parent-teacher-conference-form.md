@@ -204,6 +204,8 @@ Change the grade, the subject, and the concern to match the conference you are g
 
 It is practice, not a prediction. A real parent will say things the practice round did not. When you find a way of saying it that works, write that specific example and next step on the real student's form.
 
+I keep a shorter version of this prompt, along with other AI prompts I have tested for teachers, on my other site, [Simple Teacher AI](https://www.simpleteacherai.com/ideas/rehearse-a-hard-parent-conference-out-loud).
+
 ## When the paper form is not enough
 
 The paper form works. The harder part is filling in those first three sections with useful information instead of trying to reconstruct the last six weeks from memory.

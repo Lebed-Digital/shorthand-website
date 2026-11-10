@@ -42,6 +42,8 @@ The key difference from a general AI tool is that it works from your documents. 
 
 **How I actually use it:** Lesson prep, answering student questions I can't immediately place, and building review materials at the end of a unit.
 
+I write more about this side of things on my other site, Simple Teacher AI. [How I actually use AI as a teacher](https://www.simpleteacherai.com/blog/how-i-actually-use-ai-as-a-teacher) covers what saves me real time and what I still do by hand.
+
 ## 3. Curipod
 
 **Best for: Pulling the room back when you're losing them.**
