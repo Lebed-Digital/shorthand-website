@@ -104,10 +104,7 @@
 /* Gradient on the italic accent words. */
 .hero h1 em,.sectionIntro em,.closing em{background:linear-gradient(100deg,#3f7a5c 0%,#2f8f7a 45%,#e0743c 100%);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.08em}
 
-/* Staggered entrance for the hero copy. */
-.heroCopy>*{animation:rise .9s cubic-bezier(.22,1,.36,1) both}
-.heroCopy>*:nth-child(2){animation-delay:.08s}.heroCopy>*:nth-child(3){animation-delay:.16s}.heroCopy>*:nth-child(4){animation-delay:.24s}.heroCopy>*:nth-child(5){animation-delay:.32s}
-@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+/* Hero copy has no entrance animation on purpose: the headline and CTA must be readable on first paint. */
 
 /* Eyebrow becomes a small glass pill. */
 .eyebrow{background:#ffffff8c;border:1px solid #ffffffd9;border-radius:999px;padding:8px 14px;box-shadow:0 2px 10px #172d290d}
@@ -146,7 +143,7 @@
   .heroDemo{padding:18px 12px 12px;border-radius:26px}
 }
 @media(prefers-reduced-motion:reduce){
-  .hero::before,.closing::before,.heroDemo,.float,.heroCopy>*{animation:none}
+  .hero::before,.closing::before,.heroDemo,.float{animation:none}
   .page .button::after{display:none}
   .cards article,.cards article:hover{transition:none;transform:none}
 }
