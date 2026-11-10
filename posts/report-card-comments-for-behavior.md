@@ -237,6 +237,7 @@ Good behavior comments are short, specific, and constructive. They describe some
 
 **Can I use AI to write report card behavior comments?**
 Yes. The [free report card comment generator](/report-card-comment-generator) on this site lets you pick strengths, areas for growth, and behavior observations from a list and generates a polished comment in seconds. No sign-up required. For comments grounded in your actual classroom notes throughout the year, ShortHand does the same thing with your real logged data.
+
 ---
 
 *ShortHand is a free classroom app that lets teachers log student behavior notes in under 5 seconds, by voice or text. When report card time comes, your notes are already there. [Try it free.](https://app.getshorthandapp.com?demo=true) · Or use the [free report card comment generator](/report-card-comment-generator) to draft comments in seconds.*
