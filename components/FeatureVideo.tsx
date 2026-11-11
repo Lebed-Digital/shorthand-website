@@ -16,6 +16,9 @@ interface FeatureVideoProps {
   // 16:9 layout for long-form horizontal videos. Default stays the 9:16 Shorts layout.
   wide?: boolean;
   onPlay?: () => void;
+  // Skip the thumbnail and start playing on mount. Only for embeds that mount
+  // in response to a click (e.g. a "see how it works" link), never on page load.
+  autoPlay?: boolean;
 }
 
 // Safari (Mac and iPhone) and most mobile browsers don't carry the facade click
@@ -39,8 +42,10 @@ function loadPlayerApi(): Promise<void> {
   return playerApi;
 }
 
-export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay }: FeatureVideoProps) {
-  const [mode, setMode] = useState<'facade' | 'iframe' | 'api'>('facade');
+export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay, autoPlay }: FeatureVideoProps) {
+  const [mode, setMode] = useState<'facade' | 'iframe' | 'api'>(() =>
+    autoPlay && typeof navigator !== 'undefined' ? (needsPlayerApi() ? 'api' : 'iframe') : 'facade'
+  );
   const [thumbFallback, setThumbFallback] = useState(false);
   const apiMount = useRef<HTMLDivElement>(null);
 
