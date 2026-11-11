@@ -468,8 +468,10 @@ const videoLinkStyle: React.CSSProperties = {
   border: 'none',
   padding: '4px 8px',
   margin: '12px 0 0',
-  color: '#fff',
-  fontSize: 15,
+  // Yellow to stand out on the teal hero. 19px bold counts as large text, which
+  // keeps it at the 3:1 contrast AA asks for on the lighter end of the gradient.
+  color: '#fde047',
+  fontSize: 19,
   fontWeight: 700,
   textDecoration: 'underline',
   textUnderlineOffset: 4,
