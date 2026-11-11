@@ -192,6 +192,13 @@ function FreeToolInner() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
+  // The prompt that produced `result`. buildPrompt is order-independent and
+  // trims text, so comparing prompts tells us whether the inputs changed since
+  // the last generation, and reverting the changes clears the stale state.
+  // Refine and hand edits do not touch it: they never read the inputs.
+  const [generatedFrom, setGeneratedFrom] = useState('');
+  const stale = !!result && !!generatedFrom && buildPrompt(name, selected, extra, length, tone) !== generatedFrom;
+  const resultBorder = stale ? '#f59e0b' : '#e2e8f0';
 
   const extraMic = useSpeechToText((text) => setExtra((prev) => (prev ? prev + ' ' : '') + text));
   const refineMic = useSpeechToText((text) => setRefineInstructions((prev) => (prev ? prev + ' ' : '') + text));
@@ -238,7 +245,11 @@ function FreeToolInner() {
     if (selected.size === 0) { setError('Please select at least one option.'); return; }
     setError(''); setResult(''); setLoading(true);
     fireGenerationAttempt('report-card-comment', 'generate');
-    try { setResult(await callApi(buildPrompt(name, selected, extra, length, tone), 'generate')); }
+    try {
+      const prompt = buildPrompt(name, selected, extra, length, tone);
+      setResult(await callApi(prompt, 'generate'));
+      setGeneratedFrom(prompt);
+    }
     catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
@@ -267,7 +278,7 @@ function FreeToolInner() {
   }
 
   function reset() {
-    setResult(''); setName(''); setSelected(new Set()); setExtra('');
+    setResult(''); setGeneratedFrom(''); setName(''); setSelected(new Set()); setExtra('');
     setRefineInstructions(''); setError(''); setTone('casual');
   }
 
@@ -358,7 +369,7 @@ function FreeToolInner() {
         {error && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 12px' }}>{error}</p>}
 
         <button onClick={generate} disabled={loading} style={{ width: '100%', background: loading ? '#5eead4' : 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 15, padding: '14px', borderRadius: 14, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit', boxShadow: '0 4px 14px rgba(13,148,136,0.4)', letterSpacing: '0.01em', transition: 'opacity 0.15s' }}>
-          {loading ? 'Generating…' : 'Generate comment →'}
+          {loading ? 'Generating…' : stale ? '↻ Regenerate comment' : 'Generate comment →'}
         </button>
 
         {(name || selected.size > 0 || extra) && (
@@ -369,14 +380,23 @@ function FreeToolInner() {
 
         {result && (
           <div style={{ background: '#fff', borderRadius: 16, padding: 24, marginTop: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderTop: '4px solid #0d9488' }}>
+            <div role="status">
+              {stale && (
+                <div style={{ background: '#fffbeb', border: '1.5px solid #f59e0b', borderRadius: 10, padding: '10px 14px', marginBottom: 12, fontSize: 13, color: '#78350f', lineHeight: 1.5 }}>
+                  <strong>Your comment is out of date.</strong>
+                  <br />
+                  You&apos;ve changed your selections. Click <strong>Regenerate Comment</strong>{' '}above to include your changes.
+                </div>
+              )}
+            </div>
             <textarea
               value={result}
               onChange={(e) => setResult(e.target.value)}
               rows={6}
               aria-label="Generated comment"
-              style={{ width: '100%', fontSize: 15, color: '#1e293b', lineHeight: 1.7, marginBottom: 20, borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
+              style={{ width: '100%', fontSize: 15, color: '#1e293b', lineHeight: 1.7, marginBottom: 20, borderRadius: 10, border: `1.5px solid ${resultBorder}`, padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
               onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
-              onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
+              onBlur={(e) => (e.target.style.borderColor = resultBorder)}
             />
             <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 16, marginBottom: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
