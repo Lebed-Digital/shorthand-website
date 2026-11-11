@@ -11,6 +11,7 @@ import {
   type Tone,
 } from '../../lib/report-card-comments';
 import type { FreeSliceData } from '../../lib/report-card-teaser';
+import FeatureVideo from '../../components/FeatureVideo';
 import { SAMPLE_NAME, personalize, finalizeForCopy } from '../../lib/report-card-personalize';
 import {
   fireBeginCheckout,
@@ -20,6 +21,7 @@ import {
   fireLibraryPageView,
   fireLockedCommentClicked,
   fireNameEntered,
+  fireVideoPlay,
 } from '../../lib/gtag';
 
 // Unauthenticated view. Receives ONLY the free-slice payload built server-side:
@@ -177,6 +179,17 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
       </div>
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px 48px' }}>
+        {/* 27 s silent tutorial of this page (free view). Click-to-play facade, so
+            nothing loads from YouTube until a visitor asks for it. */}
+        <div style={{ marginBottom: 16 }}>
+          <FeatureVideo
+            videoId="l0osWUQrGts"
+            title="How to use the Report Card Comment Library"
+            wide
+            onPlay={() => fireVideoPlay('l0osWUQrGts', 'rccl_tutorial')}
+          />
+        </div>
+
         <div style={workspaceStyle}>
           <span style={freeBadgeStyle}>Free sample, fully working</span>
 
