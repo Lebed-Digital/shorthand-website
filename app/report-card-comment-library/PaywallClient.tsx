@@ -46,6 +46,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
   const [tone, setTone] = useState<Tone | 'all'>('all');
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [hasCopied, setHasCopied] = useState(false);
+  const [showVideo, setShowVideo] = useState(false);
 
   const buyRef = useRef<HTMLDivElement | null>(null);
   // One-shot guards: these events answer "did this visitor use the slice at
@@ -175,20 +176,28 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
           <p style={{ fontSize: 14, color: '#fff', fontWeight: 600, margin: '8px 0 0' }}>
             The full library is a one-time $4.99. No subscription.
           </p>
+          <button
+            onClick={() => {
+              if (!showVideo) fireVideoPlay(TUTORIAL_VIDEO_ID, 'rccl_tutorial');
+              setShowVideo(!showVideo);
+            }}
+            aria-expanded={showVideo}
+            aria-controls="rccl-tutorial"
+            style={videoLinkStyle}
+          >
+            {showVideo ? 'Hide video' : '▶ See how it works'}
+          </button>
         </div>
       </div>
 
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px 48px' }}>
-        {/* 27 s silent tutorial of this page (free view). Click-to-play facade, so
-            nothing loads from YouTube until a visitor asks for it. */}
-        <div style={{ marginBottom: 16 }}>
-          <FeatureVideo
-            videoId="l0osWUQrGts"
-            title="How to use the Report Card Comment Library"
-            wide
-            onPlay={() => fireVideoPlay('l0osWUQrGts', 'rccl_tutorial')}
-          />
-        </div>
+        {/* 27 s silent tutorial of this page (free view). Mounts only when the
+            link above is clicked, so nothing loads from YouTube until then. */}
+        {showVideo && (
+          <div id="rccl-tutorial" style={{ marginBottom: 16 }}>
+            <FeatureVideo videoId={TUTORIAL_VIDEO_ID} title="How to use the Report Card Comment Library" wide autoPlay />
+          </div>
+        )}
 
         <div style={workspaceStyle}>
           <span style={freeBadgeStyle}>Free sample, fully working</span>
@@ -451,6 +460,22 @@ function FreeCommentCard({
     </div>
   );
 }
+
+const TUTORIAL_VIDEO_ID = 'l0osWUQrGts';
+
+const videoLinkStyle: React.CSSProperties = {
+  background: 'none',
+  border: 'none',
+  padding: '4px 8px',
+  margin: '12px 0 0',
+  color: '#fff',
+  fontSize: 15,
+  fontWeight: 700,
+  textDecoration: 'underline',
+  textUnderlineOffset: 4,
+  cursor: 'pointer',
+  fontFamily: 'inherit',
+};
 
 const topBarStyle: React.CSSProperties = {
   background: 'rgba(255,255,255,0.05)',
