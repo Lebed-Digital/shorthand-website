@@ -57,7 +57,7 @@ export default function ParentCommunicationLogPage() {
         <HowToClips
           heading="See it in 20 seconds"
           clips={[
-            { file: 'parent-contact', title: 'Log a parent phone call', description: 'Pick the student, tap Call, type one sentence, and save. The parent name fills in for you.' },
+            { videoId: 'XKQ4KmaNTQs', title: 'Log a parent phone call', description: 'Pick the student, tap Call, type one sentence, and save. The parent name fills in for you.' },
           ]}
         />
 

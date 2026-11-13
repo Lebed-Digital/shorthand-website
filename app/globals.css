@@ -546,19 +546,10 @@ section { position: relative; z-index: 1; }
 .video-frame-wrap--wide { aspect-ratio: 16 / 9; }
 .howto-section { margin-bottom: 64px; }
 .howto-heading { font-family: var(--font-display); font-weight: 800; font-size: 1.4rem; margin-bottom: 8px; }
-.howto-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
-  margin-top: 16px;
-}
-.howto-item { display: flex; flex-direction: column; }
+.howto-grid { display: grid; gap: 40px; margin-top: 16px; max-width: 860px; }
 .howto-item h3 { font-family: var(--font-display); font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
-.howto-item video {
-  display: block; width: 100%; max-width: 360px; aspect-ratio: 1 / 1;
-  border-radius: 16px; border: 1px solid var(--border-bright); background: var(--surface);
-}
-.howto-item p { flex: 1; font-size: 0.95rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 12px; }
+/* One wide clip per row: each is a square app clip centered in a 16:9 frame. */
+.howto-item p { font-size: 0.95rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 12px; }
 .feature-video-facade {
   position: absolute; inset: 0;
   width: 100%; height: 100%;

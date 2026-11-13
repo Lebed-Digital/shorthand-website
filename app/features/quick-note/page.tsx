@@ -72,9 +72,9 @@ export default function QuickNotePage() {
         <HowToClips
           heading="Quick how-tos"
           clips={[
-            { file: 'full-note', title: 'Write a full note', description: 'When a quick tap is not enough, open Full note, type or use your voice, add a tag, and save.' },
-            { file: 'note-shortcuts', title: 'Type less with note shortcuts', description: 'Add a shortcut like hw once. Every note you save with it turns into the full phrase.' },
-            { file: 'behavior-tags', title: 'Customize your behavior tags', description: 'Add a tag that fits your classroom, then drag it to the top so it shows up first when you log a note.' },
+            { videoId: 'BREqF4GB0wQ', title: 'Write a full note', description: 'When a quick tap is not enough, open Full note, type or use your voice, add a tag, and save.' },
+            { videoId: 'f2ojWBLr-Go', title: 'Type less with note shortcuts', description: 'Add a shortcut like hw once. Every note you save with it turns into the full phrase.' },
+            { videoId: 'mTjF3NPJcEQ', title: 'Customize your behavior tags', description: 'Add a tag that fits your classroom, then drag it to the top so it shows up first when you log a note.' },
           ]}
         />
 
