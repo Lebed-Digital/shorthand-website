@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const features = [
+export const features = [
   { slug: 'quick-note',        label: 'Quick Grid' },
   { slug: 'import-roster',     label: 'Import Your Class Roster' },
   { slug: 'ai-reports',             label: 'Write Reports' },

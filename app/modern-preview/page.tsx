@@ -5,6 +5,7 @@ import FeatureVideo from '../../components/FeatureVideo';
 import styles from './page.module.css';
 import QuickGridDemo from '../../components/QuickGridDemo';
 import ScrollMotion from './ScrollMotion';
+import { features } from '../../components/FeatureNav';
 
 // No metadata of its own: proxy.ts serves this page at '/' to visitors in the
 // homepage experiment, so it inherits the homepage's title, description and
@@ -65,6 +66,10 @@ export default function ModernPreview() {
         <div className={styles.cards}>
           <article data-reveal><span className={styles.number}>01 / FIND THE THREAD</span><h3>The whole story.<br />In one place.</h3><p>Parent conversations, classroom observations, and follow-ups stay organized for the moments you need them.</p><Link href="/features/parent-communication-log">Explore communication logs ↗</Link><div className={styles.cardImage}><Image src="/parent-comms-log.png" alt="ShortHand parent communication log" width={700} height={700} /></div></article>
           <article data-reveal><span className={styles.number}>02 / MAKE IT USEFUL</span><h3>Good notes become<br />better conversations.</h3><p>Turn the notes you’ve logged into a parent-ready draft. Review, edit, and send from your own email.</p><Link href="/features/ai-reports">Explore reports ↗</Link><div className={styles.cardImage}><Image src="/3.png" alt="ShortHand generated parent report" width={700} height={700} /></div></article>
+        </div>
+        <div className={styles.allFeatures} data-reveal>
+          <span className={styles.eyebrow}>EVERY FEATURE</span>
+          <ul>{features.map(f => <li key={f.slug}><Link href={`/features/${f.slug}`}>{f.label} <span>↗</span></Link></li>)}</ul>
         </div>
       </section>
       <section id="walkthrough" data-reveal className={styles.walkthrough}><div><span className={styles.eyebrow}>SEE IT IN ACTION</span><h2>A calmer workflow.<br /><em>Not another chore.</em></h2><p>See how ShortHand fits into the day you already have.</p></div><FeatureVideo videoId="FGeXjIG_c8c" title="ShortHand full walkthrough" wide /></section>
