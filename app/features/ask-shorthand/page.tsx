@@ -4,6 +4,7 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
+import HowToClips from '../../../components/HowToClips';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -68,6 +69,13 @@ export default function AskShortHandPage() {
         </p>
 
         <FeatureVideo videoId="Nkawyxj_yiA" title="Ask ShortHand walkthrough" hideControls />
+
+        <HowToClips
+          heading="See it in 20 seconds"
+          clips={[
+            { file: 'ask-shorthand', title: 'Ask a question about one student', description: 'Type a question that names a student and get an answer pulled from the notes you already logged.' },
+          ]}
+        />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
