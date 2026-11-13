@@ -4,6 +4,7 @@ import AnimatedLogo from '../../../components/AnimatedLogo';
 import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
+import HowToClips from '../../../components/HowToClips';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -52,6 +53,13 @@ export default function ParentCommunicationLogPage() {
         </p>
 
         <FeatureVideo videoId="y72XmJboR7k" title="Parent Communication Log walkthrough" hideControls />
+
+        <HowToClips
+          heading="See it in 20 seconds"
+          clips={[
+            { videoId: 'Efxd2WTJSlY', title: 'Log a parent phone call', description: 'Pick the student, tap Call, type one sentence, and save. The parent name fills in for you.' },
+          ]}
+        />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>

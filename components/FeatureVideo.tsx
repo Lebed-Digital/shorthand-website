@@ -15,6 +15,8 @@ interface FeatureVideoProps {
   hideControls?: boolean;
   // 16:9 layout for long-form horizontal videos. Default stays the 9:16 Shorts layout.
   wide?: boolean;
+  // 1:1 layout for the square app how-to Shorts.
+  square?: boolean;
   onPlay?: () => void;
   // Skip the thumbnail and start playing on mount. Only for embeds that mount
   // in response to a click (e.g. a "see how it works" link), never on page load.
@@ -42,7 +44,7 @@ function loadPlayerApi(): Promise<void> {
   return playerApi;
 }
 
-export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay, autoPlay }: FeatureVideoProps) {
+export default function FeatureVideo({ videoId, title, start, hideControls, wide, square, onPlay, autoPlay }: FeatureVideoProps) {
   const [mode, setMode] = useState<'facade' | 'iframe' | 'api'>(() =>
     autoPlay && typeof navigator !== 'undefined' ? (needsPlayerApi() ? 'api' : 'iframe') : 'facade'
   );
@@ -88,8 +90,8 @@ export default function FeatureVideo({ videoId, title, start, hideControls, wide
 
   return (
     <div
-      className={wide ? 'video-frame-wrap video-frame-wrap--wide' : 'video-frame-wrap'}
-      style={wide ? { maxWidth: 860, margin: '0 auto' } : { maxWidth: 360, marginBottom: 80 }}
+      className={wide ? 'video-frame-wrap video-frame-wrap--wide' : square ? 'video-frame-wrap video-frame-wrap--square' : 'video-frame-wrap'}
+      style={wide ? { maxWidth: 860, margin: '0 auto' } : square ? { maxWidth: 360 } : { maxWidth: 360, marginBottom: 80 }}
     >
       {mode === 'iframe' ? (
         <iframe
@@ -104,7 +106,7 @@ export default function FeatureVideo({ videoId, title, start, hideControls, wide
             <img
               src={thumbUrl}
               alt={title}
-              loading={wide ? 'lazy' : undefined}
+              loading={wide || square ? 'lazy' : undefined}
               onError={() => setThumbFallback(true)}
             />
             <span className="feature-video-play">▶</span>

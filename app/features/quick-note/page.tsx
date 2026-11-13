@@ -5,6 +5,7 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
 import QuickGridDemo from '../../../components/QuickGridDemo';
+import HowToClips from '../../../components/HowToClips';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
@@ -67,6 +68,15 @@ export default function QuickNotePage() {
         <QuickGridDemo />
 
         <FeatureVideo videoId="7fQrX5eHAsc" title="Quick Grid walkthrough" hideControls />
+
+        <HowToClips
+          heading="Quick how-tos"
+          clips={[
+            { videoId: 'glHFKsyJ0lo', title: 'Write a full note', description: 'When a quick tap is not enough, open Full note, type or use your voice, add a tag, and save.' },
+            { videoId: 'TwIhII2_vXI', title: 'Type less with note shortcuts', description: 'Add a shortcut like hw once. Every note you save with it turns into the full phrase.' },
+            { videoId: '0NL5bW_SyAM', title: 'Customize your behavior tags', description: 'Add a tag that fits your classroom, then drag it to the top so it shows up first when you log a note.' },
+          ]}
+        />
 
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
