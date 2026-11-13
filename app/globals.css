@@ -549,6 +549,10 @@ section { position: relative; z-index: 1; }
 .howto-grid { display: grid; gap: 40px; margin-top: 16px; max-width: 860px; }
 .howto-item h3 { font-family: var(--font-display); font-weight: 700; font-size: 1rem; margin-bottom: 4px; }
 /* One wide clip per row: each is a square app clip centered in a 16:9 frame. */
+/* The player is 200px taller than the frame, which clips it. The 16:9 video still fills the visible
+   area exactly, while YouTube's title bar (top) and logo (bottom) land in the clipped-off strips
+   instead of covering the clip's step captions. */
+.howto-item .video-frame-wrap iframe { top: -100px; bottom: auto; height: calc(100% + 200px); }
 .howto-item p { font-size: 0.95rem; color: var(--text-dim); line-height: 1.6; margin-bottom: 12px; }
 .feature-video-facade {
   position: absolute; inset: 0;
