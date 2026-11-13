@@ -73,7 +73,7 @@ export default function AskShortHandPage() {
         <HowToClips
           heading="See it in 20 seconds"
           clips={[
-            { file: 'ask-shorthand', title: 'Ask a question about one student', description: 'Type a question that names a student and get an answer pulled from the notes you already logged.' },
+            { videoId: 'RBTZgLVDNm8', title: 'Ask a question about one student', description: 'Type a question that names a student and get an answer pulled from the notes you already logged.' },
           ]}
         />
 
