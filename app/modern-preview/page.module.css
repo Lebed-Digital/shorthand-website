@@ -42,6 +42,11 @@
 .cards h3{font-size:32px;line-height:1.15;font-weight:600;letter-spacing:-.03em;margin:22px 0 16px}
 .cards p{font-size:15px;color:#58645e;max-width:370px}
 .cards a{display:inline-block;font-weight:700;font-size:13px;margin:20px 0 30px}
+.allFeatures{margin-top:56px}
+.allFeatures ul{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.allFeatures a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-radius:14px;background:#edece5;font-weight:600;font-size:15px;text-decoration:none;color:inherit;transition:background .2s}
+.allFeatures a:hover{background:#e3e2d8}
+.allFeatures a span{font-size:13px;opacity:.6}
 .cardImage{height:280px;overflow:hidden;border-radius:12px 12px 0 0;background:white;padding:8px}
 .cardImage img{width:100%;height:auto;border-radius:8px}
 
