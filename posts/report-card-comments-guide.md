@@ -11,6 +11,8 @@ excerpt: "A teacher's guide to report card comments: what makes a comment work, 
 faq:
   - q: "What makes a good report card comment?"
     a: "A good report card comment is specific, honest, and useful to the parent reading it. It names something the student actually does well, describes one area for growth in observable terms, and ends with a next step. Avoid labels and vague praise like 'great kid.' If a parent could read the comment and picture their own child, it is doing its job."
+  - q: "What are good phrases for report card comments?"
+    a: "Good report card comments describe specific strengths, work habits, participation, or areas for growth. Examples include '[Student] explains their thinking clearly and can describe the steps used to reach an answer,' '[Student] continues working through difficult assignments instead of stopping,' and '[Student] is working on reading directions completely before beginning an assignment.' The most useful comments describe something the teacher has observed and, when appropriate, explain the student's next step."
   - q: "How long should a report card comment be?"
     a: "Most report card comments run two to four sentences. That is enough room for a strength, one area for growth, and a next step. Many grading portals set a character limit, so check yours before you start writing. A short, specific comment is more useful to a parent than a long, general one."
   - q: "How can I write report card comments faster?"
@@ -38,6 +40,92 @@ Before you copy anything, it helps to know what a strong comment is doing. Almos
 Keep it honest. A report card comment should never be the first time a parent hears about a serious concern. If something needs a real conversation, have that conversation first, then let the comment reflect it.
 
 And keep it about this student. The comments parents remember are the ones that sound like the teacher actually knows their child. Examples are a starting point. The details are what make the comment yours.
+
+---
+
+## Report card comment examples you can copy
+
+Sometimes you know exactly how a student is doing, but finding the right words takes longer than it should. Good report card comments describe something you've actually seen the student do, whether that's explaining their thinking, sticking with a difficult assignment, or learning to ask for help.
+
+Here are 36 report card comment examples you can copy, adjust, and use when you're staring at an empty comment box.
+
+**A quick formula you can use:**
+
+[Student] [specific strength]. [Student] is working on [one observable area for growth]. [Next step or support].
+
+**For example:**
+
+Jordan explains their thinking clearly when answering questions in class. They are working on checking their assignments before turning them in. Using a short checklist is helping Jordan catch mistakes independently.
+
+You don't need all three sentences every time. A short, specific comment is better than a long one that could describe any student.
+
+### Strengths
+
+These comments highlight what a student does well. Choose a strength you've actually observed, then add a detail that makes it personal.
+
+- [Student] explains their thinking clearly and can describe the steps they used to reach an answer.
+- One of [Student]'s strengths is connecting new ideas to things we've already learned.
+- [Student] asks thoughtful questions that show they're thinking beyond the information presented.
+- When given a challenging assignment, [Student] looks for different ways to solve the problem.
+- [Student] uses examples from lessons to support their answers and explain their reasoning.
+- I've noticed that [Student] is becoming more confident when sharing what they've learned.
+- [Student] pays attention to details and often catches mistakes when reviewing completed work.
+- A strength of [Student]'s is using feedback to improve their work before submitting it.
+- [Student] can explain new concepts in their own words rather than simply repeating what was taught.
+
+Want help turning a student's strengths into a personalized comment? Try the [free report card comment generator](/report-card-comment-generator).
+
+### Effort and work habits
+
+Effort and work habits aren't always reflected in a grade. These comments recognize how students approach assignments, manage their time, and respond when learning gets difficult.
+
+- [Student] continues working through difficult assignments instead of stopping when the first attempt doesn't work.
+- I've seen [Student] become more independent when gathering materials and getting started on assignments.
+- [Student] takes time to review directions before beginning and asks questions when something is unclear.
+- Even when an assignment is challenging, [Student] makes an effort to complete each step.
+- [Student] has made progress in finishing assignments within the time provided.
+- One improvement I've noticed is [Student]'s ability to stay focused during independent work.
+- [Student] uses feedback from previous assignments to make adjustments on new ones.
+- With a daily reminder, [Student] is developing a more consistent routine for organizing completed work.
+- [Student] is learning to check their work carefully instead of rushing to finish first.
+
+For more options, see our [student progress report comments for teachers](/blog/student-progress-report-comments-for-teachers), including examples focused on effort and work habits.
+
+### Participation
+
+Participation isn't just about raising a hand. Some students contribute by asking questions, listening carefully, or helping a group work through a problem. These comments recognize different ways students engage in learning.
+
+- [Student] regularly contributes to classroom discussions by sharing ideas and explaining their thinking.
+- During partner activities, [Student] listens to different ideas before sharing their own.
+- [Student] asks questions when something doesn't make sense and uses the answers to move forward.
+- I've noticed [Student] participating more frequently in discussions over the past few weeks.
+- [Student] contributes useful ideas during group activities and helps keep the work moving forward.
+- When classmates share different answers, [Student] considers their reasoning before responding.
+- [Student] is growing more comfortable volunteering answers, even when unsure of being correct.
+- During class discussions, [Student] often connects a classmate's idea to something learned earlier.
+- [Student] participates best in small-group conversations and is beginning to share more during whole-class lessons.
+
+For comments about relationships, cooperation, and emotional development, see our [social-emotional report card comments](/blog/social-emotional-report-card-comments).
+
+### Areas for growth
+
+Every student has something they're working on. The goal is to describe the need clearly without making the child sound like the problem.
+
+These comments identify a skill that needs attention while showing what progress or support looks like.
+
+- [Student] is working on reading directions completely before beginning an assignment.
+- With a checklist, [Student] is becoming more consistent about checking work for missing steps.
+- [Student] is practicing asking for clarification instead of guessing when directions are unclear.
+- I've encouraged [Student] to include more details when explaining answers in written assignments.
+- [Student] is working toward completing independent assignments with fewer reminders to continue.
+- Using a planning sheet is helping [Student] organize ideas before beginning longer assignments.
+- [Student] is learning to use examples from lessons when explaining new concepts.
+- I've noticed progress as [Student] practices breaking larger assignments into smaller, manageable steps.
+- [Student] is working on applying previously learned skills without needing each step reviewed again.
+
+For additional wording, see our [report card comments for struggling students](/blog/report-card-comments-for-struggling-students). If the concern involves classroom behavior, our [behavior report card comments guide](/blog/report-card-comments-for-behavior) has more specific examples.
+
+Before you paste a comment into your report cards, change at least one detail to reflect something you've actually noticed about that student. The best comments sound like you wrote them because you know the child, not because you found the perfect sentence online.
 
 ---
 
