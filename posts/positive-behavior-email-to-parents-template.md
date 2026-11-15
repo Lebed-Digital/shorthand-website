@@ -137,6 +137,7 @@ Teachers are busy. If you do not have a system, positive emails will fall off yo
 * **Two per week rule.** You do not need to email everyone at once. Choose two students every Friday morning. By the end of the year, you will have sent positive notes to every family.
 * **Keep them under four sentences.** A positive email does not need to be a novel. Be specific, be brief, and hit send.
 * **Use templates.** Save these draft templates in a place where you can quickly copy, paste, and customize them in under two minutes.
+* **Write it down.** Note the date and the student in a [parent contact log](/tools/parent-communication-log) so you can see which families have not heard good news from you yet.
 
 If you ever need to pivot back to documenting more serious behaviors, having a solid collection of templates is key. You can find more structured communication ideas in our article on [5 sample emails to parents about student behavior](/blog/sample-emails-to-parents-about-student-behavior).
 

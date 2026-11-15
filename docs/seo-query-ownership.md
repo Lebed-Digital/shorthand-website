@@ -147,6 +147,7 @@ Across those 8 SERPs, the pattern in where we rank organically:
 - **Primary owns:** behavior tracking app(s) (for teachers), free behavior tracking apps, behavior tracking software (for schools), behavior tracker app, app to track student behavior
 - **Avoid:** "behavior management apps" (cluster 6), "student observation apps" (cluster 7), "special education software" (cluster 8)
 - **Recommendation:** see app-roundup consolidation plan below before editing.
+- **2026-11-15:** added a "Quick picks by use case" list near the top (each app's existing "Best for" line, ranked list unchanged, no title/H1 change) and softened the first FAQ answer from "ShortHand is the best..." to "a good fit for individual classroom teachers". Evidence: GSC 2026-08-15 to 11-13, 7,977 imp, pos 7.5, CTR 1.83%, "student behavior tracking app" 106 imp at pos 2.6 with 0 clicks, and ShortHand listed fifth of five. Check CTR 2026-12-14.
 
 ## 6. Behavior management apps
 
@@ -206,6 +207,16 @@ Across those 8 SERPs, the pattern in where we rank organically:
 - **Avoid:** "checklist" in form-page headings, comment lists or scripts on the form page, IEP meeting notes phrasing (owned by `iep-meeting-notes-template`), sign-up/scheduling sheets (nobody owns these, don't chase them).
 - **Why the form page exists:** OpenSEO (US, 2026-09-28) shows "parent teacher conference form" at ~1,600/mo peaking at ~6,600 in October (that figure groups close variants together), "template" at 880, and "notes" at 170, all KD 0. GSC showed zero site impressions for any form/notes/template query before this page. The SERP mixes marketplaces (Canva, TpT, Pinterest, Etsy) with teacher blogs offering free forms, with an image pack at #1.
 - **The same PDF sits on three pages on purpose** (`conference-form-post`, `conference-prep-post`, `conference-comments-post`), so page vs asset can be compared. Do not rename those source ids.
+
+
+## 13. Parent communication log (added 2026-11-15)
+
+- **Primary (template intent):** `/tools/parent-communication-log`. Owns parent communication log, parent contact log, and their template/printable/free/pdf variants. Serpstat US 2026-11-15: parent communication log ~480/mo, parent contact log ~390, parent communication log for teachers ~260, teacher parent communication log ~210, parent contact log template ~140 (difficulty 6 to 17). SERP is TpT freebies, printable PDFs and sped resource sites.
+- **Supporting (informational intent):** `/blog/free-parent-communication-log-for-teachers`, retitled 2026-11-15 from "Free Parent Communication Log for Teachers (Printable + Digital)" to "What Is a Parent Communication Log? What to Write After Every Parent Contact". Same URL, no redirect. Owns "what is a parent communication log" and "what to write" phrasing. Its old title nearly duplicated the tool's, and it had no GSC footprint before the change.
+- **Evidence for the split (observed, cause not established):** GSC 2026-08-15 to 11-13, the tool page had 1 impression for "parent communication log", 35 for "parent contact log" at pos 13.5. First-touch attribution since 2026-09-04 showed 3 signups (2 activated) landing on the tool page, against 17 GSC clicks over a window that starts 20 days earlier. Small sample.
+- **Inbound links added 2026-11-15:** missing-homework (existing blog link retargeted to the tool), positive-behavior-email, parents-dont-respond, call-a-parent-about-behavior. `sample-emails-to-parents-about-student-behavior` already linked to the tool.
+- **Guardrails:** keep the tool's signup CTA blocks unchanged (they are the converting path). Do not add a separate PDF page: the tool already prints to PDF.
+- **Check 2026-12-14:** tool page impressions/position for the queries above, and signups whose first touch is the tool page, using matching date windows.
 
 ---
 

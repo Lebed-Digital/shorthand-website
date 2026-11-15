@@ -114,7 +114,7 @@ Then actually follow up. That follow-up call, even if it's two minutes, is what 
 
 ## The Note You Take After the Call
 
-Before you move on to the next thing, write down what was said and what you committed to. A one-line note with the date is enough.
+Before you move on to the next thing, write down what was said and what you committed to. A one-line note with the date is enough. If you keep these on paper, our free [printable parent contact log](/tools/parent-communication-log) gives you a page to write them on.
 
 If the behavior continues and eventually leads to a bigger meeting, that call log matters. "I contacted the family on [date] and we agreed to [x]" is a very different position than having no documentation at all.
 
