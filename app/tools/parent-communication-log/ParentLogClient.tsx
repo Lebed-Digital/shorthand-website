@@ -11,6 +11,12 @@ const METHOD_OPTIONS = ['Call', 'Email', 'Note Home', 'In Person', 'Text'];
 const REACHED_OPTIONS = ['Yes', 'Voicemail', 'No Answer'];
 const FOLLOWUP_OPTIONS = ['None', 'Yes, see notes'];
 
+const EXAMPLE_ROWS = [
+  ['Oct 14', 'Jordan P.', 'Call', 'Voicemail', 'Called about 3 missing math assignments. Asked for a call back.', 'Yes, see notes'],
+  ['Oct 16', 'Jordan P.', 'Email', 'Yes', 'Mom replied. She will check the homework folder each night.', 'None'],
+  ['Oct 20', 'Jordan P.', 'Note Home', 'Yes', 'Sent a positive note about effort in reading group.', 'None'],
+];
+
 const EMPTY_ROW = { date: '', student: '', method: '', reached: '', summary: '', followup: '' };
 
 function Row({
@@ -100,7 +106,7 @@ export default function ParentLogClient() {
           <div>
             <Link href="/" className={styles.backLink}>← ShortHand</Link>
             <h1 className={styles.title}>Free Parent Communication Log</h1>
-            <p className={styles.subtitle}>Fill it in here and print, or print blank and fill by hand.</p>
+            <p className={styles.subtitle}>A printable parent contact log for teachers. Fill it in here and print, or print blank and fill by hand.</p>
           </div>
           <div className={styles.headerActions}>
             <button onClick={addRows} className={styles.btnSecondary}>
@@ -186,6 +192,42 @@ export default function ParentLogClient() {
           </p>
         </div>
       </div>
+
+      {/* What to write + example entries: screen only, hidden on print */}
+      <section className={styles.guideSection}>
+        <h2 className={styles.guideTitle}>What to write in a parent contact log</h2>
+        <p className={styles.guideText}>
+          Keep each entry short and factual. For every call, email, or note home, write down:
+        </p>
+        <ul className={styles.guideList}>
+          <li>The date, plus the time for phone calls</li>
+          <li>How you reached out: call, email, note home, in person, or text</li>
+          <li>Whether you reached them, left a voicemail, or got no answer</li>
+          <li>What you discussed and anything you both agreed to</li>
+          <li>Any follow-up you owe, and when</li>
+        </ul>
+        <h3 className={styles.guideSubtitle}>Example entries</h3>
+        <div className={styles.tableCard}>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                {COLUMNS.map((col) => (
+                  <th key={col}>{col}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {EXAMPLE_ROWS.map((r) => (
+                <tr key={r.join('|')}>
+                  {r.map((cell, i) => (
+                    <td key={i} className={styles.exampleCell}>{cell}</td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* Screen CTA block — hidden on print */}
       <div className={styles.ctaSection}>
