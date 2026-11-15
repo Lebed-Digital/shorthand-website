@@ -51,7 +51,7 @@ You do not have time to write a novel every time a phone rings and goes to voice
 
 "Called dad's cell. Left voicemail asking for a call back regarding behavior."
 
-That is all you need. Do not write about how frustrated you are. Keep emotion completely out of your notes. You are building a factual timeline.
+That is all you need. Do not write about how frustrated you are. Keep emotion completely out of your notes. You are building a factual timeline. If you want a ready-made page for these entries, our free [printable parent contact log](/tools/parent-communication-log) has columns for the date, the method, and whether you reached anyone.
 
 ---
 

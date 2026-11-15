@@ -1,5 +1,5 @@
 ---
-title: "Free Parent Communication Log for Teachers (Printable + Digital)"
+title: "What Is a Parent Communication Log? What to Write After Every Parent Contact"
 subtitle: "Stop trying to remember who you called, what you said, and what you promised to follow up on."
 date: "2026-04-24"
 author: "Gregory Lebed"
