@@ -177,7 +177,7 @@ export default function ParentLogClient() {
             Want your parent communication log built into your daily routine?{' '}
             <span className={styles.screenOnly}>
               <TrackedLink
-                href="https://app.getshorthandapp.com"
+                href="https://app.getshorthandapp.com?demo=true"
                 label="app"
                 ctaSource="parent-communication-log-footer"
                 className={styles.footerNoteLink}
@@ -237,7 +237,7 @@ export default function ParentLogClient() {
             ShortHand logs every parent contact you make: timestamped, tied to the student, searchable. No separate spreadsheet. No trying to remember what you said in October.
           </p>
           <TrackedLink
-            href="https://app.getshorthandapp.com"
+            href="https://app.getshorthandapp.com?demo=true"
             label="app"
             ctaSource="parent-communication-log-bottom"
             className={styles.ctaButton}
