@@ -52,6 +52,12 @@ export default function FeatureVideo({ videoId, title, start, hideControls, wide
   const thumbUrl = thumbFallback
     ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
     : `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+  // A video with no HD thumbnail gets a 120x90 gray placeholder from maxresdefault
+  // instead of an error, so onError never fires. Checked on mount too, since the
+  // image can finish loading before React hydrates and attaches onLoad.
+  const checkThumb = (img: HTMLImageElement | null) => {
+    if (img?.complete && img.naturalWidth > 0 && img.naturalWidth <= 120) setThumbFallback(true);
+  };
   const embedSrc = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1${hideControls ? '&controls=0' : ''}${start ? `&start=${start}` : ''}`;
 
   useEffect(() => {
@@ -105,6 +111,8 @@ export default function FeatureVideo({ videoId, title, start, hideControls, wide
               src={thumbUrl}
               alt={title}
               loading={wide ? 'lazy' : undefined}
+              ref={checkThumb}
+              onLoad={(e) => checkThumb(e.currentTarget)}
               onError={() => setThumbFallback(true)}
             />
             <span className="feature-video-play">▶</span>
