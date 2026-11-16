@@ -661,7 +661,7 @@ export default function Home() {
               },
               {
                 q: 'What is ShortHand?',
-                a: 'ShortHand is a behavior and parent-communication tool built for K-12 teachers. Log what happened in seconds, then turn those notes into parent emails, progress reports, and meeting-ready summaries whenever you need them.',
+                a: 'ShortHand is a behavior and parent-communication tool built for K-12 teachers. Log what happened in seconds, then turn those notes into parent emails, progress reports, and meeting-ready summaries whenever you need them. It is also a quick way to keep anecdotal notes: short, dated observations filed under each student.',
               },
               {
                 q: 'Do I need to download anything?',
