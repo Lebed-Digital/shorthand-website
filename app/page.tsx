@@ -16,6 +16,8 @@ import TrackedLink from '../components/TrackedLink';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
+// Same article as app/press/page.tsx. Also shown on app/modern-preview so both homepage variants match.
+const TECH_LEARNING_URL = 'https://www.techlearning.com/learning/edtech/edtech-show-and-tell-november-2026';
 
 const jobs = [
   {
@@ -363,6 +365,13 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <p style={{ textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-dim)', margin: '1.25rem 0 0' }}>
+            Featured in{' '}
+            <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text)', fontWeight: 600 }}>
+              Tech &amp; Learning&apos;s Edtech Show &amp; Tell
+            </a>
+            , November 2026
+          </p>
         </div>
       </section>
 
@@ -514,7 +523,7 @@ export default function Home() {
               <div className="plan-card-kicker">Free</div>
               <h3 className="plan-card-title">Your classroom</h3>
               <p className="plan-card-body">Create a free account to use ShortHand with your own class. Core documentation stays free.</p>
-              <TrackedLink href="https://app.getshorthandapp.com" label="pricing_free" className="btn-ghost">Create a free account</TrackedLink>
+              <TrackedLink href="https://app.getshorthandapp.com/?signup=1" label="pricing_free" className="btn-ghost">Create a free account</TrackedLink>
             </div>
             <div className="plan-card plan-card--pro">
               <div className="plan-card-kicker">Optional</div>

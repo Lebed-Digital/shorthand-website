@@ -188,7 +188,7 @@ export default function ResourcesPage() {
             ShortHand automatically logs parent contacts, behavior notes, and follow-ups in one searchable timeline. No binders. No spreadsheets. No trying to remember what happened three months ago.
           </p>
           <a
-            href="https://app.getshorthandapp.com"
+            href="https://app.getshorthandapp.com/?signup=1"
             style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.4)' }}
           >
             Try ShortHand Free

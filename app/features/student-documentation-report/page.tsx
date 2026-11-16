@@ -66,7 +66,7 @@ export default function StudentDocumentationReportPage() {
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
         <p className="detail-cta-sub">Included with Pro. Works on any device.</p>
-        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_student-documentation-report">Get Started →</TrackedLink>
+        <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_student-documentation-report">Get Started →</TrackedLink>
       </div>
 
       <Footer />

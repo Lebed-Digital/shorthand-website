@@ -62,7 +62,7 @@ export default function AccommodationsPage() {
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
         <p className="detail-cta-sub">Free to start. Works on any device.</p>
-        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_accommodations">Get Started Free →</TrackedLink>
+        <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_accommodations">Get Started Free →</TrackedLink>
       </div>
 
       <Footer />
