@@ -16,6 +16,8 @@ interface FeatureVideoProps {
   // 16:9 layout for long-form horizontal videos. Default stays the 9:16 Shorts layout.
   wide?: boolean;
   onPlay?: () => void;
+  // Self-hosted thumbnail for a video YouTube never made an HD thumbnail for.
+  thumbnail?: string;
   // Skip the thumbnail and start playing on mount. Only for embeds that mount
   // in response to a click (e.g. a "see how it works" link), never on page load.
   autoPlay?: boolean;
@@ -42,16 +44,16 @@ function loadPlayerApi(): Promise<void> {
   return playerApi;
 }
 
-export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay, autoPlay }: FeatureVideoProps) {
+export default function FeatureVideo({ videoId, title, start, hideControls, wide, onPlay, autoPlay, thumbnail }: FeatureVideoProps) {
   const [mode, setMode] = useState<'facade' | 'iframe' | 'api'>(() =>
     autoPlay && typeof navigator !== 'undefined' ? (needsPlayerApi() ? 'api' : 'iframe') : 'facade'
   );
   const [thumbFallback, setThumbFallback] = useState(false);
   const apiMount = useRef<HTMLDivElement>(null);
 
-  const thumbUrl = thumbFallback
+  const thumbUrl = thumbnail ?? (thumbFallback
     ? `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`
-    : `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
+    : `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`);
   // A video with no HD thumbnail gets a 120x90 gray placeholder from maxresdefault
   // instead of an error, so onError never fires. Checked on mount too, since the
   // image can finish loading before React hydrates and attaches onLoad.

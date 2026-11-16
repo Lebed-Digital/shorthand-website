@@ -4,6 +4,7 @@ interface Clip {
   videoId: string;
   title: string;
   description: string;
+  thumbnail?: string;
 }
 
 // Silent how-to clips (recreated app screens, fictional students). Each square clip was uploaded centered in a
@@ -29,7 +30,7 @@ export default function HowToClips({ heading, clips }: { heading: string; clips:
           <div className="howto-item" key={c.videoId}>
             <h3>{c.title}</h3>
             <p>{c.description}</p>
-            <FeatureVideo videoId={c.videoId} title={c.title} wide hideControls />
+            <FeatureVideo videoId={c.videoId} title={c.title} wide hideControls thumbnail={c.thumbnail} />
           </div>
         ))}
       </div>
