@@ -445,11 +445,11 @@ function FreeToolInner() {
                 ShortHand lets you log quick notes on students throughout the year, then turn those notes into polished reports in one tap. No more starting from scratch each term.
               </p>
               <Link
-                href="https://app.getshorthandapp.com"
+                href="https://app.getshorthandapp.com/?signup=1"
                 style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
                 onClick={(e) => {
                   e.preventDefault();
-                  const destination = withAttribution('https://app.getshorthandapp.com', window.location.pathname, window.location.search);
+                  const destination = withAttribution('https://app.getshorthandapp.com/?signup=1', window.location.pathname, window.location.search);
                   fireCtaClick({ cta_source: 'free_tool', cta_destination: 'app', link_url: destination, event_callback: () => { window.location.href = destination; } });
                   setTimeout(() => { window.location.href = destination; }, 300);
                 }}

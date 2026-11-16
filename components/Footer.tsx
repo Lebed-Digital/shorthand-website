@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { features } from './FeatureNav';
 
 export default function Footer() {
   return (
@@ -9,6 +10,17 @@ export default function Footer() {
       <a href="mailto:info@getshorthandapp.com" className="footer-email">
         info@getshorthandapp.com
       </a>
+      <div className="footer-copy">
+        Features:{' '}
+        {features.map((f, i) => (
+          <span key={f.slug}>
+            {i > 0 && ' · '}
+            <Link href={`/features/${f.slug}`} style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+              {f.label}
+            </Link>
+          </span>
+        ))}
+      </div>
       <div className="footer-copy">
         ShortHand is a product of Lebed Digital LLC.
       </div>

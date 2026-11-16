@@ -5,6 +5,7 @@ import FeatureVideo from '../../components/FeatureVideo';
 import styles from './page.module.css';
 import QuickGridDemo from '../../components/QuickGridDemo';
 import ScrollMotion from './ScrollMotion';
+import MobileMenu from './MobileMenu';
 import { features } from '../../components/FeatureNav';
 
 // No metadata of its own: proxy.ts serves this page at '/' to visitors in the
@@ -14,6 +15,7 @@ import { features } from '../../components/FeatureNav';
 const demo = 'https://app.getshorthandapp.com/?demo=true';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
+const TECH_LEARNING_URL = 'https://www.techlearning.com/learning/edtech/edtech-show-and-tell-november-2026';
 
 // Copied verbatim from the homepage FAQ (app/page.tsx), so both variants make the same claims.
 const FAQ = [
@@ -40,7 +42,7 @@ export default function ModernPreview() {
     <nav className={styles.nav} aria-label="Main navigation">
       <Link href="/" className={styles.logo}><Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority style={{ borderRadius: 9 }} /> ShortHand</Link>
       <div className={styles.links}><a href="#features">Features</a><a href="#walkthrough">Walkthrough</a><Link href="/tools">Free tools</Link><Link href="/blog">Blog</Link></div>
-      <a href="https://app.getshorthandapp.com">Sign in ↗</a>
+      <div className={styles.navRight}><a href="https://app.getshorthandapp.com">Sign in ↗</a><MobileMenu /></div>
     </nav>
     <ScrollMotion><main>
       <section className={styles.hero}>
@@ -60,6 +62,7 @@ export default function ModernPreview() {
           <TrackedLink href={APP_STORE_URL} label="app_store_badge"><Image src="/badges/app-store-badge.svg" alt="Download on the App Store" width={126} height={42} unoptimized /></TrackedLink>
           <TrackedLink href={PLAY_STORE_URL} label="google_play_badge"><Image src="/badges/google-play-badge.png" alt="Get it on Google Play" width={162} height={63} /></TrackedLink>
         </div>
+        <p className={styles.press}>Featured in <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer">Tech &amp; Learning&apos;s Edtech Show &amp; Tell</a>, November 2026</p>
       </section>
       <section id="features" className={styles.features}>
         <div className={styles.sectionIntro} data-reveal><span className={styles.eyebrow}>FROM A QUICK NOTE TO A CLEAR PICTURE</span><h2>Your memory is doing enough.<br /><em>Give it some backup.</em></h2></div>

@@ -9,6 +9,12 @@
 .page .nav a:hover{color:#476d56}
 .logo{font-size:23px;font-weight:700;letter-spacing:-.03em;display:flex;align-items:center;gap:12px}
 .links{display:flex;gap:32px}
+.navRight{display:flex;align-items:center;gap:16px}
+.menuButton{display:none;align-items:center;justify-content:center;width:40px;height:40px;padding:0;background:none;border:1px solid #d9dfd3;border-radius:10px;color:#172d29;cursor:pointer}
+.menuButton:focus-visible{outline:3px solid #ba582f;outline-offset:3px}
+.mobileMenu{position:absolute;top:100%;left:0;right:0;display:flex;flex-direction:column;background:#f8f7f2;border-bottom:1px solid #d9dfd3;box-shadow:0 12px 24px #172d2914;padding:8px 20px 12px}
+.mobileMenu a{padding:14px 0;font-size:16px;border-bottom:1px solid #d9dfd3}
+.mobileMenu a:last-child{border-bottom:none}
 
 .eyebrow{font-size:11px;font-weight:700;letter-spacing:2px;display:inline-flex;gap:10px;align-items:center}
 .eyebrow>span{width:7px;height:7px;border-radius:50%;background:#be613e}
@@ -18,11 +24,13 @@
 .page .button:hover{background:#ec7a3a;transform:translateY(-1px)}
 
 /* Hero: headline left, live demo right. Badges sit under the copy on desktop, after the demo on phones. */
-.hero{max-width:1240px;margin:auto;padding:70px 40px 40px;display:grid;grid-template-columns:1.1fr 1fr;grid-template-areas:"copy demo" "badges demo";column-gap:64px;align-items:start}
+.hero{max-width:1240px;margin:auto;padding:70px 40px 40px;display:grid;grid-template-columns:1.1fr 1fr;grid-template-areas:"copy demo" "badges demo" "press demo";column-gap:64px;align-items:start}
 .heroCopy{grid-area:copy;padding-top:30px}
 .heroDemo{grid-area:demo}
 .badges{grid-area:badges;display:flex;gap:14px;align-items:center;margin-top:28px}
 .badges img{display:block;height:44px;width:auto}
+.press{grid-area:press;margin:18px 0 0;font-size:13px;font-weight:400;color:#4d5f58}
+.page .press a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .hero h1{font-size:clamp(42px,5.2vw,72px);line-height:1.05;letter-spacing:-.04em;font-weight:600;margin:24px 0}
 .heroCopy>p{max-width:520px;font-size:18px;color:#58645e}
 .actions{display:flex;align-items:center;gap:28px;margin:30px 0 18px;font-size:15px;font-weight:600}
@@ -74,12 +82,14 @@
   .page section[id]{scroll-margin-top:85px}
   .page .nav{padding:18px 20px}
   .links{display:none}
-  .hero{grid-template-columns:1fr;grid-template-areas:"copy" "demo" "badges";padding:36px 20px 20px}
+  .menuButton{display:flex}
+  .hero{grid-template-columns:1fr;grid-template-areas:"copy" "demo" "badges" "press";padding:36px 20px 20px}
   .heroCopy{padding-top:0;margin-bottom:36px}
   .hero h1{letter-spacing:-.035em}
   .heroCopy>p{font-size:16px}
   .actions{gap:20px;font-size:14px}
   .badges{justify-content:center}
+  .press{text-align:center}
   .features{padding:65px 20px}
   .cards{grid-template-columns:1fr}
   .cards article{padding:28px 24px 0}

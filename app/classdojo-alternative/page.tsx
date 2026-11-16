@@ -24,7 +24,7 @@ const rows = [
   { feature: 'Mood tracking', dojo: 'None', sh: 'Quick behavior notes with an 8-week activity view' },
   { feature: 'Admin-ready paper trail', dojo: 'No', sh: 'Yes. Every contact logged with date and outcome.' },
   { feature: 'AI summaries', dojo: 'No', sh: 'One-tap behavior summary per student' },
-  { feature: 'Cost', dojo: 'Free (with ads/upsells)', sh: 'Free to start, no ads' },
+  { feature: 'Cost', dojo: 'Free for teachers', sh: 'Free to start, no ads' },
 ];
 
 export default function ClassDojoAlternativePage() {
@@ -60,6 +60,10 @@ export default function ClassDojoAlternativePage() {
           ShortHand is built for middle and high school teachers who need private
           documentation, real parent communication logs, and a paper trail that holds
           up in an IEP meeting or admin conversation.
+        </p>
+        <p className="detail-desc">
+          Teach elementary? ShortHand works for you too. Plenty of K-5 teachers use it for
+          the same reason: private notes instead of public points.
         </p>
 
         <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: 32, marginTop: 16 }}>
@@ -109,7 +113,7 @@ export default function ClassDojoAlternativePage() {
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Try ShortHand free</h2>
         <p className="detail-cta-sub">No credit card. Works on any device. Set up in under 2 minutes.</p>
-        <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="cta_get_started_classdojo-alternative">Get Started Free →</TrackedLink>
+        <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_classdojo-alternative">Get Started Free →</TrackedLink>
         <p style={{ marginTop: '1.5rem', fontSize: '0.9rem' }}>
           <Link href="/#walkthrough" style={{ color: 'var(--accent, #a78bfa)' }}>Want to see it first? Watch the 6-minute walkthrough.</Link>
         </p>
