@@ -145,6 +145,6 @@ If you ever need to pivot back to documenting more serious behaviors, having a s
 
 It is easy to lose track of who you have praised and who is still waiting for their turn in the spotlight. In the busyness of the school day, we tend to focus our attention on the loudest issues.
 
-That is the gap ShortHand was built to close. You log positive student behaviors as they happen, and it keeps a running history of every parent contact, including when you last reached out with good news. When that record is in front of you, the quiet kids stop slipping through.
+That is the gap ShortHand was built to close. You log positive student behaviors as they happen, and it keeps a [running history of every parent contact](/features/parent-communication-log), including when you last reached out with good news. When that record is in front of you, the quiet kids stop slipping through.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true) and see who on your class list has not heard from you yet.

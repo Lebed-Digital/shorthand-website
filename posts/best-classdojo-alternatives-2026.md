@@ -50,7 +50,7 @@ The reasons tend to cluster into a few categories:
 
 I built this one, so take that for what it's worth. I went looking for it first, as a 3rd grade teacher who had been in an IEP meeting without the dates or details to back up what I knew. I couldn't find it, so I made it.
 
-ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood observation, parent contact log, AI-drafted follow-up email.
+ShortHand is built around the problem most behavior apps don't solve: the gap between noticing something, logging it, and communicating with the parent. Everything happens in one place from your phone: behavior note, mood observation, parent contact log, [AI-drafted follow-up email](/features/parent-emails).
 
 Logging takes under 10 seconds. Notes are timestamped and tied to the student. When a parent says "nobody ever told me," you have the record. When an IEP meeting asks for documentation from October, you pull it up in 30 seconds.
 

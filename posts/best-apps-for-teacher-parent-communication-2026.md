@@ -178,7 +178,7 @@ Here's that problem. Every app on this list is built to *send*. None of them is 
 
 So ShortHand is not a messaging platform, and I want to be straightforward that it doesn't compete with the seven tools above on their own ground. It has no announcement feed, no mass messaging, no parent login, no portfolios, and no translation. If what you need is to tell thirty families that tomorrow is crazy sock day, use Remind. If you need translation, use TalkingPoints. If your district runs ParentSquare, use ParentSquare.
 
-What ShortHand does is the part that happens *before and after* the message. You tap a student's name, dictate one sentence about what just happened, and it's dated and filed under that student in under ten seconds. After a phone call, you log the call: timestamped, with a summary and whether follow-up is needed. When it's time to write the parent, it drafts the message from your own notes instead of a blank page. And when a parent says "nobody ever told me," you have the date, the summary, and what was decided.
+What ShortHand does is the part that happens *before and after* the message. You tap a student's name, dictate one sentence about what just happened, and it's dated and filed under that student in under ten seconds. After a phone call, you log the call: timestamped, with a summary and whether follow-up is needed. When it's time to write the parent, it [drafts the message from your own notes](/features/parent-emails) instead of a blank page. And when a parent says "nobody ever told me," you have the date, the summary, and what was decided.
 
 That narrowness is deliberate. The reason the record is fast to search is that there's nothing else in it.
 

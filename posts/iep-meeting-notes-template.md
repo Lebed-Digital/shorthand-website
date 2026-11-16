@@ -100,6 +100,6 @@ This is the most critical step. Within twenty four hours of the meeting, you mus
 
 Sending this message does not have to be a chore. This is exactly why we built [ShortHand](https://app.getshorthandapp.com?demo=true). Instead of composing a lengthy, formal email from scratch, you can use ShortHand to draft a professional follow up message from your meeting notes, then send it through your usual email or school communication platform and log the contact. ShortHand keeps your communication logged and organized in one central place, completely separate from your chaotic email inbox.
 
-You can securely document the agreed upon accommodations directly in the app and follow up with the parents a few weeks later regarding the student's progress. Consistent, accurately documented communication is the best way to ensure an IEP is genuinely successful for everyone involved.
+You can securely [document the agreed upon accommodations](/features/accommodations) directly in the app and follow up with the parents a few weeks later regarding the student's progress. Consistent, accurately documented communication is the best way to ensure an IEP is genuinely successful for everyone involved.
 
 Copy the text template above into your digital notes app today, start taking better meeting notes immediately, and use your available tools to make the entire parent follow up process effortless.

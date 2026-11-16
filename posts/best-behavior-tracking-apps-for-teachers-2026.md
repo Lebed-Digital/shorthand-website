@@ -123,7 +123,7 @@ But it requires school-wide buy-in, admin setup, and a points economy that someo
 
 ShortHand is built around the problem most behavior tracking apps don't solve: the gap between noticing something, logging it, and communicating with parents about it. Everything happens in one place, from your phone.
 
-Log a behavior note in seconds with pre-set tags (so you're not typing from scratch mid-lesson). Add a note about a mood observation when it's useful. Log parent contact right after a call, timestamped, tied to the student, searchable later. When a parent says "nobody ever told me," you have the date, the summary, and what was decided, all in one screen.
+[Log a behavior note in seconds](/features/quick-note) with pre-set tags (so you're not typing from scratch mid-lesson). Add a note about a mood observation when it's useful. Log parent contact right after a call, timestamped, tied to the student, searchable later. When a parent says "nobody ever told me," you have the date, the summary, and what was decided, all in one screen.
 
 A few things that make it different:
 
