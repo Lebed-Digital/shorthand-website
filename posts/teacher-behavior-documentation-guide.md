@@ -89,7 +89,7 @@ Paper works. But it gets lost, left at school, and is hard to search when you ne
 
 If your documentation leans more toward anecdotal and skill observations than incidents, [Student Observation Apps: What Actually Works](/blog/best-student-observation-apps-for-teachers) compares paper, spreadsheets, forms, and dedicated apps against the only test that matters: whether you can use them mid-lesson.
 
-[ShortHand](/) was built specifically for this problem. You log a behavior note in a few seconds from your phone, right after it happens, without opening a laptop or filling out a form. Over time those quick notes become a searchable, timestamped record.
+[ShortHand](/) was built specifically for this problem. With the [Quick Grid](/features/quick-note), you log a behavior note in a few seconds from your phone, right after it happens, without opening a laptop or filling out a form. Over time those quick notes become a searchable, timestamped record.
 
 ---
 

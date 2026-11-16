@@ -96,6 +96,8 @@ In my experience, that last part is the easiest one to get wrong, so every examp
 
 **Why it works:** It records the error, the self-correction, and what the student said, in order. It isn't a formal running record, but it captures the same kind of detail in three sentences.
 
+*A quick aside: if your paper notes tend to end up in a pile you never get back to, this is the kind of note ShortHand's [Quick Grid](/features/quick-note) is built for. You tap the student, add a tag, and type what you saw, and it's dated and saved to that student's history. More on where it fits (and where it doesn't) at the end.*
+
 ### 4. Punctuation in a writing draft (2nd grade, writing)
 
 > **10/22, 1:10 p.m. Writing workshop, personal narrative draft.**
