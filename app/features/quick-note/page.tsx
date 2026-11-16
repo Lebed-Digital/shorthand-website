@@ -9,12 +9,12 @@ import HowToClips from '../../../components/HowToClips';
 import Footer from '../../../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Quick Grid | ShortHand',
-  description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes classroom behavior notes fast enough to log while you’re still teaching.',
+  title: 'Quick Grid: Anecdotal Notes in a Few Taps | ShortHand',
+  description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes anecdotal notes on student behavior fast enough to log while you’re still teaching.',
   alternates: { canonical: 'https://getshorthandapp.com/features/quick-note' },
   openGraph: {
-    title: 'Quick Grid | ShortHand',
-    description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes classroom behavior notes fast enough to log while you’re still teaching.',
+    title: 'Quick Grid: Anecdotal Notes in a Few Taps | ShortHand',
+    description: 'Tap a student, tap what you saw, and save. ShortHand’s Quick Grid makes anecdotal notes on student behavior fast enough to log while you’re still teaching.',
     url: 'https://getshorthandapp.com/features/quick-note',
     type: 'website',
     images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
@@ -61,8 +61,8 @@ export default function QuickNotePage() {
         </p>
         <p className="detail-desc">
           The faster it is to log, the more likely you are to actually do it. Over time,
-          those quick notes give you a clearer picture of each student and better information
-          for parent conversations, meetings, and reports.
+          those quick entries add up to dated anecdotal notes on each student, with better
+          information for parent conversations, meetings, and reports.
         </p>
 
         <QuickGridDemo />
