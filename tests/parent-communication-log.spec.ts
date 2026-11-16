@@ -2,6 +2,8 @@ import { expect, test } from '@playwright/test';
 
 test('parent communication log: fill fields, add rows, and toggle print view', async ({ page }) => {
   await page.goto('http://localhost:3000/tools/parent-communication-log');
+  // Scope to the fillable log: the example-entries table below it has its own rows.
+  const logRows = page.locator('table').first().locator('tbody tr');
 
   await expect(page.getByRole('heading', { name: 'Free Parent Communication Log' })).toBeVisible();
 
@@ -19,17 +21,17 @@ test('parent communication log: fill fields, add rows, and toggle print view', a
     'Left VM about missing homework.'
   );
 
-  const rowsBefore = await page.locator('tbody tr').count();
+  const rowsBefore = await logRows.count();
   expect(rowsBefore).toBe(10);
 
   await page.getByRole('button', { name: '+ Add 5 rows' }).click();
-  await expect(page.locator('tbody tr')).toHaveCount(15);
+  await expect(logRows).toHaveCount(15);
 
   // First row's data survives the row-count change (state keyed correctly).
   await expect(page.getByPlaceholder('Student name').first()).toHaveValue('Jordan P.');
 
   await page.getByRole('button', { name: '+ Add 5 more rows' }).click();
-  await expect(page.locator('tbody tr')).toHaveCount(20);
+  await expect(logRows).toHaveCount(20);
 
   // Print stylesheet: nav/toolbar/CTA hidden, print-only footer text shown.
   await page.emulateMedia({ media: 'print' });
@@ -59,7 +61,7 @@ test('parent communication log: fill fields, add rows, and toggle print view', a
   await expect(page.getByPlaceholder('What was discussed / decided').first()).toHaveValue(
     'Left VM about missing homework.'
   );
-  await expect(page.locator('tbody tr')).toHaveCount(20);
+  await expect(logRows).toHaveCount(20);
 
   // Guard against the actual root cause of the blank-print bug: a global
   // fixed, full-viewport pseudo-element (app/globals.css `body::after`) with

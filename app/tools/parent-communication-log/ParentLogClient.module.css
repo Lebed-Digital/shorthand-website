@@ -229,6 +229,44 @@
   display: none;
 }
 
+.guideSection {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 8px 16px 32px;
+}
+
+.guideTitle {
+  font-size: 19px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.guideSubtitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin: 20px 0 12px;
+}
+
+.guideText,
+.guideList {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+
+.guideList {
+  padding-left: 20px;
+}
+
+.table td.exampleCell {
+  padding: 8px 10px;
+  color: #334155;
+  vertical-align: top;
+}
+
 .ctaSection {
   max-width: 960px;
   margin: 0 auto;
@@ -305,6 +343,7 @@
   }
 
   .addMoreRow,
+  .guideSection,
   .ctaSection {
     display: none;
   }
