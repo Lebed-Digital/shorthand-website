@@ -47,3 +47,48 @@ Custom PostHog events go through `captureEvent()` in `lib/posthog-events.ts` and
 Feature flags are on for the experiments listed in `EXPERIMENTS` in `lib/posthog-events.ts` and for nothing else. A component reads one through `experimentVariant()` and `experimentSeen()` in that file, never through the SDK. The flag request is the one PostHog request that does not pass through `before_send`, so anything new that could ride on it needs its own check in `tests/manual/posthog-privacy-check.mjs`. PostHog's no-code web experiments, surveys and tours stay off.
 
 Do not call `posthog.identify()` anywhere on this site. Do not loosen the settings in `instrumentation-client.ts` without reading its comments: several exist because a PostHog dashboard toggle would otherwise override the code. The privacy policy describes this behavior, so that file and `app/privacy/page.tsx` change together. After any such change, and after upgrading `posthog-js`, run the browser check described at the top of `tests/manual/posthog-privacy-check.mjs`: the masking depends on SDK behavior that unit tests cannot see.
+
+## Deploys
+This Vercel project (`shorthand-website`) has working Git integration: pushing a branch builds its preview, and merging to `main` deploys production within seconds. **Do not run `vercel deploy` here.** It only creates a second identical deployment that burns Deployment Storage (happened 2026-09-20, commit `94d7a03`). The app repo (`pulse 2.0`, Vercel project `pulse-3`) is the opposite: CLI-only.
+
+## SEO and AEO rules (ShortHand website)
+
+These apply to every page and blog post. Do not skip any of these when adding new content.
+
+### Date format — critical
+- Frontmatter `date` must be bare `YYYY-MM-DD` — no time, no timezone, no `T`
+- The sitemap generator appends `T12:00:00` automatically — if the date already has a `T` it crashes the build
+- Full ISO dates (with `T`) are only allowed inside `schema.org` JSON-LD blocks
+
+### Schema / JSON-LD rules
+- `SoftwareApplication` and `Organization` schemas live in `app/layout.tsx` — do not move them to individual pages
+- `BlogPosting` schema goes in each blog post's `page.tsx` — not in layout (would inject on every page including privacy/terms)
+- `FAQPage` schema is NOT used — restricted to government/health sites, invalid for this site
+- Self-canonicals (`alternates: { canonical: url }`) required on every page including /privacy, /terms, /dpa
+
+### AI crawler rules (robots.ts)
+The following crawlers are explicitly allowed: GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, Applebot-Extended
+CCBot is blocked (scraper, not a search bot)
+When adding new AI search crawlers, add them to `app/robots.ts`
+
+### AEO (Answer Engine Optimization)
+- Every blog post needs an FAQ section with 3-4 questions teachers would actually Google
+- FAQ answers should be under 100 words, specific, and directly answer the question — written to be lifted verbatim by AI answer engines
+- No hidden keyword sections — Google flags these as spam, they were removed May 2026
+- `llms.txt` exists at `/llms.txt` — keeps ChatGPT Search and Perplexity crawling the site
+
+### Internal linking
+- Every new blog post needs 2-4 internal links to related posts
+- Hub pages exist for 4 clusters: parent comms, behavior documentation, ClassDojo alternatives, teacher workload/burnout
+- New posts should link to the relevant hub page and at least one spoke post
+- Orphan posts (no internal links pointing to them) hurt SEO — always check after adding a post
+
+### Performance
+- YouTube embeds must use the facade pattern: thumbnail + play button, swap to iframe on click with `?autoplay=1`
+- Never embed a raw YouTube `<iframe>` on a marketing page — kills LCP score
+- Blog tables must be wrapped in `overflow-x: auto` div for mobile
+
+### OG / metadata
+- Every page needs: title, description, OG title, OG description, OG image, canonical, twitter card
+- Twitter card type: `summary_large_image` (not `summary`)
+- OG image: `/og-image-v2.png` (1200x630, SH TEACHERS branding, PR #137, 2026-10-21). The old `/og-image.png` and `/og-image.webp` are the pre-rebrand notebook art, unreferenced, kept pending cleanup. Do not point new pages at them. Next time the artwork changes, use a new filename (`-v3`) so link-preview caches refetch.
