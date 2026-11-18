@@ -21,6 +21,18 @@ This is a manual check by deliberate choice. Branch protection requiring up-to-d
 
 Why it matters: two open PRs in August 2026 each held the correct intended change but had gone stale. One would have silently reverted billing and data-retention disclosures; the other would have deleted `app/delete-account/page.tsx`, the Google Play compliance page, with no build error to warn anyone. GitHub shows no staleness warning, and the merge button looks identical whether a branch is one commit behind or forty.
 
+## Review before asking Greg to check a preview
+Pick the tier by what the change touches, not its size. The highest tier wins; when unsure, go one up.
+
+- **Light: no independent review.** Blog posts and other content markdown (`posts/`, `docs/`, `plans/`), images, and text or styling-only edits.
+- **Medium: one `/code-review medium` pass.** Any other code: pages, components, `app/tools/**`, `app/resources/**`, `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`, `next.config.ts` redirects. The pass reviews with fresh context and only reports. Judge each finding, fix the real ones, rerun the checks. No second pass.
+- **Critical: Codex review at high effort.** `app/api/**` (rate limits, report-card checkout and access), `supabase/**`, `proxy.ts`, the PostHog privacy surface (`instrumentation-client.ts`, `lib/posthog-*`), the privacy, terms, DPA and delete-account pages, and any page where a visitor types personal information. Follow the app repo's `/codex-review` procedure (`c:\Projects\pulse 2.0\.claude\skills\codex-review\SKILL.md`); its `npm run lint`, `test` and `build` steps exist here too. If that file is not on this machine, say so and ask Greg instead of skipping the review. Two Codex passes maximum.
+- Never both Codex and `/code-review` on one change unless Greg asks.
+
+**Ready for Greg:** for a code change, `npm run lint`, `npm run test` and `npm run build` pass locally (this repo has no CI, so this is the only check besides Vercel's build), the tier's review is done, and the PR description has one `Review:` line saying what ran and how it ended, for example `Review: /code-review medium, 2 findings, both fixed` or `Review: none (Light)`.
+
+This ends where Greg's preview check begins. `/ship`, the content self-merge exception and every other merge rule in the global instructions are unchanged.
+
 <!-- BEGIN:nextjs-agent-rules -->
 # This is NOT the Next.js you know
 
