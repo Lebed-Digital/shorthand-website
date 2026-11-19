@@ -1,6 +1,6 @@
 # Plan: "For School IT" page + teacher approval email (`/for-schools`)
 
-Date: 2026-11-18. Status: PLAN, Codex-reviewed once (high), awaiting Greg's approval. Nothing built.
+Date: 2026-11-18. Status: SHIPPED 2026-11-19, PR #183 (e7beb34). Greg approved the DPA summary-box link and the Supabase host; OpenAI optional sharing off and Groq ZDR on, confirmed by Greg 2026-11-19. DPA §3 vs §7 conflict fixed separately in PR #182.
 Source: `Brain/District Blocking Audit - 2026-11-18.md` (recommendations 1 and 3).
 
 ## Why
