@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/delete-account`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/dpa`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${base}/for-schools`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/support`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
   ];
 }

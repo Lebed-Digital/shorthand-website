@@ -58,6 +58,9 @@ export default function DpaPage() {
               <a href="mailto:info@getshorthandapp.com?subject=Signed%20DPA%20request" style={{ color: 'var(--accent)', fontWeight: 600 }}>Request a signed DPA →</a>{' '}
               Email <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--accent)' }}>info@getshorthandapp.com</a>{' '}with your district name and we&apos;ll return a countersigned copy within 2 business days. The full agreement terms are below.
             </p>
+            <p style={{ color: 'var(--text-dim)', lineHeight: 1.6, margin: '0.75rem 0 0' }}>
+              District IT and privacy staff: <Link href="/for-schools" style={{ color: 'var(--accent)' }}>see how ShortHand handles student data, parent communication, and AI</Link>.
+            </p>
           </div>
 
           <div className="privacy-card">

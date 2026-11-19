@@ -42,6 +42,10 @@ export default function Footer() {
           Terms of Service
         </Link>{' '}
         ·{' '}
+        <Link href="/for-schools" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+          For Schools
+        </Link>{' '}
+        ·{' '}
         <Link href="/support" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Support
         </Link>{' '}
