@@ -67,10 +67,10 @@ export default function DpaPage() {
             <div className="privacy-icon">1️⃣</div>
             <div className="privacy-title">Definitions</div>
             <div className="privacy-desc">
-              <strong style={{ color: 'var(--text)' }}>"School" or "District"</strong> means the educational institution entering into this agreement.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>"ShortHand"</strong> means Lebed Digital LLC, the operator of the ShortHand application.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>"Student Data"</strong> means any personally identifiable information (PII) related to students that is entered into ShortHand by school personnel, including but not limited to: student names, behavioral notes, parent contact information, and class assignments.<br /><br />
-              <strong style={{ color: 'var(--text)' }}>"Authorized Users"</strong> means teachers and school staff who have been granted access to ShortHand by the School.
+              <strong style={{ color: 'var(--text)' }}>&quot;School&quot; or &quot;District&quot;</strong> means the educational institution entering into this agreement.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>&quot;ShortHand&quot;</strong> means Lebed Digital LLC, the operator of the ShortHand application.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>&quot;Student Data&quot;</strong> means any personally identifiable information (PII) related to students that is entered into ShortHand by school personnel, including but not limited to: student names, behavioral notes, parent contact information, and class assignments.<br /><br />
+              <strong style={{ color: 'var(--text)' }}>&quot;Authorized Users&quot;</strong> means teachers and school staff who have been granted access to ShortHand by the School.
             </div>
           </div>
 
@@ -79,17 +79,17 @@ export default function DpaPage() {
             <div className="privacy-title">Scope and Purpose</div>
             <div className="privacy-desc">
               ShortHand processes Student Data solely to provide the services described in the ShortHand application: classroom note-taking, behavior tracking, AI-assisted features (automatic note tagging, report and message drafting, summaries, and roster and calendar imports), and related teacher productivity features.<br /><br />
-              ShortHand acts as a "School Official" under FERPA with a legitimate educational interest, processing Student Data only on behalf of and under the instructions of the School.
+              ShortHand acts as a &quot;School Official&quot; under FERPA with a legitimate educational interest, processing Student Data only on behalf of and under the instructions of the School.
             </div>
           </div>
 
           <div className="privacy-card">
             <div className="privacy-icon">3️⃣</div>
-            <div className="privacy-title">ShortHand's Obligations</div>
+            <div className="privacy-title">ShortHand&apos;s Obligations</div>
             <div className="privacy-desc">
               ShortHand agrees to:<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Not sell Student Data</strong> to any third party for any purpose.<br /><br />
-              • <strong style={{ color: 'var(--text)' }}>Not use Student Data for advertising</strong> or to build profiles on students outside the School's educational context.<br /><br />
+              • <strong style={{ color: 'var(--text)' }}>Not use Student Data for advertising</strong> or to build profiles on students outside the School&apos;s educational context.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Not share Student Data</strong> with third parties except subprocessors necessary to operate the service (listed in Section 6).<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Implement appropriate security measures</strong> including encryption at rest (AES-256), encryption in transit (TLS), and row-level access controls.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Notify the School</strong> within 72 hours of becoming aware of a data breach affecting Student Data.<br /><br />
@@ -100,7 +100,7 @@ export default function DpaPage() {
 
           <div className="privacy-card">
             <div className="privacy-icon">4️⃣</div>
-            <div className="privacy-title">School's Obligations</div>
+            <div className="privacy-title">School&apos;s Obligations</div>
             <div className="privacy-desc">
               The School agrees to:<br /><br />
               • Ensure that Authorized Users have appropriate authorization to enter Student Data into ShortHand.<br /><br />
@@ -113,10 +113,10 @@ export default function DpaPage() {
             <div className="privacy-icon">5️⃣</div>
             <div className="privacy-title">Data Retention and Deletion</div>
             <div className="privacy-desc">
-              Student Data is retained only as long as the Authorized User's account is active.<br /><br />
+              Student Data is retained only as long as the Authorized User&apos;s account is active.<br /><br />
               Teachers can delete all Student Data at any time from within the app (Settings → Danger Zone → Factory Wipe).<br /><br />
               Teachers can permanently delete their account and all Student Data (Settings → Danger Zone → Delete My Account).<br /><br />
-              Upon written request from the School, ShortHand will delete all Student Data associated with the School's Authorized Users within 30 days.
+              Upon written request from the School, ShortHand will delete all Student Data associated with the School&apos;s Authorized Users within 30 days.
             </div>
           </div>
 
@@ -150,7 +150,7 @@ export default function DpaPage() {
             <div className="privacy-icon">🍁</div>
             <div className="privacy-title">Canadian Teachers (PIPEDA)</div>
             <div className="privacy-desc">
-              ShortHand is used by teachers across Canada. Canadian privacy law (PIPEDA and provincial equivalents such as BC's FIPPA and Quebec's Law 25) imposes stricter requirements than US federal law in some areas.<br /><br />
+              ShortHand is used by teachers across Canada. Canadian privacy law (PIPEDA and provincial equivalents such as BC&apos;s FIPPA and Quebec&apos;s Law 25) imposes stricter requirements than US federal law in some areas.<br /><br />
               Key points for Canadian schools:<br /><br />
               • <strong style={{ color: 'var(--text)' }}>Data location:</strong> Student data is stored on US servers (AWS us-east-1). Schools in provinces with strict data residency rules should review this with their IT department before using ShortHand. Contact us to discuss options.<br /><br />
               • <strong style={{ color: 'var(--text)' }}>AI processing:</strong> Note text is sent to OpenAI (a US-based provider) when a note is saved without manually chosen tags, and when a teacher uses an AI feature such as a report, summary, or import. Imports can include full student names and parent or guardian contact details. Groq (also US-based) is an approved fallback if an OpenAI request fails. No student PII is used to train AI models.<br /><br />
@@ -173,9 +173,9 @@ export default function DpaPage() {
             <div className="privacy-icon">9️⃣</div>
             <div className="privacy-title">Term and Termination</div>
             <div className="privacy-desc">
-              This agreement is effective upon the School's first use of ShortHand and remains in effect until terminated.<br /><br />
+              This agreement is effective upon the School&apos;s first use of ShortHand and remains in effect until terminated.<br /><br />
               Either party may terminate this agreement with 30 days written notice.<br /><br />
-              Upon termination, ShortHand will delete all Student Data associated with the School's accounts within 30 days, unless retention is required by law.
+              Upon termination, ShortHand will delete all Student Data associated with the School&apos;s accounts within 30 days, unless retention is required by law.
             </div>
           </div>
 

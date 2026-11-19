@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState, useSyncExternalStore } from 'react';
 import { supabase } from '../lib/supabase';
 
 function storageKey(source: string) {
   return `shorthand_lead_unlocked_${source}`;
 }
+
+const noSubscribe = () => () => {};
 
 export default function LeadGate({
   source,
@@ -14,17 +16,18 @@ export default function LeadGate({
   source: string;
   children: React.ReactNode;
 }) {
-  const [unlocked, setUnlocked] = useState(false);
-  const [checkedStorage, setCheckedStorage] = useState(false);
+  // null on the server and during hydration (renders nothing), then the stored
+  // flag on the client. Same timing as the old mount effect, without setState in it.
+  const storedUnlocked = useSyncExternalStore(
+    noSubscribe,
+    () => window.localStorage.getItem(storageKey(source)) === 'true',
+    () => null,
+  );
+  // Which source was unlocked by submitting here, so a source change re-gates.
+  const [unlockedSource, setUnlockedSource] = useState<string | null>(null);
   const [email, setEmail] = useState('');
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
-
-  useEffect(() => {
-    const alreadyUnlocked = window.localStorage.getItem(storageKey(source)) === 'true';
-    setUnlocked(alreadyUnlocked);
-    setCheckedStorage(true);
-  }, [source]);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -49,11 +52,11 @@ export default function LeadGate({
     }
 
     window.localStorage.setItem(storageKey(source), 'true');
-    setUnlocked(true);
+    setUnlockedSource(source);
   }
 
-  if (!checkedStorage) return null;
-  if (unlocked) return <>{children}</>;
+  if (storedUnlocked === null) return null;
+  if (storedUnlocked || unlockedSource === source) return <>{children}</>;
 
   return (
     <div style={{ minHeight: '100vh', background: '#0f172a', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 24 }}>
