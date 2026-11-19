@@ -365,13 +365,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <p style={{ textAlign: 'center', fontSize: '0.9rem', color: 'var(--text-dim)', margin: '1.25rem 0 0' }}>
-            Featured in{' '}
-            <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text)', fontWeight: 600 }}>
-              Tech &amp; Learning&apos;s Edtech Show &amp; Tell
+          <div style={{ textAlign: 'center', margin: '2rem 0 0' }}>
+            <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#f97316', marginBottom: '0.5rem' }}>
+              As featured in
+            </div>
+            <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text)', textDecoration: 'none' }}>
+              <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', fontWeight: 800, lineHeight: 1.2 }}>Tech &amp; Learning</div>
+              <div style={{ fontSize: '0.95rem', color: 'var(--text-dim)', marginTop: '0.25rem' }}>
+                <span style={{ textDecoration: 'underline' }}>Edtech Show &amp; Tell</span>, November 2026
+              </div>
             </a>
-            , November 2026
-          </p>
+          </div>
         </div>
       </section>
 
