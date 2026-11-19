@@ -36,7 +36,7 @@ export default function DpaPage() {
           in compliance with FERPA, COPPA, and applicable state privacy laws.
         </p>
         <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', marginTop: '0.5rem' }}>
-          Last updated: October 2026
+          Last updated: November 2026
         </p>
       </div>
 
@@ -139,7 +139,7 @@ export default function DpaPage() {
             <div className="privacy-desc">
               ShortHand acknowledges that Student Data shared by a School may be subject to FERPA (20 U.S.C. § 1232g).<br /><br />
               ShortHand agrees to use Student Data only for the purposes for which it was disclosed (providing classroom management services to Authorized Users) and for no other purpose.<br /><br />
-              ShortHand will not re-disclose Student Data to any party other than the School or its Authorized Users without prior written consent from the School.
+              ShortHand will not re-disclose Student Data to any party other than the School or its Authorized Users without prior written consent from the School, except to the subprocessors listed in Section 6, for the purposes described there and only as needed to provide ShortHand.
             </div>
           </div>
 
