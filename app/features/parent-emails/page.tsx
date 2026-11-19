@@ -39,7 +39,7 @@ export default function ParentCommunicationPage() {
           Turn behavior notes into parent-ready messages in seconds.
         </p>
         <p className="detail-desc">
-          Log what happened during the day. ShortHand turns those notes into a professional parent email that's ready to review and send. Parent email address, subject line, and message body: all filled in automatically.
+          Log what happened during the day. ShortHand turns those notes into a professional parent email that&apos;s ready to review and send. Parent email address, subject line, and message body: all filled in automatically.
         </p>
         <p className="detail-desc">
           Need something more formal? Generate a detailed behavior report from the same notes in one click.

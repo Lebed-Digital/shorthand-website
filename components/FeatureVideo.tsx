@@ -109,6 +109,8 @@ export default function FeatureVideo({ videoId, title, start, hideControls, wide
       ) : (
         <>
           <button className="feature-video-facade" onClick={play} aria-label={`Play ${title}`}>
+            {/* Plain <img> on purpose: YouTube thumbnail facade with its own onLoad/onError fallback logic. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={thumbUrl}
               alt={title}

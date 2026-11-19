@@ -127,17 +127,30 @@ function buildPrompt(name: string, selected: Set<string>, extra: string, length:
   return parts.filter(Boolean).join(' ');
 }
 
+// Minimal shape of the Web Speech API we use. TypeScript's DOM lib does not
+// ship SpeechRecognition types.
+type SpeechRec = {
+  continuous: boolean;
+  interimResults: boolean;
+  onresult: (e: { results: { [i: number]: { [j: number]: { transcript: string } } } }) => void;
+  onend: () => void;
+  start: () => void;
+  stop: () => void;
+};
+type SpeechRecCtor = new () => SpeechRec;
+
 function useSpeechToText(onResult: (text: string) => void) {
   const [listening, setListening] = useState(false);
-  const recRef = useRef<any>(null);
+  const recRef = useRef<SpeechRec | null>(null);
   function toggle() {
-    const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition;
+    const w = window as unknown as { SpeechRecognition?: SpeechRecCtor; webkitSpeechRecognition?: SpeechRecCtor };
+    const SR = w.SpeechRecognition ?? w.webkitSpeechRecognition;
     if (!SR) return;
     if (listening) { recRef.current?.stop(); return; }
     const rec = new SR();
     rec.continuous = false;
     rec.interimResults = false;
-    rec.onresult = (e: any) => onResult(e.results[0][0].transcript);
+    rec.onresult = (e) => onResult(e.results[0][0].transcript);
     rec.onend = () => setListening(false);
     rec.start();
     recRef.current = rec;
@@ -206,7 +219,7 @@ function FreeToolInner() {
   function toggle(id: string) {
     setSelected((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) next.delete(id); else next.add(id);
       return next;
     });
   }
@@ -250,7 +263,7 @@ function FreeToolInner() {
       setResult(await callApi(prompt, 'generate'));
       setGeneratedFrom(prompt);
     }
-    catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
+    catch (e) { setError((e as Error).message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
 
@@ -264,7 +277,7 @@ function FreeToolInner() {
         : 'Make it sound more natural and human. Less generic.';
       const prompt = `Here is a report card comment: "${result}"\n\nRewrite it based on these instructions: ${instructions}\n\nKeep the same student name (if any) and same length. Never use em dashes under any circumstances.`;
       setResult(await callApi(prompt, 'refine'));
-    } catch (e: any) { setError(e.message ?? 'Something went wrong. Please try again.'); }
+    } catch (e) { setError((e as Error).message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
 

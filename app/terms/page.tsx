@@ -37,7 +37,7 @@ export default function TermsPage() {
       <div className="detail-body" style={{ maxWidth: '720px', margin: '0 auto', padding: '0 1.5rem 4rem' }}>
 
         <h2>1. Acceptance of Terms</h2>
-        <p>By accessing or using ShortHand ("the App"), you agree to be bound by these Terms of Service. ShortHand is an application for K-12 teachers designed to support behavior documentation, student progress tracking, and parent communication. If you do not agree to these terms, please do not use the App.</p>
+        <p>By accessing or using ShortHand (&quot;the App&quot;), you agree to be bound by these Terms of Service. ShortHand is an application for K-12 teachers designed to support behavior documentation, student progress tracking, and parent communication. If you do not agree to these terms, please do not use the App.</p>
 
         <h2>2. Description of Service</h2>
         <p>ShortHand is an education technology tool built for K–12 teachers. It provides tools for:</p>
@@ -61,7 +61,7 @@ export default function TermsPage() {
         <ul>
           <li>Use the App only for lawful educational purposes</li>
           <li>Not share your account credentials with unauthorized parties</li>
-          <li>Ensure your use complies with your school or district's policies</li>
+          <li>Ensure your use complies with your school or district&apos;s policies</li>
           <li>Not store personally identifiable student information beyond what is necessary for your professional duties</li>
         </ul>
 
@@ -69,7 +69,7 @@ export default function TermsPage() {
         <p>All content, features, and functionality of ShortHand (including but not limited to software, text, graphics, and design) are owned by Lebed Digital LLC and protected by applicable intellectual property laws.</p>
 
         <h2>7. Disclaimer of Warranties</h2>
-        <p>ShortHand is provided "as is" without warranties of any kind, either express or implied. We do not warrant that the App will be error-free or uninterrupted.</p>
+        <p>ShortHand is provided &quot;as is&quot; without warranties of any kind, either express or implied. We do not warrant that the App will be error-free or uninterrupted.</p>
 
         <h2>8. Limitation of Liability</h2>
         <p>To the maximum extent permitted by law, Lebed Digital LLC shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
