@@ -6,7 +6,7 @@ const APPROVAL_EMAIL = `Subject: Request to Review ShortHand Classroom Documenta
 
 Hello,
 
-I'd like to request approval to use ShortHand, a classroom documentation app built by an elementary school teacher.
+I'd like to request approval to use ShortHand, a classroom documentation app built by a practicing public school teacher.
 
 It helps teachers organize student observations and prepare parent communications. It does not send emails or messages to parents on its own, and students do not use it or have accounts.
 
