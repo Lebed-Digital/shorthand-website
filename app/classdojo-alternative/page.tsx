@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import TrackedLink from '../../components/TrackedLink';
+import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'ClassDojo Alternative for Middle & High School Teachers | ShortHand',
@@ -119,12 +120,7 @@ export default function ClassDojoAlternativePage() {
         </p>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Simple Teacher AI</a></div>
-      </footer>
+      <Footer />
     </>
   );
 }
