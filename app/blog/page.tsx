@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     description: 'Practical guides on documenting student behavior, spotting patterns, and communicating with parents, from a K-12 teacher who built ShortHand to solve his own paperwork problem.',
     url: 'https://getshorthandapp.com/blog',
     type: 'website',
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
   alternates: { canonical: 'https://getshorthandapp.com/blog' },
 };

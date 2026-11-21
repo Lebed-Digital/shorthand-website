@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 const rows = [
-  { feature: 'Target grade level', dojo: 'K–5 (designed for young kids)', sh: 'Middle & high school' },
+  { feature: 'Target grade level', dojo: 'K–5 (designed for young kids)', sh: 'K-12, including middle and high school' },
   { feature: 'Behavior visibility', dojo: 'Public points on a class display', sh: 'Private notes, never displayed to class' },
   { feature: 'Parent updates', dojo: 'Social-media style feed', sh: '2-click professional message, logged automatically' },
   { feature: 'Documentation', dojo: 'Basic activity log', sh: 'Timestamped notes, IEP flags, exportable history' },

@@ -317,6 +317,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       {exampleType && <BlogExampleCopyTracker exampleType={exampleType} />}
       {slug === BLOG_CTA_EXPERIMENT_POST && <BlogCtaExperiment />}
 
+      <main>
       <article style={{ maxWidth: '720px', margin: '0 auto', padding: '6rem 1.5rem 5rem' }}>
         <Link href="/blog" style={{ fontSize: '0.9rem', color: 'var(--text-dim)', textDecoration: 'none', display: 'inline-block', marginBottom: '2rem' }}>
           ← Back to Blog
@@ -493,6 +494,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </TrackedLink>
         </div>
       </article>
+      </main>
 
       <footer>
         <div className="footer-logo">ShortHand</div>
