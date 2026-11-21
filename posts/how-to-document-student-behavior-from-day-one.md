@@ -57,7 +57,7 @@ Memory is not a system. Documentation is.
 
 If you have ever reached Friday afternoon and realized you cannot remember exactly what happened on Monday, you are not alone.
 
-That is why I built ShortHand.
+That is [why I built ShortHand](/blog/why-im-building-shorthand).
 
 Keep behavior notes, parent communication records, and student documentation organized in one place.
 

@@ -63,7 +63,7 @@ These apply to every page and blog post. Do not skip any of these when adding ne
 ### Schema / JSON-LD rules
 - `SoftwareApplication` and `Organization` schemas live in `app/layout.tsx` — do not move them to individual pages
 - `BlogPosting` schema goes in each blog post's `page.tsx` — not in layout (would inject on every page including privacy/terms)
-- `FAQPage` schema is NOT used — restricted to government/health sites, invalid for this site
+- `FAQPage` JSON-LD is emitted on purpose by `app/blog/[slug]/page.tsx` for every post with `faq` frontmatter (kept by Greg, 2026-11-20: valid markup, harmless, readable by non-Google engines). Google does not show FAQ rich results for this site, so expect none. Do not remove it from blog posts, and do not add `FAQPage` to non-blog pages
 - Self-canonicals (`alternates: { canonical: url }`) required on every page including /privacy, /terms, /dpa
 
 ### AI crawler rules (robots.ts)
