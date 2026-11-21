@@ -224,3 +224,18 @@ except pages with no own `openGraph`. Q3: CONFIRMED.
 
 Q1: adequate in healthy operation; outage backstop needs Greg's confirmation. Q2: CONFIRMED with exceptions as
 listed. Q3: see section above. No third pass.
+
+## Implementation record (2026-11-20)
+
+- **PR A #186** `fix/welcome-letter-grade-allowlist` (`b2c0a2e`): as planned. lint, 113/113 tests, build pass.
+  Local `next start` with a dummy key: 5,000-char grade 400, `constructor` 400, `3rd Grade` passes validation
+  (502 from the dummy key). `/codex-review` high, pass 1: `NO_ACTIONABLE_FINDINGS`. Waits for Greg.
+- **PR B #187** `fix/site-footer-metadata-cleanup`: commit 1 `8a04d19` (items 1, 3-9), commit 2 `97ef13e`
+  (footer swap, separate so it can be reverted), commit 3 `57125c0` (comment fix from review). lint, 112/112
+  tests, build pass (a stale `.next/dev/types` cache still listing `/how-it-works` broke the first local build;
+  cleared, not a source issue). Before/after capture of all 128 sitemap pages plus both homepage arms and the CTA
+  post: all plan checks pass, `/how-it-works` 307 to `/#walkthrough`. `/code-review medium`: 5 findings, 1 fixed
+  (layout comment overstated the autofill), 2 rejected (test arm does render `id="walkthrough"`; FAQPage kept per
+  Greg), 2 nits not taken (GA4 arm split would edit the frozen test variant; ClassDojo title/meta stay
+  middle/high per Greg). Waits for Greg.
+- **PR C** `content/link-and-faq-schema-docs`: items 1-4. Self-merged after its build.
