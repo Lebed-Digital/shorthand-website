@@ -4,6 +4,7 @@ import Image from 'next/image';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import { useState } from 'react';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
+import Footer from '../../components/Footer';
 
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
@@ -139,12 +140,7 @@ export default function InstallPage() {
         <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Open ShortHand →</a>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Simple Teacher AI</a></div>
-      </footer>
+      <Footer />
     </>
   );
 }

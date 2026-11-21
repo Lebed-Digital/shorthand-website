@@ -65,7 +65,7 @@ export default function QuickNotePage() {
           information for parent conversations, meetings, and reports.
         </p>
 
-        <QuickGridDemo />
+        <QuickGridDemo ctaSource="features_quick_note" />
 
         <FeatureVideo videoId="7fQrX5eHAsc" title="Quick Grid walkthrough" hideControls />
 

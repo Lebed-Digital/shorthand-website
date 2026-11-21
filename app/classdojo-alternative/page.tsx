@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import TrackedLink from '../../components/TrackedLink';
+import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'ClassDojo Alternative for Middle & High School Teachers | ShortHand',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 const rows = [
-  { feature: 'Target grade level', dojo: 'K–5 (designed for young kids)', sh: 'Middle & high school' },
+  { feature: 'Target grade level', dojo: 'K–5 (designed for young kids)', sh: 'K-12, including middle and high school' },
   { feature: 'Behavior visibility', dojo: 'Public points on a class display', sh: 'Private notes, never displayed to class' },
   { feature: 'Parent updates', dojo: 'Social-media style feed', sh: '2-click professional message, logged automatically' },
   { feature: 'Documentation', dojo: 'Basic activity log', sh: 'Timestamped notes, IEP flags, exportable history' },
@@ -119,12 +120,7 @@ export default function ClassDojoAlternativePage() {
         </p>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Simple Teacher AI</a></div>
-      </footer>
+      <Footer />
     </>
   );
 }

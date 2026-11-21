@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AnimatedLogo from '../../components/AnimatedLogo';
 import { getAllPosts } from '../../lib/posts';
 import BlogSearch from './BlogSearch';
+import Footer from '../../components/Footer';
 
 export const metadata: Metadata = {
   title: 'Blog | ShortHand',
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
     description: 'Practical guides on documenting student behavior, spotting patterns, and communicating with parents, from a K-12 teacher who built ShortHand to solve his own paperwork problem.',
     url: 'https://getshorthandapp.com/blog',
     type: 'website',
+    images: [{ url: 'https://getshorthandapp.com/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
   },
   alternates: { canonical: 'https://getshorthandapp.com/blog' },
 };
@@ -69,12 +71,7 @@ export default function BlogIndex() {
         </BlogSearch>
       </div>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Privacy Policy</a> · <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Simple Teacher AI</a></div>
-      </footer>
+      <Footer />
     </>
   );
 }
