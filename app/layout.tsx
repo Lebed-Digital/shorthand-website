@@ -43,8 +43,10 @@ export const metadata: Metadata = {
     locale: 'en_US',
   },
   // Card type only. Next fills each page's twitter title, description and
-  // image from that page's own openGraph (postProcessMetadata), so a page
-  // without a twitter block no longer inherits the homepage's share text.
+  // image from the page's resolved openGraph (postProcessMetadata). A page
+  // with its own openGraph gets its own share text; a page without one
+  // (privacy, terms, dpa, delete-account, support) still inherits the
+  // homepage openGraph above, for twitter too.
   twitter: {
     card: 'summary_large_image',
   },
