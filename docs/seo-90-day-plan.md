@@ -162,7 +162,7 @@ Pull `gsc_page_performance` + `gsc_query_for_page` for every redirecting URL lis
 | ClassDojo vs Remind post | Head-to-head = distinct intent (mergeNotes), planned Dec | Dec 2026 |
 | IEP service tracking / progress reporting post | Gated on the Aug 13 audit outcome | Nov 2026 |
 | `/blog/free-report-card-comment-generator` fold decision | Kept deliberately 2026-07-17; re-check impressions | Dec 2026 |
-| FAQPage JSON-LD discrepancy (`app/blog/[slug]/page.tsx` emits it; CLAUDE.md says unused) | Deliberately unreconciled; investigate intent before changing either | When Greg asks |
+| ~~FAQPage JSON-LD discrepancy (`app/blog/[slug]/page.tsx` emits it; CLAUDE.md says unused)~~ | RESOLVED 2026-11-20: Greg kept it on blog posts; AGENTS.md now says so | Done |
 | Preschool pair follow-up edits | Differentiation just shipped; measurement window | 2026-10-15 check |
 
 ## What must NOT change, anywhere in this plan
@@ -172,4 +172,4 @@ Pull `gsc_page_performance` + `gsc_query_for_page` for every redirecting URL lis
 - `/blog/special-education-behavior-tracking-software`: unparked 2026-09-04, narrow content/internal-linking pass done. See `seo-query-ownership.md` section 8.
 - Redirected URLs (`/free-tool`, `/blog/classroom-behavior-tracking-apps`, `/blog/5-behavior-management-apps-for-teachers`, the merged report-card URLs): consolidation lag is normal; do nothing.
 - The LeadGate SSR structure on both tool pages (H1/header outside the gate) — regression here re-creates the position-79 disaster.
-- Frontmatter dates stay bare `YYYY-MM-DD` (a `T` crashes the sitemap build). No em dashes in any content. FAQPage schema stays out of new pages.
+- Frontmatter dates stay bare `YYYY-MM-DD` (a `T` crashes the sitemap build). No em dashes in any content. FAQPage schema stays on blog posts and out of non-blog pages (AGENTS.md).
