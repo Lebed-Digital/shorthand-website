@@ -9,7 +9,7 @@ The app reads three entry styles. Each opens a different first screen:
 | Link | First screen | Used on |
 |---|---|---|
 | `https://app.getshorthandapp.com?demo=true` | Live demo with sample students, no account | Blog posts and the blog index, homepage hero and homepage nav "Try the demo", blog nav "Get ShortHand", `/about`, `/install`, `/press`, `/tools`, `/back-to-school-toolkit`, legal pages |
-| `https://app.getshorthandapp.com/?signup=1` | **Create Account** tab | Every body button that promises a new account: "Get Started Free" on all 11 `/features/*` pages and `/classdojo-alternative`, "Create a free account" in the homepage plans section, "Try ShortHand free" on `/report-card-comment-generator`, "Try ShortHand Free" on `/resources` (PR #179, 2026-11-16) |
+| `https://app.getshorthandapp.com/?signup=1` | **Create Account** tab | Every body button that promises a new account: "Get Started Free" on 8 `/features/*` pages and `/classdojo-alternative`, "Get Started" on the 3 Pro feature pages (Ask ShortHand, Meeting Prep Report, Student Documentation Report), "Create a free account" in the homepage plans section, "Try ShortHand free" on `/report-card-comment-generator`, "Try ShortHand Free" on `/resources` (PR #179, 2026-11-16) |
 | `https://app.getshorthandapp.com` (bare) | **Sign In** tab | Nav "Get ShortHand" on all 11 `/features/*` pages and `/classdojo-alternative`, homepage phone menu "Open ShortHand", test homepage "Sign in" |
 
 PR #179 kept the nav "Get ShortHand" buttons bare on purpose (the 2026-07-15 reasoning below: nav buttons get clicked by returning teachers). Whether that still fits the feature pages, which are mostly first visits from search, is an open question for Greg (Website Audit 2026-11-15, item A1).

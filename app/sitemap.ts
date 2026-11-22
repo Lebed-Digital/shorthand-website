@@ -3,7 +3,7 @@ import { getAllPosts } from '../lib/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://getshorthandapp.com';
-  // Static pages carry no lastModified on purpose. `new Date()` here stamped every page
+  // Static pages (including /blog) carry no lastModified on purpose. `new Date()` here stamped every page
   // as changed on every build, which teaches Google to ignore lastmod site-wide, including
   // the real dates on blog posts. Only add a date to a static page if it is kept accurate.
   const blogPosts = getAllPosts().map((post) => {
@@ -17,12 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     };
   });
-
-  // The blog index changes when a post is added or revised, so it can use the newest real date.
-  const newestPost = blogPosts.reduce<Date | undefined>(
-    (latest, p) => (!latest || p.lastModified > latest ? p.lastModified : latest),
-    undefined,
-  );
 
   return [
     { url: base, changeFrequency: 'weekly', priority: 1.0 },
@@ -49,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/press`, changeFrequency: 'monthly', priority: 0.5 },
     { url: `${base}/tools`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/blog`, lastModified: newestPost, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/blog`, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPosts,
     { url: `${base}/privacy`, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/delete-account`, changeFrequency: 'yearly', priority: 0.4 },

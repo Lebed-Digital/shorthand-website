@@ -43,7 +43,7 @@ Re-check the app before adding numbers or new Pro claims to the site.
 
 ## SEO
 
-Blog posts: 94 (as of 2026-11-22)
+Blog posts: 93 (as of 2026-11-22)
 llms.txt exists at /llms.txt
 FAQPage JSON-LD is emitted on blog posts with `faq` frontmatter, on purpose (AGENTS.md)
 BlogPosting JSON-LD on every post page
