@@ -30,6 +30,7 @@ export default function AccommodationsPage() {
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_accommodations">Get ShortHand</TrackedLink>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -65,6 +66,7 @@ export default function AccommodationsPage() {
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_accommodations">Get Started Free →</TrackedLink>
       </div>
 
+      </main>
       <Footer />
     </>
   );

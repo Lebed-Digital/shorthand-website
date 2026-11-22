@@ -70,6 +70,7 @@ export default function PressPage() {
           <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
         </div>
       </nav>
+      <main>
 
       <article style={{ maxWidth: '780px', margin: '0 auto', padding: '6rem 1.5rem 5rem' }}>
         <Link href="/" style={{ fontSize: '0.9rem', color: 'var(--text-dim)', textDecoration: 'none', display: 'inline-block', marginBottom: '2rem' }}>
@@ -139,6 +140,7 @@ export default function PressPage() {
         </div>
       </article>
 
+      </main>
       <Footer />
     </>
   );

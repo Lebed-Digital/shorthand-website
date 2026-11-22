@@ -107,6 +107,7 @@ export default function ToolsPage() {
   return (
     <>
       <BlogNav showLibraryCta={false} />
+      <main>
       <header className="detail-hero" style={{ paddingBottom: 32 }}>
         <h1 className="detail-title">Free Tools <em>for Teachers</em></h1>
         <p className="detail-desc">Write a report card comment, welcome a family, or keep a printable contact log.</p>
@@ -188,6 +189,7 @@ export default function ToolsPage() {
         </div>
 
       </div>
+      </main>
       <Footer />
     </>
   );

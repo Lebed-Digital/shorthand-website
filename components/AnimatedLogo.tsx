@@ -10,7 +10,7 @@ export default function AnimatedLogo() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <Link href="/" className="nav-logo ph-no-capture" style={{ display: 'flex', alignItems: 'center', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
+    <Link href="/" aria-label="ShortHand home" className="nav-logo ph-no-capture" style={{ display: 'flex', alignItems: 'center', letterSpacing: '0.02em', fontFamily: "var(--font-fredoka, sans-serif)", fontWeight: 700 }}>
       <Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority className="nav-logo-icon" />
       {LETTERS.map((letter, i) => (
         <motion.span

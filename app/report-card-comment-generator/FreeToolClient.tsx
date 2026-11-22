@@ -204,6 +204,9 @@ function FreeToolInner() {
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  // Bumped on every failure so a repeated, identical message is re-announced by the alert region.
+  const [errorCount, setErrorCount] = useState(0);
+  const showError = (message: string) => { setError(message); setErrorCount((n) => n + 1); };
   const [copied, setCopied] = useState(false);
   // The prompt that produced `result`. buildPrompt is order-independent and
   // trims text, so comparing prompts tells us whether the inputs changed since
@@ -255,7 +258,7 @@ function FreeToolInner() {
   }
 
   async function generate() {
-    if (selected.size === 0) { setError('Please select at least one option.'); return; }
+    if (selected.size === 0) { showError('Please select at least one option.'); return; }
     setError(''); setResult(''); setLoading(true);
     fireGenerationAttempt('report-card-comment', 'generate');
     try {
@@ -263,7 +266,7 @@ function FreeToolInner() {
       setResult(await callApi(prompt, 'generate'));
       setGeneratedFrom(prompt);
     }
-    catch (e) { setError((e as Error).message ?? 'Something went wrong. Please try again.'); }
+    catch (e) { showError((e as Error).message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
 
@@ -277,7 +280,7 @@ function FreeToolInner() {
         : 'Make it sound more natural and human. Less generic.';
       const prompt = `Here is a report card comment: "${result}"\n\nRewrite it based on these instructions: ${instructions}\n\nKeep the same student name (if any) and same length. Never use em dashes under any circumstances.`;
       setResult(await callApi(prompt, 'refine'));
-    } catch (e) { setError((e as Error).message ?? 'Something went wrong. Please try again.'); }
+    } catch (e) { showError((e as Error).message ?? 'Something went wrong. Please try again.'); }
     finally { setLoading(false); }
   }
 
@@ -299,10 +302,11 @@ function FreeToolInner() {
     <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
 
         <div style={{ background: '#f0f9ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0ea5e9' }}>
-          <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
+          <label htmlFor="rc-student-name" style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
             Student name <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(optional)</span>
           </label>
           <input
+            id="rc-student-name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -371,15 +375,15 @@ function FreeToolInner() {
 
         <div style={{ background: '#faf5ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #a855f7' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-            <label style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            <label htmlFor="rc-extra-details" style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
               Anything else? <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(optional)</span>
             </label>
             <button onClick={extraMic.toggle} style={{ background: extraMic.listening ? '#fee2e2' : 'transparent', border: 'none', cursor: 'pointer', fontSize: 16, padding: '4px 8px', borderRadius: 8 }}>🎤</button>
           </div>
-          <textarea value={extra} onChange={(e) => setExtra(e.target.value)} placeholder="e.g. loves soccer, recently moved schools, made big progress this term" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
+          <textarea id="rc-extra-details" value={extra} onChange={(e) => setExtra(e.target.value)} placeholder="e.g. loves soccer, recently moved schools, made big progress this term" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
         </div>
 
-        {error && <p style={{ color: '#ef4444', fontSize: 13, margin: '0 0 12px' }}>{error}</p>}
+        <div role="alert" aria-atomic="true">{error && <p key={errorCount} style={{ color: '#ef4444', fontSize: 13, margin: '0 0 12px' }}>{error}</p>}</div>
 
         <button onClick={generate} disabled={loading} style={{ width: '100%', background: loading ? '#5eead4' : 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 15, padding: '14px', borderRadius: 14, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit', boxShadow: '0 4px 14px rgba(13,148,136,0.4)', letterSpacing: '0.01em', transition: 'opacity 0.15s' }}>
           {loading ? 'Generating…' : stale ? '↻ Regenerate comment' : 'Generate comment →'}
@@ -413,12 +417,12 @@ function FreeToolInner() {
             />
             <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 16, marginBottom: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
-                <label style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+                <label htmlFor="rc-refine" style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
                   Refine <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(tell AI what to change)</span>
                 </label>
                 <button onClick={refineMic.toggle} style={{ background: refineMic.listening ? '#fee2e2' : 'transparent', border: 'none', cursor: 'pointer', fontSize: 16, padding: '4px 8px', borderRadius: 8 }}>🎤</button>
               </div>
-              <textarea value={refineInstructions} onChange={(e) => setRefineInstructions(e.target.value)} placeholder="e.g. don't mention math, add something about her growth mindset" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
+              <textarea id="rc-refine" value={refineInstructions} onChange={(e) => setRefineInstructions(e.target.value)} placeholder="e.g. don't mention math, add something about her growth mindset" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
               <button onClick={copy} style={{ flex: 1, background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '11px', borderRadius: 10, border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}>

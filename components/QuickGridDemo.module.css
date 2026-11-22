@@ -74,7 +74,8 @@
   padding: 0 4px;
   font-size: 0.6875rem;
   font-weight: 600;
-  color: var(--slate-400);
+  /* slate-600, not the app's slate-400 (2.6:1): this is the demo's only instruction. */
+  color: var(--slate-600);
 }
 
 /* Exactly the app's grid: 4 columns from a 290px content width, else 3. */

@@ -43,6 +43,7 @@ export default function QuickNotePage() {
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_quick-note">Get ShortHand</TrackedLink>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -88,6 +89,7 @@ export default function QuickNotePage() {
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_quick-note">Get Started Free →</TrackedLink>
       </div>
 
+      </main>
       <Footer />
     </>
   );
