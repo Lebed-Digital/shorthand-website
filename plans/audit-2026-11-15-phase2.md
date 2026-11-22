@@ -176,8 +176,11 @@ merges, so the ClassDojo page and `llms.txt` edits do not conflict.
 2. Support opens the Stripe Dashboard, finds the customer by email, and cancels the subscription (immediately or at
    period end).
 3. Stripe sends `customer.subscription.updated` / `customer.subscription.deleted`; `api/billing/stripe-webhook.ts`
-   (handled types in `src/lib/billingWebhook.ts:20-26`) reconciles and writes `user_entitlements.plan`, so the account
-   becomes Free without any manual database step. Notes are untouched.
+   (handled types in `src/lib/billingWebhook.ts:20-26`) reconciles and writes `user_entitlements.plan`. The account
+   becomes Free when paid access ends: right away for an immediate cancel, at period end for a scheduled one (Pro
+   stays active until then). No manual database step. Notes are untouched.
+4. Stripe covers every non-App-Store purchase, including Pro bought in Safari on an iPhone (web checkout is disabled
+   only inside the native iOS app). Only App Store purchases are cancelled in Apple ID settings.
 
 **Separate subscription-management issue (app, not website):** there is no self-service web cancel. The app says
 "Cancel anytime" but the only in-app route is deleting the account. A Stripe Customer Portal exists only in an unmerged
@@ -198,3 +201,14 @@ draft (`bd084ac`). Every web cancellation depends on Greg acting on an email. No
   `llms.txt`).
 - D7 (trivial part): `simpleteacherai.com` to `www.simpleteacherai.com/` in the shared Footer and `/about`; IRIS FBA
   link in `abc-data-examples` to its new address. The two `/privacy` links stay (Critical tier, not trivial).
+
+## Codex code review (Phase 2 diff, one focused pass, medium, 2026-11-22)
+
+| # | Finding (severity) | Verdict |
+|---|---|---|
+| 1 | Pro bought in an iPhone browser is Stripe, not Apple (medium) | Accept: cancel FAQ split by billing provider |
+| 2 | Scheduled period-end cancel keeps Pro until then (medium) | Accept: "when your paid access ends" in FAQ, runbook, CURRENT_STATE |
+| 3 | A note saved today is not in the 8-week chart until the next day (medium) | Accept: chart claim removed from the example |
+| 4 | Drafts over 1,800 characters open shortened (low) | Accept: one sentence added to the FAQ |
+
+Fixed after the single pass; not re-reviewed by Codex (Greg asked for one review).

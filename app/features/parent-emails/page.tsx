@@ -62,7 +62,7 @@ export default function ParentCommunicationPage() {
         <FeatureFaq
           items={[
             { q: 'Are parent emails free?', a: 'Yes. On the free plan you can draft a Quick Note Home or a Detailed Report for one student at a time. Preparing emails for several students at once is part of Pro.' },
-            { q: 'Does ShortHand send the email for me?', a: "No. The draft opens in your mail app or in Gmail with a subject and the parent's address (if you saved one) filled in. You read it, change anything you want, and send it yourself." },
+            { q: 'Does ShortHand send the email for me?', a: "No. The draft opens in your mail app or in Gmail with a subject and the parent's address (if you saved one) filled in. You read it, change anything you want, and send it yourself. A very long draft may open shortened, and the full text is still in ShortHand." },
           ]}
         />
 

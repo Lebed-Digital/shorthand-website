@@ -65,7 +65,7 @@ export default function NeverMissPage() {
         <FeatureExample title="a quick behavior note">
           <strong>S.K.</strong> · Tuesday, 10:42 AM · Tags: On Task, Kindness<br />
           &ldquo;Helped a partner find the page during reading groups, then finished the whole worksheet.&rdquo;<br />
-          After you save it, S.K.&apos;s ring turns green and the note shows up in S.K.&apos;s 8-week activity view.
+          After you save it, S.K.&apos;s ring turns green.
         </FeatureExample>
 
         <FeatureFaq

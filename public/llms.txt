@@ -33,7 +33,7 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 K-12 teachers, primarily elementary school educators and special education teachers managing classroom behavior documentation, parent communication logs, and student reporting.
 
 ## Pricing
-Demo: no account required, opens the app with sample students to explore on your own. Free plan, no time limit: unlimited notes, students, and classes, the parent communication log, and AI parent drafts one student at a time. Pro is optional at $4.99/month on the web (Apple's price on iPhone) and adds reports, Ask ShortHand, and bulk parent emails. Eligible accounts can start a 30-day Pro trial with no credit card. Full details: https://getshorthandapp.com/pricing
+Demo: no account required, opens the app with sample students to explore on your own. Free plan, no time limit: unlimited notes, students, and classes, the parent communication log, and AI parent drafts one student at a time. Pro is optional at $4.99/month on the web (Apple's price in the iPhone app) and adds reports, Ask ShortHand, and bulk parent emails. Eligible accounts can start a 30-day Pro trial with no credit card. Full details: https://getshorthandapp.com/pricing
 
 ## URLs
 

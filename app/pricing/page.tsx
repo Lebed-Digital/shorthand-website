@@ -63,10 +63,11 @@ const FAQ: { q: string; a: React.ReactNode }[] = [
     q: 'How do I cancel Pro?',
     a: (
       <>
-        If you subscribed on the web, email{' '}
+        If you subscribed through the App Store in the ShortHand iPhone app, cancel in your Apple ID subscription
+        settings. If you subscribed anywhere else, including in a web browser on your phone, email{' '}
         <a href="mailto:info@getshorthandapp.com?subject=Cancel%20ShortHand%20Pro" style={link}>info@getshorthandapp.com</a>{' '}
-        from the email address on your ShortHand account and ask to cancel. If you subscribed on iPhone, cancel in your
-        Apple ID subscription settings. Either way, your account moves to the free plan and keeps your notes.
+        from the email address on your ShortHand account and ask to cancel. When your paid access ends, your account
+        moves to the free plan and keeps your notes.
       </>
     ),
   },
@@ -120,7 +121,7 @@ export default function PricingPage() {
           </section>
         </div>
         <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', margin: '16px 0 32px' }}>
-          On iPhone, Pro is bought through the App Store at Apple&apos;s listed price.
+          In the ShortHand iPhone app, Pro is bought through the App Store at Apple&apos;s listed price.
         </p>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 56 }}>
