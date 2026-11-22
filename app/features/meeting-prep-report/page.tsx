@@ -69,7 +69,8 @@ export default function MeetingPrepReportPage() {
           summarizes; the Documentation Report exports your notes exactly as written.
         </p>
         <p className="detail-desc">
-          This is part of ShortHand Pro. Pro is $4.99/month, and new Pro users get a 30-day trial with no credit card.
+          This is part of ShortHand Pro. Pro is $4.99/month on the web, and eligible accounts can start a 30-day trial with no credit card.{' '}
+          <Link href="/pricing" style={{ color: 'var(--accent, #a78bfa)' }}>See what Free and Pro include</Link>.
         </p>
 
         <FeatureVideo videoId="K5AZIYJGJ7U" title="Meeting Prep Report walkthrough" hideControls />

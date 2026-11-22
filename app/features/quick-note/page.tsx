@@ -85,7 +85,7 @@ export default function QuickNotePage() {
       <FeatureNav current="quick-note" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
+        <p className="detail-cta-sub">Free plan with no time limit. Use it in your browser or the app.</p>
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_quick-note">Get Started Free →</TrackedLink>
       </div>
 

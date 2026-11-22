@@ -5,6 +5,7 @@ import TrackedLink from '../../../components/TrackedLink';
 import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
 import Footer from '../../../components/Footer';
+import { FeatureExample, FeatureFaq } from '../../../components/FeatureExtras';
 
 export const metadata: Metadata = {
   title: 'Ready-to-Send Parent Emails | ShortHand',
@@ -36,6 +37,9 @@ export default function ParentCommunicationPage() {
 
       <div className="detail-hero">
         <h1 className="detail-title">Parent Emails, <em>Ready to Send</em></h1>
+        <p style={{ margin: '0 0 40px' }}>
+          <TrackedLink href="https://app.getshorthandapp.com/?demo=true" className="btn-ghost" label="demo_top_parent-emails" ctaSource="features_parent-emails">Try the demo, no account needed →</TrackedLink>
+        </p>
         <p className="detail-desc">
           Turn behavior notes into parent-ready messages in seconds.
         </p>
@@ -48,13 +52,27 @@ export default function ParentCommunicationPage() {
 
         <FeatureVideo videoId="-Ek-vL61bKc" title="AI parent email generation walkthrough" hideControls />
 
+        <FeatureExample title="a Quick Note Home draft">
+          Dear Family,<br />
+          J. stayed focused through our whole reading block today and helped a classmate find the right page during
+          partner work. J. also finished the worksheet before the timer ended.<br />
+          I am very proud and thought you would be too!
+        </FeatureExample>
+
+        <FeatureFaq
+          items={[
+            { q: 'Are parent emails free?', a: 'Yes. On the free plan you can draft a Quick Note Home or a Detailed Report for one student at a time. Preparing emails for several students at once is part of Pro.' },
+            { q: 'Does ShortHand send the email for me?', a: "No. The draft opens in your mail app or in Gmail with a subject and the parent's address (if you saved one) filled in. You read it, change anything you want, and send it yourself." },
+          ]}
+        />
+
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
 
       <FeatureNav current="parent-emails" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
+        <p className="detail-cta-sub">Free plan with no time limit. Use it in your browser or the app.</p>
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_parent-emails">Get Started Free →</TrackedLink>
       </div>
 

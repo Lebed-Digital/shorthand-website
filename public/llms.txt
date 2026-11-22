@@ -26,14 +26,14 @@ ShortHand was created by Gregory Lebed, a former RBT (Registered Behavior Techni
 - "I can't remember the last time I contacted this parent": ShortHand logs every interaction with a timestamp
 - "Writing progress reports takes my whole weekend": AI generates report card comments from your own notes
 - "I need documentation for this IEP meeting": behavior trends and parent contact history in one place
-- "I forgot to follow up with a parent": student alerts show who hasn't been checked on in days
+- "I forgot to follow up with a parent": check-in rings show how long it has been since you last noted each student, and follow-up dates on parent contacts flag when they are overdue
 - "I don't have time to write a professional email after a hard day": AI drafts it from your quick note
 
 ## Audience
 K-12 teachers, primarily elementary school educators and special education teachers managing classroom behavior documentation, parent communication logs, and student reporting.
 
 ## Pricing
-Demo: no account required, opens the app with sample students to explore on your own. Free plan: create an account to use ShortHand with your own class. Pro is optional at $4.99/month. New Pro users get a 30-day trial with no credit card.
+Demo: no account required, opens the app with sample students to explore on your own. Free plan, no time limit: unlimited notes, students, and classes, the parent communication log, and AI parent drafts one student at a time. Pro is optional at $4.99/month on the web (Apple's price on iPhone) and adds reports, Ask ShortHand, and bulk parent emails. Eligible accounts can start a 30-day Pro trial with no credit card. Full details: https://getshorthandapp.com/pricing
 
 ## URLs
 
@@ -44,6 +44,7 @@ Demo: no account required, opens the app with sample students to explore on your
 - [Free Teacher Resources](https://getshorthandapp.com/resources): Printable classroom documentation and intervention resources
 - [ClassDojo Alternative](https://getshorthandapp.com/classdojo-alternative): Private behavior notes and documentation for middle and high school teachers
 - [Report Card Comment Library](https://getshorthandapp.com/report-card-comment-library): Ready-to-use report card comments for Pre-K through grade 5, with a free sample; the full library is a one-time $4.99
+- [Pricing](https://getshorthandapp.com/pricing): What the free plan (no time limit) includes and what Pro adds, with trial and cancellation answers
 - [For Schools](https://getshorthandapp.com/for-schools): How ShortHand handles student data, parent communication, and AI, for district IT and privacy review
 - [Press & Mentions](https://getshorthandapp.com/press): Where ShortHand has been featured and listed, including Tech & Learning, Capterra, Software Advice, and GetApp
 - [Support](https://getshorthandapp.com/support): Help with account access, app features, billing, and technical issues
@@ -52,7 +53,7 @@ Demo: no account required, opens the app with sample students to explore on your
 - [Quick Grid](https://getshorthandapp.com/features/quick-note): Tap a student, tap an indicator, save in seconds
 - [Import Roster](https://getshorthandapp.com/features/import-roster): Paste a class list from a spreadsheet and ShortHand sorts names, parent names, emails, and phone numbers automatically
 - [Parent Communication Log](https://getshorthandapp.com/features/parent-communication-log): Timestamped record of every parent contact
-- [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Visual trend data for IEP meetings and conferences
+- [Behavior Tracking](https://getshorthandapp.com/features/behavior-tracking): Check-in rings show when you last noted each student, plus an 8-week activity view per student
 - [Write Reports](https://getshorthandapp.com/features/ai-reports): Auto-generate report card comments from logged notes
 - [Parent Emails](https://getshorthandapp.com/features/parent-emails): Turn behavior notes into professional emails instantly
 - [Accommodations at a Glance](https://getshorthandapp.com/features/accommodations): See every student's IEP, 504, and classroom accommodations in one place

@@ -62,7 +62,7 @@ export default function Footer() {
           Pulse Academic
         </a>{' '}
         ·{' '}
-        <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
+        <a href="https://www.simpleteacherai.com/" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>
           Simple Teacher AI
         </a>
       </div>

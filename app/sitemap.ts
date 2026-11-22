@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/terms`, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${base}/dpa`, changeFrequency: 'yearly', priority: 0.5 },
     { url: `${base}/for-schools`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/pricing`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/support`, changeFrequency: 'yearly', priority: 0.4 },
   ];
 }

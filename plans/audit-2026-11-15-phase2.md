@@ -1,6 +1,6 @@
 # Website audit 2026-11-15, Phase 2: conversion and messaging
 
-Status: REVISED after one Codex plan review (2026-11-22). Waiting on Greg's decisions. Nothing here is built yet.
+Status: APPROVED by Greg 2026-11-22 and IMPLEMENTED on branch `feat/audit-2026-11-15-phase2` (stacked on #187 and #190). See "Greg's decisions" and "Implementation record" at the end.
 Written 2026-11-22 on branch `fix/audit-2026-11-15-closeout` (base `main` `524ef05`).
 Audit: Brain `Website Audit - 2026-11-15.md` (items B1, B3, B5, B8, B9, C2, plus the A1 nav question).
 
@@ -158,3 +158,43 @@ merges, so the ClassDojo page and `llms.txt` edits do not conflict.
 | 10 | Analytics description conflated PostHog and GA4 (low) | Accept: corrected, ctaSource per page |
 | 11 | Qualifiers: one-at-a-time drafts, device claim (low) | Accept |
 | 12 | Make metadata and review checks explicit (low) | Accept |
+
+## Greg's decisions (2026-11-22)
+
+1. Cancellation: web subscribers request cancellation through support. No response deadline. Verify the Stripe
+   procedure; flag subscription management separately. No Stripe Customer Portal work in this audit.
+2. Schools: individual teacher accounts only, no shared school accounts or district plan. Link `/for-schools`.
+3. Free tier: "Free plan with no time limit." Never "free forever."
+4. ClassDojo: remove the unsupported "most common reason teachers reach out" and "Plenty of K-5 teachers" claims. Use
+   "built by a third-grade teacher."
+5. Keep the A5 contrast commit in #190, documented as a minor change during `homepage-modern`.
+6. All planned Phase 2 changes approved. D7 only if trivial.
+
+## Stripe cancellation procedure (verified in `pulse 2.0` code, 2026-11-22)
+
+1. Teacher emails info@getshorthandapp.com from their account email.
+2. Support opens the Stripe Dashboard, finds the customer by email, and cancels the subscription (immediately or at
+   period end).
+3. Stripe sends `customer.subscription.updated` / `customer.subscription.deleted`; `api/billing/stripe-webhook.ts`
+   (handled types in `src/lib/billingWebhook.ts:20-26`) reconciles and writes `user_entitlements.plan`, so the account
+   becomes Free without any manual database step. Notes are untouched.
+
+**Separate subscription-management issue (app, not website):** there is no self-service web cancel. The app says
+"Cancel anytime" but the only in-app route is deleting the account. A Stripe Customer Portal exists only in an unmerged
+draft (`bd084ac`). Every web cancellation depends on Greg acting on an email. Not addressed in this audit.
+
+## Implementation record (2026-11-22)
+
+- `/pricing` page (`app/pricing/page.tsx`): two plan cards with lists instead of a table (a table pairing unrelated Free
+  and Pro rows reads badly with a screen reader), visible 4-question FAQ, buttons to Create Account and the demo.
+  Redirect removed from `next.config.ts`; added to `app/sitemap.ts` and `public/llms.txt`. Linked from the 3 Pro
+  feature pages only (no footer or homepage link while `homepage-modern` runs).
+- B8: "Free plan with no time limit. Use it in your browser or the app." on 7 free-feature pages and `/install` (same
+  line, added for consistency). ClassDojo cost row updated. `class-insights` (noindexed) and the homepage left alone.
+- B3: ClassDojo rows reworded or deleted as planned; both unsupported claims removed; `<main>` added (that file was
+  out of #190's scope because #187 owned it).
+- B5/C2: demo link, one example, and FAQs on the 3 pages via `components/FeatureExtras.tsx`. Behavior tracking title
+  and H1 "See When You Last Noted Each Student", grey ring added to the legend, "alerts" wording removed (page, OG,
+  `llms.txt`).
+- D7 (trivial part): `simpleteacherai.com` to `www.simpleteacherai.com/` in the shared Footer and `/about`; IRIS FBA
+  link in `abc-data-examples` to its new address. The two `/privacy` links stay (Critical tier, not trivial).

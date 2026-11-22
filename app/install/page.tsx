@@ -136,7 +136,7 @@ export default function InstallPage() {
 
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to open the app?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
+        <p className="detail-cta-sub">Free plan with no time limit. Use it in your browser or the app.</p>
         <a href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Open ShortHand →</a>
       </div>
 

@@ -19,13 +19,11 @@ export const metadata: Metadata = {
 
 const rows = [
   { feature: 'Target grade level', dojo: 'K–5 (designed for young kids)', sh: 'K-12, including middle and high school' },
-  { feature: 'Behavior visibility', dojo: 'Public points on a class display', sh: 'Private notes, never displayed to class' },
-  { feature: 'Parent updates', dojo: 'Social-media style feed', sh: '2-click professional message, logged automatically' },
+  { feature: 'Behavior visibility', dojo: 'Points, often shown to the class', sh: 'Private notes, never displayed to class' },
+  { feature: 'Parent updates', dojo: 'Class Story feed and direct messages', sh: 'A parent message drafted from your notes. You review it and send it from your own email.' },
   { feature: 'Documentation', dojo: 'Basic activity log', sh: 'Timestamped notes, IEP flags, exportable history' },
-  { feature: 'Mood tracking', dojo: 'None', sh: 'Quick behavior notes with an 8-week activity view' },
-  { feature: 'Admin-ready paper trail', dojo: 'No', sh: 'Yes. Every contact logged with date and outcome.' },
-  { feature: 'AI summaries', dojo: 'No', sh: 'One-tap behavior summary per student' },
-  { feature: 'Cost', dojo: 'Free for teachers', sh: 'Free to start, no ads' },
+  { feature: 'Parent contact record', dojo: 'Message history, exportable', sh: 'Log calls, texts, meetings, and emails with a date, type, and optional follow-up' },
+  { feature: 'Cost', dojo: 'Free for teachers', sh: 'Free plan with no time limit. Optional Pro.' },
 ];
 
 export default function ClassDojoAlternativePage() {
@@ -45,6 +43,7 @@ export default function ClassDojoAlternativePage() {
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_classdojo-alternative">Get ShortHand</TrackedLink>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -63,8 +62,8 @@ export default function ClassDojoAlternativePage() {
           up in an IEP meeting or admin conversation.
         </p>
         <p className="detail-desc">
-          Teach elementary? ShortHand works for you too. Plenty of K-5 teachers use it for
-          the same reason: private notes instead of public points.
+          Teach elementary? ShortHand works for you too. It was built by a third-grade
+          teacher, and it keeps behavior notes private instead of showing points to the class.
         </p>
 
         <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: 32, marginTop: 16 }}>
@@ -97,10 +96,10 @@ export default function ClassDojoAlternativePage() {
         </h2>
 
         <p className="detail-desc">
-          The most common reason teachers reach out: they kept forgetting to follow up with
-          parents. A note got written somewhere, a conversation happened in the hallway, and
-          by Friday it was gone. ShortHand fixes that with a communication log that is
-          timestamped, searchable, and always attached to the right student.
+          A common problem: you mean to follow up with a parent, but the note got written
+          somewhere, the conversation happened in the hallway, and by Friday it was gone.
+          ShortHand keeps a dated parent communication log attached to each student, with
+          follow-up dates so you can see what is still open.
         </p>
         <p className="detail-desc">
           No public leaderboard. No gamification. Just a clean, professional tool that helps
@@ -120,6 +119,7 @@ export default function ClassDojoAlternativePage() {
         </p>
       </div>
 
+      </main>
       <Footer />
     </>
   );

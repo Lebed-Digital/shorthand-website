@@ -232,9 +232,9 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       // Guessable addresses that used to 404 (website audit 2026-11-15).
-      // permanent: false so a real /pricing or /features page can replace
-      // these later: delete the redirect in the same PR that adds the page.
-      { source: '/pricing', destination: '/#plans-heading', permanent: false },
+      // permanent: false so a real /features page can replace these later:
+      // delete the redirect in the same PR that adds the page. (/pricing became
+      // a real page in the audit Phase 2 PR.)
       { source: '/features', destination: '/#features', permanent: false },
       { source: '/login', destination: 'https://app.getshorthandapp.com', permanent: false },
       { source: '/signup', destination: 'https://app.getshorthandapp.com/?signup=1', permanent: false },

@@ -135,7 +135,7 @@ export default function AboutPage() {
           </p>
           <p style={{ marginBottom: '2.5rem' }}>
             That&apos;s the only way I know how to build something worth using. I also run{' '}
-            <a href="https://simpleteacherai.com" style={{ color: 'var(--text)' }}>Simple Teacher AI</a>, where I write about practical ways classroom teachers can use AI without the hype or the jargon.
+            <a href="https://www.simpleteacherai.com/" style={{ color: 'var(--text)' }}>Simple Teacher AI</a>, where I write about practical ways classroom teachers can use AI without the hype or the jargon.
           </p>
 
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>

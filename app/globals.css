@@ -830,6 +830,9 @@ section { position: relative; z-index: 1; }
   text-align: left;
 }
 .plan-card--pro { border-color: var(--accent-border); }
+/* /pricing: Free and Pro side by side (collapses to one column below 768px). */
+.plans-grid--two { grid-template-columns: repeat(2, 1fr); margin-top: 0; }
+.plan-list { margin: 0; padding: 0 0 0 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; }
 .plan-card-kicker {
   font-size: 0.68rem;
   font-weight: 700;

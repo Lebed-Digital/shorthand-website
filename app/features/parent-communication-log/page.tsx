@@ -6,6 +6,7 @@ import FeatureNav from '../../../components/FeatureNav';
 import FeatureVideo from '../../../components/FeatureVideo';
 import HowToClips from '../../../components/HowToClips';
 import Footer from '../../../components/Footer';
+import { FeatureExample, FeatureFaq } from '../../../components/FeatureExtras';
 
 export const metadata: Metadata = {
   title: 'Parent Communication Log | ShortHand',
@@ -37,6 +38,9 @@ export default function ParentCommunicationLogPage() {
 
       <div className="detail-hero">
         <h1 className="detail-title">Parent Communication <em>Log</em></h1>
+        <p style={{ margin: '0 0 40px' }}>
+          <TrackedLink href="https://app.getshorthandapp.com/?demo=true" className="btn-ghost" label="demo_top_parent-communication-log" ctaSource="features_parent-communication-log">Try the demo, no account needed →</TrackedLink>
+        </p>
         <p className="detail-desc">
           Keep every phone call, email, and meeting organized by student, with the date,
           contact type, and a short summary all in one place. No more searching through
@@ -62,13 +66,29 @@ export default function ParentCommunicationLogPage() {
           ]}
         />
 
+        <FeatureExample title="a logged phone call">
+          <strong>J.M.</strong> · Call · Outgoing · November 12, 3:20 PM<br />
+          Parent: Ms. R.<br />
+          Notes: Called about three missing reading logs. Ms. R. said evenings are busy this month. We agreed J. will
+          finish the logs during morning work.<br />
+          Follow-up: November 19, check the reading logs.
+        </FeatureExample>
+
+        <FeatureFaq
+          items={[
+            { q: 'Is the parent communication log free?', a: 'Yes. The log is on the free plan, with no time limit and no cap on entries.' },
+            { q: 'Can I share a log with my principal or a team?', a: "Yes. Copy Full Log or Email Full Log gives you a student's communication history as plain text, ready to paste into an email, a meeting note, or your school's system." },
+            { q: 'Can parents see the log?', a: "No. Parents and students don't have ShortHand logins. You choose what to send or share." },
+          ]}
+        />
+
         <Link href="/" className="detail-back" style={{ marginTop: '16px' }}>← Back to home</Link>
       </div>
 
       <FeatureNav current="parent-communication-log" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
+        <p className="detail-cta-sub">Free plan with no time limit. Use it in your browser or the app.</p>
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_parent-communication-log">Get Started Free →</TrackedLink>
       </div>
 
