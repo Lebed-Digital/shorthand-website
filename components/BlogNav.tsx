@@ -40,13 +40,13 @@ export default function BlogNav({ showLibraryCta }: { showLibraryCta: boolean })
           ) : (
             <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Get ShortHand</Link>
           )}
-          <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+          <button type="button" className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu" aria-expanded={menuOpen} aria-controls="blog-mobile-menu">
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
       {menuOpen && (
-        <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
+        <div id="blog-mobile-menu" className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
           <Link href="/#features" className="nav-mobile-link">Features</Link>
           <Link href="/#walkthrough" className="nav-mobile-link">Walkthrough</Link>
           <Link href="/blog" className="nav-mobile-link">Blog</Link>

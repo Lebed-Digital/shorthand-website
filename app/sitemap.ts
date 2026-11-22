@@ -3,8 +3,9 @@ import { getAllPosts } from '../lib/posts';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://getshorthandapp.com';
-  const now = new Date();
-
+  // Static pages carry no lastModified on purpose. `new Date()` here stamped every page
+  // as changed on every build, which teaches Google to ignore lastmod site-wide, including
+  // the real dates on blog posts. Only add a date to a static page if it is kept accurate.
   const blogPosts = getAllPosts().map((post) => {
     // Must stay in sync with the dateModified fallback in app/blog/[slug]/page.tsx.
     // If these two disagree, Google gets contradictory freshness signals.
@@ -17,38 +18,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
+  // The blog index changes when a post is added or revised, so it can use the newest real date.
+  const newestPost = blogPosts.reduce<Date | undefined>(
+    (latest, p) => (!latest || p.lastModified > latest ? p.lastModified : latest),
+    undefined,
+  );
+
   return [
-    { url: base, lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${base}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-{ url: `${base}/install`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${base}/features/quick-note`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/import-roster`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/behavior-tracking`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/accommodations`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/ai-reports`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/parent-emails`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/ask-shorthand`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/student-documentation-report`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/features/meeting-prep-report`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/classdojo-alternative`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${base}/report-card-comment-generator`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${base}/report-card-comment-library`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/back-to-school-toolkit`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/tools/parent-communication-log`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/free-seating-chart-prompt`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/week-at-a-glance`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/chatgpt-teacher-freebies`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/resources`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/press`, lastModified: now, changeFrequency: 'monthly', priority: 0.5 },
-    { url: `${base}/tools`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: base, changeFrequency: 'weekly', priority: 1.0 },
+    { url: `${base}/about`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/install`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/features/quick-note`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/import-roster`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/behavior-tracking`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/accommodations`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/ai-reports`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/parent-emails`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/parent-communication-log`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/ask-shorthand`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/student-documentation-report`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/features/meeting-prep-report`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/classdojo-alternative`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/report-card-comment-generator`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/report-card-comment-library`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/back-to-school-toolkit`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/tools/parent-communication-log`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/free-seating-chart-prompt`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/week-at-a-glance`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/chatgpt-teacher-freebies`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/resources`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${base}/press`, changeFrequency: 'monthly', priority: 0.5 },
+    { url: `${base}/tools`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/blog`, lastModified: newestPost, changeFrequency: 'weekly', priority: 0.8 },
     ...blogPosts,
-    { url: `${base}/privacy`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${base}/delete-account`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${base}/terms`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${base}/dpa`, lastModified: now, changeFrequency: 'yearly', priority: 0.5 },
-    { url: `${base}/for-schools`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${base}/support`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${base}/privacy`, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${base}/delete-account`, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${base}/terms`, changeFrequency: 'yearly', priority: 0.4 },
+    { url: `${base}/dpa`, changeFrequency: 'yearly', priority: 0.5 },
+    { url: `${base}/for-schools`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/support`, changeFrequency: 'yearly', priority: 0.4 },
   ];
 }

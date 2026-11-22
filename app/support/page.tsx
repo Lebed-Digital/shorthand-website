@@ -26,6 +26,7 @@ export default function SupportPage() {
           <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Try Free</Link>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -67,6 +68,7 @@ export default function SupportPage() {
         </div>
       </div>
 
+      </main>
       <Footer />
     </>
   );
