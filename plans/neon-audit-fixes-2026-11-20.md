@@ -1,6 +1,6 @@
 # Neon site audit: verified fixes plan
 
-Status: APPROVED by Greg 2026-11-20 (three-PR approach), pending Codex plan review. Written 2026-11-20 against
+Status: IMPLEMENTED, PR C MERGED, PR A and B AWAITING GREG'S PREVIEW CHECK (2026-11-21). Codex plan review passed (2 passes). PR C #188 merged as `47bd68a` and live; PR A #186 (Codex clean) and PR B #187 (/code-review medium, preview verified) are open, Greg to decide on footer commit `97ef13e` at merge. Written 2026-11-20 against
 `main` at `2dc7c07` (fetched, local = origin).
 Source: Neon (gemini-4-neon) audit in the T3 "Website Feedback" thread, runs 1-2. Every finding below was re-checked
 against the repo by Claude (Opus) before it went into this plan.
