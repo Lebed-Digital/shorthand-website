@@ -33,6 +33,7 @@ Re-check the app before adding numbers or new Pro claims to the site.
 ## Live experiments (do not change their tracking or allocation)
 
 - `homepage-modern`: 25% of human visitors get `app/modern-preview` at `/` (cookie `sh_home`, `proxy.ts`). Results read from 2026-11-16.
+  - Minor change during the test, on the date PR #190 deploys (opened 2026-11-22, Greg approved keeping it): footer text contrast raised (control arm only, the test arm has its own footer); demo hint contrast raised (both arms); "SGO" wording and the whole-school FAQ answer changed (control arm only). Text and color only, no tracking or allocation change.
 - `blog-cta-presentation`: CTA presentation test on the behavior emails post.
 
 ## Pages
