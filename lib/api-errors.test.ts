@@ -217,6 +217,19 @@ for (const route of routes) {
   });
 }
 
+// `grade` goes straight into the prompt, so only the form's own choices pass.
+// Before the allowlist any string of any length did.
+test('welcome-letter generate: a grade outside the form choices is a 400 and never reaches OpenAI', async () => {
+  const route = routes.find((r) => r.name === 'welcome-letter generate')!;
+  let calls = 0;
+  globalThis.fetch = (async () => { calls++; return new Response('{}', { status: 200 }); }) as typeof globalThis.fetch;
+  for (const grade of ['x'.repeat(5000), 'constructor', '3rd grade', '']) {
+    const res = await route.handler(post({ ...(route.body as Record<string, unknown>), grade }));
+    assert.equal(res.status, 400, `grade ${JSON.stringify(grade.slice(0, 20))}`);
+  }
+  assert.equal(calls, 0);
+});
+
 // The table above is what makes "every OpenAI request" true. A new route that
 // calls OpenAI without being added to it would ship with no store check. The
 // routes are pinned by path, not counted: a count still matches if one route

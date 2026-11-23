@@ -4,6 +4,21 @@ import { checkWelcomeLetterRateLimit } from '@/lib/ratelimit';
 
 export const runtime = 'edge';
 
+// The grade choices the welcome letter form offers. Anything else is rejected: the
+// value goes straight into the prompt, so it must never be free text.
+const GRADE_CONTEXT: Record<string, string> = {
+  'Pre-K': 'Pre-K families are often anxious about their child\'s first school experience. The letter should be especially reassuring, mention routines and nap/snack time if relevant, use very simple language, and emphasize that the classroom is a safe and playful place.',
+  'Kindergarten': 'Kindergarten families may have a mix of excitement and separation anxiety. Acknowledge the big milestone, mention that the classroom is warm and structured, and reassure them their child will be looked after.',
+  '1st Grade': 'First grade is when reading and writing take off. Reference early literacy and math in a way that feels exciting, not pressured. Families want to know their child will be challenged but supported.',
+  '2nd Grade': 'Second graders are hitting their stride. The letter can be a little more confident in tone, mention growing independence, and reference things like chapter books, math facts, or collaborative projects.',
+  '3rd Grade': 'Third grade is a big transition year: standardized testing, longer writing assignments, more independence. Acknowledge the step up without making it scary. Be specific about what third grade looks like in this classroom.',
+  '4th Grade': 'Fourth graders are becoming more self-directed. Mention student ownership of learning, projects, and the growing complexity of the work. Families appreciate knowing expectations are rising.',
+  '5th Grade': 'Fifth grade is often the last year of elementary school. There may be a mix of nostalgia and anticipation. Acknowledge the role this year plays in preparing students for middle school without being dramatic about it.',
+  '6th Grade': 'Sixth grade often means a new school or a new structure. Families may be nervous about the transition. Be specific about classroom routines, how to reach the teacher, and what middle school expectations look like.',
+  '7th Grade': 'Seventh graders are deep in middle school. The letter can be more direct and less hand-holdy. Families want to know about grading, expectations, and how the teacher communicates. Keep it efficient.',
+  '8th Grade': 'Eighth grade is the final year of middle school. Many families are already thinking about high school. Acknowledge the stakes, be clear about expectations and preparation, and keep the tone mature and confident.',
+};
+
 export async function POST(req: Request): Promise<Response> {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
@@ -21,25 +36,12 @@ export async function POST(req: Request): Promise<Response> {
     subject = body?.subject ?? '';
     tone = body?.tone ?? 'Warm';
     if (!teacherName || typeof teacherName !== 'string' || teacherName.length > 100) throw new Error();
-    if (!grade || typeof grade !== 'string') throw new Error();
+    if (typeof grade !== 'string' || !Object.keys(GRADE_CONTEXT).includes(grade)) throw new Error();
     if (typeof subject !== 'string' || subject.length > 100) throw new Error();
     if (!['Warm', 'Funny', 'Professional'].includes(tone)) throw new Error();
   } catch {
     return Response.json({ error: { message: 'Invalid request.' } }, { status: 400 });
   }
-
-  const gradeContext: Record<string, string> = {
-    'Pre-K': 'Pre-K families are often anxious about their child\'s first school experience. The letter should be especially reassuring, mention routines and nap/snack time if relevant, use very simple language, and emphasize that the classroom is a safe and playful place.',
-    'Kindergarten': 'Kindergarten families may have a mix of excitement and separation anxiety. Acknowledge the big milestone, mention that the classroom is warm and structured, and reassure them their child will be looked after.',
-    '1st Grade': 'First grade is when reading and writing take off. Reference early literacy and math in a way that feels exciting, not pressured. Families want to know their child will be challenged but supported.',
-    '2nd Grade': 'Second graders are hitting their stride. The letter can be a little more confident in tone, mention growing independence, and reference things like chapter books, math facts, or collaborative projects.',
-    '3rd Grade': 'Third grade is a big transition year: standardized testing, longer writing assignments, more independence. Acknowledge the step up without making it scary. Be specific about what third grade looks like in this classroom.',
-    '4th Grade': 'Fourth graders are becoming more self-directed. Mention student ownership of learning, projects, and the growing complexity of the work. Families appreciate knowing expectations are rising.',
-    '5th Grade': 'Fifth grade is often the last year of elementary school. There may be a mix of nostalgia and anticipation. Acknowledge the role this year plays in preparing students for middle school without being dramatic about it.',
-    '6th Grade': 'Sixth grade often means a new school or a new structure. Families may be nervous about the transition. Be specific about classroom routines, how to reach the teacher, and what middle school expectations look like.',
-    '7th Grade': 'Seventh graders are deep in middle school. The letter can be more direct and less hand-holdy. Families want to know about grading, expectations, and how the teacher communicates. Keep it efficient.',
-    '8th Grade': 'Eighth grade is the final year of middle school. Many families are already thinking about high school. Acknowledge the stakes, be clear about expectations and preparation, and keep the tone mature and confident.',
-  };
 
   const toneInstructions: Record<string, string> = {
     Warm: `Write in a genuinely warm, personal tone. This is not "corporate warm" with words like "journey" and "growth mindset." It sounds like a real person who chose teaching because they love kids. Short sentences. Real feelings. The kind of letter a family reads and thinks, "I like this teacher already."`,
@@ -58,7 +60,7 @@ Grade level: ${grade}
 ${subjectLine}
 
 GRADE-SPECIFIC CONTEXT: this is critical. The letter must sound like it was written for ${grade} specifically, not a generic classroom:
-${gradeContext[grade] ?? 'Tailor the letter to the specific developmental stage and expectations of this grade level.'}
+${GRADE_CONTEXT[grade]}
 
 TONE: do not ignore this. The three tones produce fundamentally different letters, not just different adjective choices:
 ${toneInstructions[tone]}
