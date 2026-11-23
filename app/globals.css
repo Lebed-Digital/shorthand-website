@@ -830,6 +830,9 @@ section { position: relative; z-index: 1; }
   text-align: left;
 }
 .plan-card--pro { border-color: var(--accent-border); }
+/* /pricing: Free and Pro side by side (collapses to one column below 768px). */
+.plans-grid--two { grid-template-columns: repeat(2, 1fr); margin-top: 0; }
+.plan-list { margin: 0; padding: 0 0 0 1.1rem; display: flex; flex-direction: column; gap: 0.5rem; }
 .plan-card-kicker {
   font-size: 0.68rem;
   font-weight: 700;
@@ -902,10 +905,11 @@ footer {
   position: relative; z-index: 1;
 }
 .footer-logo { font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; letter-spacing: -0.04em; color: var(--text); margin-bottom: 8px; }
-.footer-tagline { font-size: 0.82rem; color: var(--text-faint); margin-bottom: 8px; }
+/* #8a867d, not --text-faint (2.7:1): footer text needs 4.5:1 on --bg (this is 5.3:1). */
+.footer-tagline { font-size: 0.82rem; color: #8a867d; margin-bottom: 8px; }
 .footer-email { font-size: 0.82rem; color: var(--text-dim); text-decoration: none; transition: color 0.2s; }
 .footer-email:hover { color: var(--accent); }
-.footer-copy { margin-top: 24px; font-size: 0.74rem; color: var(--text-faint); }
+.footer-copy { margin-top: 24px; font-size: 0.74rem; color: #8a867d; }
 /* Wrap between footer links, never inside one ("Simple / Teacher AI"). */
 .footer-copy a { white-space: nowrap; }
 

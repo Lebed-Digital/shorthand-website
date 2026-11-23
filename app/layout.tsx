@@ -42,11 +42,13 @@ export const metadata: Metadata = {
     images: [{ url: '/og-image-v2.png', width: 1200, height: 630, alt: 'ShortHand: Built by a teacher, for teachers.' }],
     locale: 'en_US',
   },
+  // Card type only. Next fills each page's twitter title, description and
+  // image from the page's resolved openGraph (postProcessMetadata). A page
+  // with its own openGraph gets its own share text; a page without one
+  // (privacy, terms, dpa, delete-account, support) still inherits the
+  // homepage openGraph above, for twitter too.
   twitter: {
     card: 'summary_large_image',
-    title: 'ShortHand | The Teacher\'s Assistant for Parent Communication & Behavior Notes',
-    description: 'Turn classroom notes into parent-ready messages in seconds. Free for teachers.',
-    images: ['/og-image-v2.png'],
   },
   alternates: {
     canonical: 'https://getshorthandapp.com',

@@ -72,7 +72,8 @@ const ctaClicked = () => captureEvent('quick_grid_demo_cta_clicked', DEMO);
 
 const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? '' : 's'}`;
 
-export default function QuickGridDemo() {
+// ctaSource labels the GA4 cta_click; left out, TrackedLink reports 'homepage'.
+export default function QuickGridDemo({ ctaSource }: { ctaSource?: string }) {
   const [sheetStudent, setSheetStudent] = useState<string | null>(null);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [noteCount, setNoteCount] = useState(0);
@@ -231,7 +232,7 @@ export default function QuickGridDemo() {
                 <TrackedLink
                   href={DEMO_URL}
                   label="quick_grid_demo_cta"
-                  ctaSource="features_quick_note"
+                  ctaSource={ctaSource}
                   onClick={ctaClicked}
                   className={styles.cta}
                 >
@@ -281,7 +282,7 @@ export default function QuickGridDemo() {
                 <TrackedLink
                   href={DEMO_URL}
                   label="quick_grid_demo_cta"
-                  ctaSource="features_quick_note"
+                  ctaSource={ctaSource}
                   onClick={ctaClicked}
                   className={styles.moreOptions}
                 >

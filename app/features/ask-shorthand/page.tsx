@@ -42,6 +42,7 @@ export default function AskShortHandPage() {
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_ask-shorthand">Get ShortHand</TrackedLink>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -65,7 +66,8 @@ export default function AskShortHandPage() {
           record.
         </p>
         <p className="detail-desc">
-          This is part of ShortHand Pro. Pro is $4.99/month, and new Pro users get a 30-day trial with no credit card.
+          This is part of ShortHand Pro. Pro is $4.99/month on the web, and eligible accounts can start a 30-day trial with no credit card.{' '}
+          <Link href="/pricing" style={{ color: 'var(--accent, #a78bfa)' }}>See what Free and Pro include</Link>.
         </p>
 
         <FeatureVideo videoId="Nkawyxj_yiA" title="Ask ShortHand walkthrough" hideControls />
@@ -87,6 +89,7 @@ export default function AskShortHandPage() {
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_ask-shorthand">Get Started →</TrackedLink>
       </div>
 
+      </main>
       <Footer />
     </>
   );

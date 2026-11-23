@@ -2,6 +2,20 @@
 
 ## CTA destination: demo-first vs. signup-first
 
+### Where each link type is used today (checked against the code 2026-11-22)
+
+The app reads three entry styles. Each opens a different first screen:
+
+| Link | First screen | Used on |
+|---|---|---|
+| `https://app.getshorthandapp.com?demo=true` | Live demo with sample students, no account | Blog posts and the blog index, homepage hero and homepage nav "Try the demo", blog nav "Get ShortHand", `/about`, `/install`, `/press`, `/tools`, `/back-to-school-toolkit`, legal pages |
+| `https://app.getshorthandapp.com/?signup=1` | **Create Account** tab | Every body button that promises a new account: "Get Started Free" on 8 `/features/*` pages and `/classdojo-alternative`, "Get Started" on the 3 Pro feature pages (Ask ShortHand, Meeting Prep Report, Student Documentation Report), "Create a free account" in the homepage plans section, "Try ShortHand free" on `/report-card-comment-generator`, "Try ShortHand Free" on `/resources` (PR #179, 2026-11-16) |
+| `https://app.getshorthandapp.com` (bare) | **Sign In** tab | Nav "Get ShortHand" on all 11 `/features/*` pages and `/classdojo-alternative`, homepage phone menu "Open ShortHand", test homepage "Sign in" |
+
+PR #179 kept the nav "Get ShortHand" buttons bare on purpose (the 2026-07-15 reasoning below: nav buttons get clicked by returning teachers). Whether that still fits the feature pages, which are mostly first visits from search, is an open question for Greg (Website Audit 2026-11-15, item A1).
+
+The rest of this section is the 2026-07-15 reasoning. Its "Used on" lists predate PR #179; the table above is current.
+
 ### Current standard (as of 2026-07-15)
 
 Two funnel paths, split by visitor intent — not by CTA position (nav vs. body) alone.
@@ -32,7 +46,7 @@ https://app.getshorthandapp.com?signup=1
 ```
 This was a signup-first approach that required account creation before seeing the product. It was replaced across all 54 blog posts and 3 TSX pages with `?demo=true` to reduce friction and align with the demo-first funnel.
 
-`?signup=1` is preserved here as historical context only. It is no longer used anywhere in the codebase.
+`?signup=1` came back on 2026-11-16 (PR #179) for body buttons that say "Get Started Free" or "Create a free account", so they open the Create Account tab instead of Sign In. See the table at the top.
 
 Prior to 2026-07-15, this doc described the split as strictly "body CTAs → demo, nav/discovery CTAs → `/install`," and listed the homepage hero as one of the CTAs left on `/install`. That was already stale relative to the code: the homepage hero has used `?demo=true` directly since the 2026-06-26 migration (never routed through `/install`), and nav CTAs across the site link straight to the bare app URL, not to `/install`. The six feature pages and `classdojo-alternative` were also missing from the doc entirely. The "Current standard" section above reflects what the code actually does and why, verified against `app/page.tsx`, the six `app/features/*/page.tsx` files, and `app/classdojo-alternative/page.tsx`.
 

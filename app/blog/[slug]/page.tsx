@@ -14,6 +14,7 @@ import BlogCtaExperiment from '../../../components/BlogCtaExperiment';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { getFreeSliceData } from '../../../lib/report-card-teaser';
 import { BLOG_CTA_EXPERIMENT_POST, blogExampleType } from '../../../lib/posthog-events';
+import Footer from '../../../components/Footer';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
 // Includes the <p> wrapper remark emits around a standalone marker paragraph,
@@ -317,6 +318,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       {exampleType && <BlogExampleCopyTracker exampleType={exampleType} />}
       {slug === BLOG_CTA_EXPERIMENT_POST && <BlogCtaExperiment />}
 
+      <main>
       <article style={{ maxWidth: '720px', margin: '0 auto', padding: '6rem 1.5rem 5rem' }}>
         <Link href="/blog" style={{ fontSize: '0.9rem', color: 'var(--text-dim)', textDecoration: 'none', display: 'inline-block', marginBottom: '2rem' }}>
           ← Back to Blog
@@ -493,13 +495,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           </TrackedLink>
         </div>
       </article>
+      </main>
 
-      <footer>
-        <div className="footer-logo">ShortHand</div>
-        <div className="footer-tagline">Built by a teacher, for teachers.</div>
-        <a href="mailto:info@getshorthandapp.com" className="footer-email">info@getshorthandapp.com</a>
-        <div className="footer-copy">© 2026 ShortHand. All rights reserved. · <a href="/privacy" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Privacy Policy</a> · <a href="https://simpleteacherai.com" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>Simple Teacher AI</a></div>
-      </footer>
+      <Footer />
     </>
   );
 }

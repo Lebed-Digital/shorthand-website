@@ -196,13 +196,13 @@ export default function Home() {
             >
               Try the demo →
             </motion.a>
-            <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+            <button type="button" className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu" aria-expanded={menuOpen} aria-controls="home-mobile-menu">
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
           </div>
         </div>
         {menuOpen && (
-          <div className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
+          <div id="home-mobile-menu" className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
             <a href="#features" className="nav-mobile-link">Features</a>
             <a href="#walkthrough" className="nav-mobile-link" onClick={(e) => trackCta('hero_see_how_it_works', '#walkthrough', e)}>Walkthrough</a>
             <Link href="/blog" className="nav-mobile-link">Blog</Link>
@@ -214,6 +214,7 @@ export default function Home() {
           </div>
         )}
       </nav>
+      <main>
 
       {/* HERO */}
       <section className="hero hero--split">
@@ -483,7 +484,7 @@ export default function Home() {
               {[
                 'Scraps of paper shoved in a pocket',
                 'Forgotten parent conversations',
-                '3 hours of SGO data entry on a Sunday',
+                '3 hours of data entry on a Sunday',
                 '"Which students haven\'t I documented lately?"',
                 'Rewriting the same details for emails, reports, and meetings',
               ].map(item => (
@@ -670,7 +671,13 @@ export default function Home() {
               },
               {
                 q: 'Can my whole grade level or school use this?',
-                a: 'Absolutely. ShortHand makes grade-level collaboration and transition meetings much smoother. If your principal has questions about privacy or implementation, have them reach out directly.',
+                a: (
+                  <>
+                    Yes. Any teacher can use ShortHand with their own free account, and each teacher&apos;s notes stay private to them. There are no shared school or team accounts yet. If your principal or district IT has privacy or approval questions, point them to{' '}
+                    <Link href="/for-schools" style={{ color: 'var(--accent, #a78bfa)' }}>ShortHand for Schools</Link>
+                    , which has the data privacy agreement, security details, and a contact email.
+                  </>
+                ),
               },
               {
                 q: 'What is ShortHand?',
@@ -792,6 +799,7 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
+      </main>
       <Footer />
     </>
   );

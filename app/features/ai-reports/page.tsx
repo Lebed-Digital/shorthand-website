@@ -30,6 +30,7 @@ export default function AIReportsPage() {
           <TrackedLink href="https://app.getshorthandapp.com" className="btn-primary" label="nav_try_free_ai-reports">Get ShortHand</TrackedLink>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -68,10 +69,11 @@ export default function AIReportsPage() {
       <FeatureNav current="ai-reports" />
       <div className="detail-cta-section">
         <h2 className="detail-cta-heading">Ready to try it?</h2>
-        <p className="detail-cta-sub">Free to start. Works on any device.</p>
+        <p className="detail-cta-sub">Free plan with no time limit. Use it in your browser or the app.</p>
         <TrackedLink href="https://app.getshorthandapp.com/?signup=1" className="btn-primary" label="cta_get_started_ai-reports">Get Started Free →</TrackedLink>
       </div>
 
+      </main>
       <Footer />
     </>
   );

@@ -50,6 +50,7 @@ export default function ForSchoolsPage() {
           <Link href="https://app.getshorthandapp.com?demo=true" className="btn-primary">Try Free</Link>
         </div>
       </nav>
+      <main>
 
       <Link href="/" className="detail-back">← Back to home</Link>
 
@@ -203,6 +204,7 @@ export default function ForSchoolsPage() {
         </div>
       </div>
 
+      </main>
       <Footer />
     </>
   );
