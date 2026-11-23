@@ -1,6 +1,6 @@
 # Website audit 2026-11-15, Phase 2: conversion and messaging
 
-Status: APPROVED by Greg 2026-11-22 and IMPLEMENTED on branch `feat/audit-2026-11-15-phase2` (stacked on #187 and #190). See "Greg's decisions" and "Implementation record" at the end.
+Status: SHIPPED 2026-11-22. PR #191 squash-merged to `main` as `d95ca2e` and verified live on production (/pricing). See "Greg's decisions" and "Implementation record" at the end.
 Written 2026-11-22 on branch `fix/audit-2026-11-15-closeout` (base `main` `524ef05`).
 Audit: Brain `Website Audit - 2026-11-15.md` (items B1, B3, B5, B8, B9, C2, plus the A1 nav question).
 
