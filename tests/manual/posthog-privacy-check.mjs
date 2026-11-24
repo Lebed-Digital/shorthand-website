@@ -125,6 +125,13 @@ function decodeBody(buf) {
   if (s.startsWith('data=')) s = Buffer.from(decodeURIComponent(s.slice(5).split('&')[0]), 'base64').toString('utf8');
   try {
     return JSON.parse(s);
+  } catch {}
+  // posthog-js 1.450.1+ sends page-unload beacons as bare base64 text/plain,
+  // with no `data=` prefix. Without this, $pageleave goes unseen.
+  try {
+    let d = Buffer.from(s.trim(), 'base64');
+    if (d.length > 2 && d[0] === 0x1f && d[1] === 0x8b) d = zlib.gunzipSync(d);
+    return JSON.parse(d.toString('utf8'));
   } catch {
     return { __undecoded: s.slice(0, 200) };
   }
