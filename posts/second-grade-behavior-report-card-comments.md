@@ -8,6 +8,13 @@ relatedPosts:
   - "report-card-comments-for-students-with-adhd"
   - "free-report-card-comment-generator"
 excerpt: "Find the perfect second grade behavior report card comments. Here are 12 copy-paste templates that cover social skills, effort, listening, and transitions."
+faq:
+  - q: "How long should a second grade behavior comment be?"
+    a: "Two to four sentences is plenty. Parents read short comments more carefully than long ones. Start with a strength, name one specific thing to work on, and end with what you are doing about it or how they can help at home. Check your school's character limit before you write, since many report card systems cut comments off."
+  - q: "Should I mention specific incidents in a report card comment?"
+    a: "No. A report card sums up the marking period, so describe what usually happens, not one bad day. 'Is working on keeping hands to self in line' is fair. A detailed account of one incident belongs in a phone call, an email, or your behavior notes. If an incident was serious, the family should have heard about it from you long before the report card."
+  - q: "How do I write a behavior concern without it sounding negative?"
+    a: "Describe the behavior plainly, then say what is being done. 'Sometimes has a hard time waiting for a turn to talk. We are practicing raising a hand and waiting, and it is getting easier' is honest and hopeful. Avoid labels like 'disruptive' or 'immature.' Pair the concern with a real strength somewhere in the comment so the parent sees the whole child."
 ---
 
 Second grade is a magical, transitional year. Seven and eight-year-olds are leaving behind the early childhood phase of kindergarten and first grade, and they are starting to develop real independence, complex friendships, and academic self-awareness.

@@ -8,6 +8,13 @@ relatedPosts:
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
 excerpt: "Wondering how to politely tell a parent their child is misbehaving? Stop using vague teacher-speak. Try these 5 professional phrase swaps instead."
+faq:
+  - q: "Should I tell parents about misbehavior in person, by phone, or by email?"
+    a: "Match the channel to the size of the problem. A first, minor issue can go in a short email. Anything repeated, emotional, or likely to surprise the parent deserves a phone call, because tone matters and the parent can ask questions. Serious or ongoing concerns are worth a meeting. After a call or meeting, send a brief email that sums up what you agreed, so you both have the same record."
+  - q: "How soon should I tell parents about a behavior problem?"
+    a: "The same day for anything serious, and within a day or two for smaller issues you want to keep an eye on. Parents get frustrated when they find out weeks later that something has been building. You do not need to report every small redirect. A good rule is to reach out once a behavior repeats, affects other students, or is something you would want to know about if it were your child."
+  - q: "Should I tell the student before I contact their parents?"
+    a: "Usually, yes. A calm heads-up like 'I'm going to let your mom know about today so we can work on it together' keeps it from feeling like an ambush. It also gives the student a chance to tell their parent first. Skip the heads-up if you think it could put the student at risk at home. If you suspect abuse or neglect, follow your mandated reporting duty and your school's safeguarding procedures right away, and bring in your counselor or administrator."
 ---
 
 Wondering how to politely tell a parent their child is misbehaving is a daily struggle for most teachers. We want to be honest, but we also want to keep our jobs. 

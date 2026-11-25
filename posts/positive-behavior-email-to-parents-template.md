@@ -8,6 +8,13 @@ relatedPosts:
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
 excerpt: "Use a positive behavior email to parents template to build trust. Here are 5 copy-paste templates that celebrate student wins and make teaching easier."
+faq:
+  - q: "Should a positive note home be an email, a phone call, or a paper note?"
+    a: "Any of them works, so pick the one you will actually keep doing. Email is the easiest to send in a spare two minutes, and parents can reread it or forward it to a grandparent. A phone call lands harder, especially for a family that only hears from school when something is wrong. Paper notes work well for younger students who are proud to carry them home. Whatever you choose, write down that you sent it so you can see which families you have not reached yet."
+  - q: "Can I send the same positive email to several families?"
+    a: "You can reuse the structure, but change the details every time. Parents compare notes at pickup, and an identical message reads like a form letter. Swap in the specific thing the student did, when it happened, and why it mattered. One concrete sentence like 'She helped a new student find the lunch line without being asked' does more than a paragraph of general praise."
+  - q: "What if a parent replies to a positive email with a concern?"
+    a: "Thank them for writing back and take the concern seriously, but keep it separate from the good news. Answer briefly if it is simple. If it needs a real conversation, offer a call or a meeting time. Log the reply and anything you agreed to, because a concern that arrives in reply to a positive note is still a parent contact."
 ---
 
 Most of the emails we send home as teachers are reactive. We write them when a student misses a deadline, fails a test, or starts a classroom conflict.
