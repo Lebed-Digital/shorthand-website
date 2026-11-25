@@ -13,8 +13,8 @@ export function FeatureExample({ title, children }: { title: string; children: R
         margin: '0 0 48px',
         padding: '20px 22px',
         borderRadius: 16,
-        background: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.1)',
+        background: 'var(--surface)',
+        border: '1px solid var(--border)',
         textAlign: 'left',
       }}
     >
@@ -42,7 +42,7 @@ export function FeatureFaq({ items }: { items: { q: string; a: ReactNode }[] }) 
         Questions
       </h2>
       {items.map(({ q, a }) => (
-        <div key={q} style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '1rem 0' }}>
+        <div key={q} style={{ borderBottom: '1px solid var(--border)', padding: '1rem 0' }}>
           <h3 style={{ fontSize: '1.02rem', fontWeight: 700, color: 'var(--text)', margin: '0 0 0.4rem' }}>{q}</h3>
           <p style={{ color: 'var(--text-dim)', lineHeight: 1.7, fontSize: '0.95rem', margin: 0 }}>{a}</p>
         </div>

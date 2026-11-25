@@ -75,13 +75,13 @@ export default function ClassDojoAlternativePage() {
             <thead>
               <tr>
                 <th style={thStyle('')}>Feature</th>
-                <th style={thStyle('#1a1a2e')}>ClassDojo</th>
-                <th style={thStyle('#1a1f1a')}>ShortHand ✓</th>
+                <th style={thStyle('')}>ClassDojo</th>
+                <th style={thStyle('var(--green-dim)')}>ShortHand ✓</th>
               </tr>
             </thead>
             <tbody>
               {rows.map((row, i) => (
-                <tr key={row.feature} style={{ background: i % 2 === 0 ? 'rgba(255,255,255,0.03)' : 'transparent' }}>
+                <tr key={row.feature} style={{ background: i % 2 === 0 ? 'var(--surface)' : 'transparent' }}>
                   <td style={tdStyle('label')}>{row.feature}</td>
                   <td style={tdStyle('dojo')}>{row.dojo}</td>
                   <td style={tdStyle('sh')}>{row.sh}</td>
@@ -133,18 +133,18 @@ function thStyle(bg: string): React.CSSProperties {
     fontSize: '0.85rem',
     letterSpacing: '0.05em',
     textTransform: 'uppercase',
-    color: '#f0ebe2',
-    background: bg || 'rgba(255,255,255,0.05)',
-    borderBottom: '1px solid rgba(255,255,255,0.1)',
+    color: 'var(--text)',
+    background: bg || 'var(--surface2)',
+    borderBottom: '1px solid var(--border)',
   };
 }
 
 function tdStyle(col: 'label' | 'dojo' | 'sh'): React.CSSProperties {
   return {
     padding: '12px 16px',
-    color: col === 'sh' ? '#86efac' : col === 'label' ? '#f0ebe2' : 'rgba(240,235,226,0.5)',
-    borderBottom: '1px solid rgba(255,255,255,0.06)',
-    fontWeight: col === 'label' ? 500 : 300,
+    color: col === 'sh' ? 'var(--green)' : col === 'label' ? 'var(--text)' : 'var(--text-dim)',
+    borderBottom: '1px solid var(--border)',
+    fontWeight: col === 'label' ? 500 : 400,
     lineHeight: 1.5,
   };
 }

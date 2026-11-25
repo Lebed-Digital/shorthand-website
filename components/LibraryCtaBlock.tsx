@@ -104,8 +104,8 @@ export default function LibraryCtaBlock({ sourceSlug, placement, intro, library,
       style={{
         margin: '2rem 0',
         padding: '1.5rem 1.75rem',
-        background: 'rgba(255,255,255,0.04)',
-        border: '1px solid rgba(255,255,255,0.1)',
+        background: 'var(--surface)',
+        border: '1px solid var(--border)',
         borderRadius: '14px',
       }}
     >
@@ -160,7 +160,7 @@ export default function LibraryCtaBlock({ sourceSlug, placement, intro, library,
             display: 'inline-block',
             padding: '0.7rem 1.25rem',
             borderRadius: '10px',
-            background: 'linear-gradient(135deg, #0d9488, #0891b2)',
+            background: 'var(--teal)',
             color: '#fff',
             fontWeight: 700,
             textDecoration: 'none',
@@ -180,8 +180,8 @@ function columnStyle(paid: boolean): React.CSSProperties {
   return {
     padding: '0.9rem 1rem',
     borderRadius: '10px',
-    background: paid ? 'rgba(13,148,136,0.12)' : 'rgba(255,255,255,0.03)',
-    border: `1px solid ${paid ? 'rgba(13,148,136,0.45)' : 'rgba(255,255,255,0.08)'}`,
+    background: paid ? 'var(--teal-dim)' : 'var(--bg)',
+    border: `1px solid ${paid ? 'var(--teal-border)' : 'var(--border)'}`,
   };
 }
 
@@ -202,8 +202,9 @@ function tagStyle(paid: boolean): React.CSSProperties {
     letterSpacing: '0.04em',
     textTransform: 'uppercase',
     whiteSpace: 'nowrap',
-    color: paid ? '#5eead4' : 'var(--text-dim)',
-    background: paid ? 'rgba(13,148,136,0.25)' : 'rgba(255,255,255,0.08)',
+    color: paid ? 'var(--teal)' : 'var(--text-dim)',
+    // Opaque white under the paid label: on the tinted column it reads 5.5:1.
+    background: paid ? 'var(--surface)' : 'var(--surface2)',
   };
 }
 

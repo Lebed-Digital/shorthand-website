@@ -190,7 +190,7 @@ export default function ResourceOffer({
                   </button>
                 </div>
                 {error && (
-                  <p role="alert" style={{ color: '#ef4444', fontSize: 13, margin: '8px 0 0' }}>
+                  <p role="alert" style={{ color: 'var(--error)', fontSize: 13, margin: '8px 0 0' }}>
                     {error}
                   </p>
                 )}

@@ -4,7 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const LETTERS = ['S','h','o','r','t','H','a','n','d'];
-const COLORS  = ['#FF5A5F','#19C37D','#F7A600','#3B82F6','#C084FC','#FF5A5F','#19C37D','#F7A600','#3B82F6'];
+// Brand hues (brand-guidelines.md), deepened just enough for 3:1 on the light
+// --bg #f8f7f2 (the wordmark is 24px or larger): 3.4 to 3.7:1.
+const COLORS  = ['#E5484D','#0E9A60','#C27A00','#3B82F6','#A855F7','#E5484D','#0E9A60','#C27A00','#3B82F6'];
 
 export default function AnimatedLogo() {
   const reduceMotion = useReducedMotion();

@@ -82,15 +82,15 @@ export default function AboutPage() {
             <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>
               About the Creator
             </div>
-            <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '1rem' }}>
+            <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', fontWeight: 600, lineHeight: 1.1, marginBottom: '1rem' }}>
               Gregory Lebed
             </h1>
             <div style={{ display: 'flex', gap: '0.6rem', flexWrap: 'wrap' }}>
               {['20+ Years in Education', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
                 <span key={badge} style={{
-                  background: 'rgba(167,139,250,0.12)',
-                  border: '1px solid rgba(167,139,250,0.3)',
-                  color: 'var(--accent, #a78bfa)',
+                  background: 'var(--accent-dim)',
+                  border: '1px solid var(--accent-border)',
+                  color: 'var(--accent)',
                   borderRadius: '999px',
                   padding: '0.3rem 0.9rem',
                   fontSize: '0.8rem',
@@ -118,8 +118,8 @@ export default function AboutPage() {
           </p>
 
           <div style={{
-            background: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.08)',
+            background: 'var(--surface)',
+            border: '1px solid var(--border)',
             borderRadius: '16px',
             padding: '1.5rem',
             marginBottom: '2rem',
@@ -144,7 +144,7 @@ export default function AboutPage() {
               display: 'inline-flex',
               alignItems: 'center',
               padding: '0.65rem 1.4rem',
-              border: '1px solid rgba(255,255,255,0.15)',
+              border: '1px solid var(--border-bright)',
               borderRadius: '999px',
               color: 'var(--text)',
               textDecoration: 'none',

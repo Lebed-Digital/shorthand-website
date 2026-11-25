@@ -1,15 +1,12 @@
 import type { Metadata } from 'next';
 import AnalyticsGate from './AnalyticsGate';
-import { Space_Grotesk, Inter, Fredoka } from 'next/font/google';
+import { Inter, Fredoka } from 'next/font/google';
 import './globals.css';
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-display',
-  display: 'swap',
-});
-
+// Note: globals.css :root also defines --font-body and --font-display, and in
+// production those win, so pages render in the system UI font (the homepage
+// included). Headings use the same font as body text (--font-display points
+// to --font-body), so the unused Space Grotesk import was removed.
 const inter = Inter({
   subsets: ['latin'],
   weight: ['300', '400', '500'],
@@ -61,7 +58,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} ${fredoka.variable}`}>
+    <html lang="en" className={`${inter.variable} ${fredoka.variable}`}>
       <head>
         {/* Google Analytics (production hostname only, and only for real users — skips headless/automated browsers and Greg's dev flag) */}
         <script dangerouslySetInnerHTML={{ __html: `
