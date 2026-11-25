@@ -1,7 +1,7 @@
 # Blog audit follow-up plan (2026-11-25)
 
 Source: Gemini 93-post audit, 2026-11-25. Verified against `main` at `8223ce7`. Reviewed by Codex (gpt-6.2-sol, high), findings folded in below.
-Status: Approved 2026-11-25. Batch 1 merged (#193), Batch 2 merged (#194), Batch 3 PR open for Greg to read the FAQ wording.
+Status: DONE 2026-11-25. Batch 1 #193, Batch 2 #194, Batch 3 #195 (with 3 FAQ corrections) all merged.
 
 Data used: GSC 2026-08-27 to 2026-11-23 (unfiltered, page level), GA4 2026-08-27 to 2026-11-24,
 PostHog `$pageview` / `app_link_clicked` / `resource_downloaded` since tracking began (about 2026-10-05).
