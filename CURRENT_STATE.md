@@ -36,13 +36,16 @@ Re-check the app before adding numbers or new Pro claims to the site.
 
 None running. Both 2026 tests ended 2026-11-25 (results: `docs/experiments-review-2026-11-25.md`): the modern homepage won and is now `app/page.tsx` for everyone, and the blog CTA kept the original boxed card. Shipped in PR #196 (`c732d92`), production verified 2026-11-25. Feature flags are off. New experiments are time-boxed (AGENTS.md, "Experiments").
 
-Re-read around 2026-12-25: homepage web-app opens per visitor (test: old 17.5%, modern 25.0%) and app signups with first-touch landing page `/` (baseline 4 in 30 days, 25 in 90).
+Re-read around 2026-12-25: homepage web-app opens per visitor (test: old 17.5%, modern 25.0%) and app signups with first-touch landing page `/` (baseline 4 in 30 days, 25 in 90). Note when reading: PR #197 (2026-11-25, same day) added a nav "Try the demo" button (GA4 `nav_get_shorthand`) plus quote, creator, pricing and privacy rows, so the re-read measures the modern homepage with those additions, not the exact test arm.
 
 ## Pages
 
 /how-it-works redirects to /#walkthrough (a social shortlink in next.config.ts).
 /features/class-insights is live but noindexed and left out of the sitemap on purpose (feature hidden 2026-08-05).
 /for-schools is the page for principals and district IT (DPA, security, contact).
+
+Design: the homepage is light (PR #196, #197). Moving the rest of the public site to the same light design is approved as 3 PRs (2026-11-25): A homepage restore + organized shared footer (#197, merged), B light theme for shared-stylesheet pages and `/tools` via `app/globals.css` tokens (Critical tier: blog posts host email forms), C self-contained free tool pages (Critical tier). Plan decisions: inner pages adopt the homepage typography, italic serif accents only on prominent headings; inner-page navs keep their structure, colors only; use shared tokens wherever practical, tool pages included.
+The shared footer (`components/Footer.tsx`) reads only tokens (`--text`, `--text-dim`, `--text-fine`, `--border`, `--accent`); the homepage sets light values around it in `app/page.module.css` until PR B moves them into `:root`. Privacy, terms, dpa and delete-account keep their own simple `<footer>`.
 
 ## SEO
 
@@ -57,7 +60,7 @@ Sitemap: blog posts carry real dates; static pages carry no lastmod (no fake "mo
 
 Reference docs/funnel-decisions.md for funnel implementation details.
 Open audit items: Brain `Website Audit - 2026-11-15.md`, "Implementation Status".
-Known issues (Brain NOTES.md): the comment generator's "Frequently asked questions" heading is readable in session replay; `TrackedLink` cancels Ctrl/Cmd-click on tracked CTAs.
+Known issues (Brain Known Bugs.md): the PostHog privacy check flags the comment generator's "Frequently asked questions" heading, likely a false positive in the check script (same heading is on public `/chatgpt-teacher-freebies`); `TrackedLink` cancels Ctrl/Cmd-click on tracked CTAs (includes the homepage nav demo button since #197).
 
 ## Last reviewed
 
