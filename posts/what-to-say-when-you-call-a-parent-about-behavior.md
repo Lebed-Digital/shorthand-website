@@ -8,6 +8,13 @@ relatedPosts:
   - "parent-email-after-difficult-phone-call"
   - "what-to-do-when-parents-dont-respond-to-calls"
 excerpt: "Parent calls about behavior don't have to be painful. Here are the scripts and strategies that actually work, for every situation from routine check-ins to defensive parents."
+faq:
+  - q: "Should I leave a voicemail about a behavior problem?"
+    a: "Leave a short one, without the details. Say who you are, that you are calling about their child, that the child is safe if that is true, and when you will try again or how they can reach you. Behavior details in a voicemail can be heard by the wrong person or by the student first. Log the attempt with the date and time. After two or three tries, a short email asking for a time to talk is fine."
+  - q: "Should an administrator be on the call?"
+    a: "For routine classroom behavior, no. A principal on the line can make a first call feel like a hearing. Bring one in when the behavior involves safety, a possible suspension, a parent who has been hostile before, or a pattern you have already called about several times. If you are unsure, ask your administrator before you call, not after."
+  - q: "What time of day should I call parents about behavior?"
+    a: "The same day, and before the student gets home if you can, so the parent hears it from you first. Lunch or right after dismissal usually works. Avoid calling in a rushed moment at the start of the day, and avoid late evening calls unless the parent asked for them. If you reach a parent at work, ask whether now is a good time before you start."
 ---
 
 Nobody became a teacher because they love making awkward phone calls. (If calling parents was the fun part, we'd all be working at a call center.)

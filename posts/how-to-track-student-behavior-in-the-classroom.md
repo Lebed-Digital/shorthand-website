@@ -8,6 +8,13 @@ relatedPosts:
   - "teacher-documentation-log-template"
   - "how-to-write-a-student-behavior-report"
 excerpt: "Most behavior tracking systems sound great in August and get abandoned by October. Here's how to build a system that actually holds up during a real school day."
+faq:
+  - q: "How many students should I track behavior for at once?"
+    a: "Start with the two or three students you are most worried about, not the whole class. Tracking a few students closely gives you data you can use, and it holds up on a busy day. Once logging those students is a habit, add more. Quick notes on the rest of the class are still useful, but not everyone needs detailed tracking."
+  - q: "How long before behavior data shows a pattern?"
+    a: "Often two to three weeks of consistent notes. A handful of entries can look random. Once you have a dozen or more logged incidents with the time, setting, and what happened right before, patterns like 'always after lunch' or 'mostly during writing' tend to show up. If nothing stands out after a month, check whether you are recording enough about what happened just before the behavior."
+  - q: "Should I tell students I am tracking their behavior?"
+    a: "For most students, yes, in a low-key way. Something like 'I write down what goes well and what is hard so I can help' keeps it from feeling secret. Avoid making a show of writing a note right after a student acts out, which can feel like a threat. For students on a formal plan, follow what the team agreed, since some plans have the student review their own data."
 ---
 
 You became a teacher to teach, not to spend your Sunday nights writing down everything Tyler did on Tuesday. (Why did you do it on Tuesday, Tyler?)

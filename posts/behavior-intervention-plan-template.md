@@ -8,6 +8,13 @@ relatedPosts:
   - "how-to-document-student-behavior-for-iep"
 excerpt: "A behavior intervention plan looks incredibly professional on paper. But without the right daily documentation system, it is just another binder gathering dust on your desk."
 tags: ["Behavior Intervention Plan", "Teacher Tips", "Free Templates"]
+faq:
+  - q: "How often should a behavior intervention plan be reviewed?"
+    a: "The formal review schedule comes from your district and, for students with an IEP, the IEP team. In practice, look at the data much more often. A check every two weeks is common: is the target behavior going down, and is the replacement behavior showing up? If nothing has changed after several weeks of consistent use, ask for a team meeting instead of waiting for the next scheduled review."
+  - q: "Can a general education teacher start a behavior intervention plan?"
+    a: "You can start the process, but you usually do not write the plan alone. Talk to your school's support team, school psychologist, or case manager, and bring your data: dates, what happened right before the behavior, the behavior itself, and what happened after. The more specific your notes, the faster the team can act."
+  - q: "Do parents have to sign a behavior intervention plan?"
+    a: "That depends on your district and on whether the plan is part of an IEP. Either way, parents should know about the plan, see it, and have a chance to give input before it starts. A plan the family understands tends to work better, because they can use the same language at home. Ask your case manager or administrator what your district requires."
 ---
 
 It usually happens on a Tuesday morning. The school psychologist or special education coordinator walks into your classroom. They hand you a heavy, stapled packet of paper. They tell you that a student in your third-period class now has an official Behavior Intervention Plan. You are expected to read it, understand it, and implement it immediately.

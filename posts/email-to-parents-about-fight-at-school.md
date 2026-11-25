@@ -8,6 +8,13 @@ relatedPosts:
   - "teacher-parent-communication-guide"
   - "how-to-write-behavior-emails-to-parents"
 excerpt: "After a fight at school, call home first, then email. Three follow-up email templates for teachers, plus what to document and what to leave out."
+faq:
+  - q: "Who should contact parents after a fight, the teacher or an administrator?"
+    a: "It depends on your school. In many schools an administrator makes the first call after a physical fight, especially if someone was hurt or a consequence like a suspension is involved. Ask before you pick up the phone, so the family does not get two different versions from two people. If your principal wants you to make the call or send the follow-up email, get the facts and the agreed next steps from them first."
+  - q: "What if a parent asks what consequence the other student got?"
+    a: "Do not share it. Another student's discipline is not yours to discuss, even with the family of the child who was hurt. You can say, 'I understand why you want to know. I can't share information about another student, but I can tell you what we are doing to keep your child safe.' Then name the safety steps. If they keep pushing, refer them to an administrator."
+  - q: "Should I email both families on the same day?"
+    a: "Yes, ideally after each family has had a phone call. Waiting a day lets the story spread through students before anything is in writing. Send each family a separate email about their own child only. Never put both families on one message, and never copy one family on the other family's email."
 ---
 
 Few phone calls or emails are more stressful than the ones concerning physical altercations.

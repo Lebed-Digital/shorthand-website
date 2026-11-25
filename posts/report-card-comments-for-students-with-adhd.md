@@ -8,6 +8,13 @@ relatedPosts:
   - "report-card-comments-for-struggling-students"
   - "free-report-card-comment-generator"
 excerpt: "Looking for report card comments for students with ADHD? Here are 10 strength-based templates that address focus, effort, and social skills constructively."
+faq:
+  - q: "Should I mention a student's ADHD diagnosis on the report card?"
+    a: "Generally no. A report card describes what you see in class: focus, work habits, progress, and the supports that help. A diagnosis is medical information that belongs with the family and in documents like an IEP or 504 plan, and report cards get shared and filed. Describe the behavior and what is working instead. If you are unsure what your school allows, check with your case manager or principal before you write anything."
+  - q: "Should report card comments line up with the student's IEP or 504 plan?"
+    a: "They should never contradict it. If the plan gives the student movement breaks or chunked assignments, it is fine to say in plain language that those supports are helping. Do not quote goals or plan details word for word unless your school does that. A quick check with the case manager before report cards go home keeps everyone's message consistent."
+  - q: "Should I talk to parents before a tough report card goes home?"
+    a: "Yes, if the comment is going to surprise them. A report card should never be the first time a family hears about a focus or behavior concern. A short call or email a week ahead, with one or two specific examples, means the comment confirms a conversation you already had. Lead with something that is going well, so the call is not only about problems."
 ---
 
 As a parent of a neurodiverse child, I've learned how much wording matters. I've read report card comments that helped me understand what was actually happening at school, and I've read comments that left me wondering what the teacher even meant. The difference between those two experiences had almost nothing to do with whether the concerns were real. It was the wording.
