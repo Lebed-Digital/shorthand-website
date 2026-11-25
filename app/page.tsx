@@ -7,6 +7,7 @@ import ScrollMotion from './ScrollMotion';
 import MobileMenu from './MobileMenu';
 import WalkthroughVideo from './WalkthroughVideo';
 import SignInLink from './SignInLink';
+import Footer from '../components/Footer';
 import { features } from '../components/FeatureNav';
 
 // The homepage. It won the `homepage-modern` test (2026-11-25, results in
@@ -55,7 +56,7 @@ export default function Home() {
     <nav className={styles.nav} aria-label="Main navigation">
       <Link href="/" className={styles.logo}><Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority style={{ borderRadius: 9 }} /> ShortHand</Link>
       <div className={styles.links}><a href="#features">Features</a><a href="#walkthrough">Walkthrough</a><Link href="/tools">Free tools</Link><Link href="/blog">Blog</Link></div>
-      <div className={styles.navRight}><SignInLink /><MobileMenu /></div>
+      <div className={styles.navRight}><span className={styles.navSignIn}><SignInLink /></span><TrackedLink href={demo} label="nav_get_shorthand" className={styles.navCta}>Try the demo</TrackedLink><MobileMenu /></div>
     </nav>
     <ScrollMotion><main>
       <section className={styles.hero}>
@@ -89,11 +90,50 @@ export default function Home() {
         </div>
       </section>
       <section id="walkthrough" data-reveal className={styles.walkthrough}><div><span className={styles.eyebrow}>SEE IT IN ACTION</span><h2>A calmer workflow.<br /><em>Not another chore.</em></h2><p>See how ShortHand fits into the day you already have.</p></div><WalkthroughVideo /></section>
+      <section className={styles.duo} aria-label="What teachers say and who built ShortHand">
+        <figure className={styles.quoteCard} data-reveal>
+          <span className={styles.number}>WHAT TEACHERS SAY</span>
+          <blockquote>&ldquo;The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.&rdquo;</blockquote>
+          <figcaption><Image src="/Dana R..png" alt="" width={56} height={56} /><span><b>Dana R.</b>Elementary Teacher</span></figcaption>
+        </figure>
+        <article className={styles.creatorCard} data-reveal>
+          <Image src="/creator.jpg" alt="Gregory, creator of ShortHand" width={120} height={156} className={styles.creatorPhoto} />
+          <div>
+            <span className={styles.number}>BUILT BY A TEACHER. FOR TEACHERS.</span>
+            <h2>A message from the creator</h2>
+            <p>I didn&apos;t build this app to give you more work. I built it because I was tired of drowning in paperwork while trying to keep my head above water.</p>
+            <p className={styles.creatorMeta}>Active 3rd Grade Teacher · 20+ Years in Education · Former RBT</p>
+            <Link href="/about">Read my story ↗</Link>
+          </div>
+        </article>
+      </section>
+      <section className={styles.duo} aria-label="Pricing and privacy">
+        <article className={styles.infoCard} data-reveal>
+          <span className={styles.number}>GETTING STARTED</span>
+          <h2>Demo, Free, and <em>Pro.</em></h2>
+          <ul className={styles.planList}>
+            <li><b>Demo</b><span>Open ShortHand with sample students and click through the app. No account needed.</span></li>
+            <li><b>Free</b><span>A free plan with no time limit for documenting your own class.</span></li>
+            <li><b>Pro</b><span>Optional, $4.99/month on the web. Adds reports and Ask ShortHand. Eligible accounts can start one 30-day Pro trial, with no credit card.</span></li>
+          </ul>
+          <Link href="/pricing">See pricing ↗</Link>
+        </article>
+        <article className={styles.infoCard} data-reveal>
+          <span className={styles.number}>DATA &amp; PRIVACY</span>
+          <h2>Your classroom. <em>Your notes.</em></h2>
+          <ul className={styles.planList}>
+            <li><b>Use initials or nicknames</b><span>Full legal names and student IDs are not required.</span></li>
+            <li><b>No data selling</b><span>Your notes and student information are never sold or used for advertising.</span></li>
+            <li><b>Your notes, your account</b><span>Your classroom records are protected with encryption and account-level access controls. You can delete your account and notes when you stop using ShortHand.</span></li>
+          </ul>
+          <div className={styles.cardLinks}><Link href="/for-schools">For schools and district IT ↗</Link><Link href="/privacy">Privacy policy ↗</Link></div>
+        </article>
+      </section>
       <section className={styles.faq} data-reveal><span className={styles.eyebrow}>COMMON QUESTIONS</span><h2>What teachers ask <em>first.</em></h2>
         {FAQ.map(({ q, a }) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}
       </section>
       <section className={styles.closing} data-reveal><span className={styles.eyebrow}>BUILT BY A TEACHER. FOR YOUR REAL DAY.</span><h2>Let the little things<br /><em>add up to clarity.</em></h2><TrackedLink href={demo} label="cta_get_shorthand" className={styles.button}>Try the free demo ↗</TrackedLink><p>Start with the free demo. Keep core documentation free.<br />Optional Pro: $4.99/month, with a 30-day trial and no credit card.</p></section>
     </main></ScrollMotion>
-    <footer className={styles.footer}><Link href="/" className={styles.logo}>ShortHand</Link><span>A little less to carry home.</span><div><Link href="/pricing">Pricing</Link><Link href="/for-schools">For schools</Link><Link href="/install">Install</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/resources">Resources</Link></div></footer>
+    <Footer />
   </div>;
 }

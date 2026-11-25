@@ -4,9 +4,11 @@ import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import styles from './page.module.css';
 import { fireCtaClick } from '../lib/gtag';
+import SignInLink from './SignInLink';
 
 // Phone-width menu for the homepage (app/page.tsx).
-// Same links as the desktop nav.
+// Same links as the desktop nav, plus Sign in. The nav bar hides its own Sign
+// in below 520px, so the menu always carries one (on tablets it shows in both).
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
   return (
@@ -27,6 +29,7 @@ export default function MobileMenu() {
           <a href="#walkthrough" onClick={() => fireCtaClick({ cta_source: 'homepage', cta_destination: 'hero_see_how_it_works', link_url: '#walkthrough' })}>Walkthrough</a>
           <Link href="/tools">Free tools</Link>
           <Link href="/blog">Blog</Link>
+          <SignInLink />
         </div>
       )}
     </>
