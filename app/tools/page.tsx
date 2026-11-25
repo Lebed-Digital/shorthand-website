@@ -41,7 +41,7 @@ const tools = [
       'Pick strengths, growth areas, and behavior observations. Get a polished comment in seconds. Editable before you copy.',
     href: '/report-card-comment-generator',
     label: 'Open Tool',
-    accent: '#0d9488',
+    accent: '#0f766e', // var(--teal); white text 5.5:1
     bg: '#f0fdfa',
     tag: 'Free AI Tool',
     signals: ['Free to use', 'Works for any grade', 'Editable output'],
@@ -52,7 +52,7 @@ const tools = [
       'Ready-to-send welcome letters for families. Pick your grade, pick your tone, done in 30 seconds.',
     href: '/back-to-school-toolkit',
     label: 'Open Tool',
-    accent: '#16a34a',
+    accent: '#15803d', // white text 5.0:1
     bg: '#f0fdf4',
     tag: 'Free AI Tool',
     signals: ['Free to use', 'Works for Pre-K through 8th grade', 'Editable output'],
@@ -118,7 +118,7 @@ export default function ToolsPage() {
         {tools.map((tool, index) => (
           <Fragment key={tool.href}>
           {index === 3 && <h2 style={{ fontSize: '1.25rem', margin: '40px 0 16px' }}>Prompts to use with ChatGPT</h2>}
-          <div style={{ background: tool.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: `4px solid ${tool.accent}` }}>
+          <div style={{ background: tool.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: `4px solid ${tool.accent}` }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
               <span style={{ fontSize: 11, fontWeight: 700, color: tool.accent, textTransform: 'uppercase', letterSpacing: '0.08em' }}>{tool.tag}</span>
             </div>
@@ -144,9 +144,9 @@ export default function ToolsPage() {
         {/* Deliberately not in the `tools` array above: that list is the free
             tools, and this one is paid. Placed after them so the free tools stay
             the page's first answer. */}
-        <div style={{ background: '#f0fdfa', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0d9488' }}>
+        <div style={{ background: '#f0fdfa', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid var(--teal)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
-            <span style={{ fontSize: 11, fontWeight: 700, color: '#0d9488', textTransform: 'uppercase', letterSpacing: '0.08em' }}>$4.99 one-time</span>
+            <span style={{ fontSize: 11, fontWeight: 700, color: 'var(--teal)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>$4.99 one-time</span>
           </div>
           <h2 style={{ fontSize: 17, fontWeight: 700, color: '#0f172a', margin: '0 0 8px', lineHeight: 1.3 }}>Report Card Comment Library</h2>
           <p style={{ fontSize: 14, color: '#334155', margin: '0 0 16px', lineHeight: 1.6 }}>
@@ -155,37 +155,37 @@ export default function ToolsPage() {
           </p>
           <Link
             href="/report-card-comment-library"
-            style={{ display: 'inline-block', background: '#0d9488', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
+            style={{ display: 'inline-block', background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', letterSpacing: '0.01em' }}
           >
             See the library &rarr;
           </Link>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 16px', marginTop: 12 }}>
             {['Try a free sample first', 'No sign-up to buy', 'One-time, no subscription'].map((signal) => (
               <span key={signal} style={{ fontSize: 12, color: '#334155', display: 'flex', alignItems: 'center', gap: 4 }}>
-                <span style={{ color: '#0d9488', fontWeight: 700 }}>&#10003;</span> {signal}
+                <span style={{ color: 'var(--teal)', fontWeight: 700 }}>&#10003;</span> {signal}
               </span>
             ))}
           </div>
         </div>
 
-        <div style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 16, padding: 24, marginTop: 8, border: '1px solid rgba(255,255,255,0.1)', textAlign: 'center' }}>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.6)', margin: '0 0 6px' }}>More tools coming soon.</p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.4)', margin: 0 }}>Follow along at <a href="https://www.instagram.com/getshorthand_app" target="_blank" rel="noopener noreferrer" style={{ color: '#34d399', textDecoration: 'none' }}>@getshorthand_app</a> on Instagram.</p>
+        <div style={{ background: 'var(--surface)', borderRadius: 16, padding: 24, marginTop: 8, border: '1px solid var(--border)', textAlign: 'center' }}>
+          <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 6px' }}>More tools coming soon.</p>
+          <p style={{ fontSize: 13, color: 'var(--text-fine)', margin: 0 }}>Follow along at <a href="https://www.instagram.com/getshorthand_app" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--green)', textDecoration: 'underline' }}>@getshorthand_app</a> on Instagram.</p>
         </div>
 
-        <div style={{ background: 'rgba(13,148,136,0.15)', borderRadius: 16, padding: 24, marginTop: 12, border: '1px solid rgba(13,148,136,0.3)', textAlign: 'center' }}>
-          <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 8px' }}>Want this built into your daily routine?</h2>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.65)', margin: '0 0 16px', lineHeight: 1.6 }}>
+        <div style={{ background: 'var(--teal-dim)', borderRadius: 16, padding: 24, marginTop: 12, border: '1px solid var(--teal-border)', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 18, fontWeight: 700, color: 'var(--text)', margin: '0 0 8px' }}>Want this built into your daily routine?</h2>
+          <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 16px', lineHeight: 1.6 }}>
             ShortHand automatically logs parent contacts, behavior notes, and follow-ups in one searchable timeline. No binders. No spreadsheets. No trying to remember what happened three months ago.
           </p>
           <TrackedLink
             href="https://app.getshorthandapp.com/?demo=true"
             label="tools_try_demo" ctaSource="tools"
-            style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.4)' }}
+            style={{ display: 'inline-block', background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '12px 28px', borderRadius: 12, textDecoration: 'none', boxShadow: '0 4px 14px rgba(15,118,110,0.25)' }}
           >
             Try the Free Demo
           </TrackedLink>
-          <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.4)', margin: '10px 0 0' }}>No credit card. No setup. Works on your phone.</p>
+          <p style={{ fontSize: 12, color: 'var(--text-fine)', margin: '10px 0 0' }}>No credit card. No setup. Works on your phone.</p>
         </div>
 
       </div>

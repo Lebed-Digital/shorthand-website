@@ -34,7 +34,7 @@ export default function NotFound() {
         <div style={{ fontSize: '0.75rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.5rem' }}>
           404
         </div>
-        <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '1.25rem' }}>
+        <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', fontWeight: 600, lineHeight: 1.1, marginBottom: '1.25rem' }}>
           Sorry, that page isn&apos;t here.
         </h1>
         <p style={{ color: 'var(--text-dim)', fontSize: '1.05rem', lineHeight: 1.7, marginBottom: '2.5rem', maxWidth: '620px' }}>
@@ -49,8 +49,8 @@ export default function NotFound() {
                 display: 'block',
                 padding: '1.1rem 1.5rem',
                 borderRadius: '14px',
-                border: '1px solid rgba(255,255,255,0.08)',
-                background: 'rgba(255,255,255,0.03)',
+                border: '1px solid var(--border)',
+                background: 'var(--surface)',
                 color: 'var(--text)',
                 fontWeight: 600,
                 textDecoration: 'none',

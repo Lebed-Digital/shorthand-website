@@ -326,7 +326,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           {new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} · <Link href="/about" style={{ color: 'var(--text-dim)', textDecoration: 'none' }}>{post.author}</Link>
         </div>
 
-        <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.75rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '0.5rem' }}>
+        <h1 style={{ fontSize: 'clamp(1.8rem, 5vw, 2.75rem)', fontWeight: 600, lineHeight: 1.1, marginBottom: '0.5rem' }}>
           {post.title}
         </h1>
         {post.subtitle && (
@@ -402,7 +402,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             {post.faq.map((item: { q: string; a: string }, i: number) => (
               <details key={i} style={{
                 marginBottom: '0.75rem',
-                border: '1px solid rgba(255,255,255,0.08)',
+                border: '1px solid var(--border)',
                 borderRadius: '10px',
                 overflow: 'hidden',
               }}>
@@ -410,7 +410,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                   padding: '1rem 1.25rem',
                   fontWeight: 600,
                   cursor: 'pointer',
-                  background: 'rgba(255,255,255,0.03)',
+                  background: 'var(--surface)',
                   listStyle: 'none',
                   display: 'flex',
                   justifyContent: 'space-between',
@@ -448,8 +448,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
                   >
                     <div className="blog-related-card" style={{
                       padding: '1.25rem',
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: 'var(--surface)',
+                      border: '1px solid var(--border)',
                       borderRadius: '12px',
                       height: '100%',
                       transition: 'border-color 0.2s, background 0.2s',
@@ -476,8 +476,8 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <div style={{
           marginTop: '3rem',
           padding: '1.75rem',
-          background: 'rgba(255,255,255,0.04)',
-          border: '1px solid rgba(255,255,255,0.08)',
+          background: 'var(--surface)',
+          border: '1px solid var(--border)',
           borderRadius: '16px',
           textAlign: 'center',
         }}>

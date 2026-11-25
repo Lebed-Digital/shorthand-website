@@ -44,7 +44,7 @@ export default function DpaPage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
           {/* Plain-language summary for teachers, with the signed-DPA request */}
-          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
             <div style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', marginBottom: '0.35rem' }}>What Teachers Should Know</div>
             <p style={{ color: 'var(--text-dim)', fontSize: '0.85rem', lineHeight: 1.6, margin: '0 0 1rem' }}>A plain-language summary for teachers. It does not replace the agreement below. If the two ever differ, the agreement applies.</p>
             <ul style={{ margin: 0, padding: '0 0 0 1.25rem', display: 'flex', flexDirection: 'column', gap: '0.6rem', color: 'var(--text-dim)', lineHeight: 1.6 }}>

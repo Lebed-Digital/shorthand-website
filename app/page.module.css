@@ -98,9 +98,8 @@
 .planList b{display:block;font-size:15px;font-weight:700;color:#172d29}
 .cardLinks{display:flex;flex-wrap:wrap;gap:0 24px}
 
-/* Shared <Footer /> on the light page: light values for the tokens it reads.
-   Remove once the site-wide light theme sets these in :root. */
-.page :global(.site-footer){--text:#172d29;--text-dim:#58645e;--text-fine:#5f6a64;--border:#d9dfd3;--accent:#a74415;font-weight:400}
+/* Shared <Footer />: its colors come from the :root tokens. These rules only
+   undo `.page a{color:inherit}` for its links. */
 .page :global(.site-footer) a{color:var(--text-dim)}
 .page :global(.site-footer .footer-logo){color:var(--text)}
 .page :global(.site-footer-bottom) a{color:var(--text-fine)}

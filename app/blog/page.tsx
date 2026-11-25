@@ -43,7 +43,7 @@ export default function BlogIndex() {
 
       <div style={{ maxWidth: '720px', margin: '0 auto', padding: '6rem 1.5rem 4rem' }}>
         <div className="section-label" style={{ marginBottom: '0.75rem' }}>From the Classroom</div>
-        <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '0.5rem' }}>
+        <h1 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 600, lineHeight: 1.1, marginBottom: '0.5rem' }}>
           The ShortHand <em>Blog</em>
         </h1>
         <p style={{ color: 'var(--text-dim)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>

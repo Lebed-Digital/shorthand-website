@@ -66,7 +66,7 @@ export default function ForSchoolsPage() {
       <div className="section-inner" style={{ maxWidth: 760, margin: '0 auto', padding: '0 1.5rem 5rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
 
-          <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '1rem', padding: '1.75rem 2rem' }}>
             <h2 style={{ fontSize: '1.05rem', fontWeight: 600, color: 'var(--text)', margin: '0 0 1rem' }}>At a glance</h2>
             <ul style={{ ...listStyle, color: 'var(--text-dim)', lineHeight: 1.6 }}>
               <li>Built for educators and school staff. Students don&apos;t have accounts and never use ShortHand.</li>

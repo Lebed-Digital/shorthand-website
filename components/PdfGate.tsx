@@ -63,16 +63,16 @@ export default function PdfGate({
         onChange={(e) => setEmail(e.target.value)}
         placeholder="you@school.edu"
         required
-        style={{ borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 12px', fontSize: 14, color: '#1e293b' }}
+        style={{ borderRadius: 10, border: '1.5px solid var(--input-border)', background: 'var(--surface)', padding: '10px 12px', fontSize: 14, color: 'var(--text)' }}
       />
       <button
         type="submit"
         disabled={submitting}
-        style={{ background: submitting ? '#5eead4' : 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, border: 'none', cursor: submitting ? 'not-allowed' : 'pointer' }}
+        style={{ background: submitting ? 'var(--text-faint)' : 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, border: 'none', cursor: submitting ? 'not-allowed' : 'pointer' }}
       >
         {submitting ? 'Unlocking…' : 'Get the free PDF →'}
       </button>
-      {error && <p style={{ color: '#ef4444', fontSize: 13, width: '100%', margin: 0 }}>{error}</p>}
+      {error && <p style={{ color: 'var(--error)', fontSize: 13, width: '100%', margin: 0 }}>{error}</p>}
     </form>
   );
 }

@@ -132,7 +132,7 @@ export default function PricingPage() {
         <h2 style={{ fontSize: '1.4rem', fontWeight: 600, marginBottom: 16 }}>Questions</h2>
         <div style={{ width: '100%', maxWidth: 720 }}>
           {FAQ.map(({ q, a }) => (
-            <div key={q} style={{ borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '1.1rem 0' }}>
+            <div key={q} style={{ borderBottom: '1px solid var(--border)', padding: '1.1rem 0' }}>
               <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: 'var(--text)', margin: '0 0 0.5rem' }}>{q}</h3>
               <p style={{ color: 'var(--text-dim)', lineHeight: 1.7, fontSize: '0.97rem', margin: 0 }}>{a}</p>
             </div>

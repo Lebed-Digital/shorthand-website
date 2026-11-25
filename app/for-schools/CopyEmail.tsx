@@ -42,7 +42,7 @@ export default function CopyEmail() {
     <div>
       <pre
         ref={preRef}
-        style={{ margin: 0, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere', fontFamily: 'inherit', fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text)', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: 12, padding: 16, userSelect: 'text' }}
+        style={{ margin: 0, whiteSpace: 'pre-wrap', overflowWrap: 'anywhere', fontFamily: 'inherit', fontSize: '0.9rem', lineHeight: 1.6, color: 'var(--text)', background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: 12, padding: 16, userSelect: 'text' }}
       >
         {APPROVAL_EMAIL}
       </pre>
