@@ -14,7 +14,7 @@ faq:
   - q: "How soon should I tell parents about a behavior problem?"
     a: "The same day for anything serious, and within a day or two for smaller issues you want to keep an eye on. Parents get frustrated when they find out weeks later that something has been building. You do not need to report every small redirect. A good rule is to reach out once a behavior repeats, affects other students, or is something you would want to know about if it were your child."
   - q: "Should I tell the student before I contact their parents?"
-    a: "Usually, yes. A calm heads-up like 'I'm going to let your mom know about today so we can work on it together' keeps it from feeling like an ambush. It also gives the student a chance to tell their parent first. Skip the heads-up only if you think it could put the student at risk at home, and talk to your counselor in that case."
+    a: "Usually, yes. A calm heads-up like 'I'm going to let your mom know about today so we can work on it together' keeps it from feeling like an ambush. It also gives the student a chance to tell their parent first. Skip the heads-up if you think it could put the student at risk at home. If you suspect abuse or neglect, follow your mandated reporting duty and your school's safeguarding procedures right away, and bring in your counselor or administrator."
 ---
 
 Wondering how to politely tell a parent their child is misbehaving is a daily struggle for most teachers. We want to be honest, but we also want to keep our jobs. 

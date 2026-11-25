@@ -10,7 +10,7 @@ relatedPosts:
 excerpt: "Get a free behavior log template for teachers to track classroom behavior. Clean markdown templates for K-8 and elementary teachers to copy and use."
 faq:
   - q: "How long should I keep a behavior log?"
-    a: "At least through the end of the school year, and follow your district's record retention policy for anything longer. For students who have an IEP or BIP, may be evaluated, or have an ongoing concern, hold on to it longer, because the history often comes up the next year. Store it somewhere secure, not in a pile on your desk."
+    a: "Your district's record retention policy decides how long, so check it first and follow it. If the policy leaves room, keep the log at least through the end of the school year, and longer for students who have an IEP or BIP, may be evaluated, or have an ongoing concern, because the history often comes up the next year. Store it somewhere secure, not in a pile on your desk."
   - q: "Can parents ask to see my behavior log?"
     a: "They might, so write every entry as if they will read it. Stick to facts: what happened, when, and what you did. Leave out guesses about home life or diagnoses. Whether a teacher's own notes count as part of the official school record depends on how they are kept and shared, so if a parent asks for your log, talk to your principal before handing anything over."
   - q: "How often should I write in a behavior log?"
