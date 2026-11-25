@@ -48,6 +48,16 @@ Feature flags are on for the experiments listed in `EXPERIMENTS` in `lib/posthog
 
 Do not call `posthog.identify()` anywhere on this site. Do not loosen the settings in `instrumentation-client.ts` without reading its comments: several exist because a PostHog dashboard toggle would otherwise override the code. The privacy policy describes this behavior, so that file and `app/privacy/page.tsx` change together. After any such change, and after upgrading `posthog-js`, run the browser check described at the top of `tests/manual/posthog-privacy-check.mjs`: the masking depends on SDK behavior that unit tests cannot see.
 
+## Experiments are time-boxed (Greg, 2026-11-25)
+A/B tests inform decisions. They do not freeze the site. This site gets about 100 homepage visitors and a few hundred blog readers a month, so significance on small differences can take a year. Waiting that long is not an option.
+
+- **Before launch,** write down the stop date (default 4 weeks, 8 at most), the primary metric, and the decision rule, for example "keep the variant if it leads on the primary metric and nothing is broken". Put them in the PostHog experiment description and in CURRENT_STATE.md.
+- **At the stop date,** review it and decide: per-variant visitors, conversions, rates, relative difference, win probability, sample ratio, outliers, tracking gaps, and a look at a few recordings. Significance is not required. A consistent lean with clean data is enough to pick, and you state the uncertainty plainly. Record the result in `docs/experiments-review-YYYY-MM-DD.md` (first one: `docs/experiments-review-2026-11-25.md`).
+- **While a test runs,** site improvements do not wait. Say when a change touches a tested page or metric, and ship it unless Greg says hold. Arm-symmetric changes (the same edit for both variants, or pages both arms share) are noise, not bias.
+- **Greg picks the winner.** Present the results and a recommendation, and do not deploy or retire a variant until Greg says so.
+- Test bold changes, not polish. At this traffic, only big differences show up.
+- Analyse exposure with the experiment's own exposure event (`$feature_flag_called` or `$exposure`), not the `$feature/...` tag on the pageview. The flag often loads after the pageview fires.
+
 ## Deploys
 This Vercel project (`shorthand-website`) has working Git integration: pushing a branch builds its preview, and merging to `main` deploys production within seconds. **Do not run `vercel deploy` here.** It only creates a second identical deployment that burns Deployment Storage (happened 2026-09-20, commit `94d7a03`). The app repo (`pulse 2.0`, Vercel project `pulse-3`) is the opposite: CLI-only.
 
