@@ -42,6 +42,8 @@ When writing a follow-up email about a fight, keep these three rules in mind:
 2. **Be objective.** Stick to what was seen and heard. Avoid speculating about motivation or using loaded words.
 3. **Outline the agreement.** Clearly state what was agreed upon during the phone call, including consequences, schedule adjustments, or counseling follow-ups.
 
+Before you write to anyone, write down what you saw for your own records: the time, the place, what happened, and what you did. The [free behavior documentation log (PDF)](/classroom-behavior-documentation-log.pdf) has the columns ready.
+
 ## Follow-Up Email to Parents About Fight at School Templates
 
 Here are three templates for the different roles a student might play in a physical conflict.
