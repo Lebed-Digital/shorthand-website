@@ -633,7 +633,11 @@ for (const path of ['/', '/blog/sample-emails-to-parents-about-student-behavior'
   const s = await newSession(browser, { flags: HOSTILE_FLAGS, clock: true });
   const p = await s.context.newPage();
   await p.goto(`${ORIGIN}${path}`, { waitUntil: 'load' });
-  await p.waitForTimeout(5000);
+  // Guard against a vacuous pass: PostHog must be running and have recorded
+  // this page BEFORE the clock jumps, so its five-minute refresh is tested.
+  const sawPageview = () => eventsOf(s.rec).some((e) => e.event === '$pageview' && e.properties.$pathname === path);
+  for (let waited = 0; !sawPageview() && waited < 20000; waited += 500) await p.waitForTimeout(500);
+  check(`${path}: PostHog ran (a pageview of this page was captured before the clock jump)`, sawPageview());
   await p.clock.fastForward(11 * 60 * 1000);
   // The SDK backs off on a page nobody touches, so touch it.
   await p.mouse.move(200, 200);
@@ -641,8 +645,6 @@ for (const path of ['/', '/blog/sample-emails-to-parents-about-student-behavior'
   await p.waitForTimeout(3000);
   const cookieNames = (await s.context.cookies()).map((c) => c.name);
   await s.context.close();
-  // Guard against a vacuous pass: PostHog really ran and recorded this page.
-  check(`${path}: PostHog ran (a pageview of this page was captured)`, eventsOf(s.rec).some((e) => e.event === '$pageview' && e.properties.$pathname === path));
   checkNoFlags(`${path} eleven minutes on`, s.rec);
   check(`${path}: no experiment cookie`, !cookieNames.includes('sh_home'), cookieNames.join(', '));
 }

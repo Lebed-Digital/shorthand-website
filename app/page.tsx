@@ -6,6 +6,7 @@ import QuickGridDemo from '../components/QuickGridDemo';
 import ScrollMotion from './ScrollMotion';
 import MobileMenu from './MobileMenu';
 import WalkthroughVideo from './WalkthroughVideo';
+import SignInLink from './SignInLink';
 import { features } from '../components/FeatureNav';
 
 // The homepage. It won the `homepage-modern` test (2026-11-25, results in
@@ -54,7 +55,7 @@ export default function Home() {
     <nav className={styles.nav} aria-label="Main navigation">
       <Link href="/" className={styles.logo}><Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority style={{ borderRadius: 9 }} /> ShortHand</Link>
       <div className={styles.links}><a href="#features">Features</a><a href="#walkthrough">Walkthrough</a><Link href="/tools">Free tools</Link><Link href="/blog">Blog</Link></div>
-      <div className={styles.navRight}><TrackedLink href="https://app.getshorthandapp.com" label="nav_sign_in">Sign in ↗</TrackedLink><MobileMenu /></div>
+      <div className={styles.navRight}><SignInLink /><MobileMenu /></div>
     </nav>
     <ScrollMotion><main>
       <section className={styles.hero}>
