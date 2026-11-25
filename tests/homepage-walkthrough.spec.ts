@@ -48,7 +48,6 @@ test('walkthrough player does not load until clicked, then plays and fires video
 
   await page.goto('/');
   const section = page.locator('#walkthrough');
-  await section.locator('summary').click();
   await section.scrollIntoViewIfNeeded();
   await expect(section.getByRole('button', { name: 'Play ShortHand full walkthrough' })).toBeVisible();
 
@@ -68,38 +67,20 @@ test('walkthrough player does not load until clicked, then plays and fires video
   ]);
 });
 
-test('hero "See How It Works" lands on the walkthrough heading, clear of the sticky nav', async ({ page }) => {
+test('hero "See how it works" lands on the walkthrough heading, clear of the fixed nav', async ({ page }) => {
   const events = await captureEvents(page);
   await page.goto('/');
 
-  await page.getByRole('link', { name: 'See How It Works' }).click();
+  await page.getByRole('link', { name: /See how it works/ }).click();
 
   await expect(page).toHaveURL(/\/#walkthrough$/);
-  const heading = page.locator('#walkthrough-heading');
-  // Smooth scroll: wait for it to arrive, then check it is not under the 64px nav.
+  const heading = page.locator('#walkthrough h2');
+  // Wait for the scroll to arrive, then check the heading is not under the nav.
   await expect.poll(async () => (await heading.boundingBox())!.y).toBeLessThan(300);
-  expect((await heading.boundingBox())!.y).toBeGreaterThanOrEqual(64);
+  expect((await heading.boundingBox())!.y).toBeGreaterThanOrEqual(64); // nav is 64-100px tall
   await expect(page.locator(FRAME)).toBeInViewport();
 
   expect(eventsNamed(events, 'cta_click').map((e) => e.cta_destination)).toContain('hero_see_how_it_works');
-});
-
-test('walkthrough CTA fires its own cta_click and opens the demo', async ({ page }) => {
-  const events = await captureEvents(page);
-  await page.route('https://app.getshorthandapp.com/**', (route) =>
-    route.fulfill({ status: 200, contentType: 'text/html', body: '<html>app</html>' })
-  );
-
-  await page.goto('/');
-  const section = page.locator('#walkthrough');
-  await section.locator('summary').click();
-  await expect(section.getByText('No account, no credit card.')).toBeAttached();
-  await section.getByRole('link', { name: 'Try the demo' }).click();
-
-  await expect(page).toHaveURL(/app\.getshorthandapp\.com\/\?demo=true/);
-  const click = eventsNamed(events, 'cta_click').find((e) => e.cta_destination === 'walkthrough_try_demo');
-  expect(click).toMatchObject({ cta_source: 'homepage' });
-  expect(String(click!.link_url)).toContain('lp=%2F');
 });
 
 test('/how-it-works redirects to the walkthrough', async ({ request }) => {
@@ -113,7 +94,7 @@ test('ClassDojo alternative page links to the walkthrough', async ({ page }) => 
   await page.getByRole('link', { name: 'Want to see it first? Watch the 6-minute walkthrough.' }).click();
 
   await expect(page).toHaveURL(/\/#walkthrough$/);
-  await expect(page.locator('#walkthrough-heading')).toBeInViewport();
+  await expect(page.locator('#walkthrough h2')).toBeInViewport();
 });
 
 test('existing vertical feature videos keep the 9:16 layout and click-to-play behavior', async ({ page }) => {
@@ -212,7 +193,7 @@ test.describe('Safari and mobile (one tap to play)', () => {
 test.describe('phone width', () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
-  test('walkthrough fits the screen at 16:9 with the CTA below it', async ({ page }) => {
+  test('walkthrough fits the screen at 16:9', async ({ page }) => {
     await page.goto('/#walkthrough');
     const frame = page.locator(FRAME);
     await expect(frame).toBeInViewport();
@@ -221,19 +202,13 @@ test.describe('phone width', () => {
     expect(box.x).toBeGreaterThanOrEqual(0);
     expect(box.x + box.width).toBeLessThanOrEqual(390);
     expect(box.width / box.height).toBeCloseTo(16 / 9, 1);
-
-    const cta = page.locator('#walkthrough').getByRole('link', { name: 'Try the demo' });
-    await cta.scrollIntoViewIfNeeded();
-    await expect(cta).toBeVisible();
-    // Measure both after the same scroll so the comparison is layout, not timing.
-    expect((await cta.boundingBox())!.y).toBeGreaterThan((await frame.boundingBox())!.y);
   });
 
   test('hamburger menu "Walkthrough" lands on the walkthrough from the homepage and a blog post', async ({ page }) => {
     for (const path of ['/', '/blog/welcome-letter-to-parents-from-teacher']) {
       await page.goto(path);
       await page.getByRole('button', { name: 'Menu' }).click();
-      await page.locator('.nav-mobile-menu').getByRole('link', { name: 'Walkthrough' }).click();
+      await page.locator('.nav-mobile-menu, #home-mobile-menu').getByRole('link', { name: 'Walkthrough' }).click();
       await expect(page).toHaveURL(/\/#walkthrough$/);
       await expect(page.locator(FRAME)).toBeInViewport();
     }
@@ -241,7 +216,7 @@ test.describe('phone width', () => {
 
   test('hero tap and the ClassDojo link both land on the walkthrough', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('link', { name: 'See How It Works' }).click();
+    await page.getByRole('link', { name: /See how it works/ }).click();
     await expect(page.locator(FRAME)).toBeInViewport();
 
     await page.goto('/classdojo-alternative');

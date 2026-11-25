@@ -1,806 +1,99 @@
-'use client';
-import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
-import AnimatedLogo from '../components/AnimatedLogo';
-import { Menu, X } from 'lucide-react';
-import featuredPost from '../posts/featured.json';
-import Footer from '../components/Footer';
-import FeatureVideo from '../components/FeatureVideo';
-import { fireCtaClick, fireVideoPlay } from '../lib/gtag';
-import { withAttribution } from '../lib/attribution';
-
-import QuickGridDemo from '../components/QuickGridDemo';
+import Link from 'next/link';
 import TrackedLink from '../components/TrackedLink';
+import styles from './page.module.css';
+import QuickGridDemo from '../components/QuickGridDemo';
+import ScrollMotion from './ScrollMotion';
+import MobileMenu from './MobileMenu';
+import WalkthroughVideo from './WalkthroughVideo';
+import SignInLink from './SignInLink';
+import { features } from '../components/FeatureNav';
 
+// The homepage. It won the `homepage-modern` test (2026-11-25, results in
+// docs/experiments-review-2026-11-25.md). No metadata of its own: title,
+// description, canonical and JSON-LD come from app/layout.tsx.
+//
+// GA4 cta_click labels (cta_source 'homepage') match the ones the previous
+// homepage used for the same buttons, so reports stay comparable.
+
+const demo = 'https://app.getshorthandapp.com/?demo=true';
 const PLAY_STORE_URL = 'https://play.google.com/store/apps/details?id=com.lebeddigital.shorthand';
 const APP_STORE_URL = 'https://apps.apple.com/us/app/shorthand-for-teachers/id6811725040';
-// Same article as app/press/page.tsx. Also shown on app/modern-preview so both homepage variants match.
 const TECH_LEARNING_URL = 'https://www.techlearning.com/learning/edtech/edtech-show-and-tell-november-2026';
 
-const jobs = [
+const FAQ: { q: string; a: React.ReactNode }[] = [
   {
-    slug: 'quick-note',
-    title: 'Capture It',
-    subtitle: 'Stop relying on memory.',
-    desc: 'Document behavior incidents, parent conversations, accommodations, interventions, and classroom observations in seconds while they\'re still fresh.',
-    img: '/quick-grid-note-sheet.jpg',
-    imgAlt: 'ShortHand Quick Grid quick-note sheet showing behavior indicators, an optional note field, and a Save button',
-    objectPosition: 'center bottom',
+    q: 'Is student data safe?',
+    a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no advertising, no surveillance. We use a limited set of service providers to operate ShortHand, and our Privacy Policy explains the providers that handle account, student, payment, analytics, and AI data. AI features are processed by OpenAI, with Groq as a backup. Both are bound by data processing terms, and neither uses your data to train its models. Just your notes, locked to your account.',
   },
   {
-    slug: 'parent-communication-log',
-    title: 'Find It',
-    subtitle: 'Walk into meetings with the full story.',
-    desc: 'See what was discussed, when contact happened, and what still needs follow-up, all organized in one place for conferences, IEP meetings, and admin conversations.',
-    img: '/parent-comms-log.png',
-    imgAlt: 'Parent communication log showing timestamped contact entries and an urgent follow-up alert',
-    objectPosition: 'center top',
+    q: 'Will this add to my workload?',
+    a: 'No. If you can send a text, you can use ShortHand. Logging a note takes about 2 seconds. It saves you hours of drafting emails, writing IEP updates, and trying to remember what happened three weeks ago.',
   },
   {
-    slug: 'ai-reports',
-    title: 'Use It',
-    subtitle: 'Turn documentation into action.',
-    desc: 'Turn the notes you\'ve already logged into a parent-ready draft. Review it, edit if needed, and send it straight from your own email. No parent account, login, or download required.',
-    img: '/3.png',
-    imgAlt: 'Generated parent report screen',
-    objectPosition: 'center top',
+    q: 'Can my whole grade level or school use this?',
+    a: (
+      <>
+        Yes. Any teacher can use ShortHand with their own free account, and each teacher&apos;s notes stay private to them. There are no shared school or team accounts yet. If your principal or district IT has privacy or approval questions, point them to{' '}
+        <Link href="/for-schools">ShortHand for Schools</Link>
+        , which has the data privacy agreement, security details, and a contact email.
+      </>
+    ),
+  },
+  {
+    q: 'Do I need to download anything?',
+    a: 'No. ShortHand works in your browser on any device, so there\'s nothing you have to install. If you prefer a regular app, you can get ShortHand from the App Store on iPhone or from Google Play on Android.',
+  },
+  {
+    q: 'Is ShortHand free to use?',
+    a: 'Yes. Try the demo with sample students, no account needed. Create a free account to use ShortHand with your own class. Pro is optional at $4.99/month, and new Pro users get a 30-day trial with no credit card.',
   },
 ];
 
-const btnTap   = { scale: 0.96 };
-const btnHover = { scale: 1.04, y: -2 };
-
 export default function Home() {
-  const featuresRef      = useRef<HTMLDivElement>(null);
-  const ctaRef           = useRef<HTMLDivElement>(null);
-  const creatorRef       = useRef<HTMLDivElement>(null);
-
-  const [menuOpen, setMenuOpen]   = useState(false);
-  const reduceMotion = useReducedMotion();
-  const hoverMotion = reduceMotion ? undefined : btnHover;
-  const tapMotion = reduceMotion ? undefined : btnTap;
-
-  function trackCta(label: string, url: string, e?: React.MouseEvent) {
-    e?.preventDefault();
-    if (url === '#walkthrough') {
-      const walkthrough = document.querySelector<HTMLDetailsElement>('#walkthrough');
-      if (walkthrough) walkthrough.open = true;
-    }
-    const destination = withAttribution(url, window.location.pathname, window.location.search);
-    const navigate = () => { window.location.href = destination; };
-    fireCtaClick({
-      cta_source: 'homepage',
-      cta_destination: label,
-      link_url: destination,
-      event_callback: navigate,
-    });
-    setTimeout(navigate, 300);
-  }
-
-  useEffect(() => {
-    // A direct load of a hash URL (e.g. /how-it-works -> /#walkthrough) starts a
-    // smooth scroll that ScrollTrigger's setup below cancels partway on phones.
-    // Jump there instantly first so ScrollTrigger records the right position.
-    if (window.location.hash === '#walkthrough') {
-      const walkthrough = document.querySelector<HTMLDetailsElement>('#walkthrough');
-      if (walkthrough) walkthrough.open = true;
-    }
-    if (window.location.hash) {
-      document.getElementById(window.location.hash.slice(1))?.scrollIntoView({ behavior: 'instant' });
-    }
-
-    let ctx: { revert: () => void } | null = null;
-
-    async function initGSAP() {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-      const { gsap } = await import('gsap');
-      const { ScrollTrigger } = await import('gsap/ScrollTrigger');
-      gsap.registerPlugin(ScrollTrigger);
-
-      ctx = gsap.context(() => {
-        // Feature cards — staggered slide-up
-        if (featuresRef.current) {
-          const cards = featuresRef.current.querySelectorAll<HTMLElement>('.feature-card');
-          gsap.fromTo(cards,
-            { opacity: 0, y: 48, scale: 0.96 },
-            {
-              opacity: 1, y: 0, scale: 1,
-              duration: 0.65, ease: 'power3.out',
-              stagger: 0.1,
-              scrollTrigger: { trigger: featuresRef.current, start: 'top 80%' },
-            }
-          );
-          const header = featuresRef.current.querySelector<HTMLElement>('.features-header');
-          if (header) {
-            gsap.fromTo(header,
-              { opacity: 0, y: 32 },
-              { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
-                scrollTrigger: { trigger: header, start: 'top 85%' } }
-            );
-          }
-        }
-
-        // Creator — fade + slide up
-        if (creatorRef.current) {
-          gsap.fromTo(creatorRef.current,
-            { opacity: 0, y: 40 },
-            { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
-              scrollTrigger: { trigger: creatorRef.current, start: 'top 82%' } }
-          );
-        }
-
-        // CTA — slide up
-        if (ctaRef.current) {
-          gsap.fromTo(ctaRef.current,
-            { opacity: 0, y: 40 },
-            { opacity: 1, y: 0, duration: 0.75, ease: 'power3.out',
-              scrollTrigger: { trigger: ctaRef.current, start: 'top 85%' } }
-          );
-        }
-      });
-    }
-
-    initGSAP();
-
-    // Spotlight border — track mouse position per feature card
-    const cards = document.querySelectorAll<HTMLElement>('.feature-card');
-    const handlers: Array<{ el: HTMLElement; fn: (e: MouseEvent) => void }> = [];
-    cards.forEach(card => {
-      const fn = (e: MouseEvent) => {
-        const r = card.getBoundingClientRect();
-        card.style.setProperty('--mx', `${e.clientX - r.left}px`);
-        card.style.setProperty('--my', `${e.clientY - r.top}px`);
-      };
-      card.addEventListener('mousemove', fn);
-      handlers.push({ el: card, fn });
-    });
-
-    return () => {
-      ctx?.revert();
-      handlers.forEach(({ el, fn }) => el.removeEventListener('mousemove', fn));
-    };
-  }, []);
-
-  return (
-    <>
-      <div className="glow-field" aria-hidden>
-        <span className="g1" /><span className="g2" /><span className="g3" />
-        <span className="g4" /><span className="g5" />
-      </div>
-
-      {/* NAV */}
-      <nav className="home-nav">
-        <div className="nav-inner">
-          <div className="nav-left">
-            <AnimatedLogo />
-          </div>
-          <div className="nav-links">
-            <a href="#features" className="nav-link">Features</a>
-            <Link href="/blog" className="nav-link">Blog</Link>
-            <a href="/tools" className="nav-link">Tools</a>
-            <a href="/resources" className="nav-link">Resources</a>
-            <a href="/privacy" className="nav-link">Privacy</a>
-          </div>
-          <div className="nav-right">
-            <a href="https://app.getshorthandapp.com" className="nav-link">Sign in</a>
-            <motion.a
-              href="https://app.getshorthandapp.com/?demo=true"
-              className="btn-primary"
-              whileHover={hoverMotion}
-              whileTap={tapMotion}
-              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              onClick={(e) => trackCta('nav_get_shorthand', 'https://app.getshorthandapp.com/?demo=true', e)}
-            >
-              Try the demo →
-            </motion.a>
-            <button type="button" className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu" aria-expanded={menuOpen} aria-controls="home-mobile-menu">
-              {menuOpen ? <X size={22} /> : <Menu size={22} />}
-            </button>
-          </div>
+  return <div className={styles.page}>
+    <nav className={styles.nav} aria-label="Main navigation">
+      <Link href="/" className={styles.logo}><Image src="/branding/shorthand/sh-teachers-icon.png" alt="" width={40} height={40} priority style={{ borderRadius: 9 }} /> ShortHand</Link>
+      <div className={styles.links}><a href="#features">Features</a><a href="#walkthrough">Walkthrough</a><Link href="/tools">Free tools</Link><Link href="/blog">Blog</Link></div>
+      <div className={styles.navRight}><SignInLink /><MobileMenu /></div>
+    </nav>
+    <ScrollMotion><main>
+      <section className={styles.hero}>
+        <div className={styles.heroCopy}>
+          <div className={styles.eyebrow}><span /> K-12 · WORKS ON ANY DEVICE · FREE PLAN</div>
+          <h1>Never walk into a parent meeting <em>unprepared again.</em></h1>
+          <p>Log a behavior note in a few taps. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.</p>
+          <div className={styles.actions}><TrackedLink href={demo} label="hero_try_free_demo" className={styles.button}>Try the free demo <span>↗</span></TrackedLink><TrackedLink href="#walkthrough" label="hero_see_how_it_works">See how it works <span>↓</span></TrackedLink></div>
+          <ul className={styles.checks}><li>Use initials or nicknames</li><li>No-signup demo</li><li>No credit card required</li></ul>
         </div>
-        {menuOpen && (
-          <div id="home-mobile-menu" className="nav-mobile-menu" onClick={() => setMenuOpen(false)}>
-            <a href="#features" className="nav-mobile-link">Features</a>
-            <a href="#walkthrough" className="nav-mobile-link" onClick={(e) => trackCta('hero_see_how_it_works', '#walkthrough', e)}>Walkthrough</a>
-            <Link href="/blog" className="nav-mobile-link">Blog</Link>
-            <a href="/tools" className="nav-mobile-link">Tools</a>
-            <a href="/resources" className="nav-mobile-link">Resources</a>
-            <a href="/privacy" className="nav-mobile-link">Privacy</a>
-            <a href="/terms" className="nav-mobile-link">Terms</a>
-            <a href="https://app.getshorthandapp.com" className="nav-mobile-link nav-mobile-cta">Open ShortHand →</a>
-          </div>
-        )}
-      </nav>
-      <main>
-
-      {/* HERO */}
-      <section className="hero hero--split">
-        <div className="hero-split-inner">
-          <div className="hero-content hero-content--left">
-            <div className="hero-eyebrow">K-12 &nbsp;·&nbsp; Works on Any Device &nbsp;·&nbsp; Free to Start</div>
-            <h1>Never walk into a parent meeting<br /><em>unprepared again.</em></h1>
-            <p className="hero-sub">
-              Log a behavior note in a few taps. Track patterns over weeks. Walk into any conference, IEP, or admin conversation with the full story, not just what you remember.
-            </p>
-            <div className="hero-ctas">
-              <motion.a
-                href="https://app.getshorthandapp.com/?demo=true"
-                className="btn-primary"
-                whileHover={hoverMotion}
-                whileTap={tapMotion}
-                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_try_free_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
-              >
-                Try the Free Demo →
-              </motion.a>
-              <motion.a
-                href="#walkthrough"
-                className="btn-ghost"
-                whileHover={reduceMotion ? undefined : { scale: 1.03, y: -1 }}
-                whileTap={tapMotion}
-                transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                onClick={(e) => trackCta('hero_see_how_it_works', '#walkthrough', e)}
-              >
-                See How It Works
-              </motion.a>
-            </div>
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.5rem 1rem',
-              marginTop: '1rem',
-              fontSize: '0.78rem',
-              fontWeight: 500,
-              color: 'var(--text-dim)',
-              alignItems: 'center',
-            }}>
-              {['Use initials or nicknames', 'No-signup demo', 'No credit card required'].map((item, i, arr) => (
-                <span key={item} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                    <span style={{ color: 'var(--green)', fontSize: '0.7rem' }}>✓</span>
-                    {item}
-                  </span>
-                  {i < arr.length - 1 && <span style={{ color: 'rgba(255,255,255,0.15)', marginLeft: '-0.5rem' }}>·</span>}
-                </span>
-              ))}
-            </div>
-          </div>
-          <div className="hero-quick-grid">
-            <QuickGridDemo />
-          </div>
-          <div className="hero-install-options">
-            {/* Secondary install option: the native store listings. Apple's badge
-                is sized to the Play badge's visible art, not its padded box. */}
-            <div className="hero-play-badge">
-              <a
-                href={APP_STORE_URL}
-                onClick={(e) => trackCta('app_store_badge', APP_STORE_URL, e)}
-              >
-                <Image
-                  src="/badges/app-store-badge.svg"
-                  alt="Download on the App Store"
-                  width={126}
-                  height={42}
-                  unoptimized
-                />
-              </a>
-              <a
-                href={PLAY_STORE_URL}
-                onClick={(e) => trackCta('google_play_badge', PLAY_STORE_URL, e)}
-              >
-                <Image
-                  src="/badges/google-play-badge.png"
-                  alt="Get it on Google Play"
-                  width={162}
-                  height={63}
-                />
-              </a>
-            </div>
-          </div>
+        <div className={`${styles.heroDemo} ${styles.demo}`}>
+          <span className={`${styles.float} ${styles.floatA}`} aria-hidden="true"><b>✓</b> Note saved</span>
+          <span className={`${styles.float} ${styles.floatB}`} aria-hidden="true"><b>✉</b> Parent email drafted</span>
+          <QuickGridDemo />
         </div>
-        <div className="hero-scroll">
-          <div className="scroll-line" />
+        <div className={styles.badges}>
+          <TrackedLink href={APP_STORE_URL} label="app_store_badge"><Image src="/badges/app-store-badge.svg" alt="Download on the App Store" width={126} height={42} unoptimized /></TrackedLink>
+          <TrackedLink href={PLAY_STORE_URL} label="google_play_badge"><Image src="/badges/google-play-badge.png" alt="Get it on Google Play" width={162} height={63} /></TrackedLink>
+        </div>
+        <p className={styles.press}>Featured in <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer">Tech &amp; Learning&apos;s Edtech Show &amp; Tell</a>, November 2026</p>
+      </section>
+      <section id="features" className={styles.features}>
+        <div className={styles.sectionIntro} data-reveal><span className={styles.eyebrow}>FROM A QUICK NOTE TO A CLEAR PICTURE</span><h2>Your memory is doing enough.<br /><em>Give it some backup.</em></h2></div>
+        <div className={styles.cards}>
+          <article data-reveal><span className={styles.number}>01 / FIND THE THREAD</span><h3>The whole story.<br />In one place.</h3><p>Parent conversations, classroom observations, and follow-ups stay organized for the moments you need them.</p><Link href="/features/parent-communication-log">Explore communication logs ↗</Link><div className={styles.cardImage}><Image src="/parent-comms-log.png" alt="ShortHand parent communication log" width={700} height={700} /></div></article>
+          <article data-reveal><span className={styles.number}>02 / MAKE IT USEFUL</span><h3>Good notes become<br />better conversations.</h3><p>Turn the notes you’ve logged into a parent-ready draft. Review, edit, and send from your own email.</p><Link href="/features/ai-reports">Explore reports ↗</Link><div className={styles.cardImage}><Image src="/3.png" alt="ShortHand generated parent report" width={700} height={700} /></div></article>
+        </div>
+        <div className={styles.allFeatures} data-reveal>
+          <span className={styles.eyebrow}>EVERY FEATURE</span>
+          <ul>{features.map(f => <li key={f.slug}><Link href={`/features/${f.slug}`}>{f.label} <span>↗</span></Link></li>)}</ul>
         </div>
       </section>
-
-      {/* TESTIMONIAL — DANA */}
-      <section style={{ padding: '56px 24px' }}>
-        <div style={{ maxWidth: '640px', margin: '0 auto' }}>
-          <div style={{
-            background: 'rgba(255,255,255,0.04)',
-            border: '1px solid rgba(255,255,255,0.1)',
-            borderRadius: '20px',
-            padding: '2rem 2.75rem',
-            position: 'relative',
-            textAlign: 'center',
-          }}>
-            {/* Large quote mark */}
-            <div style={{
-              fontSize: '4rem',
-              lineHeight: 1,
-              color: 'var(--accent)',
-              opacity: 0.4,
-              fontFamily: 'Georgia, serif',
-              marginBottom: '-0.5rem',
-              userSelect: 'none',
-            }}>&ldquo;</div>
-            <p style={{
-              fontSize: '1.4rem',
-              fontStyle: 'italic',
-              color: '#fff',
-              lineHeight: 1.6,
-              fontWeight: 400,
-              margin: '0.25rem 0 1.25rem',
-            }}>
-              The app was quick and easy to learn, even for a not-so-techy teacher like me, and it saves so much time.
-            </p>
-            <div style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              gap: '0.5rem',
-            }}>
-              <div style={{
-                width: 'clamp(80px, 10vw, 120px)',
-                height: 'clamp(80px, 10vw, 120px)',
-                borderRadius: '50%',
-                overflow: 'hidden',
-                flexShrink: 0,
-                border: '3px solid rgba(249,115,22,0.4)',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.3)',
-              }}>
-                <Image
-                  src="/Dana R..png"
-                  alt="Dana R., Elementary Teacher"
-                  width={120}
-                  height={120}
-                  style={{ objectFit: 'cover', width: '100%', height: '100%' }}
-                />
-              </div>
-              <div style={{ textAlign: 'center' }}>
-                <div style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text)' }}>Dana R.</div>
-                <div style={{ fontSize: '0.8rem', color: 'var(--text-dim)' }}>Elementary Teacher</div>
-              </div>
-            </div>
-          </div>
-          <div style={{ textAlign: 'center', margin: '2rem 0 0' }}>
-            <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#f97316', marginBottom: '0.5rem' }}>
-              As featured in
-            </div>
-            <a href={TECH_LEARNING_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text)', textDecoration: 'none' }}>
-              <div style={{ fontSize: 'clamp(1.4rem, 3vw, 1.8rem)', fontWeight: 800, lineHeight: 1.2 }}>Tech &amp; Learning</div>
-              <div style={{ fontSize: '0.95rem', color: 'var(--text-dim)', marginTop: '0.25rem' }}>
-                <span style={{ textDecoration: 'underline' }}>Edtech Show &amp; Tell</span>, November 2026
-              </div>
-            </a>
-          </div>
-        </div>
+      <section id="walkthrough" data-reveal className={styles.walkthrough}><div><span className={styles.eyebrow}>SEE IT IN ACTION</span><h2>A calmer workflow.<br /><em>Not another chore.</em></h2><p>See how ShortHand fits into the day you already have.</p></div><WalkthroughVideo /></section>
+      <section className={styles.faq} data-reveal><span className={styles.eyebrow}>COMMON QUESTIONS</span><h2>What teachers ask <em>first.</em></h2>
+        {FAQ.map(({ q, a }) => <details key={q}><summary>{q}</summary><p>{a}</p></details>)}
       </section>
-
-      {/* DIVIDER */}
-      <div style={{ display: 'flex', justifyContent: 'center', padding: '0 0 48px' }}>
-        <hr style={{ width: '120px', border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
-      </div>
-
-      {/* INTENT STRIP */}
-      <section style={{ padding: '0 0 60px' }}>
-        <div className="section-inner">
-          <p style={{ textAlign: 'center', fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: '1.25rem' }}>
-            What brings you here?
-          </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.875rem', maxWidth: '860px', margin: '0 auto' }}>
-            {[
-              { label: 'I need parent email help', href: '/features/parent-emails', track: null },
-              { label: "I'm replacing ClassDojo", href: '/classdojo-alternative', track: null },
-              { label: 'I need behavior documentation', href: '/features/quick-note', track: null },
-              { label: 'I keep forgetting what happened', href: 'https://app.getshorthandapp.com?demo=true&source=forgetting', track: 'intent_forgetting_demo' },
-            ].map(({ label, href, track }) => (
-              <a
-                key={href}
-                href={href}
-                onClick={track ? (e) => trackCta(track, href, e) : undefined}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.75rem',
-                  padding: '1rem 1.25rem',
-                  borderRadius: '12px',
-                  border: '1px solid rgba(255,255,255,0.09)',
-                  background: 'rgba(255,255,255,0.03)',
-                  textDecoration: 'none',
-                  color: 'var(--text)',
-                  fontSize: '0.9rem',
-                  fontWeight: 500,
-                  lineHeight: 1.4,
-                  transition: 'border-color 0.2s, background 0.2s',
-                }}
-                onMouseEnter={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(249,115,22,0.4)';
-                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(249,115,22,0.06)';
-                }}
-                onMouseLeave={e => {
-                  (e.currentTarget as HTMLAnchorElement).style.borderColor = 'rgba(255,255,255,0.09)';
-                  (e.currentTarget as HTMLAnchorElement).style.background = 'rgba(255,255,255,0.03)';
-                }}
-              >
-                <span>{label}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* JOBS — 3-card problem/solution section */}
-      <section id="features" className="features-section">
-        <div className="section-inner" ref={featuresRef}>
-          <div className="features-header">
-            <div className="section-label">What it does</div>
-            <h2 className="section-heading">Three things every teacher needs.</h2>
-            <p className="section-sub">Capture what happened. Find it when it matters. Turn it into something useful.</p>
-          </div>
-          <div className="features-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))' }}>
-            {jobs.map((j) => (
-              <motion.div key={j.slug} whileHover={reduceMotion ? undefined : { y: -6, scale: 1.02 }} whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-                transition={{ type: 'spring', stiffness: 300, damping: 22 }} style={{ height: '100%' }}>
-                <Link href={`/features/${j.slug}`} className="feature-card" style={{ gap: 0 }}>
-                  <div style={{
-                    marginBottom: '1.75rem',
-                    aspectRatio: '3 / 4',
-                    width: '100%',
-                    position: 'relative',
-                    borderRadius: '16px',
-                    overflow: 'hidden',
-                    boxShadow: '0 8px 32px rgba(0,0,0,0.45), 0 0 0 1px rgba(255,255,255,0.08)',
-                  }}>
-                    <Image
-                      src={j.img}
-                      alt={j.imgAlt}
-                      fill
-                      style={{ objectFit: 'cover', objectPosition: j.objectPosition }}
-                    />
-                  </div>
-                  <div className="card-title" style={{ fontSize: '1.35rem', marginBottom: '0.3rem' }}>{j.title}</div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 600, color: 'var(--accent, #a78bfa)', marginBottom: '0.75rem' }}>{j.subtitle}</div>
-                  <p className="card-desc" style={{ fontSize: '0.97rem', lineHeight: 1.65 }}>{j.desc}</p>
-                  <span className="card-link" style={{ marginTop: 'auto', paddingTop: '1.25rem' }}>Learn more →</span>
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* BEFORE / AFTER */}
-      <section style={{ padding: '80px 0' }}>
-        <div className="section-inner">
-          <div className="section-label" style={{ marginBottom: '1rem' }}>Sound familiar?</div>
-          <h2 className="section-heading" style={{ marginBottom: '2.5rem' }}>Before &amp; After<br /><em>ShortHand.</em></h2>
-          <div className="before-after-grid">
-            <div className="before-card">
-              <div className="ba-label">Before</div>
-              {[
-                'Scraps of paper shoved in a pocket',
-                'Forgotten parent conversations',
-                '3 hours of data entry on a Sunday',
-                '"Which students haven\'t I documented lately?"',
-                'Rewriting the same details for emails, reports, and meetings',
-              ].map(item => (
-                <div key={item} className="ba-item ba-item--before">
-                  <span className="ba-icon">✗</span> {item}
-                </div>
-              ))}
-            </div>
-            <div className="after-card">
-              <div className="ba-label">After</div>
-              {[
-                'Tap the student, tap what you saw, saved.',
-                'A full parent communication log with follow-ups surfaced',
-                'Reports generated while you drink coffee',
-                'Red rings show who may be slipping through',
-                'Capture it once. Reuse it for emails, reports, and meeting notes.',
-              ].map(item => (
-                <div key={item} className="ba-item ba-item--after">
-                  <span className="ba-icon">✓</span> {item}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* DEMO / FREE / PRO */}
-      <section className="plans-section" aria-labelledby="plans-heading">
-        <div className="section-inner">
-          <div className="section-label">Getting started</div>
-          <h2 id="plans-heading" className="section-heading">Demo, Free, and <em>Pro.</em></h2>
-          <p className="section-sub">Try it first. Use it free. Upgrade only if you want to.</p>
-          <div className="plans-grid">
-            <div className="plan-card">
-              <div className="plan-card-kicker">No account</div>
-              <h3 className="plan-card-title">Demo</h3>
-              <p className="plan-card-body">Open ShortHand with sample students and click through the app. No account needed.</p>
-              <TrackedLink href="https://app.getshorthandapp.com/?demo=true" label="pricing_demo" className="btn-primary">Try the free demo</TrackedLink>
-            </div>
-            <div className="plan-card">
-              <div className="plan-card-kicker">Free</div>
-              <h3 className="plan-card-title">Your classroom</h3>
-              <p className="plan-card-body">Create a free account to use ShortHand with your own class. Core documentation stays free.</p>
-              <TrackedLink href="https://app.getshorthandapp.com/?signup=1" label="pricing_free" className="btn-ghost">Create a free account</TrackedLink>
-            </div>
-            <div className="plan-card plan-card--pro">
-              <div className="plan-card-kicker">Optional</div>
-              <h3 className="plan-card-title">Pro</h3>
-              <p className="plan-card-body">$4.99/month adds Ask ShortHand and Meeting Prep reports beyond the free core documentation. New Pro users get a 30-day trial, no credit card.</p>
-              <Link href="/features/meeting-prep-report" className="btn-ghost">Explore Meeting Prep</Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FULL WALKTHROUGH: the hero "See How It Works" button jumps here */}
-      <details id="walkthrough" className="walkthrough-section" aria-labelledby="walkthrough-heading">
-        <summary className="section-inner walkthrough-summary">
-          <div className="section-label">Full walkthrough · 6 min</div>
-          <h2 id="walkthrough-heading" className="section-heading">See ShortHand from sign-up<br /><em>to finished report.</em></h2>
-        </summary>
-        <div className="section-inner">
-          <p className="section-sub">
-            A real walkthrough from a brand-new account: importing students, logging notes with the Quick Grid, parent communication, accommodations, reports, and Ask ShortHand.
-          </p>
-          <div className="walkthrough-video">
-            <FeatureVideo
-              videoId="FGeXjIG_c8c"
-              title="ShortHand full walkthrough"
-              wide
-              onPlay={() => fireVideoPlay('FGeXjIG_c8c', 'homepage_walkthrough')}
-            />
-          </div>
-          <div className="walkthrough-cta">
-            <motion.a
-              href="https://app.getshorthandapp.com/?demo=true"
-              className="btn-primary"
-              whileHover={hoverMotion}
-              whileTap={tapMotion}
-              transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-              onClick={(e) => trackCta('walkthrough_try_demo', 'https://app.getshorthandapp.com/?demo=true', e)}
-            >
-              Try the demo →
-            </motion.a>
-            <p className="walkthrough-cta-note">No account, no credit card. Click through it yourself with sample students.</p>
-          </div>
-        </div>
-      </details>
-
-      {/* Privacy Promise */}
-      <section className="privacy-section privacy-section--plain">
-        <div className="section-inner">
-          <div className="section-label">Data & Privacy</div>
-          <h2 className="section-heading">Your classroom. <em>Your notes.</em></h2>
-          <p className="section-sub">Use ShortHand with initials or nicknames. Read the full policy for storage, deletion, and AI processing details.</p>
-          <div className="privacy-grid">
-            {[
-              { title: 'Use Initials or Nicknames', desc: 'Full legal names and student IDs are not required.' },
-              { title: 'No Data Selling', desc: 'Your notes and student information are never sold or used for advertising.' },
-              { title: 'Your Notes, Your Account', desc: 'Your classroom records are protected with encryption and account-level access controls. You can delete your account and notes when you stop using ShortHand.' },
-            ].map((item) => (
-              <div key={item.title} className="privacy-card">
-                <div className="privacy-title">{item.title}</div>
-                <p className="privacy-desc">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
-            <Link href="/privacy" className="btn-ghost" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
-              Read the Full Privacy Policy →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* CREATOR */}
-      <section className="creator-section">
-        <div className="section-inner">
-          <div ref={creatorRef} className="creator-card">
-            <div className="creator-top">
-              <Image src="/creator.jpg" alt="Gregory, creator of ShortHand" className="creator-photo" width={200} height={260} priority />
-              <div>
-                <div className="creator-eyebrow">BUILT BY A TEACHER. FOR TEACHERS.</div>
-                <h2 className="creator-heading">A Message from the Creator</h2>
-              </div>
-            </div>
-            <p className="creator-body" style={{ fontWeight: 600, fontSize: '1.05rem', color: 'var(--text)' }}>
-              I didn&apos;t build this app to give you more work. I built it because I was tired of
-              drowning in paperwork while trying to keep my head above water.
-            </p>
-            <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', margin: '1rem 0 1.25rem' }}>
-              {['20+ Years in Education', 'Former RBT', 'Active 3rd Grade Teacher'].map(badge => (
-                <span key={badge} style={{
-                  background: 'rgba(167,139,250,0.12)',
-                  border: '1px solid rgba(167,139,250,0.3)',
-                  color: 'var(--accent, #a78bfa)',
-                  borderRadius: '999px',
-                  padding: '0.3rem 0.9rem',
-                  fontSize: '0.82rem',
-                  fontWeight: 600,
-                  letterSpacing: '0.02em',
-                }}>
-                  {badge}
-                </span>
-              ))}
-            </div>
-            <p className="creator-body">
-              I have worked in education for over twenty years. Before I became a 3rd grade teacher,
-              I worked as a one-to-one aide and a Registered Behavior Technician. I know exactly
-              how loud, fast, and overwhelming a school day can be. This tool was created
-              with love to assist my fellow teachers who are looking for a better way to track
-              progress and bridge the gap between school and home.
-            </p>
-            <details className="creator-intro">
-              <summary>Watch my introduction</summary>
-              <video src="/hero-video.mp4" poster="/hero-video-poster.jpg" preload="none" controls playsInline aria-label="Introduction from the creator of ShortHand" />
-            </details>
-            <blockquote className="creator-quote">
-              &ldquo;Good data shouldn&apos;t be a chore. It should be the bridge that connects a
-              teacher&apos;s observation to a parent&apos;s understanding.&rdquo;
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section style={{ padding: '80px 0' }}>
-        <div className="section-inner">
-          <div style={{ maxWidth: '720px', margin: '0 auto' }}>
-            <div className="section-label" style={{ marginBottom: '0.75rem' }}>Common Questions</div>
-            <h2 className="section-heading" style={{ marginBottom: '2.5rem' }}>ShortHand FAQ: <em>Everything you need to know.</em></h2>
-            {[
-              {
-                q: 'Is student data safe?',
-                a: 'Yes. ShortHand was built by a teacher, for teachers. We use enterprise-grade encryption and Row Level Security so only you have access to your classroom data. No selling data, no advertising, no surveillance. We use a limited set of service providers to operate ShortHand, and our Privacy Policy explains the providers that handle account, student, payment, analytics, and AI data. AI features are processed by OpenAI, with Groq as a backup. Both are bound by data processing terms, and neither uses your data to train its models. Just your notes, locked to your account.',
-              },
-              {
-                q: 'Will this add to my workload?',
-                a: 'No. If you can send a text, you can use ShortHand. Logging a note takes about 2 seconds. It saves you hours of drafting emails, writing IEP updates, and trying to remember what happened three weeks ago.',
-              },
-              {
-                q: 'Do I need to spend hours setting this up?',
-                a: 'No. You can import your roster from Google Classroom or a spreadsheet in minutes. There is no manual to read. Just open the app and start logging.',
-              },
-              {
-                q: 'Can my whole grade level or school use this?',
-                a: (
-                  <>
-                    Yes. Any teacher can use ShortHand with their own free account, and each teacher&apos;s notes stay private to them. There are no shared school or team accounts yet. If your principal or district IT has privacy or approval questions, point them to{' '}
-                    <Link href="/for-schools" style={{ color: 'var(--accent, #a78bfa)' }}>ShortHand for Schools</Link>
-                    , which has the data privacy agreement, security details, and a contact email.
-                  </>
-                ),
-              },
-              {
-                q: 'What is ShortHand?',
-                a: 'ShortHand is a behavior and parent-communication tool built for K-12 teachers. Log what happened in seconds, then turn those notes into parent emails, progress reports, and meeting-ready summaries whenever you need them. It is also a quick way to keep anecdotal notes: short, dated observations filed under each student.',
-              },
-              {
-                q: 'Do I need to download anything?',
-                a: 'No. ShortHand works in your browser on any device, so there\'s nothing you have to install. If you prefer a regular app, you can get ShortHand from the App Store on iPhone or from Google Play on Android.',
-              },
-              {
-                q: 'How does ShortHand help with parent communication?',
-                a: 'ShortHand keeps your parent communication history organized in one place, including dates, details, and follow-ups. When you need to reach out, it can turn an existing note into a parent-ready draft. You review it, make any changes, and send it through your own email.',
-              },
-              {
-                q: 'Does ShortHand alert me if I haven\'t checked in on a student?',
-                a: 'Yes. Color-coded status rings glow red when a student hasn\'t been logged in 16 or more days, amber at 9 to 15 days, and green if you\'ve logged in the last 8 days. No student quietly slips through the cracks.',
-              },
-              {
-                q: 'Is ShortHand free to use?',
-                a: 'Yes. Try the demo with sample students, no account needed. Create a free account to use ShortHand with your own class. Pro is optional at $4.99/month, and new Pro users get a 30-day trial with no credit card.',
-              },
-            ].map(({ q, a }) => (
-              <details key={q} style={{
-                borderBottom: '1px solid rgba(255,255,255,0.08)',
-                padding: '1.25rem 0',
-              }}>
-                <summary style={{
-                  fontWeight: 700,
-                  fontSize: '1.05rem',
-                  cursor: 'pointer',
-                  color: 'var(--text)',
-                  listStyle: 'none',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  alignItems: 'center',
-                  gap: '1rem',
-                }}>
-                  {q}
-                  <span style={{ color: 'var(--accent, #a78bfa)', flexShrink: 0, fontSize: '1.2rem' }}>+</span>
-                </summary>
-                <p style={{ marginTop: '0.75rem', color: 'var(--text-dim)', lineHeight: 1.7, fontSize: '0.97rem' }}>{a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* FROM THE BLOG */}
-      <section style={{ padding: '0 0 80px' }}>
-        <div className="section-inner">
-          <div className="section-label" style={{ marginBottom: '1.25rem' }}>From the Blog</div>
-          <Link href={`/blog/${featuredPost.slug}`} className="blog-card-link" style={{ maxWidth: '680px' }}>
-            <div className="blog-card" style={{ padding: '1.75rem 2rem' }}>
-              <div style={{ fontWeight: 700, fontSize: '1.2rem', marginBottom: '0.35rem', color: 'var(--text)' }}>
-                {featuredPost.title}
-              </div>
-              <div style={{ fontSize: '0.95rem', color: 'var(--text-dim)', marginBottom: '0.75rem' }}>
-                {featuredPost.subtitle}
-              </div>
-              <p style={{ fontSize: '0.9rem', color: 'var(--text-dim)', lineHeight: 1.6, margin: '0 0 1rem' }}>
-                {featuredPost.excerpt}
-              </p>
-              <span style={{ fontSize: '0.9rem', color: 'var(--accent, #a78bfa)' }}>Read the post →</span>
-            </div>
-          </Link>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="cta-section">
-        <div className="section-inner">
-          <div ref={ctaRef} className="cta-layout">
-            <div className="cta-text">
-              <div className="section-label">Get started</div>
-              <h2 className="cta-heading">Try the demo.<br />No account needed.</h2>
-              <p className="cta-sub">
-                Catch problems before they become calls home. Open the demo in your browser, then create a free account when you want to use ShortHand with your class. Pro is optional.
-              </p>
-              <div className="cta-btns">
-                <motion.a
-                  href="https://app.getshorthandapp.com/?demo=true"
-                  className="btn-primary btn-primary--lg"
-                  whileHover={hoverMotion}
-                  whileTap={tapMotion}
-                  transition={{ type: 'spring', stiffness: 400, damping: 20 }}
-                  onClick={(e) => trackCta('cta_get_shorthand', 'https://app.getshorthandapp.com/?demo=true', e)}
-                >
-                  Open ShortHand →
-                </motion.a>
-                <a
-                  href={APP_STORE_URL}
-                  className="cta-app-store-badge"
-                  onClick={(e) => trackCta('app_store_badge', APP_STORE_URL, e)}
-                >
-                  <Image
-                    src="/badges/app-store-badge.svg"
-                    alt="Download on the App Store"
-                    width={141}
-                    height={47}
-                    unoptimized
-                  />
-                </a>
-                <a
-                  href={PLAY_STORE_URL}
-                  className="cta-play-badge"
-                  onClick={(e) => trackCta('google_play_badge', PLAY_STORE_URL, e)}
-                >
-                  <Image
-                    src="/badges/google-play-badge.png"
-                    alt="Get it on Google Play"
-                    width={180}
-                    height={70}
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      </main>
-      <Footer />
-    </>
-  );
+      <section className={styles.closing} data-reveal><span className={styles.eyebrow}>BUILT BY A TEACHER. FOR YOUR REAL DAY.</span><h2>Let the little things<br /><em>add up to clarity.</em></h2><TrackedLink href={demo} label="cta_get_shorthand" className={styles.button}>Try the free demo ↗</TrackedLink><p>Start with the free demo. Keep core documentation free.<br />Optional Pro: $4.99/month, with a 30-day trial and no credit card.</p></section>
+    </main></ScrollMotion>
+    <footer className={styles.footer}><Link href="/" className={styles.logo}>ShortHand</Link><span>A little less to carry home.</span><div><Link href="/pricing">Pricing</Link><Link href="/for-schools">For schools</Link><Link href="/install">Install</Link><Link href="/support">Support</Link><Link href="/privacy">Privacy</Link><Link href="/terms">Terms</Link><Link href="/resources">Resources</Link></div></footer>
+  </div>;
 }

@@ -82,3 +82,10 @@ Ending it is a code change (branch, preview, Greg's merge): remove `BlogCtaExper
 - Time-box from the start: pick a stop date and the decision rule before launch (see AGENTS.md, "Experiments").
 - At about 100 homepage visitors a month and about 160 tracked post readers a month, only large differences show up. Test bold changes, not polish.
 - Use `$feature_flag_called` (or the experiment's own exposure event) for analysis, never the pageview tag.
+
+## Outcome (Greg, 2026-11-25)
+
+- `homepage-modern`: ship modern. The redesign became `app/page.tsx` for every visitor. The cookie split (`proxy.ts`), `/modern-preview` and the variant tagging were removed. PR #190's whole-school FAQ answer was carried into the new homepage (its other homepage edits applied only to the old page). GA4 `cta_click` labels and the walkthrough `video_play` event match the old homepage's.
+- `blog-cta-presentation`: ended, boxed card kept. `BlogCtaExperiment`, the editorial styles and `blog_cta_paused` were removed.
+- Feature flags are now off site-wide. End both experiments in PostHog after the code ships (results stay readable there).
+- Follow-up: compare web-app opens per homepage visitor, and app signups with landing page `/`, for the 30 days after deploy against the baselines in the PR.

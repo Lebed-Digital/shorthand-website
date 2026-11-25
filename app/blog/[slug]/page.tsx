@@ -10,10 +10,9 @@ import ClassDojoProductProof from '../../../components/ClassDojoProductProof';
 import BlogWorkflowBridge from '../../../components/BlogWorkflowBridge';
 import TrackedBlogContent from '../../../components/TrackedBlogContent';
 import BlogExampleCopyTracker from '../../../components/BlogExampleCopyTracker';
-import BlogCtaExperiment from '../../../components/BlogCtaExperiment';
 import { getAllPosts, getPost, getRelatedPosts } from '../../../lib/posts';
 import { getFreeSliceData } from '../../../lib/report-card-teaser';
-import { BLOG_CTA_EXPERIMENT_POST, blogExampleType } from '../../../lib/posthog-events';
+import { blogExampleType } from '../../../lib/posthog-events';
 import Footer from '../../../components/Footer';
 
 const PDF_GATE_MARKER = 'PDFGATEMARKER';
@@ -316,7 +315,6 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           exactly that set of posts, so the two cannot drift apart. */}
       <BlogNav showLibraryCta={Boolean(libraryIntro)} />
       {exampleType && <BlogExampleCopyTracker exampleType={exampleType} />}
-      {slug === BLOG_CTA_EXPERIMENT_POST && <BlogCtaExperiment />}
 
       <main>
       <article style={{ maxWidth: '720px', margin: '0 auto', padding: '6rem 1.5rem 5rem' }}>
