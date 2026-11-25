@@ -59,7 +59,7 @@ You do not have to wonder how to contact parents about behavior. You just state 
 Done. Send. Go home. The parent gets the information they need, and you get your evening back. It removes the emotion and keeps the focus on the behavior.
 
 ## Finding the Right Tool for the Job
-This is exactly why I started relying on ShortHand. It is free to start and built specifically for individual classroom teachers like us.
+This is exactly why I started relying on ShortHand. It has a free plan with no time limit and is built specifically for individual classroom teachers like us.
 
 You do not need a district-wide purchase or rollout to create an account. Before entering real student records, check with your school or district about app approval and student-data requirements. Then you can use it from your phone or laptop.
 
@@ -70,7 +70,7 @@ Here is the absolute best part of the entire process. When I sit down on Friday 
 
 ShortHand drafts the message right from my notes. It looks at the log I have built up over the week and helps me generate the communication. It bridges the massive gap between the moment something happens and the email that never gets written. It is the only way I have found to actually simplify parent communication without sacrificing the relationship.
 
-If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or head directly over to the [install page](https://app.getshorthandapp.com?demo=true) to set it up right now. It runs perfectly on any device without going through an app store. You can also read more of my thoughts on classroom survival over on the [blog](/blog).
+If you are tired of the blank email screen and the guilt trip, you can check it out at getshorthandapp.com. Or [try the free demo](https://app.getshorthandapp.com?demo=true) right now. It runs in your browser on any device, and you can also [get the app for iPhone or Android](/install). You can also read more of my thoughts on classroom survival over on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 

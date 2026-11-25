@@ -98,7 +98,7 @@ A few things that make it different from the other options:
 - **Incident logging and parent contact are the same system.** You're not logging in one place and emailing from another. The note and the communication record live together, tied to the student.
 - **Phone-first.** Built to be used during a class transition, in the hallway, or in the parking lot after a call. Not at a desktop at 8 PM.
 - **No school-wide purchase required.** You can set up your own account. Check your school or district's approval and student-data requirements before entering real student records.
-- **Free to start.** No credit card, no trial period countdown.
+- **Free plan with no time limit.** No credit card. [See what Pro adds](/pricing).
 
 You can also record mood observations as notes, so you have a dated record to review if a student seems withdrawn over several days.
 

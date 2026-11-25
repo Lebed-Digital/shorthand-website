@@ -216,7 +216,7 @@ This is exactly the problem [ShortHand](https://app.getshorthandapp.com?demo=tru
 
 The templates above are useful. The real unlock is having the documentation to fill them with something specific.
 
-[Try ShortHand free →](https://app.getshorthandapp.com?demo=true) No app store. No sign-up for the demo. Opens in 30 seconds on any device.
+[Try ShortHand free →](https://app.getshorthandapp.com?demo=true) No sign-up for the demo. Opens in your browser on any device.
 
 ---
 

@@ -53,7 +53,7 @@ You tap a student's name, log a behavior note with a pre-set tag, and add any mo
 
 ShortHand also drafts parent emails from your notes using AI, so you're not starting from a blank page after a hard day.
 
-It's free to start, works on your phone, and doesn't require a school-wide purchase. Check your school or district's approval and student-data requirements before entering real student records.
+It has a free plan with no time limit, works on your phone, and doesn't require a school-wide purchase. Check your school or district's approval and student-data requirements before entering real student records.
 
 ---
 
@@ -72,7 +72,7 @@ It's free to start, works on your phone, and doesn't require a school-wide purch
 | Announcements / newsletters | No | Yes |
 | Student portfolios | No | Yes |
 | Free tier | Yes, full core features | Free to teachers once the school buys it |
-| Paid plan | Free to start | From ~$3/student/year, school-purchased |
+| Paid plan | Free plan with no time limit. Optional Pro, $4.99/month on the web ([pricing](/pricing)) | Starts at $3/student/year for schools and districts, final price by custom quote ([Bloomz pricing](https://www.bloomz.com/pricing)) |
 | Can one teacher adopt it? | Yes | No, sold to schools and districts |
 
 ---

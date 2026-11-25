@@ -149,7 +149,7 @@ A workable system should let you:
 
 Consistency matters more than perfection. A brief note every few days beats a thorough report written from memory once a month.
 
-[ShortHand](https://getshorthandapp.com) was built for exactly this: log a quick note in seconds, pull up a student's full history before a meeting, and let the app draft a parent message from your notes when you need it. Free to start.
+[ShortHand](https://getshorthandapp.com) was built for exactly this: log a quick note in seconds, pull up a student's full history before a meeting, and let the app draft a parent message from your notes when you need it. Free plan with no time limit.
 
 If you prefer paper or a spreadsheet setup, the [student behavior log for teachers](/blog/student-behavior-log-for-teachers) has printable options worth bookmarking.
 

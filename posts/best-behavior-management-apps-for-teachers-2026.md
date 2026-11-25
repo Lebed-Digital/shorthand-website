@@ -99,7 +99,7 @@ A few things that make it different from the tools above:
 - **Phone-first.** Designed for the parking lot after a call, not a desktop at 8 PM.
 - **Parent communication built in.** The behavior log and contact log are the same thing, not two separate systems.
 - **AI-assisted follow-up.** ShortHand can draft a parent email based on your notes, so you don't have to start from a blank page.
-- **Free to start.** No credit card required.
+- **Free plan with no time limit.** No credit card required.
 
 ShortHand won't run a formal behavioral assessment or manage a whole-school points economy. It's built for the teacher who needs to stop forgetting what they told which parent, and start going into hard conversations with actual documentation.
 

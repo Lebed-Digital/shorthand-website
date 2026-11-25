@@ -34,7 +34,7 @@ Vague notes are equally useless. A sticky note on your desk that says "called Mo
 
 ## Exactly What to Document for Every Parent Contact
 
-You do not need to write a novel. You need specific data points. Every single time you reach out to a home, your log needs to capture these elements.
+You do not need to write a novel. You need specific data points. Every single time you reach out to a home, your log needs to capture these elements. If you want a ready-made page with these columns, the [free printable parent contact log](/tools/parent-communication-log) has them.
 
 **Date and time.** Every entry needs a timestamp. When a parent says they were at work and could not answer, you want to show that you called at 4:15 PM, well after their shift ended. Exact times remove ambiguity and show precision.
 

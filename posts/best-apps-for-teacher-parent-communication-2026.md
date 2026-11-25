@@ -56,7 +56,7 @@ If you've been away from this category for a few years and remember it as "every
 | SchoolStatus Connect | Districtwide, former ClassTag | No, district only | No | Yes | Quote |
 | Seesaw | Student portfolios | Yes, Starter | No, account and invitation required; app optional | Yes | Free (Starter); paid school plans |
 | Bloomz | All-in-one school platform | No, per student | No, app optional | 250+ languages | $3/student/yr |
-| ShortHand | Documenting contacts you make | Yes | No, never | n/a | Free to start |
+| ShortHand | Documenting contacts you make | Yes | No, never | n/a | Free plan, no time limit ([pricing](/pricing)) |
 
 Prices and availability were checked against each company's own pricing page in 2026. Anything marked "quote" means the vendor doesn't publish a number and routes you to sales, which is usually a sign the product isn't sold to individuals.
 
