@@ -34,7 +34,9 @@ Re-check the app before adding numbers or new Pro claims to the site.
 
 ## Experiments
 
-None running. Both 2026 tests ended 2026-11-25 (results: `docs/experiments-review-2026-11-25.md`): the modern homepage won and is now `app/page.tsx` for everyone, and the blog CTA kept the original boxed card. Feature flags are off. New experiments are time-boxed (AGENTS.md, "Experiments").
+None running. Both 2026 tests ended 2026-11-25 (results: `docs/experiments-review-2026-11-25.md`): the modern homepage won and is now `app/page.tsx` for everyone, and the blog CTA kept the original boxed card. Shipped in PR #196 (`c732d92`), production verified 2026-11-25. Feature flags are off. New experiments are time-boxed (AGENTS.md, "Experiments").
+
+Re-read around 2026-12-25: homepage web-app opens per visitor (test: old 17.5%, modern 25.0%) and app signups with first-touch landing page `/` (baseline 4 in 30 days, 25 in 90).
 
 ## Pages
 
@@ -55,7 +57,8 @@ Sitemap: blog posts carry real dates; static pages carry no lastmod (no fake "mo
 
 Reference docs/funnel-decisions.md for funnel implementation details.
 Open audit items: Brain `Website Audit - 2026-11-15.md`, "Implementation Status".
+Known issues (Brain NOTES.md): the comment generator's "Frequently asked questions" heading is readable in session replay; `TrackedLink` cancels Ctrl/Cmd-click on tracked CTAs.
 
 ## Last reviewed
 
-2026-11-22
+2026-11-25
