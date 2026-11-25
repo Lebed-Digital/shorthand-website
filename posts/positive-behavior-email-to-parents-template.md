@@ -54,6 +54,8 @@ Best,
 
 [Your Name]
 
+RESOURCEOFFERMARKER
+
 ### 2. The Academic Turnaround Template
 
 Use this when a student has been struggling with a concept or subject, but showed significant effort, growth, or persistence recently.
@@ -127,8 +129,6 @@ I look forward to seeing them carry this positive momentum into tomorrow.
 Best,
 
 [Your Name]
-
-RESOURCEOFFERMARKER
 
 ## How to Make Positive Emails a Habit
 

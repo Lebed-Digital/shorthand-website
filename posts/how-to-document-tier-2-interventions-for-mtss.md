@@ -55,6 +55,8 @@ You don't remember exactly what happened.
 
 That is how documentation systems slowly fall apart.
 
+A one-page sheet on your clipboard fixes most of that. The [free MTSS Tier 2 intervention tracking sheet](/mtss-tier-2-intervention-tracking-sheet.pdf) gives you a row for each session: the date, the target behavior, what you tried, and how the student responded.
+
 ## What Data Should You Collect?
 
 You do not need a novel.

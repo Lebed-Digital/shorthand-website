@@ -41,6 +41,8 @@ Instead, bring the data. Mention specific assessments, work samples, and classro
 
 This objective description makes the problem concrete and much harder to wave away. When academics and classroom behavior intersect, the same data-first approach applies to [how to write behavior emails to parents](https://getshorthandapp.com/blog/how-to-write-behavior-emails-to-parents). When you share data, you show parents that your concern is based on evidence, not a subjective opinion.
 
+Keep a dated record of each email and call while you are at it. If the concern reaches a team meeting later, you will want to show when you first reached out. A [free printable parent contact log](/tools/parent-communication-log) works fine for this.
+
 ### Invite Parents in with Actionable Steps
 
 When you ask parents to help at home, make sure you are not making them feel like they are failing to parent. Do not demand that they tutor their child for an hour every night. A lot of parents are exhausted by the time homework happens, and most are not trained educators.

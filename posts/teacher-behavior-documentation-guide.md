@@ -51,7 +51,7 @@ The best behavior log is the one you will actually maintain. That usually means 
 
 [The Student Behavior Log: What to Track, How to Track It, and Why It Actually Matters](/blog/student-behavior-log-for-teachers) breaks down exactly what to record for each incident: the date, setting, what the behavior looked like in observable terms, what happened before and after, and any intervention used. Brief is fine. A two-sentence entry made the same day is worth more than a detailed account written a week later.
 
-For a ready-to-use format, [The Only Teacher Documentation Log Template You Actually Need](/blog/teacher-documentation-log-template) gives you a simple structure that works whether you prefer paper, a spreadsheet, or an app.
+For a ready-to-use format, [The Only Teacher Documentation Log Template You Actually Need](/blog/teacher-documentation-log-template) gives you a simple structure that works whether you prefer paper, a spreadsheet, or an app. If you just want the printable page, [download the free behavior documentation log (PDF)](/classroom-behavior-documentation-log.pdf).
 
 Once you have a format, [How to Actually Use a Student Behavior Log](/blog/how-to-use-a-student-behavior-log) covers the harder part: when to log, which details matter, and how to keep it from eating your prep period.
 
