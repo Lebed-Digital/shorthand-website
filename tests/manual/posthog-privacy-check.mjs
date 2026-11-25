@@ -641,6 +641,8 @@ for (const path of ['/', '/blog/sample-emails-to-parents-about-student-behavior'
   await p.waitForTimeout(3000);
   const cookieNames = (await s.context.cookies()).map((c) => c.name);
   await s.context.close();
+  // Guard against a vacuous pass: PostHog really ran and recorded this page.
+  check(`${path}: PostHog ran (a pageview of this page was captured)`, eventsOf(s.rec).some((e) => e.event === '$pageview' && e.properties.$pathname === path));
   checkNoFlags(`${path} eleven minutes on`, s.rec);
   check(`${path}: no experiment cookie`, !cookieNames.includes('sh_home'), cookieNames.join(', '));
 }

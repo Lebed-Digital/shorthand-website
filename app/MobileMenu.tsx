@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import styles from './page.module.css';
+import { fireCtaClick } from '../lib/gtag';
 
 // Phone-width menu for the homepage (app/page.tsx).
 // Same links as the desktop nav.
@@ -23,7 +24,7 @@ export default function MobileMenu() {
       {open && (
         <div id="home-mobile-menu" className={styles.mobileMenu} onClick={() => setOpen(false)}>
           <a href="#features">Features</a>
-          <a href="#walkthrough">Walkthrough</a>
+          <a href="#walkthrough" onClick={() => fireCtaClick({ cta_source: 'homepage', cta_destination: 'hero_see_how_it_works', link_url: '#walkthrough' })}>Walkthrough</a>
           <Link href="/tools">Free tools</Link>
           <Link href="/blog">Blog</Link>
         </div>

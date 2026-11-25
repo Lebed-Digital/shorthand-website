@@ -68,7 +68,7 @@
 .faq summary::after{content:"+";color:#be613e;font-size:22px;line-height:1}
 .faq details[open] summary::after{content:"−"}
 .faq details p{margin:12px 0 0;color:#58645e;font-size:15px;line-height:1.7}
-.faq details p a{color:#be613e;text-decoration:underline}
+.faq details p a{color:#a74415;text-decoration:underline}
 
 .closing{text-align:center;background:#e5e9db;padding:90px 24px}
 .closing h2{font-size:clamp(42px,5vw,70px);margin-bottom:30px}
