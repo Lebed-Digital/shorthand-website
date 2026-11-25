@@ -56,7 +56,7 @@ Logging takes under 10 seconds. Notes are timestamped and tied to the student. W
 
 And when a note has to end up somewhere else, one tap strips the conversational padding out of it so you can paste it straight into your district's system without rewriting it by hand. That's the part I care about most: ShortHand isn't trying to replace the platform your school already requires. It's trying to make feeding that platform take seconds instead of your prep period.
 
-You can create an account without a school-wide purchase or rollout. Check your school or district's approval and student-data requirements before entering real student records. Free to start, no credit card required.
+You can create an account without a school-wide purchase or rollout. Check your school or district's approval and student-data requirements before entering real student records. Free plan with no time limit, no credit card required.
 
 [Try ShortHand free](https://app.getshorthandapp.com?demo=true)
 
@@ -180,7 +180,7 @@ One practical note: HiTeach is typically a school or district deployment and gen
 
 If you teach K-2 and your students still respond to the gamification, stay on ClassDojo. There's no reason to switch a system that's working.
 
-If you're past that point and you need actual documentation, parent contact records, and something that holds up in a meeting, ShortHand is the one built for that specific problem. No school license needed, no parent app required, free to start.
+If you're past that point and you need actual documentation, parent contact records, and something that holds up in a meeting, ShortHand is the one built for that specific problem. No school license needed, no parent app required, and a free plan with no time limit.
 
 If you want a full communication hub to replace everything ClassDojo does, Bloomz is the closest match, but it's a school-level purchase now rather than something you can sign up for alone.
 

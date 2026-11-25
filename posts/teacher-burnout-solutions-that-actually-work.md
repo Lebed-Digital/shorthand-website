@@ -64,7 +64,7 @@ You need tools that do the heavy lifting for you. Technology should not give you
 ## Removing One Friction Point at a Time
 This is the exact reason I started using ShortHand in my own classroom. It does not solve every single problem in education. It will not grade your spelling tests or write your lesson plans. But it completely removes one specific, massive point of friction from my day.
 
-ShortHand is free to start and built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and tap what I saw. The app handles the logging securely.
+ShortHand has a free plan with no time limit and is built specifically for individual classroom teachers. When an incident happens, I do not reach for a clipboard. I just tap the student on my device and tap what I saw. The app handles the logging securely.
 
 More importantly, when it is time to actually email parents, ShortHand uses my notes to draft the message for me. That is thirty minutes of my afternoon handed back to me on a silver platter. You can find it and try it for yourself at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
@@ -73,7 +73,7 @@ We cannot change the entire education system overnight. The demands are not goin
 
 By finding tools that actually work for our specific workflow, we can stop staring at our screens in the dark and start going home on time.
 
-If you are ready to stop drowning in communication tasks, grab ShortHand from the [install page](https://app.getshorthandapp.com?demo=true). It works seamlessly on your phone or laptop with no app store required. You can also read more about my classroom management strategies over on the [blog](/blog).
+If you are ready to stop drowning in communication tasks, [try the free demo](https://app.getshorthandapp.com?demo=true). It works in your browser on your phone or laptop, and you can also [get the app for iPhone or Android](/install). You can also read more about my classroom management strategies over on the [blog](/blog).
 
 *Gregory Lebed is a 3rd grade teacher with 20+ years in education and a former Registered Behavior Technician (RBT).*
 

@@ -38,7 +38,7 @@ If you need reference templates for other serious behaviors that do not involve 
 
 When writing a follow-up email about a fight, keep these three rules in mind:
 
-1. **Protect privacy.** Never name other students in your email. Refer to them as "another student" or "peers." This is a legal requirement in most districts.
+1. **Protect privacy.** Never name other students in your email. Refer to them as "another student" or "peers." To protect student privacy, avoid identifying other students and follow your school's confidentiality policies.
 2. **Be objective.** Stick to what was seen and heard. Avoid speculating about motivation or using loaded words.
 3. **Outline the agreement.** Clearly state what was agreed upon during the phone call, including consequences, schedule adjustments, or counseling follow-ups.
 

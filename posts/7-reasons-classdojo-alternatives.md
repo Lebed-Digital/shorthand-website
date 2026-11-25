@@ -81,11 +81,11 @@ The criteria I applied when I built ShortHand:
 - **Voice-to-text** in the full note view, for when you want to say more than you can tap
 - **Auto-tagging** so you're not manually categorizing
 - **AI reporting** so the notes turn into something useful without extra work
-- **No app store** so you can install it on any device in 30 seconds
+- **Works on any device**: use it in your browser, or get the app for iPhone or Android
 
 ## The Tool I Built (Because Nothing Else Fit)
 
-ShortHand is a Progressive Web App: no download, no app store, works on your phone or tablet or school laptop. It's free to start.
+ShortHand works in your browser on your phone, tablet, or school laptop, and there's an app for iPhone and Android. Free plan with no time limit.
 
 It isn't a ClassDojo replacement in the sense of trying to do everything ClassDojo does. It's a replacement for teachers who need professional-grade documentation, not gamified engagement. If that's you, [try it here](https://app.getshorthandapp.com?demo=true), there's a live demo that takes no sign-up and opens instantly. And if you want to see the whole field before deciding, I tested and ranked the [best ClassDojo alternatives](/blog/best-classdojo-alternatives-2026) in a separate post.
 

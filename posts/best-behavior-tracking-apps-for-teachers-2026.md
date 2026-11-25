@@ -12,7 +12,7 @@ faq:
   - q: "What is the best behavior tracking app for teachers in 2026?"
     a: "It depends on what you need. ShortHand is a good fit for individual classroom teachers who want to privately document student behavior and parent communication. It lets teachers log behavior notes in under 10 seconds, keeps a record of parent contacts, and generates reports without extra work. It doesn't require a school-wide purchase, but check your school's approval requirements before entering real student records."
   - q: "Are behavior tracking apps free for teachers?"
-    a: "Several behavior tracking apps offer free tiers. ShortHand is free to start with no credit card required. ClassDojo is free; parents can use an account on the website or app. BehaviorSnap's introductory version costs $9.99 for 12 observations. Class Charts has a limited free version. PBIS Rewards requires a school license."
+    a: "Several behavior tracking apps offer free tiers. ShortHand has a free plan with no time limit and no credit card required. ClassDojo is free; parents can use an account on the website or app. BehaviorSnap's introductory version costs $9.99 for 12 observations. Class Charts has a limited free version. PBIS Rewards requires a school license."
   - q: "What is the difference between ClassDojo and ShortHand?"
     a: "ClassDojo is a parent communication and student engagement tool built around a points system. ShortHand is a behavior documentation tool built for fast logging, parent contact records, and IEP-ready data. ClassDojo is best for elementary classroom culture; ShortHand is best when you need a complete, searchable contact record."
   - q: "Do behavior tracking apps work for special education teachers?"
@@ -130,7 +130,7 @@ A few things that make it different:
 - **Individual accounts.** No school-wide purchase is required. Check your school or district's approval and student-data requirements before entering real student records.
 - **Phone-first.** Designed to be used in the parking lot after a call, not at a desktop at 8 PM.
 - **Parent communication built in.** The log isn't separate from the documentation. They're the same thing.
-- **Free to start.** No credit card required to try it.
+- **Free plan with no time limit.** No credit card required to try it.
 
 ShortHand won't run a formal ABC observation or manage a whole-school points economy. It's not trying to. It's built for the teacher who wants to stop forgetting what they said to which parent, and start going into conferences with actual notes.
 

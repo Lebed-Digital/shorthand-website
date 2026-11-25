@@ -88,9 +88,9 @@ Here's why it fits where ClassDojo doesn't.
 
 *(That blank screen has cost teachers more sleep than almost anything else in this job. You're welcome.)*
 
-**It works without an app store.** ShortHand is a Progressive Web App, no app-store download required, works on your phone, your tablet, your school Chromebook. Check your school's approval requirements before entering real student records. You can have a student set up in 30 seconds.
+**It works on whatever device you have.** Use it in your browser on your phone, your tablet, or your school Chromebook, or get the app for iPhone or Android. Check your school's approval requirements before entering real student records. You can have a student set up in 30 seconds.
 
-**It's free to start.** Tap a student, log a note, see what it feels like to actually have the documentation you need. There's a live demo that requires no sign-up and opens instantly.
+**There's a free plan with no time limit.** Tap a student, log a note, see what it feels like to actually have the documentation you need. There's a live demo that requires no sign-up and opens instantly.
 
 ## Should You Switch?
 

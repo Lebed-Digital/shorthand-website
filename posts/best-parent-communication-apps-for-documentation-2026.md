@@ -98,7 +98,7 @@ The other tools on this list treat sending a message and keeping a record as two
 
 That narrowness is the point. The reason the record is fast to search is that there is nothing else in it.
 
-No school-wide purchase or district training session is required to create an account. Check your school or district's approval and student-data requirements before entering real student records, then go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and set up your class. It is free to start for individual teachers.
+No school-wide purchase or district training session is required to create an account. Check your school or district's approval and student-data requirements before entering real student records, then go to [getshorthandapp.com](https://app.getshorthandapp.com?demo=true) and set up your class. It has a free plan with no time limit for individual teachers.
 
 ---
 
