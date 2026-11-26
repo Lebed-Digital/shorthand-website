@@ -38,7 +38,8 @@
   /* Small footer text; needs 4.5:1 on --bg. */
   --text-fine: #5f6a64;
   /* Headings use the body font, as on the homepage. Both resolve to the
-     system UI font (this :root value wins over next/font's variable). */
+     system UI font. The only web font is Fredoka (--font-fredoka, the
+     wordmark), served from app/fonts by app/layout.tsx. */
   --font-display: var(--font-body);
   --font-body: system-ui, sans-serif;
   --radius: 16px;
