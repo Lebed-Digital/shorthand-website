@@ -210,7 +210,7 @@ function inputStyle(invalid: boolean, disabled: boolean): React.CSSProperties {
 function buttonStyle(disabled: boolean): React.CSSProperties {
   return {
     width: '100%',
-    background: disabled ? '#94a3b8' : 'linear-gradient(135deg, #0d9488, #0891b2)',
+    background: disabled ? '#94a3b8' : 'var(--teal)',
     color: '#fff',
     fontWeight: 700,
     fontSize: 15,
@@ -230,7 +230,7 @@ const errorStyle: React.CSSProperties = {
 };
 
 const linkStyle: React.CSSProperties = {
-  color: '#0d9488',
+  color: 'var(--teal)',
   fontWeight: 600,
 };
 

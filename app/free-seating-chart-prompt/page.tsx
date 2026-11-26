@@ -28,18 +28,18 @@ export const metadata: Metadata = {
   },
 };
 
-const LETTER_COLORS = ['#e2725b', '#34d399', '#f59e0b', '#60a5fa', '#a78bfa', '#e2725b', '#34d399', '#f59e0b', '#60a5fa'];
+const LETTER_COLORS = ['#E5484D', '#0E9A60', '#C27A00', '#3B82F6', '#A855F7', '#E5484D', '#0E9A60', '#C27A00', '#3B82F6'];
 
-const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: '#f1f5f9', margin: '36px 0 12px', letterSpacing: '-0.01em' };
-const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: '#cbd5e1', margin: '0 0 12px' };
-const linkStyle: CSSProperties = { color: '#2dd4bf', textDecoration: 'underline' };
+const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: 'var(--text)', margin: '36px 0 12px', letterSpacing: '-0.01em' };
+const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: 'var(--text-dim)', margin: '0 0 12px' };
+const linkStyle: CSSProperties = { color: 'var(--teal)', textDecoration: 'underline' };
 
 export default function FreeSeatingChartPromptPage() {
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '6px 20px' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
+      <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '6px 20px' }}>
         <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 22, letterSpacing: '0.02em' }}>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
+          <span style={{ color: 'var(--text-dim)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
           {'ShortHand'.split('').map((letter, i) => (
             <span key={i} style={{ color: LETTER_COLORS[i] }}>{letter}</span>
           ))}
@@ -47,7 +47,7 @@ export default function FreeSeatingChartPromptPage() {
       </div>
 
       <main style={{ maxWidth: 600, margin: '0 auto', padding: '24px 16px 56px' }}>
-        <h1 style={{ fontSize: 26, fontWeight: 700, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.25 }}>
+        <h1 style={{ fontSize: 26, fontWeight: 700, color: 'var(--text)', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.25 }}>
           Turn Your Classroom Layout Into a Seating Chart With ChatGPT
         </h1>
         <p style={{ ...pStyle, marginBottom: 20 }}>
@@ -57,9 +57,9 @@ export default function FreeSeatingChartPromptPage() {
 
         <PromptBox />
 
-        <div role="note" style={{ marginTop: 16, background: 'rgba(245,158,11,0.12)', border: '1px solid rgba(245,158,11,0.4)', borderRadius: 12, padding: '14px 16px' }}>
-          <p style={{ ...pStyle, margin: 0, color: '#fde68a' }}>
-            <strong style={{ color: '#fcd34d' }}>Protect student privacy:</strong>{' '}
+        <div role="note" style={{ marginTop: 16, background: '#fffbeb', border: '1px solid #f59e0b', borderRadius: 12, padding: '14px 16px' }}>
+          <p style={{ ...pStyle, margin: 0, color: '#78350f' }}>
+            <strong style={{ color: '#78350f' }}>Protect student privacy:</strong>{' '}
             Upload only an empty classroom layout. Don&apos;t include student names, photographs, behavior notes,
             accommodations, or other identifying student information. Follow your school or district&apos;s AI and
             student-data policies.
@@ -68,14 +68,14 @@ export default function FreeSeatingChartPromptPage() {
 
         <h2 style={h2Style}>How to use it</h2>
         <ol style={{ ...pStyle, paddingLeft: 22, margin: '0 0 16px' }}>
-          <li style={{ marginBottom: 8 }}>Take a photo or draw a simple sketch of your <strong style={{ color: '#f1f5f9' }}>empty</strong> classroom layout.</li>
+          <li style={{ marginBottom: 8 }}>Take a photo or draw a simple sketch of your <strong style={{ color: 'var(--text)' }}>empty</strong> classroom layout.</li>
           <li style={{ marginBottom: 8 }}>
             Open <ChatGptLink style={linkStyle}>ChatGPT</ChatGptLink>, attach your image, and paste the prompt.
           </li>
           <li>Review the generated chart, ask for changes if something is off, and save or print your finished layout.</li>
         </ol>
         <ChatGptLink
-          style={{ display: 'inline-block', background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.18)' }}
+          style={{ display: 'inline-block', background: 'var(--surface)', color: 'var(--text)', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid var(--border-bright)' }}
         >
           Open ChatGPT ↗
         </ChatGptLink>

@@ -151,7 +151,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
   return (
     // ph-mask: Session Replay masks all text in here, including the typed
     // student name once it is substituted into the comments. See lib/posthog-privacy.ts.
-    <div className="ph-mask" style={{ minHeight: '100vh', background: '#0f172a' }}>
+    <div className="ph-mask" style={{ minHeight: '100vh', background: 'var(--bg)' }}>
       <div style={topBarStyle}>
         <Link href="/" style={backLinkStyle}>
           <span style={{ fontSize: 16 }}>&larr;</span> Back to ShortHand
@@ -160,20 +160,20 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
 
       <div style={heroStyle}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
+          <h1 style={{ fontSize: 28, fontWeight: 600, color: 'var(--text)', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
             Report Card Comment Library
           </h1>
-          <p style={{ fontSize: 16, color: '#fff', fontWeight: 600, margin: '0 0 6px' }}>
+          <p style={{ fontSize: 16, color: 'var(--text)', fontWeight: 600, margin: '0 0 6px' }}>
             Finish report card comments faster, without starting from a blank page.
           </p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.7)', margin: '0 0 4px' }}>
+          <p style={{ fontSize: 13, color: 'var(--text-dim)', margin: '0 0 4px' }}>
             {slice.totalCount} ready-to-use comments for Pre-K and elementary (Pre-K to 5), across{' '}
             {slice.sections.length} sections.
           </p>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.85)', margin: 0 }}>
+          <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: 0 }}>
             Try {slice.freeCount} of them right here. Type a name, filter, copy. No sign-up.
           </p>
-          <p style={{ fontSize: 14, color: '#fff', fontWeight: 600, margin: '8px 0 0' }}>
+          <p style={{ fontSize: 14, color: 'var(--text)', fontWeight: 600, margin: '8px 0 0' }}>
             The full library is a one-time $4.99. No subscription.
           </p>
           <button
@@ -204,7 +204,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
 
           <label htmlFor="student-name" style={labelStyle}>
             Student name{' '}
-            <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>
+            <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>
               (optional, previews as a sample name)
             </span>
           </label>
@@ -293,7 +293,7 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
           </p>
 
           {filtered.length === 0 ? (
-            <p style={{ color: '#94a3b8', fontSize: 14, textAlign: 'center', padding: '20px 0' }}>
+            <p style={{ color: 'var(--text-faint)', fontSize: 14, textAlign: 'center', padding: '20px 0' }}>
               Nothing in the free sample matches. The full library has {slice.totalCount} comments to search.
             </p>
           ) : (
@@ -347,9 +347,9 @@ export default function PaywallClient({ slice }: { slice: FreeSliceData }) {
             {starting ? 'Starting checkout...' : 'Get the full library'}
           </button>
           {checkoutError('paywall-hero')}
-          <p style={{ fontSize: 12, color: '#94a3b8', margin: '12px 0 0' }}>
+          <p style={{ fontSize: 12, color: 'var(--text-faint)', margin: '12px 0 0' }}>
             Already bought it?{' '}
-            <Link href="/report-card-comment-library/restore" style={{ color: '#0d9488', fontWeight: 600 }}>
+            <Link href="/report-card-comment-library/restore" style={{ color: 'var(--teal)', fontWeight: 600 }}>
               Restore your access
             </Link>
           </p>
@@ -425,7 +425,7 @@ function FreeCommentCard({
   return (
     <div style={commentCardStyle}>
       <div style={{ display: 'flex', gap: 6, marginBottom: 10, flexWrap: 'wrap' }}>
-        <span style={badgeStyle(comment.tone === 'positive' ? '#0d9488' : '#d97706')}>
+        <span style={badgeStyle(comment.tone === 'positive' ? '#0f766e' : '#d97706')}>
           {comment.tone === 'positive' ? 'Positive' : 'Growth'}
         </span>
         <span style={badgeStyle('#64748b')}>{SECTION_LABELS[comment.section]}</span>
@@ -468,9 +468,8 @@ const videoLinkStyle: React.CSSProperties = {
   border: 'none',
   padding: '4px 8px',
   margin: '12px 0 0',
-  // Yellow to stand out on the teal hero. 19px bold counts as large text, which
-  // keeps it at the 3:1 contrast AA asks for on the lighter end of the gradient.
-  color: '#fde047',
+  // Accent on the light hero band (about 5:1 there).
+  color: 'var(--accent)',
   fontSize: 19,
   fontWeight: 700,
   textDecoration: 'underline',
@@ -480,8 +479,8 @@ const videoLinkStyle: React.CSSProperties = {
 };
 
 const topBarStyle: React.CSSProperties = {
-  background: 'rgba(255,255,255,0.05)',
-  borderBottom: '1px solid rgba(255,255,255,0.08)',
+  background: 'var(--surface)',
+  borderBottom: '1px solid var(--border)',
   padding: '10px 20px',
 };
 
@@ -490,13 +489,13 @@ const backLinkStyle: React.CSSProperties = {
   alignItems: 'center',
   gap: 6,
   textDecoration: 'none',
-  color: 'rgba(255,255,255,0.65)',
+  color: 'var(--text-dim)',
   fontSize: 13,
   fontWeight: 500,
 };
 
 const heroStyle: React.CSSProperties = {
-  background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)',
+  background: 'var(--hero-bg)',
   padding: '40px 24px 32px',
 };
 
@@ -512,7 +511,7 @@ const freeBadgeStyle: React.CSSProperties = {
   display: 'inline-block',
   fontSize: 11,
   fontWeight: 700,
-  color: '#0d9488',
+  color: 'var(--teal)',
   background: '#ccfbf1',
   borderRadius: 999,
   padding: '4px 10px',
@@ -559,8 +558,8 @@ function chipStyle(active: boolean): React.CSSProperties {
     border: '1.5px solid',
     cursor: 'pointer',
     fontFamily: 'inherit',
-    borderColor: active ? '#0d9488' : '#e2e8f0',
-    background: active ? '#0d9488' : '#fff',
+    borderColor: active ? 'var(--teal)' : '#e2e8f0',
+    background: active ? 'var(--teal)' : '#fff',
     color: active ? '#fff' : '#475569',
   };
 }
@@ -617,7 +616,7 @@ const editAreaStyle: React.CSSProperties = {
 
 const copyPrimaryStyle: React.CSSProperties = {
   flex: 1,
-  background: 'linear-gradient(135deg, #0d9488, #0891b2)',
+  background: 'var(--teal)',
   color: '#fff',
   fontWeight: 700,
   fontSize: 13,
@@ -662,14 +661,14 @@ const buyCardStyle: React.CSSProperties = {
   borderRadius: 16,
   padding: 24,
   border: '1px solid #e2e8f0',
-  boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
+  boxShadow: '0 1px 3px rgba(23,45,41,0.12)',
   textAlign: 'center',
 };
 
 const afterCopyLineStyle: React.CSSProperties = {
   fontSize: 13,
   fontWeight: 600,
-  color: '#0d9488',
+  color: 'var(--teal)',
   background: '#ccfbf1',
   borderRadius: 10,
   padding: '10px 14px',
@@ -679,7 +678,7 @@ const afterCopyLineStyle: React.CSSProperties = {
 function buyButtonStyle(disabled: boolean): React.CSSProperties {
   return {
     width: '100%',
-    background: disabled ? '#94a3b8' : 'linear-gradient(135deg, #0d9488, #0891b2)',
+    background: disabled ? '#94a3b8' : 'var(--teal)',
     color: '#fff',
     fontWeight: 700,
     fontSize: 15,
@@ -694,7 +693,7 @@ function buyButtonStyle(disabled: boolean): React.CSSProperties {
 const introPriceBadgeStyle: React.CSSProperties = {
   fontSize: 11,
   fontWeight: 700,
-  color: '#0d9488',
+  color: 'var(--teal)',
   background: '#ccfbf1',
   borderRadius: 999,
   padding: '3px 10px',
@@ -705,7 +704,7 @@ const introPriceBadgeStyle: React.CSSProperties = {
 const sectionHeadingStyle: React.CSSProperties = {
   fontSize: 13,
   fontWeight: 700,
-  color: 'rgba(255,255,255,0.55)',
+  color: 'var(--text-dim)',
   textTransform: 'uppercase',
   letterSpacing: '0.08em',
   margin: '28px 0 12px',

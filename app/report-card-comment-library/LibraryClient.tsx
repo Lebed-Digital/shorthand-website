@@ -53,12 +53,12 @@ function CommentCard({ comment, name }: { comment: Comment; name: string }) {
         borderRadius: 14,
         padding: 18,
         marginBottom: 12,
-        boxShadow: '0 1px 3px rgba(0,0,0,0.15)',
+        boxShadow: '0 1px 3px rgba(23,45,41,0.12)',
         border: '1px solid #e2e8f0',
       }}
     >
       <div style={{ display: 'flex', gap: 6, marginBottom: 10, flexWrap: 'wrap' }}>
-        <span style={badgeStyle(comment.tone === 'positive' ? '#0d9488' : '#d97706')}>
+        <span style={badgeStyle(comment.tone === 'positive' ? '#0f766e' : '#d97706')}>
           {comment.tone === 'positive' ? 'Positive' : 'Growth'}
         </span>
         <span style={badgeStyle('#64748b')}>{CATEGORY_LABELS[comment.category]}</span>
@@ -129,7 +129,7 @@ function badgeStyle(color: string): React.CSSProperties {
 
 const primaryButtonStyle: React.CSSProperties = {
   flex: 1,
-  background: 'linear-gradient(135deg, #0d9488, #0891b2)',
+  background: 'var(--teal)',
   color: '#fff',
   fontWeight: 700,
   fontSize: 13,
@@ -192,19 +192,19 @@ export default function LibraryClient({ comments }: { comments: Comment[] }) {
   return (
     // ph-mask: Session Replay masks all text in here, including the typed
     // student name once it is substituted into the comments. See lib/posthog-privacy.ts.
-    <div className="ph-mask" style={{ minHeight: '100vh', background: '#0f172a' }}>
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
+    <div className="ph-mask" style={{ minHeight: '100vh', background: 'var(--bg)' }}>
+      <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '10px 20px' }}>
+        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'var(--text-dim)', fontSize: 13, fontWeight: 500 }}>
           <span style={{ fontSize: 16 }}>&larr;</span> Back to ShortHand
         </Link>
       </div>
 
-      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '40px 24px 32px' }}>
+      <div style={{ background: 'var(--hero-bg)', padding: '40px 24px 32px' }}>
         <div style={{ maxWidth: 720, margin: '0 auto', textAlign: 'center' }}>
-          <h1 style={{ fontSize: 26, fontWeight: 600, color: '#fff', margin: '0 0 8px', letterSpacing: '-0.01em' }}>
+          <h1 style={{ fontSize: 26, fontWeight: 600, color: 'var(--text)', margin: '0 0 8px', letterSpacing: '-0.01em' }}>
             Report Card Comment Library
           </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: 0 }}>
+          <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: 0 }}>
             Search, browse by section, and personalize with a name.
           </p>
         </div>
@@ -213,7 +213,7 @@ export default function LibraryClient({ comments }: { comments: Comment[] }) {
       <div style={{ maxWidth: 720, margin: '0 auto', padding: '24px 16px 48px' }}>
         <div style={{ background: '#f0f9ff', borderRadius: 16, padding: 20, marginBottom: 16, borderLeft: '4px solid #0ea5e9' }}>
           <label style={labelStyle}>
-            Student name <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(optional, defaults to a sample name)</span>
+            Student name <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>(optional, defaults to a sample name)</span>
           </label>
           <input
             type="text"
@@ -252,8 +252,8 @@ export default function LibraryClient({ comments }: { comments: Comment[] }) {
                     border: '1.5px solid',
                     cursor: 'pointer',
                     fontFamily: 'inherit',
-                    borderColor: section === s ? '#0d9488' : '#e2e8f0',
-                    background: section === s ? '#0d9488' : '#fff',
+                    borderColor: section === s ? 'var(--teal)' : '#e2e8f0',
+                    background: section === s ? 'var(--teal)' : '#fff',
                     color: section === s ? '#fff' : '#475569',
                   }}
                 >
@@ -294,7 +294,7 @@ export default function LibraryClient({ comments }: { comments: Comment[] }) {
         )}
 
         {filtered.length === 0 ? (
-          <p style={{ color: '#94a3b8', fontSize: 14, textAlign: 'center', padding: '24px 0' }}>
+          <p style={{ color: 'var(--text-faint)', fontSize: 14, textAlign: 'center', padding: '24px 0' }}>
             No comments match. Try a different search or filter.
           </p>
         ) : (

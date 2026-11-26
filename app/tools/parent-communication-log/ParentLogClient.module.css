@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background: #0f172a;
+  background: var(--bg);
 }
 
 .header {
@@ -19,7 +19,7 @@
 
 .backLink {
   font-size: 13px;
-  color: #0d9488;
+  color: var(--teal);
   text-decoration: none;
   margin-bottom: 4px;
   display: block;
@@ -70,13 +70,13 @@
   font-weight: 700;
   border: none;
   border-radius: 10px;
-  background: #0d9488;
+  background: var(--teal);
   color: #fff;
   cursor: pointer;
 }
 
 .btnPrimary:hover {
-  background: #0f766e;
+  background: #115e59;
 }
 
 .content {
@@ -127,7 +127,7 @@
 
 .fieldInput:focus {
   outline: none;
-  border-bottom-color: #0d9488;
+  border-bottom-color: var(--teal);
 }
 
 .tableCard {
@@ -144,7 +144,7 @@
 }
 
 .table thead tr {
-  background: #0d9488;
+  background: var(--teal);
   color: #fff;
 }
 
@@ -193,7 +193,7 @@
 
 .addMoreLink {
   font-size: 13px;
-  color: #0d9488;
+  color: var(--teal);
   background: none;
   border: none;
   cursor: pointer;
@@ -206,19 +206,19 @@
 
 .footerNote {
   margin-top: 28px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid var(--border);
   padding-top: 20px;
 }
 
 .footerNoteText {
   font-size: 12px;
-  color: #64748b;
+  color: var(--text-fine);
   text-align: center;
 }
 
 .footerNoteLink {
-  color: #2dd4bf;
-  text-decoration: none;
+  color: var(--teal);
+  text-decoration: underline;
 }
 
 .footerNoteLink:hover {
@@ -238,21 +238,21 @@
 .guideTitle {
   font-size: 19px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text);
   margin: 0 0 8px;
 }
 
 .guideSubtitle {
   font-size: 15px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text);
   margin: 20px 0 12px;
 }
 
 .guideText,
 .guideList {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--text-dim);
   line-height: 1.6;
   margin: 0 0 8px;
 }
@@ -274,8 +274,8 @@
 }
 
 .ctaCard {
-  background: rgba(13, 148, 136, 0.15);
-  border: 1px solid rgba(13, 148, 136, 0.3);
+  background: var(--teal-dim);
+  border: 1px solid var(--teal-border);
   border-radius: 16px;
   padding: 32px 24px;
   text-align: center;
@@ -284,13 +284,13 @@
 .ctaTitle {
   font-size: 19px;
   font-weight: 700;
-  color: #fff;
+  color: var(--text);
   margin: 0 0 8px;
 }
 
 .ctaDescription {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-dim);
   margin: 0 auto 20px;
   max-width: 460px;
   line-height: 1.6;
@@ -298,19 +298,19 @@
 
 .ctaButton {
   display: inline-block;
-  background: linear-gradient(135deg, #0d9488, #0891b2);
+  background: var(--teal);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   padding: 12px 28px;
   border-radius: 12px;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(13, 148, 136, 0.4);
+  box-shadow: 0 4px 14px rgba(15, 118, 110, 0.25);
 }
 
 .ctaFootnote {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-fine);
   margin: 12px 0 0;
 }
 

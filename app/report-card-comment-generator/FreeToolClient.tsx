@@ -19,7 +19,7 @@ const SECTIONS = [
     id: 'strengths',
     label: 'Academic strengths',
     color: 'teal',
-    accent: '#0d9488',
+    accent: 'var(--teal)',
     bg: '#f0fdfa',
     items: [
       { id: 's_math', label: 'Math' },
@@ -78,7 +78,7 @@ const SECTIONS = [
 
 const CHIP_COLORS: Record<string, { active: React.CSSProperties; inactive: React.CSSProperties }> = {
   teal: {
-    active: { background: '#0d9488', color: '#fff', borderColor: '#0d9488' },
+    active: { background: 'var(--teal)', color: '#fff', borderColor: 'var(--teal)' },
     inactive: { background: '#f0fdfa', color: '#134e4a', borderColor: '#99f6e4' },
   },
   amber: {
@@ -162,28 +162,28 @@ function useSpeechToText(onResult: (text: string) => void) {
 export default function FreeToolClient() {
   return (
     // ph-mask: Session Replay masks all text in here. See lib/posthog-privacy.ts.
-    <div className="ph-mask" style={{ minHeight: '100vh', background: '#0f172a' }}>
+    <div className="ph-mask" style={{ minHeight: '100vh', background: 'var(--bg)' }}>
 
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '10px 20px' }}>
-        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'rgba(255,255,255,0.65)', fontSize: 13, fontWeight: 500 }}>
+      <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '10px 20px' }}>
+        <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', color: 'var(--text-dim)', fontSize: 13, fontWeight: 500 }}>
           <span style={{ fontSize: 16 }}>←</span> Back to ShortHand
         </Link>
       </div>
 
-      <div style={{ background: 'linear-gradient(135deg, #0d9488 0%, #0891b2 100%)', padding: '48px 24px 40px' }}>
+      <div style={{ background: 'var(--hero-bg)', padding: '48px 24px 40px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto', textAlign: 'center' }}>
           <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', marginBottom: 24, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 36, letterSpacing: '0.02em' }}>
             {['S','h','o','r','t','H','a','n','d'].map((letter, i) => (
-              <span key={i} style={{ color: ['#e2725b','#34d399','#f59e0b','#60a5fa','#a78bfa','#e2725b','#34d399','#f59e0b','#60a5fa'][i] }}>{letter}</span>
+              <span key={i} style={{ color: ['#E5484D','#0E9A60','#C27A00','#3B82F6','#A855F7','#E5484D','#0E9A60','#C27A00','#3B82F6'][i] }}>{letter}</span>
             ))}
           </Link>
-          <h1 style={{ fontSize: 28, fontWeight: 600, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
+          <h1 style={{ fontSize: 28, fontWeight: 600, color: 'var(--text)', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.3 }}>
             Report Card Comment Generator
           </h1>
-          <p style={{ fontSize: 14, color: 'rgba(255,255,255,0.75)', margin: '0 0 10px' }}>
+          <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 10px' }}>
             Free · No sign-up · Ready in 10 seconds
           </p>
-          <p style={{ fontSize: 13, color: 'rgba(255,255,255,0.55)', margin: 0 }}>
+          <p style={{ fontSize: 13, color: 'var(--text-dim)', margin: 0 }}>
             Here from the videos? The jokes are fake. These comments are real.
           </p>
         </div>
@@ -301,9 +301,9 @@ function FreeToolInner() {
   return (
     <div style={{ maxWidth: 560, margin: '0 auto', padding: '24px 16px 48px' }}>
 
-        <div style={{ background: '#f0f9ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0ea5e9' }}>
+        <div style={{ background: '#f0f9ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #0ea5e9' }}>
           <label htmlFor="rc-student-name" style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 8 }}>
-            Student name <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(optional)</span>
+            Student name <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>(optional)</span>
           </label>
           <input
             id="rc-student-name"
@@ -312,7 +312,7 @@ function FreeToolInner() {
             onChange={(e) => setName(e.target.value)}
             placeholder="e.g. Alex"
             style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
-            onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
+            onFocus={(e) => (e.target.style.borderColor = 'var(--teal)')}
             onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')}
           />
         </div>
@@ -320,9 +320,9 @@ function FreeToolInner() {
         {SECTIONS.map((section) => {
           const colors = CHIP_COLORS[section.color];
           return (
-            <div key={section.id} style={{ background: section.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.25)', borderLeft: `4px solid ${section.accent}` }}>
+            <div key={section.id} style={{ background: section.bg, borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: `4px solid ${section.accent}` }}>
               <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: section.accent, textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>
-                {section.label} <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(pick all that apply)</span>
+                {section.label} <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>(pick all that apply)</span>
               </label>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
                 {section.items.map((item) => (
@@ -349,54 +349,54 @@ function FreeToolInner() {
           );
         })}
 
-        <div style={{ background: '#fff7ed', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #f97316' }}>
+        <div style={{ background: '#fff7ed', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #f97316' }}>
           <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>Comment length</label>
           <div style={{ display: 'flex', gap: 8 }}>
             {LENGTH_OPTIONS.map((opt) => (
               <button key={opt.id} onClick={() => setLength(opt.id)} style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '1.5px solid', borderColor: length === opt.id ? '#0f172a' : '#e2e8f0', background: length === opt.id ? '#0f172a' : '#fff', color: length === opt.id ? '#fff' : '#475569', fontWeight: 600, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s' }}>
                 <div>{opt.label}</div>
-                <div style={{ fontSize: 11, fontWeight: 400, marginTop: 2, color: '#94a3b8' }}>{opt.hint}</div>
+                <div style={{ fontSize: 11, fontWeight: 400, marginTop: 2, color: length === opt.id ? '#94a3b8' : 'var(--text-faint)' }}>{opt.hint}</div>
               </button>
             ))}
           </div>
         </div>
 
-        <div style={{ background: '#f0fdf4', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #22c55e' }}>
+        <div style={{ background: '#f0fdf4', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #22c55e' }}>
           <label style={{ display: 'block', fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 12 }}>Tone</label>
           <div style={{ display: 'flex', gap: 8 }}>
             {[{ id: 'casual', label: 'Casual', hint: 'Warm & friendly' }, { id: 'academic', label: 'Academic', hint: 'Formal & precise' }].map((opt) => (
               <button key={opt.id} onClick={() => setTone(opt.id)} style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '1.5px solid', borderColor: tone === opt.id ? '#0f172a' : '#e2e8f0', background: tone === opt.id ? '#0f172a' : '#fff', color: tone === opt.id ? '#fff' : '#475569', fontWeight: 600, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit', transition: 'all 0.15s' }}>
                 <div>{opt.label}</div>
-                <div style={{ fontSize: 11, fontWeight: 400, marginTop: 2, color: '#94a3b8' }}>{opt.hint}</div>
+                <div style={{ fontSize: 11, fontWeight: 400, marginTop: 2, color: tone === opt.id ? '#94a3b8' : 'var(--text-faint)' }}>{opt.hint}</div>
               </button>
             ))}
           </div>
         </div>
 
-        <div style={{ background: '#faf5ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #a855f7' }}>
+        <div style={{ background: '#faf5ff', borderRadius: 16, padding: 24, marginBottom: 12, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #a855f7' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
             <label htmlFor="rc-extra-details" style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-              Anything else? <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(optional)</span>
+              Anything else? <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>(optional)</span>
             </label>
             <button onClick={extraMic.toggle} style={{ background: extraMic.listening ? '#fee2e2' : 'transparent', border: 'none', cursor: 'pointer', fontSize: 16, padding: '4px 8px', borderRadius: 8 }}>🎤</button>
           </div>
-          <textarea id="rc-extra-details" value={extra} onChange={(e) => setExtra(e.target.value)} placeholder="e.g. loves soccer, recently moved schools, made big progress this term" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
+          <textarea id="rc-extra-details" value={extra} onChange={(e) => setExtra(e.target.value)} placeholder="e.g. loves soccer, recently moved schools, made big progress this term" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = 'var(--teal)')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
         </div>
 
-        <div role="alert" aria-atomic="true">{error && <p key={errorCount} style={{ color: '#ef4444', fontSize: 13, margin: '0 0 12px' }}>{error}</p>}</div>
+        <div role="alert" aria-atomic="true">{error && <p key={errorCount} style={{ color: 'var(--error)', fontSize: 13, margin: '0 0 12px' }}>{error}</p>}</div>
 
-        <button onClick={generate} disabled={loading} style={{ width: '100%', background: loading ? '#5eead4' : 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 15, padding: '14px', borderRadius: 14, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit', boxShadow: '0 4px 14px rgba(13,148,136,0.4)', letterSpacing: '0.01em', transition: 'opacity 0.15s' }}>
+        <button onClick={generate} disabled={loading} style={{ width: '100%', background: loading ? 'var(--text-faint)' : 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 15, padding: '14px', borderRadius: 14, border: 'none', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit', boxShadow: '0 4px 14px rgba(15,118,110,0.25)', letterSpacing: '0.01em', transition: 'opacity 0.15s' }}>
           {loading ? 'Generating…' : stale ? '↻ Regenerate comment' : 'Generate comment →'}
         </button>
 
         {(name || selected.size > 0 || extra) && (
-          <button onClick={reset} style={{ width: '100%', marginTop: 8, background: 'transparent', color: '#94a3b8', fontWeight: 500, fontSize: 13, padding: '10px', borderRadius: 14, border: '1.5px solid rgba(255,255,255,0.1)', cursor: 'pointer', fontFamily: 'inherit' }}>
+          <button onClick={reset} style={{ width: '100%', marginTop: 8, background: 'transparent', color: 'var(--text-faint)', fontWeight: 500, fontSize: 13, padding: '10px', borderRadius: 14, border: '1.5px solid var(--border-bright)', cursor: 'pointer', fontFamily: 'inherit' }}>
             Clear
           </button>
         )}
 
         {result && (
-          <div style={{ background: '#fff', borderRadius: 16, padding: 24, marginTop: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderTop: '4px solid #0d9488' }}>
+          <div style={{ background: '#fff', borderRadius: 16, padding: 24, marginTop: 16, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderTop: '4px solid #0d9488' }}>
             <div role="status">
               {stale && (
                 <div style={{ background: '#fffbeb', border: '1.5px solid #f59e0b', borderRadius: 10, padding: '10px 14px', marginBottom: 12, fontSize: 13, color: '#78350f', lineHeight: 1.5 }}>
@@ -412,20 +412,20 @@ function FreeToolInner() {
               rows={6}
               aria-label="Generated comment"
               style={{ width: '100%', fontSize: 15, color: '#1e293b', lineHeight: 1.7, marginBottom: 20, borderRadius: 10, border: `1.5px solid ${resultBorder}`, padding: '12px 14px', resize: 'vertical', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }}
-              onFocus={(e) => (e.target.style.borderColor = '#0d9488')}
+              onFocus={(e) => (e.target.style.borderColor = 'var(--teal)')}
               onBlur={(e) => (e.target.style.borderColor = resultBorder)}
             />
             <div style={{ borderTop: '1px solid #f1f5f9', paddingTop: 16, marginBottom: 12 }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8 }}>
                 <label htmlFor="rc-refine" style={{ fontSize: 11, fontWeight: 700, color: '#64748b', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-                  Refine <span style={{ fontWeight: 400, textTransform: 'none', color: '#94a3b8' }}>(tell AI what to change)</span>
+                  Refine <span style={{ fontWeight: 400, textTransform: 'none', color: 'var(--text-faint)' }}>(tell AI what to change)</span>
                 </label>
                 <button onClick={refineMic.toggle} style={{ background: refineMic.listening ? '#fee2e2' : 'transparent', border: 'none', cursor: 'pointer', fontSize: 16, padding: '4px 8px', borderRadius: 8 }}>🎤</button>
               </div>
-              <textarea id="rc-refine" value={refineInstructions} onChange={(e) => setRefineInstructions(e.target.value)} placeholder="e.g. don't mention math, add something about her growth mindset" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = '#0d9488')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
+              <textarea id="rc-refine" value={refineInstructions} onChange={(e) => setRefineInstructions(e.target.value)} placeholder="e.g. don't mention math, add something about her growth mindset" rows={2} style={{ width: '100%', borderRadius: 10, border: '1.5px solid #e2e8f0', padding: '10px 14px', fontSize: 14, color: '#1e293b', resize: 'none', outline: 'none', fontFamily: 'inherit', boxSizing: 'border-box' }} onFocus={(e) => (e.target.style.borderColor = 'var(--teal)')} onBlur={(e) => (e.target.style.borderColor = '#e2e8f0')} />
             </div>
             <div style={{ display: 'flex', gap: 8 }}>
-              <button onClick={copy} style={{ flex: 1, background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '11px', borderRadius: 10, border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}>
+              <button onClick={copy} style={{ flex: 1, background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '11px', borderRadius: 10, border: 'none', cursor: 'pointer', fontFamily: 'inherit' }}>
                 {copied ? '✓ Copied!' : 'Copy'}
               </button>
               <button onClick={refine} disabled={loading} style={{ flex: 1, background: '#f8fafc', color: '#334155', fontWeight: 600, fontSize: 13, padding: '11px', borderRadius: 10, border: '1.5px solid #e2e8f0', cursor: loading ? 'not-allowed' : 'pointer', fontFamily: 'inherit' }}>
@@ -441,14 +441,14 @@ function FreeToolInner() {
             {/* One-comment vs whole-class. The generator stays free and
                 unweakened; this only names the case it does not cover. */}
             <div style={{ marginTop: 16, background: '#f0fdfa', borderRadius: 14, padding: '18px 20px', border: '1px solid #99f6e4' }}>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#0d9488', marginBottom: 6 }}>Still have the rest of the class?</div>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--teal)', marginBottom: 6 }}>Still have the rest of the class?</div>
               <p style={{ fontSize: 14, color: '#1e293b', margin: '0 0 12px', lineHeight: 1.6 }}>
                 That was one comment. If you have the rest of the class to write, the Report Card Comment
                 Library is $4.99 once: search, filter, name fill, 374 comments.
               </p>
               <Link
                 href="/report-card-comment-library"
-                style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none' }}
+                style={{ display: 'inline-block', background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none' }}
                 onClick={() => fireCtaClick({ cta_source: 'free_tool_result', cta_destination: 'report-card-comment-library', link_url: '/report-card-comment-library' })}
               >
                 See the library &rarr;
@@ -456,14 +456,14 @@ function FreeToolInner() {
             </div>
 
 
-            <div style={{ marginTop: 20, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid rgba(167,139,250,0.25)' }}>
-              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: 8 }}>Want this for every student, all year?</div>
-              <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 14px', lineHeight: 1.6 }}>
+            <div style={{ marginTop: 20, background: 'var(--surface)', borderRadius: 14, padding: '20px 20px 18px', border: '1px solid var(--border)' }}>
+              <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: 8 }}>Want this for every student, all year?</div>
+              <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 14px', lineHeight: 1.6 }}>
                 ShortHand lets you log quick notes on students throughout the year, then turn those notes into polished reports in one tap. No more starting from scratch each term.
               </p>
               <Link
                 href="https://app.getshorthandapp.com/?signup=1"
-                style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
+                style={{ display: 'inline-block', background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(15,118,110,0.25)' }}
                 onClick={(e) => {
                   e.preventDefault();
                   const destination = withAttribution('https://app.getshorthandapp.com/?signup=1', window.location.pathname, window.location.search);

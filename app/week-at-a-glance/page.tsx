@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LETTER_COLORS = ['#e2725b', '#34d399', '#f59e0b', '#60a5fa', '#a78bfa', '#e2725b', '#34d399', '#f59e0b', '#60a5fa'];
+const LETTER_COLORS = ['#E5484D', '#0E9A60', '#C27A00', '#3B82F6', '#A855F7', '#E5484D', '#0E9A60', '#C27A00', '#3B82F6'];
 
 const DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
@@ -81,20 +81,20 @@ const PRINT_CSS = `
 }
 `;
 
-const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: '#f1f5f9', margin: '36px 0 12px', letterSpacing: '-0.01em' };
-const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: '#cbd5e1', margin: '0 0 12px' };
-const linkStyle: CSSProperties = { color: '#2dd4bf', textDecoration: 'underline' };
-const strongStyle: CSSProperties = { color: '#f1f5f9' };
-const quoteStyle: CSSProperties = { marginBottom: 8, color: '#e2e8f0' };
+const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: 'var(--text)', margin: '36px 0 12px', letterSpacing: '-0.01em' };
+const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: 'var(--text-dim)', margin: '0 0 12px' };
+const linkStyle: CSSProperties = { color: 'var(--teal)', textDecoration: 'underline' };
+const strongStyle: CSSProperties = { color: 'var(--text)' };
+const quoteStyle: CSSProperties = { marginBottom: 8, color: 'var(--text-dim)' };
 const cellStyle: CSSProperties = { border: '1px solid #cbd5e1', padding: '8px 10px', verticalAlign: 'top', textAlign: 'left' };
 
 export default function WeekAtAGlancePage() {
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
       <style>{PRINT_CSS}</style>
-      <div className="wag-noprint" style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '6px 20px' }}>
+      <div className="wag-noprint" style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '6px 20px' }}>
         <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 22, letterSpacing: '0.02em' }}>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
+          <span style={{ color: 'var(--text-dim)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
           {'ShortHand'.split('').map((letter, i) => (
             <span key={i} style={{ color: LETTER_COLORS[i] }}>{letter}</span>
           ))}
@@ -103,7 +103,7 @@ export default function WeekAtAGlancePage() {
 
       <main>
       <div className="wag-noprint" style={{ maxWidth: 600, margin: '0 auto', padding: '24px 16px 0' }}>
-        <h1 style={{ fontSize: 26, fontWeight: 700, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.25 }}>
+        <h1 style={{ fontSize: 26, fontWeight: 700, color: 'var(--text)', margin: '0 0 10px', letterSpacing: '-0.01em', lineHeight: 1.25 }}>
           Turn Your Lesson Plans Into a One-Page Week at a Glance
         </h1>
         <p style={pStyle}>
@@ -118,9 +118,9 @@ export default function WeekAtAGlancePage() {
 
         <PromptBox />
 
-        <div role="note" style={{ marginTop: 16, background: 'rgba(245,158,11,0.12)', border: '1px solid rgba(245,158,11,0.4)', borderRadius: 12, padding: '14px 16px' }}>
-          <p style={{ ...pStyle, margin: 0, color: '#fde68a' }}>
-            <strong style={{ color: '#fcd34d' }}>Protect student privacy:</strong>{' '}
+        <div role="note" style={{ marginTop: 16, background: '#fffbeb', border: '1px solid #f59e0b', borderRadius: 12, padding: '14px 16px' }}>
+          <p style={{ ...pStyle, margin: 0, color: '#78350f' }}>
+            <strong style={{ color: '#78350f' }}>Protect student privacy:</strong>{' '}
             Don&apos;t paste student names, IEP or 504 details, behavior notes, or anything that identifies a student. Write
             &quot;IEP meeting 2:30,&quot; not whose. Follow your school or district&apos;s AI and student-data policies,
             including any rules about sharing curriculum materials.
@@ -137,7 +137,7 @@ export default function WeekAtAGlancePage() {
           <li>Check the table against your plans, then ask for a printable version.</li>
         </ol>
         <ChatGptLink
-          style={{ display: 'inline-block', background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.18)' }}
+          style={{ display: 'inline-block', background: 'var(--surface)', color: 'var(--text)', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid var(--border-bright)' }}
         >
           Open ChatGPT ↗
         </ChatGptLink>
@@ -147,7 +147,7 @@ export default function WeekAtAGlancePage() {
       </div>
 
       <div style={{ maxWidth: 980, margin: '0 auto', padding: '0 16px' }}>
-        <div id="wag-sheet" style={{ background: '#fff', borderRadius: 12, padding: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)' }}>
+        <div id="wag-sheet" style={{ background: '#fff', borderRadius: 12, padding: 16, boxShadow: '0 1px 3px rgba(23,45,41,0.12)' }}>
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12, flexWrap: 'wrap', marginBottom: 10 }}>
             <div style={{ fontSize: 20, fontWeight: 700, color: '#0f172a' }}>Week at a Glance</div>
             <div style={{ fontSize: 14, color: '#475569' }}>Week of ________ · 3rd Grade (example)</div>
@@ -157,9 +157,9 @@ export default function WeekAtAGlancePage() {
             <table style={{ width: '100%', minWidth: 760, borderCollapse: 'collapse', tableLayout: 'fixed', fontSize: 13.5, lineHeight: 1.4, color: '#1e293b' }}>
               <thead>
                 <tr>
-                  <th style={{ ...cellStyle, width: '13%', background: '#0d9488', color: '#fff' }}></th>
+                  <th style={{ ...cellStyle, width: '13%', background: 'var(--teal)', color: '#fff' }}></th>
                   {DAYS.map((day) => (
-                    <th key={day} scope="col" style={{ ...cellStyle, background: '#0d9488', color: '#fff', fontWeight: 700 }}>{day}</th>
+                    <th key={day} scope="col" style={{ ...cellStyle, background: 'var(--teal)', color: '#fff', fontWeight: 700 }}>{day}</th>
                   ))}
                 </tr>
               </thead>
@@ -178,11 +178,11 @@ export default function WeekAtAGlancePage() {
               </tbody>
             </table>
           </div>
-          <p style={{ fontSize: 11, color: '#94a3b8', margin: '8px 0 0' }}>Example only. Free prompt at getshorthandapp.com/week-at-a-glance</p>
+          <p style={{ fontSize: 11, color: 'var(--text-faint)', margin: '8px 0 0' }}>Example only. Free prompt at getshorthandapp.com/week-at-a-glance</p>
         </div>
         <div className="wag-noprint" style={{ textAlign: 'center', marginTop: 12 }}>
           <PrintButton
-            style={{ background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, border: '1px solid rgba(255,255,255,0.18)', cursor: 'pointer' }}
+            style={{ background: 'var(--surface)', color: 'var(--text)', fontWeight: 700, fontSize: 14, padding: '10px 18px', borderRadius: 10, border: '1px solid var(--border-bright)', cursor: 'pointer' }}
           />
         </div>
       </div>
