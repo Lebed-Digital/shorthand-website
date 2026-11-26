@@ -1,22 +1,19 @@
 import type { Metadata } from 'next';
 import AnalyticsGate from './AnalyticsGate';
-import { Inter, Fredoka } from 'next/font/google';
+import localFont from 'next/font/local';
 import './globals.css';
 
-// Note: globals.css :root also defines --font-body and --font-display, and in
-// production those win, so pages render in the system UI font (the homepage
-// included). Headings use the same font as body text (--font-display points
-// to --font-body), so the unused Space Grotesk import was removed.
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500'],
-  variable: '--font-body',
-  display: 'swap',
-});
-
-const fredoka = Fredoka({
-  subsets: ['latin'],
-  weight: ['600', '700'],
+// Pages render in the system UI font: globals.css :root sets --font-body and
+// --font-display. The unused Inter and Space Grotesk imports were removed.
+//
+// Fredoka (the ShortHand wordmark) is served from app/fonts instead of
+// next/font/google, so a build never downloads from Google Fonts (a failed
+// download there failed a production build, 2026-11-25). The file is Google's
+// own Fredoka variable latin woff2 (weights 300-700); license in
+// app/fonts/Fredoka-OFL.txt.
+const fredoka = localFont({
+  src: './fonts/fredoka-latin.woff2',
+  weight: '300 700',
   variable: '--font-fredoka',
   display: 'swap',
 });
@@ -58,7 +55,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fredoka.variable}`}>
+    <html lang="en" className={fredoka.variable}>
       <head>
         {/* Google Analytics (production hostname only, and only for real users — skips headless/automated browsers and Greg's dev flag) */}
         <script dangerouslySetInnerHTML={{ __html: `
