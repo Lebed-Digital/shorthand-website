@@ -41,7 +41,7 @@ export default async function RestoreFailedPage({
     <div
       style={{
         minHeight: '100vh',
-        background: '#0f172a',
+        background: 'var(--bg)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -68,7 +68,7 @@ export default async function RestoreFailedPage({
         </p>
         <p style={{ fontSize: 14, lineHeight: 1.6, color: '#475569', margin: '0 0 18px' }}>
           If it keeps happening, email{' '}
-          <a href="mailto:info@getshorthandapp.com" style={{ color: '#0d9488', fontWeight: 600 }}>
+          <a href="mailto:info@getshorthandapp.com" style={{ color: 'var(--teal)', fontWeight: 600 }}>
             info@getshorthandapp.com
           </a>{' '}
           with the address you used at checkout and we will sort it out for you.

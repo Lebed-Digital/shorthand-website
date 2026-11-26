@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-const LETTER_COLORS = ['#e2725b', '#34d399', '#f59e0b', '#60a5fa', '#a78bfa', '#e2725b', '#34d399', '#f59e0b', '#60a5fa'];
+const LETTER_COLORS = ['#E5484D', '#0E9A60', '#C27A00', '#3B82F6', '#A855F7', '#E5484D', '#0E9A60', '#C27A00', '#3B82F6'];
 
 const FAQS: [string, ReactNode][] = [
   [
@@ -95,21 +95,21 @@ const FAQS: [string, ReactNode][] = [
   ],
 ];
 
-const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: '#f1f5f9', margin: '40px 0 12px', letterSpacing: '-0.01em' };
-const h3Style: CSSProperties = { fontSize: 16, fontWeight: 600, color: '#f1f5f9', margin: '20px 0 6px' };
-const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: '#cbd5e1', margin: '0 0 12px' };
+const h2Style: CSSProperties = { fontSize: 20, fontWeight: 600, color: 'var(--text)', margin: '40px 0 12px', letterSpacing: '-0.01em' };
+const h3Style: CSSProperties = { fontSize: 16, fontWeight: 600, color: 'var(--text)', margin: '20px 0 6px' };
+const pStyle: CSSProperties = { fontSize: 15, lineHeight: 1.7, color: 'var(--text-dim)', margin: '0 0 12px' };
 const listStyle: CSSProperties = { ...pStyle, paddingLeft: 22, margin: '0 0 16px' };
 const liStyle: CSSProperties = { marginBottom: 8 };
-const linkStyle: CSSProperties = { color: '#2dd4bf', textDecoration: 'underline' };
-const strongStyle: CSSProperties = { color: '#f1f5f9' };
-const secondaryButton: CSSProperties = { display: 'block', textAlign: 'center', background: 'rgba(255,255,255,0.08)', color: '#fff', fontWeight: 700, fontSize: 15, padding: '12px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid rgba(255,255,255,0.18)' };
+const linkStyle: CSSProperties = { color: 'var(--teal)', textDecoration: 'underline' };
+const strongStyle: CSSProperties = { color: 'var(--text)' };
+const secondaryButton: CSSProperties = { display: 'block', textAlign: 'center', background: 'var(--surface)', color: 'var(--text)', fontWeight: 700, fontSize: 15, padding: '12px 18px', borderRadius: 10, textDecoration: 'none', border: '1px solid var(--border-bright)' };
 
 export default function ChatGptTeacherFreebiesPage() {
   return (
-    <div style={{ minHeight: '100vh', background: '#0f172a' }}>
-      <div style={{ background: 'rgba(255,255,255,0.05)', borderBottom: '1px solid rgba(255,255,255,0.08)', padding: '6px 20px' }}>
+    <div style={{ minHeight: '100vh', background: 'var(--bg)' }}>
+      <div style={{ background: 'var(--surface)', borderBottom: '1px solid var(--border)', padding: '6px 20px' }}>
         <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', gap: 6, textDecoration: 'none', fontFamily: 'var(--font-fredoka, sans-serif)', fontWeight: 700, fontSize: 22, letterSpacing: '0.02em' }}>
-          <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
+          <span style={{ color: 'var(--text-dim)', fontSize: 14, fontFamily: 'sans-serif', fontWeight: 400 }}>←</span>
           {'ShortHand'.split('').map((letter, i) => (
             <span key={i} style={{ color: LETTER_COLORS[i] }}>{letter}</span>
           ))}
@@ -118,7 +118,7 @@ export default function ChatGptTeacherFreebiesPage() {
 
       <main style={{ maxWidth: 600, margin: '0 auto', padding: '20px 16px 56px' }}>
         <div style={{ display: 'flex', alignItems: 'flex-end', gap: 12, marginBottom: 10 }}>
-          <h1 style={{ flex: 1, fontSize: 27, fontWeight: 700, color: '#fff', margin: 0, letterSpacing: '-0.01em', lineHeight: 1.25 }}>
+          <h1 style={{ flex: 1, fontSize: 27, fontWeight: 700, color: 'var(--text)', margin: 0, letterSpacing: '-0.01em', lineHeight: 1.25 }}>
             Let ChatGPT Hunt for Teacher Freebies While You Teach
           </h1>
           <Image
@@ -130,7 +130,7 @@ export default function ChatGptTeacherFreebiesPage() {
             style={{ imageRendering: 'pixelated', flexShrink: 0 }}
           />
         </div>
-        <p style={{ ...pStyle, fontSize: 16, color: '#e2e8f0' }}>
+        <p style={{ ...pStyle, fontSize: 16, color: 'var(--text-dim)' }}>
           I set up a ChatGPT task to look for useful teacher tools, freebies, and promotions. So far, it&apos;s helped me save
           about $160 and discover tools I might have missed.
         </p>
@@ -139,13 +139,13 @@ export default function ChatGptTeacherFreebiesPage() {
         <div style={{ marginTop: 10 }}>
           <OutLink to="chatgpt" style={secondaryButton}>Open ChatGPT ↗</OutLink>
         </div>
-        <ol style={{ ...pStyle, fontSize: 14, paddingLeft: 22, margin: '14px 0 6px', color: '#cbd5e1' }}>
+        <ol style={{ ...pStyle, fontSize: 14, paddingLeft: 22, margin: '14px 0 6px', color: 'var(--text-dim)' }}>
           <li>Copy the prompt.</li>
           <li>Open ChatGPT and start a new chat.</li>
           <li>Paste it, fill in the [brackets], and send.</li>
           <li>Check that ChatGPT confirms the task. That&apos;s it.</li>
         </ol>
-        <p style={{ fontSize: 13, color: '#94a3b8', margin: 0, lineHeight: 1.6 }}>
+        <p style={{ fontSize: 13, color: 'var(--text-faint)', margin: 0, lineHeight: 1.6 }}>
           Free. No ShortHand sign-up. You need a ChatGPT account (the free plan works, with limits).{' '}
           <a href="#setup" style={linkStyle}>Full setup steps</a>
         </p>
@@ -181,9 +181,9 @@ export default function ChatGptTeacherFreebiesPage() {
           send it. Already set up the task? Open it from Scheduled, edit the instructions, and paste this at the end.
         </p>
         <PromptBox which="gmail" label="Optional Gmail add-on" />
-        <div role="note" style={{ marginTop: 16, background: 'rgba(245,158,11,0.12)', border: '1px solid rgba(245,158,11,0.4)', borderRadius: 12, padding: '14px 16px' }}>
-          <p style={{ ...pStyle, margin: 0, color: '#fde68a' }}>
-            <strong style={{ color: '#fcd34d' }}>Use a personal email, never your school account.</strong>{' '}
+        <div role="note" style={{ marginTop: 16, background: '#fffbeb', border: '1px solid #f59e0b', borderRadius: 12, padding: '14px 16px' }}>
+          <p style={{ ...pStyle, margin: 0, color: '#78350f' }}>
+            <strong style={{ color: '#78350f' }}>Use a personal email, never your school account.</strong>{' '}
             School email holds student and family information, and your district&apos;s rules about AI apply there.
             Connecting Gmail gives ChatGPT access to the whole inbox, not just promotions, so only connect an account
             you&apos;re comfortable sharing.

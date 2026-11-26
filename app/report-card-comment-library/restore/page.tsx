@@ -24,7 +24,7 @@ export default function RestoreAccessPage() {
     <div
       style={{
         minHeight: '100vh',
-        background: '#0f172a',
+        background: 'var(--bg)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

@@ -177,7 +177,7 @@ export default function SuccessClient({ sessionId }: { sessionId: string | null 
 
 const wrapStyle: React.CSSProperties = {
   minHeight: '100vh',
-  background: '#0f172a',
+  background: 'var(--bg)',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -210,7 +210,7 @@ const bodyStyle: React.CSSProperties = {
 
 const primaryLinkStyle: React.CSSProperties = {
   display: 'block',
-  background: 'linear-gradient(135deg, #0d9488, #0891b2)',
+  background: 'var(--teal)',
   color: '#fff',
   fontWeight: 700,
   fontSize: 14,

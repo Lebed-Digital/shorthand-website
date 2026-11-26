@@ -39,7 +39,7 @@ const CHATGPT_URL = 'https://chatgpt.com/';
 const HELP_URL = 'https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt';
 
 const buttonStyle: React.CSSProperties = {
-  background: '#0d9488',
+  background: 'var(--teal)',
   color: '#fff',
   fontWeight: 700,
   fontSize: 15,
@@ -83,7 +83,7 @@ export function HeroCopyButton() {
       <button type="button" onClick={copy} style={{ ...buttonStyle, width: '100%', fontSize: 17, padding: '15px 20px' }}>
         {status === 'copied' ? '✓ Copied! Now paste it into ChatGPT' : 'Copy the Setup Prompt'}
       </button>
-      <p role="status" aria-live="polite" style={{ fontSize: 13, color: '#fde68a', margin: status === 'manual' ? '10px 0 0' : 0, lineHeight: 1.5 }}>
+      <p role="status" aria-live="polite" style={{ fontSize: 13, color: '#78350f', margin: status === 'manual' ? '10px 0 0' : 0, lineHeight: 1.5 }}>
         {status === 'manual' ? MANUAL_MSG : ''}
       </p>
     </div>
@@ -93,7 +93,7 @@ export function HeroCopyButton() {
 export function PromptBox({ which, label }: { which: Which; label: string }) {
   const { status, copy } = useCopy(which);
   return (
-    <div style={{ background: '#f8fafc', borderRadius: 16, padding: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0d9488' }}>
+    <div style={{ background: '#f8fafc', borderRadius: 16, padding: 16, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #0d9488' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 12 }}>
         <span style={{ fontSize: 11, fontWeight: 700, color: '#0f766e', textTransform: 'uppercase', letterSpacing: '0.08em' }}>{label}</span>
         <button type="button" onClick={copy} style={{ ...buttonStyle, fontSize: 13, padding: '8px 14px' }}>

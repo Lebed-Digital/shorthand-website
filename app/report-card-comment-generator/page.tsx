@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 const h2Style: CSSProperties = {
   fontSize: 20,
   fontWeight: 600,
-  color: '#f1f5f9',
+  color: 'var(--text)',
   margin: '32px 0 12px',
   letterSpacing: '-0.01em',
 };
@@ -43,28 +43,28 @@ const h2Style: CSSProperties = {
 const h3Style: CSSProperties = {
   fontSize: 15,
   fontWeight: 600,
-  color: '#cbd5e1',
+  color: 'var(--text-dim)',
   margin: '20px 0 8px',
 };
 
 const pStyle: CSSProperties = {
   fontSize: 14,
   lineHeight: 1.7,
-  color: '#94a3b8',
+  color: 'var(--text-faint)',
   margin: '0 0 14px',
 };
 
 const sampleStyle: CSSProperties = {
   fontSize: 14,
   lineHeight: 1.7,
-  color: '#94a3b8',
+  color: 'var(--text-faint)',
   margin: '0 0 12px',
   paddingLeft: 14,
   borderLeft: '3px solid #134e4a',
 };
 
 const linkStyle: CSSProperties = {
-  color: '#2dd4bf',
+  color: 'var(--teal)',
   textDecoration: 'underline',
 };
 
@@ -72,7 +72,7 @@ export default function ReportCardCommentGeneratorPage() {
   return (
     <>
       <FreeToolClient />
-      <section style={{ background: '#0f172a', padding: '8px 16px 64px' }}>
+      <section style={{ background: 'var(--bg)', padding: '8px 16px 64px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={{ ...h2Style, marginTop: 0 }}>How the report card comment generator works</h2>
           <p style={pStyle}>
@@ -191,11 +191,11 @@ export default function ReportCardCommentGeneratorPage() {
             {' '}explains when to use it and when to write from your own notes.
           </p>
 
-          <div style={{ marginTop: 32, background: 'linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%)', borderRadius: 14, padding: '24px 24px 22px', border: '1px solid rgba(167,139,250,0.25)' }}>
-            <h2 style={{ fontSize: 18, fontWeight: 700, color: '#fff', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
+          <div style={{ marginTop: 32, background: 'var(--surface)', borderRadius: 14, padding: '24px 24px 22px', border: '1px solid var(--border)' }}>
+            <h2 style={{ fontSize: 18, fontWeight: 700, color: 'var(--text)', margin: '0 0 10px', letterSpacing: '-0.01em' }}>
               Stop starting report card comments from scratch
             </h2>
-            <p style={{ fontSize: 14, color: '#e2e8f0', margin: '0 0 16px', lineHeight: 1.6 }}>
+            <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 16px', lineHeight: 1.6 }}>
               ShortHand helps you save quick student notes throughout the year, then turn those
               real observations into polished reports and parent communication when you need
               them.
@@ -204,7 +204,7 @@ export default function ReportCardCommentGeneratorPage() {
               href="https://app.getshorthandapp.com/?signup=1"
               label="app"
               ctaSource="report_card_generator_bottom"
-              style={{ display: 'inline-block', background: 'linear-gradient(135deg, #0d9488, #0891b2)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(13,148,136,0.35)' }}
+              style={{ display: 'inline-block', background: 'var(--teal)', color: '#fff', fontWeight: 700, fontSize: 13, padding: '10px 20px', borderRadius: 10, textDecoration: 'none', boxShadow: '0 4px 14px rgba(15,118,110,0.25)' }}
             >
               Try ShortHand free →
             </TrackedLink>

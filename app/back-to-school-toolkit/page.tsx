@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 const h2Style: CSSProperties = {
   fontSize: 20,
   fontWeight: 600,
-  color: '#f1f5f9',
+  color: 'var(--text)',
   margin: '0 0 12px',
   letterSpacing: '-0.01em',
 };
@@ -33,12 +33,12 @@ const h2Style: CSSProperties = {
 const pStyle: CSSProperties = {
   fontSize: 14,
   lineHeight: 1.7,
-  color: '#94a3b8',
+  color: 'var(--text-faint)',
   margin: '0 0 14px',
 };
 
 const linkStyle: CSSProperties = {
-  color: '#2dd4bf',
+  color: 'var(--teal)',
   textDecoration: 'underline',
 };
 
@@ -46,7 +46,7 @@ export default function BackToSchoolToolkitPage() {
   return (
     <>
       <WelcomeLetterClient />
-      <section style={{ background: '#0f172a', padding: '8px 16px 64px' }}>
+      <section style={{ background: 'var(--bg)', padding: '8px 16px 64px' }}>
         <div style={{ maxWidth: 560, margin: '0 auto' }}>
           <h2 style={h2Style}>How it works</h2>
           <p style={pStyle}>

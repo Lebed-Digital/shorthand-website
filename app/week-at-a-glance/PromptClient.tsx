@@ -43,7 +43,7 @@ DAILY SCHEDULE (optional):
 const CHATGPT_URL = 'https://chatgpt.com/';
 
 const buttonStyle: React.CSSProperties = {
-  background: '#0d9488',
+  background: 'var(--teal)',
   color: '#fff',
   fontWeight: 700,
   fontSize: 15,
@@ -76,7 +76,7 @@ export function PromptBox() {
   const label = status === 'copied' ? '✓ Copied! Now paste it into ChatGPT' : 'Copy Prompt';
 
   return (
-    <div style={{ background: '#f8fafc', borderRadius: 16, padding: 16, boxShadow: '0 1px 3px rgba(0,0,0,0.3)', borderLeft: '4px solid #0d9488' }}>
+    <div style={{ background: '#f8fafc', borderRadius: 16, padding: 16, boxShadow: '0 1px 3px rgba(23,45,41,0.12)', borderLeft: '4px solid #0d9488' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, marginBottom: 12 }}>
         <span style={{ fontSize: 11, fontWeight: 700, color: '#0f766e', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Free ChatGPT prompt</span>
         <button type="button" onClick={copy} style={{ ...buttonStyle, fontSize: 13, padding: '8px 14px' }}>
