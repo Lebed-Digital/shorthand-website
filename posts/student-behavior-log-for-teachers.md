@@ -85,6 +85,8 @@ It takes the emotion out of the conversation. You are no longer attacking their 
 
 You cannot manage what you do not measure. A good log measures the reality of your classroom.
 
+Need a weekly overview to bring alongside your incident notes? Download the [free weekly behavior pattern tracker](/student-behavior-pattern-tracker.pdf).
+
 ShortHand is the behavior log built into your phone, no spreadsheet required. You can document the facts in seconds and have the data ready for your next meeting. Try it free at [getshorthandapp.com](https://app.getshorthandapp.com?demo=true).
 
 ---

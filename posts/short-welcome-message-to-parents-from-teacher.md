@@ -101,7 +101,7 @@ The welcome message is the easy one. The messages that actually build trust come
 
 **Send positive notes early and on purpose.** The [positive behavior email templates](/blog/positive-behavior-email-to-parents-template) make it a two-minute habit. A family that hears good news first will meet you halfway on everything else, all year.
 
-**Know who you've contacted.** By October, "I think I messaged them?" is the honest status of half your class list. The [teacher's complete guide to parent communication](/blog/teacher-parent-communication-guide) covers simple systems for tracking it.
+**Know who you've contacted.** By October, "I think I messaged them?" is the honest status of half your class list. When individual replies and follow-ups start coming in, a [free printable parent communication log](/tools/parent-communication-log) records who you contacted and what you agreed.
 
 Or skip the tracking spreadsheet entirely. In ShortHand, you log each parent contact in a few taps (when it drafts a message for you, it saves the contact once you confirm how you sent it), see at a glance which families haven't heard from you, and turn your quick classroom notes into ready-to-send parent messages. The welcome message takes thirty seconds; ShortHand helps with the other 179 days.
 

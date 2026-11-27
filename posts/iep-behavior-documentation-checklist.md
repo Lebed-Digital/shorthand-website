@@ -26,7 +26,7 @@ The IEP team does not want your opinion. They want your data.
 
 The special education teacher cannot write IEP behavior goals without baseline data. The school psychologist cannot recommend services without something to work from.
 
-You are the classroom teacher. You are the primary source of that classroom-level data.
+You are the classroom teacher. You are the primary source of that classroom-level data. If a paraprofessional works with the student, their notes count too, and my [advice for first-year special education paraprofessionals](/blog/special-education-paraprofessional-first-year) covers what paras should write down.
 
 If you show up without IEP behavior documentation, the team has to work from incomplete information. That is not good for the student, and it is not a great position for you either.
 
