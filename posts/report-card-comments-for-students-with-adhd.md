@@ -92,7 +92,7 @@ Writing personalized, behavior-focused comments for neurodiverse students takes 
 
 This is where a digital log actually earns its keep.
 
-ShortHand allows you to log specific student behaviors, accommodations used, and positive milestones in just a few seconds during the school day. When report card season arrives, you do not have to rely on memory or guess which strategies worked. If you do not yet have a logging habit in place, [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) is a practical starting point for building one.
+ShortHand allows you to log specific student behaviors, [accommodations used](/features/accommodations), and positive milestones in just a few seconds during the school day. When report card season arrives, you do not have to rely on memory or guess which strategies worked. If you do not yet have a logging habit in place, [How to Document Student Behavior as a Teacher](/blog/how-to-document-student-behavior-as-a-teacher) is a practical starting point for building one.
 
 With ShortHand, you have a searchable timeline of exactly how a student responded to visual schedules, movement breaks, or reminders, so the comment you write reflects what actually happened, not what you can still remember in June.
 

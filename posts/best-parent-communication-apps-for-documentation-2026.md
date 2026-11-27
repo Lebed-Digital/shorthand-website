@@ -92,7 +92,7 @@ This is the tool I built, so read this section with that in mind. Here is the ho
 
 There is no announcement feed. You cannot blast a message to sixty families about the late bus. Parents do not log in, and there are no photos, portfolios, or points. If those are what you need, one of the tools above is a better fit than mine.
 
-What it does instead is keep the record. Every parent contact you log is timestamped, tied directly to a student, and searchable. You log a phone call, summarize the conversation in two sentences, and save it. When a parent says nobody ever told them about a grade, you pull up the exact date, the exact time, and your summary in about ten seconds.
+What it does instead is keep the record. Every parent contact you log is timestamped, tied directly to a student, and searchable. You log a phone call, summarize the conversation in two sentences, and save it. When a parent says nobody ever told them about a grade, you pull up the exact date, the exact time, and your summary in about ten seconds. [See how ShortHand's parent communication log works](/features/parent-communication-log), including dated entries, contact types, and a student-by-student history.
 
 The other tools on this list treat sending a message and keeping a record as two separate jobs. ShortHand treats them as one: log what happened with a student, and it can turn that same note into the parent email, subject line and all, ready for you to review and send. The documentation and the communication come from the same entry instead of living in two different places.
 

@@ -248,7 +248,7 @@ Run through this before you hit send, or right after the conference while you st
 - [ ] Set the next check-in date and put it on my calendar
 - [ ] Logged the conference and the email as parent contacts
 
-If you used a [parent-teacher conference form](/blog/parent-teacher-conference-form) during the meeting, the action plan and follow-up boxes at the bottom are basically this email's outline. For the logging step, a [free parent communication log](/blog/free-parent-communication-log-for-teachers) keeps every call, email, and meeting in one dated list.
+If you used a [parent-teacher conference form](/blog/parent-teacher-conference-form) during the meeting, the action plan and follow-up boxes at the bottom are basically this email's outline. For the logging step, a [free parent communication log](/tools/parent-communication-log) keeps every call, email, and meeting in one dated list.
 
 ## Common Mistakes
 

@@ -179,7 +179,7 @@ An introduction letter opens a relationship; what you send over the next month d
 
 **Send something positive before you have to send something hard.** A two-line positive note in September buys enormous goodwill for the harder conversation in November. Our [positive behavior email templates](/blog/positive-behavior-email-to-parents-template) make this a two-minute habit rather than one more task.
 
-**Keep track of who you have contacted.** By week six, you will not remember which families you have actually written to and which you only meant to. A simple log solves it, and the [teacher's complete guide to parent communication](/blog/teacher-parent-communication-guide) covers how to set one up without adding paperwork to your life.
+**Keep track of who you have contacted.** By week six, you will not remember which families you have actually written to and which you only meant to. A simple log solves it. Keep the replies and follow-ups in a [parent contact log you can fill in and print](/tools/parent-communication-log): the date, the family, and a one-line summary.
 
 This is also where ShortHand quietly earns its keep. You log each parent contact in a few taps (when it drafts a message for you, it saves the contact once you confirm), and it keeps a running log, shows you which families you have not reached yet, and drafts those quick positive notes from the observations you have already jotted down. The introduction letter makes the first impression; ShortHand makes sure the second, third, and tenth impressions actually happen.
 
