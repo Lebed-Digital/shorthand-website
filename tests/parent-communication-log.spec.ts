@@ -39,7 +39,7 @@ test('parent communication log: fill fields, add rows, and toggle print view', a
   await expect(page.getByRole('button', { name: 'Print / Save as PDF' })).toBeHidden();
   await expect(page.getByRole('button', { name: '+ Add 5 rows' })).toBeHidden();
   await expect(page.getByRole('button', { name: '+ Add 5 more rows' })).toBeHidden();
-  await expect(page.getByText('Want this to happen automatically?')).toBeHidden();
+  await expect(page.getByText('Want a record you can search all year?')).toBeHidden();
   await expect(page.getByText('Try ShortHand free at getshorthandapp.com.')).toBeVisible();
 
   // The actual log content must survive into print — this is the real point of
