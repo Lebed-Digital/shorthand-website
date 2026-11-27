@@ -232,9 +232,9 @@ export default function ParentLogClient() {
       {/* Screen CTA block — hidden on print */}
       <div className={styles.ctaSection}>
         <div className={styles.ctaCard}>
-          <h2 className={styles.ctaTitle}>Want this to happen automatically?</h2>
+          <h2 className={styles.ctaTitle}>Want a record you can search all year?</h2>
           <p className={styles.ctaDescription}>
-            ShortHand logs every parent contact you make: timestamped, tied to the student, searchable. No separate spreadsheet. No trying to remember what you said in October.
+            Log calls, emails, and meetings in ShortHand in a few seconds. Each one is timestamped, tied to the student, and searchable. No separate spreadsheet. No trying to remember what you said in October.
           </p>
           <TrackedLink
             href="https://app.getshorthandapp.com?demo=true"

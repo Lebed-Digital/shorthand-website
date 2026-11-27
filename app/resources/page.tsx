@@ -185,7 +185,7 @@ export default function ResourcesPage() {
         <div style={{ background: 'var(--teal-dim)', borderRadius: 16, padding: 24, marginTop: 12, border: '1px solid var(--teal-border)', textAlign: 'center' }}>
           <h2 style={{ fontSize: 18, fontWeight: 700, color: 'var(--text)', margin: '0 0 8px' }}>Want this built into your daily routine?</h2>
           <p style={{ fontSize: 14, color: 'var(--text-dim)', margin: '0 0 16px', lineHeight: 1.6 }}>
-            ShortHand automatically logs parent contacts, behavior notes, and follow-ups in one searchable timeline. No binders. No spreadsheets. No trying to remember what happened three months ago.
+            ShortHand keeps parent contacts, behavior notes, and follow-ups in one searchable timeline. Log each one in a few seconds and it is dated and tied to the student. No binders. No spreadsheets. No trying to remember what happened three months ago.
           </p>
           <a
             href="https://app.getshorthandapp.com/?signup=1"
