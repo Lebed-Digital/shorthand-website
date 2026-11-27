@@ -20,17 +20,7 @@ Full list of which page uses which link, and why: docs/funnel-decisions.md.
 
 ## Plans (what the site may say)
 
-Checked against the app code 2026-11-22 (`pulse 2.0`):
-
-- Free is permanent, not a trial. Notes, students, classes, parent communication log, goals and accommodations are free with no cap. AI parent notes (Quick Note Home, Detailed Report) are free.
-- Pro is $4.99/month on the web. Eligible accounts get one 30-day Pro trial, no credit card. The iPhone app buys through Apple at Apple's price; a browser on any phone uses Stripe.
-- Cancelling: web subscribers ask support (info@getshorthandapp.com), who cancel in the Stripe Dashboard; the app's Stripe webhook moves the account to Free when paid access ends (immediately, or at period end if scheduled) and notes stay. No self-service web cancel exists (Customer Portal only in an unmerged app draft). App Store purchases (iPhone app): Apple ID settings. The site promises no response time.
-- Pricing page: /pricing (Free vs Pro). Wording rule: "Free plan with no time limit", never "free forever".
-- Pro adds: the Reports tab (Student Documentation Report, Meeting Prep Report, Documentation Coverage), Ask ShortHand, Shoutouts, Class Summary, Class Note mode, bulk parent emails, Import Birthdays, Quick Grade Table, School Calendar and Rotation.
-- Each teacher has their own account. No school, team or district accounts exist.
-- ShortHand never sends messages itself. Drafts open in the teacher's mail app or Gmail.
-
-Re-check the app before adding numbers or new Pro claims to the site.
+Moved to `docs/product-facts.md` on 2026-11-27: plans, prices, the "Free plan with no time limit" wording rule, what Pro adds, cancelling, the comment library, platforms. Read it before writing any price, plan or feature claim.
 
 ## Experiments
 
